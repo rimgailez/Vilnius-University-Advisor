@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Vilnius_University_Advisor
 {
-    class Lecturer
+    public class DataNode
     {
         public string name { get; set; }
         public float score { get; set; }
         public int numberOfReviews { get; set; }
         public List<string> reviews;
         public Faculty faculty { get; set; }
-
-        public Lecturer(string name, Faculty faculty)
+        public DataNode(string name, Faculty faculty)
         {
             this.name = name;
             this.faculty = faculty;
@@ -22,5 +21,14 @@ namespace Vilnius_University_Advisor
             this.numberOfReviews = 0;
             this.reviews = new List<string>();
         }
+    }
+
+    public class Subject : DataNode
+    {
+        public Subject(string name, Faculty faculty) : base(name, faculty) { }
+    }
+    class Lecturer : DataNode
+    {
+        public Lecturer(string name, Faculty faculty) : base(name, faculty) { }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vilnius_University_Advisor
 {
-    enum Faculty
+    public enum Faculty
     {
         None = -1,
         Chemistry,

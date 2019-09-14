@@ -52,9 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Subject.cs" />
+    <Compile Include="DataNode.cs" />
     <Compile Include="Faculty.cs" />
-    <Compile Include="Lecturer.cs" />
     <Compile Include="RegForm.cs">
       <SubType>Form</SubType>
     </Compile>
