@@ -22,13 +22,4 @@ namespace Vilnius_University_Advisor
             this.reviews = new List<string>();
         }
     }
-
-    public class Subject : DataNode
-    {
-        public Subject(string name, Faculty faculty) : base(name, faculty) { }
-    }
-    class Lecturer : DataNode
-    {
-        public Lecturer(string name, Faculty faculty) : base(name, faculty) { }
-    }
 }

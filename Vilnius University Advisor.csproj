@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="DataNode.cs" />
     <Compile Include="Faculty.cs" />
+    <Compile Include="Lecturer.cs" />
     <Compile Include="RegForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +63,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subject.cs" />
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
