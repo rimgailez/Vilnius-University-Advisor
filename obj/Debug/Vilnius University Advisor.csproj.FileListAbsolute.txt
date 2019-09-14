@@ -1,0 +1,13 @@
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\bin\Debug\Vilnius University Advisor.exe.config
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\bin\Debug\Vilnius University Advisor.exe
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\bin\Debug\Vilnius University Advisor.pdb
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius University Advisor.csprojAssemblyReference.cache
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius_University_Advisor.Properties.Resources.resources
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius University Advisor.csproj.GenerateResource.cache
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius University Advisor.csproj.CoreCompileInputs.cache
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius University Advisor.csproj.CopyComplete
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius University Advisor.exe
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius University Advisor.pdb
+C:\Users\SthFromMars\Source\Repos\Vilnius-University-Advisor\obj\Debug\Vilnius_University_Advisor.RegForm.resources
