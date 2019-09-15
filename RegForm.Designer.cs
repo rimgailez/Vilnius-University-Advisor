@@ -33,6 +33,7 @@
             this.ListAll = new System.Windows.Forms.Button();
             this.LecReg = new System.Windows.Forms.Button();
             this.LecturerPanel = new System.Windows.Forms.Panel();
+            this.SaveNextSubjReg = new System.Windows.Forms.Button();
             this.SaveNextLecReg = new System.Windows.Forms.Button();
             this.NameTextBoxLect = new System.Windows.Forms.TextBox();
             this.NameLabelLect = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.SaveBackLecReg = new System.Windows.Forms.Button();
             this.BackLecReg = new System.Windows.Forms.Button();
             this.SubjectPanel = new System.Windows.Forms.Panel();
-            this.SaveNextSubjReg = new System.Windows.Forms.Button();
             this.BackSubjReg = new System.Windows.Forms.Button();
             this.SaveBackSubjReg = new System.Windows.Forms.Button();
             this.FacultyLabelSubj = new System.Windows.Forms.Label();
@@ -117,6 +117,16 @@
             this.LecturerPanel.TabIndex = 3;
             this.LecturerPanel.Visible = false;
             // 
+            // SaveNextSubjReg
+            // 
+            this.SaveNextSubjReg.Location = new System.Drawing.Point(529, 346);
+            this.SaveNextSubjReg.Name = "SaveNextSubjReg";
+            this.SaveNextSubjReg.Size = new System.Drawing.Size(207, 76);
+            this.SaveNextSubjReg.TabIndex = 14;
+            this.SaveNextSubjReg.Text = "Išsaugoti ir registruoti kitą";
+            this.SaveNextSubjReg.UseVisualStyleBackColor = true;
+            this.SaveNextSubjReg.Click += new System.EventHandler(this.SaveNextSubjReg_Click);
+            // 
             // SaveNextLecReg
             // 
             this.SaveNextLecReg.Location = new System.Drawing.Point(526, 346);
@@ -129,7 +139,7 @@
             // 
             // NameTextBoxLect
             // 
-            this.NameTextBoxLect.Location = new System.Drawing.Point(63, 40);
+            this.NameTextBoxLect.Location = new System.Drawing.Point(63, 29);
             this.NameTextBoxLect.Name = "NameTextBoxLect";
             this.NameTextBoxLect.Size = new System.Drawing.Size(670, 22);
             this.NameTextBoxLect.TabIndex = 3;
@@ -137,7 +147,7 @@
             // NameLabelLect
             // 
             this.NameLabelLect.AutoSize = true;
-            this.NameLabelLect.Location = new System.Drawing.Point(60, 20);
+            this.NameLabelLect.Location = new System.Drawing.Point(60, 9);
             this.NameLabelLect.Name = "NameLabelLect";
             this.NameLabelLect.Size = new System.Drawing.Size(110, 17);
             this.NameLabelLect.TabIndex = 4;
@@ -153,19 +163,24 @@
             "Filologijos",
             "Filosofijos",
             "Fizikos",
-            "Gyvybės mokslų",
+            "Gyvybės mokslų centras",
+            "Istorijos",
+            "Kauno",
             "Komunikacijos",
             "Matematikos ir informatikos",
+            "Medicinos",
+            "Tarptautinių santykių ir politikos mokslų institutas",
+            "Teisės",
             "Verslo mokykla"});
-            this.FacultySelectLect.Location = new System.Drawing.Point(63, 111);
+            this.FacultySelectLect.Location = new System.Drawing.Point(63, 85);
             this.FacultySelectLect.Name = "FacultySelectLect";
-            this.FacultySelectLect.Size = new System.Drawing.Size(238, 164);
+            this.FacultySelectLect.Size = new System.Drawing.Size(320, 228);
             this.FacultySelectLect.TabIndex = 5;
             // 
             // FacultyLabelLect
             // 
             this.FacultyLabelLect.AutoSize = true;
-            this.FacultyLabelLect.Location = new System.Drawing.Point(60, 87);
+            this.FacultyLabelLect.Location = new System.Drawing.Point(60, 65);
             this.FacultyLabelLect.Name = "FacultyLabelLect";
             this.FacultyLabelLect.Size = new System.Drawing.Size(73, 17);
             this.FacultyLabelLect.TabIndex = 6;
@@ -193,28 +208,18 @@
             // 
             // SubjectPanel
             // 
-            this.SubjectPanel.Controls.Add(this.SaveNextSubjReg);
             this.SubjectPanel.Controls.Add(this.BackSubjReg);
             this.SubjectPanel.Controls.Add(this.SaveBackSubjReg);
             this.SubjectPanel.Controls.Add(this.FacultyLabelSubj);
             this.SubjectPanel.Controls.Add(this.FacultySelectSubj);
             this.SubjectPanel.Controls.Add(this.NameLabelSubj);
             this.SubjectPanel.Controls.Add(this.NameTextBoxSubj);
+            this.SubjectPanel.Controls.Add(this.SaveNextSubjReg);
             this.SubjectPanel.Location = new System.Drawing.Point(0, 0);
             this.SubjectPanel.Name = "SubjectPanel";
             this.SubjectPanel.Size = new System.Drawing.Size(793, 437);
             this.SubjectPanel.TabIndex = 10;
             this.SubjectPanel.Visible = false;
-            // 
-            // SaveNextSubjReg
-            // 
-            this.SaveNextSubjReg.Location = new System.Drawing.Point(529, 346);
-            this.SaveNextSubjReg.Name = "SaveNextSubjReg";
-            this.SaveNextSubjReg.Size = new System.Drawing.Size(207, 76);
-            this.SaveNextSubjReg.TabIndex = 14;
-            this.SaveNextSubjReg.Text = "Išsaugoti ir registruoti kitą";
-            this.SaveNextSubjReg.UseVisualStyleBackColor = true;
-            this.SaveNextSubjReg.Click += new System.EventHandler(this.SaveNextSubjReg_Click);
             // 
             // BackSubjReg
             // 
@@ -239,7 +244,7 @@
             // FacultyLabelSubj
             // 
             this.FacultyLabelSubj.AutoSize = true;
-            this.FacultyLabelSubj.Location = new System.Drawing.Point(63, 104);
+            this.FacultyLabelSubj.Location = new System.Drawing.Point(60, 82);
             this.FacultyLabelSubj.Name = "FacultyLabelSubj";
             this.FacultyLabelSubj.Size = new System.Drawing.Size(73, 17);
             this.FacultyLabelSubj.TabIndex = 11;
@@ -255,19 +260,24 @@
             "Filologijos",
             "Filosofijos",
             "Fizikos",
-            "Gyvybės mokslų",
+            "Gyvybės mokslų centras",
+            "Istorijos",
+            "Kauno",
             "Komunikacijos",
             "Matematikos ir informatikos",
+            "Medicinos",
+            "Tarptautinių santykių ir politikos mokslų institutas",
+            "Teisės",
             "Verslo mokykla"});
-            this.FacultySelectSubj.Location = new System.Drawing.Point(63, 131);
+            this.FacultySelectSubj.Location = new System.Drawing.Point(63, 102);
             this.FacultySelectSubj.Name = "FacultySelectSubj";
-            this.FacultySelectSubj.Size = new System.Drawing.Size(238, 164);
+            this.FacultySelectSubj.Size = new System.Drawing.Size(315, 228);
             this.FacultySelectSubj.TabIndex = 6;
             // 
             // NameLabelSubj
             // 
             this.NameLabelSubj.AutoSize = true;
-            this.NameLabelSubj.Location = new System.Drawing.Point(60, 37);
+            this.NameLabelSubj.Location = new System.Drawing.Point(60, 20);
             this.NameLabelSubj.Name = "NameLabelSubj";
             this.NameLabelSubj.Size = new System.Drawing.Size(88, 17);
             this.NameLabelSubj.TabIndex = 1;
@@ -275,7 +285,7 @@
             // 
             // NameTextBoxSubj
             // 
-            this.NameTextBoxSubj.Location = new System.Drawing.Point(63, 57);
+            this.NameTextBoxSubj.Location = new System.Drawing.Point(63, 40);
             this.NameTextBoxSubj.Name = "NameTextBoxSubj";
             this.NameTextBoxSubj.Size = new System.Drawing.Size(670, 22);
             this.NameTextBoxSubj.TabIndex = 0;
@@ -353,10 +363,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ListAllPanel);
-            this.Controls.Add(this.Menu);
             this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.LecturerPanel);
+            this.Controls.Add(this.ListAllPanel);
+            this.Controls.Add(this.Menu);
             this.Name = "RegForm";
             this.Text = "Registracija";
             this.Menu.ResumeLayout(false);

@@ -14,9 +14,14 @@ namespace Vilnius_University_Advisor
         Philology,
         Philosophy,
         Physics,
-        Medicine,
+        LifeSciences,
+        History,
+        Kaunas,
         Communications,
         Mathematics,
+        Medicine,
+        InternationalRelations,
+        Law,
         Business
     }
 }
