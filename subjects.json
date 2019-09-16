@@ -1,3 +1,5945 @@
 [
-  
+  {
+    "reviews": [],
+    "name": "Aeracijos zonos tyrimų metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Afrikos ir Azijos ryšiai: istorinės ir šiuolaikinės perspektyvos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "AIESEC susirinkimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Akademinė ir mokslinė anglų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aktualios profesinės etikos problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Analitinė filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Analitinės informacinės technologijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalba pradedantiesiems",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ankstyvųjų santykių psichopatologija: intervencijos modeliai ir korekcijos metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Anomalios raidos psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Antikinė literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Antroji užsienio kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Antroji užsienio kalba (prancūzų)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Antroji užsienio kalba (rusų)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Antroji užsienio kalba (vokiečių)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Apklausos duomenų statistinė analizė naudojant SPSS",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Aplinkos chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aplinkos estetika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aplinkos modeliavimo pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aplinkosaugos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aplinkosaugos teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Apskaita viešajame sektoriuje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Arabų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Arabų medijų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Asmenybė ir jos tapsmas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Asmenybės psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Asmenybės sutrikimų vertinimas ir psichoterapija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Asmenybės ūgties filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Asmeninės karjeros valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Asmens gerovė: tarpdalykinis požiūris",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Asocialaus elgesio psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Astronomija: tyrinėjant laiką ir erdvę",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 4
+  },
+  {
+    "reviews": [],
+    "name": "Atlyginimų politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Atlyginimų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Auditas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Auditas viešajame sektoriuje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Audito teorija ir praktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Augustinas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Aukštasis mokslas ir studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Aukštesnioji makroekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Aukštesnioji mikroekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Azijos kinas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Azijos miestai: bendruomenė ir miesto erdvė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Azijos šalių plėtros politinė ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Baltijos jūros baseino aplinkosauga",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Baltijos kraštų geologija ir tektonika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Baltijos kraštų kvartero geologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Baltijos šalių geotechnika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Baltymų fizikinė chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Bankininkystė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Bankininkystės etika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Baudžiamosios atsakomybės realizavimo problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Bausmė ir resocializacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Bendravimo psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Bendroji gamtinė geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Bendroji gamtinė ir visuomeninė geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Bendroji visuomeninė geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Bendrovių valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Bendruomenės socialinė veikla",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Biblija Vakarų pasaulio literatūroje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Biocheminiai ir nanotechnologiniai metodai taikomi bionanotechnologijose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Bioekologija ir ekologinės problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Bioetika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Biofizika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Biogeografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Bioinformatika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Bioįvairovės apsaugos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Biologijos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Biologinių, medicininių ir maistinių medžiagų analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Biomolekulių stereochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Biotechnologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Blezas Paskalis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Centrinė bankininkystė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Chemijos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Chemijos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Cheminė kinetika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Cheminės analizės kokybė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Cheminio eksperimento statistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Chromatografiniai analizės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Civilinė ir darbo teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Civilizacijų/Civilizacijos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 6
+  },
+  {
+    "reviews": [],
+    "name": "Daiktinės teisės ir prievolių užtikrinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinė anglų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinė komunikacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinė prancūzų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinė rusų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinė užsienio kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinė vokiečių kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Darbo ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Darbo psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Darnus vystymasis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Daugiamačiai rinkos tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Daugiamatės statistikos metodai socialiniuose moksluose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Dekartas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Demografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Demografija ir socialinė geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Derybos, prezentacijos ir protokolas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Didelių duomenų analizės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Disociaciniai ir psichoziniai sutrikimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Draudimo ekonomika ir valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Draudimo paslaugų rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Draudimo procesų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Draudimo produktų pardavimo technologijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Draudimo verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "DSGE modeliai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "DSGE modeliai fiskalinei ir darbo rinkos politikai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Dujų chromatografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Duomenų analizės įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Duomenų bazių projektavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Duomenų bazių valdymo sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "E. Huserlis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Edukacinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Egzistencinė ir gyvenimo filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Eismo psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ekologinė biochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ekonometrija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonometrijos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos augimo teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos globalizavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos kiekybinė analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos plėtra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos struktūrų raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ekonomikos teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ekonominės minties istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ekonominės sistemos analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Eksporto valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Elektrochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Elektrocheminė kinetika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Elektrocheminiai analizės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Elektrocheminio impedanso spektroskopija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Elektrocheminis nanostruktūrizavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Elektroninė rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Elgesio geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Elgsenos ir eksperimentinė ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Elgsenos kainodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Emocijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Emocijos ir motyvacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Epistemologijos problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Erdvinių duomenų sistemų taikomasis programavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "ES bendroji žemės ūkio politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES darbo ir socialinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES ekonominė teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES konkurencijos ir šakinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES konkurencijos politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES pinigų politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES regionų plėtros politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES transporto politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Estetika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Estetika ir dizainas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Estetika ir meno filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Estetika ir meno teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Etika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Etikos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Etninių santykių sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Etnologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Etnoreliginė Artimųjų Rytų geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Europos ekonominė integracija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Europos gamtinė geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Europos gamtinė ir visuomeninė geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Europos istorija: epochos ir regionai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 6
+  },
+  {
+    "reviews": [],
+    "name": "Europos kvartero tarpledynmečių paleogeografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Europos Sąjungos studijų pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 11
+  },
+  {
+    "reviews": [],
+    "name": "Europos Sąjungos švietimo politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Europos visuomeninė geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Evoliucija, smegenys, psichika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Evoliucinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Farsi kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "F-Elementų chemija ir fizika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Fenomenologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Filosofija ir menas: Deleuzeo studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Filosofijos dėstymo metodika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Filosofijos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Filosofijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Filosofinės ir sociologinės teisės problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Finansinė analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansinė atskaitomybė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansinė matematika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansinės atskaitomybės analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansinis stabilumas ir makroprudencinė analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų elgsena",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų etika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų ir turto kainodaros pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų ir valdymo apskaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų rinkos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų rinkos ir derivatyvai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų rinkos ir finansinės priemonės",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų rinkos ir institucijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Finansų teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Fiskalinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Fizikinis pasaulio įvaizdis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 4
+  },
+  {
+    "reviews": [],
+    "name": "Fizikos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Funkcinių grupių blokavimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "G. Hegelis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gadamerio filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gadameris ir šiuolaikinės hermeneutikos kontroversijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gamtiniai pavojai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gamtinių junginių chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gamtonaudos ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Geodinamika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Geodinamika ir sedimentacinių baseinų analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Geografijos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Geopolitinių galių didėjimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gerontopsichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gerovės valstybės ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gerovės valstybės lyginamosios studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gerovės valstybių modeliai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "GIS modeliai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gyvenimo kokybė ir asmens gerovė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gyventojai ir ekonominė plėtra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Gyventojų ekonominis aktyvinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gyventojų užimtumo teorijos ir darbo rinka",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gyvūnų elgsenos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 5
+  },
+  {
+    "reviews": [],
+    "name": "Globali ekonomika: teorijos ir jų taikymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Globalioji logistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Globaliosios operacijos ir logistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Globalizacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Globalizacija: raida ir pasekmės",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Globalus elektroninis verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Globalusis elektroninis verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Graikų kalba. Tekstai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Gruntotyra II",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Grupės dinamika: teorija ir praktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Grupinė psichoterapija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Grupių psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Grupių teorija ir praktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Habermas - Rorty kontroversija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Hegelis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Hermeneutika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Hermeneutinė kultūros analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Heterociklų chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Heterograndžių polimerų sintezė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hidrogeologiniai lauko tyrimų metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hidrologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hidrologijos mokslinio darbo projektas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hidrologijos tiriamasis darbas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hidrologijos/Meteorologijos tiriamasis darbas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hidrosferos ciklai ir zoniškumo tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hume",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Husserl",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "I. Kantas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ideologijos teorijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ikiislaminė Arabija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Įmonės finansai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įmonės ir jos produkcijos konkurencingumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įmonės vertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įmonių finansai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įmonių finansų pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įmonių susijungimai ir įsigijimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įmonių veiklos analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Imunoanalizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Imunologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Individualaus konsultavimo praktikumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Individualiosios psichologijos metodai klinikoje ir mokykloje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Individualus darbuotojų konsultavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Informacijos ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informacijos ir komunikacijos technologijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informacijos vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informacinės sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informacinės technologijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informaciniai ištekliai kriminologijoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Informacinio bendrabūvio raiškos ir prasmės",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Informacinių sistemų auditas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informacinių sistemų ir vartotojų sąveika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informacinių sistemų saugumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Informatikos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Inovacijų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Integruoto ugdymo turinio pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Integruotos rinkodaros komunikacijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Intelektinė nuosavybė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Intymaus ir šeiminio gyvenimo sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Investicijų analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Investicijų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Investicinio portfelio analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Investicinių projektų analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Investicinių projektų analizė ir vertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Inžinerinė hidrogeologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Inžineriniai statiniai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Islamas: nuo tradicinio iki radikalaus",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 11
+  },
+  {
+    "reviews": [],
+    "name": "Islamo filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Islamo literatūros įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Islamo teologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Istorijos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Istorijos filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Įšalotyra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Išvestinės finansinės priemonės",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įvadas į Azijos politiką ir politines teorijas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Įvadas į Balkanų studijas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Įvadas į baudžiamąją politiką",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Įvadas į Centrinės Azijos politiką",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Įvadas į duomenų analitiką",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Įvadas į raidos psichopatologiją",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "J. Locke ir D. Hume",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Japonų kalbos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Jaunimo politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kaimo ekologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kaimo ekologija ir geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kaimo geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kainodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kainodara ir konkurencija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kalbos filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kalbos kultūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kantas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Karjeros raida ir konsultavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Karo studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 11
+  },
+  {
+    "reviews": [],
+    "name": "Kasdienio pasaulio filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kaštų-naudos analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kiekybiniai verslo situacijų tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kiekybinių sociologinių tyrimų praktikumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kierkegaardo egzistencinis mąstymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kietafazės reakcijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kieto kūno chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kieto kūno ir paviršiaus tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kylantys pasaulio regionai: idėjos ir konfliktai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 11
+  },
+  {
+    "reviews": [],
+    "name": "Kino filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kinų estetika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Klasikinė arabų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Klasikinė etika ir modernioji lyderystė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Klasikinės sociologijos teorijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Klimato kaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Klinikinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Klinikinės psichologijos tyrimų ir statistikos metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kognityvinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kognityvinių mokslų raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kognityvinių mokslų tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kokybės vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kokybės valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kokybės valdymas ir auditas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kokybiniai tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kokybinio tyrimo pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kokybinių sociologinių tyrimų praktikumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kokybinių tyrimų metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kokybinių tyrimų metodologija: biografinis metodas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kompiuterinės kartografavimo programos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kompiuterinis sprendimų modeliavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kompiuterizuota apskaita įmonėse",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kompiuterizuota valdymo apskaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Kompleksinė geofizinių duomenų interpretacija kompiuterine programine įranga",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kompleksinių junginių elektrochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Komunikacija ir konfliktų valdymas organizacijose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Konkurencijos politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Konservavimo chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Konstitucija: žmogus, teisė, valstybė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 12
+  },
+  {
+    "reviews": [],
+    "name": "Koranistikos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Korupcijos kontrolė ir prevencija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Korupcijos socialinės problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kraštotvarkos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kredito rizika ir draudimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Krikščioniškasis socialinis mokymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kriminalinio elgesio psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kriminologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kriminologijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kriminologiniai diskursai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kristalinių uolienų mikroskopiniai ir izotopiniai tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kritinės sociologijos diskursas nūdienos socialinėse teorijose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kūdikių ir vaikų psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kultūrologijos įvadas ir kultūros geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kultūros filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kultūros paveldo tvarkymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kultūros vertybių medžiagų biodestrukcijos tyrimo ir apsaugos metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kultūros vertybių restauravimo teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kūnas ir psichika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kūno sociologija ir antropologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Kūrybos psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Laiko eilučių ekonometrija I",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ledynų geologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lenkų kalbos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lyčių istorija ir teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Lyčių psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lyčių studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Lyčių studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 8
+  },
+  {
+    "reviews": [],
+    "name": "Lyderiavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lyderystė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lyderystė ir verslumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lietuva Europoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lietuva ir kaimynai: istorinė patirtis ir šiuolaikinė savivoka",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 6
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvių kalbos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvos biologinė įvairovė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvos etninių ir konfesinių bendruomenių istorija ir kultūra europiniuose kontekstuose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 6
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvos filosofijos klasikai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvos kriminologijos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvos pinigų ir bankų istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvos ūkio istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lietuvos žydų religinės minties paveldas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lyginamoji civilizacijų istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Lyginamoji edukologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lyginamoji ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lyginamosios ekonomikos sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Literatūra ir kinas: adaptacijos studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Lytis ir ugdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Logika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Logikos klasikai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Loginio mąstymo ir kūrybingumo strategijos ne matematikams",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 9
+  },
+  {
+    "reviews": [],
+    "name": "Logistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Logistikos procesų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lošimų teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Lotynų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Lotynų kalba. Tekstai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Maceina, Girnius",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Maisto chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Makroekonominė analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Makroekonominiai modeliai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Makroekonominių procesų prognozavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Marketingas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Marketingo teorijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Matematika ir filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Matematikos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Matematinis cheminių procesų modeliavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Matematinis geologinės informacijos apdorojimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mažmeninės prekybos ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Mažojo verslo organizavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Medicinos sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Medijų sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Medijų teorijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Meno istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Metalų korozija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Meteorologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Meteorologijos mokslinio darbo projektas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Meteorologijos tiriamasis darbas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Meteorologijos/Hidrologijos mokslinio darbo projektas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Miego ir sapnų psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Miesto sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Miestų ekologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Miestų ekologija ir geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Miestų geografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Migracija ir etninių mažumų socialinė apsauga",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Migracijos procesai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Migracijos sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Mikroekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Mikroekonominė analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Mikroorganizmų genetika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mikroorganizmų pasaulis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 5
+  },
+  {
+    "reviews": [],
+    "name": "Miško produktų ir rinkų plėtra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Miškotvarka ir želdynų planavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Modernioji ir postmodernioji mokslo samprata",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Modernioji organinė sintezė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mokesčių apskaičiavimas ir apskaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Mokesčių sistema",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Mokymosi motyvacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Mokomoji praktika (meteorologinė)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mokslinės informacijos paieška",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mokslinių tyrimų pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Mokslo filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Mokslotyra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Molekulinė vėžio biologija ir imunologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Molekulinių vyksmų fizika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Monetarinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Monetarinis reguliavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Motyvacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Muziejinių rinkinių ir dailės kūrinių technologijų istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Naftos ir dujų geologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Namų ūkių biudžetų planavimo konsultavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Nanobiotechnologijos analizinėje chemijoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Nanostruktūrų formavimas ir tyrimas elektrocheminiais metodais",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Narkotikų socialinės problemos ir kontrolė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Naujieji religiniai judėjimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Naujosios medijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ne gyvybės draudimo teorija ir praktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Neformaliojo ugdymo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Neformalusis ugdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Neįgaliųjų psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Neklasikinė logika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Neorganinė biochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Neorganinės chemijos rinktiniai skyriai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Neorganinės sintezės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Neorganinių medžiagų elektroninė sandara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Nepilnamečių baudžiamosios atsakomybės ypatumai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Nepusiausvirosios sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Nerūdinių naudingųjų iškasenų išteklių vertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Nihilizmas ir Vakarų filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Nūdienės hermeneutinės filosofijos diskursai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Nusikaltimų tyrimų psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ontologijos problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Optimizaciniai metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Oratorystė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Organinės funkcinės medžiagos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Organiniai metalų junginiai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Organinių junginių chromatografija ir spektroskopija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Organinių junginių sintezės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Organinių reakcijų mechanizmai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Organizacijos įvaizdžio valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Organizacijų sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Organizacijų teorija ir projektavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Organizacijų vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Organizacinė elgsena",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Organizacinė kultūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Organizacinė kultūra ir klimatas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Organizacinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Organizacinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Paauglių ir jaunimo psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pagrindiniai nanodalelių sintezės principai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Paleontologiniai kvartero tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Paleontologiniai prekvartero tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Paleontologiniai tyrimų metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Pamatinės miesto studijų problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pardavimo valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Pasaulio religijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Paslaugų ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Paslaugų rinkodaros valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Paslaugų vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Patentologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Paveldas: nuo globalumo iki vietos kultūros",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 6
+  },
+  {
+    "reviews": [],
+    "name": "Paviršiaus chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Paviršiaus nanochemija ir struktūrinės analizės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Paviršių modifikavimas polimerinėmis nanostruktūromis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Pažinimas ir kultūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pažinimas, mąstymas ir kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Pedologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Personalo vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Pietų Azijos mitologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pietų Azijos performatyvios tradicijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pigmentai ir dažikliai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Pinigai ir kreditas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Pinigų politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Plastikai ir kompozitai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Platonas ir Aristotelis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pokyčių ir inovacijų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Pokyčių vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Pokyčių valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Policijos veikla",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Polimerai restauravimo technologijose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Polimerinės dangos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Polimerizacijos reakcijų mechanizmai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Polimerų perdirbimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Polimerų tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Polimerų tirpalai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Politikos psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Politikos sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Politikos sociologijos problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Politinė filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Politinė geografija ir valstybės valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Politinių idėjų genealogija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Politologijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Postmodernioji kritinė filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Postmoderniosios socialinės teorijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Postmodernus socialinis diskursas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Poveikis aplinkai ir monitoringas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Pozityvioji psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pozityvioji psichologija: teorija ir praktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Pozityvistinė filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Požeminio vandens masės transporto modeliavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Požeminio vandens tiekimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Prancūzų kalbos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Prekybos ir paslaugų rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Prekybos ir paslaugų verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Prekių identifikavimas ir asortimento valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Prievarta ir religija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Priklausomybių psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Profesinė etika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 7
+  },
+  {
+    "reviews": [],
+    "name": "Profesionaliosios anglų kalbos kriminologijos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Programinė įranga III",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Projektų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Psichiatrijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichikos sveikatos politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichinės ir fizinės sveikatos vienovė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 10
+  },
+  {
+    "reviews": [],
+    "name": "Psichoaktyviosios medžiagos: poveikis, priklausomybė ir prevencija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 10
+  },
+  {
+    "reviews": [],
+    "name": "Psichofarmakologijos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichofiziologijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichologija teisės taikymo praktikoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichologijos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichologijos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichologinis konsultavimas mokykloje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichologinis konsultavimas somatinėje klinikoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichopatologija teisės taikymo praktikoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichoterapija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Psichotraumatologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "R programavimo kalbos taikymas aplinkos tyrimuose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Racionalaus pasirinkimo sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Raidos psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Regioninė ekonomika ir politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Regionų plėtros analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Reklamos psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Reklamos verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Religija ir menas: sekuliarizacijos perspektyva",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Religijos fenomenologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Religijos filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Religijų istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Religijų sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Rentgeno spindulių difrakcinė analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Restauravimo metodų parinkimo ir suderinimo su kultūros vertybių technologijomis pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Retorika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rinkodara sektoriuose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rinkodaros specifika skirtinguose sektoriuose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rinkodaros tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rinkodaros tyrimų pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rinkodaros valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rinkodaros valdymo principai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rinkos ir viešosios nuomonės tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Rinktiniai mikroekonomikos skyriai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ryšiai su visuomene",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rytų Azijos budizmas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Rytų Azijos politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Rytų filosofija ir etika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Rizikos valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Rural Geography",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rusų kalbos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sanskrito skaitiniai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Santykių su klientais valdymo sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Savaiminių organizacijos principų taikymas nanostruktūrintų medžiagų sintezėje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Savivaldos teorija ir istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Sedimentacinių baseinų analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sedimentologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Senėjimo sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Senoji graikų kalba. Tekstai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sintetinė biologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sistemų biologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Skaitymo ir rašymo raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Skaitmeninė kultūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 8
+  },
+  {
+    "reviews": [],
+    "name": "Skaitmeninė rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Skirtingų veiklos rūšių apskaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Skysčių chromatografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė antreprenerystė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 13
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė antropologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė ekologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė ekonomika ir NVO",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė ir sveikatos apsauga",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė organizacijos aplinka",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė pedagogika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė psichiatrija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinė šeimos antropologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės antropologijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės apsaugos ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės apsaugos ir darbo teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės apsaugos teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės inovacijos ir verslumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės korupcijos problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės pagalbos istorinė raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės paslaugos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės politikos kaitos veiksniai ir procesai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės problemos ir iššūkiai Vidurio Azijoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinės psichologijos taikymas kriminologijoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialiniai projektai ir programos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinio darbo istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinio darbo įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socialinių tinklų analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Socioekonominė statistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sociokultūrinis identitetas ir atskirtis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sociolingvistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sociolingvistikos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sociologijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sociologiniai TV monitoringo aspektai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sorbentų chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Spaudos publikacijų turinio analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Specialieji inžineriniai geologiniai tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Specialios paskirties žemėlapiai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Specializuota meteorologinė informacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Specifiniai rinkodaros klausimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Spektrinės elipsometrijos sustiprintos paviršiaus plazmonų rezonansu taikymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Spektroskopiniai analizės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sporto psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sprendimo priėmimo psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Statistinė tyrimo duomenų analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Statistinė tyrimo duomenų analizė SPSS pagrindu",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Statistinės informacijos šaltiniai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Stereoselektyvios reakcijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Strateginė rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Strateginės informacinės sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Strateginis finansų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Strateginis planavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Strateginis prekės ženklo valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Strateginis valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Struktūrinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Suaugusiųjų ugdymas ir saviugda",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Subkultūrų sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Subkultūrų studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Supramolekulių chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sveikatos psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Sveikatos sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šeimos ir lyčių lygybės politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šeimos psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šeimos psichologinis konsultavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šeimos teorijos ir tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šešėlinio švietimo problemų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinė analitinė kalbos filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinė italų filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinė lyginamoji istorinė sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinė psichoterapija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinė sąmonės filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinė statistinė analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinės fenomenologijos tyrimų kryptys",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinės karjeros vystymo koncepcijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinės Lietuvos socialinė kaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinės meno filosofijos problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinės socialinių mokslų metodologinės problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikinės vaizduotės teorijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Šiuolaikiniai psichologinių tyrimų ir statistinės analizės metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Švietimo ekonomika ir finansai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Švietimo politika ir vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Švietimo sociologija ir politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Taikomoji elektrochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Taikomoji kognityvioji psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Taikomoji petrologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Taikomoji socialinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Taikomoji vadybos informatika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Taikomosios programos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tapatumo sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Tarpkultūrinė lyginamoji vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarpkultūrinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Tarpkultūrinė vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarpkultūrinės vadybos principai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarpkultūrinis ugdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė bankininkystė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė elektroninė komercija ir elektroninė rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė lyginamoji apskaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė logistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 11
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė prekyba paslaugomis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė prekybos politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė rinkodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinė viešoji teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautiniai apskaitos standartai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinis projektų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinis reklamos verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinis verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinis žmogiškųjų išteklių valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinių finansų pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tarptautinių projektų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Technogeninė geochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Teisės filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Teisės pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Teisės psichologijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Teminė kartografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Teorinė elektrochemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Termodinamikos rinktiniai skyriai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tibetologijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Tikimybinis rizikos vertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Tiurkų tautos Lietuvoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Tomo Akviniečio filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Turizmo įmonės vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Turizmo verslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Turkų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Turto ekonomika ir vertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Turto ir civilinės atsakomybės draudimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ugdymo kokybės vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ugdymo turinio vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Ūkinė baudžiamoji teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Ūkio statistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Uolienų mechanika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Urban Geography",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Urbanizuotų teritorijų inžinerinė geologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Urbanizuotų teritorijų klimatas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Urboekologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Užsienio kalba (anglų)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Užsienio kalba (lietuvių)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Užsienio kalba (prancūzų)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Užsienio kalba (prancūzų)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Užsienio kalba (rusų)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Užsienio kalba (vokiečių)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Užsienio šalių socialinė apsauga",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vadybos informacinės sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Vaikystės skaitmeninio ugdymo technologijos (STEAM, robotika)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vaiko gerovė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vaiko psichologinis įvertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vaikų  ir paauglių psichologinis konsultavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vaikų ir paauglių psichiatrija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vaikų psichologinis konsultavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vaistų kūrimo principai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Valdymo apskaita",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Valdymo apskaitos teorija ir praktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Valstybės ekonominė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Valstybės teisės pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Valstybinis ekonominės veiklos reguliavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Valstybinių įmonių administravimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Vandentvarka",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vartotojų elgsena",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Vartotojų elgsena",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Verslas ES šalyse",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslas kylančiose ekonomikose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo analitika ir sprendimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo apskaitos standartai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo derybų strategijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo diagnostika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo etika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo integraciniai procesai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo komunikacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo kūrimas ir valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo logistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo modeliai ir tinklaveika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo paslaugos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo planas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo procesų modeliavimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo projektai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Verslo rizikos valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo strategijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo strategijų vertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo taikomųjų programų kūrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo tęstinumo valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslo vertinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Verslumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 13
+  },
+  {
+    "reviews": [],
+    "name": "Verstinė arabų literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vertybinių popierių kainodara",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Vidaus auditas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Viešasis administravimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Viešieji finansai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Viešojo komunikavimo įgūdžiai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 8
+  },
+  {
+    "reviews": [],
+    "name": "Viešojo sektoriaus auditas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Viešojo sektoriaus ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Viešojo sektoriaus ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Viešojo sektoriaus finansai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Viešosios ekonomikos institucinė aplinka",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Viešųjų pirkimų teisė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Viešųjų pirkimų valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Vietos savivaldos socialinė politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Viktimologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Visuotinės kokybės vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Vizualumas šiuolaikiniame ugdyme",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Vokiečių kalbos didaktika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Water Management",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Žemėlapių naršyklės ir elektroninės paslaugos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Žemėtvarka",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Žinių ekonomika ir vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žinių ir inovacijų ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žinių ir inovacijų vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus evoliucinė psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus socialinė raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žmogiškųjų išteklių valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žmogiškųjų išteklių valdymas tarptautinėse organizacijose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žmogus, buitis ir chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "WAIS-III/WASI",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "WISC-III/WASI",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Wittgensteinas ir tikėjimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "XX a. egzistencinė etika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žiniasklaidos ir interneto psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žiniasklaidos vidinės ideologijos tyrimai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žinojimo sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus neuropsichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus socialinė raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus teisės",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus teisės ir negalia",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus teisės ir socialinis darbas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  }
 ]

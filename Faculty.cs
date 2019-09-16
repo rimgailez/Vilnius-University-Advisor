@@ -9,14 +9,19 @@ namespace Vilnius_University_Advisor
     public enum Faculty
     {
         None = -1,
-        Chemistry,
-        Economics,
-        Philology,
-        Philosophy,
-        Physics,
-        Medicine,
-        Communications,
-        Mathematics,
-        Business
+        Chemijos_ir_geomokslų,
+        Ekonomikos_ir_verslo_administravimo,
+        Filologijos,
+        Filosofijos,
+        Fizikos,
+        Gyvybės_mokslų,
+        Istorijos,
+        Kauno,
+        Komunikacijos,
+        Matematikos_ir_informatikos,
+        Medicinos,
+        Tarptautinių_santykių_ir_politikos_mokslų,
+        Teisės,
+        Verslo
     }
 }

@@ -41,10 +41,12 @@ namespace Vilnius_University_Advisor
         }
         public static List<Lecturer> getLecturers()
         {
-            return lecturers;
+            lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
+           return lecturers;
         }
         public static List<Subject> getSubjects()
         {
+            subjects = subjects.OrderBy(subject => subject.name).ToList();
             return subjects;
         }
     }

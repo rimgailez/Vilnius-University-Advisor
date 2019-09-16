@@ -17,18 +17,6 @@ namespace Vilnius_University_Advisor
             InitializeComponent();
         }
 
-        private void ListAll_Click(object sender, EventArgs e)
-        {
-            //get or refresh data
-            ListLectTable.DataSource = null;
-            ListLectTable.DataSource = Program.getLecturers();
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = Program.getSubjects();
-            //display correct panel
-            Menu.Hide();
-            ListAllPanel.Show();
-        }
-
         private void LecReg_Click(object sender, EventArgs e)
         {
             Menu.Hide();
@@ -100,8 +88,38 @@ namespace Vilnius_University_Advisor
 
         private void ListBack_Click(object sender, EventArgs e)
         {
-            ListAllPanel.Hide();
+            AllLecturers.Hide();
             Menu.Show();
+        }
+
+        private void FacultySelectSubj_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FacultyLabelLect_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListSubj_Click(object sender, EventArgs e)
+        {
+            //get or refresh data
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = Program.getSubjects();
+            //display correct panel
+            Menu.Hide();
+            AllSubjects.Show();
+        }
+
+        private void ListLect_Click(object sender, EventArgs e)
+        {
+            //get or refresh data
+            ListLectTable.DataSource = null;
+            ListLectTable.DataSource = Program.getLecturers();
+            //display correct panel
+            Menu.Hide();
+            AllLecturers.Show();
         }
     }
 }
