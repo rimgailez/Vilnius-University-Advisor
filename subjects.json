@@ -5783,87 +5783,17 @@
   },
   {
     "reviews": [],
-    "name": "Water Management",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 0
-  },
-  {
-    "reviews": [],
-    "name": "Žemėlapių naršyklės ir elektroninės paslaugos",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 0
-  },
-  {
-    "reviews": [],
-    "name": "Žemėtvarka",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 0
-  },
-  {
-    "reviews": [],
-    "name": "Žinių ekonomika ir vadyba",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 1
-  },
-  {
-    "reviews": [],
-    "name": "Žinių ir inovacijų ekonomika",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 1
-  },
-  {
-    "reviews": [],
-    "name": "Žinių ir inovacijų vadyba",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 1
-  },
-  {
-    "reviews": [],
-    "name": "Žmogaus evoliucinė psichologija",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 3
-  },
-  {
-    "reviews": [],
-    "name": "Žmogaus socialinė raida",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 1
-  },
-  {
-    "reviews": [],
-    "name": "Žmogiškųjų išteklių valdymas",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 1
-  },
-  {
-    "reviews": [],
-    "name": "Žmogiškųjų išteklių valdymas tarptautinėse organizacijose",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 1
-  },
-  {
-    "reviews": [],
-    "name": "Žmogus, buitis ir chemija",
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "faculty": 0
-  },
-  {
-    "reviews": [],
     "name": "WAIS-III/WASI",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Water Management",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
   },
   {
     "reviews": [],
@@ -5888,6 +5818,20 @@
   },
   {
     "reviews": [],
+    "name": "Žemėlapių naršyklės ir elektroninės paslaugos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Žemėtvarka",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
+  },
+  {
+    "reviews": [],
     "name": "Žiniasklaidos ir interneto psichologija",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -5902,7 +5846,35 @@
   },
   {
     "reviews": [],
+    "name": "Žinių ekonomika ir vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žinių ir inovacijų ekonomika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žinių ir inovacijų vadyba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
     "name": "Žinojimo sociologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus evoliucinė psichologija",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
@@ -5913,6 +5885,13 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogaus socialinė raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
   },
   {
     "reviews": [],
@@ -5941,5 +5920,26 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Žmogiškųjų išteklių valdymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žmogiškųjų išteklių valdymas tarptautinėse organizacijose",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Žmogus, buitis ir chemija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 0
   }
 ]
