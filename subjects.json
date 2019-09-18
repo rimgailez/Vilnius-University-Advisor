@@ -1,6 +1,13 @@
 [
   {
     "reviews": [],
+    "name": "„Kitas“ lietuvių literatūroje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Aeracijos zonos tyrimų metodai",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -22,6 +29,27 @@
   },
   {
     "reviews": [],
+    "name": "Airijos studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Airių literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Airių studijos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Akademinė ir mokslinė anglų kalba",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -29,10 +57,66 @@
   },
   {
     "reviews": [],
+    "name": "Akademinis rašymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Akademinis raštingumas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Aktualieji lietuvių literatūros aspektai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Aktualioji sakinio skaida ir vertimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Aktualios profesinės etikos problemos",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Alternatyvūs užsienio kalbų mokymo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Amerikiečių apsakymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Amerikiečių kelionių literatūra (anglų k.)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Amerikiečių literatūra (poezija)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -50,6 +134,13 @@
   },
   {
     "reviews": [],
+    "name": "Anglų kalba pasaulyje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Anglų kalba pradedantiesiems",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -57,10 +148,157 @@
   },
   {
     "reviews": [],
+    "name": "Anglų kalbos akcentai ir dialektai Didžiojoje Britanijoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Anglų kalbos didaktika",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbos evidencialumo raiška",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbos gebėjimų vertinimas ir tikrinimas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbos stilistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras (Poezijos kalba: stilistiniai bruožai ir formalistinė prieiga)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras: frazeologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras: kalba ir filosofija: metodologinės prieigos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras: kognityvinės lingvistikos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras: politikos anglų kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras: sociolingvistikos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras: šiuolaikiniai kalbos tyrimo metodai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų kalbotyros seminaras: tekstynų lingvistikos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų literatūros seminaras (grožiniai tekstai, teoriniai modeliai, meninė kalba)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų literatūros seminaras (XX amžiaus poezija)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų literatūros seminaras: amerikiečių apsakymas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų literatūros seminaras: anglų moterų literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų literatūros seminaras: beprotybės tema literatūroje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų literatūros seminaras: gotikinė ir siaubo literatūra ir kinas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų literatūros seminaras: XX a. anglų apsakymo raida",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Anglų moterų literatūra (XIX a.)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -78,10 +316,87 @@
   },
   {
     "reviews": [],
+    "name": "Antikinė biografija ir hagiografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikinė istoriografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Antikinė literatūra",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Antikinė literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikinių ir krikščioniškųjų šaltinių sankirtos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikos filosofija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikos kultūra ir menas: Graikija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikos kultūra ir menas: Roma",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikos metamorfozės šiuolaikinėje literatūroje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikos mokslas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antikos politinė mintis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Antroji kalba ir kultūra (švedų) I/III d.",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -110,6 +425,13 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Antroponimika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -274,6 +596,13 @@
   },
   {
     "reviews": [],
+    "name": "Augusto Strindbergo dramaturgija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Aukštasis mokslas ir studijos",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -292,6 +621,27 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Austrų literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Autobiografinė literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Autoriaus pozicija ir modalumas kontrastyvinėjė perspektyvoje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -337,6 +687,13 @@
   },
   {
     "reviews": [],
+    "name": "Baltijos regiono šalių kultūriniai ryšiai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Baltijos šalių geotechnika",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -348,6 +705,27 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Baltų kalbotyros istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Baltų kalbų istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Baltų kalbų lyginamoji gramatika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -365,6 +743,13 @@
   },
   {
     "reviews": [],
+    "name": "Baudžiamojo proceso teisės kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Baudžiamosios atsakomybės realizavimo problemos",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -379,10 +764,31 @@
   },
   {
     "reviews": [],
+    "name": "Belgijos Karalystės šalityra ir literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Bendravimo psichologija",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Bendravimo psichologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Bendrinė lietuvių kalba: nuostatos ir vartosena",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -421,7 +827,28 @@
   },
   {
     "reviews": [],
+    "name": "Beprotybės tema literatūroje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Biblija ir literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Biblija Vakarų pasaulio literatūroje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Biblijos ir Antikos paveldas literatūroje",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 2
@@ -512,6 +939,13 @@
   },
   {
     "reviews": [],
+    "name": "Britų Fantasy literatūra vaikams ir paaugliams (anglų k.)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Centrinė bankininkystė",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -589,6 +1023,20 @@
   },
   {
     "reviews": [],
+    "name": "Dalykinė italų kalba (ekonomikos ir teisės diskursas)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinė italų kalba (politikos diskursas ir žiniasklaida)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Dalykinė komunikacija",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -621,6 +1069,20 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinės kalbos teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Dalykinės kalbos teorijos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -691,6 +1153,34 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "Didžiosios Britanijos ir JAV kultūros istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Didžiosios Britanijos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Diskurso analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Diskurso analizės įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -785,6 +1275,13 @@
   },
   {
     "reviews": [],
+    "name": "Edos poezija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Edukacinė psichologija",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -796,6 +1293,13 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Egzodo literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -904,6 +1408,13 @@
   },
   {
     "reviews": [],
+    "name": "Eksperimentinė literatūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Eksporto valdymas",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -995,6 +1506,13 @@
   },
   {
     "reviews": [],
+    "name": "Epistolika ir epistolografija antikinėje ir LDK literatūroje",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Erdvinių duomenų sistemų taikomasis programavimas",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -1020,6 +1538,27 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 1
+  },
+  {
+    "reviews": [],
+    "name": "ES institucijos ir viešoji politika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "ES institucijos ir viešoji politika II",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "ES išoriniai santykiai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -1100,10 +1639,24 @@
   },
   {
     "reviews": [],
+    "name": "Etimologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Etninių santykių sociologija",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Etnolingvistika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -1118,6 +1671,13 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Europeizacija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -1142,6 +1702,20 @@
   },
   {
     "reviews": [],
+    "name": "Europos idėjos istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Europos integracijos politinė ekonomija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Europos istorija: epochos ir regionai",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -1153,6 +1727,13 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Europos partinės sistemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -1212,6 +1793,20 @@
   },
   {
     "reviews": [],
+    "name": "Fenomenologijos pagrindai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Filologinė teksto analizė",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Filosofija",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -1251,6 +1846,13 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Filosofinė vokiečių kalba",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -1387,6 +1989,41 @@
   },
   {
     "reviews": [],
+    "name": "Folkloro sąjūdis Baltijos šalyse: sakytinė istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Fonologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Fotografija ir jos kontekstai",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Frankofonijos šalių kultūros istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Frazeologija ir frazeografija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": -1
+  },
+  {
+    "reviews": [],
     "name": "Funkcinių grupių blokavimo metodai",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -1461,6 +2098,20 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "German for Beginners I/II p.",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Germanų mitologija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -1583,10 +2234,115 @@
   },
   {
     "reviews": [],
+    "name": "Gogolis ir rusų romantizmas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Gotikinė ir siaubo literatūra ir kinas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikijos ir Romos istorija I/II d.",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikijos ir Romos istorija II/II d.",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikijos kultūra ir menas I: Antikinė Graikija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikijos kultūra ir menas II: Bizantija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikijos politinė istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikų archaika ir klasika: pamatinės problemos",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikų autoriai: kalba, stilius, vertimo problemos I/III d.",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Graikų kalba. Tekstai",
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 3
+  },
+  {
+    "reviews": [],
+    "name": "Graikų lyrika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Graikų literatūros istorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Gramatikos teorija",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Gretinamoji slavų kalbų gramatika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Gretinamosios gramatikos įvadas",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "Grožinio teksto analizė (lenkų literatūros pagrindu)",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
@@ -1625,6 +2381,20 @@
   },
   {
     "reviews": [],
+    "name": "H. C. Andersenas ir skandinavų pasakos pasaulis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
+    "name": "H. Ibseno dramų pasaulis",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Habermas - Rorty kontroversija",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -1646,6 +2416,13 @@
   },
   {
     "reviews": [],
+    "name": "Hermeneutika",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
+  },
+  {
+    "reviews": [],
     "name": "Hermeneutinė kultūros analizė",
     "score": 0.0,
     "numberOfReviews": 0,
@@ -1664,6 +2441,13 @@
     "score": 0.0,
     "numberOfReviews": 0,
     "faculty": 0
+  },
+  {
+    "reviews": [],
+    "name": "Hetitų kalba ir kultūra",
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "faculty": 2
   },
   {
     "reviews": [],
