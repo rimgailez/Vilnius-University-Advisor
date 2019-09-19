@@ -19,15 +19,14 @@ namespace Vilnius_University_Advisor
 
         private void LecReg_Click(object sender, EventArgs e)
         {
-            Menu.Hide();
+            MainMenu.Hide();
             LecturerPanel.Show();
         }
 
         private void SaveNextLecReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
-            Lecturer lecturer = new Lecturer(NameTextBoxLect.Text, faculty);
-            Program.AddLecturer(lecturer);
+            DataMaster.AddLecturer(NameTextBoxLect.Text, faculty);
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
         }
@@ -35,12 +34,11 @@ namespace Vilnius_University_Advisor
         private void SaveBackLecReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
-            Lecturer lecturer = new Lecturer(NameTextBoxLect.Text, faculty);
-            Program.AddLecturer(lecturer);
+            DataMaster.AddLecturer(NameTextBoxLect.Text, faculty);
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
             LecturerPanel.Hide();
-            Menu.Show();
+            MainMenu.Show();
 
         }
 
@@ -49,33 +47,33 @@ namespace Vilnius_University_Advisor
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
             LecturerPanel.Hide();
-            Menu.Show();
+            MainMenu.Show();
         }
 
         private void SaveNextSubjReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
-            Subject subject = new Subject(NameTextBoxSubj.Text, faculty);
-            Program.AddSubject(subject);
+            DataMaster.AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
+            IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
         }
 
         private void SubjReg_Click(object sender, EventArgs e)
         {
-            Menu.Hide();
+            MainMenu.Hide();
             SubjectPanel.Show();
         }
 
         private void SaveBackSubjReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
-            Subject subject = new Subject(NameTextBoxSubj.Text, faculty);
-            Program.AddSubject(subject);
+            DataMaster.AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
+            IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
             SubjectPanel.Hide();
-            Menu.Show();
+            MainMenu.Show();
         }
 
         private void BackSubjReg_Click(object sender, EventArgs e)
@@ -83,32 +81,26 @@ namespace Vilnius_University_Advisor
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
             SubjectPanel.Hide();
-            Menu.Show();
+            MainMenu.Show();
         }
 
-        private void ListBack_Click(object sender, EventArgs e)
+        private void ListLectBack_Click(object sender, EventArgs e)
         {
             AllLecturers.Hide();
-            Menu.Show();
-        }
-
-        private void FacultySelectSubj_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FacultyLabelLect_Click(object sender, EventArgs e)
-        {
-
+            MainMenu.Show();
         }
 
         private void ListSubj_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = Program.getSubjects();
+            ListSubjTable.DataSource = DataMaster.getSubjects();
+            ListSubjTable.Columns[0].Width = 400;
+            ListSubjTable.Columns[1].Width = 200;
+            ListSubjTable.Columns[2].Width = 40;
+            ListSubjTable.Columns[3].Width = 80;
             //display correct panel
-            Menu.Hide();
+            MainMenu.Hide();
             AllSubjects.Show();
         }
 
@@ -116,10 +108,20 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = Program.getLecturers();
+            ListLectTable.DataSource = DataMaster.getLecturers();
+            ListLectTable.Columns[0].Width = 400;
+            ListLectTable.Columns[1].Width = 200;
+            ListLectTable.Columns[2].Width = 40;
+            ListLectTable.Columns[3].Width = 80;
             //display correct panel
-            Menu.Hide();
+            MainMenu.Hide();
             AllLecturers.Show();
+        }
+
+        private void ListSubjBack_Click(object sender, EventArgs e)
+        {
+            AllSubjects.Hide();
+            MainMenu.Show();
         }
     }
 }
