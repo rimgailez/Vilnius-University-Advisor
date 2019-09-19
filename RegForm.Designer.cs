@@ -426,7 +426,7 @@
             this.Controls.Add(this.AllSubjects);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegForm";
-            this.Text = "Vilnius_University_Advisor";
+            this.Text = "VU_Advisor";
             this.Menu.ResumeLayout(false);
             this.LecturerPanel.ResumeLayout(false);
             this.LecturerPanel.PerformLayout();
