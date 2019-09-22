@@ -39,9 +39,58 @@ namespace Vilnius_University_Advisor
         {
             return lecturers;
         }
-        public static List<Subject> getSubjects()
+        
+        public static List<Subject> getSubjectsByType(bool IsOptional)
         {
-            return subjects;
+            List<Subject> someSubjects = new List<Subject>();
+            foreach (Subject aSubject in subjects)
+            {
+                if ((aSubject.IsOptional).Equals(IsOptional))
+                {
+                    someSubjects.Add(aSubject);
+                }
+            }
+            return someSubjects;
         }
+
+        public static List<Subject> getBUSSubjects()
+        {
+            List<Subject> BUSSubjects = new List<Subject>();
+            foreach (Subject aSubject in subjects)
+            {
+                if ((aSubject.IsBUS).Equals(true))
+                {
+                    BUSSubjects.Add(aSubject);
+                }
+            }
+            return BUSSubjects;
+        }
+
+        public static List<Subject> getSubjectsByTypeAndFaculty(bool IsOptional, Faculty faculty)
+        {
+            List<Subject> someSubjects = new List<Subject>();
+            foreach (Subject aSubject in subjects)
+            {
+                if ((aSubject.IsOptional).Equals(IsOptional)&&(aSubject.faculty).Equals(faculty))
+                {
+                    someSubjects.Add(aSubject);
+                }
+            }
+            return someSubjects;
+        }
+
+        public static List<Lecturer> getLecturersByFaculty(Faculty faculty)
+        {
+            List<Lecturer> someLecturers = new List<Lecturer>();
+            foreach (Lecturer aLecturer in lecturers)
+            {
+                if ((aLecturer.faculty).Equals(faculty))
+                {
+                    someLecturers.Add(aLecturer);
+                }
+            }
+            return someLecturers;
+        }
+
     }
 }
