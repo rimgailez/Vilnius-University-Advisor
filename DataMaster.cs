@@ -13,7 +13,7 @@ namespace Vilnius_University_Advisor
         static List<Lecturer> lecturers = new List<Lecturer>();
         static List<Subject> subjects = new List<Subject>();
         //get project directory
-        static string projectPath = Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName;
+        public static string projectPath = Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName;
         public static void ReadFromJson()
         {
             string lecturerInput = File.ReadAllText(projectPath + "/lecturers.json");
@@ -21,19 +21,53 @@ namespace Vilnius_University_Advisor
             string subjectInput = File.ReadAllText(projectPath + "/subjects.json");
             subjects = JsonConvert.DeserializeObject<List<Subject>>(subjectInput);
         }
+        public static void WriteToJson()
+        {
+            lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
+            string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
+            File.WriteAllText(projectPath + "/lecturers.json", output);
+            subjects = subjects.OrderBy(subject => subject.name).ToList();
+            output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
+            File.WriteAllText(projectPath + "/subjects.json", output);
+
+        }
         public static void AddLecturer(string name, Faculty faculty)
         {
-            lecturers.Add(new Lecturer(name, faculty));
+            AddLecturer(new Lecturer(name, faculty));
+        }
+        public static void AddLecturer(Lecturer lecturerNew)
+        {
+            AddLecturerWithoutWriting(lecturerNew);
             lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
             string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
             File.WriteAllText(projectPath + "/lecturers.json", output);
         }
+        public static void AddLecturerWithoutWriting(Lecturer lecturer)
+        {
+            foreach (Lecturer lecturerCheck in lecturers)
+            {
+                if (lecturerCheck.Equals(lecturer)) return;
+            }
+            lecturers.Add(lecturer);
+        }
         public static void AddSubject(string name, Faculty faculty, bool IsOptional, bool IsBUS)
         {
-            subjects.Add(new Subject(name, faculty, IsOptional, IsBUS));
+            AddSubject(new Subject(name, faculty, IsOptional, IsBUS));
+        }
+        public static void AddSubject(Subject subjectNew)
+        {
+            AddSubjectWithoutWriting(subjectNew);
             subjects = subjects.OrderBy(subject => subject.name).ToList();
             string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
             File.WriteAllText(projectPath + "/subjects.json", output);
+        }
+        public static void AddSubjectWithoutWriting(Subject subject)
+        {
+            foreach (Subject subjectCheck in subjects)
+            {
+                if (subjectCheck.Equals(subject)) return;
+            }
+            subjects.Add(subject);
         }
         public static List<Lecturer> getLecturers()
         {

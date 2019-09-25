@@ -696,5 +696,28 @@ namespace Vilnius_University_Advisor
             LecturersByFaculty.Hide();
             AllLecturers.Show();
         }
+
+        private void RunScraper_Click(object sender, EventArgs e)
+        {
+            MainMenu.Hide();
+            ScraperPanel.Show();
+            (new Scraper.ScraperMain(DataMaster.projectPath, this)).StartScrap();
+            ScraperBack.Show();
+
+        }
+        public void updateScraperTextbox(string text)
+        {
+            ScraperLog.Text += text + System.Environment.NewLine;
+            ScraperLog.SelectionStart = ScraperLog.Text.Length;
+            ScraperLog.ScrollToCaret();
+        }
+
+        private void ScraperBack_Click(object sender, EventArgs e)
+        {
+            ScraperPanel.Hide();
+            MainMenu.Show();
+            ScraperBack.Hide();
+            ScraperLog.Text = "";
+        }
     }
 }

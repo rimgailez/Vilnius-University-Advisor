@@ -1,41 +1,6 @@
 [
   {
     "reviews": [],
-    "name": "",
-    "faculty": -1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "",
-    "faculty": -1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "Abramavičius Darius",
     "faculty": 4,
     "score": 0.0,
@@ -85,6 +50,27 @@
   },
   {
     "reviews": [],
+    "name": "Agnė Jasinavičiūtė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Agnė Juškevičienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Agnė Kalnaitytė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Agnė Laužadytė-Tutlienė",
     "faculty": 1,
     "score": 0.0,
@@ -101,6 +87,13 @@
     "reviews": [],
     "name": "Agnė Petrauskaitė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Agnė Žilinskaitė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -141,6 +134,20 @@
   },
   {
     "reviews": [],
+    "name": "Aida Šimelionienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aidas Alaburda",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Aidas Balčiūnas",
     "faculty": 9,
     "score": 0.0,
@@ -149,6 +156,13 @@
   {
     "reviews": [],
     "name": "Aidas Kęstutis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aidas Matijošius",
     "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
@@ -176,6 +190,13 @@
   },
   {
     "reviews": [],
+    "name": "Aistė Elijio",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Aistė Kučinskienė",
     "faculty": 2,
     "score": 0.0,
@@ -185,6 +206,13 @@
     "reviews": [],
     "name": "Aistis Raudys",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aivaras Čechamiras",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -206,6 +234,27 @@
     "reviews": [],
     "name": "Aivaras Žukauskas",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aksel Holvoet",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Akvilė Rykovė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Akvilė Zabiliūtė-Karaliūnė",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -239,6 +288,13 @@
   },
   {
     "reviews": [],
+    "name": "Albertas Šekštelo",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Albertas Šermokas",
     "faculty": 9,
     "score": 0.0,
@@ -267,8 +323,22 @@
   },
   {
     "reviews": [],
+    "name": "Albina Trečiokaitė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Albinas Bagdonas",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Albinas Bagdonas",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -295,7 +365,21 @@
   },
   {
     "reviews": [],
+    "name": "Aldona Beganskienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Aldona Radzevičienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aldona Šiurkutė",
     "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
@@ -344,7 +428,28 @@
   },
   {
     "reviews": [],
+    "name": "Aleksandras Konovalovas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aleksandras Voicikas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Aleksej Burov",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Alessandra Cali",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -367,6 +472,13 @@
     "reviews": [],
     "name": "Alfonso Rascon Caballero",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Alfreda Šapkauskienė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -414,6 +526,13 @@
   },
   {
     "reviews": [],
+    "name": "Algimantas Česnulevičius",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Algimantas Jankauskas",
     "faculty": 11,
     "score": 0.0,
@@ -442,6 +561,20 @@
   },
   {
     "reviews": [],
+    "name": "Algimantas Markauskas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Algimantas Šindeikis",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Algirdas Ambrazevičius",
     "faculty": 9,
     "score": 0.0,
@@ -463,6 +596,20 @@
   },
   {
     "reviews": [],
+    "name": "Algirdas Brukštus",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Algirdas Kaupinis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Algirdas Lančinskas",
     "faculty": 9,
     "score": 0.0,
@@ -477,8 +624,22 @@
   },
   {
     "reviews": [],
+    "name": "Algirdas Mikalkėnas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Algirdas Miškinis",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Algirdas Novičkovas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -519,6 +680,20 @@
   },
   {
     "reviews": [],
+    "name": "Alisa Gricajeva",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Alius Avčininkas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Alius Jaskelevičius",
     "faculty": 2,
     "score": 0.0,
@@ -526,7 +701,28 @@
   },
   {
     "reviews": [],
+    "name": "Alius Ulevičius",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Alma Braškytė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Alma Gedvilaitė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Almantas Liudas Samalavičius",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -561,6 +757,13 @@
   },
   {
     "reviews": [],
+    "name": "Alvydas Lisauskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Ana Jankūnienė",
     "faculty": 9,
     "score": 0.0,
@@ -570,6 +773,27 @@
     "reviews": [],
     "name": "Ana Jankūnienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ana Jankūnienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ana Marija Mackevič",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ana Usovaitė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -589,8 +813,29 @@
   },
   {
     "reviews": [],
+    "name": "Andrej Gavrilov",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrej Spiridonov",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Andrius Adamonis",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Balčiūnas",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -624,6 +869,20 @@
   },
   {
     "reviews": [],
+    "name": "Andrius Garbaras",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Gelžinis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Andrius Grevys",
     "faculty": 9,
     "score": 0.0,
@@ -633,6 +892,20 @@
     "reviews": [],
     "name": "Andrius Grigutis",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Gudauskas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Juodagalvis",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -652,8 +925,22 @@
   },
   {
     "reviews": [],
+    "name": "Andrius Laurikėnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Andrius Ledas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Melninkaitis",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -666,8 +953,43 @@
   },
   {
     "reviews": [],
+    "name": "Andrius Petrašiūnas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Poškus",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Andrius Šuminas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Vaišnys",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Valickas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Andrius Valickas",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -682,6 +1004,13 @@
     "reviews": [],
     "name": "Anita Juškevičienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Anita Juškevičienė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -703,6 +1032,13 @@
     "reviews": [],
     "name": "Anna Ruskan",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Antanas Čiuplys",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -778,6 +1114,20 @@
   },
   {
     "reviews": [],
+    "name": "Arnas Paliukėnas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Artūras Bautrėnas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Artūras Dubickas",
     "faculty": 9,
     "score": 0.0,
@@ -787,6 +1137,27 @@
     "reviews": [],
     "name": "Artūras Jankus",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Artūras Katelnikovas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Artūras Ketlerius",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Artūras Plukis",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -806,8 +1177,57 @@
   },
   {
     "reviews": [],
+    "name": "Artūras Žalga",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Barkus",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Barkus",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Baronas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Bukantis",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Arūnas Burinskas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Čiburys",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Germanavičius",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -822,6 +1242,27 @@
     "reviews": [],
     "name": "Arūnas Janeliūnas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Kleišmantas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Kučinskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Maršalka",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -855,6 +1296,27 @@
   },
   {
     "reviews": [],
+    "name": "Arūnas Šaltis",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Samas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arūnas Šuminas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Arūnas Sverdiolas",
     "faculty": 2,
     "score": 0.0,
@@ -862,8 +1324,8 @@
   },
   {
     "reviews": [],
-    "name": "Arūnas Šaltis",
-    "faculty": 9,
+    "name": "Arūnas Žiedelis",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -883,8 +1345,43 @@
   },
   {
     "reviews": [],
+    "name": "Arvydas Kregždė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arvydas Lubys",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arvydas Markuckas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arvydas Pacevičius",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Arvydas Paškevičius",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Arvydas Paškevičius",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -904,8 +1401,22 @@
   },
   {
     "reviews": [],
+    "name": "Asta Dervinytė - Bongarzoni",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Asta Fominienė",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Asta Križanauskienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -939,6 +1450,13 @@
   },
   {
     "reviews": [],
+    "name": "Asta Mikalauskienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Asta Mincevič",
     "faculty": 9,
     "score": 0.0,
@@ -960,6 +1478,13 @@
   },
   {
     "reviews": [],
+    "name": "Asta Stankūnaitė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Asta Statkevičienė",
     "faculty": 9,
     "score": 0.0,
@@ -969,6 +1494,13 @@
     "reviews": [],
     "name": "Asta Statkevičienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Asta Urbanavičiūtė-Globienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -988,8 +1520,43 @@
   },
   {
     "reviews": [],
+    "name": "Audinga Tikuišienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Audrius Beinorius",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Audrius Čečys",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Audrius Dabrovolskas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Audrius Dubietis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Audrius Gegeckas",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1037,6 +1604,13 @@
   },
   {
     "reviews": [],
+    "name": "Audrius Valotka",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Audronė Jakaitienė",
     "faculty": 9,
     "score": 0.0,
@@ -1053,6 +1627,13 @@
     "reviews": [],
     "name": "Audronė Lupeikienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Audronė Meldžiukienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1100,6 +1681,13 @@
   },
   {
     "reviews": [],
+    "name": "Aurelija Maknytė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Aurelija Ona Kaškelevičienė",
     "faculty": 2,
     "score": 0.0,
@@ -1116,6 +1704,13 @@
     "reviews": [],
     "name": "Aurelija Usonienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aurelijus Zimkus",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1142,6 +1737,13 @@
   },
   {
     "reviews": [],
+    "name": "Aušra Daugirdienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Aušra Gataveckaitė",
     "faculty": 2,
     "score": 0.0,
@@ -1151,6 +1753,13 @@
     "reviews": [],
     "name": "Aušra Janulienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aušra Navickienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1233,8 +1842,22 @@
   },
   {
     "reviews": [],
+    "name": "Aušrelė Pranculienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Aušrytė Rastenienė",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Aušvydas Vareikis",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1282,8 +1905,22 @@
   },
   {
     "reviews": [],
+    "name": "Benas Ulevičius",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Bernardas Čiapas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Birutė Autukevičienė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1303,6 +1940,20 @@
   },
   {
     "reviews": [],
+    "name": "Birutė Kapustinskaitė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Birutė Marytė Pociūtė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Birutė Meržvinskytė",
     "faculty": 2,
     "score": 0.0,
@@ -1312,6 +1963,13 @@
     "reviews": [],
     "name": "Birutė Ona Palovienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Birutė Ona Palovienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1401,6 +2059,13 @@
   },
   {
     "reviews": [],
+    "name": "Brigita Gelžinytė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Brigita Kazlauskaitė",
     "faculty": 9,
     "score": 0.0,
@@ -1408,15 +2073,22 @@
   },
   {
     "reviews": [],
-    "name": "Brigita Speičytė",
-    "faculty": 2,
+    "name": "Brigita Šidlauskaitė - Riazanova",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
-    "name": "Brigita Šidlauskaitė - Riazanova",
+    "name": "Brigita Šidlauskaitė-Riazanova",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Brigita Speičytė",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1457,13 +2129,6 @@
   },
   {
     "reviews": [],
-    "name": "Chordana Gonsales Krus",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "Čeponkus Justinas",
     "faculty": 4,
     "score": 0.0,
@@ -1473,6 +2138,27 @@
     "reviews": [],
     "name": "Česlovas Kalenda",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Česlovas Pavasaris",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Chordana Gonsales Krus",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Cristobal Domingo Jimenez Calvente",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1513,6 +2199,27 @@
   },
   {
     "reviews": [],
+    "name": "Dainius Michelevičius",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dainius Nemanis",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dainora Pociūtė - Abukevičienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Dainora Pociūtė-Abukevičienė",
     "faculty": 2,
     "score": 0.0,
@@ -1534,8 +2241,29 @@
   },
   {
     "reviews": [],
+    "name": "Daiva Dabkevičienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Daiva Janavičienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Daiva Janavičienė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Daiva Lialytė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1550,6 +2278,13 @@
     "reviews": [],
     "name": "Daiva Mickūnaitytė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Daiva Rakauskaitė",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1571,6 +2306,13 @@
     "reviews": [],
     "name": "Daiva Sinkevičiūtė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Daiva Siudikienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1674,6 +2416,13 @@
   },
   {
     "reviews": [],
+    "name": "Dalia Krikščiūnienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Dalia Mankauskienė",
     "faculty": 2,
     "score": 0.0,
@@ -1702,6 +2451,13 @@
   },
   {
     "reviews": [],
+    "name": "Dalia Pinkevičienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Dalia Švambarytė",
     "faculty": 3,
     "score": 0.0,
@@ -1718,6 +2474,13 @@
     "reviews": [],
     "name": "Dalius Serafinas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Danas Buožius",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1772,8 +2535,22 @@
   },
   {
     "reviews": [],
+    "name": "Daniel Bogdanovič",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Daniele Ettore Otera",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Danielis Rutkauskas",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1814,6 +2591,34 @@
   },
   {
     "reviews": [],
+    "name": "Danutė Labeikytė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Danutė Rasimavičienė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Darijus Veteikis",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Darius Abramavičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Darius Baronas",
     "faculty": 9,
     "score": 0.0,
@@ -1837,6 +2642,13 @@
     "reviews": [],
     "name": "Darius Plikynas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Darius Prapiestis",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1926,6 +2738,13 @@
   },
   {
     "reviews": [],
+    "name": "Deimantas Jastramskis",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Deimantas Valančiūnas",
     "faculty": 2,
     "score": 0.0,
@@ -1935,6 +2754,13 @@
     "reviews": [],
     "name": "Deimantas Valančiūnas",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Deimantė Šėporaitytė-Vismantė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1954,6 +2780,13 @@
   },
   {
     "reviews": [],
+    "name": "Deimantė Veličkienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Deividas Kriaučiūnas",
     "faculty": 11,
     "score": 0.0,
@@ -1968,8 +2801,22 @@
   },
   {
     "reviews": [],
+    "name": "Deividas Velkas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Deividas Zibalas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Deivydas Liučvaitis",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2003,7 +2850,21 @@
   },
   {
     "reviews": [],
+    "name": "Diana Mickevičienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Diana Plachovičiūtė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Diana Šileikaitė-Kaishauri",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -2024,15 +2885,22 @@
   },
   {
     "reviews": [],
-    "name": "Diana Šileikaitė-Kaishauri",
+    "name": "Diego Ardoino",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
-    "name": "Diego Ardoino",
-    "faculty": 2,
+    "name": "Dilek Yumru",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dinh Minh Anh Nguyen",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2047,6 +2915,13 @@
     "reviews": [],
     "name": "Domantas Judeikis",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Domas Paipulas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2094,6 +2969,27 @@
   },
   {
     "reviews": [],
+    "name": "Donatas Burneika",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Donatas Burneika",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Donatas Kaminskas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Donatas Kavaliauskas",
     "faculty": 9,
     "score": 0.0,
@@ -2108,8 +3004,57 @@
   },
   {
     "reviews": [],
+    "name": "Donatas Murauskas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Donatas Narbutis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Donatas Ovodas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Donatas Paulauskas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Donatas Pupienis",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Donatas Žvingila",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Donatas Žvingila",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Douglas Gilbert",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2143,6 +3088,13 @@
   },
   {
     "reviews": [],
+    "name": "Dovilė Krupickaitė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Dovilė Kuzminskaitė",
     "faculty": 2,
     "score": 0.0,
@@ -2157,8 +3109,29 @@
   },
   {
     "reviews": [],
+    "name": "Dovilė Šorytė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Dovilė Stumbrienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dovilė Valančienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Dovydas Banevičius",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2178,6 +3151,20 @@
   },
   {
     "reviews": [],
+    "name": "Dustan Moreira",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Džiugas Jablonskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Edita Kizinevič",
     "faculty": 9,
     "score": 0.0,
@@ -2192,8 +3179,22 @@
   },
   {
     "reviews": [],
+    "name": "Edita Sužiedėlienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Edmundas Gaigalas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Edmundas Kuokštis",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2206,8 +3207,36 @@
   },
   {
     "reviews": [],
+    "name": "Eduardas Budrys",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Eduardas Kutka",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Edvardas Kazakevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Edvardas Kubilius",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Edvinas Stonevičius",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2227,8 +3256,29 @@
   },
   {
     "reviews": [],
+    "name": "Egidijus Bukelskis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Egidijus Rimkus",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Eglė Daunienė",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Eglė Daunienė",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2297,6 +3347,13 @@
   },
   {
     "reviews": [],
+    "name": "Eglė Lastauskienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Eglė Mažulytė-Rašytinė",
     "faculty": 3,
     "score": 0.0,
@@ -2360,15 +3417,22 @@
   },
   {
     "reviews": [],
-    "name": "Eglė Zikarienė",
-    "faculty": 9,
+    "name": "Eglė Židonienė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
     "name": "Eglė Židonienė",
-    "faculty": 3,
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Eglė Zikarienė",
+    "faculty": 9,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2383,6 +3447,13 @@
     "reviews": [],
     "name": "Eglė Žurauskaitė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Eimantas Kamienas",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2423,6 +3494,13 @@
   },
   {
     "reviews": [],
+    "name": "Elmina Burneikienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Elvyra Kutanovienė",
     "faculty": 2,
     "score": 0.0,
@@ -2446,6 +3524,13 @@
     "reviews": [],
     "name": "Emil Jonas Slott",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Emilija Alma Sakadolskis",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2479,6 +3564,13 @@
   },
   {
     "reviews": [],
+    "name": "Erika Janiūnienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Erika Jasionytė-Mikučionienė",
     "faculty": 2,
     "score": 0.0,
@@ -2493,6 +3585,13 @@
   },
   {
     "reviews": [],
+    "name": "Erika Matulytė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Erika Ruschhoff",
     "faculty": 3,
     "score": 0.0,
@@ -2502,6 +3601,13 @@
     "reviews": [],
     "name": "Erika Ruschhoff",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Erika Sausverde",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2523,6 +3629,13 @@
     "reviews": [],
     "name": "Erikas Karikovas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Erikas Karikovas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2570,6 +3683,13 @@
   },
   {
     "reviews": [],
+    "name": "Eugenijus Butkus",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Eugenijus Dunajevas",
     "faculty": 3,
     "score": 0.0,
@@ -2579,6 +3699,13 @@
     "reviews": [],
     "name": "Eugenijus Dunajevas",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Eugenijus Gaubas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2586,6 +3713,13 @@
     "reviews": [],
     "name": "Eugenijus Manstavičius",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Eugenijus Šimoliūnas",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2605,8 +3739,29 @@
   },
   {
     "reviews": [],
+    "name": "Evaldas Pipinis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Evaldas Stankevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Evaldas Švageris",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Evaldas Švageris",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2633,8 +3788,29 @@
   },
   {
     "reviews": [],
+    "name": "Fabio Belafatti",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Fatima Eloeva",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Feliksas Kuliešius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Filomena Kavoliutė",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2661,6 +3837,13 @@
   },
   {
     "reviews": [],
+    "name": "Gabrielė Skabeikytė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Gabrielė Stupurienė",
     "faculty": 9,
     "score": 0.0,
@@ -2670,6 +3853,13 @@
     "reviews": [],
     "name": "Gailė Paukštaitė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gailė Paukštaitė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2689,6 +3879,13 @@
   },
   {
     "reviews": [],
+    "name": "Galina Miškinienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Gediminas Alzbutas",
     "faculty": 9,
     "score": 0.0,
@@ -2703,8 +3900,36 @@
   },
   {
     "reviews": [],
+    "name": "Gediminas Beresnevičius",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gediminas Juzeliūnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Gediminas Murauskas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gediminas Murauskas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gediminas Niaura",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2726,6 +3951,13 @@
     "reviews": [],
     "name": "Gediminas Stepanauskas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gediminas Stepanauskas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2801,6 +4033,13 @@
   },
   {
     "reviews": [],
+    "name": "Giedrė Beconytė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Giedrė Biržytė",
     "faculty": 11,
     "score": 0.0,
@@ -2815,8 +4054,29 @@
   },
   {
     "reviews": [],
+    "name": "Giedrė Godienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Giedrė Junčytė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Giedrė Lastauskienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Giedrė Plepytė-Davidavičienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2829,8 +4089,43 @@
   },
   {
     "reviews": [],
+    "name": "Giedrė Šulijienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Giedrė Šulijienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Giedrė Vaikutienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Giedrė Valiulienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Giedrius Alkauskas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Giedrius Alkauskas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2857,6 +4152,13 @@
   },
   {
     "reviews": [],
+    "name": "Giedrius Trakimas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Giedrius Zlatkus",
     "faculty": 9,
     "score": 0.0,
@@ -2873,6 +4175,13 @@
     "reviews": [],
     "name": "Gindrutė Kasnauskienė",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintaras Aleknonis",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2906,8 +4215,43 @@
   },
   {
     "reviews": [],
+    "name": "Gintaras Švedas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintaras Valiulis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintaras Valiuškevičius",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintaras Žaržojus",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Gintarė Bidlauskienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintarė Gulevičiūtė",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2922,6 +4266,13 @@
     "reviews": [],
     "name": "Gintarė Košubienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintarė Kurlavičiūtė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2955,8 +4306,29 @@
   },
   {
     "reviews": [],
+    "name": "Gintautas Bareikis",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Gintautas Dzemyda",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintautas Stankūnavičius",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gintautas Tamulaitis",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2983,8 +4355,8 @@
   },
   {
     "reviews": [],
-    "name": "Gytenis Lileika",
-    "faculty": 9,
+    "name": "Gitana Irnienė",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2999,6 +4371,27 @@
     "reviews": [],
     "name": "Gracija Pleikienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gracija Pleikienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gracija Pleikienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gražina Cislikauskienė",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3039,6 +4432,13 @@
   },
   {
     "reviews": [],
+    "name": "Gražvydas Jukna",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Greta Belogurova",
     "faculty": 2,
     "score": 0.0,
@@ -3054,6 +4454,13 @@
   {
     "reviews": [],
     "name": "Greta Keliuotytė-Staliulėnienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Greta Keliuotytė-Staniulėnienė",
     "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
@@ -3088,6 +4495,13 @@
   },
   {
     "reviews": [],
+    "name": "Grita Skujienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Gruodis Alytis",
     "faculty": 4,
     "score": 0.0,
@@ -3095,8 +4509,36 @@
   },
   {
     "reviews": [],
+    "name": "Guoda Litvaitienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Gustaw Ferdynand Juzala-Deprati",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gytautas Ignatavičius",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gytenis Lileika",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Gytis Sliaužys",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3124,6 +4566,13 @@
   {
     "reviews": [],
     "name": "Henry Diab",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Henry Philip Naser Diab",
     "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
@@ -3172,6 +4621,13 @@
   },
   {
     "reviews": [],
+    "name": "Ieva Kirilauskaitė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Ieva Kirilauskaitė\t",
     "faculty": 2,
     "score": 0.0,
@@ -3193,6 +4649,13 @@
   },
   {
     "reviews": [],
+    "name": "Ieva Motiejauskė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Ieva Nagytė",
     "faculty": 3,
     "score": 0.0,
@@ -3201,6 +4664,20 @@
   {
     "reviews": [],
     "name": "Ieva Petronytė-Urbonavičienė",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ieva Povilaitienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ieva Šližienė",
     "faculty": 11,
     "score": 0.0,
     "numberOfReviews": 0
@@ -3235,15 +4712,15 @@
   },
   {
     "reviews": [],
-    "name": "Ieva Šližienė",
-    "faculty": 11,
+    "name": "Ignas Zimaitis",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
     "name": "Ignas Zimaitis",
-    "faculty": 1,
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3305,6 +4782,20 @@
   },
   {
     "reviews": [],
+    "name": "Indrė Lapeikaitė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Indrė Lapeikaitė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Indrė Makauskaitė",
     "faculty": 2,
     "score": 0.0,
@@ -3326,6 +4817,13 @@
   },
   {
     "reviews": [],
+    "name": "Inga Baškirova",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Inga Blažienė",
     "faculty": 1,
     "score": 0.0,
@@ -3333,8 +4831,8 @@
   },
   {
     "reviews": [],
-    "name": "Inga Daraškienė",
-    "faculty": 2,
+    "name": "Inga Burneikienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3347,8 +4845,8 @@
   },
   {
     "reviews": [],
-    "name": "Inga Gaižauskaitė",
-    "faculty": 3,
+    "name": "Inga Daraškienė",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3363,6 +4861,20 @@
     "reviews": [],
     "name": "Inga Gaižauskaitė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Inga Gaižauskaitė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Inga Grigoravičiūtė-Puronienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3370,6 +4882,13 @@
     "reviews": [],
     "name": "Inga Hilbig",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Inga Petravičiūtė",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3424,6 +4943,27 @@
   },
   {
     "reviews": [],
+    "name": "Inga Žilinskienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ingrida Domarkienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ingrida Girnienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Ingrida Kisieliūtė",
     "faculty": 2,
     "score": 0.0,
@@ -3452,6 +4992,13 @@
   },
   {
     "reviews": [],
+    "name": "Irena Emilija Juozeliūnienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Irena Fedorovič",
     "faculty": 2,
     "score": 0.0,
@@ -3473,6 +5020,13 @@
   },
   {
     "reviews": [],
+    "name": "Irena Nedveckytė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Irena Smetonienė",
     "faculty": 2,
     "score": 0.0,
@@ -3487,13 +5041,6 @@
   },
   {
     "reviews": [],
-    "name": "Irena Stonkuvienė",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "Irena Štikonaitė",
     "faculty": 2,
     "score": 0.0,
@@ -3501,8 +5048,22 @@
   },
   {
     "reviews": [],
+    "name": "Irena Stonkuvienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Irena Žukauskaitė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Irena Žukauskaitė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3536,6 +5097,13 @@
   },
   {
     "reviews": [],
+    "name": "Irmantas Aleliūnas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Irmantas Mikulėnas",
     "faculty": 9,
     "score": 0.0,
@@ -3557,8 +5125,22 @@
   },
   {
     "reviews": [],
+    "name": "Irutė Girkontaitė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Izolda Pašakinskienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Izolda Pašakinskienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3573,6 +5155,13 @@
     "reviews": [],
     "name": "Jaroslava Arsenjeva",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jaunius Gumbis",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3599,6 +5188,13 @@
   },
   {
     "reviews": [],
+    "name": "Jelena Dodonova",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jelena Kirejeva",
     "faculty": 2,
     "score": 0.0,
@@ -3615,6 +5211,13 @@
     "reviews": [],
     "name": "Jelena Tamulienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jevgenij Chmeliov",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3697,8 +5300,36 @@
   },
   {
     "reviews": [],
+    "name": "Jolanta Berdikšlienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jolanta Droždz",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jolanta Gužaitė Kvintus",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jolanta Lebedeva",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jolanta Mažylė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3725,8 +5356,22 @@
   },
   {
     "reviews": [],
+    "name": "Jolanta Žemgulienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jolita Bernatavičienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jolita Buzaitytė Kašalynienė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3755,6 +5400,13 @@
     "reviews": [],
     "name": "Jolita Ignatavičiūtė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jolita Ignatavičiūtė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3802,8 +5454,22 @@
   },
   {
     "reviews": [],
+    "name": "Jonas Jurkevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jonas Kazys Sunklodas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jonas Kiuberis",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3830,6 +5496,20 @@
   },
   {
     "reviews": [],
+    "name": "Jonas Matukas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jonas Nekrasovas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jonas Niaura",
     "faculty": 1,
     "score": 0.0,
@@ -3837,7 +5517,21 @@
   },
   {
     "reviews": [],
+    "name": "Jonas Prapiestis",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jonas Ragaišis",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jonas Šiaulys",
     "faculty": 9,
     "score": 0.0,
     "numberOfReviews": 0
@@ -3851,8 +5545,8 @@
   },
   {
     "reviews": [],
-    "name": "Jonas Šiaulys",
-    "faculty": 9,
+    "name": "Jonas Volungevičius",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3886,6 +5580,13 @@
   },
   {
     "reviews": [],
+    "name": "Judita Liukaitytė- Kukienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Julija Korostenskienė",
     "faculty": 2,
     "score": 0.0,
@@ -3893,8 +5594,22 @@
   },
   {
     "reviews": [],
+    "name": "Julija Kubova",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Julija Kurilova",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Julija Šarupičiūtė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3921,8 +5636,8 @@
   },
   {
     "reviews": [],
-    "name": "Julija Šarupičiūtė",
-    "faculty": 1,
+    "name": "Julita Slipkauskaitė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3937,6 +5652,13 @@
     "reviews": [],
     "name": "Julius Damarackas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Julius Vengelis",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3970,8 +5692,29 @@
   },
   {
     "reviews": [],
+    "name": "Juozas Raugalas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Juozas Rimantas Lazutka",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Juozas Ruževičius",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Juozas Šulskus",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3984,8 +5727,36 @@
   },
   {
     "reviews": [],
+    "name": "Juozas Vyšniauskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jūras Banys",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jūratė Armonienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jūratė Baronienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jūratė Jaraitė-Kažukauskė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4040,6 +5811,20 @@
   },
   {
     "reviews": [],
+    "name": "Jurga Arustienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jurga Arustienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jurga Cibulskienė",
     "faculty": 2,
     "score": 0.0,
@@ -4054,6 +5839,13 @@
   },
   {
     "reviews": [],
+    "name": "Jurga Lazauskienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Jurga Mataitytė-Diržienė",
     "faculty": 3,
     "score": 0.0,
@@ -4063,6 +5855,13 @@
     "reviews": [],
     "name": "Jurga Mataitytė-Diržienė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jurga Turčinavičienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4070,6 +5869,20 @@
     "reviews": [],
     "name": "Jurgis Pakerys",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jurgita Bajoriūnienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Jurgita Girčienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4117,8 +5930,36 @@
   },
   {
     "reviews": [],
+    "name": "Jurgita Rudžionienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Justas Gribovskis",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Justas Kažys",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Justas Mundeikis",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Justė Michailinaitė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4145,6 +5986,27 @@
   },
   {
     "reviews": [],
+    "name": "Justina Januškevičiūtė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Justina Jurgelevičiūtė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Justina Klimavičiūtė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Justina Mandravickaitė",
     "faculty": 2,
     "score": 0.0,
@@ -4154,6 +6016,13 @@
     "reviews": [],
     "name": "Justina Urbonaitė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Justinas Čeponkus",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4201,6 +6070,13 @@
   },
   {
     "reviews": [],
+    "name": "Karolis Andriuškevičius",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Karolis Bartkus",
     "faculty": 9,
     "score": 0.0,
@@ -4236,8 +6112,50 @@
   },
   {
     "reviews": [],
+    "name": "Kastis Krikštopaitis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kastytis Dapšys",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Kastytis Senkus",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kastytis Zubovas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kazimieras Glemža",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kęstutis Arbačiauskas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kęstutis Arlauskas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4285,6 +6203,13 @@
   },
   {
     "reviews": [],
+    "name": "Kęstutis Jokšas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Kęstutis Karčiauskas",
     "faculty": 9,
     "score": 0.0,
@@ -4292,8 +6217,22 @@
   },
   {
     "reviews": [],
+    "name": "Kęstutis Kazlauskas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Kęstutis Kirtiklis",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kęstutis Kirtiklis",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4315,6 +6254,27 @@
     "reviews": [],
     "name": "Kęstutis Nastopka",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kęstutis Papšys",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kęstutis Sužiedėlis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kęstutis Svirskas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4355,6 +6315,13 @@
   },
   {
     "reviews": [],
+    "name": "Konstantinas Andrijauskas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Konstantinas Pileckas",
     "faculty": 9,
     "score": 0.0,
@@ -4369,6 +6336,20 @@
   },
   {
     "reviews": [],
+    "name": "Kotryna Kvederavičiūtė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kristijonas Genevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Kristijonas Vaicekauskas",
     "faculty": 3,
     "score": 0.0,
@@ -4378,6 +6359,13 @@
     "reviews": [],
     "name": "Kristina Bingelė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kristina Daniūnaitė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4411,6 +6399,13 @@
   },
   {
     "reviews": [],
+    "name": "Kristina Jakutytė-Ancienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Kristina Jonutytė",
     "faculty": 3,
     "score": 0.0,
@@ -4425,6 +6420,13 @@
   },
   {
     "reviews": [],
+    "name": "Kristina Kaulakytė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Kristina Lapin",
     "faculty": 9,
     "score": 0.0,
@@ -4434,6 +6436,13 @@
     "reviews": [],
     "name": "Kristina Rutkovska",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kristina Šliavaitė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4469,6 +6478,13 @@
     "reviews": [],
     "name": "Ksenija Čunichina",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kšištof Tolkačevski",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4523,6 +6539,13 @@
   },
   {
     "reviews": [],
+    "name": "Laimutė Bulotaitė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Laimutė Jakavonytė",
     "faculty": 3,
     "score": 0.0,
@@ -4530,7 +6553,21 @@
   },
   {
     "reviews": [],
+    "name": "Laimutė Jakavonytė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Laimutė Kazlauskienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Laimutė Urbšienė",
     "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
@@ -4551,8 +6588,29 @@
   },
   {
     "reviews": [],
+    "name": "Laimutė Žilinskienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Laimutis Laužikas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Laimutis Laužikas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lan Cui",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4593,6 +6651,20 @@
   },
   {
     "reviews": [],
+    "name": "Laura Mociūnaitė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Laura Pilukienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Laura Ringienė",
     "faculty": 9,
     "score": 0.0,
@@ -4607,6 +6679,20 @@
   },
   {
     "reviews": [],
+    "name": "Laura Vilkaitė-Lozdienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lauras Balakauskas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Lauryna Rakickienė",
     "faculty": 3,
     "score": 0.0,
@@ -4616,6 +6702,13 @@
     "reviews": [],
     "name": "Laurynas Jonavičius",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Laurynas Jukna",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4649,6 +6742,27 @@
   },
   {
     "reviews": [],
+    "name": "Leonora Norvilienė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Leonora Norvilienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Leonora Norvilienė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Lidija Šabajevaitė",
     "faculty": 3,
     "score": 0.0,
@@ -4677,8 +6791,29 @@
   },
   {
     "reviews": [],
+    "name": "Lijana Stundžė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Lilija Duoblienė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lilija Kalėdienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lina Aitmanaitė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4691,8 +6826,22 @@
   },
   {
     "reviews": [],
+    "name": "Lina Davulienė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Lina Gervinskaitė-Paulaitienė\t",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lina Inčiuraitė- Noreikienė",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4705,8 +6854,29 @@
   },
   {
     "reviews": [],
+    "name": "Lina Jakučionienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Lina Marčiulionytė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lina Marčiulionytė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Lina Markevičiūtė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4782,6 +6952,13 @@
   },
   {
     "reviews": [],
+    "name": "Linas Bevainis",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Linas Bukauskas",
     "faculty": 9,
     "score": 0.0,
@@ -4803,6 +6980,13 @@
   },
   {
     "reviews": [],
+    "name": "Linas Čekanavičius",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Linas Jokubaitis",
     "faculty": 11,
     "score": 0.0,
@@ -4812,6 +6996,20 @@
     "reviews": [],
     "name": "Linas Kojala",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Linas Kontrimas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Linas Kontrimas",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4831,6 +7029,20 @@
   },
   {
     "reviews": [],
+    "name": "Linas Mažutis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Linas Minkevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Linas Petkevičius",
     "faculty": 9,
     "score": 0.0,
@@ -4838,8 +7050,29 @@
   },
   {
     "reviews": [],
+    "name": "Linas Spurga",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Linas Stripinis",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Linas Tarasonis",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Linas Vilčiauskas",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4880,6 +7113,13 @@
   },
   {
     "reviews": [],
+    "name": "Liudas Tumonis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Liudmila Arcimavičienė",
     "faculty": 2,
     "score": 0.0,
@@ -4896,6 +7136,13 @@
     "reviews": [],
     "name": "Liudmila Garbul",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Liudmila Lobanova",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4936,6 +7183,13 @@
   },
   {
     "reviews": [],
+    "name": "Loreta Šutinienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Loreta Vaicekauskienė",
     "faculty": 2,
     "score": 0.0,
@@ -4952,6 +7206,13 @@
     "reviews": [],
     "name": "Loreta Zavadskienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Loreta Zavadskienė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -4992,8 +7253,22 @@
   },
   {
     "reviews": [],
+    "name": "Mangirdas Malinauskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Mantas Grubliauskis",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mantas Mendelevičius",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5013,6 +7288,13 @@
   },
   {
     "reviews": [],
+    "name": "Margarita Jankauskaitė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Margarita Šešelgytė",
     "faculty": 11,
     "score": 0.0,
@@ -5020,8 +7302,29 @@
   },
   {
     "reviews": [],
+    "name": "Margarita Švedkauskienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Maria Sebastia Saez",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "María Sebastià Sáez",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mariana Sueldo",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5048,15 +7351,29 @@
   },
   {
     "reviews": [],
-    "name": "Maryja Šupa",
+    "name": "Marija Prokopčik",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Marija Stonkienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Marija Vaštakė",
     "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
-    "name": "Maryja Šupa",
-    "faculty": 3,
+    "name": "Marijonas Tutkus",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5104,6 +7421,13 @@
   },
   {
     "reviews": [],
+    "name": "Marius Dubnikovas",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Marius Liutvinavičius",
     "faculty": 9,
     "score": 0.0,
@@ -5113,6 +7437,13 @@
     "reviews": [],
     "name": "Marius Liutvinavičius",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Marius Matiukas",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5139,8 +7470,22 @@
   },
   {
     "reviews": [],
+    "name": "Martynas Barkauskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Martynas Burbulevičius",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Martynas Kinka",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5153,6 +7498,20 @@
   },
   {
     "reviews": [],
+    "name": "Martynas Marozas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Martynas Petrikas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Martynas Sabaliauskas",
     "faculty": 9,
     "score": 0.0,
@@ -5160,8 +7519,36 @@
   },
   {
     "reviews": [],
+    "name": "Maryja Šupa",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Maryja Šupa",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Mats Hjortfors",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mats Villiam Hjortfors",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mažena Mackoit-Sinkevičienė",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5195,7 +7582,21 @@
   },
   {
     "reviews": [],
+    "name": "Miglė Eleonora Černikovaitė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Miguel Karl Villanueva Svensson",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mikael Rasmussen",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -5209,6 +7610,13 @@
   },
   {
     "reviews": [],
+    "name": "Milda Brėdikytė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Milda Pivoriūtė",
     "faculty": 3,
     "score": 0.0,
@@ -5218,6 +7626,13 @@
     "reviews": [],
     "name": "Milda Pivoriūtė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Milena Korostenskaja",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5232,6 +7647,13 @@
     "reviews": [],
     "name": "Mindaugas Degutis",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mindaugas Degutis",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5279,6 +7701,27 @@
   },
   {
     "reviews": [],
+    "name": "Mindaugas Lankauskas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mindaugas Lastauskas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mindaugas Mačernis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Mindaugas Morkūnas",
     "faculty": 9,
     "score": 0.0,
@@ -5314,6 +7757,20 @@
   },
   {
     "reviews": [],
+    "name": "Mindaugas Viliūnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Mindaugas Žilinskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Mintautas Čiurinskas",
     "faculty": 2,
     "score": 0.0,
@@ -5328,7 +7785,21 @@
   },
   {
     "reviews": [],
+    "name": "Mintautas Gutauskas",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Miroslav Davlevič",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Miroslav Stasilo",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -5358,6 +7829,13 @@
     "reviews": [],
     "name": "Monika Lapėnaitė-Gedvilė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Monika Orechova",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5405,8 +7883,22 @@
   },
   {
     "reviews": [],
+    "name": "Naglis Kardelis",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Natalija Arlauskaitė",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Natalija Arlauskaitė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5433,15 +7925,15 @@
   },
   {
     "reviews": [],
-    "name": "Nekrasovas Jonas",
-    "faculty": 4,
+    "name": "Nekrašas Nerijus",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
-    "name": "Nekrašas Nerijus",
-    "faculty": 3,
+    "name": "Nekrasovas Jonas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5461,8 +7953,29 @@
   },
   {
     "reviews": [],
+    "name": "Nerijus Černiauskas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Nerijus Černiauskas",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Nerijus Činčikas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Nerijus Kasiliauskas",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5482,8 +7995,22 @@
   },
   {
     "reviews": [],
+    "name": "Nerijus Nekrašas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Nerijus Udrėnas",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Neringa Dambrauskaitė",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5512,6 +8039,27 @@
     "reviews": [],
     "name": "Neringa Klovienė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Neringa Latvytė-Gustaitienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Neringa Mačiulevičiūtė-Turlienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Neringa Petrauskaitė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5601,6 +8149,13 @@
   },
   {
     "reviews": [],
+    "name": "Nikita Dobrotin",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Nikolaj Kondrat",
     "faculty": 9,
     "score": 0.0,
@@ -5624,6 +8179,13 @@
     "reviews": [],
     "name": "Nomeda Gabija Vosyliūtė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Nomeda Kuisienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5657,6 +8219,13 @@
   },
   {
     "reviews": [],
+    "name": "Odeta Geležėlytė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Oleg Mirzianov",
     "faculty": 9,
     "score": 0.0,
@@ -5678,6 +8247,20 @@
   },
   {
     "reviews": [],
+    "name": "Olga Rancova",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Olga Štangej",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Olga Štikonienė",
     "faculty": 9,
     "score": 0.0,
@@ -5692,6 +8275,27 @@
   },
   {
     "reviews": [],
+    "name": "Olivier Francois Roger Morere",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ona Balachninaitė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ona Dilytė-Čiurinskienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Ona Marija Vyšniauskaitė",
     "faculty": 1,
     "score": 0.0,
@@ -5701,6 +8305,13 @@
     "reviews": [],
     "name": "Onutė Jankauskaitė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Osvaldas Rukšėnas",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5722,6 +8333,13 @@
     "reviews": [],
     "name": "Paola Fertoli",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Patrick Gruening",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5762,6 +8380,20 @@
   },
   {
     "reviews": [],
+    "name": "Paulius Nezabitauskas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Paulius Ragulis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Paulius Skruibis",
     "faculty": 3,
     "score": 0.0,
@@ -5770,6 +8402,13 @@
   {
     "reviews": [],
     "name": "Paulius Subačius",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Paulius Vaidotas Subačius",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -5790,6 +8429,13 @@
   },
   {
     "reviews": [],
+    "name": "Pavel Rynkun",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Paweł Brudzyński",
     "faculty": 2,
     "score": 0.0,
@@ -5804,8 +8450,29 @@
   },
   {
     "reviews": [],
+    "name": "Petras Dubinskas",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Petras Ragauskas",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Petras Šinkūnas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Petras Venckus",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5846,8 +8513,8 @@
   },
   {
     "reviews": [],
-    "name": "Povilas Gylys",
-    "faculty": 1,
+    "name": "Povilas Goberis",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5855,6 +8522,20 @@
     "reviews": [],
     "name": "Povilas Gudžius",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Povilas Gylys",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Povilas Lastauskas",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5874,8 +8555,36 @@
   },
   {
     "reviews": [],
+    "name": "Pranas Katauskis",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Pranciškus Vitta",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Pranciškus Vitta",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Radvilė Rimgailė-Voicik",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Raimonda Petkauskaitė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5897,6 +8606,20 @@
     "reviews": [],
     "name": "Raivydas Šimėnas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ramūnas Aleksiejūnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ramūnas Birštonas",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5944,8 +8667,36 @@
   },
   {
     "reviews": [],
+    "name": "Ramunė Budrionytė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ramunė Dambrauskaitė Muralienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Ramunė Dambrauskaitė-Muralienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ramunė Dirvanskienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ramunė Grikšienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5965,8 +8716,22 @@
   },
   {
     "reviews": [],
+    "name": "Rasa Aukštikalnienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rasa Bačiulienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rasa Bačiulienė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5981,6 +8746,13 @@
     "reviews": [],
     "name": "Rasa Barkauskienė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rasa Bernotienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6035,6 +8807,20 @@
   },
   {
     "reviews": [],
+    "name": "Rasa Pranskevičiūtė-Amoson",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rasa Šimanauskienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rasa Stalnionytė",
     "faculty": 9,
     "score": 0.0,
@@ -6056,6 +8842,13 @@
   },
   {
     "reviews": [],
+    "name": "Rasa Subačienė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rasa Tamošaitienė",
     "faculty": 2,
     "score": 0.0,
@@ -6064,6 +8857,13 @@
   {
     "reviews": [],
     "name": "Rasuolė Andriulienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rasuolė Andrulienė",
     "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
@@ -6112,8 +8912,29 @@
   },
   {
     "reviews": [],
+    "name": "Regina Paliulytė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Regina Prapiestienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Regina Rudaitytė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Regina Varnienė-Janssen",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6128,6 +8949,20 @@
     "reviews": [],
     "name": "Remigijus Leipus",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Remigijus Misiūnas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Remigijus Noreika",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6154,6 +8989,27 @@
   },
   {
     "reviews": [],
+    "name": "Renata Butkutė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Renata Gudiukaitė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Renata Matkevičienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Renata Papšytė",
     "faculty": 2,
     "score": 0.0,
@@ -6161,6 +9017,13 @@
   },
   {
     "reviews": [],
+    "name": "Renata Stonytė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Renatas Berniūnas",
     "faculty": 3,
     "score": 0.0,
@@ -6170,6 +9033,20 @@
     "reviews": [],
     "name": "Renatas Berniūnas",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ričardas Rotomskis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Ričardas Skorupskas",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6182,8 +9059,22 @@
   },
   {
     "reviews": [],
+    "name": "Rima Breidokienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rima Ciburevkinaitė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rima Cicėnienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6203,6 +9094,13 @@
   },
   {
     "reviews": [],
+    "name": "Rima Stonkutė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rima Žagūnienė",
     "faculty": 9,
     "score": 0.0,
@@ -6212,6 +9110,13 @@
     "reviews": [],
     "name": "Rimantas Antanas Stanikūnas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rimantas Antanas Stanikūnas",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6231,8 +9136,22 @@
   },
   {
     "reviews": [],
+    "name": "Rimantas Rakauskas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rimantas Rudzkis",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rimantas Stonkus",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6273,8 +9192,22 @@
   },
   {
     "reviews": [],
+    "name": "Rimas Edvard Užgiris",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rimas Norvaiša",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rimvydas Aleksiejūnas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6296,6 +9229,13 @@
     "reviews": [],
     "name": "Rimvydas Laužikas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rimvydas Laužikas",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6343,6 +9283,20 @@
   },
   {
     "reviews": [],
+    "name": "Rita Linkevičienė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rita Makarskaitė-Petkevičienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rita Migauskienė",
     "faculty": 2,
     "score": 0.0,
@@ -6350,8 +9304,22 @@
   },
   {
     "reviews": [],
+    "name": "Rita Rekašiūtė Balsienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rita Rekašiūtė-Balsienė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rita Repšienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6371,13 +9339,6 @@
   },
   {
     "reviews": [],
-    "name": "Rytis Bieliauskas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "Roberta Grinkytė",
     "faculty": 1,
     "score": 0.0,
@@ -6385,8 +9346,29 @@
   },
   {
     "reviews": [],
+    "name": "Robertas Maldžius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rokas Astrauskas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rokas Bartkevičius",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rokas Buišas",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6420,8 +9402,29 @@
   },
   {
     "reviews": [],
+    "name": "Roland Tomašiūnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rolandas Meškys",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rolandas Tučas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rolandas Valančius",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6443,6 +9446,20 @@
     "reviews": [],
     "name": "Roma Kriaučiūnienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Roma Kriaučiūnienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Roma Kriaučiūnienė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6525,6 +9542,13 @@
   },
   {
     "reviews": [],
+    "name": "Romualdas Rimeika",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rosita Garškaitė",
     "faculty": 11,
     "score": 0.0,
@@ -6532,6 +9556,34 @@
   },
   {
     "reviews": [],
+    "name": "Rosita Pipirienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rozalija Gerenauskienė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rusnė Kregždaitė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rūta Brazienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rūta Brazienė",
     "faculty": 3,
     "score": 0.0,
@@ -6546,7 +9598,7 @@
   },
   {
     "reviews": [],
-    "name": "Rūta Brazienė",
+    "name": "Rūta Bružienė",
     "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
@@ -6562,6 +9614,13 @@
     "reviews": [],
     "name": "Rūta Burbaitė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rūta Kananavičiūtė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6574,6 +9633,20 @@
   },
   {
     "reviews": [],
+    "name": "Rūta Levulienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rūta Merčaitienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Rūta Montvilienė",
     "faculty": 9,
     "score": 0.0,
@@ -6583,6 +9656,13 @@
     "reviews": [],
     "name": "Rūta Montvilienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rūta Montvilienė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6651,6 +9731,41 @@
   },
   {
     "reviews": [],
+    "name": "Rūta Žiliukaitė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rūta Zukienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rytis Bieliauskas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rytis Butkus",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Rytis Kazakevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Sandra Kairė",
     "faculty": 3,
     "score": 0.0,
@@ -6658,246 +9773,8 @@
   },
   {
     "reviews": [],
-    "name": "Saulė Girdzijauskaitė",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulė Matulevičienė",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulė Raižienė",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulė Raižienė",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Blažiūnas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Bucka",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Gražulis",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Grigaitis",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Gudas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Jokubaitis",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Maskeliūnas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Minkevičius",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Norvidas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Paukštys",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Pivoras",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Ragaišis",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Saulius Tautvaišas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Severinas Zubė",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Sigita Girdzijauskienė",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Sigita Kiršė",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Sigitas Dapkūnas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Sigitas Urbonavičius",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Simona Kamarauskaitė",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Simona Kontrimienė",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Simona Kontrimienė",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Simonas Algirdas Spurga",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Sirkka Ojaniemi",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Skaistė Volungevičienė",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Sliaužys Gytis",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Stanislovas Martišius",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Stasė Paškonytė",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Stasys Peldžius",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Svetlana Danilenko",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Svetlana Kosova",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Svetlana Nemitko",
-    "faculty": 1,
+    "name": "Sandra Pralgauskaitė",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6938,8 +9815,491 @@
   },
   {
     "reviews": [],
+    "name": "Saulė Girdzijauskaitė",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulė Jokūbauskienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulė Matulevičienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulė Raižienė",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulė Raižienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Antanas Juršėnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Bagdonas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Bagdonas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Blažiūnas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Bucka",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Daugėla",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Gadeikis",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Gražulis",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Grigaitis",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Gudas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Gudas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Jokubaitis",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Maskeliūnas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Minkevičius",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Nargelas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Norvidas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Paukštys",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Pivoras",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Preidys",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Preidys",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Ragaišis",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Serva",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Saulius Tautvaišas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sergejus Balčiūnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Severinas Zubė",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigita Girdzijauskienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigita Kiršė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigita Kiršė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigitas Dapkūnas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigitas Juzėnas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigitas Podėnas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigitas Radzevičius",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigitas Šiaudinis",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigitas Tumkevičius",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sigitas Urbonavičius",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sima Rekštytė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simona Abraitienė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simona Cirtautaitė-Kaminskienė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simona Kamarauskaitė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simona Kontrimienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simona Kontrimienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simona Povilonienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simonas Algirdas Spurga",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simonas Šabanovas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Simonas Varapnickas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sirkka Ojaniemi",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sirkka Sisko Tellervo Ojaniemi",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Skaistė Volungevičienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sliaužys Gytis",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Sonata Gadeikytė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Stanislovas Martišius",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Stasė Paškonytė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Stasys Drazdauskas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Stasys Peldžius",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Stasys Tamošiūnas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Stepas Toliautas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Svetlana Danilenko",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Svetlana Kosova",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Svetlana Nemitko",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Svetozar Postic",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Svetozar Postic",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Tadas Danielius",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tadas Limba",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tadas Makčinskas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tadas Malinauskas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6952,8 +10312,22 @@
   },
   {
     "reviews": [],
+    "name": "Tadas Meškauskas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Tadas Panavas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tadas Penkauskas",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6973,8 +10347,22 @@
   },
   {
     "reviews": [],
+    "name": "Tatjana Čėsnienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Tatjana Jevsikova",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tatjana Kirtiklienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7008,6 +10396,20 @@
   },
   {
     "reviews": [],
+    "name": "Thomas Gajdosik",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Titas Petrikis",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Toliautas Stepas",
     "faculty": 4,
     "score": 0.0,
@@ -7017,6 +10419,13 @@
     "reviews": [],
     "name": "Tomas Baležentis",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tomas Bartninkas",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7066,6 +10475,20 @@
     "reviews": [],
     "name": "Tomas Nemunas Mickevičius",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tomas Petkus",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Tomas Petreikis",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7141,6 +10564,13 @@
   },
   {
     "reviews": [],
+    "name": "Ugnė Adomaitytė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Urbonienė Vidita",
     "faculty": 4,
     "score": 0.0,
@@ -7157,6 +10587,13 @@
     "reviews": [],
     "name": "Urtė Lina Orlova",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Urtė Neniškytė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7183,6 +10620,13 @@
   },
   {
     "reviews": [],
+    "name": "Vaida Kirkliauskaitė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vaida Masiulionytė-Dagienė",
     "faculty": 9,
     "score": 0.0,
@@ -7197,8 +10641,43 @@
   },
   {
     "reviews": [],
+    "name": "Vaida Survilienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vaidas Jusevičius",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vaidotas Kažukauskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vaidotas Morkūnas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vaidotas Vaičaitis",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vaidotas Valskys",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7226,6 +10705,13 @@
   {
     "reviews": [],
     "name": "Vaiva Grabauskienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vaiva Klimaitė",
     "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
@@ -7288,6 +10774,27 @@
   },
   {
     "reviews": [],
+    "name": "Valdas Šablinskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Valdas Sirutkaitis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Valdemaras Aleksa",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Valentas Kurauskas",
     "faculty": 9,
     "score": 0.0,
@@ -7330,6 +10837,20 @@
   },
   {
     "reviews": [],
+    "name": "Valerijus Smilgevičius",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Valius Venckūnas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Velička Martynas",
     "faculty": 4,
     "score": 0.0,
@@ -7339,6 +10860,13 @@
     "reviews": [],
     "name": "Velička Martynas",
     "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Veronika Dedonytė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7379,6 +10907,13 @@
   },
   {
     "reviews": [],
+    "name": "Vida Petrylaitė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vida Vilkienė",
     "faculty": 2,
     "score": 0.0,
@@ -7386,8 +10921,29 @@
   },
   {
     "reviews": [],
-    "name": "Vydas Čekanavičius",
-    "faculty": 9,
+    "name": "Vidas Dobrovolskas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vidmantas Gulbinas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vidmantas Kalendra",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vigintas Stancelis",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7395,6 +10951,13 @@
     "reviews": [],
     "name": "Vigirdas Mackevičius",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Viktor Denisenko",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7428,8 +10991,22 @@
   },
   {
     "reviews": [],
+    "name": "Viktoras Bulavas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Viktoras Golubevas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Viktoras Vaitkevičius",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7456,8 +11033,22 @@
   },
   {
     "reviews": [],
+    "name": "Viktorija Gercmanienė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Viktorija Grigaitienė",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Viktorija Ivleva",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7540,6 +11131,13 @@
   },
   {
     "reviews": [],
+    "name": "Vilius Savickas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vilius Stakėnas",
     "faculty": 9,
     "score": 0.0,
@@ -7554,6 +11152,34 @@
   },
   {
     "reviews": [],
+    "name": "Vilma Asijavičiūtė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vilma Asijavičiūtė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vilma Kisnierienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vilma Olšauskaitė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vilma Vaskelaitė",
     "faculty": 9,
     "score": 0.0,
@@ -7577,6 +11203,13 @@
     "reviews": [],
     "name": "Vilma Zubaitienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vilmantas Gėgžna",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7584,6 +11217,20 @@
     "reviews": [],
     "name": "Vilmantė Pakalniškienė",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vilmantė Sinkevičienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vincas Tamošiūnas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7605,6 +11252,13 @@
     "reviews": [],
     "name": "Vincentas Rolandas Giedraitis",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Violeta Cimalanskaitė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7673,8 +11327,50 @@
   },
   {
     "reviews": [],
+    "name": "Virginija Bukelskienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Virginija Jakubkienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Virginija Jūratė Pukevičiūtė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Virginija Kalcienė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Virginija Klimukienė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Virginija Masiulionytė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Virginija Podėnienė",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7729,8 +11425,22 @@
   },
   {
     "reviews": [],
+    "name": "Vita Remenytė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vita Valiukienė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vita Venslovaitė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7750,6 +11460,13 @@
   },
   {
     "reviews": [],
+    "name": "Vitalijus Gricius",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vitalis Nakrošis",
     "faculty": 11,
     "score": 0.0,
@@ -7757,8 +11474,85 @@
   },
   {
     "reviews": [],
+    "name": "Vladas Sirutavičius",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vladas Skakauskas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vladas Vansevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vladimir Korobov",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vladimir Panov",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vladimiras Dolgopolovas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vuk Vukotic",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vuk Vukotić",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vydas Čekanavičius",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vygandas Jarutis",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vytas Zacharovas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytas Zacharovas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7778,8 +11572,22 @@
   },
   {
     "reviews": [],
+    "name": "Vytautas Balevičius",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vytautas Bikulčius",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytautas Butkus",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7794,6 +11602,13 @@
     "reviews": [],
     "name": "Vytautas Dikčius",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytautas Dūdėnas",
+    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7820,6 +11635,20 @@
   },
   {
     "reviews": [],
+    "name": "Vytautas Jonkus",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytautas Jukna",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vytautas Jurkuvėnas",
     "faculty": 3,
     "score": 0.0,
@@ -7827,8 +11656,22 @@
   },
   {
     "reviews": [],
+    "name": "Vytautas Jurkuvėnas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vytautas Kardelis",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytautas Kašėta",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7862,6 +11705,27 @@
   },
   {
     "reviews": [],
+    "name": "Vytautas Nekrošius",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytautas Oškinis",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytautas Petrauskas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vytautas Radzevičius",
     "faculty": 9,
     "score": 0.0,
@@ -7883,6 +11747,13 @@
   },
   {
     "reviews": [],
+    "name": "Vytautas Samalavičius",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vytautas Stepas",
     "faculty": 9,
     "score": 0.0,
@@ -7890,8 +11761,29 @@
   },
   {
     "reviews": [],
+    "name": "Vytautas Stepas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Vytautas Valaitis",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytenis Pauliukaitis",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Vytenis Radžiūnas",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7918,43 +11810,22 @@
   },
   {
     "reviews": [],
-    "name": "Vladas Sirutavičius",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Vladas Skakauskas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Vladimir Korobov",
+    "name": "Zdislavas Skvarciany",
     "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
-    "name": "Vladimir Panov",
-    "faculty": 2,
+    "name": "Zenona Ona Atkočiūnienė",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
     "reviews": [],
-    "name": "Vladimiras Dolgopolovas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Vuk Vukotić",
-    "faculty": 2,
+    "name": "Zenona Ona Atkočiūnienė",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7962,6 +11833,76 @@
     "reviews": [],
     "name": "Zenonas Norkus",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Zigmantas Žitkus",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Žilvinas Ledas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Žilvinas Martinaitis",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Žilvinė Gaižutytė-Filipavičienė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Zinaida Manžuch",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Živilė Lukšienė",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Živilė Pabijutaitė",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Živilė Pabijutaitė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Živilė Stankevičiūtė",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Živilė Valeišienė",
+    "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7995,36 +11936,8 @@
   },
   {
     "reviews": [],
-    "name": "Žilvinas Ledas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Žilvinas Martinaitis",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Živilė Lukšienė",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Živilė Pabijutaitė",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Živilė Pabijutaitė",
-    "faculty": 3,
+    "name": "Žygintas Pečiulis",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   }
