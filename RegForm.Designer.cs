@@ -114,7 +114,6 @@
             this.EvaluateLecturer = new System.Windows.Forms.Panel();
             this.EvaluationCommentLabel = new System.Windows.Forms.Label();
             this.SaveEvalNextLect = new System.Windows.Forms.Button();
-            this.SaveBackLectEvaluation = new System.Windows.Forms.Button();
             this.BackLecEvaluation = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.emoji3 = new System.Windows.Forms.PictureBox();
@@ -125,16 +124,17 @@
             this.NumericEvaluationLect = new System.Windows.Forms.NumericUpDown();
             this.LectEvaluationLab = new System.Windows.Forms.Label();
             this.FilteredLecturersList = new System.Windows.Forms.ListBox();
+            this.SaveBackLectEvaluation = new System.Windows.Forms.Button();
             this.LectLab = new System.Windows.Forms.Label();
             this.ReviewLectEvalTxtBox = new System.Windows.Forms.TextBox();
             this.CommentAboutLect = new System.Windows.Forms.Label();
             this.FacultyLabLect = new System.Windows.Forms.Label();
             this.SelectFacultyLect = new System.Windows.Forms.ComboBox();
             this.EvaluateSubjects = new System.Windows.Forms.Panel();
+            this.FilteredSubjectsList = new System.Windows.Forms.ListBox();
+            this.SubjectLabel = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.FacultySubjectEvalLab = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.FilteredSubjectsList = new System.Windows.Forms.ListBox();
             this.MainMenu.SuspendLayout();
             this.LecturerPanel.SuspendLayout();
             this.SubjectPanel.SuspendLayout();
@@ -1127,15 +1127,7 @@
             this.SaveEvalNextLect.TabIndex = 14;
             this.SaveEvalNextLect.Text = "Pateikti ir vertinti kitą dėstytoją";
             this.SaveEvalNextLect.UseVisualStyleBackColor = true;
-            // 
-            // SaveBackLectEvaluation
-            // 
-            this.SaveBackLectEvaluation.Location = new System.Drawing.Point(970, 273);
-            this.SaveBackLectEvaluation.Name = "SaveBackLectEvaluation";
-            this.SaveBackLectEvaluation.Size = new System.Drawing.Size(193, 56);
-            this.SaveBackLectEvaluation.TabIndex = 13;
-            this.SaveBackLectEvaluation.Text = "Pateikti ir grįžti";
-            this.SaveBackLectEvaluation.UseVisualStyleBackColor = true;
+            this.SaveEvalNextLect.Click += new System.EventHandler(this.SaveEvalNextLect_Click);
             // 
             // BackLecEvaluation
             // 
@@ -1254,6 +1246,16 @@
             this.FilteredLecturersList.Size = new System.Drawing.Size(364, 284);
             this.FilteredLecturersList.TabIndex = 5;
             // 
+            // SaveBackLectEvaluation
+            // 
+            this.SaveBackLectEvaluation.Location = new System.Drawing.Point(970, 273);
+            this.SaveBackLectEvaluation.Name = "SaveBackLectEvaluation";
+            this.SaveBackLectEvaluation.Size = new System.Drawing.Size(193, 56);
+            this.SaveBackLectEvaluation.TabIndex = 13;
+            this.SaveBackLectEvaluation.Text = "Pateikti ir grįžti";
+            this.SaveBackLectEvaluation.UseVisualStyleBackColor = true;
+            this.SaveBackLectEvaluation.Click += new System.EventHandler(this.SaveBackLectEvaluation_Click);
+            // 
             // LectLab
             // 
             this.LectLab.AutoSize = true;
@@ -1316,7 +1318,7 @@
             // EvaluateSubjects
             // 
             this.EvaluateSubjects.Controls.Add(this.FilteredSubjectsList);
-            this.EvaluateSubjects.Controls.Add(this.label1);
+            this.EvaluateSubjects.Controls.Add(this.SubjectLabel);
             this.EvaluateSubjects.Controls.Add(this.comboBox1);
             this.EvaluateSubjects.Controls.Add(this.FacultySubjectEvalLab);
             this.EvaluateSubjects.Location = new System.Drawing.Point(0, 0);
@@ -1324,6 +1326,24 @@
             this.EvaluateSubjects.Size = new System.Drawing.Size(1188, 435);
             this.EvaluateSubjects.TabIndex = 7;
             this.EvaluateSubjects.Visible = false;
+            // 
+            // FilteredSubjectsList
+            // 
+            this.FilteredSubjectsList.FormattingEnabled = true;
+            this.FilteredSubjectsList.ItemHeight = 20;
+            this.FilteredSubjectsList.Location = new System.Drawing.Point(25, 129);
+            this.FilteredSubjectsList.Name = "FilteredSubjectsList";
+            this.FilteredSubjectsList.Size = new System.Drawing.Size(353, 284);
+            this.FilteredSubjectsList.TabIndex = 3;
+            // 
+            // SubjectLabel
+            // 
+            this.SubjectLabel.AutoSize = true;
+            this.SubjectLabel.Location = new System.Drawing.Point(23, 103);
+            this.SubjectLabel.Name = "SubjectLabel";
+            this.SubjectLabel.Size = new System.Drawing.Size(150, 20);
+            this.SubjectLabel.TabIndex = 2;
+            this.SubjectLabel.Text = "Mokomasis dalykas:";
             // 
             // comboBox1
             // 
@@ -1358,32 +1378,14 @@
             this.FacultySubjectEvalLab.TabIndex = 0;
             this.FacultySubjectEvalLab.Text = "Fakultetas:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mokomasis dalykas:";
-            // 
-            // FilteredSubjectsList
-            // 
-            this.FilteredSubjectsList.FormattingEnabled = true;
-            this.FilteredSubjectsList.ItemHeight = 20;
-            this.FilteredSubjectsList.Location = new System.Drawing.Point(25, 129);
-            this.FilteredSubjectsList.Name = "FilteredSubjectsList";
-            this.FilteredSubjectsList.Size = new System.Drawing.Size(353, 284);
-            this.FilteredSubjectsList.TabIndex = 3;
-            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 438);
+            this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.EvaluateSubjects);
-            this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.AllLecturers);
             this.Controls.Add(this.LecturersByFaculty);
@@ -1532,7 +1534,7 @@
         private System.Windows.Forms.Label FacultySubjectEvalLab;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListBox FilteredSubjectsList;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label SubjectLabel;
     }
 }
 

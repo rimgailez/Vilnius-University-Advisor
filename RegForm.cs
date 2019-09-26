@@ -709,43 +709,40 @@ namespace Vilnius_University_Advisor
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            NumericEvaluationLect.Value = 2;
-            EvaluationCommentLabel.Text = "Esu visiškai nepatenkintas dėstytojo darbu.";
+            NumericEvaluationLect.Value = 1;
+            EvaluationCommentLabel.Text = "1 - esu visiškai nepatenkintas dėstytojo darbu.";
         }
 
         private void BackLecEvaluation_Click(object sender, EventArgs e)
         {
-            ReviewLectEvalTxtBox.Text = "";
-            SelectFacultyLect.Text = "";
-            FilteredLecturersList.ClearSelected();
-            NumericEvaluationLect.Value = 0;
-            EvaluationCommentLabel.Text = "...";
+            ClearAllFieldsInLectForms();
+
             EvaluateLecturer.Hide();
             MainMenu.Show();
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            NumericEvaluationLect.Value = 4;
-            EvaluationCommentLabel.Text = "Esu matęs kur kas geresnių dėstytojų...";
+            NumericEvaluationLect.Value = 2;
+            EvaluationCommentLabel.Text = "2 - esu matęs kur kas geresnių dėstytojų...";
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            NumericEvaluationLect.Value = 6;
-            EvaluationCommentLabel.Text = "Not great not terrible.";
+            NumericEvaluationLect.Value = 3;
+            EvaluationCommentLabel.Text = "3 - dėstytojas didelio įspūdžio nepaliko.";
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            NumericEvaluationLect.Value = 8;
-            EvaluationCommentLabel.Text = "Dėstytojas gerai dirba savo darbą, bet vis dėlto šio to pasigedau.";
+            NumericEvaluationLect.Value = 4;
+            EvaluationCommentLabel.Text = "4 - dėstytojas gerai dirba savo darbą, bet vis dėlto šio to pasigedau.";
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            NumericEvaluationLect.Value = 10;
-            EvaluationCommentLabel.Text = "Dėstytojas puikiai išmano dėstomą dalyką ir geba informaciją pateikti labai aiškiai ir nuosekliai.";
+            NumericEvaluationLect.Value = 5;
+            EvaluationCommentLabel.Text = "5 - dėstytojas puikiai išmano dėstomą dalyką ir geba informaciją pateikti labai aiškiai ir nuosekliai.";
         }
 
         private void ReviewSubject_Click(object sender, EventArgs e)
@@ -758,6 +755,46 @@ namespace Vilnius_University_Advisor
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void SaveBackLectEvaluation_Click(object sender, EventArgs e)
+        {
+            EvaluateLecturerWithValidations();
+
+            ClearAllFieldsInLectForms();
+
+            EvaluateLecturer.Hide();
+            MainMenu.Show(); 
+        }
+
+        private void SaveEvalNextLect_Click(object sender, EventArgs e)
+        {
+            EvaluateLecturerWithValidations();
+
+            ClearAllFieldsInLectForms();
+        }
+
+        private void EvaluateLecturerWithValidations()
+        {
+            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals(""))
+            {
+                MessageBox.Show("Prašome užpildyti visus formoje esančius laukus.", "Neužpildyti laukai", 0, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
+                DataMaster.EvaluateLecturer(selectedLecturer.name, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text);
+            }
+        }
+
+        private void ClearAllFieldsInLectForms()
+        {
+            SelectFacultyLect.Text = "";
+            FilteredLecturersList.ClearSelected();
+            //FilteredLecturersList.DataSource = null;
+            ReviewLectEvalTxtBox.Text = "";
+            EvaluationCommentLabel.Text = "...";
+            NumericEvaluationLect.Value = 0;
         }
     }
 }

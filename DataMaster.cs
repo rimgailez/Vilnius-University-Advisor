@@ -35,6 +35,20 @@ namespace Vilnius_University_Advisor
             string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
             File.WriteAllText(projectPath + "/subjects.json", output);
         }
+
+        public static void EvaluateLecturer(string lecturerName, float lecturerScore, string review)
+        {
+            Lecturer tempLecturer;
+            tempLecturer = lecturers.Find(lecturer => lecturer.name.Equals(lecturerName));
+            float sum = tempLecturer.score * tempLecturer.numberOfReviews;
+            tempLecturer.numberOfReviews++;
+            tempLecturer.score = (sum + lecturerScore)/tempLecturer.numberOfReviews;
+            tempLecturer.reviews.Add(review);
+            lecturers[lecturers.FindIndex(lecturer => lecturer.name.Equals(lecturerName))] = tempLecturer;
+            string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
+            File.WriteAllText(projectPath + "/lecturers.json", output);
+        }
+
         public static List<Lecturer> getLecturers()
         {
             return lecturers;

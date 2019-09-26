@@ -1,24 +1,38 @@
 [
   {
     "reviews": [],
+    "name": "",
+    "faculty": -1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Abramavičius Darius",
     "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Esu patenkintas šia dėstytoja.",
+      "Esu labai nepatenkintas šia dėstytoja."
+    ],
     "name": "Adelė Vaiginytė",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 2.5,
+    "numberOfReviews": 2
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Pilnas jaunatviško dinamizmo dėstytojas.",
+      "Geras dėstytojas, bet kartais nebuvo aišku, apie ką kalbama per teorijos paskaitas.",
+      "Per geras dėstytojas."
+    ],
     "name": "Adomas Birštunas",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 3.33333325,
+    "numberOfReviews": 3
   },
   {
     "reviews": [],
@@ -35,11 +49,13 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Labai cool!"
+    ],
     "name": "Agnė Brilingaitė",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],
@@ -56,11 +72,13 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "cool"
+    ],
     "name": "Agnė Janonienė",
     "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],
@@ -182,11 +200,13 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Susilaikysiu nuo komentarų."
+    ],
     "name": "Aidas Medžiūnas",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 3.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],
@@ -203,11 +223,13 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Džiaugiuosi dėstytoja."
+    ],
     "name": "Aistė Elijio",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 4.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],
