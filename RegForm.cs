@@ -498,7 +498,9 @@ namespace Vilnius_University_Advisor
 
         private void ReviewLecturer_Click(object sender, EventArgs e)
         {
-
+            //display correct panel
+            MainMenu.Hide();
+            EvaluateLecturer.Show();
         }
 
         private void CHGF2_Click(object sender, EventArgs e)
@@ -695,6 +697,67 @@ namespace Vilnius_University_Advisor
             //display correct panel
             LecturersByFaculty.Hide();
             AllLecturers.Show();
+        }
+
+        private void SelectFacultyLect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Faculty faculty = (Faculty)SelectFacultyLect.SelectedIndex;
+            FilteredLecturersList.DataSource = null;
+            FilteredLecturersList.DataSource = DataMaster.getLecturersByFaculty(faculty);
+            FilteredLecturersList.DisplayMember = "name";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 2;
+            EvaluationCommentLabel.Text = "Esu visiškai nepatenkintas dėstytojo darbu.";
+        }
+
+        private void BackLecEvaluation_Click(object sender, EventArgs e)
+        {
+            ReviewLectEvalTxtBox.Text = "";
+            SelectFacultyLect.Text = "";
+            FilteredLecturersList.ClearSelected();
+            NumericEvaluationLect.Value = 0;
+            EvaluationCommentLabel.Text = "...";
+            EvaluateLecturer.Hide();
+            MainMenu.Show();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 4;
+            EvaluationCommentLabel.Text = "Esu matęs kur kas geresnių dėstytojų...";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 6;
+            EvaluationCommentLabel.Text = "Not great not terrible.";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 8;
+            EvaluationCommentLabel.Text = "Dėstytojas gerai dirba savo darbą, bet vis dėlto šio to pasigedau.";
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 10;
+            EvaluationCommentLabel.Text = "Dėstytojas puikiai išmano dėstomą dalyką ir geba informaciją pateikti labai aiškiai ir nuosekliai.";
+        }
+
+        private void ReviewSubject_Click(object sender, EventArgs e)
+        {
+            //display correct panel
+            MainMenu.Hide();
+            EvaluateSubjects.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

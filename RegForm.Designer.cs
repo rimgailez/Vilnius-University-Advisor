@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.MainMenu = new System.Windows.Forms.Panel();
             this.ReviewLecturer = new System.Windows.Forms.Button();
             this.ReviewSubject = new System.Windows.Forms.Button();
@@ -110,6 +111,30 @@
             this.FLF1 = new System.Windows.Forms.Button();
             this.EVAF1 = new System.Windows.Forms.Button();
             this.CHGF1 = new System.Windows.Forms.Button();
+            this.EvaluateLecturer = new System.Windows.Forms.Panel();
+            this.EvaluationCommentLabel = new System.Windows.Forms.Label();
+            this.SaveEvalNextLect = new System.Windows.Forms.Button();
+            this.SaveBackLectEvaluation = new System.Windows.Forms.Button();
+            this.BackLecEvaluation = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.emoji3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.emoji4 = new System.Windows.Forms.PictureBox();
+            this.Emoji1 = new System.Windows.Forms.PictureBox();
+            this.emoji2 = new System.Windows.Forms.PictureBox();
+            this.NumericEvaluationLect = new System.Windows.Forms.NumericUpDown();
+            this.LectEvaluationLab = new System.Windows.Forms.Label();
+            this.FilteredLecturersList = new System.Windows.Forms.ListBox();
+            this.LectLab = new System.Windows.Forms.Label();
+            this.ReviewLectEvalTxtBox = new System.Windows.Forms.TextBox();
+            this.CommentAboutLect = new System.Windows.Forms.Label();
+            this.FacultyLabLect = new System.Windows.Forms.Label();
+            this.SelectFacultyLect = new System.Windows.Forms.ComboBox();
+            this.EvaluateSubjects = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.FacultySubjectEvalLab = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.FilteredSubjectsList = new System.Windows.Forms.ListBox();
             this.MainMenu.SuspendLayout();
             this.LecturerPanel.SuspendLayout();
             this.SubjectPanel.SuspendLayout();
@@ -121,6 +146,15 @@
             this.OptionalSubjects.SuspendLayout();
             this.LecturersByFaculty.SuspendLayout();
             this.MandatorySubjects.SuspendLayout();
+            this.EvaluateLecturer.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.emoji3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emoji4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Emoji1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emoji2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericEvaluationLect)).BeginInit();
+            this.EvaluateSubjects.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenu
@@ -158,6 +192,7 @@
             this.ReviewSubject.TabIndex = 5;
             this.ReviewSubject.Text = "Įvertinti dalyką";
             this.ReviewSubject.UseVisualStyleBackColor = true;
+            this.ReviewSubject.Click += new System.EventHandler(this.ReviewSubject_Click);
             // 
             // ListSubj
             // 
@@ -1053,16 +1088,306 @@
             this.CHGF1.UseVisualStyleBackColor = true;
             this.CHGF1.Click += new System.EventHandler(this.CHGF1_Click);
             // 
+            // EvaluateLecturer
+            // 
+            this.EvaluateLecturer.Controls.Add(this.EvaluationCommentLabel);
+            this.EvaluateLecturer.Controls.Add(this.SaveEvalNextLect);
+            this.EvaluateLecturer.Controls.Add(this.BackLecEvaluation);
+            this.EvaluateLecturer.Controls.Add(this.tableLayoutPanel1);
+            this.EvaluateLecturer.Controls.Add(this.NumericEvaluationLect);
+            this.EvaluateLecturer.Controls.Add(this.LectEvaluationLab);
+            this.EvaluateLecturer.Controls.Add(this.FilteredLecturersList);
+            this.EvaluateLecturer.Controls.Add(this.SaveBackLectEvaluation);
+            this.EvaluateLecturer.Controls.Add(this.LectLab);
+            this.EvaluateLecturer.Controls.Add(this.ReviewLectEvalTxtBox);
+            this.EvaluateLecturer.Controls.Add(this.CommentAboutLect);
+            this.EvaluateLecturer.Controls.Add(this.FacultyLabLect);
+            this.EvaluateLecturer.Controls.Add(this.SelectFacultyLect);
+            this.EvaluateLecturer.Location = new System.Drawing.Point(0, 0);
+            this.EvaluateLecturer.Name = "EvaluateLecturer";
+            this.EvaluateLecturer.Size = new System.Drawing.Size(1188, 437);
+            this.EvaluateLecturer.TabIndex = 22;
+            this.EvaluateLecturer.Visible = false;
+            // 
+            // EvaluationCommentLabel
+            // 
+            this.EvaluationCommentLabel.AutoSize = true;
+            this.EvaluationCommentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EvaluationCommentLabel.Location = new System.Drawing.Point(408, 117);
+            this.EvaluationCommentLabel.Name = "EvaluationCommentLabel";
+            this.EvaluationCommentLabel.Size = new System.Drawing.Size(21, 20);
+            this.EvaluationCommentLabel.TabIndex = 15;
+            this.EvaluationCommentLabel.Text = "...";
+            // 
+            // SaveEvalNextLect
+            // 
+            this.SaveEvalNextLect.Location = new System.Drawing.Point(970, 194);
+            this.SaveEvalNextLect.Name = "SaveEvalNextLect";
+            this.SaveEvalNextLect.Size = new System.Drawing.Size(193, 60);
+            this.SaveEvalNextLect.TabIndex = 14;
+            this.SaveEvalNextLect.Text = "Pateikti ir vertinti kitą dėstytoją";
+            this.SaveEvalNextLect.UseVisualStyleBackColor = true;
+            // 
+            // SaveBackLectEvaluation
+            // 
+            this.SaveBackLectEvaluation.Location = new System.Drawing.Point(970, 273);
+            this.SaveBackLectEvaluation.Name = "SaveBackLectEvaluation";
+            this.SaveBackLectEvaluation.Size = new System.Drawing.Size(193, 56);
+            this.SaveBackLectEvaluation.TabIndex = 13;
+            this.SaveBackLectEvaluation.Text = "Pateikti ir grįžti";
+            this.SaveBackLectEvaluation.UseVisualStyleBackColor = true;
+            // 
+            // BackLecEvaluation
+            // 
+            this.BackLecEvaluation.Location = new System.Drawing.Point(970, 346);
+            this.BackLecEvaluation.Name = "BackLecEvaluation";
+            this.BackLecEvaluation.Size = new System.Drawing.Size(193, 54);
+            this.BackLecEvaluation.TabIndex = 12;
+            this.BackLecEvaluation.Text = "Grįžti";
+            this.BackLecEvaluation.UseVisualStyleBackColor = true;
+            this.BackLecEvaluation.Click += new System.EventHandler(this.BackLecEvaluation_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.emoji3, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.emoji4, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Emoji1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.emoji2, 2, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(409, 38);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(393, 77);
+            this.tableLayoutPanel1.TabIndex = 11;
+            // 
+            // emoji3
+            // 
+            this.emoji3.Image = ((System.Drawing.Image)(resources.GetObject("emoji3.Image")));
+            this.emoji3.Location = new System.Drawing.Point(237, 3);
+            this.emoji3.Name = "emoji3";
+            this.emoji3.Size = new System.Drawing.Size(72, 71);
+            this.emoji3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.emoji3.TabIndex = 12;
+            this.emoji3.TabStop = false;
+            this.emoji3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(81, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(72, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // emoji4
+            // 
+            this.emoji4.Image = ((System.Drawing.Image)(resources.GetObject("emoji4.Image")));
+            this.emoji4.Location = new System.Drawing.Point(315, 3);
+            this.emoji4.Name = "emoji4";
+            this.emoji4.Size = new System.Drawing.Size(75, 71);
+            this.emoji4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.emoji4.TabIndex = 13;
+            this.emoji4.TabStop = false;
+            this.emoji4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // Emoji1
+            // 
+            this.Emoji1.Image = ((System.Drawing.Image)(resources.GetObject("Emoji1.Image")));
+            this.Emoji1.Location = new System.Drawing.Point(3, 3);
+            this.Emoji1.Name = "Emoji1";
+            this.Emoji1.Size = new System.Drawing.Size(72, 71);
+            this.Emoji1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Emoji1.TabIndex = 8;
+            this.Emoji1.TabStop = false;
+            this.Emoji1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // emoji2
+            // 
+            this.emoji2.Image = ((System.Drawing.Image)(resources.GetObject("emoji2.Image")));
+            this.emoji2.Location = new System.Drawing.Point(159, 3);
+            this.emoji2.Name = "emoji2";
+            this.emoji2.Size = new System.Drawing.Size(72, 71);
+            this.emoji2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.emoji2.TabIndex = 10;
+            this.emoji2.TabStop = false;
+            this.emoji2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // NumericEvaluationLect
+            // 
+            this.NumericEvaluationLect.Location = new System.Drawing.Point(970, 51);
+            this.NumericEvaluationLect.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.NumericEvaluationLect.Name = "NumericEvaluationLect";
+            this.NumericEvaluationLect.Size = new System.Drawing.Size(120, 26);
+            this.NumericEvaluationLect.TabIndex = 7;
+            this.NumericEvaluationLect.Visible = false;
+            // 
+            // LectEvaluationLab
+            // 
+            this.LectEvaluationLab.AutoSize = true;
+            this.LectEvaluationLab.Location = new System.Drawing.Point(408, 15);
+            this.LectEvaluationLab.Name = "LectEvaluationLab";
+            this.LectEvaluationLab.Size = new System.Drawing.Size(158, 20);
+            this.LectEvaluationLab.TabIndex = 6;
+            this.LectEvaluationLab.Text = "Dėstytojo įvertinimas:";
+            // 
+            // FilteredLecturersList
+            // 
+            this.FilteredLecturersList.FormattingEnabled = true;
+            this.FilteredLecturersList.ItemHeight = 20;
+            this.FilteredLecturersList.Location = new System.Drawing.Point(27, 142);
+            this.FilteredLecturersList.Name = "FilteredLecturersList";
+            this.FilteredLecturersList.Size = new System.Drawing.Size(364, 284);
+            this.FilteredLecturersList.TabIndex = 5;
+            // 
+            // LectLab
+            // 
+            this.LectLab.AutoSize = true;
+            this.LectLab.Location = new System.Drawing.Point(23, 114);
+            this.LectLab.Name = "LectLab";
+            this.LectLab.Size = new System.Drawing.Size(88, 20);
+            this.LectLab.TabIndex = 4;
+            this.LectLab.Text = "Dėstytojas:";
+            // 
+            // ReviewLectEvalTxtBox
+            // 
+            this.ReviewLectEvalTxtBox.Location = new System.Drawing.Point(409, 174);
+            this.ReviewLectEvalTxtBox.Multiline = true;
+            this.ReviewLectEvalTxtBox.Name = "ReviewLectEvalTxtBox";
+            this.ReviewLectEvalTxtBox.Size = new System.Drawing.Size(532, 252);
+            this.ReviewLectEvalTxtBox.TabIndex = 3;
+            // 
+            // CommentAboutLect
+            // 
+            this.CommentAboutLect.AutoSize = true;
+            this.CommentAboutLect.Location = new System.Drawing.Point(408, 151);
+            this.CommentAboutLect.Name = "CommentAboutLect";
+            this.CommentAboutLect.Size = new System.Drawing.Size(294, 20);
+            this.CommentAboutLect.TabIndex = 2;
+            this.CommentAboutLect.Text = "Pasidalinkite įžvalgomis apie šį dėstytoją:";
+            // 
+            // FacultyLabLect
+            // 
+            this.FacultyLabLect.AutoSize = true;
+            this.FacultyLabLect.Location = new System.Drawing.Point(23, 31);
+            this.FacultyLabLect.Name = "FacultyLabLect";
+            this.FacultyLabLect.Size = new System.Drawing.Size(88, 20);
+            this.FacultyLabLect.TabIndex = 1;
+            this.FacultyLabLect.Text = "Fakultetas:";
+            // 
+            // SelectFacultyLect
+            // 
+            this.SelectFacultyLect.FormattingEnabled = true;
+            this.SelectFacultyLect.Items.AddRange(new object[] {
+            "Chemijos ir geomokslų",
+            "Ekonomikos ir verslo administravimo",
+            "Filologijos",
+            "Filosofijos",
+            "Fizikos",
+            "Gyvybės mokslų",
+            "Istorijos",
+            "Kauno",
+            "Komunikacijos",
+            "Matematikos ir informatikos",
+            "Medicinos",
+            "Tarptautinių santykių ir politikos mokslų",
+            "Teisės",
+            "Verslo"});
+            this.SelectFacultyLect.Location = new System.Drawing.Point(25, 57);
+            this.SelectFacultyLect.Name = "SelectFacultyLect";
+            this.SelectFacultyLect.Size = new System.Drawing.Size(366, 28);
+            this.SelectFacultyLect.TabIndex = 0;
+            this.SelectFacultyLect.SelectedIndexChanged += new System.EventHandler(this.SelectFacultyLect_SelectedIndexChanged);
+            // 
+            // EvaluateSubjects
+            // 
+            this.EvaluateSubjects.Controls.Add(this.FilteredSubjectsList);
+            this.EvaluateSubjects.Controls.Add(this.label1);
+            this.EvaluateSubjects.Controls.Add(this.comboBox1);
+            this.EvaluateSubjects.Controls.Add(this.FacultySubjectEvalLab);
+            this.EvaluateSubjects.Location = new System.Drawing.Point(0, 0);
+            this.EvaluateSubjects.Name = "EvaluateSubjects";
+            this.EvaluateSubjects.Size = new System.Drawing.Size(1188, 435);
+            this.EvaluateSubjects.TabIndex = 7;
+            this.EvaluateSubjects.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Chemijos ir geomokslų",
+            "Ekonomikos ir verslo administravimo",
+            "Filologijos",
+            "Filosofijos",
+            "Fizikos",
+            "Gyvybės mokslų",
+            "Istorijos",
+            "Kauno",
+            "Komunikacijos",
+            "Matematikos ir informatikos",
+            "Medicinos",
+            "Tarptautinių santykių ir politikos mokslų",
+            "Teisės",
+            "Verslo"});
+            this.comboBox1.Location = new System.Drawing.Point(25, 51);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(353, 28);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // FacultySubjectEvalLab
+            // 
+            this.FacultySubjectEvalLab.AutoSize = true;
+            this.FacultySubjectEvalLab.Location = new System.Drawing.Point(23, 25);
+            this.FacultySubjectEvalLab.Name = "FacultySubjectEvalLab";
+            this.FacultySubjectEvalLab.Size = new System.Drawing.Size(88, 20);
+            this.FacultySubjectEvalLab.TabIndex = 0;
+            this.FacultySubjectEvalLab.Text = "Fakultetas:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mokomasis dalykas:";
+            // 
+            // FilteredSubjectsList
+            // 
+            this.FilteredSubjectsList.FormattingEnabled = true;
+            this.FilteredSubjectsList.ItemHeight = 20;
+            this.FilteredSubjectsList.Location = new System.Drawing.Point(25, 129);
+            this.FilteredSubjectsList.Name = "FilteredSubjectsList";
+            this.FilteredSubjectsList.Size = new System.Drawing.Size(353, 284);
+            this.FilteredSubjectsList.TabIndex = 3;
+            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 438);
             this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.LecturersByFaculty);
-            this.Controls.Add(this.LecturerPanel);
+            this.Controls.Add(this.EvaluateSubjects);
+            this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.AllLecturers);
+            this.Controls.Add(this.LecturersByFaculty);
+            this.Controls.Add(this.LecturerPanel);
             this.Controls.Add(this.AllSubjects);
             this.Controls.Add(this.MandatorySubjects);
             this.Controls.Add(this.OptionalSubjects);
@@ -1085,6 +1410,17 @@
             this.OptionalSubjects.ResumeLayout(false);
             this.LecturersByFaculty.ResumeLayout(false);
             this.MandatorySubjects.ResumeLayout(false);
+            this.EvaluateLecturer.ResumeLayout(false);
+            this.EvaluateLecturer.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.emoji3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emoji4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Emoji1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emoji2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericEvaluationLect)).EndInit();
+            this.EvaluateSubjects.ResumeLayout(false);
+            this.EvaluateSubjects.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1173,6 +1509,30 @@
         private System.Windows.Forms.Button FLF1;
         private System.Windows.Forms.Button EVAF1;
         private System.Windows.Forms.Button CHGF1;
+        private System.Windows.Forms.Panel EvaluateLecturer;
+        private System.Windows.Forms.Label FacultyLabLect;
+        private System.Windows.Forms.ComboBox SelectFacultyLect;
+        private System.Windows.Forms.TextBox ReviewLectEvalTxtBox;
+        private System.Windows.Forms.Label CommentAboutLect;
+        private System.Windows.Forms.ListBox FilteredLecturersList;
+        private System.Windows.Forms.Label LectLab;
+        private System.Windows.Forms.Label LectEvaluationLab;
+        private System.Windows.Forms.NumericUpDown NumericEvaluationLect;
+        private System.Windows.Forms.PictureBox Emoji1;
+        private System.Windows.Forms.Button SaveEvalNextLect;
+        private System.Windows.Forms.Button SaveBackLectEvaluation;
+        private System.Windows.Forms.Button BackLecEvaluation;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox emoji3;
+        private System.Windows.Forms.PictureBox emoji2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox emoji4;
+        private System.Windows.Forms.Label EvaluationCommentLabel;
+        private System.Windows.Forms.Panel EvaluateSubjects;
+        private System.Windows.Forms.Label FacultySubjectEvalLab;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ListBox FilteredSubjectsList;
+        private System.Windows.Forms.Label label1;
     }
 }
 
