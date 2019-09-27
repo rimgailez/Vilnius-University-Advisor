@@ -498,7 +498,9 @@ namespace Vilnius_University_Advisor
 
         private void ReviewLecturer_Click(object sender, EventArgs e)
         {
-
+            //display correct panel
+            MainMenu.Hide();
+            EvaluateLecturer.Show();
         }
 
         private void CHGF2_Click(object sender, EventArgs e)
@@ -697,27 +699,106 @@ namespace Vilnius_University_Advisor
             AllLecturers.Show();
         }
 
-        private void RunScraper_Click(object sender, EventArgs e)
+        private void SelectFacultyLect_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MainMenu.Hide();
-            ScraperPanel.Show();
-            (new Scraper.ScraperMain(DataMaster.projectPath, this)).StartScrap();
-            ScraperBack.Show();
-
-        }
-        public void updateScraperTextbox(string text)
-        {
-            ScraperLog.Text += text + System.Environment.NewLine;
-            ScraperLog.SelectionStart = ScraperLog.Text.Length;
-            ScraperLog.ScrollToCaret();
+            Faculty faculty = (Faculty)SelectFacultyLect.SelectedIndex;
+            FilteredLecturersList.DataSource = null;
+            FilteredLecturersList.DataSource = DataMaster.getLecturersByFaculty(faculty);
+            FilteredLecturersList.DisplayMember = "name";
         }
 
-        private void ScraperBack_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            ScraperPanel.Hide();
+            NumericEvaluationLect.Value = 1;
+            EvaluationCommentLabel.Text = "1 - esu visiškai nepatenkintas dėstytojo darbu.";
+        }
+
+        private void BackLecEvaluation_Click(object sender, EventArgs e)
+        {
+            ClearAllFieldsInLectForms();
+
+            EvaluateLecturer.Hide();
             MainMenu.Show();
-            ScraperBack.Hide();
-            ScraperLog.Text = "";
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 2;
+            EvaluationCommentLabel.Text = "2 - esu matęs kur kas geresnių dėstytojų...";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 3;
+            EvaluationCommentLabel.Text = "3 - dėstytojas didelio įspūdžio nepaliko.";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 4;
+            EvaluationCommentLabel.Text = "4 - dėstytojas gerai dirba savo darbą, bet vis dėlto šio to pasigedau.";
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationLect.Value = 5;
+            EvaluationCommentLabel.Text = "5 - dėstytojas puikiai išmano dėstomą dalyką ir geba informaciją pateikti labai aiškiai ir nuosekliai.";
+        }
+
+        private void ReviewSubject_Click(object sender, EventArgs e)
+        {
+            //display correct panel
+            MainMenu.Hide();
+            EvaluateSubjects.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SaveBackLectEvaluation_Click(object sender, EventArgs e)
+        {
+            if (EvaluateLecturerWithValidations())
+            {
+                ClearAllFieldsInLectForms();
+
+                EvaluateLecturer.Hide();
+                MainMenu.Show();
+            }
+        }
+
+        private void SaveEvalNextLect_Click(object sender, EventArgs e)
+        {
+            if (EvaluateLecturerWithValidations())
+            {
+                ClearAllFieldsInLectForms();
+            }
+
+        }
+
+        private Boolean EvaluateLecturerWithValidations()
+        {
+            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals(""))
+            {
+                MessageBox.Show("Prašome užpildyti visus formoje esančius laukus.", "Neužpildyti laukai", 0, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            else
+            {
+                Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
+                DataMaster.EvaluateLecturer(selectedLecturer.name, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text);
+                return true;
+            }
+        }
+
+        private void ClearAllFieldsInLectForms()
+        {
+            SelectFacultyLect.Text = "";
+            FilteredLecturersList.DataSource = null;
+            ReviewLectEvalTxtBox.Text = "";
+            EvaluationCommentLabel.Text = "...";
+            NumericEvaluationLect.Value = 0;
         }
     }
 }
