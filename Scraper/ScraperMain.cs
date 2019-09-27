@@ -24,7 +24,7 @@ namespace Vilnius_University_Advisor.Scraper
 
         public ScraperMain(string path, RegForm regForm)
         {
-            streamWriter = new StreamWriter(path + "/Scraper/log.txt");
+            streamWriter = new StreamWriter(path + Path.DirectorySeparatorChar + "Scraper" + Path.DirectorySeparatorChar + "log.txt");
             this.regForm = regForm;
         }
         [STAThread]     
@@ -56,7 +56,7 @@ namespace Vilnius_University_Advisor.Scraper
                     AddLecturers(lecturers);
                     AddSubjects(subjects);
                 }
-                DataMaster.WriteToJson();
+                DataMaster.GetInstance().WriteToJson();
             }
             regForm.updateScraperTextbox("Scraper is done.");
             streamWriter.Dispose();
@@ -66,7 +66,7 @@ namespace Vilnius_University_Advisor.Scraper
         {
             foreach(Subject subject in subjects)
             {
-                DataMaster.AddSubjectWithoutWriting(subject);
+                DataMaster.GetInstance().AddSubjectWithoutWriting(subject);
             }
         }
 
@@ -74,7 +74,7 @@ namespace Vilnius_University_Advisor.Scraper
         {
             foreach(Lecturer lecturer in lecturers)
             {
-                DataMaster.AddLecturerWithoutWriting(lecturer);
+                DataMaster.GetInstance().AddLecturerWithoutWriting(lecturer);
             }
         }
 
