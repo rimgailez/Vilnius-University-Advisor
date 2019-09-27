@@ -42,11 +42,13 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Semestras su šia dėstytoja buvo naudingas ir įsimintinas."
+    ],
     "name": "Agata Adamaitytė",
     "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [
@@ -88,11 +90,13 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Nesu patenkintas dėstymo kokybe."
+    ],
     "name": "Agnė Laužadytė-Tutlienė",
     "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 1.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],

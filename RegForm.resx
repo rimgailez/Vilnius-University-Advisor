@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="emoji3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EmojiScore4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIMAAACECAYAAACzmJjeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAaZVJREFUeF7tnQecXFXd/reXbDoh9N6lSBMLTVBAmggISFGKdBVBERtIERFFwPYi
@@ -575,7 +575,7 @@
         QmCC
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EmojiScore2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIMAAACCCAYAAABlwXvDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAY7lJREFUeF7tvQeAFdX9Pb6wy9J7RwEbCGI3iYkxGkvUmERjYhKTGI1JLIlRk2hi
@@ -1007,7 +1007,7 @@
         QmCC
 </value>
   </data>
-  <data name="emoji4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EmojiScore5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAYAAACunahmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAe5hJREFUeF7t/QVgVVf6/Q9fj7sQDwkJLi0F2lIBqlQpLfVSoUadlgpQpFiR6lSn
@@ -1540,7 +1540,7 @@
         nqO1wdo+rru1hFRvuIA4af5OgJL/ZVnTP59+z3t+awL+f1bmSQzdu661AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Emoji1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EmojiScore1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAYAAACunahmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAaZ5JREFUeF7tfQWgFlX6/uV2d3OLLhUVQQVFFASxFQOxEBEUEExCOkTsdm1dXWuN
@@ -1997,7 +1997,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="emoji2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EmojiScore3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIQAAACDCAYAAABMQbMfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAWkZJREFUeF7tvQeAJVWZ/t0z05NnmAAzJAlKEkFdQBQRxACuSpAgQQFFUUAliIiB

@@ -759,39 +759,43 @@ namespace Vilnius_University_Advisor
 
         private void SaveBackLectEvaluation_Click(object sender, EventArgs e)
         {
-            EvaluateLecturerWithValidations();
+            if (EvaluateLecturerWithValidations())
+            {
+                ClearAllFieldsInLectForms();
 
-            ClearAllFieldsInLectForms();
-
-            EvaluateLecturer.Hide();
-            MainMenu.Show(); 
+                EvaluateLecturer.Hide();
+                MainMenu.Show();
+            }
         }
 
         private void SaveEvalNextLect_Click(object sender, EventArgs e)
         {
-            EvaluateLecturerWithValidations();
+            if (EvaluateLecturerWithValidations())
+            {
+                ClearAllFieldsInLectForms();
+            }
 
-            ClearAllFieldsInLectForms();
         }
 
-        private void EvaluateLecturerWithValidations()
+        private Boolean EvaluateLecturerWithValidations()
         {
             if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals(""))
             {
                 MessageBox.Show("Prašome užpildyti visus formoje esančius laukus.", "Neužpildyti laukai", 0, MessageBoxIcon.Exclamation);
+                return false;
             }
             else
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
                 DataMaster.EvaluateLecturer(selectedLecturer.name, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text);
+                return true;
             }
         }
 
         private void ClearAllFieldsInLectForms()
         {
             SelectFacultyLect.Text = "";
-            FilteredLecturersList.ClearSelected();
-            //FilteredLecturersList.DataSource = null;
+            FilteredLecturersList.DataSource = null;
             ReviewLectEvalTxtBox.Text = "";
             EvaluationCommentLabel.Text = "...";
             NumericEvaluationLect.Value = 0;
