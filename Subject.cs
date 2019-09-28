@@ -14,5 +14,19 @@ namespace Vilnius_University_Advisor
             this.IsOptional = IsOptional;
             this.IsBUS = IsBUS;
         }
+        public override bool Equals(object obj)
+        {
+            Subject item = obj as Subject;
+            if (item == null) return false;
+            if (name == item.name && faculty == item.faculty && IsOptional == item.IsOptional && IsBUS == item.IsBUS) return true;
+            else return false;
+        }
+        public override int GetHashCode()
+        {
+            int hashCode = base.GetHashCode();
+            hashCode = hashCode * 7 + IsOptional.GetHashCode();
+            hashCode = hashCode * 7 + IsBUS.GetHashCode();
+            return hashCode;
+        }
     }
 }

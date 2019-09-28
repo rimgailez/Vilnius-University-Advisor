@@ -21,5 +21,18 @@ namespace Vilnius_University_Advisor
             this.numberOfReviews = 0;
             this.reviews = new List<string>();
         }
+        public override bool Equals(object obj)
+        {
+            DataNode item = obj as DataNode;
+            if (item == null) return false;
+            if (name == item.name && faculty == item.faculty) return true;
+            else return false;
+        }
+        public override int GetHashCode()
+        {
+            int hashCode = name.GetHashCode();
+            hashCode = hashCode * 7 + faculty.GetHashCode();
+            return hashCode;
+        }
     }
 }
