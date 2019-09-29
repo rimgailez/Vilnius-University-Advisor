@@ -641,7 +641,7 @@ namespace Vilnius_University_Advisor
             Info.Text = "";
             if (AllLect.SelectedItem != null)
             {
-                Info.Text = DataMaster.GetInstance().GetLecturerInfo((Lecturer)AllLect.SelectedItem);
+                Info.Text = DataMaster.GetInstance().GetLecturerInfo((Lecturer)AllLect.SelectedItem, (Faculty)AllFaculties.SelectedIndex);
             }
             else
             {
@@ -686,7 +686,7 @@ namespace Vilnius_University_Advisor
             Info1.Text = "";
             if (AllSubj.SelectedItem != null)
             {
-                Info1.Text = DataMaster.GetInstance().GetSubjectInfo((Subject)AllSubj.SelectedItem);
+                Info1.Text = DataMaster.GetInstance().GetSubjectInfo((Subject)AllSubj.SelectedItem, (Faculty)AllFaculties1.SelectedIndex);
             }
             else
             {

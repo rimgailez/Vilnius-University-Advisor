@@ -130,10 +130,11 @@ namespace Vilnius_University_Advisor
             return someLecturers;
         }
 
-        public string GetLecturerInfo(Lecturer lecturer)
+        public string GetLecturerInfo(Lecturer lecturer, Faculty faculty)
         {
             string information = "";
-            foreach (Lecturer aLecturer in lecturers)
+            List<Lecturer> someLecturers = GetLecturersByFaculty(faculty);
+            foreach (Lecturer aLecturer in someLecturers)
             {
                 if ((aLecturer).Equals(lecturer))
                 {
@@ -150,9 +151,10 @@ namespace Vilnius_University_Advisor
                             number++;
                         }
                     }
+                    return information;
                 }
             }
-            return information;
+            return "Dėstytojas nerastas";
         }
 
         public List<Subject> GetSubjectsByFaculty(Faculty faculty)
@@ -168,10 +170,11 @@ namespace Vilnius_University_Advisor
             return someSubjects;
         }
 
-        public string GetSubjectInfo(Subject subject)
+        public string GetSubjectInfo(Subject subject, Faculty faculty)
         {
             string information = "";
-            foreach (Subject aSubject in subjects)
+            List<Subject> someSubjects = GetSubjectsByFaculty(faculty);
+            foreach (Subject aSubject in someSubjects)
             {
                 if ((aSubject).Equals(subject))
                 {
@@ -200,9 +203,10 @@ namespace Vilnius_University_Advisor
                             number++;
                         }
                     }
+                    return information;
                 }
             }
-            return information;
+            return "Dalykas nerastas";
         }
 
     }
