@@ -117,383 +117,258 @@ namespace Vilnius_University_Advisor
             MandatorySubjects.Show();
         }
 
-        private void BUS_Click(object sender, EventArgs e)
+        public void SetColumnsWidth()
         {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getBUSSubjects();
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
+            ListSubjTable.Columns[0].Width = 320;
+            ListSubjTable.Columns[1].Width = 240;
+            ListSubjTable.Columns[2].Width = 60;
+            ListSubjTable.Columns[3].Width = 100;
+        }
+
+        public void DisplayOptionalSubjects()
+        {
             //display correct panel
             OptionalSubjects.Hide();
             AllSubjects.Show();
+        }
+
+        private void BUS_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetBUSSubjects();
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void CHGF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Chemijos_ir_geomokslų);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Chemistry_and_Geosciences);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void EVAF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Ekonomikos_ir_verslo_administravimo);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Economics_and_Business_Administration);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void FLF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Filologijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Philology);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void FSF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Filosofijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Philosophy);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void FF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Fizikos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Physics);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void GMC_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Gyvybės_mokslų);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Life_Sciences);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void IF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Istorijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.History);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void KNF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Kauno);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Kaunas);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void KF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Komunikacijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Communication);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void MIF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Matematikos_ir_informatikos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Mathematics_and_Informatics);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void MF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Medicinos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Medicine);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void TSPMI_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Tarptautinių_santykių_ir_politikos_mokslų);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.International_Relations_and_Political_Science);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void TF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Teisės);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            OptionalSubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        
-
-        private void CHGF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Chemijos_ir_geomokslų);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void EVAF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Ekonomikos_ir_verslo_administravimo);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void FLF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Filologijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void FSF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Filosofijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void FF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Fizikos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void GMC1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Gyvybės_mokslų);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void IF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Istorijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void KNF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Kauno);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void KF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Komunikacijos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void MIF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Matematikos_ir_informatikos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void MF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Medicinos);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void TSPMI1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Tarptautinių_santykių_ir_politikos_mokslų);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void TF1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Teisės);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
-        }
-
-        private void VM1_Click(object sender, EventArgs e)
-        {
-            ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(false, Faculty.Verslo);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
-            //display correct panel
-            MandatorySubjects.Hide();
-            AllSubjects.Show();
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Law);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
         }
 
         private void VM_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().getSubjectsByTypeAndFaculty(true, Faculty.Verslo);
-            ListSubjTable.Columns[0].Width = 400;
-            ListSubjTable.Columns[1].Width = 200;
-            ListSubjTable.Columns[2].Width = 40;
-            ListSubjTable.Columns[3].Width = 80;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Business);
+            SetColumnsWidth();
+            DisplayOptionalSubjects();
+        }
+
+        public void DisplayMandatorySubjects()
+        {
             //display correct panel
-            OptionalSubjects.Hide();
+            MandatorySubjects.Hide();
             AllSubjects.Show();
+        }
+
+        private void CHGF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Chemistry_and_Geosciences);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void EVAF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Economics_and_Business_Administration);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void FLF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Philology);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void FSF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Philosophy);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void FF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Physics);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void GMC1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Life_Sciences);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void IF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.History);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void KNF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Kaunas);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void KF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Communication);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void MIF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Mathematics_and_Informatics);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void MF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Medicine);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void TSPMI1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.International_Relations_and_Political_Science);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void TF1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Law);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
+        }
+
+        private void VM1_Click(object sender, EventArgs e)
+        {
+            ListSubjTable.DataSource = null;
+            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Business);
+            SetColumnsWidth();
+            DisplayMandatorySubjects();
         }
 
         private void ReviewLecturer_Click(object sender, EventArgs e)
@@ -503,207 +378,134 @@ namespace Vilnius_University_Advisor
             EvaluateLecturer.Show();
         }
 
+        public void SetColumnsWidthForLecturers()
+        {
+            ListLectTable.Columns[0].Width = 300;
+            ListLectTable.Columns[1].Width = 260;
+            ListLectTable.Columns[2].Width = 60;
+            ListLectTable.Columns[3].Width = 100;
+            //display correct panel
+            LecturersByFaculty.Hide();
+            AllLecturers.Show();
+        }
+
         private void CHGF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Chemijos_ir_geomokslų);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Chemistry_and_Geosciences);
+            SetColumnsWidthForLecturers();
         }
 
         private void EVAF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Ekonomikos_ir_verslo_administravimo);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Economics_and_Business_Administration);
+            SetColumnsWidthForLecturers();
         }
 
         private void FLF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Filologijos);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Philology);
+            SetColumnsWidthForLecturers();
         }
 
         private void FSF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Filosofijos);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Philosophy);
+            SetColumnsWidthForLecturers();
         }
 
         private void FF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Fizikos);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Physics);
+            SetColumnsWidthForLecturers();
         }
 
         private void GMC2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Gyvybės_mokslų);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Life_Sciences);
+            SetColumnsWidthForLecturers();
         }
 
         private void IF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Istorijos);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.History);
+            SetColumnsWidthForLecturers();
         }
 
         private void KNF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Kauno);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Kaunas);
+            SetColumnsWidthForLecturers();
         }
 
         private void KF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Komunikacijos);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Communication);
+            SetColumnsWidthForLecturers();
         }
 
         private void MIF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Matematikos_ir_informatikos);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Mathematics_and_Informatics);
+            SetColumnsWidthForLecturers();
         }
 
         private void MF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Medicinos);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Medicine);
+            SetColumnsWidthForLecturers();
         }
 
         private void TSPMI2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Tarptautinių_santykių_ir_politikos_mokslų);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.International_Relations_and_Political_Science);
+            SetColumnsWidthForLecturers();
         }
 
         private void TF2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Teisės);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Law);
+            SetColumnsWidthForLecturers();
         }
 
         private void VM2_Click(object sender, EventArgs e)
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().getLecturersByFaculty(Faculty.Verslo);
-            ListLectTable.Columns[0].Width = 400;
-            ListLectTable.Columns[1].Width = 200;
-            ListLectTable.Columns[2].Width = 40;
-            ListLectTable.Columns[3].Width = 80;
-            //display correct panel
-            LecturersByFaculty.Hide();
-            AllLecturers.Show();
+            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Business);
+            SetColumnsWidthForLecturers();
         }
 
         private void SelectFacultyLect_SelectedIndexChanged(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)SelectFacultyLect.SelectedIndex;
             FilteredLecturersList.DataSource = null;
-            FilteredLecturersList.DataSource = DataMaster.GetInstance().getLecturersByFaculty(faculty);
+            FilteredLecturersList.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
             FilteredLecturersList.DisplayMember = "name";
         }
 
@@ -819,5 +621,78 @@ namespace Vilnius_University_Advisor
             ScraperBack.Hide();
             ScraperLog.Text = "";
         }
+
+        private void OneLecturer_Click(object sender, EventArgs e)
+        {
+            MainMenu.Hide();
+            SingleLecturer.Show();
+        }
+
+        private void AllFaculties_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Faculty faculty = (Faculty)AllFaculties.SelectedIndex;
+            AllLect.DataSource = null;
+            AllLect.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
+            AllLect.DisplayMember = "name";
+        }
+
+        private void ShowLecturerInfo_Click(object sender, EventArgs e)
+        {
+            Info.Text = "";
+            if (AllLect.SelectedItem != null)
+            {
+                Info.Text = DataMaster.GetInstance().GetLecturerInfo((Lecturer)AllLect.SelectedItem, (Faculty)AllFaculties.SelectedIndex);
+            }
+            else
+            {
+                MessageBox.Show("Nepasirinkote dėstytojo");
+            }
+        }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            SingleLecturer.Hide();
+            Info.Text = "";
+            AllFaculties.Text = "";
+            AllLect.DataSource = null;
+            MainMenu.Show();
+        }
+
+        private void OneSubject_Click(object sender, EventArgs e)
+        {
+            MainMenu.Hide();
+            SingleSubject.Show();
+        }
+
+        private void Return1_Click(object sender, EventArgs e)
+        {
+            SingleSubject.Hide();
+            Info1.Text = "";
+            AllFaculties1.Text = "";
+            AllSubj.DataSource = null;
+            MainMenu.Show();
+        }
+
+        private void AllFaculties1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Faculty faculty = (Faculty)AllFaculties1.SelectedIndex;
+            AllSubj.DataSource = null;
+            AllSubj.DataSource = DataMaster.GetInstance().GetSubjectsByFaculty(faculty);
+            AllSubj.DisplayMember = "name";
+        }
+
+        private void ShowSubjectInfo_Click(object sender, EventArgs e)
+        {
+            Info1.Text = "";
+            if (AllSubj.SelectedItem != null)
+            {
+                Info1.Text = DataMaster.GetInstance().GetSubjectInfo((Subject)AllSubj.SelectedItem, (Faculty)AllFaculties1.SelectedIndex);
+            }
+            else
+            {
+                MessageBox.Show("Nepasirinkote dalyko");
+            }
+        }
+
     }
 }

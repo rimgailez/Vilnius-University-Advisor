@@ -80,15 +80,15 @@ namespace Vilnius_University_Advisor.Scraper
 
         private Faculty getFaculty(string url)
         {
-            if (url.Equals(mainUrls[0])) return Faculty.Chemijos_ir_geomokslų;
-            else if (url.Equals(mainUrls[1])) return Faculty.Ekonomikos_ir_verslo_administravimo;
-            else if (url.Equals(mainUrls[2])) return Faculty.Filologijos;
-            else if (url.Equals(mainUrls[3])) return Faculty.Filosofijos;
-            else if (url.Equals(mainUrls[4])) return Faculty.Fizikos;
-            else if (url.Equals(mainUrls[5])) return Faculty.Gyvybės_mokslų;
-            else if (url.Equals(mainUrls[6])) return Faculty.Komunikacijos;
-            else if (url.Equals(mainUrls[7])) return Faculty.Matematikos_ir_informatikos;
-            else if (url.Equals(mainUrls[8])) return Faculty.Verslo;
+            if (url.Equals(mainUrls[0])) return Faculty.Chemistry_and_Geosciences;
+            else if (url.Equals(mainUrls[1])) return Faculty.Economics_and_Business_Administration;
+            else if (url.Equals(mainUrls[2])) return Faculty.Philology;
+            else if (url.Equals(mainUrls[3])) return Faculty.Philosophy;
+            else if (url.Equals(mainUrls[4])) return Faculty.Physics;
+            else if (url.Equals(mainUrls[5])) return Faculty.Life_Sciences;
+            else if (url.Equals(mainUrls[6])) return Faculty.Communication;
+            else if (url.Equals(mainUrls[7])) return Faculty.Mathematics_and_Informatics;
+            else if (url.Equals(mainUrls[8])) return Faculty.Business;
             else return Faculty.None;
         }
     }
