@@ -183,7 +183,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Akademinis raštingumas",
+    "name": "Akademinis rašymas",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -192,7 +192,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Akademinis rašymas",
+    "name": "Akademinis raštingumas",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -579,7 +579,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Anglų kalbotyros seminaras: šiuolaikiniai kalbos tyrimo metodai",
+    "name": "Anglų kalbotyros seminaras: sociolingvistikos įvadas",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -588,7 +588,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Anglų kalbotyros seminaras: sociolingvistikos įvadas",
+    "name": "Anglų kalbotyros seminaras: šiuolaikiniai kalbos tyrimo metodai",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -1324,42 +1324,6 @@
   },
   {
     "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Asmeninės karjeros valdymas",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Asmens duomenų teisinė apsauga",
-    "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Asmens gerovė: tarpdalykinis požiūris",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Asmens teisių apsauga baudžiamajame procese",
-    "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
     "IsBUS": true,
     "reviews": [],
     "name": "Asmenybė ir jos tapsmas",
@@ -1400,6 +1364,42 @@
     "reviews": [],
     "name": "Asmenybės ūgties filosofija",
     "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Asmeninės karjeros valdymas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Asmens duomenų teisinė apsauga",
+    "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Asmens gerovė: tarpdalykinis požiūris",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Asmens teisių apsauga baudžiamajame procese",
+    "faculty": 12,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2259,42 +2259,6 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Baltų filologijos įvadas",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Baltų kalbotyros istorija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Baltų kalbų istorija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Baltų kalbų lyginamoji gramatika",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
@@ -2354,6 +2318,42 @@
     "reviews": [],
     "name": "Baltymų ir vaistų molekulinė biofizika",
     "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Baltų filologijos įvadas",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Baltų kalbotyros istorija",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Baltų kalbų istorija",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Baltų kalbų lyginamoji gramatika",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3258,19 +3258,19 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": false,
+    "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Biometeorologija",
+    "name": "Biometeorology",
     "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
-    "IsOptional": true,
+    "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
-    "name": "Biometeorology",
+    "name": "Biometeorologija",
     "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
@@ -3792,15 +3792,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Dalinių išvestinių diferencialinės lygtys",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Dalykinė anglų kalba",
     "faculty": 0,
     "score": 0.0,
@@ -3920,6 +3911,15 @@
     "reviews": [],
     "name": "Dalykinės kalbos teorijos įvadas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Dalinių išvestinių diferencialinės lygtys",
+    "faculty": 9,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5085,19 +5085,19 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": true,
+    "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
-    "name": "Duomenų tvarkyba ir transformavimas R aplinkoje",
+    "name": "Duomenų tyrimas",
     "faculty": 9,
     "score": 0.0,
     "numberOfReviews": 0
   },
   {
-    "IsOptional": false,
+    "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Duomenų tyrimas",
+    "name": "Duomenų tvarkyba ir transformavimas R aplinkoje",
     "faculty": 9,
     "score": 0.0,
     "numberOfReviews": 0
@@ -5530,6 +5530,15 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Ekonominės sistemos analizė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ekonominės veiklos teisinės formos ir bendrovių teisė",
     "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
@@ -8199,6 +8208,87 @@
     "numberOfReviews": 0
   },
   {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyvenimo kelio sociologija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyvenimo kokybė ir asmens gerovė",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyventojai ir ekonominė plėtra",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyventojų ekonominis aktyvinimas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyventojų užimtumo teisinis reguliavimas",
+    "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyventojų užimtumo teorijos ir darbo rinka",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyvybės ir sveikatos draudimo modeliai",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Gyvybės sinergetika",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": true,
+    "reviews": [],
+    "name": "Gyvūnų elgsenos pagrindai",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
@@ -8481,6 +8571,15 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
+    "name": "Graikų lyrika",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
     "name": "Graikų literatūros istorija",
     "faculty": 2,
     "score": 0.0,
@@ -8491,15 +8590,6 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Graikų literatūros istorija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Graikų lyrika",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -8546,6 +8636,15 @@
     "reviews": [],
     "name": "Griaunamuju inovaciju skatinimas",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Grybų bendrijų ekologija",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -8618,96 +8717,6 @@
     "reviews": [],
     "name": "Grupių teorija ir praktika",
     "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Grybų bendrijų ekologija",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyvenimo kelio sociologija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyvenimo kokybė ir asmens gerovė",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyventojai ir ekonominė plėtra",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyventojų ekonominis aktyvinimas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyventojų užimtumo teisinis reguliavimas",
-    "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyventojų užimtumo teorijos ir darbo rinka",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": true,
-    "reviews": [],
-    "name": "Gyvūnų elgsenos pagrindai",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyvybės ir sveikatos draudimo modeliai",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Gyvybės sinergetika",
-    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -10452,42 +10461,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Įšalotyra",
-    "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Išgyvenamumo demografiniai modeliai",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Išgyvenamumo demografiniai modeliai",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Išlaidų apskaita",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Islamas Europoje",
     "faculty": 11,
     "score": 0.0,
@@ -10751,6 +10724,42 @@
     "reviews": [],
     "name": "Istorinės atminties formos: fotografija, kinas, komiksai",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Įšalotyra",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Išgyvenamumo demografiniai modeliai",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Išgyvenamumo demografiniai modeliai",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Išlaidų apskaita",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -11223,15 +11232,6 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Įvadas į šiuolaikinės lingvistikos kryptis",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
     "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
@@ -11264,6 +11264,15 @@
     "reviews": [],
     "name": "Įvadas į studijas ir kriminologo profesija",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Įvadas į šiuolaikinės lingvistikos kryptis",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -11955,8 +11964,8 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Kasdienio pasaulio filosofija",
-    "faculty": 3,
+    "name": "Kasdienybės refleksija: lietuvių eseistika",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -11964,8 +11973,8 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Kasdienybės refleksija: lietuvių eseistika",
-    "faculty": 2,
+    "name": "Kasdienio pasaulio filosofija",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -12164,6 +12173,24 @@
     "reviews": [],
     "name": "Kietojo kūno lazeriai",
     "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Kylančios rinkos",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": true,
+    "reviews": [],
+    "name": "Kylantys pasaulio regionai: idėjos ir konfliktai",
+    "faculty": 11,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -12513,15 +12540,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Knutas Hamsunas norvegų rašytojų kūryboje",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Knygos istorija",
     "faculty": 8,
     "score": 0.0,
@@ -12559,6 +12577,15 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Knygų leidybos pradmenys filologams",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Knutas Hamsunas norvegų rašytojų kūryboje",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -14376,33 +14403,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Kursinis darbas (IV semestro projektinis darbas)",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Kursinis darbas (V semestro projektinis darbas)",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Kursinis darbas (VI semestro projektinis darbas)",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Kūrybinės industrijos",
     "faculty": 8,
     "score": 0.0,
@@ -14495,6 +14495,33 @@
     "reviews": [],
     "name": "Kūrybos psichologija",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Kursinis darbas (IV semestro projektinis darbas)",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Kursinis darbas (V semestro projektinis darbas)",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Kursinis darbas (VI semestro projektinis darbas)",
+    "faculty": 9,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -14612,24 +14639,6 @@
     "reviews": [],
     "name": "Kvebeko migracijos literatūra",
     "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Kylančios rinkos",
-    "faculty": 13,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": true,
-    "reviews": [],
-    "name": "Kylantys pasaulio regionai: idėjos ir konfliktai",
-    "faculty": 11,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -15042,51 +15051,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Leidinio dizainas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Leidinio dizainas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Leidinio dizainas ir reklama",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Leidinio poligrafinė kokybė",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Leidinių platinimo organizavimas ir valdymas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Leidyba",
     "faculty": 8,
     "score": 0.0,
@@ -15160,6 +15124,51 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Leidybos vadyba",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Leidinio dizainas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Leidinio dizainas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Leidinio dizainas ir reklama",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Leidinio poligrafinė kokybė",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Leidinių platinimo organizavimas ir valdymas",
     "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
@@ -15490,6 +15499,150 @@
   },
   {
     "IsOptional": true,
+    "IsBUS": true,
+    "reviews": [],
+    "name": "Lyčių istorija ir teorija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyčių lygybė žmogaus teisių kontekste",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyčių psichologija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyčių santykiai Azijoje",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": true,
+    "reviews": [],
+    "name": "Lyčių studijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": true,
+    "reviews": [],
+    "name": "Lyčių studijos",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyčių teorija ir komunikacija",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderiavimas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderiavimas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderystė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderystė",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderystė",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderystė ir komunikacija",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderystė ir verslumas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderystė lyties aspektu",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyderystė realiose ir virtualiose bendruomenėse",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
     "name": "Lietuva Europoje",
@@ -15708,6 +15861,15 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
+    "name": "Lietuvių lyrika",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
     "name": "Lietuvių literatūra",
     "faculty": 2,
     "score": 0.0,
@@ -15745,15 +15907,6 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Lietuvių literatūros kritika",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lietuvių lyrika",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -15944,6 +16097,159 @@
     "reviews": [],
     "name": "Lietuvos žydų religinės minties paveldas",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lygiagrečiųjų skaičiavimų metodai fizikoje",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lygiagrečiųjų skaičiavimų metodai fizikoje",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lygiagretieji skaičiavimai",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lygiagretieji skaičiavimai",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lygiagretūs ir išskirstyti skaičiavimai",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lygiagretūs ir išskirstyti skaičiavimai",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lygiagretusis programavimas",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji baudžiamojo proceso teisė",
+    "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": true,
+    "reviews": [],
+    "name": "Lyginamoji civilizacijų istorija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji edukologija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji ekonomika",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji ekonomika",
+    "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji ekonomika",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji histologija",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji keltų ir skandinavų mitologija",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamoji prancūzų ir lietuvių kalbų stilistika",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lyginamosios ekonomikos sistemos",
+    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -16250,6 +16556,24 @@
     "reviews": [],
     "name": "Literatūros teorijos įvadas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lytis ir ugdymas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Lytis, kultūra ir kalba",
+    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -16583,321 +16907,6 @@
     "reviews": [],
     "name": "Lotynų kalba. Tekstai",
     "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": true,
-    "reviews": [],
-    "name": "Lyčių istorija ir teorija",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyčių lygybė žmogaus teisių kontekste",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyčių psichologija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyčių santykiai Azijoje",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": true,
-    "reviews": [],
-    "name": "Lyčių studijos",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": true,
-    "reviews": [],
-    "name": "Lyčių studijos",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyčių teorija ir komunikacija",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderiavimas",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderiavimas",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderystė",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderystė",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderystė",
-    "faculty": 13,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderystė ir komunikacija",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderystė ir verslumas",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderystė lyties aspektu",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyderystė realiose ir virtualiose bendruomenėse",
-    "faculty": 13,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lygiagrečiųjų skaičiavimų metodai fizikoje",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lygiagrečiųjų skaičiavimų metodai fizikoje",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lygiagretieji skaičiavimai",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lygiagretieji skaičiavimai",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lygiagretūs ir išskirstyti skaičiavimai",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lygiagretūs ir išskirstyti skaičiavimai",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lygiagretusis programavimas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji baudžiamojo proceso teisė",
-    "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": true,
-    "reviews": [],
-    "name": "Lyginamoji civilizacijų istorija",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji edukologija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji ekonomika",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji ekonomika",
-    "faculty": 13,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji ekonomika",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji histologija",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji keltų ir skandinavų mitologija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamoji prancūzų ir lietuvių kalbų stilistika",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lyginamosios ekonomikos sistemos",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lytis ir ugdymas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Lytis, kultūra ir kalba",
-    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -18309,8 +18318,8 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Mitokritika",
-    "faculty": 2,
+    "name": "Mityba ir maisto papildai",
+    "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -18318,8 +18327,8 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Mityba ir maisto papildai",
-    "faculty": 10,
+    "name": "Mitokritika",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -18486,11 +18495,38 @@
     "numberOfReviews": 0
   },
   {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Mokesčių teisė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
     "name": "Mokesčių teisės problemos",
     "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Mokymas ir mokymasis",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Mokymosi motyvacija",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -18606,7 +18642,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Mokomoji ir profesinė praktika: tekstų kūrimas",
+    "name": "Mokomoji ir profesinė praktika: tekstynų lingvistika",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -18615,7 +18651,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Mokomoji ir profesinė praktika: tekstynų lingvistika",
+    "name": "Mokomoji ir profesinė praktika: tekstų kūrimas",
     "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
@@ -18995,24 +19031,6 @@
     "reviews": [],
     "name": "Mokslotyra",
     "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Mokymas ir mokymasis",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Mokymosi motyvacija",
-    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -19445,6 +19463,15 @@
     "reviews": [],
     "name": "Nacionalizmas Vidurio ir Rytų Europoje",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Nacionalizmo teorijos",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -21720,7 +21747,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Polimerų tirpalai",
+    "name": "Polimerų tyrimo metodai",
     "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
@@ -21729,7 +21756,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Polimerų tyrimo metodai",
+    "name": "Polimerų tirpalai",
     "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
@@ -22134,24 +22161,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Požeminio vandens masės transporto modeliavimas",
-    "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Požeminio vandens tiekimas",
-    "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Pozityvioji psichologija",
     "faculty": 3,
     "score": 0.0,
@@ -22172,6 +22181,24 @@
     "reviews": [],
     "name": "Pozityvistinė filosofija",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Požeminio vandens masės transporto modeliavimas",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Požeminio vandens tiekimas",
+    "faculty": 0,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -22518,15 +22545,6 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Prekių identifikavimas ir asortimento valdymas",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
     "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
@@ -22558,6 +22576,15 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Prekybos ir paslaugų verslas",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Prekių identifikavimas ir asortimento valdymas",
     "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
@@ -24591,6 +24618,177 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
+    "name": "Ryšiai su investuotojais",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su tarptautine žiniasklaida",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su visuomene",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su visuomene",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su visuomene",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su visuomene internete",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su visuomene ir reklama",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su visuomene: idėjų istorija ir socialinė galia",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su visuomene: idėjų istorija ir socialinė galia",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su žiniasklaida",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšiai su žiniasklaida",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšių su visuomene projektas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Ryšių su visuomene projektas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Rytai ir Vakarai rusų kultūroje",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Rytų Azijos budizmas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Rytų Azijos politika",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Rytų Europos kinas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": true,
+    "reviews": [],
+    "name": "Rytų filosofija ir etika",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Rytų ir Vidurio Europos kino intertekstai",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
     "name": "Rizikos ir pokyčių valdymas",
     "faculty": 8,
     "score": 0.0,
@@ -25083,177 +25281,6 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su investuotojais",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su tarptautine žiniasklaida",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su visuomene",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su visuomene",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su visuomene",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su visuomene internete",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su visuomene ir reklama",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su visuomene: idėjų istorija ir socialinė galia",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su visuomene: idėjų istorija ir socialinė galia",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su žiniasklaida",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšiai su žiniasklaida",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšių su visuomene projektas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Ryšių su visuomene projektas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Rytai ir Vakarai rusų kultūroje",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Rytų Azijos budizmas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Rytų Azijos politika",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Rytų Europos kinas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": true,
-    "reviews": [],
-    "name": "Rytų filosofija ir etika",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Rytų ir Vidurio Europos kino intertekstai",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
     "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
@@ -25428,80 +25455,8 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Šeimos ir lyčių lygybės politika",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šeimos psichologija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šeimos psichologinis konsultavimas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šeimos teisė",
-    "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šeimos teisės kalba",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šeimos teorijos ir tyrimai",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šeimos verslas",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Sėkmingų visuomenių fenomenas: lyginamoji vystymosi politikos teorija ir praktika",
     "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šekspyro seminaras",
-    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -25734,51 +25689,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Šešėlinio švietimo problemų valdymas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiandieninė lietuvių literatūra",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiaurės šalių studijos",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiaurės šalių studijos",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiaurės valstybių studijos",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Signalai ir tiesinės grandinės",
     "faculty": 4,
     "score": 0.0,
@@ -25826,15 +25736,6 @@
     "reviews": [],
     "name": "Silpnasis mato konvergavimas",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šilumos ir masės mainų fizika",
-    "faculty": 4,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -25932,1167 +25833,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Šiuolaikinė amerikiečių literatūra",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė amerikiečių poezija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė analitinė kalbos filosofija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė anglakalbė drama",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė anglų kalba I/III d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė anglų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė anglų kalba I/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė anglų kalba III/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė anglų kalba V/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė čekų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė čekų kalba II/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė čekų kalba III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė čekų kalba IV/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė danų ironija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė danų kalba",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ekonominė mintis",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė Eurazijos regiono bei jo valstybių politika",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė islandų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė islandų kalba II/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė islandų kalba III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė islandų kalba IV/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų kalba I/III d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų kalba I/V d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų kalba I/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų kalba III/III d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų kalba III/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų kalba V/V d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų kalba V/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ispanų literatūra",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė italų filosofija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė italų filosofija: Giorgio Agambenas \"Homo Sacer\"",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė italų kalba (fonetika ir fonologija) I/V d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė italų kalba (morfologija ir leksikologija) III/V d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė kroatų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė kroatų kalba II/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė kroatų kalba III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė kroatų kalba IV/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė latvių kalba ir kultūra I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė latvių kalba ir kultūra III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė leidyba",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė lenkų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė lyginamoji istorinė sociologija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė matematinė ekonomika",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė norvegų kalba",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė norvegų kalba I/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė norvegų kalba III/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė norvegų kalba V/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė prancūzų kalba I/V d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė prancūzų kalba I/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė prancūzų kalba III/V d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė prancūzų kalba III/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė prancūzų kalba V/V d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė prancūzų kalba V/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė psichoterapija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė rusų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė rusų kalba I/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė rusų kalba III/VI d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė sąmonės filosofija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė serbų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė serbų kalba II/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė serbų kalba III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė serbų kalba IV/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė slovėnų kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė slovėnų kalba II/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė slovėnų kalba III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė slovėnų kalba IV/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė statistinė analizė",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba II/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba IV/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė II/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė IV/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė švedų kalba",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė sveikatos psichologija: teorija ir praktika",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė turkų kalba I/VII d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė turkų kalba III/VII d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė ugdymo filosofija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė vokiečių kalba I/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė vokiečių kalba III/IV d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinė vokiečių literatūra",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės apšvietimo technologijos ir šviesos dizainas",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės archyvistikos teorijos paradigmos",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės astrofizikos problemos",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės Azijos raida",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės demokratijos problemos",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės edukacinės psichologijos paradigmos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės fenomenologijos tyrimų kryptys",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės inžinerinės medžiagos ir jų apdirbimo technologijos",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės kalbotyros kryptys (ir tyrimas)",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės karjeros vystymo koncepcijos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės knygotyros paradigmos",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės kompiuterinės informacinės sistemos",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės kriminologijos teorijos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės kultūros teorijos: fenomenologija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės kultūros teorijos: fenomenologija, antropologija, poststruktūralizmas",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės lietuvių kalbotyros problemos",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės lietuvių literatūrologijos problemos",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės lietuvių literatūros tendencijos",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės lietuvių literatūros tendencijos",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės lietuvių literatūros vertimas į anglų kalbą",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės Lietuvos socialinė kaita",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės medijos ir darni plėtra",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės medijos ir jų tyrimai",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės meno filosofijos problemos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės partinės sistemos",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės partinės sistemos",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės religijos filosofijos problemos: nihilizmas ir sekuliarizacija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės skandinavų prozos tendencijos",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės socialinių mokslų metodologinės problemos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės sociologijos teorijos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės švedų poezijos istorija",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės teksto teorijos",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės vaizduotės teorijos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinės žurnalistikos diskursas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikiniai Azijos tyrimo metodai",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikiniai biocheminės analizės metodai",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikiniai ES iššūkiai",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikiniai ES iššūkiai",
-    "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikiniai psichologinių tyrimų ir statistinės analizės metodai",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikiniai puslaidininkių prietaisai - fizika ir technologija",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikiniai statistiniai metodai ir tyrimo planavimas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinio filosofijos diskurso problemos ir perspektyvos",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinio teatro studijos",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinis kinas",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šiuolaikinis vakarų ir Lietuvos teatras",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Skaičių teorija",
     "faculty": 9,
     "score": 0.0,
@@ -27104,6 +25844,15 @@
     "reviews": [],
     "name": "Skaičiuojamosios geometrijos algoritmai",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Skaitymo ir rašymo raida",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -27140,6 +25889,15 @@
     "reviews": [],
     "name": "Skaitinio optimizavimo pagrindai",
     "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Skaitytojo figūra literatūroje",
+    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -27390,24 +26148,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Skaitymo ir rašymo raida",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Skaitytojo figūra literatūroje",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "Skaldų poezija",
     "faculty": 2,
     "score": 0.0,
@@ -27507,6 +26247,15 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
+    "name": "Skandinavijos šalys tarptautinių santykių sistemoje",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
     "name": "Skandinavijos šalityros projektai",
     "faculty": 2,
     "score": 0.0,
@@ -27545,15 +26294,6 @@
     "reviews": [],
     "name": "Skandinavijos šalių istorija ir kultūra",
     "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Skandinavijos šalys tarptautinių santykių sistemoje",
-    "faculty": 2,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -27720,15 +26460,6 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Skurdas ir nelygybė",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
@@ -27741,8 +26472,8 @@
     "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
-    "name": "Šlaitų stabilumo analizė",
-    "faculty": 0,
+    "name": "Skurdas ir nelygybė",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -27842,15 +26573,6 @@
     "reviews": [],
     "name": "Smegenotyros metodai",
     "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Šnekamoji turkų kalba",
-    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -28638,60 +27360,6 @@
     "numberOfReviews": 0
   },
   {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Specialieji inžineriniai geologiniai tyrimai",
-    "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Specialieji kietojo kūno teorijos skyriai",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Specialios paskirties žemėlapiai",
-    "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Specializuota meteorologinė informacija",
-    "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Specializuotas anglų kalbos diskursas: verslo kalba",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Specialusis ugdymas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
     "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
@@ -28742,6 +27410,60 @@
     "reviews": [],
     "name": "Specialybės kalba (reklamos kalba)",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Specialieji inžineriniai geologiniai tyrimai",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Specialieji kietojo kūno teorijos skyriai",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Specialios paskirties žemėlapiai",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Specializuota meteorologinė informacija",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Specializuotas anglų kalbos diskursas: verslo kalba",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Specialusis ugdymas",
+    "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -29502,6 +28224,1311 @@
     "numberOfReviews": 0
   },
   {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šeimos ir lyčių lygybės politika",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šeimos psichologija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šeimos psichologinis konsultavimas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šeimos teisė",
+    "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šeimos teisės kalba",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šeimos teorijos ir tyrimai",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šeimos verslas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šekspyro seminaras",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šešėlinio švietimo problemų valdymas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiandieninė lietuvių literatūra",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiaurės šalių studijos",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiaurės šalių studijos",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiaurės valstybių studijos",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šilumos ir masės mainų fizika",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė amerikiečių literatūra",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė amerikiečių poezija",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė analitinė kalbos filosofija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglakalbė drama",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba I/III d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba I/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba III/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba V/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė čekų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė čekų kalba II/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė čekų kalba III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė čekų kalba IV/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė danų ironija",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė danų kalba",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ekonominė mintis",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė Eurazijos regiono bei jo valstybių politika",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė islandų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė islandų kalba II/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė islandų kalba III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė islandų kalba IV/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų kalba I/III d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų kalba I/V d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų kalba I/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų kalba III/III d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų kalba III/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų kalba V/V d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų kalba V/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ispanų literatūra",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė italų filosofija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė italų filosofija: Giorgio Agambenas \"Homo Sacer\"",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė italų kalba (fonetika ir fonologija) I/V d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė italų kalba (morfologija ir leksikologija) III/V d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė kroatų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė kroatų kalba II/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė kroatų kalba III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė kroatų kalba IV/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė latvių kalba ir kultūra I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė latvių kalba ir kultūra III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė leidyba",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė lenkų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė lyginamoji istorinė sociologija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė matematinė ekonomika",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė norvegų kalba",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė norvegų kalba I/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė norvegų kalba III/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė norvegų kalba V/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė prancūzų kalba I/V d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė prancūzų kalba I/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė prancūzų kalba III/V d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė prancūzų kalba III/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė prancūzų kalba V/V d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė prancūzų kalba V/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė psichoterapija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė rusų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė rusų kalba I/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė rusų kalba III/VI d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė sąmonės filosofija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė serbų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė serbų kalba II/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė serbų kalba III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė serbų kalba IV/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė slovėnų kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė slovėnų kalba II/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė slovėnų kalba III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė slovėnų kalba IV/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė statistinė analizė",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba II/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba IV/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė II/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė suomių kalba, kultūra ir visuomenė IV/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė sveikatos psichologija: teorija ir praktika",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė švedų kalba",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė turkų kalba I/VII d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė turkų kalba III/VII d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė ugdymo filosofija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė vokiečių kalba I/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė vokiečių kalba III/IV d.",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė vokiečių literatūra",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės apšvietimo technologijos ir šviesos dizainas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės archyvistikos teorijos paradigmos",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės astrofizikos problemos",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės Azijos raida",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės demokratijos problemos",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės edukacinės psichologijos paradigmos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės fenomenologijos tyrimų kryptys",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės inžinerinės medžiagos ir jų apdirbimo technologijos",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės kalbotyros kryptys (ir tyrimas)",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės karjeros vystymo koncepcijos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės knygotyros paradigmos",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės kompiuterinės informacinės sistemos",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės kriminologijos teorijos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės kultūros teorijos: fenomenologija",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės kultūros teorijos: fenomenologija, antropologija, poststruktūralizmas",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės lietuvių kalbotyros problemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės lietuvių literatūrologijos problemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės lietuvių literatūros tendencijos",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės lietuvių literatūros tendencijos",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės lietuvių literatūros vertimas į anglų kalbą",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės Lietuvos socialinė kaita",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės medijos ir darni plėtra",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės medijos ir jų tyrimai",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės meno filosofijos problemos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės partinės sistemos",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės partinės sistemos",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės religijos filosofijos problemos: nihilizmas ir sekuliarizacija",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės skandinavų prozos tendencijos",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės socialinių mokslų metodologinės problemos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės sociologijos teorijos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės švedų poezijos istorija",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės teksto teorijos",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės vaizduotės teorijos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės žurnalistikos diskursas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikiniai Azijos tyrimo metodai",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikiniai biocheminės analizės metodai",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikiniai ES iššūkiai",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikiniai ES iššūkiai",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikiniai psichologinių tyrimų ir statistinės analizės metodai",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikiniai puslaidininkių prietaisai - fizika ir technologija",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikiniai statistiniai metodai ir tyrimo planavimas",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinio filosofijos diskurso problemos ir perspektyvos",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinio teatro studijos",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinis kinas",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinis vakarų ir Lietuvos teatras",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šlaitų stabilumo analizė",
+    "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Šnekamoji turkų kalba",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "IsOptional": false,
     "IsBUS": false,
     "reviews": [],
@@ -30135,7 +30162,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Tarptautinė logistika",
+    "name": "Tarptautinė lyginamoji apskaita",
     "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
@@ -30144,7 +30171,7 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Tarptautinė lyginamoji apskaita",
+    "name": "Tarptautinė logistika",
     "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
@@ -30918,6 +30945,42 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
+    "name": "Tekstynų lingvistika",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Tekstynų lingvistika",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Tekstynų lingvistikos įvadas",
+    "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Tekstynų lingvistikos įvadas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
     "name": "Teksto interpretacija iš kultūros semiotikos perspektyvos",
     "faculty": 2,
     "score": 0.0,
@@ -30992,42 +31055,6 @@
     "reviews": [],
     "name": "Tekstų ir dialogų gramatika",
     "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Tekstynų lingvistika",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Tekstynų lingvistika",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Tekstynų lingvistikos įvadas",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Tekstynų lingvistikos įvadas",
-    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -31386,6 +31413,33 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
+    "name": "Tyrimo metodai",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Tyrimo metodai",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Tyrimų metodai",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
     "name": "Tiurkų tautos Lietuvoje",
     "faculty": 3,
     "score": 0.0,
@@ -31568,33 +31622,6 @@
     "reviews": [],
     "name": "TV režisūros teorija ir praktika II/II d.",
     "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Tyrimo metodai",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Tyrimo metodai",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Tyrimų metodai",
-    "faculty": 1,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -32319,6 +32346,24 @@
     "numberOfReviews": 0
   },
   {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vaikystės skaitmeninio ugdymo technologijos (STEAM",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vaikystės skaitmeninio ugdymo technologijos (STEAM, robotika)",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
@@ -32431,24 +32476,6 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Vaikų raidos psichologija ir psichopatologija",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vaikystės skaitmeninio ugdymo technologijos (STEAM",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vaikystės skaitmeninio ugdymo technologijos (STEAM, robotika)",
     "faculty": 3,
     "score": 0.0,
     "numberOfReviews": 0
@@ -33453,6 +33480,33 @@
     "numberOfReviews": 0
   },
   {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vertybės ir profesinė etika",
+    "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vertybinių popierių kainodara",
+    "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vertybių komunikacija",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
@@ -33683,33 +33737,6 @@
     "reviews": [],
     "name": "Vertinimo dimensijos diskurse",
     "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vertybės ir profesinė etika",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vertybinių popierių kainodara",
-    "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vertybių komunikacija",
-    "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -34050,6 +34077,42 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
+    "name": "Vykdymo teisė",
+    "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vyksmų modeliavimas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vyksmų modeliavimas",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vyksmų puslaidininkiniuose prietaisuose modeliavimas",
+    "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
     "name": "Viktimologija",
     "faculty": 3,
     "score": 0.0,
@@ -34123,6 +34186,33 @@
     "IsBUS": false,
     "reviews": [],
     "name": "Virusologija",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vystymosi biologija",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": false,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vystymosi biologija",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Vystymosi biologija ir genetika",
     "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
@@ -34446,69 +34536,6 @@
     "IsOptional": true,
     "IsBUS": false,
     "reviews": [],
-    "name": "Vykdymo teisė",
-    "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vyksmų modeliavimas",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vyksmų modeliavimas",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vyksmų puslaidininkiniuose prietaisuose modeliavimas",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vystymosi biologija",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": false,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vystymosi biologija",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Vystymosi biologija ir genetika",
-    "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
     "name": "WAIS-III/WASI",
     "faculty": 3,
     "score": 0.0,
@@ -34673,6 +34700,15 @@
     "reviews": [],
     "name": "XXI amžiaus prancūzų romanas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "IsOptional": true,
+    "IsBUS": false,
+    "reviews": [],
+    "name": "Zoogeografija",
+    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -35294,15 +35330,6 @@
     "reviews": [],
     "name": "Žodžio laisvės ribos viešajame diskurse",
     "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "IsOptional": true,
-    "IsBUS": false,
-    "reviews": [],
-    "name": "Zoogeografija",
-    "faculty": 5,
     "score": 0.0,
     "numberOfReviews": 0
   },

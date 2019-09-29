@@ -59,5 +59,15 @@ namespace Vilnius_University_Advisor.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VUlogo {
+            get {
+                object obj = ResourceManager.GetObject("VUlogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -90,25 +90,8 @@ namespace Vilnius_University_Advisor
             string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + "lecturers.json", output);
         }
-        public List<Lecturer> getLecturers()
-        {
-            return lecturers;
-        }
-        
-        public List<Subject> getSubjectsByType(bool IsOptional)
-        {
-            List<Subject> someSubjects = new List<Subject>();
-            foreach (Subject aSubject in subjects)
-            {
-                if ((aSubject.IsOptional).Equals(IsOptional))
-                {
-                    someSubjects.Add(aSubject);
-                }
-            }
-            return someSubjects;
-        }
 
-        public List<Subject> getBUSSubjects()
+        public List<Subject> GetBUSSubjects()
         {
             List<Subject> BUSSubjects = new List<Subject>();
             foreach (Subject aSubject in subjects)
@@ -121,7 +104,7 @@ namespace Vilnius_University_Advisor
             return BUSSubjects;
         }
 
-        public List<Subject> getSubjectsByTypeAndFaculty(bool IsOptional, Faculty faculty)
+        public List<Subject> GetSubjectsByTypeAndFaculty(bool IsOptional, Faculty faculty)
         {
             List<Subject> someSubjects = new List<Subject>();
             foreach (Subject aSubject in subjects)
@@ -134,7 +117,7 @@ namespace Vilnius_University_Advisor
             return someSubjects;
         }
 
-        public List<Lecturer> getLecturersByFaculty(Faculty faculty)
+        public List<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
             List<Lecturer> someLecturers = new List<Lecturer>();
             foreach (Lecturer aLecturer in lecturers)
@@ -145,6 +128,81 @@ namespace Vilnius_University_Advisor
                 }
             }
             return someLecturers;
+        }
+
+        public string GetLecturerInfo(Lecturer lecturer)
+        {
+            string information = "";
+            foreach (Lecturer aLecturer in lecturers)
+            {
+                if ((aLecturer).Equals(lecturer))
+                {
+                    information = information + "Dėstytojo vardas: " + aLecturer.name + "\r\n";
+                    information = information + "Dėstytojo įvertinimas: " + aLecturer.score + " iš 5\r\n";
+                    information = information + "Įvertinimų skaičius: " + aLecturer.numberOfReviews + "\r\n";
+                    if (aLecturer.numberOfReviews > 0)
+                    {
+                        int number = 1;
+                        information = information + "Komentarai apie dėstytoją: " + "\r\n";
+                        foreach (var item in aLecturer.reviews)
+                        {
+                            information = information + number + ". " + item + "\r\n";
+                            number++;
+                        }
+                    }
+                }
+            }
+            return information;
+        }
+
+        public List<Subject> GetSubjectsByFaculty(Faculty faculty)
+        {
+            List<Subject> someSubjects = new List<Subject>();
+            foreach (Subject aSubject in subjects)
+            {
+                if ((aSubject.faculty).Equals(faculty))
+                {
+                    someSubjects.Add(aSubject);
+                }
+            }
+            return someSubjects;
+        }
+
+        public string GetSubjectInfo(Subject subject)
+        {
+            string information = "";
+            foreach (Subject aSubject in subjects)
+            {
+                if ((aSubject).Equals(subject))
+                {
+                    information = information + "Dalyko pavadinimas: " + aSubject.name + "\r\n";
+                    if (aSubject.IsOptional)
+                    {
+                        information = information + "Dalykas yra pasirenkamasis\r\n";
+                    }
+                    else
+                    {
+                        information = information + "Dalykas yra privalomasis\r\n";
+                    }
+                    if (aSubject.IsBUS)
+                    {
+                        information = information + "Dalykas yra BUS\r\n";
+                    }
+                    information = information + "Dalyko įvertinimas: " + aSubject.score + " iš 5\r\n";
+                    information = information + "Įvertinimų skaičius: " + aSubject.numberOfReviews + "\r\n";
+                    if (aSubject.numberOfReviews > 0)
+                    {
+                        int number = 1;
+                        information = information + "Komentarai apie dalyką: " + "\r\n";
+                        foreach (var item in aSubject.reviews)
+                        {
+                            information = information + number + ". " + item + "\r\n";
+                            number++;
+                        }
+                    }
+                }
+            }
+            return information;
         }
 
     }
