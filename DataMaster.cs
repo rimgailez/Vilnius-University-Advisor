@@ -91,6 +91,19 @@ namespace Vilnius_University_Advisor
             File.WriteAllText(projectPath + directorySeparator + "lecturers.json", output);
         }
 
+        public void EvaluateSubject(string subjectName, float subjectScore, string review)
+        {
+            Subject tempSubject;
+            tempSubject = subjects.Find(subject => subject.name.Equals(subjectName));
+            float sum = tempSubject.score * tempSubject.numberOfReviews;
+            tempSubject.numberOfReviews++;
+            tempSubject.score = (sum + subjectScore) / tempSubject.numberOfReviews;
+            tempSubject.reviews.Add(review);
+            subjects[subjects.FindIndex(subject => subject.name.Equals(subjectName))] = tempSubject;
+            string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
+            File.WriteAllText(projectPath + directorySeparator + "subjects.json", output);
+        }
+
         public List<Subject> GetBUSSubjects()
         {
             List<Subject> BUSSubjects = new List<Subject>();
@@ -102,6 +115,19 @@ namespace Vilnius_University_Advisor
                 }
             }
             return BUSSubjects;
+        }
+
+        public List<Subject> GetBUSSubjectsByFaculty(Faculty faculty)
+        {
+            List<Subject> BUSSubjectsByFaculty = new List<Subject>();
+            foreach (Subject aSubject in subjects)
+            {
+                if ((aSubject.IsBUS).Equals(true) && (aSubject.faculty).Equals(faculty))
+                {
+                    BUSSubjectsByFaculty.Add(aSubject);
+                }
+            }
+            return BUSSubjectsByFaculty;
         }
 
         public List<Subject> GetSubjectsByTypeAndFaculty(bool IsOptional, Faculty faculty)

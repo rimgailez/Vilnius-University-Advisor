@@ -554,9 +554,19 @@ namespace Vilnius_University_Advisor
             EvaluateSubjects.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void SelectFacultySubj_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
+            FilteredSubjectsList.DataSource = null;
+            if (IsBUSSubject.Checked)
+            {
+                FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjectsByFaculty(faculty);
+                FilteredSubjectsList.DisplayMember = "name";
+            } else
+            {
+                FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                FilteredSubjectsList.DisplayMember = "name";
+            }
         }
 
         private void SaveBackLectEvaluation_Click(object sender, EventArgs e)
@@ -601,6 +611,35 @@ namespace Vilnius_University_Advisor
             EvaluationCommentLabel.Text = "...";
             NumericEvaluationLect.Value = 0;
         }
+
+        private Boolean EvaluateSubjectWithValidations()
+        {
+            if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals(""))
+            {
+                MessageBox.Show("Prašome užpildyti visus formoje esančius laukus.", "Neužpildyti laukai", 0, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            else
+            {
+                Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
+                DataMaster.GetInstance().EvaluateSubject(selectedSubject.name, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text);
+                return true;
+            }
+        }
+
+        private void ClearAllFieldsInSubjForm()
+        {
+            IsMandatorySubject.Checked = true;
+            IsOptionalSubject.Checked = false;
+            IsBUSSubject.Checked = false;
+
+            SelectFacultySubj.Text = "";
+            FilteredSubjectsList.DataSource = null;
+            ReviewSubjEvalTxtBox.Text = "";
+            SubjEvalCommentLab.Text = "...";
+            NumericEvaluationSubj.Value = 0;
+        }
+
         private void RunScraper_Click(object sender, EventArgs e)
         {
             MainMenu.Hide();
@@ -694,5 +733,132 @@ namespace Vilnius_University_Advisor
             }
         }
 
+        private void BackSubEvaluation_Click(object sender, EventArgs e)
+        {
+            ClearAllFieldsInSubjForm();
+            EvaluateSubjects.Hide();
+            MainMenu.Show();
+        }
+
+        private void IsMandatorySubject_CheckedChanged(object sender, EventArgs e)
+        {
+            if (IsMandatorySubject.Checked)
+            {
+                IsOptionalSubject.Checked = false;
+                IsBUSSubject.Checked = false;
+                IsBUSSubject.Enabled = false;
+
+                if (!SelectFacultySubj.Text.Equals(""))
+                {
+                    Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
+                    FilteredSubjectsList.DataSource = null;
+                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                    FilteredSubjectsList.DisplayMember = "name";
+                }
+            }
+            else
+            {
+                IsOptionalSubject.Checked = true;
+            }
+        }
+
+        private void IsOptionalSubject_CheckedChanged(object sender, EventArgs e)
+        {
+            if (IsOptionalSubject.Checked)
+            {
+                IsMandatorySubject.Checked = false;
+                IsBUSSubject.Enabled = true;
+
+                if (!SelectFacultySubj.Text.Equals(""))
+                {
+                    Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
+                    FilteredSubjectsList.DataSource = null;
+                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                    FilteredSubjectsList.DisplayMember = "name";
+                }
+            }
+            else
+            {
+                IsMandatorySubject.Checked = true;
+            }
+        }
+
+        private void EmojiScoreOne_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationSubj.Value = 1;
+            SubjEvalCommentLab.Text = "1 - mokomasis dalykas visiškai nepateisino lūkesčių.";
+        }
+
+        private void EmojiScoreTwo_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationSubj.Value = 2;
+            SubjEvalCommentLab.Text = "2 - buvo įdomių paskaitų, bet vis dėlto nerekomenduočiau.";
+        }
+
+        private void EmojiScoreThree_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationSubj.Value = 3;
+            SubjEvalCommentLab.Text = "3 - mokomasis dalykas naudingas, tačiau sužavėtas nelikau.";
+        }
+
+        private void EmojiScoreFour_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationSubj.Value = 4;
+            SubjEvalCommentLab.Text = "4 - naudingas bei įdomus dalykas.";
+        }
+
+        private void EmojiScoreFive_Click(object sender, EventArgs e)
+        {
+            NumericEvaluationSubj.Value = 5;
+            SubjEvalCommentLab.Text = "5 - mokomasis dalykas labai sudomino ir paliko didelį įspūdį.";
+        }
+
+        private void SaveBackSubjEvaluation_Click(object sender, EventArgs e)
+        {
+            if (EvaluateSubjectWithValidations())
+            {
+                ClearAllFieldsInSubjForm();
+                EvaluateSubjects.Hide();
+                MainMenu.Show();
+            }
+        }
+
+        private void SaveEvalNextSubj_Click(object sender, EventArgs e)
+        {
+            if (EvaluateSubjectWithValidations())
+            {
+                ClearAllFieldsInSubjForm();
+            }
+        }
+
+        private void IsBUSSubject_CheckedChanged(object sender, EventArgs e)
+        {
+            Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
+            
+            if (IsBUSSubject.Checked)
+            {
+                if (SelectFacultySubj.Text.Equals(""))
+                {
+                    FilteredSubjectsList.DataSource = null;
+                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjects();
+                    FilteredSubjectsList.DisplayMember = "name";
+                }
+                else
+                {
+                    FilteredSubjectsList.DataSource = null;
+                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjectsByFaculty(faculty);
+                    FilteredSubjectsList.DisplayMember = "name";
+                }
+            }
+            else
+            {
+                IsOptionalSubject.Checked = true;
+                if (!SelectFacultySubj.Text.Equals("")){
+                    FilteredSubjectsList.DataSource = null;
+                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                    FilteredSubjectsList.DisplayMember = "name";
+                }
+            }
+        }
     }
 }
