@@ -744,9 +744,9 @@ namespace Vilnius_University_Advisor
         {
             if (IsMandatorySubject.Checked)
             {
-                IsOptionalSubject.Checked = false;
                 IsBUSSubject.Checked = false;
                 IsBUSSubject.Enabled = false;
+                IsOptionalSubject.Checked = false;
 
                 if (!SelectFacultySubj.Text.Equals(""))
                 {
