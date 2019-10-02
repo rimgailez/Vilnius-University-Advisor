@@ -599,7 +599,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
-                DataMaster.GetInstance().EvaluateLecturer(selectedLecturer.name, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text);
+                DataMaster.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text);
                 return true;
             }
         }
@@ -622,7 +622,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
-                DataMaster.GetInstance().EvaluateSubject(selectedSubject.name, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text);
+                DataMaster.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text);
                 return true;
             }
         }

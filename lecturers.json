@@ -112,11 +112,13 @@
     "numberOfReviews": 1
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Išties profesionali dėstytoja."
+    ],
     "name": "Agnė Jasinavičiūtė",
     "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 4.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],

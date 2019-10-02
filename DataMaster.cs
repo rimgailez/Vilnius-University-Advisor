@@ -78,28 +78,28 @@ namespace Vilnius_University_Advisor
             }
             subjects.Add(subject);
         }
-        public void EvaluateLecturer(string lecturerName, float lecturerScore, string review)
+        public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
         {
             Lecturer tempLecturer;
-            tempLecturer = lecturers.Find(lecturer => lecturer.name.Equals(lecturerName));
+            tempLecturer = lecturers.Find(lect => lect.Equals(lecturer));
             float sum = tempLecturer.score * tempLecturer.numberOfReviews;
             tempLecturer.numberOfReviews++;
             tempLecturer.score = (sum + lecturerScore)/tempLecturer.numberOfReviews;
             tempLecturer.reviews.Add(review);
-            lecturers[lecturers.FindIndex(lecturer => lecturer.name.Equals(lecturerName))] = tempLecturer;
+            lecturers[lecturers.FindIndex(lect => lect.Equals(lecturer))] = tempLecturer;
             string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + "lecturers.json", output);
         }
 
-        public void EvaluateSubject(string subjectName, float subjectScore, string review)
+        public void EvaluateSubject(Subject subject, float subjectScore, string review)
         {
             Subject tempSubject;
-            tempSubject = subjects.Find(subject => subject.name.Equals(subjectName));
+            tempSubject = subjects.Find(subj => subj.Equals(subject));
             float sum = tempSubject.score * tempSubject.numberOfReviews;
             tempSubject.numberOfReviews++;
             tempSubject.score = (sum + subjectScore) / tempSubject.numberOfReviews;
             tempSubject.reviews.Add(review);
-            subjects[subjects.FindIndex(subject => subject.name.Equals(subjectName))] = tempSubject;
+            subjects[subjects.FindIndex(subj => subj.Equals(subject))] = tempSubject;
             string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + "subjects.json", output);
         }

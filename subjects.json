@@ -1460,11 +1460,13 @@
   {
     "IsOptional": true,
     "IsBUS": true,
-    "reviews": [],
+    "reviews": [
+      "Nuo šiol žvelgdamas į dangų galiu pasakyti daug protingų žodžių."
+    ],
     "name": "Astronomija: tyrinėjant laiką ir erdvę",
     "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "IsOptional": true,
