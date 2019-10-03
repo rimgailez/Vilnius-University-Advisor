@@ -1460,11 +1460,13 @@
   {
     "IsOptional": true,
     "IsBUS": true,
-    "reviews": [],
+    "reviews": [
+      "Nuo šiol žvelgdamas į dangų galiu pasakyti daug protingų žodžių."
+    ],
     "name": "Astronomija: tyrinėjant laiką ir erdvę",
     "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "IsOptional": true,
@@ -2810,11 +2812,13 @@
   {
     "IsOptional": true,
     "IsBUS": true,
-    "reviews": [],
+    "reviews": [
+      "Jaučiu, kad mano asmenybė yra labai praturtinta."
+    ],
     "name": "Biblija Vakarų pasaulio literatūroje",
     "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "IsOptional": true,
@@ -16661,11 +16665,14 @@
   {
     "IsOptional": true,
     "IsBUS": true,
-    "reviews": [],
+    "reviews": [
+      "Visai fun.",
+      "Seems logic."
+    ],
     "name": "Loginio mąstymo ir kūrybingumo strategijos ne matematikams",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 3.5,
+    "numberOfReviews": 2
   },
   {
     "IsOptional": true,
@@ -35318,11 +35325,13 @@
   {
     "IsOptional": true,
     "IsBUS": true,
-    "reviews": [],
+    "reviews": [
+      "Neįspūdingai."
+    ],
     "name": "Žmogus, buitis ir chemija",
     "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 3.0,
+    "numberOfReviews": 1
   },
   {
     "IsOptional": false,

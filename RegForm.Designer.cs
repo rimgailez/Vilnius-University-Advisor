@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.MainMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.OneLecturer = new System.Windows.Forms.Button();
             this.OneSubject = new System.Windows.Forms.Button();
             this.RunScraper = new System.Windows.Forms.Button();
@@ -120,6 +121,11 @@
             this.SaveEvalNextLect = new System.Windows.Forms.Button();
             this.BackLecEvaluation = new System.Windows.Forms.Button();
             this.EvalTableWithEmojis = new System.Windows.Forms.TableLayoutPanel();
+            this.EmojiScore4 = new System.Windows.Forms.PictureBox();
+            this.EmojiScore2 = new System.Windows.Forms.PictureBox();
+            this.EmojiScore5 = new System.Windows.Forms.PictureBox();
+            this.EmojiScore1 = new System.Windows.Forms.PictureBox();
+            this.EmojiScore3 = new System.Windows.Forms.PictureBox();
             this.NumericEvaluationLect = new System.Windows.Forms.NumericUpDown();
             this.LectEvaluationLab = new System.Windows.Forms.Label();
             this.FilteredLecturersList = new System.Windows.Forms.ListBox();
@@ -130,10 +136,28 @@
             this.FacultyLabLect = new System.Windows.Forms.Label();
             this.SelectFacultyLect = new System.Windows.Forms.ComboBox();
             this.EvaluateSubjects = new System.Windows.Forms.Panel();
+            this.SubjEvalCommentLab = new System.Windows.Forms.Label();
+            this.NumericEvaluationSubj = new System.Windows.Forms.NumericUpDown();
+            this.LectEvalLab = new System.Windows.Forms.Label();
+            this.ReviewSubjEvalTxtBox = new System.Windows.Forms.TextBox();
+            this.ReviewLabel = new System.Windows.Forms.Label();
+            this.SubjEvalTableWithEmojis = new System.Windows.Forms.TableLayoutPanel();
+            this.EmojiScoreFour = new System.Windows.Forms.PictureBox();
+            this.EmojiScoreTwo = new System.Windows.Forms.PictureBox();
+            this.EmojiScoreFive = new System.Windows.Forms.PictureBox();
+            this.EmojiScoreOne = new System.Windows.Forms.PictureBox();
+            this.EmojiScoreThree = new System.Windows.Forms.PictureBox();
+            this.SubjectTypeGroupBox = new System.Windows.Forms.GroupBox();
+            this.IsOptionalSubject = new System.Windows.Forms.CheckBox();
+            this.IsBUSSubject = new System.Windows.Forms.CheckBox();
+            this.IsMandatorySubject = new System.Windows.Forms.CheckBox();
+            this.SaveEvalNextSubj = new System.Windows.Forms.Button();
+            this.SaveBackSubjEvaluation = new System.Windows.Forms.Button();
+            this.BackSubEvaluation = new System.Windows.Forms.Button();
             this.FilteredSubjectsList = new System.Windows.Forms.ListBox();
             this.SubjectLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.FacultySubjectEvalLab = new System.Windows.Forms.Label();
+            this.SelectFacultySubj = new System.Windows.Forms.ComboBox();
+            this.FacultyLabel = new System.Windows.Forms.Label();
             this.ScraperPanel = new System.Windows.Forms.Panel();
             this.ScraperBack = new System.Windows.Forms.Button();
             this.ScraperLog = new System.Windows.Forms.TextBox();
@@ -154,13 +178,8 @@
             this.AllFaculties1 = new System.Windows.Forms.ComboBox();
             this.F1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.EmojiScore4 = new System.Windows.Forms.PictureBox();
-            this.EmojiScore2 = new System.Windows.Forms.PictureBox();
-            this.EmojiScore5 = new System.Windows.Forms.PictureBox();
-            this.EmojiScore1 = new System.Windows.Forms.PictureBox();
-            this.EmojiScore3 = new System.Windows.Forms.PictureBox();
             this.MainMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LecturerPanel.SuspendLayout();
             this.SubjectPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -173,17 +192,24 @@
             this.MandatorySubjects.SuspendLayout();
             this.EvaluateLecturer.SuspendLayout();
             this.EvalTableWithEmojis.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericEvaluationLect)).BeginInit();
-            this.EvaluateSubjects.SuspendLayout();
-            this.ScraperPanel.SuspendLayout();
-            this.SingleLecturer.SuspendLayout();
-            this.SingleSubject.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiScore4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiScore2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiScore5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiScore1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiScore3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericEvaluationLect)).BeginInit();
+            this.EvaluateSubjects.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericEvaluationSubj)).BeginInit();
+            this.SubjEvalTableWithEmojis.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreFour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreTwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreFive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreOne)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreThree)).BeginInit();
+            this.SubjectTypeGroupBox.SuspendLayout();
+            this.ScraperPanel.SuspendLayout();
+            this.SingleLecturer.SuspendLayout();
+            this.SingleSubject.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenu
@@ -204,6 +230,15 @@
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.Size = new System.Drawing.Size(1188, 438);
             this.MainMenu.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Vilnius_University_Advisor.Properties.Resources.VUlogo;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 280);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // OneLecturer
             // 
@@ -1278,6 +1313,66 @@
             this.EvalTableWithEmojis.Size = new System.Drawing.Size(393, 78);
             this.EvalTableWithEmojis.TabIndex = 11;
             // 
+            // EmojiScore4
+            // 
+            this.EmojiScore4.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore4.Image")));
+            this.EmojiScore4.Location = new System.Drawing.Point(237, 2);
+            this.EmojiScore4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScore4.Name = "EmojiScore4";
+            this.EmojiScore4.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScore4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScore4.TabIndex = 12;
+            this.EmojiScore4.TabStop = false;
+            this.EmojiScore4.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // EmojiScore2
+            // 
+            this.EmojiScore2.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore2.Image")));
+            this.EmojiScore2.Location = new System.Drawing.Point(81, 2);
+            this.EmojiScore2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScore2.Name = "EmojiScore2";
+            this.EmojiScore2.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScore2.TabIndex = 9;
+            this.EmojiScore2.TabStop = false;
+            this.EmojiScore2.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // EmojiScore5
+            // 
+            this.EmojiScore5.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore5.Image")));
+            this.EmojiScore5.Location = new System.Drawing.Point(315, 2);
+            this.EmojiScore5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScore5.Name = "EmojiScore5";
+            this.EmojiScore5.Size = new System.Drawing.Size(75, 71);
+            this.EmojiScore5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScore5.TabIndex = 13;
+            this.EmojiScore5.TabStop = false;
+            this.EmojiScore5.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // EmojiScore1
+            // 
+            this.EmojiScore1.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore1.Image")));
+            this.EmojiScore1.Location = new System.Drawing.Point(3, 2);
+            this.EmojiScore1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScore1.Name = "EmojiScore1";
+            this.EmojiScore1.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScore1.TabIndex = 8;
+            this.EmojiScore1.TabStop = false;
+            this.EmojiScore1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // EmojiScore3
+            // 
+            this.EmojiScore3.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore3.Image")));
+            this.EmojiScore3.Location = new System.Drawing.Point(159, 2);
+            this.EmojiScore3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScore3.Name = "EmojiScore3";
+            this.EmojiScore3.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScore3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScore3.TabIndex = 10;
+            this.EmojiScore3.TabStop = false;
+            this.EmojiScore3.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // NumericEvaluationLect
             // 
             this.NumericEvaluationLect.Location = new System.Drawing.Point(970, 51);
@@ -1385,10 +1480,20 @@
             // 
             // EvaluateSubjects
             // 
+            this.EvaluateSubjects.Controls.Add(this.SubjEvalCommentLab);
+            this.EvaluateSubjects.Controls.Add(this.NumericEvaluationSubj);
+            this.EvaluateSubjects.Controls.Add(this.LectEvalLab);
+            this.EvaluateSubjects.Controls.Add(this.ReviewSubjEvalTxtBox);
+            this.EvaluateSubjects.Controls.Add(this.ReviewLabel);
+            this.EvaluateSubjects.Controls.Add(this.SubjEvalTableWithEmojis);
+            this.EvaluateSubjects.Controls.Add(this.SubjectTypeGroupBox);
+            this.EvaluateSubjects.Controls.Add(this.SaveEvalNextSubj);
+            this.EvaluateSubjects.Controls.Add(this.SaveBackSubjEvaluation);
+            this.EvaluateSubjects.Controls.Add(this.BackSubEvaluation);
             this.EvaluateSubjects.Controls.Add(this.FilteredSubjectsList);
             this.EvaluateSubjects.Controls.Add(this.SubjectLabel);
-            this.EvaluateSubjects.Controls.Add(this.comboBox1);
-            this.EvaluateSubjects.Controls.Add(this.FacultySubjectEvalLab);
+            this.EvaluateSubjects.Controls.Add(this.SelectFacultySubj);
+            this.EvaluateSubjects.Controls.Add(this.FacultyLabel);
             this.EvaluateSubjects.Location = new System.Drawing.Point(0, 0);
             this.EvaluateSubjects.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EvaluateSubjects.Name = "EvaluateSubjects";
@@ -1396,29 +1501,240 @@
             this.EvaluateSubjects.TabIndex = 7;
             this.EvaluateSubjects.Visible = false;
             // 
+            // SubjEvalCommentLab
+            // 
+            this.SubjEvalCommentLab.AutoSize = true;
+            this.SubjEvalCommentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjEvalCommentLab.Location = new System.Drawing.Point(508, 118);
+            this.SubjEvalCommentLab.Name = "SubjEvalCommentLab";
+            this.SubjEvalCommentLab.Size = new System.Drawing.Size(21, 20);
+            this.SubjEvalCommentLab.TabIndex = 20;
+            this.SubjEvalCommentLab.Text = "...";
+            // 
+            // NumericEvaluationSubj
+            // 
+            this.NumericEvaluationSubj.Location = new System.Drawing.Point(1055, 44);
+            this.NumericEvaluationSubj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.NumericEvaluationSubj.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.NumericEvaluationSubj.Name = "NumericEvaluationSubj";
+            this.NumericEvaluationSubj.Size = new System.Drawing.Size(100, 26);
+            this.NumericEvaluationSubj.TabIndex = 19;
+            this.NumericEvaluationSubj.Visible = false;
+            // 
+            // LectEvalLab
+            // 
+            this.LectEvalLab.AutoSize = true;
+            this.LectEvalLab.Location = new System.Drawing.Point(508, 12);
+            this.LectEvalLab.Name = "LectEvalLab";
+            this.LectEvalLab.Size = new System.Drawing.Size(139, 20);
+            this.LectEvalLab.TabIndex = 18;
+            this.LectEvalLab.Text = "Dalyko įvertinimas:";
+            // 
+            // ReviewSubjEvalTxtBox
+            // 
+            this.ReviewSubjEvalTxtBox.Location = new System.Drawing.Point(491, 178);
+            this.ReviewSubjEvalTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ReviewSubjEvalTxtBox.Multiline = true;
+            this.ReviewSubjEvalTxtBox.Name = "ReviewSubjEvalTxtBox";
+            this.ReviewSubjEvalTxtBox.Size = new System.Drawing.Size(448, 244);
+            this.ReviewSubjEvalTxtBox.TabIndex = 17;
+            // 
+            // ReviewLabel
+            // 
+            this.ReviewLabel.AutoSize = true;
+            this.ReviewLabel.Location = new System.Drawing.Point(498, 150);
+            this.ReviewLabel.Name = "ReviewLabel";
+            this.ReviewLabel.Size = new System.Drawing.Size(275, 20);
+            this.ReviewLabel.TabIndex = 16;
+            this.ReviewLabel.Text = "Pasidalinkite įžvalgomis apie šį dalyką:";
+            // 
+            // SubjEvalTableWithEmojis
+            // 
+            this.SubjEvalTableWithEmojis.ColumnCount = 5;
+            this.SubjEvalTableWithEmojis.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.SubjEvalTableWithEmojis.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.SubjEvalTableWithEmojis.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.SubjEvalTableWithEmojis.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.SubjEvalTableWithEmojis.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreFour, 3, 0);
+            this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreTwo, 1, 0);
+            this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreFive, 4, 0);
+            this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreOne, 0, 0);
+            this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreThree, 2, 0);
+            this.SubjEvalTableWithEmojis.Location = new System.Drawing.Point(502, 36);
+            this.SubjEvalTableWithEmojis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SubjEvalTableWithEmojis.Name = "SubjEvalTableWithEmojis";
+            this.SubjEvalTableWithEmojis.RowCount = 1;
+            this.SubjEvalTableWithEmojis.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.SubjEvalTableWithEmojis.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 78F));
+            this.SubjEvalTableWithEmojis.Size = new System.Drawing.Size(393, 78);
+            this.SubjEvalTableWithEmojis.TabIndex = 12;
+            // 
+            // EmojiScoreFour
+            // 
+            this.EmojiScoreFour.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScoreFour.Image")));
+            this.EmojiScoreFour.Location = new System.Drawing.Point(237, 2);
+            this.EmojiScoreFour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScoreFour.Name = "EmojiScoreFour";
+            this.EmojiScoreFour.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScoreFour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScoreFour.TabIndex = 12;
+            this.EmojiScoreFour.TabStop = false;
+            this.EmojiScoreFour.Click += new System.EventHandler(this.EmojiScoreFour_Click);
+            // 
+            // EmojiScoreTwo
+            // 
+            this.EmojiScoreTwo.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScoreTwo.Image")));
+            this.EmojiScoreTwo.Location = new System.Drawing.Point(81, 2);
+            this.EmojiScoreTwo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScoreTwo.Name = "EmojiScoreTwo";
+            this.EmojiScoreTwo.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScoreTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScoreTwo.TabIndex = 9;
+            this.EmojiScoreTwo.TabStop = false;
+            this.EmojiScoreTwo.Click += new System.EventHandler(this.EmojiScoreTwo_Click);
+            // 
+            // EmojiScoreFive
+            // 
+            this.EmojiScoreFive.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScoreFive.Image")));
+            this.EmojiScoreFive.Location = new System.Drawing.Point(315, 2);
+            this.EmojiScoreFive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScoreFive.Name = "EmojiScoreFive";
+            this.EmojiScoreFive.Size = new System.Drawing.Size(75, 71);
+            this.EmojiScoreFive.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScoreFive.TabIndex = 13;
+            this.EmojiScoreFive.TabStop = false;
+            this.EmojiScoreFive.Click += new System.EventHandler(this.EmojiScoreFive_Click);
+            // 
+            // EmojiScoreOne
+            // 
+            this.EmojiScoreOne.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScoreOne.Image")));
+            this.EmojiScoreOne.Location = new System.Drawing.Point(3, 2);
+            this.EmojiScoreOne.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScoreOne.Name = "EmojiScoreOne";
+            this.EmojiScoreOne.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScoreOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScoreOne.TabIndex = 8;
+            this.EmojiScoreOne.TabStop = false;
+            this.EmojiScoreOne.Click += new System.EventHandler(this.EmojiScoreOne_Click);
+            // 
+            // EmojiScoreThree
+            // 
+            this.EmojiScoreThree.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScoreThree.Image")));
+            this.EmojiScoreThree.Location = new System.Drawing.Point(159, 2);
+            this.EmojiScoreThree.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmojiScoreThree.Name = "EmojiScoreThree";
+            this.EmojiScoreThree.Size = new System.Drawing.Size(71, 71);
+            this.EmojiScoreThree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmojiScoreThree.TabIndex = 10;
+            this.EmojiScoreThree.TabStop = false;
+            this.EmojiScoreThree.Click += new System.EventHandler(this.EmojiScoreThree_Click);
+            // 
+            // SubjectTypeGroupBox
+            // 
+            this.SubjectTypeGroupBox.Controls.Add(this.IsOptionalSubject);
+            this.SubjectTypeGroupBox.Controls.Add(this.IsBUSSubject);
+            this.SubjectTypeGroupBox.Controls.Add(this.IsMandatorySubject);
+            this.SubjectTypeGroupBox.Location = new System.Drawing.Point(25, 11);
+            this.SubjectTypeGroupBox.Name = "SubjectTypeGroupBox";
+            this.SubjectTypeGroupBox.Size = new System.Drawing.Size(456, 65);
+            this.SubjectTypeGroupBox.TabIndex = 7;
+            this.SubjectTypeGroupBox.TabStop = false;
+            this.SubjectTypeGroupBox.Text = "Mokmojo dalyko tipas";
+            // 
+            // IsOptionalSubject
+            // 
+            this.IsOptionalSubject.AutoSize = true;
+            this.IsOptionalSubject.Location = new System.Drawing.Point(175, 27);
+            this.IsOptionalSubject.Name = "IsOptionalSubject";
+            this.IsOptionalSubject.Size = new System.Drawing.Size(146, 24);
+            this.IsOptionalSubject.TabIndex = 2;
+            this.IsOptionalSubject.Text = "Pasirenkamasis";
+            this.IsOptionalSubject.UseVisualStyleBackColor = true;
+            this.IsOptionalSubject.CheckedChanged += new System.EventHandler(this.IsOptionalSubject_CheckedChanged);
+            // 
+            // IsBUSSubject
+            // 
+            this.IsBUSSubject.AutoSize = true;
+            this.IsBUSSubject.Enabled = false;
+            this.IsBUSSubject.Location = new System.Drawing.Point(358, 27);
+            this.IsBUSSubject.Name = "IsBUSSubject";
+            this.IsBUSSubject.Size = new System.Drawing.Size(69, 24);
+            this.IsBUSSubject.TabIndex = 1;
+            this.IsBUSSubject.Text = "BUS";
+            this.IsBUSSubject.UseVisualStyleBackColor = true;
+            this.IsBUSSubject.CheckedChanged += new System.EventHandler(this.IsBUSSubject_CheckedChanged);
+            // 
+            // IsMandatorySubject
+            // 
+            this.IsMandatorySubject.AutoSize = true;
+            this.IsMandatorySubject.Checked = true;
+            this.IsMandatorySubject.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.IsMandatorySubject.Location = new System.Drawing.Point(25, 27);
+            this.IsMandatorySubject.Name = "IsMandatorySubject";
+            this.IsMandatorySubject.Size = new System.Drawing.Size(122, 24);
+            this.IsMandatorySubject.TabIndex = 0;
+            this.IsMandatorySubject.Text = "Privalomasis";
+            this.IsMandatorySubject.UseVisualStyleBackColor = true;
+            this.IsMandatorySubject.CheckedChanged += new System.EventHandler(this.IsMandatorySubject_CheckedChanged);
+            // 
+            // SaveEvalNextSubj
+            // 
+            this.SaveEvalNextSubj.Location = new System.Drawing.Point(969, 195);
+            this.SaveEvalNextSubj.Name = "SaveEvalNextSubj";
+            this.SaveEvalNextSubj.Size = new System.Drawing.Size(186, 59);
+            this.SaveEvalNextSubj.TabIndex = 6;
+            this.SaveEvalNextSubj.Text = "Pateikti ir vertinti kitą dalyką";
+            this.SaveEvalNextSubj.UseVisualStyleBackColor = true;
+            this.SaveEvalNextSubj.Click += new System.EventHandler(this.SaveEvalNextSubj_Click);
+            // 
+            // SaveBackSubjEvaluation
+            // 
+            this.SaveBackSubjEvaluation.Location = new System.Drawing.Point(971, 272);
+            this.SaveBackSubjEvaluation.Name = "SaveBackSubjEvaluation";
+            this.SaveBackSubjEvaluation.Size = new System.Drawing.Size(186, 56);
+            this.SaveBackSubjEvaluation.TabIndex = 5;
+            this.SaveBackSubjEvaluation.Text = "Pateikti ir grįžti";
+            this.SaveBackSubjEvaluation.UseVisualStyleBackColor = true;
+            this.SaveBackSubjEvaluation.Click += new System.EventHandler(this.SaveBackSubjEvaluation_Click);
+            // 
+            // BackSubEvaluation
+            // 
+            this.BackSubEvaluation.Location = new System.Drawing.Point(971, 347);
+            this.BackSubEvaluation.Name = "BackSubEvaluation";
+            this.BackSubEvaluation.Size = new System.Drawing.Size(186, 56);
+            this.BackSubEvaluation.TabIndex = 4;
+            this.BackSubEvaluation.Text = "Grįžti";
+            this.BackSubEvaluation.UseVisualStyleBackColor = true;
+            this.BackSubEvaluation.Click += new System.EventHandler(this.BackSubEvaluation_Click);
+            // 
             // FilteredSubjectsList
             // 
             this.FilteredSubjectsList.FormattingEnabled = true;
             this.FilteredSubjectsList.ItemHeight = 20;
-            this.FilteredSubjectsList.Location = new System.Drawing.Point(25, 129);
+            this.FilteredSubjectsList.Location = new System.Drawing.Point(25, 178);
             this.FilteredSubjectsList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FilteredSubjectsList.Name = "FilteredSubjectsList";
-            this.FilteredSubjectsList.Size = new System.Drawing.Size(353, 284);
+            this.FilteredSubjectsList.Size = new System.Drawing.Size(454, 244);
             this.FilteredSubjectsList.TabIndex = 3;
             // 
             // SubjectLabel
             // 
             this.SubjectLabel.AutoSize = true;
-            this.SubjectLabel.Location = new System.Drawing.Point(22, 102);
+            this.SubjectLabel.Location = new System.Drawing.Point(30, 151);
             this.SubjectLabel.Name = "SubjectLabel";
             this.SubjectLabel.Size = new System.Drawing.Size(150, 20);
             this.SubjectLabel.TabIndex = 2;
             this.SubjectLabel.Text = "Mokomasis dalykas:";
             // 
-            // comboBox1
+            // SelectFacultySubj
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.SelectFacultySubj.FormattingEnabled = true;
+            this.SelectFacultySubj.Items.AddRange(new object[] {
             "Chemijos ir geomokslų",
             "Ekonomikos ir verslo administravimo",
             "Filologijos",
@@ -1433,21 +1749,21 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.comboBox1.Location = new System.Drawing.Point(25, 51);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(353, 28);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.SelectFacultySubj.Location = new System.Drawing.Point(25, 108);
+            this.SelectFacultySubj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SelectFacultySubj.Name = "SelectFacultySubj";
+            this.SelectFacultySubj.Size = new System.Drawing.Size(454, 28);
+            this.SelectFacultySubj.TabIndex = 1;
+            this.SelectFacultySubj.SelectedIndexChanged += new System.EventHandler(this.SelectFacultySubj_SelectedIndexChanged);
             // 
-            // FacultySubjectEvalLab
+            // FacultyLabel
             // 
-            this.FacultySubjectEvalLab.AutoSize = true;
-            this.FacultySubjectEvalLab.Location = new System.Drawing.Point(22, 25);
-            this.FacultySubjectEvalLab.Name = "FacultySubjectEvalLab";
-            this.FacultySubjectEvalLab.Size = new System.Drawing.Size(88, 20);
-            this.FacultySubjectEvalLab.TabIndex = 0;
-            this.FacultySubjectEvalLab.Text = "Fakultetas:";
+            this.FacultyLabel.AutoSize = true;
+            this.FacultyLabel.Location = new System.Drawing.Point(30, 85);
+            this.FacultyLabel.Name = "FacultyLabel";
+            this.FacultyLabel.Size = new System.Drawing.Size(88, 20);
+            this.FacultyLabel.TabIndex = 0;
+            this.FacultyLabel.Text = "Fakultetas:";
             // 
             // ScraperPanel
             // 
@@ -1678,86 +1994,17 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Vilnius_University_Advisor.Properties.Resources.VUlogo;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 280);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // EmojiScore4
-            // 
-            this.EmojiScore4.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore4.Image")));
-            this.EmojiScore4.Location = new System.Drawing.Point(237, 2);
-            this.EmojiScore4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmojiScore4.Name = "EmojiScore4";
-            this.EmojiScore4.Size = new System.Drawing.Size(71, 71);
-            this.EmojiScore4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EmojiScore4.TabIndex = 12;
-            this.EmojiScore4.TabStop = false;
-            this.EmojiScore4.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // EmojiScore2
-            // 
-            this.EmojiScore2.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore2.Image")));
-            this.EmojiScore2.Location = new System.Drawing.Point(81, 2);
-            this.EmojiScore2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmojiScore2.Name = "EmojiScore2";
-            this.EmojiScore2.Size = new System.Drawing.Size(71, 71);
-            this.EmojiScore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EmojiScore2.TabIndex = 9;
-            this.EmojiScore2.TabStop = false;
-            this.EmojiScore2.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // EmojiScore5
-            // 
-            this.EmojiScore5.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore5.Image")));
-            this.EmojiScore5.Location = new System.Drawing.Point(315, 2);
-            this.EmojiScore5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmojiScore5.Name = "EmojiScore5";
-            this.EmojiScore5.Size = new System.Drawing.Size(75, 71);
-            this.EmojiScore5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EmojiScore5.TabIndex = 13;
-            this.EmojiScore5.TabStop = false;
-            this.EmojiScore5.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // EmojiScore1
-            // 
-            this.EmojiScore1.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore1.Image")));
-            this.EmojiScore1.Location = new System.Drawing.Point(3, 2);
-            this.EmojiScore1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmojiScore1.Name = "EmojiScore1";
-            this.EmojiScore1.Size = new System.Drawing.Size(71, 71);
-            this.EmojiScore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EmojiScore1.TabIndex = 8;
-            this.EmojiScore1.TabStop = false;
-            this.EmojiScore1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // EmojiScore3
-            // 
-            this.EmojiScore3.Image = ((System.Drawing.Image)(resources.GetObject("EmojiScore3.Image")));
-            this.EmojiScore3.Location = new System.Drawing.Point(159, 2);
-            this.EmojiScore3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmojiScore3.Name = "EmojiScore3";
-            this.EmojiScore3.Size = new System.Drawing.Size(71, 71);
-            this.EmojiScore3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EmojiScore3.TabIndex = 10;
-            this.EmojiScore3.TabStop = false;
-            this.EmojiScore3.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 438);
+            this.Controls.Add(this.EvaluateSubjects);
+            this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.SingleSubject);
             this.Controls.Add(this.SingleLecturer);
-            this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.ScraperPanel);
-            this.Controls.Add(this.EvaluateSubjects);
             this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.AllLecturers);
             this.Controls.Add(this.LecturersByFaculty);
@@ -1769,6 +2016,7 @@
             this.Name = "RegForm";
             this.Text = "VU_Advisor";
             this.MainMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.LecturerPanel.ResumeLayout(false);
             this.LecturerPanel.PerformLayout();
             this.SubjectPanel.ResumeLayout(false);
@@ -1787,21 +2035,29 @@
             this.EvaluateLecturer.ResumeLayout(false);
             this.EvaluateLecturer.PerformLayout();
             this.EvalTableWithEmojis.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericEvaluationLect)).EndInit();
             this.EvaluateSubjects.ResumeLayout(false);
             this.EvaluateSubjects.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericEvaluationSubj)).EndInit();
+            this.SubjEvalTableWithEmojis.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreFour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreTwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreFive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreOne)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiScoreThree)).EndInit();
+            this.SubjectTypeGroupBox.ResumeLayout(false);
+            this.SubjectTypeGroupBox.PerformLayout();
             this.ScraperPanel.ResumeLayout(false);
             this.ScraperPanel.PerformLayout();
             this.SingleLecturer.ResumeLayout(false);
             this.SingleLecturer.PerformLayout();
             this.SingleSubject.ResumeLayout(false);
             this.SingleSubject.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiScore3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1910,8 +2166,8 @@
         private System.Windows.Forms.PictureBox EmojiScore5;
         private System.Windows.Forms.Label EvaluationCommentLabel;
         private System.Windows.Forms.Panel EvaluateSubjects;
-        private System.Windows.Forms.Label FacultySubjectEvalLab;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label FacultyLabel;
+        private System.Windows.Forms.ComboBox SelectFacultySubj;
         private System.Windows.Forms.ListBox FilteredSubjectsList;
         private System.Windows.Forms.Label SubjectLabel;
         private System.Windows.Forms.Button RunScraper;
@@ -1938,6 +2194,24 @@
         private System.Windows.Forms.Label F1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button BackSubEvaluation;
+        private System.Windows.Forms.Button SaveBackSubjEvaluation;
+        private System.Windows.Forms.Button SaveEvalNextSubj;
+        private System.Windows.Forms.GroupBox SubjectTypeGroupBox;
+        private System.Windows.Forms.CheckBox IsMandatorySubject;
+        private System.Windows.Forms.CheckBox IsBUSSubject;
+        private System.Windows.Forms.CheckBox IsOptionalSubject;
+        private System.Windows.Forms.TableLayoutPanel SubjEvalTableWithEmojis;
+        private System.Windows.Forms.PictureBox EmojiScoreFour;
+        private System.Windows.Forms.PictureBox EmojiScoreTwo;
+        private System.Windows.Forms.PictureBox EmojiScoreFive;
+        private System.Windows.Forms.PictureBox EmojiScoreOne;
+        private System.Windows.Forms.PictureBox EmojiScoreThree;
+        private System.Windows.Forms.Label SubjEvalCommentLab;
+        private System.Windows.Forms.NumericUpDown NumericEvaluationSubj;
+        private System.Windows.Forms.Label LectEvalLab;
+        private System.Windows.Forms.TextBox ReviewSubjEvalTxtBox;
+        private System.Windows.Forms.Label ReviewLabel;
     }
 }
 
