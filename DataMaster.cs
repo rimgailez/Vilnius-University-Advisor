@@ -23,14 +23,14 @@ namespace Vilnius_University_Advisor
         {
             return instance;
         }
-        public void ReadFromJson()
+        public void ReadData()
         {
             string lecturerInput = File.ReadAllText(projectPath + directorySeparator + "lecturers.json");
             lecturers = JsonConvert.DeserializeObject<List<Lecturer>>(lecturerInput);
             string subjectInput = File.ReadAllText(projectPath + directorySeparator +"subjects.json");
             subjects = JsonConvert.DeserializeObject<List<Subject>>(subjectInput);
         }
-        public void WriteToJson()
+        public void WriteData()
         {
             lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
             string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);

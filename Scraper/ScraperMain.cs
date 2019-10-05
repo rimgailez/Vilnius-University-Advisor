@@ -56,7 +56,7 @@ namespace Vilnius_University_Advisor.Scraper
                     AddLecturers(lecturers);
                     AddSubjects(subjects);
                 }
-                DataMaster.GetInstance().WriteToJson();
+                DataMaster.GetInstance().WriteData();
             }
             regForm.updateScraperTextbox("Scraper is done.");
             streamWriter.Dispose();
