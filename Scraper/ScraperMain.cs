@@ -7,17 +7,18 @@ namespace Vilnius_University_Advisor.Scraper
 {
     public class ScraperMain
     {
+        string vuUrl = "https://tvarkarasciai.vu.lt";
         string[] mainUrls = new string[]
         {
-            "https://tvarkarasciai.vu.lt/chgf/",
-            "https://tvarkarasciai.vu.lt/ef/",
-            "https://tvarkarasciai.vu.lt/flf/",
-            "https://tvarkarasciai.vu.lt/fsf/",
-            "https://tvarkarasciai.vu.lt/ff/",
-            "https://tvarkarasciai.vu.lt/600000/",
-            "https://tvarkarasciai.vu.lt/kf/",
-            "https://tvarkarasciai.vu.lt/mif/",
-            "https://tvarkarasciai.vu.lt/vm/"
+            "/chgf/",
+            "/ef/",
+            "/flf/",
+            "/fsf/",
+            "/ff/",
+            "/600000/",
+            "/kf/",
+            "/mif/",
+            "/vm/"
         };
         StreamWriter streamWriter;
         RegForm regForm;
@@ -34,8 +35,8 @@ namespace Vilnius_University_Advisor.Scraper
             {
                 Fetcher fetcher = new Fetcher();
                 Parser parser = new Parser(streamWriter, Faculty.None);
-                string mainHtml = fetcher.GetFacultyHtml(url);
-                List<String> subUrls = parser.parseFaculty(mainHtml);
+                string mainHtml = fetcher.GetFacultyHtml(vuUrl + url);
+                List<String> subUrls = parser.parseFaculty(mainHtml, url);
                 streamWriter.WriteLine("Parsed " + subUrls.Count + " URLs from " + url);
                 streamWriter.Flush();
                 regForm.updateScraperTextbox("Parsed " + subUrls.Count + " URLs from " + url);
