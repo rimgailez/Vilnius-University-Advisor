@@ -19,10 +19,10 @@ namespace Vilnius_University_Advisor.Scraper
             {
                 Application.DoEvents();
             }
-            for(int i=0; i<100000; i++) Application.DoEvents();
+            for(int i=0; i<500000; i++) Application.DoEvents();
 
             var documentAsIHtmlDocument3 = (mshtml.IHTMLDocument3)webBrowser1.Document.DomDocument;
-            return documentAsIHtmlDocument3.documentElement.outerText;
+            return documentAsIHtmlDocument3.documentElement.outerHTML;
         }
         public string GetFacultyHtml(String url)
         {

@@ -15,29 +15,28 @@ namespace Vilnius_University_Advisor
         List<Lecturer> lecturers = new List<Lecturer>();
         List<Subject> subjects = new List<Subject>();
         //get project directory
-        public string projectPath = Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName;
-        char directorySeparator = Path.DirectorySeparatorChar;
+        public string projectPath;
+        JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 
-        private DataMaster() { }
+        private DataMaster() 
+        {
+            projectPath = jsonReaderWriter.projectPath;
+        }
         public static DataMaster GetInstance()
         {
             return instance;
         }
-        public void ReadFromJson()
+        public void ReadData()
         {
-            string lecturerInput = File.ReadAllText(projectPath + directorySeparator + "lecturers.json");
-            lecturers = JsonConvert.DeserializeObject<List<Lecturer>>(lecturerInput);
-            string subjectInput = File.ReadAllText(projectPath + directorySeparator +"subjects.json");
-            subjects = JsonConvert.DeserializeObject<List<Subject>>(subjectInput);
+            lecturers = jsonReaderWriter.ReadLecturers();
+            subjects = jsonReaderWriter.ReadSubjects();
         }
-        public void WriteToJson()
+        public void WriteData()
         {
             lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
-            string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator +"lecturers.json", output);
+            jsonReaderWriter.WriteLecturers(lecturers);
             subjects = subjects.OrderBy(subject => subject.name).ToList();
-            output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + "subjects.json", output);
+            jsonReaderWriter.WriteSubjects(subjects);
 
         }
         public void AddLecturer(string name, Faculty faculty)
@@ -48,16 +47,11 @@ namespace Vilnius_University_Advisor
         {
             AddLecturerWithoutWriting(lecturerNew);
             lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
-            string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + "lecturers.json", output);
+            WriteData();
         }
         public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            foreach (Lecturer lecturerCheck in lecturers)
-            {
-                if (lecturerCheck.Equals(lecturer)) return;
-            }
-            lecturers.Add(lecturer);
+            if(!lecturers.Contains(lecturer)) lecturers.Add(lecturer);
         }
         public void AddSubject(string name, Faculty faculty, bool IsOptional, bool IsBUS)
         {
@@ -67,16 +61,11 @@ namespace Vilnius_University_Advisor
         {
             AddSubjectWithoutWriting(subjectNew);
             subjects = subjects.OrderBy(subject => subject.name).ToList();
-            string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + "subjects.json", output);
+            WriteData();
         }
         public void AddSubjectWithoutWriting(Subject subject)
         {
-            foreach (Subject subjectCheck in subjects)
-            {
-                if (subjectCheck.Equals(subject)) return;
-            }
-            subjects.Add(subject);
+            if(!subjects.Contains(subject)) subjects.Add(subject);
         }
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
         {
@@ -87,8 +76,7 @@ namespace Vilnius_University_Advisor
             tempLecturer.score = (sum + lecturerScore)/tempLecturer.numberOfReviews;
             tempLecturer.reviews.Add(review);
             lecturers[lecturers.FindIndex(lect => lect.Equals(lecturer))] = tempLecturer;
-            string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + "lecturers.json", output);
+            WriteData();
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string review)
@@ -100,8 +88,7 @@ namespace Vilnius_University_Advisor
             tempSubject.score = (sum + subjectScore) / tempSubject.numberOfReviews;
             tempSubject.reviews.Add(review);
             subjects[subjects.FindIndex(subj => subj.Equals(subject))] = tempSubject;
-            string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + "subjects.json", output);
+            WriteData();
         }
 
         public List<Subject> GetBUSSubjects()

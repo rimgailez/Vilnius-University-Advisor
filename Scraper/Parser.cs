@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Vilnius_University_Advisor.Scraper
@@ -15,6 +16,7 @@ namespace Vilnius_University_Advisor.Scraper
         List<string> optionalSubjects = new List<string>();
         Faculty faculty;
         StreamWriter streamWriter;
+        string vuUrl = "https://tvarkarasciai.vu.lt";
 
         public Parser(StreamWriter streamWriter, Faculty faculty)
         {
@@ -24,41 +26,33 @@ namespace Vilnius_University_Advisor.Scraper
         public void parseTimetable(string text, string url)
         {
             string[] textLines = text.Split(Environment.NewLine.ToCharArray());
-            //check for empty timetable
-            int i;
-            if (textLines[192].Equals(""))
+            bool foundCalender = false;
+            foreach(string htmlLine in textLines)
             {
-                if (textLines[198].Equals(""))
+                //gets all lecturers and subjects
+                if (!foundCalender && Regex.IsMatch(htmlLine, @".*id\s*=\s*""calendar"".*"))
                 {
-                    streamWriter.WriteLine("Failed to parse " + url);
-                    streamWriter.Flush();
-                    return;
+                    string patern = @"class\s*=\s*""fc-list-item-title fc-widget-content"".*?>.*?<\s*br\s*>\s*(.*?)\s*<\s*br\s*>.*?class\s*=\s*""card card-block"".*?>.*?<\s*br\s*>\s*(<\s*br\s*>\s*(.*?)\s*<\s*br\s*>|.*?<\s*a)";
+                    MatchCollection matchCollection = Regex.Matches(htmlLine, patern);
+                    foreach(Match match in matchCollection)
+                    {
+                        GroupCollection groupCollection = match.Groups;
+                        if (!groupCollection[1].Value.Contains("BUS")) AddSubject(groupCollection[1].Value);
+                        if(!groupCollection[3].Value.Equals("") && !Regex.IsMatch(groupCollection[3].Value, @".*\d.*")) AddLecturer(groupCollection[3].Value);
+                    }
+                    foundCalender = true;
                 }
-                else i = 202;
+                //finds out which subjects are optional
+                else
+                {
+                    Match match = Regex.Match(htmlLine, @".*?class\s*=\s*""checks"".*?type\s*=\s*""checkbox"".*?label\s*for\s*=.*?>\s*(.*?)\s*<\s*/\s*label\s*>");
+                    if(foundCalender && match.Success)
+                    {
+                        GroupCollection groupCollection = match.Groups;
+                        optionalSubjects.Add(groupCollection[1].Value);
+                    }
+                }
             }
-            else i = 196;
-            //get all lecturers and subjects
-            while (i < textLines.Length)
-            {
-                if (textLines[i].Equals("")) break;
-                while (!textLines[i + 2].Equals("")) i += 2;
-                if(!textLines[i].Contains("BUS")) AddSubject(textLines[i]);
-
-                i += 10;
-                if( !textLines[i].Any(c => Char.IsDigit(c)) && !textLines[i].Contains("Dėstytojas") ) AddLecturer(textLines[i]);
-
-                for (; i < textLines.Length; i += 2) if (textLines[i].Equals("")) break;
-                i += 6;
-            }
-            //get which subjects are optional
-            i += 16;
-            while (i < textLines.Length)
-            {
-                if (textLines[i].Equals("")) break;
-                optionalSubjects.Add(textLines[i].Substring(1));
-                i += 2;
-            }
-
             changeToOptional();
         }
         private void changeToOptional()
@@ -76,21 +70,23 @@ namespace Vilnius_University_Advisor.Scraper
             }
         }
 
-        public List<String> parseFaculty(string text)
+        public List<String> parseFaculty(string text, string facultyUrl)
         {
             List<string> urls = new List<string>();
             string[] textLines = text.Split(Environment.NewLine.ToCharArray());
+            string pattern = @"<a\s*href\s*=\s*""" + facultyUrl + @"groups/(.+)""\s*>";
+            string busPattern = @".*(bendrosios-universitetines-studijos|bendros-universitetines-studijos).*";
             for (int j = 0; j < textLines.Length; j++)
             {
-                if (textLines[j].Contains("<div class=\"col-sm-12\">"))
+                Match result = Regex.Match(textLines[j], pattern);
+                if (result.Success)
                 {
-                    j += 7;
-                    int index = textLines[j].IndexOf('"');
-                    textLines[j] = textLines[j].Substring(index+1);
-                    index = textLines[j].IndexOf('"');
-                    textLines[j] = textLines[j].Substring(0, index);
-                    if (textLines[j].Contains("bendrosios-universitetines-studijos") || textLines[j].Contains("bendros-universitetines-studijos")) continue;
-                    urls.Add("https://tvarkarasciai.vu.lt" + textLines[j]);
+                    GroupCollection groupCollection = result.Groups;
+                    if (!Regex.IsMatch(groupCollection[1].Value, busPattern))
+                    {
+                        urls.Add(vuUrl + facultyUrl + "groups/" + groupCollection[1].Value);
+                    }
+                    
                 }
             }
             return urls;
