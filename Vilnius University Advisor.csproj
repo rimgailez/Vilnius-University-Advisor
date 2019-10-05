@@ -59,6 +59,7 @@
     <Compile Include="DataMaster.cs" />
     <Compile Include="DataNode.cs" />
     <Compile Include="Faculty.cs" />
+    <Compile Include="JsonReaderWriter.cs" />
     <Compile Include="Lecturer.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
