@@ -53,11 +53,7 @@ namespace Vilnius_University_Advisor
         }
         public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            foreach (Lecturer lecturerCheck in lecturers)
-            {
-                if (lecturerCheck.Equals(lecturer)) return;
-            }
-            lecturers.Add(lecturer);
+            if(!lecturers.Contains(lecturer)) lecturers.Add(lecturer);
         }
         public void AddSubject(string name, Faculty faculty, bool IsOptional, bool IsBUS)
         {
@@ -72,11 +68,7 @@ namespace Vilnius_University_Advisor
         }
         public void AddSubjectWithoutWriting(Subject subject)
         {
-            foreach (Subject subjectCheck in subjects)
-            {
-                if (subjectCheck.Equals(subject)) return;
-            }
-            subjects.Add(subject);
+            if(!subjects.Contains(subject)) subjects.Add(subject);
         }
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
         {

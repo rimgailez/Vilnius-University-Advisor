@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vilnius_University_Advisor
 {
-    public class DataNode
+    public class DataNode : IEquatable<DataNode>
     {
         public string name { get; set; }
         public Faculty faculty { get; set; }
@@ -25,7 +25,7 @@ namespace Vilnius_University_Advisor
         {
             DataNode item = obj as DataNode;
             if (item == null) return false;
-            if (name == item.name && faculty == item.faculty) return true;
+            if (name.Equals(item.name) && faculty == item.faculty) return true;
             else return false;
         }
         public override int GetHashCode()
@@ -33,6 +33,11 @@ namespace Vilnius_University_Advisor
             int hashCode = name.GetHashCode();
             hashCode = hashCode * 7 + faculty.GetHashCode();
             return hashCode;
+        }
+
+        public bool Equals(DataNode other)
+        {
+            return other.name.Equals(this.name) && other.faculty==this.faculty;
         }
     }
 }
