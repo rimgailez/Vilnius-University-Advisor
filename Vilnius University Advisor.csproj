@@ -61,6 +61,11 @@
     <Compile Include="Faculty.cs" />
     <Compile Include="JsonReaderWriter.cs" />
     <Compile Include="Lecturer.cs" />
+    <Compile Include="MainResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,6 +83,10 @@
     <Compile Include="Scraper\Parser.cs" />
     <Compile Include="Scraper\ScraperMain.cs" />
     <Compile Include="Subject.cs" />
+    <EmbeddedResource Include="MainResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>

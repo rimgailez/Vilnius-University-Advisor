@@ -19,7 +19,7 @@ namespace Vilnius_University_Advisor
 
         public bool Equals(Lecturer other)
         {
-            return base.Equals(this);
+            return other.name.Equals(this.name) && other.faculty == this.faculty;
         }
 
         public override int GetHashCode()

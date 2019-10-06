@@ -63,7 +63,7 @@ namespace Vilnius_University_Advisor.Scraper
                 {
                     if (optionalSubject.Equals(subject.name))
                     {
-                        subject.IsOptional = true;
+                        subject.isOptional = true;
                         break;
                     }
                 }

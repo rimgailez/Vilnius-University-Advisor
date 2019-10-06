@@ -1,13 +1,6 @@
 [
   {
     "reviews": [],
-    "name": "",
-    "faculty": -1,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "A. Krasnovas",
     "faculty": 7,
     "score": 0.0,
@@ -22,7 +15,7 @@
   },
   {
     "reviews": [],
-    "name": "Aaistė Urbonienė",
+    "name": "Aistė Urbonienė",
     "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
@@ -63,12 +56,13 @@
       "Pilnas jaunatviško dinamizmo dėstytojas.",
       "Geras dėstytojas, bet kartais nebuvo aišku, apie ką kalbama per teorijos paskaitas.",
       "Per geras dėstytojas.",
-      "Džiaugiuosi dėstytoju."
+      "Džiaugiuosi dėstytoju.",
+      "Įdomus dėstytojas"
     ],
     "name": "Adomas Birštunas",
     "faculty": 9,
-    "score": 3.75,
-    "numberOfReviews": 4
+    "score": 3.8,
+    "numberOfReviews": 5
   },
   {
     "reviews": [],

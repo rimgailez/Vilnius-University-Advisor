@@ -12,6 +12,7 @@ namespace Vilnius_University_Advisor
         public Faculty faculty { get; set; }
         public float score { get; set; }
         public int numberOfReviews { get; set; }
+
         public List<string> reviews;
         public DataNode(string name, Faculty faculty)
         {
