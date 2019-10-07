@@ -506,13 +506,13 @@ namespace Vilnius_University_Advisor
             Faculty faculty = (Faculty)SelectFacultyLect.SelectedIndex;
             FilteredLecturersList.DataSource = null;
             FilteredLecturersList.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
-            FilteredLecturersList.DisplayMember = "name";
+            FilteredLecturersList.DisplayMember = MainResources.Name;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             NumericEvaluationLect.Value = 1;
-            EvaluationCommentLabel.Text = "1 - esu visiškai nepatenkintas dėstytojo darbu.";
+            EvaluationCommentLabel.Text = MainResources.String1;
         }
 
         private void BackLecEvaluation_Click(object sender, EventArgs e)
@@ -526,25 +526,25 @@ namespace Vilnius_University_Advisor
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             NumericEvaluationLect.Value = 2;
-            EvaluationCommentLabel.Text = "2 - esu matęs kur kas geresnių dėstytojų...";
+            EvaluationCommentLabel.Text = MainResources.String2;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             NumericEvaluationLect.Value = 3;
-            EvaluationCommentLabel.Text = "3 - dėstytojas didelio įspūdžio nepaliko.";
+            EvaluationCommentLabel.Text = MainResources.String3;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             NumericEvaluationLect.Value = 4;
-            EvaluationCommentLabel.Text = "4 - dėstytojas gerai dirba savo darbą, bet vis dėlto šio to pasigedau.";
+            EvaluationCommentLabel.Text = MainResources.String4;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             NumericEvaluationLect.Value = 5;
-            EvaluationCommentLabel.Text = "5 - dėstytojas puikiai išmano dėstomą dalyką ir geba informaciją pateikti labai aiškiai ir nuosekliai.";
+            EvaluationCommentLabel.Text = MainResources.String5;
         }
 
         private void ReviewSubject_Click(object sender, EventArgs e)
@@ -560,12 +560,12 @@ namespace Vilnius_University_Advisor
             FilteredSubjectsList.DataSource = null;
             if (IsBUSSubject.Checked)
             {
-                FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjectsByFaculty(faculty);
-                FilteredSubjectsList.DisplayMember = "name";
+                FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjects(faculty);
+                FilteredSubjectsList.DisplayMember = MainResources.Name;
             } else
             {
                 FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
-                FilteredSubjectsList.DisplayMember = "name";
+                FilteredSubjectsList.DisplayMember = MainResources.Name;
             }
         }
 
@@ -593,7 +593,7 @@ namespace Vilnius_University_Advisor
         {
             if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals(""))
             {
-                MessageBox.Show("Prašome užpildyti visus formoje esančius laukus.", "Neužpildyti laukai", 0, MessageBoxIcon.Exclamation);
+                MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
                 return false;
             }
             else
@@ -616,7 +616,7 @@ namespace Vilnius_University_Advisor
         {
             if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals(""))
             {
-                MessageBox.Show("Prašome užpildyti visus formoje esančius laukus.", "Neužpildyti laukai", 0, MessageBoxIcon.Exclamation);
+                MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
                 return false;
             }
             else
@@ -672,7 +672,7 @@ namespace Vilnius_University_Advisor
             Faculty faculty = (Faculty)AllFaculties.SelectedIndex;
             AllLect.DataSource = null;
             AllLect.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
-            AllLect.DisplayMember = "name";
+            AllLect.DisplayMember = MainResources.Name;
         }
 
         private void ShowLecturerInfo_Click(object sender, EventArgs e)
@@ -684,7 +684,7 @@ namespace Vilnius_University_Advisor
             }
             else
             {
-                MessageBox.Show("Nepasirinkote dėstytojo");
+                MessageBox.Show(MainResources.DidntChooseLecturer);
             }
         }
 
@@ -717,7 +717,7 @@ namespace Vilnius_University_Advisor
             Faculty faculty = (Faculty)AllFaculties1.SelectedIndex;
             AllSubj.DataSource = null;
             AllSubj.DataSource = DataMaster.GetInstance().GetSubjectsByFaculty(faculty);
-            AllSubj.DisplayMember = "name";
+            AllSubj.DisplayMember = MainResources.Name;
         }
 
         private void ShowSubjectInfo_Click(object sender, EventArgs e)
@@ -729,7 +729,7 @@ namespace Vilnius_University_Advisor
             }
             else
             {
-                MessageBox.Show("Nepasirinkote dalyko");
+                MessageBox.Show(MainResources.DidntChooseSubject);
             }
         }
 
@@ -753,7 +753,7 @@ namespace Vilnius_University_Advisor
                     Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
                     FilteredSubjectsList.DataSource = null;
                     FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
-                    FilteredSubjectsList.DisplayMember = "name";
+                    FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
             else
@@ -774,7 +774,7 @@ namespace Vilnius_University_Advisor
                     Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
                     FilteredSubjectsList.DataSource = null;
                     FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
-                    FilteredSubjectsList.DisplayMember = "name";
+                    FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
             else
@@ -786,31 +786,31 @@ namespace Vilnius_University_Advisor
         private void EmojiScoreOne_Click(object sender, EventArgs e)
         {
             NumericEvaluationSubj.Value = 1;
-            SubjEvalCommentLab.Text = "1 - mokomasis dalykas visiškai nepateisino lūkesčių.";
+            SubjEvalCommentLab.Text = MainResources.String6;
         }
 
         private void EmojiScoreTwo_Click(object sender, EventArgs e)
         {
             NumericEvaluationSubj.Value = 2;
-            SubjEvalCommentLab.Text = "2 - buvo įdomių paskaitų, bet vis dėlto nerekomenduočiau.";
+            SubjEvalCommentLab.Text = MainResources.String7;
         }
 
         private void EmojiScoreThree_Click(object sender, EventArgs e)
         {
             NumericEvaluationSubj.Value = 3;
-            SubjEvalCommentLab.Text = "3 - mokomasis dalykas naudingas, tačiau sužavėtas nelikau.";
+            SubjEvalCommentLab.Text = MainResources.String8;
         }
 
         private void EmojiScoreFour_Click(object sender, EventArgs e)
         {
             NumericEvaluationSubj.Value = 4;
-            SubjEvalCommentLab.Text = "4 - naudingas bei įdomus dalykas.";
+            SubjEvalCommentLab.Text = MainResources.String9;
         }
 
         private void EmojiScoreFive_Click(object sender, EventArgs e)
         {
             NumericEvaluationSubj.Value = 5;
-            SubjEvalCommentLab.Text = "5 - mokomasis dalykas labai sudomino ir paliko didelį įspūdį.";
+            SubjEvalCommentLab.Text = MainResources.String10;
         }
 
         private void SaveBackSubjEvaluation_Click(object sender, EventArgs e)
@@ -841,13 +841,13 @@ namespace Vilnius_University_Advisor
                 {
                     FilteredSubjectsList.DataSource = null;
                     FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjects();
-                    FilteredSubjectsList.DisplayMember = "name";
+                    FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
                 else
                 {
                     FilteredSubjectsList.DataSource = null;
-                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjectsByFaculty(faculty);
-                    FilteredSubjectsList.DisplayMember = "name";
+                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjects(faculty);
+                    FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
             else
@@ -856,7 +856,7 @@ namespace Vilnius_University_Advisor
                 if (!SelectFacultySubj.Text.Equals("")){
                     FilteredSubjectsList.DataSource = null;
                     FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
-                    FilteredSubjectsList.DisplayMember = "name";
+                    FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
         }

@@ -15,23 +15,23 @@ namespace Vilnius_University_Advisor
         
         public List<Lecturer> ReadLecturers()
         {
-            string lecturerInput = File.ReadAllText(projectPath + directorySeparator + "lecturers.json");
+            string lecturerInput = File.ReadAllText(projectPath + directorySeparator + MainResources.LecturersJson);
             return JsonConvert.DeserializeObject<List<Lecturer>>(lecturerInput);
         }
         public List<Subject> ReadSubjects()
         {
-            string subjectInput = File.ReadAllText(projectPath + directorySeparator + "subjects.json");
+            string subjectInput = File.ReadAllText(projectPath + directorySeparator + MainResources.SubjectsJson);
             return JsonConvert.DeserializeObject<List<Subject>>(subjectInput);
         }
         public void WriteLecturers(List<Lecturer> lecturers)
         {
             string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + "lecturers.json", output);
+            File.WriteAllText(projectPath + directorySeparator + MainResources.LecturersJson, output);
         }
         public void WriteSubjects(List<Subject> subjects)
         {
             string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + "subjects.json", output);
+            File.WriteAllText(projectPath + directorySeparator + MainResources.SubjectsJson, output);
         }
     }
 

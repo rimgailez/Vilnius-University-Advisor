@@ -22,15 +22,18 @@ namespace Vilnius_University_Advisor
         {
             projectPath = jsonReaderWriter.projectPath;
         }
+
         public static DataMaster GetInstance()
         {
             return instance;
         }
+
         public void ReadData()
         {
             lecturers = jsonReaderWriter.ReadLecturers();
             subjects = jsonReaderWriter.ReadSubjects();
         }
+
         public void WriteData()
         {
             lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
@@ -39,38 +42,44 @@ namespace Vilnius_University_Advisor
             jsonReaderWriter.WriteSubjects(subjects);
 
         }
+
         public void AddLecturer(string name, Faculty faculty)
         {
             AddLecturer(new Lecturer(name, faculty));
         }
+
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
             lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
             WriteData();
         }
+
         public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
             if(!lecturers.Contains(lecturer)) lecturers.Add(lecturer);
         }
-        public void AddSubject(string name, Faculty faculty, bool IsOptional, bool IsBUS)
+
+        public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
         {
-            AddSubject(new Subject(name, faculty, IsOptional, IsBUS));
+            AddSubject(new Subject(name, faculty, isOptional, isBUS));
         }
+
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
             subjects = subjects.OrderBy(subject => subject.name).ToList();
             WriteData();
         }
+
         public void AddSubjectWithoutWriting(Subject subject)
         {
             if(!subjects.Contains(subject)) subjects.Add(subject);
         }
+
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
         {
-            Lecturer tempLecturer;
-            tempLecturer = lecturers.Find(lect => lect.Equals(lecturer));
+            Lecturer tempLecturer = lecturers.Find(lect => lect.Equals(lecturer));
             float sum = tempLecturer.score * tempLecturer.numberOfReviews;
             tempLecturer.numberOfReviews++;
             tempLecturer.score = (sum + lecturerScore)/tempLecturer.numberOfReviews;
@@ -81,8 +90,7 @@ namespace Vilnius_University_Advisor
 
         public void EvaluateSubject(Subject subject, float subjectScore, string review)
         {
-            Subject tempSubject;
-            tempSubject = subjects.Find(subj => subj.Equals(subject));
+            Subject tempSubject = subjects.Find(subj => subj.Equals(subject));
             float sum = tempSubject.score * tempSubject.numberOfReviews;
             tempSubject.numberOfReviews++;
             tempSubject.score = (sum + subjectScore) / tempSubject.numberOfReviews;
@@ -91,55 +99,38 @@ namespace Vilnius_University_Advisor
             WriteData();
         }
 
-        public List<Subject> GetBUSSubjects()
+        public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
         {
             List<Subject> BUSSubjects = new List<Subject>();
-            foreach (Subject aSubject in subjects)
+            if (faculty == Faculty.None)
             {
-                if ((aSubject.IsBUS).Equals(true))
-                {
-                    BUSSubjects.Add(aSubject);
-                }
+                BUSSubjects = (from subject in subjects
+                              where subject.isBUS == true
+                              select subject).ToList();
+            }
+            else
+            {
+                BUSSubjects = (from subject in subjects
+                               where subject.isBUS == true && subject.faculty == faculty
+                               select subject).ToList();
             }
             return BUSSubjects;
         }
 
-        public List<Subject> GetBUSSubjectsByFaculty(Faculty faculty)
+        public List<Subject> GetSubjectsByTypeAndFaculty(bool isOptional, Faculty faculty)
         {
-            List<Subject> BUSSubjectsByFaculty = new List<Subject>();
-            foreach (Subject aSubject in subjects)
-            {
-                if ((aSubject.IsBUS).Equals(true) && (aSubject.faculty).Equals(faculty))
-                {
-                    BUSSubjectsByFaculty.Add(aSubject);
-                }
-            }
-            return BUSSubjectsByFaculty;
-        }
-
-        public List<Subject> GetSubjectsByTypeAndFaculty(bool IsOptional, Faculty faculty)
-        {
-            List<Subject> someSubjects = new List<Subject>();
-            foreach (Subject aSubject in subjects)
-            {
-                if ((aSubject.IsOptional).Equals(IsOptional)&&(aSubject.faculty).Equals(faculty))
-                {
-                    someSubjects.Add(aSubject);
-                }
-            }
+            List<Subject> someSubjects = (from subject in subjects
+                                          where subject.isOptional == isOptional &&
+                                                subject.faculty == faculty
+                                          select subject).ToList();
             return someSubjects;
         }
 
         public List<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
-            List<Lecturer> someLecturers = new List<Lecturer>();
-            foreach (Lecturer aLecturer in lecturers)
-            {
-                if ((aLecturer.faculty).Equals(faculty))
-                {
-                    someLecturers.Add(aLecturer);
-                }
-            }
+            List<Lecturer> someLecturers = (from lecturer in lecturers
+                                            where lecturer.faculty == faculty
+                                            select lecturer).ToList();
             return someLecturers;
         }
 
@@ -151,13 +142,13 @@ namespace Vilnius_University_Advisor
             {
                 if ((aLecturer).Equals(lecturer))
                 {
-                    information = information + "Dėstytojo vardas: " + aLecturer.name + "\r\n";
-                    information = information + "Dėstytojo įvertinimas: " + aLecturer.score + " iš 5\r\n";
-                    information = information + "Įvertinimų skaičius: " + aLecturer.numberOfReviews + "\r\n";
+                    information = information + MainResources.LecturerName + aLecturer.name + "\r\n";
+                    information = information + MainResources.LecturerEvaluation + aLecturer.score + MainResources.From5 + "\r\n";
+                    information = information + MainResources.NumberOfReviews + aLecturer.numberOfReviews + "\r\n";
                     if (aLecturer.numberOfReviews > 0)
                     {
                         int number = 1;
-                        information = information + "Komentarai apie dėstytoją: " + "\r\n";
+                        information = information + MainResources.CommentsLecturer + "\r\n";
                         foreach (var item in aLecturer.reviews)
                         {
                             information = information + number + ". " + item + "\r\n";
@@ -167,19 +158,14 @@ namespace Vilnius_University_Advisor
                     return information;
                 }
             }
-            return "Dėstytojas nerastas";
+            return MainResources.LecturerNotFound;
         }
 
         public List<Subject> GetSubjectsByFaculty(Faculty faculty)
         {
-            List<Subject> someSubjects = new List<Subject>();
-            foreach (Subject aSubject in subjects)
-            {
-                if ((aSubject.faculty).Equals(faculty))
-                {
-                    someSubjects.Add(aSubject);
-                }
-            }
+            List<Subject> someSubjects = (from subject in subjects
+                                          where subject.faculty == faculty
+                                          select subject).ToList();
             return someSubjects;
         }
 
@@ -191,25 +177,25 @@ namespace Vilnius_University_Advisor
             {
                 if ((aSubject).Equals(subject))
                 {
-                    information = information + "Dalyko pavadinimas: " + aSubject.name + "\r\n";
-                    if (aSubject.IsOptional)
+                    information = information + MainResources.SubjectName + aSubject.name + "\r\n";
+                    if (aSubject.isOptional)
                     {
-                        information = information + "Dalykas yra pasirenkamasis\r\n";
+                        information = information + MainResources.Optional +"\r\n";
                     }
                     else
                     {
-                        information = information + "Dalykas yra privalomasis\r\n";
+                        information = information + MainResources.Mandatory + "\r\n";
                     }
-                    if (aSubject.IsBUS)
+                    if (aSubject.isBUS)
                     {
-                        information = information + "Dalykas yra BUS\r\n";
+                        information = information + MainResources.BUS + "\r\n";
                     }
-                    information = information + "Dalyko įvertinimas: " + aSubject.score + " iš 5\r\n";
-                    information = information + "Įvertinimų skaičius: " + aSubject.numberOfReviews + "\r\n";
+                    information = information + MainResources.SubjectEvaluation + aSubject.score + MainResources.From5 + "\r\n";
+                    information = information + MainResources.NumberOfReviews + aSubject.numberOfReviews + "\r\n";
                     if (aSubject.numberOfReviews > 0)
                     {
                         int number = 1;
-                        information = information + "Komentarai apie dalyką: " + "\r\n";
+                        information = information + MainResources.CommentsSubject + "\r\n";
                         foreach (var item in aSubject.reviews)
                         {
                             information = information + number + ". " + item + "\r\n";
@@ -219,7 +205,7 @@ namespace Vilnius_University_Advisor
                     return information;
                 }
             }
-            return "Dalykas nerastas";
+            return MainResources.SubjectNotFound;
         }
 
     }
