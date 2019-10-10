@@ -162,6 +162,9 @@
             this.ScraperBack = new System.Windows.Forms.Button();
             this.ScraperLog = new System.Windows.Forms.TextBox();
             this.SingleLecturer = new System.Windows.Forms.Panel();
+            this.LectGroupBox = new System.Windows.Forms.GroupBox();
+            this.LectSearchButton = new System.Windows.Forms.Button();
+            this.LectSearchField = new System.Windows.Forms.TextBox();
             this.Return = new System.Windows.Forms.Button();
             this.ShowLecturerInfo = new System.Windows.Forms.Button();
             this.Info = new System.Windows.Forms.TextBox();
@@ -170,6 +173,9 @@
             this.AllFaculties = new System.Windows.Forms.ComboBox();
             this.F = new System.Windows.Forms.Label();
             this.SingleSubject = new System.Windows.Forms.Panel();
+            this.SubjGroupBox = new System.Windows.Forms.GroupBox();
+            this.SubjSearchButton = new System.Windows.Forms.Button();
+            this.SubjSearchField = new System.Windows.Forms.TextBox();
             this.Return1 = new System.Windows.Forms.Button();
             this.ShowSubjectInfo = new System.Windows.Forms.Button();
             this.Info1 = new System.Windows.Forms.TextBox();
@@ -209,7 +215,9 @@
             this.SubjectTypeGroupBox.SuspendLayout();
             this.ScraperPanel.SuspendLayout();
             this.SingleLecturer.SuspendLayout();
+            this.LectGroupBox.SuspendLayout();
             this.SingleSubject.SuspendLayout();
+            this.SubjGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenu
@@ -1800,6 +1808,7 @@
             // 
             // SingleLecturer
             // 
+            this.SingleLecturer.Controls.Add(this.LectGroupBox);
             this.SingleLecturer.Controls.Add(this.Return);
             this.SingleLecturer.Controls.Add(this.ShowLecturerInfo);
             this.SingleLecturer.Controls.Add(this.Info);
@@ -1813,9 +1822,37 @@
             this.SingleLecturer.TabIndex = 8;
             this.SingleLecturer.Visible = false;
             // 
+            // LectGroupBox
+            // 
+            this.LectGroupBox.Controls.Add(this.LectSearchButton);
+            this.LectGroupBox.Controls.Add(this.LectSearchField);
+            this.LectGroupBox.Location = new System.Drawing.Point(25, 82);
+            this.LectGroupBox.Name = "LectGroupBox";
+            this.LectGroupBox.Size = new System.Drawing.Size(503, 65);
+            this.LectGroupBox.TabIndex = 7;
+            this.LectGroupBox.TabStop = false;
+            this.LectGroupBox.Text = "Dėstytojo paieška";
+            // 
+            // LectSearchButton
+            // 
+            this.LectSearchButton.Location = new System.Drawing.Point(422, 26);
+            this.LectSearchButton.Name = "LectSearchButton";
+            this.LectSearchButton.Size = new System.Drawing.Size(75, 31);
+            this.LectSearchButton.TabIndex = 1;
+            this.LectSearchButton.Text = "Ieškoti";
+            this.LectSearchButton.UseVisualStyleBackColor = true;
+            this.LectSearchButton.Click += new System.EventHandler(this.LectSearchButton_Click);
+            // 
+            // LectSearchField
+            // 
+            this.LectSearchField.Location = new System.Drawing.Point(10, 28);
+            this.LectSearchField.Name = "LectSearchField";
+            this.LectSearchField.Size = new System.Drawing.Size(406, 26);
+            this.LectSearchField.TabIndex = 0;
+            // 
             // Return
             // 
-            this.Return.Location = new System.Drawing.Point(410, 372);
+            this.Return.Location = new System.Drawing.Point(610, 377);
             this.Return.Name = "Return";
             this.Return.Size = new System.Drawing.Size(432, 41);
             this.Return.TabIndex = 6;
@@ -1825,7 +1862,7 @@
             // 
             // ShowLecturerInfo
             // 
-            this.ShowLecturerInfo.Location = new System.Drawing.Point(410, 314);
+            this.ShowLecturerInfo.Location = new System.Drawing.Point(610, 314);
             this.ShowLecturerInfo.Name = "ShowLecturerInfo";
             this.ShowLecturerInfo.Size = new System.Drawing.Size(432, 41);
             this.ShowLecturerInfo.TabIndex = 5;
@@ -1835,7 +1872,7 @@
             // 
             // Info
             // 
-            this.Info.Location = new System.Drawing.Point(410, 50);
+            this.Info.Location = new System.Drawing.Point(610, 53);
             this.Info.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Info.Multiline = true;
             this.Info.Name = "Info";
@@ -1845,7 +1882,7 @@
             // L
             // 
             this.L.AutoSize = true;
-            this.L.Location = new System.Drawing.Point(27, 91);
+            this.L.Location = new System.Drawing.Point(31, 154);
             this.L.Name = "L";
             this.L.Size = new System.Drawing.Size(83, 20);
             this.L.TabIndex = 3;
@@ -1855,9 +1892,9 @@
             // 
             this.AllLect.FormattingEnabled = true;
             this.AllLect.ItemHeight = 20;
-            this.AllLect.Location = new System.Drawing.Point(25, 117);
+            this.AllLect.Location = new System.Drawing.Point(25, 177);
             this.AllLect.Name = "AllLect";
-            this.AllLect.Size = new System.Drawing.Size(353, 304);
+            this.AllLect.Size = new System.Drawing.Size(504, 244);
             this.AllLect.TabIndex = 2;
             // 
             // AllFaculties
@@ -1878,16 +1915,16 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.AllFaculties.Location = new System.Drawing.Point(25, 50);
+            this.AllFaculties.Location = new System.Drawing.Point(26, 44);
             this.AllFaculties.Name = "AllFaculties";
-            this.AllFaculties.Size = new System.Drawing.Size(353, 28);
+            this.AllFaculties.Size = new System.Drawing.Size(504, 28);
             this.AllFaculties.TabIndex = 1;
             this.AllFaculties.SelectedIndexChanged += new System.EventHandler(this.AllFaculties_SelectedIndexChanged);
             // 
             // F
             // 
             this.F.AutoSize = true;
-            this.F.Location = new System.Drawing.Point(23, 25);
+            this.F.Location = new System.Drawing.Point(31, 21);
             this.F.Name = "F";
             this.F.Size = new System.Drawing.Size(88, 20);
             this.F.TabIndex = 0;
@@ -1895,6 +1932,7 @@
             // 
             // SingleSubject
             // 
+            this.SingleSubject.Controls.Add(this.SubjGroupBox);
             this.SingleSubject.Controls.Add(this.Return1);
             this.SingleSubject.Controls.Add(this.ShowSubjectInfo);
             this.SingleSubject.Controls.Add(this.Info1);
@@ -1908,9 +1946,37 @@
             this.SingleSubject.TabIndex = 7;
             this.SingleSubject.Visible = false;
             // 
+            // SubjGroupBox
+            // 
+            this.SubjGroupBox.Controls.Add(this.SubjSearchButton);
+            this.SubjGroupBox.Controls.Add(this.SubjSearchField);
+            this.SubjGroupBox.Location = new System.Drawing.Point(25, 82);
+            this.SubjGroupBox.Name = "SubjGroupBox";
+            this.SubjGroupBox.Size = new System.Drawing.Size(503, 65);
+            this.SubjGroupBox.TabIndex = 9;
+            this.SubjGroupBox.TabStop = false;
+            this.SubjGroupBox.Text = "Mokomųjų dalykų paieška";
+            // 
+            // SubjSearchButton
+            // 
+            this.SubjSearchButton.Location = new System.Drawing.Point(422, 26);
+            this.SubjSearchButton.Name = "SubjSearchButton";
+            this.SubjSearchButton.Size = new System.Drawing.Size(75, 31);
+            this.SubjSearchButton.TabIndex = 1;
+            this.SubjSearchButton.Text = "Ieškoti";
+            this.SubjSearchButton.UseVisualStyleBackColor = true;
+            this.SubjSearchButton.Click += new System.EventHandler(this.SubjSearchButton_Click);
+            // 
+            // SubjSearchField
+            // 
+            this.SubjSearchField.Location = new System.Drawing.Point(10, 28);
+            this.SubjSearchField.Name = "SubjSearchField";
+            this.SubjSearchField.Size = new System.Drawing.Size(406, 26);
+            this.SubjSearchField.TabIndex = 0;
+            // 
             // Return1
             // 
-            this.Return1.Location = new System.Drawing.Point(487, 370);
+            this.Return1.Location = new System.Drawing.Point(610, 377);
             this.Return1.Name = "Return1";
             this.Return1.Size = new System.Drawing.Size(432, 41);
             this.Return1.TabIndex = 8;
@@ -1920,7 +1986,7 @@
             // 
             // ShowSubjectInfo
             // 
-            this.ShowSubjectInfo.Location = new System.Drawing.Point(487, 314);
+            this.ShowSubjectInfo.Location = new System.Drawing.Point(610, 314);
             this.ShowSubjectInfo.Name = "ShowSubjectInfo";
             this.ShowSubjectInfo.Size = new System.Drawing.Size(432, 41);
             this.ShowSubjectInfo.TabIndex = 7;
@@ -1930,7 +1996,7 @@
             // 
             // Info1
             // 
-            this.Info1.Location = new System.Drawing.Point(487, 50);
+            this.Info1.Location = new System.Drawing.Point(610, 53);
             this.Info1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Info1.Multiline = true;
             this.Info1.Name = "Info1";
@@ -1941,15 +2007,15 @@
             // 
             this.AllSubj.FormattingEnabled = true;
             this.AllSubj.ItemHeight = 20;
-            this.AllSubj.Location = new System.Drawing.Point(25, 114);
+            this.AllSubj.Location = new System.Drawing.Point(25, 177);
             this.AllSubj.Name = "AllSubj";
-            this.AllSubj.Size = new System.Drawing.Size(427, 304);
+            this.AllSubj.Size = new System.Drawing.Size(504, 244);
             this.AllSubj.TabIndex = 5;
             // 
             // S
             // 
             this.S.AutoSize = true;
-            this.S.Location = new System.Drawing.Point(28, 85);
+            this.S.Location = new System.Drawing.Point(31, 154);
             this.S.Name = "S";
             this.S.Size = new System.Drawing.Size(64, 20);
             this.S.TabIndex = 4;
@@ -1973,16 +2039,16 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.AllFaculties1.Location = new System.Drawing.Point(25, 50);
+            this.AllFaculties1.Location = new System.Drawing.Point(26, 44);
             this.AllFaculties1.Name = "AllFaculties1";
-            this.AllFaculties1.Size = new System.Drawing.Size(427, 28);
+            this.AllFaculties1.Size = new System.Drawing.Size(504, 28);
             this.AllFaculties1.TabIndex = 2;
             this.AllFaculties1.SelectedIndexChanged += new System.EventHandler(this.AllFaculties1_SelectedIndexChanged);
             // 
             // F1
             // 
             this.F1.AutoSize = true;
-            this.F1.Location = new System.Drawing.Point(23, 25);
+            this.F1.Location = new System.Drawing.Point(31, 21);
             this.F1.Name = "F1";
             this.F1.Size = new System.Drawing.Size(88, 20);
             this.F1.TabIndex = 1;
@@ -1999,11 +2065,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 438);
+            this.Controls.Add(this.SingleSubject);
+            this.Controls.Add(this.SingleLecturer);
             this.Controls.Add(this.EvaluateSubjects);
             this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.SingleSubject);
-            this.Controls.Add(this.SingleLecturer);
             this.Controls.Add(this.ScraperPanel);
             this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.AllLecturers);
@@ -2056,8 +2122,12 @@
             this.ScraperPanel.PerformLayout();
             this.SingleLecturer.ResumeLayout(false);
             this.SingleLecturer.PerformLayout();
+            this.LectGroupBox.ResumeLayout(false);
+            this.LectGroupBox.PerformLayout();
             this.SingleSubject.ResumeLayout(false);
             this.SingleSubject.PerformLayout();
+            this.SubjGroupBox.ResumeLayout(false);
+            this.SubjGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2212,6 +2282,12 @@
         private System.Windows.Forms.Label LectEvalLab;
         private System.Windows.Forms.TextBox ReviewSubjEvalTxtBox;
         private System.Windows.Forms.Label ReviewLabel;
+        private System.Windows.Forms.GroupBox LectGroupBox;
+        private System.Windows.Forms.Button LectSearchButton;
+        private System.Windows.Forms.TextBox LectSearchField;
+        private System.Windows.Forms.GroupBox SubjGroupBox;
+        private System.Windows.Forms.Button SubjSearchButton;
+        private System.Windows.Forms.TextBox SubjSearchField;
     }
 }
 
