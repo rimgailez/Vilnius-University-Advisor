@@ -393,7 +393,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Chemistry_and_Geosciences);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Chemistry_and_Geosciences, DataMaster.GetInstance().GetLecturers());
             SetColumnsWidthForLecturers();
         }
 
@@ -401,7 +401,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Economics_and_Business_Administration);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Economics_and_Business_Administration, DataMaster.GetInstance().GetLecturers());
             SetColumnsWidthForLecturers();
         }
 
@@ -409,7 +409,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Philology);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Philology, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -417,7 +418,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Philosophy);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Philosophy, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -425,7 +427,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Physics);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Physics, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -433,7 +436,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Life_Sciences);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Life_Sciences, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -441,7 +445,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.History);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.History, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -449,7 +454,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Kaunas);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Kaunas, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -457,7 +463,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Communication);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Communication, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -465,7 +472,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Mathematics_and_Informatics);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Mathematics_and_Informatics, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -473,7 +481,8 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Medicine);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Medicine, DataMaster.GetInstance().GetLecturers());
+
             SetColumnsWidthForLecturers();
         }
 
@@ -481,7 +490,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.International_Relations_and_Political_Science);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.International_Relations_and_Political_Science, DataMaster.GetInstance().GetLecturers());
             SetColumnsWidthForLecturers();
         }
 
@@ -489,7 +498,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Law);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Law, DataMaster.GetInstance().GetLecturers());
             SetColumnsWidthForLecturers();
         }
 
@@ -497,7 +506,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Business);
+            ListLectTable.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(Faculty.Business, DataMaster.GetInstance().GetLecturers());
             SetColumnsWidthForLecturers();
         }
 
@@ -505,7 +514,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)SelectFacultyLect.SelectedIndex;
             FilteredLecturersList.DataSource = null;
-            FilteredLecturersList.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
+            FilteredLecturersList.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(faculty, DataMaster.GetInstance().GetLecturers());
             FilteredLecturersList.DisplayMember = MainResources.Name;
         }
 
@@ -671,7 +680,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)AllFaculties.SelectedIndex;
             AllLect.DataSource = null;
-            AllLect.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
+            AllLect.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(faculty, DataMaster.GetInstance().GetLecturers());
             AllLect.DisplayMember = MainResources.Name;
         }
 
@@ -718,7 +727,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)AllFaculties1.SelectedIndex;
             AllSubj.DataSource = null;
-            AllSubj.DataSource = DataMaster.GetInstance().GetSubjectsByFaculty(faculty);
+            AllSubj.DataSource = UniversityEntity<Subject>.GetEntityInstance().GetEntitiesByFaculty(faculty, DataMaster.GetInstance().GetSubjects());
             AllSubj.DisplayMember = MainResources.Name;
         }
 
@@ -870,7 +879,7 @@ namespace Vilnius_University_Advisor
             if (AllFaculties.SelectedItem != null)
             {
                 AllLect.DataSource = null;
-                AllLect.DataSource = DataMaster.GetInstance().GetLecturerSearchResults(LectSearchField.Text, faculty);
+                AllLect.DataSource = UniversityEntity<Lecturer>.GetEntityInstance().GetEntitySearchResults(LectSearchField.Text, faculty, DataMaster.GetInstance().GetLecturers());
                 AllLect.DisplayMember = MainResources.Name;
             }
             else
@@ -885,7 +894,7 @@ namespace Vilnius_University_Advisor
             if (AllFaculties1.SelectedItem != null)
             {
                 AllSubj.DataSource = null;
-                AllSubj.DataSource = DataMaster.GetInstance().GetSubjectSearchResults(SubjSearchField.Text, faculty);
+                AllSubj.DataSource = UniversityEntity<Subject>.GetEntityInstance().GetEntitySearchResults(SubjSearchField.Text, faculty, DataMaster.GetInstance().GetSubjects());
                 AllSubj.DisplayMember = MainResources.Name;
             }
             else

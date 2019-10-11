@@ -67,7 +67,7 @@ namespace Vilnius_University_Advisor.Scraper
         {
             foreach(Subject subject in subjects)
             {
-                DataMaster.GetInstance().AddSubjectWithoutWriting(subject);
+                UniversityEntity<Subject>.GetEntityInstance().AddEntityWithoutWriting(subject, ref subjects);
             }
         }
 
@@ -75,7 +75,7 @@ namespace Vilnius_University_Advisor.Scraper
         {
             foreach(Lecturer lecturer in lecturers)
             {
-                DataMaster.GetInstance().AddLecturerWithoutWriting(lecturer);
+                UniversityEntity<Lecturer>.GetEntityInstance().AddEntityWithoutWriting(lecturer, ref lecturers);
             }
         }
 

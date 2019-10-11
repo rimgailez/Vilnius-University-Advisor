@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UniversityEntity.cs" />
     <Compile Include="DataMaster.cs" />
     <Compile Include="DataNode.cs" />
     <Compile Include="Faculty.cs" />

@@ -694,11 +694,14 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      "Puikus dėstytojas!",
+      "Buvo pakenčiamas."
+    ],
     "name": "Albertas Jurgelevičius",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 4.0,
+    "numberOfReviews": 2
   },
   {
     "reviews": [],
