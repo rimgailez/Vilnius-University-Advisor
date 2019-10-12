@@ -9,6 +9,7 @@ namespace Vilnius_University_Advisor
     class Lecturer : DataNode, IEquatable<Lecturer>
     {
         public Lecturer(string name, Faculty faculty) : base(name, faculty) { }
+
         public override bool Equals(object obj)
         {
             Lecturer item = obj as Lecturer;

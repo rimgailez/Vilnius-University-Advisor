@@ -36,9 +36,9 @@ namespace Vilnius_University_Advisor
 
         public void WriteData()
         {
-            lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
+            lecturers.Sort();
             jsonReaderWriter.WriteLecturers(lecturers);
-            subjects = subjects.OrderBy(subject => subject.name).ToList();
+            subjects.Sort();
             jsonReaderWriter.WriteSubjects(subjects);
 
         }
@@ -51,7 +51,7 @@ namespace Vilnius_University_Advisor
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
-            lecturers = lecturers.OrderBy(lecturer => lecturer.name).ToList();
+            lecturers.Sort();
             WriteData();
         }
 
@@ -68,7 +68,7 @@ namespace Vilnius_University_Advisor
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
-            subjects = subjects.OrderBy(subject => subject.name).ToList();
+            subjects.Sort();
             WriteData();
         }
 
