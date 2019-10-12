@@ -205,6 +205,15 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pasirinkite fakultetą.
+        /// </summary>
+        internal static string SelectFaculty {
+            get {
+                return ResourceManager.GetString("SelectFaculty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1 - esu visiškai nepatenkintas dėstytojo darbu..
         /// </summary>
         internal static string String1 {

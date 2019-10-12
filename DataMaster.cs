@@ -208,5 +208,20 @@ namespace Vilnius_University_Advisor
             return MainResources.SubjectNotFound;
         }
 
+        public List<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
+        {
+            List<Subject> searchResult = (from subject in subjects
+                                          where subject.name.ToLower().Contains(enteredWord.ToLower()) && subject.faculty == faculty
+                                          select subject).ToList();
+            return searchResult;
+        }
+        public List<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
+        {
+            List<Lecturer> searchResult = (from lecturer in lecturers
+                                           where lecturer.name.ToLower().Contains(enteredWord.ToLower()) && lecturer.faculty == faculty
+                                           select lecturer).ToList();
+            return searchResult;
+        }
+
     }
 }
