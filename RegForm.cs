@@ -694,6 +694,7 @@ namespace Vilnius_University_Advisor
             Info.Text = "";
             AllFaculties.Text = "";
             AllLect.DataSource = null;
+            LectSearchField.Text = "";
             MainMenu.Show();
         }
 
@@ -709,6 +710,7 @@ namespace Vilnius_University_Advisor
             Info1.Text = "";
             AllFaculties1.Text = "";
             AllSubj.DataSource = null;
+            SubjSearchField.Text = "";
             MainMenu.Show();
         }
 
@@ -858,6 +860,37 @@ namespace Vilnius_University_Advisor
                     FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
                     FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
+            }
+        }
+
+
+        private void LectSearchButton_Click(object sender, EventArgs e)
+        {
+            Faculty faculty = (Faculty)AllFaculties.SelectedIndex;
+            if (AllFaculties.SelectedItem != null)
+            {
+                AllLect.DataSource = null;
+                AllLect.DataSource = DataMaster.GetInstance().GetLecturerSearchResults(LectSearchField.Text, faculty);
+                AllLect.DisplayMember = MainResources.Name;
+            }
+            else
+            {
+                MessageBox.Show(MainResources.SelectFaculty, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void SubjSearchButton_Click(object sender, EventArgs e)
+        {
+            Faculty faculty = (Faculty)AllFaculties1.SelectedIndex;
+            if (AllFaculties1.SelectedItem != null)
+            {
+                AllSubj.DataSource = null;
+                AllSubj.DataSource = DataMaster.GetInstance().GetSubjectSearchResults(SubjSearchField.Text, faculty);
+                AllSubj.DisplayMember = MainResources.Name;
+            }
+            else
+            {
+                MessageBox.Show(MainResources.SelectFaculty, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
             }
         }
     }

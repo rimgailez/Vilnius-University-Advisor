@@ -165,6 +165,9 @@
   <data name="Optional" xml:space="preserve">
     <value>Dalykas yra pasirenkamasis</value>
   </data>
+  <data name="SelectFaculty" xml:space="preserve">
+    <value>Pasirinkite fakultetą</value>
+  </data>
   <data name="String1" xml:space="preserve">
     <value>1 - esu visiškai nepatenkintas dėstytojo darbu.</value>
   </data>
