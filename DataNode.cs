@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vilnius_University_Advisor
 {
-    public class DataNode : IEquatable<DataNode>
+    public class DataNode : IEquatable<DataNode>, IComparable<DataNode>
     {
         public string name { get; set; }
         public Faculty faculty { get; set; }
@@ -22,6 +22,7 @@ namespace Vilnius_University_Advisor
             this.numberOfReviews = 0;
             this.reviews = new List<string>();
         }
+
         public override bool Equals(object obj)
         {
             DataNode item = obj as DataNode;
@@ -39,6 +40,14 @@ namespace Vilnius_University_Advisor
         public bool Equals(DataNode other)
         {
             return other.name.Equals(this.name) && other.faculty==this.faculty;
+        }
+
+        public int CompareTo(DataNode other)
+        {
+            int result = this.name.CompareTo(other.name);
+            if (result == 0)
+                return this.faculty.CompareTo(other.faculty);
+            else return result;
         }
     }
 }
