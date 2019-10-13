@@ -37,9 +37,9 @@ namespace Vilnius_University_Advisor
 
         public void WriteData()
         {
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().SortList(lecturers);
+            lecturers.Sort();
             jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
-            UniversityEntitiesList<Subject>.GetEntityInstance().SortList(subjects);
+            subjects.Sort();
             jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
         }
 
@@ -51,13 +51,13 @@ namespace Vilnius_University_Advisor
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().SortList(lecturers);
+            lecturers.Sort();
             WriteData();
         }
 
         public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().AddEntityWithoutWriting(lecturer, lecturers);
+            lecturers.AddEntityWithoutWriting(lecturer);
         }
 
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
@@ -68,23 +68,23 @@ namespace Vilnius_University_Advisor
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
-            UniversityEntitiesList<Subject>.GetEntityInstance().SortList(subjects);
+            subjects.Sort();
             WriteData();
         }
 
         public void AddSubjectWithoutWriting(Subject subject)
         {
-            UniversityEntitiesList<Subject>.GetEntityInstance().AddEntityWithoutWriting(subject, subjects);
+            subjects.AddEntityWithoutWriting(subject);
         }
 
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
         {
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().EvaluateEntity(lecturer, lecturerScore, review, lecturers);
+            lecturers.EvaluateEntity(lecturer, lecturerScore, review);
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string review)
         {
-            UniversityEntitiesList<Subject>.GetEntityInstance().EvaluateEntity(subject, subjectScore, review, subjects);
+            subjects.EvaluateEntity(subject, subjectScore, review);
         }
 
         public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -116,12 +116,12 @@ namespace Vilnius_University_Advisor
 
         public List<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
-            return UniversityEntitiesList<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(faculty, lecturers);
+            return lecturers.GetEntitiesByFaculty(faculty);
         }
 
         public List<Subject> GetSubjectsByFaculty(Faculty faculty)
         {
-            return UniversityEntitiesList<Subject>.GetEntityInstance().GetEntitiesByFaculty(faculty, subjects);
+            return subjects.GetEntitiesByFaculty(faculty);
         }
 
         public string GetLecturerInfo(Lecturer lecturer, Faculty faculty)
@@ -192,12 +192,12 @@ namespace Vilnius_University_Advisor
 
         public List<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
         {
-            return UniversityEntitiesList<Subject>.GetEntityInstance().GetEntitySearchResults(enteredWord, faculty, subjects);
+            return subjects.GetEntitySearchResults(enteredWord, faculty);
         }
 
         public List<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
-            return UniversityEntitiesList<Lecturer>.GetEntityInstance().GetEntitySearchResults(enteredWord, faculty, lecturers);
+            return lecturers.GetEntitySearchResults(enteredWord, faculty);
         }
     }
 }

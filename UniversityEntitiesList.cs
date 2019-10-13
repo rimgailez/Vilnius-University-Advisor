@@ -54,41 +54,39 @@ namespace Vilnius_University_Advisor
             return entitiesList.GetEnumerator();
         }
 
-        public List<T> GetEntitySearchResults(String enteredWord, Faculty faculty, UniversityEntitiesList<T> entList)
+        public List<T> GetEntitySearchResults(String enteredWord, Faculty faculty)
         {
-            List<T> searchResult = (from ent in entList.entitiesList
+            List<T> searchResult = (from ent in entitiesList
                                           where ent.name.ToLower().Contains(enteredWord.ToLower()) && ent.faculty == faculty
                                           select ent).ToList();
             return searchResult;
         }
 
-        public List<T> GetEntitiesByFaculty(Faculty faculty, UniversityEntitiesList<T> entList)
+        public List<T> GetEntitiesByFaculty(Faculty faculty)
         {
-            List<T> filteredEntities = (from ent in entList.entitiesList
+            List<T> filteredEntities = (from ent in entitiesList
                                           where ent.faculty == faculty
                                           select ent).ToList();
             return filteredEntities;
         }
 
-        public void EvaluateEntity(T entity, float subjectScore, string review, UniversityEntitiesList<T> entList)
+        public void EvaluateEntity(T entity, float subjectScore, string review)
         {
-            T tempEntity = entList.entitiesList.Find(ent => ent.Equals(entity));
-            float sum = tempEntity.score * tempEntity.numberOfReviews;
-            tempEntity.numberOfReviews++;
-            tempEntity.score = (sum + subjectScore) / tempEntity.numberOfReviews;
-            tempEntity.reviews.Add(review);
-            entList.entitiesList[entList.entitiesList.FindIndex(ent => ent.Equals(entity))] = tempEntity;
+            float sum = entity.score * entity.numberOfReviews;
+            entity.numberOfReviews++;
+            entity.score = (sum + subjectScore) / entity.numberOfReviews;
+            entity.reviews.Add(review);
             DataMaster.GetInstance().WriteData();
         }
 
-        public void AddEntityWithoutWriting(T entity, UniversityEntitiesList<T> entList)
+        public void AddEntityWithoutWriting(T entity)
         {
-            if (!entList.entitiesList.Contains(entity)) entList.entitiesList.Add(entity);
+            if (!entitiesList.Contains(entity)) entitiesList.Add(entity);
         }
 
-        public void SortList(UniversityEntitiesList<T> entList)
+        public void Sort()
         {
-            entList.entitiesList.Sort();
+            entitiesList.Sort();
         }
 
     }

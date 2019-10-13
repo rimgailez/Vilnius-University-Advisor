@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vilnius_University_Advisor
 {
-    public class Subject : DataNode, IEquatable<Subject>
+    public class Subject : DataNode, IEquatable<Subject>, IComparable<Subject>
     {
         public bool isOptional; //Ar pasirenkamasis dalykas
 
@@ -15,6 +15,18 @@ namespace Vilnius_University_Advisor
         public Subject(string name, Faculty faculty, bool isOptional, bool isBUS) : base(name, faculty) {
             this.isOptional = isOptional;
             this.isBUS = isBUS;
+        }
+
+        public int CompareTo(Subject other)
+        {
+            int result = base.CompareTo(other);
+            if (result == 0 && !this.Equals(other))
+            {
+                if (!this.isOptional && other.isOptional) return 1;
+                else if (!this.isBUS && other.isBUS) return 1;
+                else return -1;
+            }
+            else return result;
         }
 
         public override bool Equals(object obj)
