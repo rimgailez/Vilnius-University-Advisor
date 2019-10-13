@@ -180,7 +180,7 @@ namespace Vilnius_University_Advisor
                     {
                         int number = 1;
                         information = information + MainResources.CommentsSubject + "\r\n";
-                        foreach (var item in aSubject.reviews)
+                        foreach (Review item in aSubject.reviews)
                         {
                             information = information + number + ". "
                                    + MainResources.ReviewUsername + item.username

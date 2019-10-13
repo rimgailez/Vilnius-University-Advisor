@@ -13,7 +13,6 @@ namespace Vilnius_University_Advisor
         public float score { get; set; }
         public int numberOfReviews { get; set; }
 
-        //public List<string> reviews;
         public List<Review> reviews;
         public DataNode(string name, Faculty faculty)
         {
@@ -21,7 +20,6 @@ namespace Vilnius_University_Advisor
             this.faculty = faculty;
             this.score = 0;
             this.numberOfReviews = 0;
-            //this.reviews = new List<string>();
             this.reviews = new List<Review>();
         }
 
