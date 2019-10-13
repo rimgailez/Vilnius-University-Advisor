@@ -591,7 +591,7 @@ namespace Vilnius_University_Advisor
 
         private Boolean EvaluateLecturerWithValidations()
         {
-            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals(""))
+            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals("") || LectUsernameTxtBox.Text.Equals(""))
             {
                 MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
                 return false;
@@ -599,7 +599,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
-                DataMaster.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text);
+                DataMaster.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameTxtBox.Text);
                 return true;
             }
         }
@@ -608,13 +608,14 @@ namespace Vilnius_University_Advisor
             SelectFacultyLect.Text = "";
             FilteredLecturersList.DataSource = null;
             ReviewLectEvalTxtBox.Text = "";
+            LectUsernameTxtBox.Text = "";
             EvaluationCommentLabel.Text = "...";
             NumericEvaluationLect.Value = 0;
         }
 
         private Boolean EvaluateSubjectWithValidations()
         {
-            if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals(""))
+            if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals("") || SubjUsernameTxtBox.Text.Equals(""))
             {
                 MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
                 return false;
@@ -622,7 +623,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
-                DataMaster.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text);
+                DataMaster.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameTxtBox.Text);
                 return true;
             }
         }
@@ -636,6 +637,7 @@ namespace Vilnius_University_Advisor
             SelectFacultySubj.Text = "";
             FilteredSubjectsList.DataSource = null;
             ReviewSubjEvalTxtBox.Text = "";
+            SubjUsernameTxtBox.Text = "";
             SubjEvalCommentLab.Text = "...";
             NumericEvaluationSubj.Value = 0;
         }

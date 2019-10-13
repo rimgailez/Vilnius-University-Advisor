@@ -23,7 +23,6 @@ namespace Vilnius_University_Advisor
         {
             projectPath = jsonReaderWriter.projectPath;
         }
-
         public static DataMaster GetInstance()
         {
             return instance;
@@ -77,14 +76,14 @@ namespace Vilnius_University_Advisor
             subjects.AddEntityWithoutWriting(subject);
         }
 
-        public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
+        public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
-            lecturers.EvaluateEntity(lecturer, lecturerScore, review);
+            lecturers.EvaluateEntity(lecturer, lecturerScore, new Review(username, (int)lecturerScore, text));
         }
 
-        public void EvaluateSubject(Subject subject, float subjectScore, string review)
+        public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
-            subjects.EvaluateEntity(subject, subjectScore, review);
+            subjects.EvaluateEntity(subject, subjectScore, new Review(username, (int)subjectScore, text));
         }
 
         public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -139,9 +138,12 @@ namespace Vilnius_University_Advisor
                     {
                         int number = 1;
                         information = information + MainResources.CommentsLecturer + "\r\n";
-                        foreach (var item in aLecturer.reviews)
+                        foreach (Review item in aLecturer.reviews)
                         {
-                            information = information + number + ". " + item + "\r\n";
+                            information = information + number + ". "  
+                                + MainResources.ReviewUsername + item.username 
+                                + MainResources.ReviewScore + item.score 
+                                + "\r\n" + item.text + "\r\n";
                             number++;
                         }
                     }
@@ -180,7 +182,10 @@ namespace Vilnius_University_Advisor
                         information = information + MainResources.CommentsSubject + "\r\n";
                         foreach (var item in aSubject.reviews)
                         {
-                            information = information + number + ". " + item + "\r\n";
+                            information = information + number + ". "
+                                   + MainResources.ReviewUsername + item.username
+                                   + MainResources.ReviewScore + item.score
+                                   + "\r\n" + item.text + "\r\n";
                             number++;
                         }
                     }

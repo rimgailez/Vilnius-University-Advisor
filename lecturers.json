@@ -224,26 +224,18 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "Esu patenkintas šia dėstytoja.",
-      "Esu labai nepatenkintas šia dėstytoja."
-    ],
+    "reviews": [],
     "name": "Adelė Vaiginytė",
     "faculty": 9,
-    "score": 2.5,
-    "numberOfReviews": 2
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "Pilnas jaunatviško dinamizmo dėstytojas.",
-      "Geras dėstytojas, bet kartais nebuvo aišku, apie ką kalbama per teorijos paskaitas.",
-      "Per geras dėstytojas.",
-      "Džiaugiuosi dėstytoju."
-    ],
+    "reviews": [],
     "name": "Adomas Birštunas",
     "faculty": 9,
-    "score": 3.75,
-    "numberOfReviews": 4
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "reviews": [],
@@ -253,22 +245,18 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "Semestras su šia dėstytoja buvo naudingas ir įsimintinas."
-    ],
+    "reviews": [],
     "name": "Agata Adamaitytė",
     "faculty": 2,
-    "score": 5.0,
-    "numberOfReviews": 1
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "Labai cool!"
-    ],
+    "reviews": [],
     "name": "Agnė Brilingaitė",
     "faculty": 9,
-    "score": 5.0,
-    "numberOfReviews": 1
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "reviews": [],
@@ -278,23 +266,18 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "cool"
-    ],
+    "reviews": [],
     "name": "Agnė Janonienė",
     "faculty": 5,
-    "score": 5.0,
-    "numberOfReviews": 1
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "Išties profesionali dėstytoja.",
-      "Nesužavėtas."
-    ],
+    "reviews": [],
     "name": "Agnė Jasinavičiūtė",
     "faculty": 0,
-    "score": 3.5,
-    "numberOfReviews": 2
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "reviews": [],
@@ -325,13 +308,11 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "Nesu patenkintas dėstymo kokybe."
-    ],
+    "reviews": [],
     "name": "Agnė Laužadytė-Tutlienė",
     "faculty": 1,
-    "score": 1.0,
-    "numberOfReviews": 1
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "reviews": [],
@@ -474,13 +455,11 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [
-      "Susilaikysiu nuo komentarų."
-    ],
+    "reviews": [],
     "name": "Aidas Medžiūnas",
     "faculty": 9,
-    "score": 3.0,
-    "numberOfReviews": 1
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "reviews": [],
@@ -497,20 +476,24 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
-    "name": "Aistė Elijio",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
     "reviews": [
-      "Džiaugiuosi dėstytoja."
+      {
+        "username": "ElijoUsr",
+        "score": 4,
+        "text": "Elijo4"
+      }
     ],
     "name": "Aistė Elijio",
-    "faculty": 9,
+    "faculty": 3,
     "score": 4.0,
     "numberOfReviews": 1
+  },
+  {
+    "reviews": [],
+    "name": "Aistė Elijio",
+    "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "reviews": [],

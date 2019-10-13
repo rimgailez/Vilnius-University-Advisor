@@ -70,7 +70,7 @@ namespace Vilnius_University_Advisor
             return filteredEntities;
         }
 
-        public void EvaluateEntity(T entity, float subjectScore, string review)
+        public void EvaluateEntity(T entity, float subjectScore, Review review)
         {
             float sum = entity.score * entity.numberOfReviews;
             entity.numberOfReviews++;

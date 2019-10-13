@@ -205,6 +205,24 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  Įvertino: .
+        /// </summary>
+        internal static string ReviewScore {
+            get {
+                return ResourceManager.GetString("ReviewScore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prisijungimo vardas: .
+        /// </summary>
+        internal static string ReviewUsername {
+            get {
+                return ResourceManager.GetString("ReviewUsername", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pasirinkite fakultetą.
         /// </summary>
         internal static string SelectFaculty {
