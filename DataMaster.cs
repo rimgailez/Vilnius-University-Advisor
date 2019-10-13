@@ -12,8 +12,12 @@ namespace Vilnius_University_Advisor
     {
         private static readonly DataMaster instance  = new DataMaster();
 
-        List<Lecturer> lecturers = new List<Lecturer>();
-        List<Subject> subjects = new List<Subject>();
+       /* List<Lecturer> lecturers = new List<Lecturer>();
+        List<Subject> subjects = new List<Subject>();*/
+
+        UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
+        UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
+
         //get project directory
         public string projectPath;
         JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
@@ -30,17 +34,18 @@ namespace Vilnius_University_Advisor
 
         public void ReadData()
         {
-            lecturers = jsonReaderWriter.ReadLecturers();
-            subjects = jsonReaderWriter.ReadSubjects();
+            lecturers.SetListOfUniversityEntities(jsonReaderWriter.ReadLecturers());
+            subjects.SetListOfUniversityEntities(jsonReaderWriter.ReadSubjects());
         }
 
         public void WriteData()
         {
-            lecturers.Sort();
-            jsonReaderWriter.WriteLecturers(lecturers);
-            subjects.Sort();
-            jsonReaderWriter.WriteSubjects(subjects);
-
+            var lecturersList = lecturers.GetListOfUniversityEntities();
+            lecturersList.Sort();
+            jsonReaderWriter.WriteLecturers(lecturersList);
+            var subjectsList = subjects.GetListOfUniversityEntities();
+            subjectsList.Sort();
+            jsonReaderWriter.WriteSubjects(subjectsList);
         }
 
         public void AddLecturer(string name, Faculty faculty)
@@ -51,7 +56,10 @@ namespace Vilnius_University_Advisor
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
-            lecturers.Sort();
+            var lecturersList = lecturers.GetListOfUniversityEntities();
+            lecturersList.Sort();
+            lecturers.SetListOfUniversityEntities(lecturersList);
+
             WriteData();
         }
 
@@ -68,7 +76,9 @@ namespace Vilnius_University_Advisor
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
-            subjects.Sort();
+            var subjectsList = subjects.GetListOfUniversityEntities();
+            subjectsList.Sort();
+            subjects.SetListOfUniversityEntities(subjectsList);
             WriteData();
         }
 
@@ -79,24 +89,12 @@ namespace Vilnius_University_Advisor
 
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
         {
-            Lecturer tempLecturer = lecturers.Find(lect => lect.Equals(lecturer));
-            float sum = tempLecturer.score * tempLecturer.numberOfReviews;
-            tempLecturer.numberOfReviews++;
-            tempLecturer.score = (sum + lecturerScore)/tempLecturer.numberOfReviews;
-            tempLecturer.reviews.Add(review);
-            lecturers[lecturers.FindIndex(lect => lect.Equals(lecturer))] = tempLecturer;
-            WriteData();
+            UniversityEntitiesList<Lecturer>.GetEntityInstance().EvaluateEntity(lecturer, lecturerScore, review, lecturers);
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string review)
         {
-            Subject tempSubject = subjects.Find(subj => subj.Equals(subject));
-            float sum = tempSubject.score * tempSubject.numberOfReviews;
-            tempSubject.numberOfReviews++;
-            tempSubject.score = (sum + subjectScore) / tempSubject.numberOfReviews;
-            tempSubject.reviews.Add(review);
-            subjects[subjects.FindIndex(subj => subj.Equals(subject))] = tempSubject;
-            WriteData();
+            UniversityEntitiesList<Subject>.GetEntityInstance().EvaluateEntity(subject, subjectScore, review, subjects);
         }
 
         public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -128,10 +126,12 @@ namespace Vilnius_University_Advisor
 
         public List<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
-            List<Lecturer> someLecturers = (from lecturer in lecturers
-                                            where lecturer.faculty == faculty
-                                            select lecturer).ToList();
-            return someLecturers;
+            return UniversityEntitiesList<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(faculty, lecturers);
+        }
+
+        public List<Subject> GetSubjectsByFaculty(Faculty faculty)
+        {
+            return UniversityEntitiesList<Subject>.GetEntityInstance().GetEntitiesByFaculty(faculty, subjects);
         }
 
         public string GetLecturerInfo(Lecturer lecturer, Faculty faculty)
@@ -159,14 +159,6 @@ namespace Vilnius_University_Advisor
                 }
             }
             return MainResources.LecturerNotFound;
-        }
-
-        public List<Subject> GetSubjectsByFaculty(Faculty faculty)
-        {
-            List<Subject> someSubjects = (from subject in subjects
-                                          where subject.faculty == faculty
-                                          select subject).ToList();
-            return someSubjects;
         }
 
         public string GetSubjectInfo(Subject subject, Faculty faculty)
@@ -210,17 +202,12 @@ namespace Vilnius_University_Advisor
 
         public List<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
         {
-            List<Subject> searchResult = (from subject in subjects
-                                          where subject.name.ToLower().Contains(enteredWord.ToLower()) && subject.faculty == faculty
-                                          select subject).ToList();
-            return searchResult;
+            return UniversityEntitiesList<Subject>.GetEntityInstance().GetEntitySearchResults(enteredWord, faculty, subjects);
         }
+
         public List<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
-            List<Lecturer> searchResult = (from lecturer in lecturers
-                                           where lecturer.name.ToLower().Contains(enteredWord.ToLower()) && lecturer.faculty == faculty
-                                           select lecturer).ToList();
-            return searchResult;
+            return UniversityEntitiesList<Lecturer>.GetEntityInstance().GetEntitySearchResults(enteredWord, faculty, lecturers);
         }
 
     }
