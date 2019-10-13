@@ -423,7 +423,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Algebra II/II d.",
@@ -432,7 +432,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Algebra II/II d.",
@@ -1395,7 +1395,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Apklausos duomenų statistinė analizė naudojant SPSS",
@@ -1404,7 +1404,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Apklausos duomenų statistinė analizė naudojant SPSS",
@@ -1656,7 +1656,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Aplinkosaugos projektų rengimas ir vadyba",
@@ -1665,7 +1665,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Aplinkosaugos projektų rengimas ir vadyba",
@@ -1746,7 +1746,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Apskaita viešajame sektoriuje",
@@ -1755,7 +1755,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Apskaita viešajame sektoriuje",
@@ -2909,7 +2909,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Baltijos kraštų geologija ir tektonika",
@@ -2918,7 +2918,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Baltijos kraštų geologija ir tektonika",
@@ -5404,7 +5404,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Dalykinės kalbos teorija",
@@ -5413,7 +5413,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Dalykinės kalbos teorija",
@@ -6295,7 +6295,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Dirbtinis intelektas",
@@ -6304,7 +6304,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Dirbtinis intelektas",
@@ -6817,7 +6817,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Duomenų bazių valdymo sistemos",
@@ -6826,7 +6826,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Duomenų bazių valdymo sistemos",
@@ -8059,7 +8059,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Erdvinės duomenų bazės",
@@ -8068,7 +8068,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Erdvinės duomenų bazės",
@@ -8590,7 +8590,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Europos ius commune Lietuvos teisinėje sistemoje",
@@ -8599,7 +8599,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Europos ius commune Lietuvos teisinėje sistemoje",
@@ -8959,7 +8959,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Evoliucinė psichologija",
@@ -8968,7 +8968,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Evoliucinė psichologija",
@@ -9148,7 +9148,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Fenomenologija",
@@ -9157,7 +9157,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Fenomenologija",
@@ -9230,7 +9230,7 @@
   },
   {
     "isOptional": true,
-    "isBUS": true,
+    "isBUS": false,
     "reviews": [],
     "name": "Filosofija",
     "faculty": 3,
@@ -9239,7 +9239,7 @@
   },
   {
     "isOptional": true,
-    "isBUS": false,
+    "isBUS": true,
     "reviews": [],
     "name": "Filosofija",
     "faculty": 3,
@@ -9589,7 +9589,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Finansų etika",
@@ -9598,7 +9598,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Finansų etika",
@@ -9760,7 +9760,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Finansų teorija",
@@ -9769,7 +9769,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Finansų teorija",
@@ -10462,7 +10462,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Gamtiniai pavojai",
@@ -10471,7 +10471,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Gamtiniai pavojai",
@@ -12316,7 +12316,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Imunologija",
@@ -12325,7 +12325,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Imunologija",
@@ -13126,7 +13126,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Integruota komunikacija",
@@ -13135,7 +13135,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Integruota komunikacija",
@@ -13216,7 +13216,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Intelektinės nuosavybės teisė",
@@ -13225,7 +13225,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Intelektinės nuosavybės teisė",
@@ -14359,7 +14359,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Įvadas į Azijos politiką ir politines teorijas",
@@ -14368,7 +14368,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Įvadas į Azijos politiką ir politines teorijas",
@@ -16861,7 +16861,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Kombinatorika ir grafų teorija",
@@ -16870,7 +16870,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Kombinatorika ir grafų teorija",
@@ -17572,7 +17572,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Konkurencijos teisė",
@@ -17581,7 +17581,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Konkurencijos teisė",
@@ -17833,7 +17833,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Kraštotvarkos įvadas",
@@ -17842,7 +17842,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Kraštotvarkos įvadas",
@@ -19435,7 +19435,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "LDK ir Prūsų Lietuvos literatūra",
@@ -19444,7 +19444,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "LDK ir Prūsų Lietuvos literatūra",
@@ -20677,7 +20677,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Lygiagretūs ir išskirstyti skaičiavimai",
@@ -20686,7 +20686,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Lygiagretūs ir išskirstyti skaičiavimai",
@@ -22372,7 +22372,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Medijų politika",
@@ -22381,7 +22381,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Medijų politika",
@@ -22993,7 +22993,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Mikroekonominė analizė",
@@ -23002,7 +23002,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Mikroekonominė analizė",
@@ -24757,7 +24757,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Naujausių laikų prancūzų ir frankofoniškoji literatūra",
@@ -24766,7 +24766,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Naujausių laikų prancūzų ir frankofoniškoji literatūra",
@@ -26818,7 +26818,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Parametrinė ir neparametrinė statistika",
@@ -26827,7 +26827,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Parametrinė ir neparametrinė statistika",
@@ -26989,7 +26989,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Patikimumo teorija",
@@ -26998,7 +26998,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Patikimumo teorija",
@@ -29023,7 +29023,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Problemų sprendimu grįstas projektas",
@@ -29032,7 +29032,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Problemų sprendimu grįstas projektas",
@@ -29563,7 +29563,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Programų sistemų inžinerija",
@@ -29572,7 +29572,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Programų sistemų inžinerija",
@@ -29734,7 +29734,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Projektų valdymas",
@@ -29743,7 +29743,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Projektų valdymas",
@@ -30796,7 +30796,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Reikalavimų inžinerija",
@@ -30805,7 +30805,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Reikalavimų inžinerija",
@@ -31066,7 +31066,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Religijos filosofija",
@@ -31075,7 +31075,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Religijos filosofija",
@@ -31327,7 +31327,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Rinkodara",
@@ -31336,7 +31336,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Rinkodara",
@@ -32047,7 +32047,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Rusų kalbos raida",
@@ -32056,7 +32056,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Rusų kalbos raida",
@@ -32128,7 +32128,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Rusų literatūra (XX a.) I/II d.",
@@ -32137,7 +32137,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Rusų literatūra (XX a.) I/II d.",
@@ -32488,7 +32488,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Semiotika",
@@ -32497,7 +32497,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Semiotika",
@@ -33289,7 +33289,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Skandinavijos šalių istorija",
@@ -33298,7 +33298,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Skandinavijos šalių istorija",
@@ -33829,7 +33829,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Socialinė ir sveikatos apsauga",
@@ -33838,7 +33838,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Socialinė ir sveikatos apsauga",
@@ -34441,8 +34441,8 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
-    "isBUS": false,
+    "isOptional": true,
+    "isBUS": true,
     "reviews": [],
     "name": "Sociologija",
     "faculty": 3,
@@ -34450,8 +34450,8 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
-    "isBUS": true,
+    "isOptional": false,
+    "isBUS": false,
     "reviews": [],
     "name": "Sociologija",
     "faculty": 3,
@@ -35242,7 +35242,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Stochastinė analizė",
@@ -35251,7 +35251,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Stochastinė analizė",
@@ -37717,7 +37717,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Taikomoji kalbotyra",
@@ -37726,7 +37726,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Taikomoji kalbotyra",
@@ -38257,7 +38257,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Tarptautinė rinkodara",
@@ -38266,7 +38266,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Tarptautinė rinkodara",
@@ -39598,7 +39598,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Tibetologijos įvadas",
@@ -39607,7 +39607,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Tibetologijos įvadas",
@@ -39688,7 +39688,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Tikimybių teorija ir matematinė statistika",
@@ -39697,7 +39697,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Tikimybių teorija ir matematinė statistika",
@@ -41011,7 +41011,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Vadyba",
@@ -41020,7 +41020,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Vadyba",
@@ -42253,7 +42253,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Vartotojų elgsena",
@@ -42262,7 +42262,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Vartotojų elgsena",
@@ -43504,7 +43504,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Viešoji ekonomika",
@@ -43513,7 +43513,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Viešoji ekonomika",
@@ -43594,7 +43594,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Viešojo sektoriaus ekonomika",
@@ -43603,7 +43603,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Viešojo sektoriaus ekonomika",
@@ -44566,7 +44566,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Žemėtvarka",
@@ -44575,7 +44575,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Žemėtvarka",
@@ -45277,7 +45277,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": false,
+    "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Žmogiškųjų išteklių valdymas",
@@ -45286,7 +45286,7 @@
     "numberOfReviews": 0
   },
   {
-    "isOptional": true,
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Žmogiškųjų išteklių valdymas",

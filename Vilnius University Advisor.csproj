@@ -83,6 +83,7 @@
     <Compile Include="Scraper\Parser.cs" />
     <Compile Include="Scraper\ScraperMain.cs" />
     <Compile Include="Subject.cs" />
+    <Compile Include="UniversityEntitiesList.cs" />
     <EmbeddedResource Include="MainResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MainResources.Designer.cs</LastGenOutput>
