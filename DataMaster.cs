@@ -12,9 +12,6 @@ namespace Vilnius_University_Advisor
     {
         private static readonly DataMaster instance  = new DataMaster();
 
-       /* List<Lecturer> lecturers = new List<Lecturer>();
-        List<Subject> subjects = new List<Subject>();*/
-
         UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
         UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
 
@@ -40,12 +37,10 @@ namespace Vilnius_University_Advisor
 
         public void WriteData()
         {
-            var lecturersList = lecturers.GetListOfUniversityEntities();
-            lecturersList.Sort();
-            jsonReaderWriter.WriteLecturers(lecturersList);
-            var subjectsList = subjects.GetListOfUniversityEntities();
-            subjectsList.Sort();
-            jsonReaderWriter.WriteSubjects(subjectsList);
+            UniversityEntitiesList<Lecturer>.GetEntityInstance().SortList(lecturers);
+            jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
+            UniversityEntitiesList<Subject>.GetEntityInstance().SortList(subjects);
+            jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
         }
 
         public void AddLecturer(string name, Faculty faculty)
@@ -56,16 +51,13 @@ namespace Vilnius_University_Advisor
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
-            var lecturersList = lecturers.GetListOfUniversityEntities();
-            lecturersList.Sort();
-            lecturers.SetListOfUniversityEntities(lecturersList);
-
+            UniversityEntitiesList<Lecturer>.GetEntityInstance().SortList(lecturers);
             WriteData();
         }
 
         public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            if(!lecturers.Contains(lecturer)) lecturers.Add(lecturer);
+            UniversityEntitiesList<Lecturer>.GetEntityInstance().AddEntityWithoutWriting(lecturer, lecturers);
         }
 
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
@@ -76,15 +68,13 @@ namespace Vilnius_University_Advisor
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
-            var subjectsList = subjects.GetListOfUniversityEntities();
-            subjectsList.Sort();
-            subjects.SetListOfUniversityEntities(subjectsList);
+            UniversityEntitiesList<Subject>.GetEntityInstance().SortList(subjects);
             WriteData();
         }
 
         public void AddSubjectWithoutWriting(Subject subject)
         {
-            if(!subjects.Contains(subject)) subjects.Add(subject);
+            UniversityEntitiesList<Subject>.GetEntityInstance().AddEntityWithoutWriting(subject, subjects);
         }
 
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
@@ -209,6 +199,5 @@ namespace Vilnius_University_Advisor
         {
             return UniversityEntitiesList<Lecturer>.GetEntityInstance().GetEntitySearchResults(enteredWord, faculty, lecturers);
         }
-
     }
 }

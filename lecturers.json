@@ -288,12 +288,13 @@
   },
   {
     "reviews": [
-      "Išties profesionali dėstytoja."
+      "Išties profesionali dėstytoja.",
+      "Nesužavėtas."
     ],
     "name": "Agnė Jasinavičiūtė",
     "faculty": 0,
-    "score": 4.0,
-    "numberOfReviews": 1
+    "score": 3.5,
+    "numberOfReviews": 2
   },
   {
     "reviews": [],
@@ -3621,13 +3622,6 @@
   },
   {
     "reviews": [],
-    "name": "Renata Danielienė",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "Danielis Rutkauskas",
     "faculty": 5,
     "score": 0.0,
@@ -4622,6 +4616,13 @@
   },
   {
     "reviews": [],
+    "name": "Eduardas Freitakas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
     "name": "Eduardas Kutka",
     "faculty": 9,
     "score": 0.0,
@@ -4743,6 +4744,13 @@
     "reviews": [],
     "name": "Eglė Daunienė",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Eglė Gabrėnaitė",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5469,13 +5477,6 @@
   },
   {
     "reviews": [],
-    "name": "Eduardas Freitakas",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "G. Bankauskaitė",
     "faculty": 7,
     "score": 0.0,
@@ -5576,13 +5577,6 @@
     "reviews": [],
     "name": "Gabija Liaudanskaitė",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
-    "name": "Eglė Gabrėnaitė",
-    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -9459,13 +9453,6 @@
   },
   {
     "reviews": [],
-    "name": "Kristina Rudžionienė",
-    "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "reviews": [],
     "name": "Kristina Bingelė",
     "faculty": 9,
     "score": 0.0,
@@ -9552,6 +9539,13 @@
     "reviews": [],
     "name": "Kristina Pranevičienė",
     "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Kristina Rudžionienė",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -13486,6 +13480,13 @@
     "reviews": [],
     "name": "Renata Butkutė",
     "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "reviews": [],
+    "name": "Renata Danielienė",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },

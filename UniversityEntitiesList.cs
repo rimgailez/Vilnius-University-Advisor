@@ -44,19 +44,15 @@ namespace Vilnius_University_Advisor
             return entityInstance;
         }
 
-        /*
         public IEnumerator<T> GetEnumerator()
         {
-            return ((IEnumerable<T>)entitiesList).GetEnumerator();
+            return entitiesList.GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return ((IEnumerable<T>)entitiesList).GetEnumerator();
+            return entitiesList.GetEnumerator();
         }
-        */
-
-
 
         public List<T> GetEntitySearchResults(String enteredWord, Faculty faculty, UniversityEntitiesList<T> entList)
         {
@@ -85,14 +81,15 @@ namespace Vilnius_University_Advisor
             DataMaster.GetInstance().WriteData();
         }
 
-        public IEnumerator<T> GetEnumerator()
+        public void AddEntityWithoutWriting(T entity, UniversityEntitiesList<T> entList)
         {
-            return new EntitiesEnumerator(entitiesList);
+            if (!entList.entitiesList.Contains(entity)) entList.entitiesList.Add(entity);
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public void SortList(UniversityEntitiesList<T> entList)
         {
-            return new EntitiesEnumerator(entitiesList);
+            entList.entitiesList.Sort();
         }
+
     }
 }
