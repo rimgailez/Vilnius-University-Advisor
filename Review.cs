@@ -9,14 +9,23 @@ namespace Vilnius_University_Advisor
     public struct Review
     {
         public string username;
-        public int score;
+        private int scoreField;
+        public int score
+        {
+            get => scoreField;
+            set
+            {
+                if (value < 0 || value > 5) throw new ArgumentOutOfRangeException();
+                else scoreField = value;
+            }
+        }
         public string text;
         public DateTime date;
         public Review(string username, int score, string text)
         {
             this.date = DateTime.Today;
             this.username = username;
-            this.score = score;
+            this.scoreField = score;
             this.text = text;
         }
     }

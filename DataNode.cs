@@ -10,7 +10,15 @@ namespace Vilnius_University_Advisor
     {
         public string name { get; set; }
         public Faculty faculty { get; set; }
-        public float score { get; set; }
+        public float score 
+        {
+            get => score;
+            set
+            {
+                if (value < 0 || value > 5) throw new ArgumentOutOfRangeException();
+                else score = value;
+            } 
+        }
         public int numberOfReviews { get; set; }
 
         public List<Review> reviews;

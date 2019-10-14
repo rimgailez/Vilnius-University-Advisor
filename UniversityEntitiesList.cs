@@ -16,12 +16,6 @@ namespace Vilnius_University_Advisor
         {
             entitiesList = new List<T>();
         }
-
-        public T GetEntity(int index)
-        {
-            return entitiesList[index];
-        }
-
         public T this[int i]
         {
             get { return entitiesList[i]; }
