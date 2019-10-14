@@ -22,6 +22,12 @@ namespace Vilnius_University_Advisor
             return entitiesList[index];
         }
 
+        public T this[int i]
+        {
+            get { return entitiesList[i]; }
+            set { entitiesList[i] = value; }
+        }
+
         public List<T> GetListOfUniversityEntities()
         {
             return entitiesList;
