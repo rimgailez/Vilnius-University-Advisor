@@ -57,10 +57,7 @@ namespace Vilnius_University_Advisor
 
         public List<T> GetEntitiesByFaculty(Faculty faculty)
         {
-            List<T> filteredEntities = (from ent in entitiesList
-                                          where ent.faculty == faculty
-                                          select ent).ToList();
-            return filteredEntities;
+            return entitiesList.Where(ent => ent.faculty == faculty).ToList();
         }
 
         public void EvaluateEntity(T entity, float subjectScore, Review review)

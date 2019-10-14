@@ -10,14 +10,15 @@ namespace Vilnius_University_Advisor
     {
         public string name { get; set; }
         public Faculty faculty { get; set; }
-        public float score 
+        private float scoreField;
+        public float score
         {
-            get => score;
+            get => scoreField;
             set
             {
                 if (value < 0 || value > 5) throw new ArgumentOutOfRangeException();
-                else score = value;
-            } 
+                else scoreField = value;
+            }
         }
         public int numberOfReviews { get; set; }
 
@@ -26,7 +27,7 @@ namespace Vilnius_University_Advisor
         {
             this.name = name;
             this.faculty = faculty;
-            this.score = 0;
+            this.scoreField = 0;
             this.numberOfReviews = 0;
             this.reviews = new List<Review>();
         }
