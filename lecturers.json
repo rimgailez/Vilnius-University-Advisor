@@ -476,17 +476,11 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [
-      {
-        "username": "ElijoUsr",
-        "score": 4,
-        "text": "Elijo4"
-      }
-    ],
+    "reviews": [],
     "name": "Aistė Elijio",
     "faculty": 3,
-    "score": 4.0,
-    "numberOfReviews": 1
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "reviews": [],

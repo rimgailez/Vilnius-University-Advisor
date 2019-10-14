@@ -10,8 +10,6 @@ namespace Vilnius_University_Advisor
     class UniversityEntitiesList<T> : IEnumerable<T>
         where T : DataNode
     {
-        private static readonly UniversityEntitiesList<T> entityInstance = new UniversityEntitiesList<T>();
-
         private List<T> entitiesList;
 
         public UniversityEntitiesList()
@@ -37,11 +35,6 @@ namespace Vilnius_University_Advisor
         public void Add(T entity)
         {
             entitiesList.Add(entity);
-        }
-
-        public static UniversityEntitiesList<T> GetEntityInstance()
-        {
-            return entityInstance;
         }
 
         public IEnumerator<T> GetEnumerator()

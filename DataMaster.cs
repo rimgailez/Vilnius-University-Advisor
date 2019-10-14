@@ -142,6 +142,7 @@ namespace Vilnius_University_Advisor
                         {
                             information = information + number + ". "  
                                 + MainResources.ReviewUsername + item.username 
+                                + MainResources.ReviewDate + item.date.ToShortDateString()
                                 + MainResources.ReviewScore + item.score 
                                 + "\r\n" + item.text + "\r\n";
                             number++;
@@ -184,6 +185,7 @@ namespace Vilnius_University_Advisor
                         {
                             information = information + number + ". "
                                    + MainResources.ReviewUsername + item.username
+                                   + MainResources.ReviewDate + item.date.ToShortDateString()
                                    + MainResources.ReviewScore + item.score
                                    + "\r\n" + item.text + "\r\n";
                             number++;

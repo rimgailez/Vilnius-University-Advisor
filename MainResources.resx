@@ -165,6 +165,9 @@
   <data name="Optional" xml:space="preserve">
     <value>Dalykas yra pasirenkamasis</value>
   </data>
+  <data name="ReviewDate" xml:space="preserve">
+    <value> Data: </value>
+  </data>
   <data name="ReviewScore" xml:space="preserve">
     <value> Įvertino: </value>
   </data>

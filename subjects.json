@@ -20830,9 +20830,10 @@
     "isBUS": true,
     "reviews": [
       {
-        "username": "BUSUsr",
+        "username": "test",
         "score": 5,
-        "text": "Bus5"
+        "text": "aaaa5555\r\nasdf",
+        "date": "2019-10-14T00:00:00+03:00"
       }
     ],
     "name": "Logika",
@@ -20843,17 +20844,11 @@
   {
     "isOptional": false,
     "isBUS": false,
-    "reviews": [
-      {
-        "username": "PrivUsr",
-        "score": 3,
-        "text": "Priv3"
-      }
-    ],
+    "reviews": [],
     "name": "Logika",
     "faculty": 3,
-    "score": 3.0,
-    "numberOfReviews": 1
+    "score": 0.0,
+    "numberOfReviews": 0
   },
   {
     "isOptional": true,
@@ -37428,7 +37423,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
@@ -37437,7 +37432,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
