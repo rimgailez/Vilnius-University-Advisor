@@ -32,11 +32,6 @@ namespace Vilnius_University_Advisor
             entitiesList = newEntitiesList;
         }
 
-        public void Add(T entity)
-        {
-            entitiesList.Add(entity);
-        }
-
         public IEnumerator<T> GetEnumerator()
         {
             return entitiesList.GetEnumerator();

@@ -15,14 +15,9 @@ namespace Vilnius_University_Advisor
         UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
         UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
 
-        //get project directory
-        public string projectPath;
-        JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
+        public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 
-        private DataMaster() 
-        {
-            projectPath = jsonReaderWriter.projectPath;
-        }
+        private DataMaster() { }
         public static DataMaster GetInstance()
         {
             return instance;

@@ -20831,9 +20831,9 @@
     "reviews": [
       {
         "username": "test",
-        "score": 5,
         "text": "aaaa5555\r\nasdf",
-        "date": "2019-10-14T00:00:00+03:00"
+        "date": "2019-10-14T00:00:00+03:00",
+        "score": 5
       }
     ],
     "name": "Logika",

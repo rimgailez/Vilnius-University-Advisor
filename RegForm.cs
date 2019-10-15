@@ -646,7 +646,7 @@ namespace Vilnius_University_Advisor
         {
             MainMenu.Hide();
             ScraperPanel.Show();
-            (new Scraper.ScraperMain(DataMaster.GetInstance().projectPath, this)).StartScrap();
+            (new Scraper.ScraperMain(DataMaster.GetInstance().jsonReaderWriter.projectPath, this)).StartScrap();
             ScraperBack.Show();
         }
         public void updateScraperTextbox(string text)
