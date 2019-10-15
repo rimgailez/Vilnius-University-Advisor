@@ -123,11 +123,14 @@
   <data name="BUS" xml:space="preserve">
     <value>Dalykas yra BUS</value>
   </data>
-  <data name="CommentsLecturer" xml:space="preserve">
-    <value>Komentarai apie dėstytoją: </value>
+  <data name="DataNodeComments" xml:space="preserve">
+    <value>Komentarai: </value>
   </data>
-  <data name="CommentsSubject" xml:space="preserve">
-    <value>Komentarai apie dalyką: </value>
+  <data name="DataNodeEvaluation" xml:space="preserve">
+    <value>Įvertinimas: </value>
+  </data>
+  <data name="DataNodeNotFound" xml:space="preserve">
+    <value>Objektas nerastas</value>
   </data>
   <data name="DidntChooseLecturer" xml:space="preserve">
     <value>Nepasirinkote dėstytojo</value>
@@ -141,14 +144,8 @@
   <data name="From5" xml:space="preserve">
     <value> iš 5</value>
   </data>
-  <data name="LecturerEvaluation" xml:space="preserve">
-    <value>Dėstytojo įvertinimas: </value>
-  </data>
   <data name="LecturerName" xml:space="preserve">
     <value>Dėstytojo vardas: </value>
-  </data>
-  <data name="LecturerNotFound" xml:space="preserve">
-    <value>Dėstytojas nerastas</value>
   </data>
   <data name="LecturersJson" xml:space="preserve">
     <value>lecturers.json</value>
@@ -207,14 +204,8 @@
   <data name="String9" xml:space="preserve">
     <value>4 - naudingas bei įdomus dalykas.</value>
   </data>
-  <data name="SubjectEvaluation" xml:space="preserve">
-    <value>Dalyko įvertinimas: </value>
-  </data>
   <data name="SubjectName" xml:space="preserve">
     <value>Dalyko pavadinimas: </value>
-  </data>
-  <data name="SubjectNotFound" xml:space="preserve">
-    <value>Dalykas nerastas</value>
   </data>
   <data name="SubjectsJson" xml:space="preserve">
     <value>subjects.json</value>

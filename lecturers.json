@@ -14140,11 +14140,18 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      {
+        "username": "test",
+        "text": "asdfzcvx",
+        "date": "2019-10-15T00:00:00+03:00",
+        "score": 5
+      }
+    ],
     "name": "Romualdas Kašuba",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],

@@ -79,20 +79,29 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Komentarai apie dėstytoją: .
+        ///   Looks up a localized string similar to Komentarai: .
         /// </summary>
-        internal static string CommentsLecturer {
+        internal static string DataNodeComments {
             get {
-                return ResourceManager.GetString("CommentsLecturer", resourceCulture);
+                return ResourceManager.GetString("DataNodeComments", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Komentarai apie dalyką: .
+        ///   Looks up a localized string similar to Įvertinimas: .
         /// </summary>
-        internal static string CommentsSubject {
+        internal static string DataNodeEvaluation {
             get {
-                return ResourceManager.GetString("CommentsSubject", resourceCulture);
+                return ResourceManager.GetString("DataNodeEvaluation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Objektas nerastas.
+        /// </summary>
+        internal static string DataNodeNotFound {
+            get {
+                return ResourceManager.GetString("DataNodeNotFound", resourceCulture);
             }
         }
         
@@ -133,29 +142,11 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dėstytojo įvertinimas: .
-        /// </summary>
-        internal static string LecturerEvaluation {
-            get {
-                return ResourceManager.GetString("LecturerEvaluation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Dėstytojo vardas: .
         /// </summary>
         internal static string LecturerName {
             get {
                 return ResourceManager.GetString("LecturerName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Dėstytojas nerastas.
-        /// </summary>
-        internal static string LecturerNotFound {
-            get {
-                return ResourceManager.GetString("LecturerNotFound", resourceCulture);
             }
         }
         
@@ -331,29 +322,11 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dalyko įvertinimas: .
-        /// </summary>
-        internal static string SubjectEvaluation {
-            get {
-                return ResourceManager.GetString("SubjectEvaluation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Dalyko pavadinimas: .
         /// </summary>
         internal static string SubjectName {
             get {
                 return ResourceManager.GetString("SubjectName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Dalykas nerastas.
-        /// </summary>
-        internal static string SubjectNotFound {
-            get {
-                return ResourceManager.GetString("SubjectNotFound", resourceCulture);
             }
         }
         
