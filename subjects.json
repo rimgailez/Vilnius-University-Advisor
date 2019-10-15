@@ -237,6 +237,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Akademinis rašymas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Akademinis skaitymas ir rašymas",
     "faculty": 2,
     "score": 0.0,
@@ -454,6 +463,15 @@
     "isBUS": false,
     "reviews": [],
     "name": "Algoritmai ir duomenų struktūros",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Algoritmai ir duomenų struktūros",
     "faculty": 9,
     "score": 0.0,
     "numberOfReviews": 0
@@ -486,6 +504,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Algoritmų teorija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -500,6 +527,15 @@
     "reviews": [],
     "name": "Algoritmų teorija",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Algoritmų teorija ir duomenų struktūros",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -671,6 +707,15 @@
     "reviews": [],
     "name": "Amerikiečių kelionių literatūra (anglų k.)",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Amerikiečių literatūra",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -867,6 +912,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Anglų kalba (I/II)",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Anglų kalba I/II d. (specialybės)",
     "faculty": 9,
     "score": 0.0,
@@ -963,6 +1017,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Anglų kalbos leksikologija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -1049,6 +1112,24 @@
     "reviews": [],
     "name": "Anglų kalbotyros seminaras: tekstynų lingvistikos įvadas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Anglų literatūra I/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Anglų literatūra II/II d.",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1434,6 +1515,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Aplinkos apsaugos ekonominė politika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Aplinkos biotechnologijos",
     "faculty": 5,
     "score": 0.0,
@@ -1454,6 +1544,24 @@
     "reviews": [],
     "name": "Aplinkos chemija",
     "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Aplinkos ekonomika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Aplinkos ekonomikos ekonominė politika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -1769,6 +1877,15 @@
     "reviews": [],
     "name": "Apskaitos pagrindai",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Apskaitos pagrindai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2322,6 +2439,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Audiovizualinio vertimo mokslinis projektas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -2408,6 +2534,15 @@
     "reviews": [],
     "name": "Auditas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Auditas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -2642,6 +2777,15 @@
     "reviews": [],
     "name": "Aukštoji matematika",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Aukštoji matematika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3078,6 +3222,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Bankai ir kreditas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -3101,6 +3254,15 @@
     "reviews": [],
     "name": "Bankininkystės etika",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Bankų valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -3369,6 +3531,33 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Bendrinė lietuvių kalba (fonetika, akcentologija ir leksikologija) II/III d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Bendrinė lietuvių kalba (morfologija ir sintaksė) III/III d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Bendrinė lietuvių kalba (rašyba ir skyryba) I/III d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Bendrinė lietuvių kalba (teksto lingvistika",
     "faculty": 2,
     "score": 0.0,
@@ -3389,6 +3578,15 @@
     "reviews": [],
     "name": "Bendrinė lietuvių kalba: nuostatos ir vartosena",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Bendrinės kalbos normos ir stilistika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5331,8 +5529,53 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Dalykinė anglų kalba (dalykinė) I/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Dalykinė anglų kalba (dalykinė) II/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Dalykinė anglų kalba (II/II)",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Dalykinė anglų kalba I/II d.",
     "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Dalykinė anglų kalba I/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Dalykinė anglų kalba II/II d.",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -5670,6 +5913,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Darni verslo vadyba ir visuomenė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": true,
     "reviews": [],
@@ -5756,6 +6008,15 @@
     "reviews": [],
     "name": "Daugiatautinis paveldas valstybėje. Vilniaus atvejis",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Daugiaterpės technologijos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6039,6 +6300,24 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Dialogas lietuvių literatūroje",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Didelių duomenų analitika ir technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -6282,6 +6561,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Dirbtinio intelekto pagrindai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -6323,6 +6611,15 @@
     "reviews": [],
     "name": "Dirbtinis intelektas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Diskrečioji matematika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6384,6 +6681,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Diskretinė matematika kompiuterių moksle",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Diskretus optimizavimas",
     "faculty": 9,
     "score": 0.0,
@@ -6413,6 +6719,15 @@
     "reviews": [],
     "name": "Diskurso analizė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Diskurso analizė",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -6660,6 +6975,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Dubliavimas ir denotacijos sinonimika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -6741,6 +7065,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Duomenų bazės",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -6804,6 +7137,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Duomenų bazių valdymo sistemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -6849,10 +7191,28 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Duomenų gavybos technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Duomenų ir sistemų apsauga",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Duomenų saugumas ir kriptografija",
     "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
@@ -7119,6 +7479,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Ekonometrija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -7344,6 +7713,33 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Ekonominė analizė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Ekonominė ir politinė geografija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Ekonominė statistika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -7367,6 +7763,15 @@
     "reviews": [],
     "name": "Ekonominės minties istorija",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Ekonominės minties istorija",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -7411,6 +7816,15 @@
     "isBUS": false,
     "reviews": [],
     "name": "Ekonominių procesų reguliavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Ekonominių tyrimų metodai",
     "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
@@ -7614,11 +8028,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Elektroninės komercijos sistemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Elektroninės komercijos technologijų pagrindai",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Elektroniniai atsiskaitymai ir jų sauga",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -8406,6 +8838,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Etiško įsilaužimo technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -8600,6 +9041,15 @@
     "reviews": [],
     "name": "Europos ius commune Lietuvos teisinėje sistemoje",
     "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Europos kultūros istorija",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -9189,6 +9639,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Filmo semiotika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -9266,6 +9725,15 @@
     "reviews": [],
     "name": "Filosofija",
     "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Filosofija ir literatūra",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -9360,6 +9828,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansinė analizė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -9388,6 +9865,15 @@
   },
   {
     "isOptional": true,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansinė apskaita",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Finansinė apskaita",
@@ -9477,6 +9963,24 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansinės rizikos vertinimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansinės technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -9536,6 +10040,15 @@
     "reviews": [],
     "name": "Finansinių institucijų veiklos analizė",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansinių technologijų ir kibernetinės saugos teisinis reglamentavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -9648,6 +10161,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansų pagrindai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -9684,6 +10206,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansų rinkos ir finansinės institucijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -9698,6 +10229,24 @@
     "reviews": [],
     "name": "Finansų rinkos ir institucijos",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansų rinkų analizės metodai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Finansų rinkų ir modeliavimo informacinės sistemos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -9779,6 +10328,15 @@
     "reviews": [],
     "name": "Finansų valdymas I",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "FinTech taikomieji sprendimai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -10215,6 +10773,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Funkcinė diskurso gramatika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -10508,6 +11075,15 @@
     "reviews": [],
     "name": "Gamtosaugos komunikacija",
     "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Garsinio vaizdavimo strategijos ir tyrimai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -10854,6 +11430,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Germanų filologijos įvadas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -10895,6 +11480,15 @@
     "reviews": [],
     "name": "Gerontopsichologija",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Gerovės ekonomika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -11043,6 +11637,33 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Globalioji ekonomika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Globalioji ekonomika ir darnus vystymasis",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Globalioji komunikacija ir derybos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -11156,6 +11777,15 @@
     "reviews": [],
     "name": "Grafika ir vizualizacijos metodai",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Grafiniai veiklos procesų modeliai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -11426,6 +12056,15 @@
     "reviews": [],
     "name": "Grupinė psichoterapija",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Grupinio darbo informacinės technologijos ir infrastruktūros",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -11709,6 +12348,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Hermeneutika ir tekstologija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -11982,6 +12630,24 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Įgarsinimas (Užklotinis vertimas, Filmo dialogo analizė ir vertimas) I/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Įgarsinimas (Vertimas dubliažui, Paraverbaliniai ir neverbaliniai vertimo aspektai) II/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Įgimtų širdies ydų chirurginis gydymas",
     "faculty": 10,
     "score": 0.0,
@@ -12096,6 +12762,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Įmonės finansai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -12146,6 +12821,15 @@
     "reviews": [],
     "name": "Įmonės vertinimas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Įmonių apskaita",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -12241,6 +12925,15 @@
   },
   {
     "isOptional": true,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Įmonių socialinė atsakomybė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Įmonių socialinė atsakomybė",
@@ -12537,6 +13230,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacijos pateikimo internete technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -12600,6 +13302,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacijos sistemos ir duomenų bazės",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -12614,6 +13325,15 @@
     "reviews": [],
     "name": "Informacijos sistemų auditas",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacijos sistemų projektų vadyba",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -12753,6 +13473,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacinės saugos vadyba ir rizikos valdymas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -12767,6 +13496,15 @@
     "reviews": [],
     "name": "Informacinės sistemos",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacinės sistemos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -12812,6 +13550,24 @@
     "reviews": [],
     "name": "Informacinės technologijos",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacinės technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacinės technologijos įmonėse",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -12924,11 +13680,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacinių sistemų saugos pagrindai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Informacinių sistemų saugumas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Informacinių sistemų testavimas ir kokybės užtikrinimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -13050,6 +13824,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Inovacijos ir antreprenerystė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -13081,7 +13864,25 @@
     "isBUS": false,
     "reviews": [],
     "name": "Inovacijų vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Inovacijų vadyba",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Inovacijų vadyba ir IKT plėtra",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -13091,6 +13892,15 @@
     "reviews": [],
     "name": "Inovacijų valdymas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Inovacijų valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -13287,6 +14097,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Intelektualios sistemos finansų rinkose",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Intensyvi kardiologija I",
     "faculty": 10,
     "score": 0.0,
@@ -13437,6 +14256,33 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Interlingvistinio subtitravimo ir surtitravimo tyrimai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Internetinė rinkodara",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Internetinis marketingas ir technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -13455,6 +14301,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Interneto technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -13469,6 +14324,15 @@
     "reviews": [],
     "name": "Interneto technologijos",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Interneto technologijų pagrindai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -13523,6 +14387,15 @@
     "reviews": [],
     "name": "Intrakardiniai hemodinamikos tyrimai ir intensyvioji kardiologija",
     "faculty": 10,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Intralingvistinis subtitravimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -13602,6 +14475,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Investicijų rizikos valdymas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Investicijų teorija",
     "faculty": 9,
     "score": 0.0,
@@ -13630,6 +14512,15 @@
     "isBUS": false,
     "reviews": [],
     "name": "Investicijų valdymas finansų rinkose",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Investicijų valdymas ir analizė",
     "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
@@ -14134,7 +15025,25 @@
     "isBUS": false,
     "reviews": [],
     "name": "IT ir komunikacijos įgūdžiai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "IT ir komunikacijos įgūdžiai",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "IT procesai pagal ITIL metodiką",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -14522,6 +15431,15 @@
     "reviews": [],
     "name": "Įvadas į kompiuterių architektūrą",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Įvadas į kultūros ir kūrybos industrijų vadybą",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -15174,6 +16092,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kalbos filosofija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -15260,6 +16187,15 @@
     "reviews": [],
     "name": "Kalbotyros įvadas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kalbotyros įvadas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -15498,6 +16434,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kaštų apskaita",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -15588,6 +16533,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kibernetinės saugos teisinis reglamentavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -15602,6 +16556,15 @@
     "reviews": [],
     "name": "Kiekybiniai ir kokybiniai analizės metodai",
     "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kiekybiniai ir kokybiniai metodai ekonomikoje",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -15854,6 +16817,15 @@
     "reviews": [],
     "name": "Kino ir televizijos dramaturgija",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kino kalbos pagrindai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -16839,6 +17811,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Komandiniu darbu grindžiamas informacinių sistemų kūrimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -16862,6 +17843,15 @@
     "reviews": [],
     "name": "Kombinatorika ir tikimybių teorija",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Komercinė ir autorinė teisė",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -16977,6 +17967,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Kompiuterinės leidybos sistemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Kompiuterinės programos aplinkotyroje",
     "faculty": 5,
     "score": 0.0,
@@ -17024,6 +18023,15 @@
     "reviews": [],
     "name": "Kompiuteriniai žaidimai",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kompiuterinio teksto stilistika ir redagavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -17109,6 +18117,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kompiuterių architektūra",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -17154,6 +18171,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kompiuterių tinklai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -17195,6 +18221,15 @@
     "reviews": [],
     "name": "Kompiuterių tinklai II/II d.",
     "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kompiuterių tinklai ir jų sauga",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -18045,6 +19080,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kriptografinės (blockchain) valiutos ir taikomosios sistemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -18113,6 +19157,15 @@
     "reviews": [],
     "name": "Kritinės teorijos įvadas",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kritinis skaitymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -18405,6 +19458,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kultūrinis turizmas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -18531,6 +19593,42 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kultūros ir kūrybos industrijų politika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kultūros ir kūrybos organizacijų vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kultūros ir kūrybos produktų vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kultūros ir leidybos projektų vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -18621,6 +19719,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kultūros projektų vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -18635,6 +19742,15 @@
     "reviews": [],
     "name": "Kultūros renginių organizavimo teorija ir metodika",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kultūros rinkodara",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -18810,6 +19926,24 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kūrybinės industrijos: menai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kūrybinio verslo kūrimas ir vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -18842,6 +19976,33 @@
     "reviews": [],
     "name": "Kūrybinis rašymas",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kūrybinis rašymas (grožinė literatūra) I/III d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kūrybinis rašymas (literatūros komunikacija) III/III d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Kūrybinis rašymas (literatūros kritika) II/III d.",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -20097,6 +21258,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lietuvių kalbos kodifikacija ir redagavimo praktikumas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -20138,6 +21308,15 @@
     "reviews": [],
     "name": "Lietuvių kalbos morfologija ir žodžių daryba",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lietuvių kalbos normos ir vartosena",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -20218,6 +21397,24 @@
     "isBUS": false,
     "reviews": [],
     "name": "Lietuvių literatūros ekranizacijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lietuvių literatūros istoriografija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lietuvių literatūros kontekstai: komparatyvistika",
     "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
@@ -20493,11 +21690,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lingvistikos kryptys ir metodai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Lingvistinė pragmatika",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lingvistinė pragmatika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -20516,6 +21731,15 @@
     "reviews": [],
     "name": "Lingvistinės pragmatikos įvadas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lingvistinių tyrimų metodologijos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -20995,6 +22219,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lotyniškoji Lietuvos literatūra",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -21081,6 +22314,15 @@
     "reviews": [],
     "name": "Lotynų kalba",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lotynų kalba",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -21265,11 +22507,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lyderystė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Lyderystė",
     "faculty": 13,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Lyderystė ir karjeros valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -21616,6 +22876,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Makroekonomika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -21639,6 +22908,15 @@
     "reviews": [],
     "name": "Makroekonominė analizė II",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Makroekonominė verslo aplinka",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -21715,6 +22993,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Marketingo komunikacijų valdymas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -21781,6 +23068,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Matematika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Matematika informacinėms sistemoms",
     "faculty": 9,
     "score": 0.0,
@@ -21817,8 +23113,35 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Matematika programų sistemoms I",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Matematika programų sistemoms I/III d.",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Matematika programų sistemoms II",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Matematika programų sistemoms III",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -21936,6 +23259,15 @@
     "reviews": [],
     "name": "Matematinė kartografija",
     "faculty": 0,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Matematinė logika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -22606,6 +23938,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Meno organizacijų strateginė vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -22813,6 +24154,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Miestų ir regionų ekonomika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -22953,6 +24303,15 @@
     "reviews": [],
     "name": "Mikroekonomika",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mikroekonomika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -23200,6 +24559,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mobiliųjų įrenginių programavimo technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -23308,6 +24676,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Moderniosios duomenų bazės ir duomenų apsauga",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -23353,11 +24730,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mokesčių politika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Mokesčių sistema",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mokesčių sistema",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -23668,6 +25063,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mokslinio darbo rašymo pagrindai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -23736,6 +25140,15 @@
     "reviews": [],
     "name": "Mokslinio teksto rašymas ir pristatymas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mokslinio tiriamojo darbo metodologija",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -23816,6 +25229,15 @@
     "isBUS": false,
     "reviews": [],
     "name": "Mokslinių tyrimų metodologija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mokslinių tyrimų metodologija",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
@@ -23826,6 +25248,15 @@
     "reviews": [],
     "name": "Mokslinių tyrimų pagrindai",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Mokslinių tyrimų pagrindai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -23889,123 +25320,6 @@
     "reviews": [],
     "name": "Mokslo projektų rengimas ir vadyba",
     "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": true,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamasis darbas",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamasis darbas",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamasis darbas",
-    "faculty": 3,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamasis darbas",
-    "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamasis darbas I/II d.",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamasis darbas II/II d.",
-    "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamasis darbas III/III d.",
-    "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": true,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamoji praktika",
-    "faculty": 8,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamojo darbo  rengimas I/III d.",
-    "faculty": 10,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamojo darbo pagrindai ir rengimas I/III d.",
-    "faculty": 10,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamojo darbo pagrindai ir rengimas II/III d.",
-    "faculty": 10,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamojo darbo rengimas I/IV d.",
-    "faculty": 10,
-    "score": 0.0,
-    "numberOfReviews": 0
-  },
-  {
-    "isOptional": false,
-    "isBUS": false,
-    "reviews": [],
-    "name": "Mokslo tiriamojo darbo rengimas III/III d.",
-    "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -24424,6 +25738,24 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Multimodaliniai užklotinio vertimo tyrimai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Multimodalumas viešajame diskurse",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -24753,6 +26085,24 @@
     "reviews": [],
     "name": "Naujausioji prancūzų moterų literatūra: tapatumų ir formų įvairovė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Naujausios literatūros teorijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Naujausiosios lietuvių literatūros tendencijos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -25567,6 +26917,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Norminamoji kalbotyra ir korpuso planavimo praktika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -25765,6 +27124,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Nusikaltimai elektroninėje erdvėje ir jų tyrimo metodikos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -25824,6 +27192,15 @@
     "reviews": [],
     "name": "Objektinės technologijos",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Objektinis programavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -26031,6 +27408,15 @@
     "reviews": [],
     "name": "Operacinės sistemos",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Operacinės sistemos ir jų sauga",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -26283,6 +27669,15 @@
     "reviews": [],
     "name": "Organizacijos kultūra ir lyderystė",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Organizacijų informacinė architektūra",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -27934,6 +29329,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Polisemiotinio teksto analizė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -28807,6 +30211,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Prekės ženklo valdymas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -29037,6 +30450,15 @@
     "reviews": [],
     "name": "Problemų sprendimu grįstas projektas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Procedūrinis programavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -29293,11 +30715,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Profesinio diskurso analizė: anglų ir švedų verslo, teisės ir finansų kalbos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Profesionaliosios anglų kalbos kriminologijos pagrindai",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Profesionalumas ir etika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -29455,11 +30895,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programavimo įvadas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Programavimo kalbos",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programavimo kalbos ir objektinis programavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -29509,6 +30967,24 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programinės įrangos ir interneto svetainių lokalizavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programinės įrangos kūrimo metodai ir technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -29523,6 +30999,15 @@
     "reviews": [],
     "name": "Programų ir projektų valdymas viešojo sektoriaus organizacijose",
     "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programų kūrimo procesas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -29584,8 +31069,26 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Programų sistemų inžinerija I",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Programų sistemų inžinerija I/II d.",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programų sistemų inžinerija II",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -29608,6 +31111,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programų sistemų kūrimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -29626,11 +31138,38 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programų sistemų projektavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programų sistemų projektų ir kokybės valdymas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Programų sistemų statistinė analizė",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Programų sistemų testavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -30823,6 +32362,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Reikalavimų IS analizė ir specifikavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -30868,11 +32416,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Reklama ir propaganda",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Reklamos analizė",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Reklamos estetika ir dizainas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -30958,6 +32524,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Reklamos semiotika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -30972,6 +32547,15 @@
     "reviews": [],
     "name": "Reklamos teisė ir apsauga nuo nesąžiningos komercinės veiklos",
     "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Reklamos teorija ir praktika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -31219,11 +32803,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Retorikos pagrindai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Retorikos teorija",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Retorikos tradicija Lietuvos literatūroje",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -31345,6 +32947,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Rinkodara",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -31395,6 +33006,15 @@
     "reviews": [],
     "name": "Rinkodaros analitika",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Rinkodaros informacinės sistemos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -31467,6 +33087,15 @@
     "reviews": [],
     "name": "Rinkos ir viešosios nuomonės tyrimai",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Rinkos tyrimo teorija ir metodai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -32308,6 +33937,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Saugios kompiuterinės infrastruktūros projektavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -32412,6 +34050,15 @@
     "reviews": [],
     "name": "Savivaldos teorija ir istorija",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Scenarijų kūrimo teorija ir praktika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -32547,6 +34194,15 @@
     "reviews": [],
     "name": "Semantikos ir pragmatikos įvadas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Semantikos ir pragmatikos įvadas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -33091,6 +34747,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Sistemų teorija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -33130,6 +34795,33 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Šiuolaikinė anglų kalba (ir kursinis darbas) IV/VI d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba (Leksika (1), Fonetika, Morfologija) I/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba (Leksika (2), Sintaksė) II/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Šiuolaikinė anglų kalba I/III d.",
     "faculty": 2,
     "score": 0.0,
@@ -33157,6 +34849,24 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Šiuolaikinė anglų kalba I/VI d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba II/VI d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Šiuolaikinė anglų kalba III/VI d.",
     "faculty": 2,
     "score": 0.0,
@@ -33166,8 +34876,35 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Šiuolaikinė anglų kalba III/VI d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Šiuolaikinė anglų kalba V/VI d.",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba V/VI d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė anglų kalba VI/VI d.",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -33805,6 +35542,69 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Šiuolaikinė švedų kalba (ir kursinis darbas) VI/VII d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė švedų kalba I/VII d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė švedų kalba II/VII d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė švedų kalba III/VII d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė švedų kalba IV/VII d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė švedų kalba V/VII d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinė švedų kalba VII/VII d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Šiuolaikinė sveikatos psichologija: teorija ir praktika",
     "faculty": 3,
     "score": 0.0,
@@ -33901,6 +35701,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės bankininkystės technologijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -33924,6 +35733,15 @@
     "reviews": [],
     "name": "Šiuolaikinės edukacinės psichologijos paradigmos",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinės ekonomikos teorijos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -34288,6 +36106,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Šiuolaikinis menas ir visuomenė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -34453,8 +36280,26 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Skaitmeninės technologijos ir reklama",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Skaitmeninės technologijos leidyboje",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Skaitmeniniai audiovizualinės komunikacijos projektai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -34473,6 +36318,15 @@
     "reviews": [],
     "name": "Skaitmeninio paveldo komunikacija",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Skaitmeninio turinio teisminė (Forensic) analizė ir kenksmingos PĮ analizė",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -34590,6 +36444,15 @@
     "reviews": [],
     "name": "Skaitmeninių sistemų analizė ir modeliavimas",
     "faculty": 4,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Skaitymo antropologija",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -34797,6 +36660,15 @@
     "reviews": [],
     "name": "Skandinavų grožinės literatūros vertimas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Skandinavų ir angliškai kalbančių šalių literatūra",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -35773,6 +37645,24 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Socialinių tyrimų metodai: kiekybiniai tyrimai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Socialinių tyrimų metodai: kokybiniai tyrimai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -35854,6 +37744,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Sociolingvistika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -35913,6 +37812,15 @@
     "reviews": [],
     "name": "Sociologija",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Sociologija",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -36192,6 +38100,15 @@
     "reviews": [],
     "name": "Specializuotas anglų kalbos diskursas: verslo kalba",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Specializuotas vertimas (Subtitravimas kurtiesiems, Garsinis vaizdavimas)",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -36484,6 +38401,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Sprendimų teorija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -36525,6 +38451,15 @@
     "reviews": [],
     "name": "Statistika",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Statistika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -36597,6 +38532,15 @@
     "reviews": [],
     "name": "Statistinė analizė socialiniuose moksluose",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Statistinė duomenų analizė",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -36799,6 +38743,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Strateginė meno rinkodara",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -36840,6 +38793,15 @@
     "reviews": [],
     "name": "Strateginis finansų valdymas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Strateginis marketingas ir pardavimų valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -36911,6 +38873,15 @@
     "isBUS": false,
     "reviews": [],
     "name": "Strateginis valdymas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Strateginis valdymas",
     "faculty": 13,
     "score": 0.0,
     "numberOfReviews": 0
@@ -36921,6 +38892,15 @@
     "reviews": [],
     "name": "Strateginis valdymas ir veiklos efektyvumas",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Strateginis verslo tvarumo valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -37153,6 +39133,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Subtitravimas (Subtitravimas ir surtitravimas, Teksto kompresija)",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Suicidologija",
     "faculty": 10,
     "score": 0.0,
@@ -37209,6 +39198,24 @@
     "reviews": [],
     "name": "Sutartys su viešuoju elementu",
     "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Švedų kalba I/II d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Švedų kalba II/II d.",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -37423,7 +39430,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
@@ -37432,7 +39439,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
@@ -37560,6 +39567,15 @@
     "reviews": [],
     "name": "Taikinamasis tarpininkavimas",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Taikomasis objektinis programavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -37837,6 +39853,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Taikomosios apskaitos sistemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Taikomosios fizikos pagrindai",
     "faculty": 10,
     "score": 0.0,
@@ -37978,6 +40003,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tarpkultūrinė vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -38005,6 +40039,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tarptautinė apskaita",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -38028,6 +40071,15 @@
     "reviews": [],
     "name": "Tarptautinė ekonomika",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tarptautinė ekonomika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -38458,6 +40510,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Tarptautiniai mainai ir darnus vystymasis",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Tarptautiniai santykiai ir saugumo politika Azijoje ir Artimuosiuose Rytuose",
     "faculty": 3,
     "score": 0.0,
@@ -38495,6 +40556,15 @@
     "isBUS": false,
     "reviews": [],
     "name": "Tarptautinio verslo aplinka",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tarptautinio verslo aplinka",
     "faculty": 8,
     "score": 0.0,
     "numberOfReviews": 0
@@ -38523,6 +40593,15 @@
     "reviews": [],
     "name": "Tarptautinis ir Europos Sąjungos civilinis procesas",
     "faculty": 12,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tarptautinis marketingas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -38581,11 +40660,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tarptautinis verslas ir firmų internacionalizavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Tarptautinis žmogiškųjų išteklių valdymas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tarptautinis žmogiškųjų išteklių valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -38856,6 +40953,15 @@
     "reviews": [],
     "name": "Teisės pagrindai",
     "faculty": 3,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Teisės pagrindai",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -39211,11 +41317,56 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Teksto interpretacija I/V d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Teksto interpretacija II/V d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Teksto interpretacija III/V d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Teksto interpretacija iš kultūros semiotikos perspektyvos",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Teksto interpretacija IV/V d.",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Teksto interpretacija V/V d.",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -39288,6 +41439,15 @@
     "reviews": [],
     "name": "Tekstų ir dialogų gramatika",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tekstų kūrimo ir vertimo praktikumas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -39583,6 +41743,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Terminologija ir kalbos planavimas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Terminologija ir terminografija",
     "faculty": 2,
     "score": 0.0,
@@ -39862,6 +42031,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Transnacionalinių korporacijų socialinė atsakomybė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Transplantacija",
     "faculty": 10,
     "score": 0.0,
@@ -40071,6 +42249,15 @@
     "reviews": [],
     "name": "TV režisūros teorija ir praktika II/II d.",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Tvarios ir atsakingos investicijos",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -40494,6 +42681,15 @@
     "reviews": [],
     "name": "Užkrečiamos ligos ir dermatologija II/II d.",
     "faculty": 10,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Užsienio kalba",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -41029,6 +43225,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vadyba",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -41061,6 +43266,24 @@
     "reviews": [],
     "name": "Vadyba šiuolaikinėse farmacinėse įmonėse",
     "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vadybos apskaita",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vadybos ekonomika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -41938,6 +44161,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vaizdo žaidimų lokalizacija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -42019,6 +44251,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Valdymo apskaitos informacinės sistemos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -42042,6 +44283,15 @@
     "reviews": [],
     "name": "Valdymo procesų biofizika",
     "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Valdymo sprendimų teorija",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -42280,6 +44530,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vartotojų elgsena",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -42429,6 +44688,15 @@
     "reviews": [],
     "name": "Verslas kylančiose ekonomikose",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Verslo analitika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -42589,6 +44857,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Verslo etika ir įmonių socialinė atsakomybė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Verslo galimybių atpažinimas ir įvertinimas",
     "faculty": 13,
     "score": 0.0,
@@ -42676,6 +44953,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Verslo modeliai ir strategijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -42753,6 +45039,15 @@
     "reviews": [],
     "name": "Verslo procesų modeliavimas",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Verslo procesų optimizavimo metodai ir priemonės",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -42892,6 +45187,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Verslo teisė",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -42978,6 +45282,15 @@
     "reviews": [],
     "name": "Verstinio teksto redagavimas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Verstinio teksto redagavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -43093,6 +45406,15 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
+    "name": "Vertimas žodžiu",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
     "name": "Vertimas žodžiu (nuoseklusis vertimas)",
     "faculty": 2,
     "score": 0.0,
@@ -43122,6 +45444,33 @@
     "reviews": [],
     "name": "Vertimo įvadas",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vertimo praktikos pagrindai (Tarpkultūriniai vertimo aspektai, Vertimo stilistika, Leksiniai vertimo aspektai)",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vertimo programos ir ištekliai",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vertimo programos ir verstinio teksto redagavimas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -43180,6 +45529,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vertimo studijos",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -43194,6 +45552,24 @@
     "reviews": [],
     "name": "Vertimo teorija",
     "faculty": 2,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vertimo teorija ir praktikumas",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vertimo teorijos įvadas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -43230,6 +45606,15 @@
     "reviews": [],
     "name": "Vertybinių popierių kainodara",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Vertybinių popierių vertinimas ir valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -43531,7 +45916,25 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Viešoji ir masinė komunikacija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Viešoji komunikacija",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
     "isBUS": false,
     "reviews": [],
     "name": "Viešoji komunikacija",
@@ -43567,11 +45970,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Viešojo diskurso retorika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Viešojo diskurso retorika",
     "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Viešojo diskurso semiotika",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -43819,6 +46240,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Virtualios sistemos ir jų sauga",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -43927,6 +46357,15 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Visuotinė literatūra",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
@@ -43941,6 +46380,15 @@
     "reviews": [],
     "name": "Visuotinės kokybės vadyba",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Visuotinės kokybės vadyba",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -45241,11 +47689,29 @@
     "numberOfReviews": 0
   },
   {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Žmogaus-kompiuterio sąveika",
+    "faculty": 7,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
     "isOptional": true,
     "isBUS": false,
     "reviews": [],
     "name": "Žmogaus-kompiuterio sąveika",
     "faculty": 9,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Žmogiškųjų išteklių vadyba",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
@@ -45282,6 +47748,15 @@
     "reviews": [],
     "name": "Žmogiškųjų išteklių valdymas",
     "faculty": 1,
+    "score": 0.0,
+    "numberOfReviews": 0
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "reviews": [],
+    "name": "Žmogiškųjų išteklių valdymas",
+    "faculty": 7,
     "score": 0.0,
     "numberOfReviews": 0
   },
