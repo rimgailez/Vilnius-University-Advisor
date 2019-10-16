@@ -117,6 +117,8 @@
             this.EVAF1 = new System.Windows.Forms.Button();
             this.CHGF1 = new System.Windows.Forms.Button();
             this.EvaluateLecturer = new System.Windows.Forms.Panel();
+            this.LectUsernameLabel = new System.Windows.Forms.Label();
+            this.LectUsernameTxtBox = new System.Windows.Forms.TextBox();
             this.EvaluationCommentLabel = new System.Windows.Forms.Label();
             this.SaveEvalNextLect = new System.Windows.Forms.Button();
             this.BackLecEvaluation = new System.Windows.Forms.Button();
@@ -186,8 +188,6 @@
             this.AllFaculties1 = new System.Windows.Forms.ComboBox();
             this.F1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.LectUsernameTxtBox = new System.Windows.Forms.TextBox();
-            this.LectUsernameLabel = new System.Windows.Forms.Label();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LecturerPanel.SuspendLayout();
@@ -1247,6 +1247,22 @@
             this.EvaluateLecturer.TabIndex = 22;
             this.EvaluateLecturer.Visible = false;
             // 
+            // LectUsernameLabel
+            // 
+            this.LectUsernameLabel.AutoSize = true;
+            this.LectUsernameLabel.Location = new System.Drawing.Point(363, 131);
+            this.LectUsernameLabel.Name = "LectUsernameLabel";
+            this.LectUsernameLabel.Size = new System.Drawing.Size(212, 17);
+            this.LectUsernameLabel.TabIndex = 17;
+            this.LectUsernameLabel.Text = "Įveskite savo prisijungimo vardą:";
+            // 
+            // LectUsernameTxtBox
+            // 
+            this.LectUsernameTxtBox.Location = new System.Drawing.Point(364, 152);
+            this.LectUsernameTxtBox.Name = "LectUsernameTxtBox";
+            this.LectUsernameTxtBox.Size = new System.Drawing.Size(491, 22);
+            this.LectUsernameTxtBox.TabIndex = 16;
+            // 
             // EvaluationCommentLabel
             // 
             this.EvaluationCommentLabel.AutoSize = true;
@@ -1886,6 +1902,7 @@
             this.Info.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Info.Multiline = true;
             this.Info.Name = "Info";
+            this.Info.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Info.Size = new System.Drawing.Size(384, 195);
             this.Info.TabIndex = 4;
             // 
@@ -2019,6 +2036,7 @@
             this.Info1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Info1.Multiline = true;
             this.Info1.Name = "Info1";
+            this.Info1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Info1.Size = new System.Drawing.Size(384, 195);
             this.Info1.TabIndex = 6;
             // 
@@ -2081,31 +2099,15 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // LectUsernameTxtBox
-            // 
-            this.LectUsernameTxtBox.Location = new System.Drawing.Point(364, 152);
-            this.LectUsernameTxtBox.Name = "LectUsernameTxtBox";
-            this.LectUsernameTxtBox.Size = new System.Drawing.Size(491, 22);
-            this.LectUsernameTxtBox.TabIndex = 16;
-            // 
-            // LectUsernameLabel
-            // 
-            this.LectUsernameLabel.AutoSize = true;
-            this.LectUsernameLabel.Location = new System.Drawing.Point(363, 131);
-            this.LectUsernameLabel.Name = "LectUsernameLabel";
-            this.LectUsernameLabel.Size = new System.Drawing.Size(212, 17);
-            this.LectUsernameLabel.TabIndex = 17;
-            this.LectUsernameLabel.Text = "Įveskite savo prisijungimo vardą:";
-            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 350);
+            this.Controls.Add(this.SingleLecturer);
+            this.Controls.Add(this.SingleSubject);
             this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.EvaluateSubjects);
-            this.Controls.Add(this.SingleSubject);
-            this.Controls.Add(this.SingleLecturer);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.ScraperPanel);
             this.Controls.Add(this.SubjectPanel);
