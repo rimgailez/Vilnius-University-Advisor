@@ -123,6 +123,9 @@
   <data name="BUS" xml:space="preserve">
     <value>Dalykas yra BUS</value>
   </data>
+  <data name="DataNodeComment" xml:space="preserve">
+    <value>Paliko komentarą:</value>
+  </data>
   <data name="DataNodeComments" xml:space="preserve">
     <value>Komentarai: </value>
   </data>
@@ -163,13 +166,13 @@
     <value>Dalykas yra pasirenkamasis</value>
   </data>
   <data name="ReviewDate" xml:space="preserve">
-    <value> Data: </value>
+    <value>Data: </value>
   </data>
   <data name="ReviewScore" xml:space="preserve">
-    <value> Įvertino: </value>
+    <value> Įvertinęs: </value>
   </data>
   <data name="ReviewUsername" xml:space="preserve">
-    <value>Prisijungimo vardas: </value>
+    <value>Vartotojas: </value>
   </data>
   <data name="SelectFaculty" xml:space="preserve">
     <value>Pasirinkite fakultetą</value>

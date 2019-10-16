@@ -71,9 +71,9 @@ namespace Vilnius_University_Advisor
                 {
                     information = information + number + ". "
                         + MainResources.ReviewUsername + item.username
-                        + MainResources.ReviewDate + item.date
-                        + MainResources.ReviewScore + item.score
-                        + "\r\n" + item.text + "\r\n";
+                        + MainResources.ReviewScore + item.score + "\r\n"
+                        + MainResources.ReviewDate + item.date + "\r\n"
+                        + MainResources.DataNodeComment + "\r\n" + item.text + "\r\n";
                     number++;
                 }
             }

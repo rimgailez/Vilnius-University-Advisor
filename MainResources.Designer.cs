@@ -79,6 +79,15 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paliko komentarą:.
+        /// </summary>
+        internal static string DataNodeComment {
+            get {
+                return ResourceManager.GetString("DataNodeComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Komentarai: .
         /// </summary>
         internal static string DataNodeComments {
@@ -196,7 +205,7 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Data: .
+        ///   Looks up a localized string similar to Data: .
         /// </summary>
         internal static string ReviewDate {
             get {
@@ -205,7 +214,7 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Įvertino: .
+        ///   Looks up a localized string similar to  Įvertinęs: .
         /// </summary>
         internal static string ReviewScore {
             get {
@@ -214,7 +223,7 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prisijungimo vardas: .
+        ///   Looks up a localized string similar to Vartotojas: .
         /// </summary>
         internal static string ReviewUsername {
             get {

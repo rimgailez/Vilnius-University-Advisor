@@ -12496,8 +12496,8 @@
     "isBUS": false,
     "reviews": [
       {
-        "username": "testA",
-        "text": "Nieko nesuprantu.",
+        "username": "Emilija Ederytė",
+        "text": "Labai įdomus ir naudingas kursas.",
         "date": "2019-10-16",
         "score": 5
       }
@@ -18146,8 +18146,8 @@
     "isBUS": false,
     "reviews": [
       {
-        "username": "test2",
-        "text": "Neįmanoma suprasti kas dėstoma.",
+        "username": "Dovydas Naglys",
+        "text": "Į paskaitas vaikščioti neapsimoka, bet išlaikyti yra įmanoma.",
         "date": "2019-10-16",
         "score": 3
       }
@@ -19026,8 +19026,8 @@
     "isBUS": false,
     "reviews": [
       {
-        "username": "test159",
-        "text": "Labas.",
+        "username": "Simas Sakaitis",
+        "text": "Tragiškai nuobodus kursas.",
         "date": "2019-10-16",
         "score": 1
       }
@@ -22075,16 +22075,16 @@
     "isBUS": true,
     "reviews": [
       {
-        "username": "test1",
-        "text": "Lengva",
+        "username": "Domas Holstas",
+        "text": "Sąlyginai įdomus ir nesunkus dalykas.",
         "date": "2019-10-16",
         "score": 4
       }
     ],
     "name": "Logika",
     "faculty": 3,
-    "score": 4.5,
-    "numberOfReviews": 2
+    "score": 4,
+    "numberOfReviews": 1
   },
   {
     "isOptional": false,

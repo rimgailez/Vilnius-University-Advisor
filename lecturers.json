@@ -3208,8 +3208,8 @@
   {
     "reviews": [
       {
-        "username": "HelloThere",
-        "text": "Labas.",
+        "username": "Deivydas Linkevičius",
+        "text": "Subrantamai dėsto, tik šiek tiek nuobodokai.",
         "date": "2019-10-16",
         "score": 4
       }
@@ -10362,8 +10362,8 @@
   {
     "reviews": [
       {
-        "username": "testing132",
-        "text": "Kur aš esu?\r\nKą aš čia veikiu?\r\nhuh?\r\n",
+        "username": "Romas Kaciukevičius",
+        "text": "Labai neįdomiai aiškina.",
         "date": "2019-10-16",
         "score": 1
       }
@@ -14156,22 +14156,22 @@
   {
     "reviews": [
       {
-        "username": "SthFromMars",
+        "username": "Deivydas Svolkinas",
         "text": "Labai patiko, nors ir nesupratau, kas vyksta.",
         "date": "2019-10-16",
         "score": 5
       },
       {
-        "username": "????????????",
-        "text": "Sveiki,\r\nNenaudokite sveiki.",
+        "username": "Simas Fetingis",
+        "text": "Įdomus dėstytojas, bet dažnai nukrypsta nuo temos.",
         "date": "2019-10-16",
         "score": 4
       }
     ],
     "name": "Romualdas Kašuba",
     "faculty": 9,
-    "score": 4.66666651,
-    "numberOfReviews": 3
+    "score": 4.5,
+    "numberOfReviews": 2
   },
   {
     "reviews": [],
