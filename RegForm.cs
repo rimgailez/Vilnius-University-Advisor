@@ -591,7 +591,7 @@ namespace Vilnius_University_Advisor
 
         private Boolean EvaluateLecturerWithValidations()
         {
-            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals(""))
+            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals("") || LectUsernameTxtBox.Text.Equals(""))
             {
                 MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
                 return false;
@@ -599,7 +599,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
-                DataMaster.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text);
+                DataMaster.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameTxtBox.Text);
                 return true;
             }
         }
@@ -608,13 +608,14 @@ namespace Vilnius_University_Advisor
             SelectFacultyLect.Text = "";
             FilteredLecturersList.DataSource = null;
             ReviewLectEvalTxtBox.Text = "";
+            LectUsernameTxtBox.Text = "";
             EvaluationCommentLabel.Text = "...";
             NumericEvaluationLect.Value = 0;
         }
 
         private Boolean EvaluateSubjectWithValidations()
         {
-            if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals(""))
+            if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals("") || SubjUsernameTxtBox.Text.Equals(""))
             {
                 MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
                 return false;
@@ -622,7 +623,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
-                DataMaster.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text);
+                DataMaster.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameTxtBox.Text);
                 return true;
             }
         }
@@ -636,6 +637,7 @@ namespace Vilnius_University_Advisor
             SelectFacultySubj.Text = "";
             FilteredSubjectsList.DataSource = null;
             ReviewSubjEvalTxtBox.Text = "";
+            SubjUsernameTxtBox.Text = "";
             SubjEvalCommentLab.Text = "...";
             NumericEvaluationSubj.Value = 0;
         }
@@ -644,7 +646,7 @@ namespace Vilnius_University_Advisor
         {
             MainMenu.Hide();
             ScraperPanel.Show();
-            (new Scraper.ScraperMain(DataMaster.GetInstance().projectPath, this)).StartScrap();
+            (new Scraper.ScraperMain(DataMaster.GetInstance().jsonReaderWriter.projectPath, this)).StartScrap();
             ScraperBack.Show();
         }
         public void updateScraperTextbox(string text)
@@ -680,7 +682,7 @@ namespace Vilnius_University_Advisor
             Info.Text = "";
             if (AllLect.SelectedItem != null)
             {
-                Info.Text = DataMaster.GetInstance().GetLecturerInfo((Lecturer)AllLect.SelectedItem, (Faculty)AllFaculties.SelectedIndex);
+                Info.Text = ((Lecturer)AllLect.SelectedItem).ToString();
             }
             else
             {
@@ -727,7 +729,7 @@ namespace Vilnius_University_Advisor
             Info1.Text = "";
             if (AllSubj.SelectedItem != null)
             {
-                Info1.Text = DataMaster.GetInstance().GetSubjectInfo((Subject)AllSubj.SelectedItem, (Faculty)AllFaculties1.SelectedIndex);
+                Info1.Text = ((Subject)AllSubj.SelectedItem).ToString();
             }
             else
             {

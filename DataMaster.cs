@@ -15,15 +15,9 @@ namespace Vilnius_University_Advisor
         UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
         UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
 
-        //get project directory
-        public string projectPath;
-        JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
+        public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 
-        private DataMaster() 
-        {
-            projectPath = jsonReaderWriter.projectPath;
-        }
-
+        private DataMaster() { }
         public static DataMaster GetInstance()
         {
             return instance;
@@ -37,9 +31,9 @@ namespace Vilnius_University_Advisor
 
         public void WriteData()
         {
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().SortList(lecturers);
+            lecturers.Sort();
             jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
-            UniversityEntitiesList<Subject>.GetEntityInstance().SortList(subjects);
+            subjects.Sort();
             jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
         }
 
@@ -51,13 +45,13 @@ namespace Vilnius_University_Advisor
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().SortList(lecturers);
+            lecturers.Sort();
             WriteData();
         }
 
         public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().AddEntityWithoutWriting(lecturer, lecturers);
+            lecturers.AddEntityWithoutWriting(lecturer);
         }
 
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
@@ -68,23 +62,23 @@ namespace Vilnius_University_Advisor
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
-            UniversityEntitiesList<Subject>.GetEntityInstance().SortList(subjects);
+            subjects.Sort();
             WriteData();
         }
 
         public void AddSubjectWithoutWriting(Subject subject)
         {
-            UniversityEntitiesList<Subject>.GetEntityInstance().AddEntityWithoutWriting(subject, subjects);
+            subjects.AddEntityWithoutWriting(subject);
         }
 
-        public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string review)
+        public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
-            UniversityEntitiesList<Lecturer>.GetEntityInstance().EvaluateEntity(lecturer, lecturerScore, review, lecturers);
+            lecturers.EvaluateEntity(lecturer, lecturerScore, new Review(username, (int)lecturerScore, text));
         }
 
-        public void EvaluateSubject(Subject subject, float subjectScore, string review)
+        public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
-            UniversityEntitiesList<Subject>.GetEntityInstance().EvaluateEntity(subject, subjectScore, review, subjects);
+            subjects.EvaluateEntity(subject, subjectScore, new Review(username, (int)subjectScore, text));
         }
 
         public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -116,88 +110,22 @@ namespace Vilnius_University_Advisor
 
         public List<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
-            return UniversityEntitiesList<Lecturer>.GetEntityInstance().GetEntitiesByFaculty(faculty, lecturers);
+            return lecturers.GetEntitiesByFaculty(faculty);
         }
 
         public List<Subject> GetSubjectsByFaculty(Faculty faculty)
         {
-            return UniversityEntitiesList<Subject>.GetEntityInstance().GetEntitiesByFaculty(faculty, subjects);
-        }
-
-        public string GetLecturerInfo(Lecturer lecturer, Faculty faculty)
-        {
-            string information = "";
-            List<Lecturer> someLecturers = GetLecturersByFaculty(faculty);
-            foreach (Lecturer aLecturer in someLecturers)
-            {
-                if ((aLecturer).Equals(lecturer))
-                {
-                    information = information + MainResources.LecturerName + aLecturer.name + "\r\n";
-                    information = information + MainResources.LecturerEvaluation + aLecturer.score + MainResources.From5 + "\r\n";
-                    information = information + MainResources.NumberOfReviews + aLecturer.numberOfReviews + "\r\n";
-                    if (aLecturer.numberOfReviews > 0)
-                    {
-                        int number = 1;
-                        information = information + MainResources.CommentsLecturer + "\r\n";
-                        foreach (var item in aLecturer.reviews)
-                        {
-                            information = information + number + ". " + item + "\r\n";
-                            number++;
-                        }
-                    }
-                    return information;
-                }
-            }
-            return MainResources.LecturerNotFound;
-        }
-
-        public string GetSubjectInfo(Subject subject, Faculty faculty)
-        {
-            string information = "";
-            List<Subject> someSubjects = GetSubjectsByFaculty(faculty);
-            foreach (Subject aSubject in someSubjects)
-            {
-                if ((aSubject).Equals(subject))
-                {
-                    information = information + MainResources.SubjectName + aSubject.name + "\r\n";
-                    if (aSubject.isOptional)
-                    {
-                        information = information + MainResources.Optional +"\r\n";
-                    }
-                    else
-                    {
-                        information = information + MainResources.Mandatory + "\r\n";
-                    }
-                    if (aSubject.isBUS)
-                    {
-                        information = information + MainResources.BUS + "\r\n";
-                    }
-                    information = information + MainResources.SubjectEvaluation + aSubject.score + MainResources.From5 + "\r\n";
-                    information = information + MainResources.NumberOfReviews + aSubject.numberOfReviews + "\r\n";
-                    if (aSubject.numberOfReviews > 0)
-                    {
-                        int number = 1;
-                        information = information + MainResources.CommentsSubject + "\r\n";
-                        foreach (var item in aSubject.reviews)
-                        {
-                            information = information + number + ". " + item + "\r\n";
-                            number++;
-                        }
-                    }
-                    return information;
-                }
-            }
-            return MainResources.SubjectNotFound;
+            return subjects.GetEntitiesByFaculty(faculty);
         }
 
         public List<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
         {
-            return UniversityEntitiesList<Subject>.GetEntityInstance().GetEntitySearchResults(enteredWord, faculty, subjects);
+            return subjects.GetEntitySearchResults(enteredWord, faculty);
         }
 
         public List<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
-            return UniversityEntitiesList<Lecturer>.GetEntityInstance().GetEntitySearchResults(enteredWord, faculty, lecturers);
+            return lecturers.GetEntitySearchResults(enteredWord, faculty);
         }
     }
 }

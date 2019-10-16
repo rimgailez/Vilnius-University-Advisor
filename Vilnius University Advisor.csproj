@@ -79,6 +79,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Review.cs" />
     <Compile Include="Scraper\Fetcher.cs" />
     <Compile Include="Scraper\Parser.cs" />
     <Compile Include="Scraper\ScraperMain.cs" />

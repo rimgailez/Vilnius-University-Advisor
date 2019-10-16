@@ -10,22 +10,13 @@ namespace Vilnius_University_Advisor
     {
         public Lecturer(string name, Faculty faculty) : base(name, faculty) { }
 
-        public override bool Equals(object obj)
-        {
-            Lecturer item = obj as Lecturer;
-            if (item == null) return false;
-            if (name.Equals(item.name) && faculty == item.faculty) return true;
-            else return false;
-        }
-
         public bool Equals(Lecturer other)
         {
-            return other.name.Equals(this.name) && other.faculty == this.faculty;
+            return base.Equals(other);
         }
-
-        public override int GetHashCode()
+        public override string ToString()
         {
-            return base.GetHashCode();
+            return MainResources.LecturerName + base.ToString();
         }
     }
 }
