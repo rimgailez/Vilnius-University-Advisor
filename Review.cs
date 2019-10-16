@@ -20,13 +20,13 @@ namespace Vilnius_University_Advisor
             }
         }
         public string text;
-        public DateTime date;
+        public string date;
         public Review(string username, int score, string text)
         {
-            this.date = DateTime.Today;
             this.username = username;
             this.scoreField = score;
             this.text = text;
+            this.date = DateTime.Today.Year + "-" + DateTime.Today.Month + "-" + DateTime.Today.Day;
         }
     }
 }

@@ -3210,7 +3210,7 @@
       {
         "username": "HelloThere",
         "text": "Labas.",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 4
       }
     ],
@@ -10364,7 +10364,7 @@
       {
         "username": "testing132",
         "text": "Kur aš esu?\r\nKą aš čia veikiu?\r\nhuh?\r\n",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 1
       }
     ],
@@ -14158,13 +14158,13 @@
       {
         "username": "SthFromMars",
         "text": "Labai patiko, nors ir nesupratau, kas vyksta.",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 5
       },
       {
         "username": "????????????",
         "text": "Sveiki,\r\nNenaudokite sveiki.",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 4
       }
     ],

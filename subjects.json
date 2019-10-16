@@ -12498,7 +12498,7 @@
       {
         "username": "testA",
         "text": "Nieko nesuprantu.",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 5
       }
     ],
@@ -18148,7 +18148,7 @@
       {
         "username": "test2",
         "text": "Neįmanoma suprasti kas dėstoma.",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 3
       }
     ],
@@ -19028,7 +19028,7 @@
       {
         "username": "test159",
         "text": "Labas.",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 1
       }
     ],
@@ -22077,7 +22077,7 @@
       {
         "username": "test1",
         "text": "Lengva",
-        "date": "2019-10-16T00:00:00+03:00",
+        "date": "2019-10-16",
         "score": 4
       }
     ],
@@ -39451,7 +39451,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
@@ -39460,7 +39460,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
