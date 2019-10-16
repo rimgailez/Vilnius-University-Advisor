@@ -3206,11 +3206,18 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      {
+        "username": "HelloThere",
+        "text": "Labas.",
+        "date": "2019-10-16T00:00:00+03:00",
+        "score": 4
+      }
+    ],
     "name": "Daiva Budrienė",
     "faculty": 1,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 4.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],
@@ -10353,11 +10360,18 @@
     "numberOfReviews": 0
   },
   {
-    "reviews": [],
+    "reviews": [
+      {
+        "username": "testing132",
+        "text": "Kur aš esu?\r\nKą aš čia veikiu?\r\nhuh?\r\n",
+        "date": "2019-10-16T00:00:00+03:00",
+        "score": 1
+      }
+    ],
     "name": "Linas Kojala",
     "faculty": 11,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 1.0,
+    "numberOfReviews": 1
   },
   {
     "reviews": [],
@@ -14142,16 +14156,22 @@
   {
     "reviews": [
       {
-        "username": "test",
-        "text": "asdfzcvx",
-        "date": "2019-10-15T00:00:00+03:00",
+        "username": "SthFromMars",
+        "text": "Labai patiko, nors ir nesupratau, kas vyksta.",
+        "date": "2019-10-16T00:00:00+03:00",
         "score": 5
+      },
+      {
+        "username": "????????????",
+        "text": "Sveiki,\r\nNenaudokite sveiki.",
+        "date": "2019-10-16T00:00:00+03:00",
+        "score": 4
       }
     ],
     "name": "Romualdas Kašuba",
     "faculty": 9,
-    "score": 5.0,
-    "numberOfReviews": 1
+    "score": 4.66666651,
+    "numberOfReviews": 3
   },
   {
     "reviews": [],

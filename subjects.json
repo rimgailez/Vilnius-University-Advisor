@@ -12494,11 +12494,18 @@
   {
     "isOptional": true,
     "isBUS": false,
-    "reviews": [],
+    "reviews": [
+      {
+        "username": "testA",
+        "text": "Nieko nesuprantu.",
+        "date": "2019-10-16T00:00:00+03:00",
+        "score": 5
+      }
+    ],
     "name": "Hidroterapija",
     "faculty": 10,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 5.0,
+    "numberOfReviews": 1
   },
   {
     "isOptional": false,
@@ -18137,11 +18144,18 @@
   {
     "isOptional": false,
     "isBUS": false,
-    "reviews": [],
+    "reviews": [
+      {
+        "username": "test2",
+        "text": "Neįmanoma suprasti kas dėstoma.",
+        "date": "2019-10-16T00:00:00+03:00",
+        "score": 3
+      }
+    ],
     "name": "Kompiuterių architektūra",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 3.0,
+    "numberOfReviews": 1
   },
   {
     "isOptional": true,
@@ -19010,11 +19024,18 @@
   {
     "isOptional": false,
     "isBUS": false,
-    "reviews": [],
+    "reviews": [
+      {
+        "username": "test159",
+        "text": "Labas.",
+        "date": "2019-10-16T00:00:00+03:00",
+        "score": 1
+      }
+    ],
     "name": "Kriminologija",
     "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0
+    "score": 1.0,
+    "numberOfReviews": 1
   },
   {
     "isOptional": true,
@@ -22054,16 +22075,16 @@
     "isBUS": true,
     "reviews": [
       {
-        "username": "test",
-        "text": "aaaa5555\r\nasdf",
-        "date": "2019-10-14T00:00:00+03:00",
-        "score": 5
+        "username": "test1",
+        "text": "Lengva",
+        "date": "2019-10-16T00:00:00+03:00",
+        "score": 4
       }
     ],
     "name": "Logika",
     "faculty": 3,
-    "score": 5.0,
-    "numberOfReviews": 1
+    "score": 4.5,
+    "numberOfReviews": 2
   },
   {
     "isOptional": false,
