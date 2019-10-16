@@ -61,7 +61,7 @@ namespace Vilnius_University_Advisor
         public override string ToString()
         {
             string information = name + "\r\n";
-            information = information + MainResources.DataNodeEvaluation + score + MainResources.From5 + "\r\n";
+            information = information + MainResources.DataNodeEvaluation + Decimal.Round((decimal)score, 2) + MainResources.From5 + "\r\n";
             information = information + MainResources.NumberOfReviews + numberOfReviews + "\r\n";
             if (numberOfReviews > 0)
             {
