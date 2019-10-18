@@ -1,0 +1,91 @@
+[
+  {
+    "name": "aaa",
+    "faculty": 5,
+    "score": 5.0,
+    "numberOfReviews": 3,
+    "reviews": [
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      }
+    ]
+  },
+  {
+    "name": "aaa",
+    "faculty": 65,
+    "score": 5.0,
+    "numberOfReviews": 8,
+    "reviews": [
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      },
+      {
+        "username": "coolGuy",
+        "score": 5,
+        "text": "coolstuf",
+        "date": "2019-10-18"
+      }
+    ]
+  },
+  {
+    "name": "aaaaaabbbbb",
+    "faculty": 5,
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "reviews": []
+  }
+]
