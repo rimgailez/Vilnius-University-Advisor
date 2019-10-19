@@ -31,43 +31,43 @@ namespace Vilnius_University_Advisor.Scraper
         [STAThread]     
         public void StartScrap()
         {
-            foreach (string url in mainUrls)
-            {
-                Fetcher fetcher = new Fetcher();
-                Parser parser = new Parser(streamWriter, Faculty.None);
-                string mainHtml = fetcher.GetFacultyHtml(vuUrl + url);
-                List<String> subUrls = parser.parseFaculty(mainHtml, url);
-                streamWriter.WriteLine("Parsed " + subUrls.Count + " URLs from " + url);
-                streamWriter.Flush();
-                regForm.updateScraperTextbox("Parsed " + subUrls.Count + " URLs from " + url);
-                foreach(string subUrl in subUrls)
-                {
-                    regForm.updateScraperTextbox("Parsing " + subUrl);
-                    Parser parserSub = new Parser(streamWriter, getFaculty(url));
-                    string subText = fetcher.GetTimetableText(subUrl);
-                    parserSub.parseTimetable(subText, subUrl);
+            //foreach (string url in mainUrls)
+            //{
+            //    Fetcher fetcher = new Fetcher();
+            //    Parser parser = new Parser(streamWriter, Faculty.None);
+            //    string mainHtml = fetcher.GetFacultyHtml(vuUrl + url);
+            //    List<String> subUrls = parser.parseFaculty(mainHtml, url);
+            //    streamWriter.WriteLine("Parsed " + subUrls.Count + " URLs from " + url);
+            //    streamWriter.Flush();
+            //    regForm.updateScraperTextbox("Parsed " + subUrls.Count + " URLs from " + url);
+            //    foreach(string subUrl in subUrls)
+            //    {
+            //        regForm.updateScraperTextbox("Parsing " + subUrl);
+            //        Parser parserSub = new Parser(streamWriter, getFaculty(url));
+            //        string subText = fetcher.GetTimetableText(subUrl);
+            //        parserSub.parseTimetable(subText, subUrl);
 
-                    List<Lecturer> lecturers = parserSub.lecturers;
-                    List<Subject> subjects = parserSub.subjects;
+            //        List<Lecturer> lecturers = parserSub.lecturers;
+            //        List<Subject> subjects = parserSub.subjects;
 
-                    streamWriter.WriteLine("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
-                    streamWriter.Flush();
-                    regForm.updateScraperTextbox("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
+            //        streamWriter.WriteLine("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
+            //        streamWriter.Flush();
+            //        regForm.updateScraperTextbox("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
 
-                    AddLecturers(lecturers);
-                    AddSubjects(subjects);
-                }
-                DataMaster.GetInstance().WriteData();
-            }
-            regForm.updateScraperTextbox("Scraper is done.");
-            streamWriter.Dispose();
+            //        AddLecturers(lecturers);
+            //        AddSubjects(subjects);
+            //    }
+            //    DataFetcher.GetInstance().WriteData();
+            //}
+            //regForm.updateScraperTextbox("Scraper is done.");
+            //streamWriter.Dispose();
         }
 
         private void AddSubjects(List<Subject> subjects)
         {
             foreach(Subject subject in subjects)
             {
-                DataMaster.GetInstance().AddSubjectWithoutWriting(subject);
+                DataFetcher.GetInstance().AddSubjectWithoutWriting(subject);
             }
         }
 
@@ -75,7 +75,7 @@ namespace Vilnius_University_Advisor.Scraper
         {
             foreach(Lecturer lecturer in lecturers)
             {
-                DataMaster.GetInstance().AddLecturerWithoutWriting(lecturer);
+                DataFetcher.GetInstance().AddLecturerWithoutWriting(lecturer);
             }
         }
 

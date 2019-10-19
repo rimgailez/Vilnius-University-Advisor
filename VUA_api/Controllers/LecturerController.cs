@@ -13,28 +13,42 @@ namespace VUA_api.Controllers
     public class LecturerController : ControllerBase
     {
         DataMaster dataMaster = DataMaster.GetInstance();
-        [HttpPut("add/{name}/{faculty}")]
+        [HttpPost("add")]
         public void Add([FromBody]JObject data)
         {
             string name = data["name"].ToObject<string>();
             Faculty faculty = data["faculty"].ToObject<Faculty>();
             dataMaster.AddLecturer(name, faculty);
         }
-        [HttpPut("evaluateNR/{id}/{score}/{text}/{username}")]
+        [HttpPost("evaluate")]
         public void Evaluate([FromBody]JObject data)
         {
-            int id = data["id"].ToObject<int>();
+            Lecturer lecturerNew = data["lecturer"].ToObject<Lecturer>();
             float score = data["score"].ToObject<float>();
             string text = data["text"].ToObject<string>();
             string username = data["username"].ToObject<string>();
-            dataMaster.EvaluateLecturer(dataMaster.lecturers[id], score, text, username);
+            Lecturer lecturerRef = null;
+            foreach(Lecturer lecturer in dataMaster.lecturers)
+            {
+                if (lecturer.Equals(lecturerNew))
+                {
+                    lecturerRef = lecturer;
+                    break;
+                }
+            }
+            dataMaster.EvaluateLecturer(lecturerRef, score, text, username);
+        }
+        [HttpGet]
+        public IEnumerable<Lecturer> GetAll()
+        {
+            return dataMaster.lecturers;
         }
         [HttpGet("faculty/{faculty}")]
         public IEnumerable<Lecturer> GetFaculty(Faculty faculty)
         {
             return dataMaster.GetLecturersByFaculty(faculty);
         }
-        [HttpGet("search/{term}/{faculty}")]
+        [HttpGet("search/{faculty}/{term}")]
         public IEnumerable<Lecturer> GetSearch(string term, Faculty faculty)
         {
             return dataMaster.GetLecturerSearchResults(term, faculty);

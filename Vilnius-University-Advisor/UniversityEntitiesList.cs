@@ -57,11 +57,11 @@ namespace Vilnius_University_Advisor
 
         public void EvaluateEntity(T entity, float subjectScore, Review review)
         {
-            float sum = entity.score * entity.numberOfReviews;
-            entity.numberOfReviews++;
-            entity.score = (sum + subjectScore) / entity.numberOfReviews;
-            entity.reviews.Add(review);
-            DataMaster.GetInstance().WriteData();
+            //float sum = entity.score * entity.numberOfReviews;
+            //entity.numberOfReviews++;
+            //entity.score = (sum + subjectScore) / entity.numberOfReviews;
+            //entity.reviews.Add(review);
+            //DataFetcher.GetInstance().WriteData();
         }
 
         public void AddEntityWithoutWriting(T entity)

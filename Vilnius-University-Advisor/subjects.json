@@ -22083,7 +22083,7 @@
     ],
     "name": "Logika",
     "faculty": 3,
-    "score": 4,
+    "score": 4.0,
     "numberOfReviews": 1
   },
   {
@@ -39451,7 +39451,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0
@@ -39460,7 +39460,7 @@
     "isOptional": false,
     "isBUS": false,
     "reviews": [],
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0

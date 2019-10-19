@@ -13,16 +13,43 @@
     "isBUS": false,
     "name": "„Kitas“ lietuvių literatūroje",
     "faculty": 2,
-    "score": 3.4,
-    "numberOfReviews": 5,
+    "score": 3.0,
+    "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "coolGuy",
-        "score": 5,
-        "text": "coolstuf",
-        "date": "2019-10-18"
+        "username": "asdfasdf",
+        "score": 3,
+        "text": "asdfasdf",
+        "date": "2019-10-19"
       }
     ]
+  },
+  {
+    "isOptional": true,
+    "isBUS": false,
+    "name": "aaa",
+    "faculty": 11,
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "isOptional": false,
+    "isBUS": false,
+    "name": "aab",
+    "faculty": -1,
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "isOptional": true,
+    "isBUS": true,
+    "name": "aac",
+    "faculty": 8,
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "reviews": []
   },
   {
     "isOptional": false,
@@ -38,9 +65,16 @@
     "isBUS": false,
     "name": "Abdominalinė ir simuliacinė chirurgija",
     "faculty": 10,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 5.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "qwer",
+        "score": 5,
+        "text": "qwerqwer\r\nqwer",
+        "date": "2019-10-19"
+      }
+    ]
   },
   {
     "isOptional": true,
@@ -22082,14 +22116,20 @@
     "isBUS": true,
     "name": "Logika",
     "faculty": 3,
-    "score": 4.0,
-    "numberOfReviews": 1,
+    "score": 3.5,
+    "numberOfReviews": 2,
     "reviews": [
       {
         "username": "Domas Holstas",
         "score": 4,
         "text": "Sąlyginai įdomus ir nesunkus dalykas.",
         "date": "2019-10-16"
+      },
+      {
+        "username": "zczx",
+        "score": 3,
+        "text": "zxcvzxcv",
+        "date": "2019-10-19"
       }
     ]
   },
@@ -39457,7 +39497,7 @@
   {
     "isOptional": false,
     "isBUS": false,
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0,
@@ -39466,7 +39506,7 @@
   {
     "isOptional": false,
     "isBUS": false,
-    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
+    "name": "Sveiko vaiko raida, priežiūra ir imunoprofilaktika",
     "faculty": 10,
     "score": 0.0,
     "numberOfReviews": 0,

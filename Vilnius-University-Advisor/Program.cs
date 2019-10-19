@@ -12,7 +12,7 @@ namespace Vilnius_University_Advisor
     {[STAThread]
         static void Main()
         {
-            DataMaster.GetInstance().ReadData();
+            //DataFetcher.GetInstance().ReadData();
             //run WinForm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -14,7 +14,7 @@ namespace VUA_api.Controllers
     public class SubjectController : ControllerBase
     {
         DataMaster dataMaster = DataMaster.GetInstance();
-        [HttpPut("add/{name}/{faculty}/{isOptional}/{isBUS}")]
+        [HttpPost("add")]
         public void Add([FromBody]JObject data)
         {
             string name = data["name"].ToObject<string>();
@@ -23,14 +23,23 @@ namespace VUA_api.Controllers
             bool isBUS = data["isBUS"].ToObject<bool>();
             dataMaster.AddSubject(name, faculty, isOptional, isBUS);
         }
-        [HttpPut("evaluate")]
+        [HttpPost("evaluate")]
         public void Evaluate([FromBody]JObject data)
         {
-            int id = data["id"].ToObject<int>();
+            Subject subjectNew = data["subject"].ToObject<Subject>();
             float score = data["score"].ToObject<float>();
             string text = data["text"].ToObject<string>();
             string username = data["username"].ToObject<string>();
-            dataMaster.EvaluateSubject(dataMaster.subjects[id], score, text, username);
+            Subject subjectRef = null;
+            foreach (Subject subject in dataMaster.subjects)
+            {
+                if (subject.Equals(subjectNew))
+                {
+                    subjectRef = subject;
+                    break;
+                }
+            }
+            dataMaster.EvaluateSubject(subjectRef, score, text, username);
         }
         [HttpGet("faculty/{faculty}")]
         public IEnumerable<Subject> GetFaculty(Faculty faculty)
@@ -52,8 +61,8 @@ namespace VUA_api.Controllers
         {
             return dataMaster.GetSubjectsByTypeAndFaculty(isOptional, faculty);
         }
-        [HttpGet("search/{term}/{faculty}")]
-        public IEnumerable<Subject> GetSearch(string term, Faculty faculty)
+        [HttpGet("search/{faculty}/{term}")]
+        public IEnumerable<Subject> GetSearch(Faculty faculty, string term)
         {
             return dataMaster.GetSubjectSearchResults(term, faculty);
         }

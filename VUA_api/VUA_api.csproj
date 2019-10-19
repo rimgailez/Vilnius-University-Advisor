@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -7,6 +7,10 @@
   <ItemGroup>
     <Content Remove="lecturers.json" />
     <Content Remove="subjects.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
   </ItemGroup>
 
   <ItemGroup>
