@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vilnius_University_Advisor
+namespace VUA_api
 {
-    class UniversityEntitiesList<T> : IEnumerable<T>
+    public class UniversityEntitiesList<T> : IEnumerable<T>
         where T : DataNode
     {
         private List<T> entitiesList;
@@ -57,9 +57,11 @@ namespace Vilnius_University_Advisor
 
         public void EvaluateEntity(T entity, float subjectScore, Review review)
         {
-            float sum = entity.score * entity.numberOfReviews;
-            entity.numberOfReviews++;
-            entity.score = (sum + subjectScore) / entity.numberOfReviews;
+            Func<T, float, float> calculateScore = delegate (T entityNew, float newScore)
+             {
+                 return ((entityNew.score * entityNew.numberOfReviews) + newScore)/(++entity.numberOfReviews);
+             };
+            entity.score = calculateScore(entity, subjectScore);
             entity.reviews.Add(review);
             DataMaster.GetInstance().WriteData();
         }

@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vilnius_University_Advisor
+namespace VUA_api
 {
-    class JsonReaderWriter
+    public class JsonReaderWriter
     {
-        public string projectPath = Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName;
+        public string projectPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName).FullName;
         char directorySeparator = Path.DirectorySeparatorChar;
         
         public List<Lecturer> ReadLecturers()

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vilnius_University_Advisor {
+namespace VUA_api {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Vilnius_University_Advisor {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Vilnius_University_Advisor.MainResources", typeof(MainResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("VUA_api.MainResources", typeof(MainResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -6,18 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vilnius_University_Advisor
+namespace VUA_api
 {
     class DataMaster
     {
         private static readonly DataMaster instance  = new DataMaster();
 
-        UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
-        UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
+        public UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
+        public UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
 
         public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 
-        private DataMaster() { }
+        private DataMaster() 
+        {
+            ReadData();
+        }
         public static DataMaster GetInstance()
         {
             return instance;

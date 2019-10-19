@@ -4,19 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vilnius_University_Advisor
+namespace VUA_api
 {
-    class Lecturer : DataNode, IEquatable<Lecturer>
+    public class Lecturer : DataNode, IEquatable<Lecturer>
     {
         public Lecturer(string name, Faculty faculty) : base(name, faculty) { }
 
         public bool Equals(Lecturer other)
         {
             return base.Equals(other);
-        }
-        public override string ToString()
-        {
-            return MainResources.LecturerName + base.ToString();
         }
     }
 }

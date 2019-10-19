@@ -26,7 +26,7 @@ namespace Vilnius_University_Advisor
         private void SaveNextLecReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
-            DataMaster.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
+            DataFetcher.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
         }
@@ -34,7 +34,7 @@ namespace Vilnius_University_Advisor
         private void SaveBackLecReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
-            DataMaster.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
+            DataFetcher.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
             LecturerPanel.Hide();
@@ -53,7 +53,7 @@ namespace Vilnius_University_Advisor
         private void SaveNextSubjReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
-            DataMaster.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
+            DataFetcher.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
             IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
@@ -68,7 +68,7 @@ namespace Vilnius_University_Advisor
         private void SaveBackSubjReg_Click(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
-            DataMaster.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
+            DataFetcher.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
             IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
@@ -135,7 +135,7 @@ namespace Vilnius_University_Advisor
         private void BUS_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetBUSSubjects();
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetBUSSubjects();
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -143,7 +143,7 @@ namespace Vilnius_University_Advisor
         private void CHGF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Chemistry_and_Geosciences);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Chemistry_and_Geosciences);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -151,7 +151,7 @@ namespace Vilnius_University_Advisor
         private void EVAF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Economics_and_Business_Administration);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Economics_and_Business_Administration);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -159,7 +159,7 @@ namespace Vilnius_University_Advisor
         private void FLF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Philology);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Philology);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -167,7 +167,7 @@ namespace Vilnius_University_Advisor
         private void FSF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Philosophy);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Philosophy);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -175,7 +175,7 @@ namespace Vilnius_University_Advisor
         private void FF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Physics);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Physics);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -183,7 +183,7 @@ namespace Vilnius_University_Advisor
         private void GMC_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Life_Sciences);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Life_Sciences);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -191,7 +191,7 @@ namespace Vilnius_University_Advisor
         private void IF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.History);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.History);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -199,7 +199,7 @@ namespace Vilnius_University_Advisor
         private void KNF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Kaunas);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Kaunas);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -207,7 +207,7 @@ namespace Vilnius_University_Advisor
         private void KF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Communication);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Communication);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -215,7 +215,7 @@ namespace Vilnius_University_Advisor
         private void MIF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Mathematics_and_Informatics);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Mathematics_and_Informatics);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -223,7 +223,7 @@ namespace Vilnius_University_Advisor
         private void MF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Medicine);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Medicine);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -231,7 +231,7 @@ namespace Vilnius_University_Advisor
         private void TSPMI_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.International_Relations_and_Political_Science);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.International_Relations_and_Political_Science);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -239,7 +239,7 @@ namespace Vilnius_University_Advisor
         private void TF_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Law);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Law);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -247,7 +247,7 @@ namespace Vilnius_University_Advisor
         private void VM_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Business);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, Faculty.Business);
             SetColumnsWidth();
             DisplayOptionalSubjects();
         }
@@ -262,7 +262,7 @@ namespace Vilnius_University_Advisor
         private void CHGF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Chemistry_and_Geosciences);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Chemistry_and_Geosciences);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -270,7 +270,7 @@ namespace Vilnius_University_Advisor
         private void EVAF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Economics_and_Business_Administration);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Economics_and_Business_Administration);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -278,7 +278,7 @@ namespace Vilnius_University_Advisor
         private void FLF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Philology);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Philology);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -286,7 +286,7 @@ namespace Vilnius_University_Advisor
         private void FSF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Philosophy);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Philosophy);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -294,7 +294,7 @@ namespace Vilnius_University_Advisor
         private void FF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Physics);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Physics);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -302,7 +302,7 @@ namespace Vilnius_University_Advisor
         private void GMC1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Life_Sciences);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Life_Sciences);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -310,7 +310,7 @@ namespace Vilnius_University_Advisor
         private void IF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.History);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.History);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -318,7 +318,7 @@ namespace Vilnius_University_Advisor
         private void KNF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Kaunas);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Kaunas);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -326,7 +326,7 @@ namespace Vilnius_University_Advisor
         private void KF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Communication);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Communication);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -334,7 +334,7 @@ namespace Vilnius_University_Advisor
         private void MIF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Mathematics_and_Informatics);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Mathematics_and_Informatics);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -342,7 +342,7 @@ namespace Vilnius_University_Advisor
         private void MF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Medicine);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Medicine);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -350,7 +350,7 @@ namespace Vilnius_University_Advisor
         private void TSPMI1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.International_Relations_and_Political_Science);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.International_Relations_and_Political_Science);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -358,7 +358,7 @@ namespace Vilnius_University_Advisor
         private void TF1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Law);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Law);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -366,7 +366,7 @@ namespace Vilnius_University_Advisor
         private void VM1_Click(object sender, EventArgs e)
         {
             ListSubjTable.DataSource = null;
-            ListSubjTable.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Business);
+            ListSubjTable.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, Faculty.Business);
             SetColumnsWidth();
             DisplayMandatorySubjects();
         }
@@ -393,7 +393,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Chemistry_and_Geosciences);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Chemistry_and_Geosciences);
             SetColumnsWidthForLecturers();
         }
 
@@ -401,7 +401,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Economics_and_Business_Administration);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Economics_and_Business_Administration);
             SetColumnsWidthForLecturers();
         }
 
@@ -409,7 +409,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Philology);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Philology);
             SetColumnsWidthForLecturers();
         }
 
@@ -417,7 +417,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Philosophy);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Philosophy);
             SetColumnsWidthForLecturers();
         }
 
@@ -425,7 +425,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Physics);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Physics);
             SetColumnsWidthForLecturers();
         }
 
@@ -433,7 +433,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Life_Sciences);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Life_Sciences);
             SetColumnsWidthForLecturers();
         }
 
@@ -441,7 +441,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.History);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.History);
             SetColumnsWidthForLecturers();
         }
 
@@ -449,7 +449,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Kaunas);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Kaunas);
             SetColumnsWidthForLecturers();
         }
 
@@ -457,7 +457,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Communication);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Communication);
             SetColumnsWidthForLecturers();
         }
 
@@ -465,7 +465,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Mathematics_and_Informatics);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Mathematics_and_Informatics);
             SetColumnsWidthForLecturers();
         }
 
@@ -473,7 +473,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Medicine);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Medicine);
             SetColumnsWidthForLecturers();
         }
 
@@ -481,7 +481,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.International_Relations_and_Political_Science);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.International_Relations_and_Political_Science);
             SetColumnsWidthForLecturers();
         }
 
@@ -489,7 +489,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Law);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Law);
             SetColumnsWidthForLecturers();
         }
 
@@ -497,7 +497,7 @@ namespace Vilnius_University_Advisor
         {
             //get or refresh data
             ListLectTable.DataSource = null;
-            ListLectTable.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(Faculty.Business);
+            ListLectTable.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(Faculty.Business);
             SetColumnsWidthForLecturers();
         }
 
@@ -505,7 +505,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)SelectFacultyLect.SelectedIndex;
             FilteredLecturersList.DataSource = null;
-            FilteredLecturersList.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
+            FilteredLecturersList.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(faculty);
             FilteredLecturersList.DisplayMember = MainResources.Name;
         }
 
@@ -560,11 +560,11 @@ namespace Vilnius_University_Advisor
             FilteredSubjectsList.DataSource = null;
             if (IsBUSSubject.Checked)
             {
-                FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjects(faculty);
+                FilteredSubjectsList.DataSource = DataFetcher.GetInstance().GetBUSSubjects(faculty);
                 FilteredSubjectsList.DisplayMember = MainResources.Name;
             } else
             {
-                FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                FilteredSubjectsList.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
                 FilteredSubjectsList.DisplayMember = MainResources.Name;
             }
         }
@@ -599,7 +599,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
-                DataMaster.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameTxtBox.Text);
+                DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameTxtBox.Text);
                 return true;
             }
         }
@@ -623,7 +623,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
-                DataMaster.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameTxtBox.Text);
+                DataFetcher.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameTxtBox.Text);
                 return true;
             }
         }
@@ -646,7 +646,7 @@ namespace Vilnius_University_Advisor
         {
             MainMenu.Hide();
             ScraperPanel.Show();
-            (new Scraper.ScraperMain(DataMaster.GetInstance().jsonReaderWriter.projectPath, this)).StartScrap();
+            //(new Scraper.ScraperMain(DataFetcher.GetInstance().jsonReaderWriter.projectPath, this)).StartScrap();
             ScraperBack.Show();
         }
         public void updateScraperTextbox(string text)
@@ -673,7 +673,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)AllFaculties.SelectedIndex;
             AllLect.DataSource = null;
-            AllLect.DataSource = DataMaster.GetInstance().GetLecturersByFaculty(faculty);
+            AllLect.DataSource = DataFetcher.GetInstance().GetLecturersByFaculty(faculty);
             AllLect.DisplayMember = MainResources.Name;
         }
 
@@ -720,7 +720,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)AllFaculties1.SelectedIndex;
             AllSubj.DataSource = null;
-            AllSubj.DataSource = DataMaster.GetInstance().GetSubjectsByFaculty(faculty);
+            AllSubj.DataSource = DataFetcher.GetInstance().GetSubjectsByFaculty(faculty);
             AllSubj.DisplayMember = MainResources.Name;
         }
 
@@ -756,7 +756,7 @@ namespace Vilnius_University_Advisor
                 {
                     Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
                     FilteredSubjectsList.DataSource = null;
-                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                    FilteredSubjectsList.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
                     FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
@@ -777,7 +777,7 @@ namespace Vilnius_University_Advisor
                 {
                     Faculty faculty = (Faculty)SelectFacultySubj.SelectedIndex;
                     FilteredSubjectsList.DataSource = null;
-                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                    FilteredSubjectsList.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
                     FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
@@ -844,13 +844,13 @@ namespace Vilnius_University_Advisor
                 if (SelectFacultySubj.Text.Equals(""))
                 {
                     FilteredSubjectsList.DataSource = null;
-                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjects();
+                    FilteredSubjectsList.DataSource = DataFetcher.GetInstance().GetBUSSubjects();
                     FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
                 else
                 {
                     FilteredSubjectsList.DataSource = null;
-                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetBUSSubjects(faculty);
+                    FilteredSubjectsList.DataSource = DataFetcher.GetInstance().GetBUSSubjects(faculty);
                     FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
@@ -859,7 +859,7 @@ namespace Vilnius_University_Advisor
                 IsOptionalSubject.Checked = true;
                 if (!SelectFacultySubj.Text.Equals("")){
                     FilteredSubjectsList.DataSource = null;
-                    FilteredSubjectsList.DataSource = DataMaster.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
+                    FilteredSubjectsList.DataSource = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptionalSubject.Checked, faculty);
                     FilteredSubjectsList.DisplayMember = MainResources.Name;
                 }
             }
@@ -872,7 +872,7 @@ namespace Vilnius_University_Advisor
             if (AllFaculties.SelectedItem != null)
             {
                 AllLect.DataSource = null;
-                AllLect.DataSource = DataMaster.GetInstance().GetLecturerSearchResults(LectSearchField.Text, faculty);
+                AllLect.DataSource = DataFetcher.GetInstance().GetLecturerSearchResults(LectSearchField.Text, faculty);
                 AllLect.DisplayMember = MainResources.Name;
             }
             else
@@ -887,7 +887,7 @@ namespace Vilnius_University_Advisor
             if (AllFaculties1.SelectedItem != null)
             {
                 AllSubj.DataSource = null;
-                AllSubj.DataSource = DataMaster.GetInstance().GetSubjectSearchResults(SubjSearchField.Text, faculty);
+                AllSubj.DataSource = DataFetcher.GetInstance().GetSubjectSearchResults(SubjSearchField.Text, faculty);
                 AllSubj.DisplayMember = MainResources.Name;
             }
             else

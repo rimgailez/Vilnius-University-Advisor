@@ -9,10 +9,10 @@ using Newtonsoft.Json;
 namespace Vilnius_University_Advisor
 {
     static class Program
-    {[STAThread]
+    {
+        [STAThread]
         static void Main()
         {
-            DataMaster.GetInstance().ReadData();
             //run WinForm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
