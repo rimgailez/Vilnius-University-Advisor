@@ -160,15 +160,6 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to lecturers.json.
-        /// </summary>
-        internal static string LecturersJson {
-            get {
-                return ResourceManager.GetString("LecturersJson", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Dalykas yra privalomasis.
         /// </summary>
         internal static string Mandatory {
@@ -336,15 +327,6 @@ namespace Vilnius_University_Advisor {
         internal static string SubjectName {
             get {
                 return ResourceManager.GetString("SubjectName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to subjects.json.
-        /// </summary>
-        internal static string SubjectsJson {
-            get {
-                return ResourceManager.GetString("SubjectsJson", resourceCulture);
             }
         }
     }

@@ -14,9 +14,5 @@ namespace VUA_api
         {
             return base.Equals(other);
         }
-        public override string ToString()
-        {
-            return MainResources.LecturerName + base.ToString();
-        }
     }
 }

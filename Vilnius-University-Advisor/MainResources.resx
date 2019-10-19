@@ -150,9 +150,6 @@
   <data name="LecturerName" xml:space="preserve">
     <value>Dėstytojo vardas: </value>
   </data>
-  <data name="LecturersJson" xml:space="preserve">
-    <value>lecturers.json</value>
-  </data>
   <data name="Mandatory" xml:space="preserve">
     <value>Dalykas yra privalomasis</value>
   </data>
@@ -209,8 +206,5 @@
   </data>
   <data name="SubjectName" xml:space="preserve">
     <value>Dalyko pavadinimas: </value>
-  </data>
-  <data name="SubjectsJson" xml:space="preserve">
-    <value>subjects.json</value>
   </data>
 </root>

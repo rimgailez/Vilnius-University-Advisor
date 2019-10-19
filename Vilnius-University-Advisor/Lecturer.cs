@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace Vilnius_University_Advisor
 {
-    class Lecturer : DataNode, IEquatable<Lecturer>
+    class Lecturer : DataNode
     {
         public Lecturer(string name, Faculty faculty) : base(name, faculty) { }
-
-        public bool Equals(Lecturer other)
-        {
-            return base.Equals(other);
-        }
         public override string ToString()
         {
             return MainResources.LecturerName + base.ToString();

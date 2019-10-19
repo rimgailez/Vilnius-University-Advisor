@@ -15,11 +15,6 @@ namespace Vilnius_University_Advisor
     class DataFetcher
     {
         private static readonly DataFetcher instance  = new DataFetcher();
-
-        //UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
-        //UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
-
-        //public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
         HttpClient client = new HttpClient();
 
         private DataFetcher() 
@@ -33,50 +28,30 @@ namespace Vilnius_University_Advisor
         {
             return instance;
         }
-
-        //public void ReadData()
-        //{
-        //    lecturers.SetListOfUniversityEntities(jsonReaderWriter.ReadLecturers());
-        //    subjects.SetListOfUniversityEntities(jsonReaderWriter.ReadSubjects());
-        //}
-        //public void WriteData()
-        //{
-        //    lecturers.Sort();
-        //    jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
-        //    subjects.Sort();
-        //    jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
-        //}
-
         public void AddLecturer(string name, Faculty faculty)
         {
             AddLecturer(new Lecturer(name, faculty));
         }
-
         public async void AddLecturer(Lecturer lecturerNew)
         {
             await client.PostAsJsonAsync("lecturer/add", lecturerNew);
         }
-
         public async void AddLecturerWithoutWriting(Lecturer lecturer)
         {
             await client.PostAsJsonAsync("lecturer/add", lecturer);
         }
-
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
         {
             AddSubject(new Subject(name, faculty, isOptional, isBUS));
         }
-
         public async void AddSubject(Subject subjectNew)
         {
             await client.PostAsJsonAsync("subject/add", subjectNew);
         }
-
         public async void AddSubjectWithoutWriting(Subject subject)
         {
             await client.PostAsJsonAsync("subject/add", subject);
         }
-
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             JObject jObject = new JObject();
@@ -86,7 +61,6 @@ namespace Vilnius_University_Advisor
             jObject.Add("username", username);
             client.PostAsJsonAsync("lecturer/evaluate", jObject);
         }
-
         public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
             JObject jObject = new JObject();
@@ -95,7 +69,6 @@ namespace Vilnius_University_Advisor
             jObject.Add("text", text);
             jObject.Add("username", username);
             client.PostAsJsonAsync("subject/evaluate", jObject);
-            //subjects.EvaluateEntity(subject, subjectScore, new Review(username, (int)subjectScore, text));
         }
         public IEnumerable<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
         {
@@ -110,7 +83,6 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
             return subjects;
         }
-
         public IEnumerable<Subject> GetSubjectsByTypeAndFaculty(bool isOptional, Faculty faculty)
         {
             return GetSubjectsByTypeAndFacultyAsync(isOptional, faculty).Result;
@@ -127,7 +99,6 @@ namespace Vilnius_University_Advisor
             Task<IEnumerable<Lecturer>> lecturers = GetLecturersByFacultyAsync(faculty);
             return lecturers.Result;
         }
-
         public async Task<IEnumerable<Lecturer>> GetLecturersByFacultyAsync(Faculty faculty)
         {
             List<Lecturer> lecturers = null;
@@ -161,7 +132,6 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
             return subjects;
         }
-
         public IEnumerable<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
             return GetLecturerSearchResultsAsync(enteredWord, faculty).Result;

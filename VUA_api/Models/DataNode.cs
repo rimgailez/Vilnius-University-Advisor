@@ -58,26 +58,5 @@ namespace VUA_api
                 return this.faculty.CompareTo(other.faculty);
             else return result;
         }
-        public override string ToString()
-        {
-            string information = name + "\r\n";
-            information = information + MainResources.DataNodeEvaluation + Decimal.Round((decimal)score, 2) + MainResources.From5 + "\r\n";
-            information = information + MainResources.NumberOfReviews + numberOfReviews + "\r\n";
-            if (numberOfReviews > 0)
-            {
-                int number = 1;
-                information = information + MainResources.DataNodeComments + "\r\n";
-                foreach (Review item in reviews)
-                {
-                    information = information + number + ". "
-                        + MainResources.ReviewUsername + item.username
-                        + MainResources.ReviewScore + item.score + "\r\n"
-                        + MainResources.ReviewDate + item.date + "\r\n"
-                        + MainResources.DataNodeComment + "\r\n" + item.text + "\r\n";
-                    number++;
-                }
-            }
-            return information;
-        }
     }
 }

@@ -77,7 +77,6 @@
     <Compile Include="DataFetcher.cs" />
     <Compile Include="DataNode.cs" />
     <Compile Include="Faculty.cs" />
-    <Compile Include="JsonReaderWriter.cs" />
     <Compile Include="Lecturer.cs" />
     <Compile Include="MainResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -98,11 +97,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Review.cs" />
-    <Compile Include="Scraper\Fetcher.cs" />
-    <Compile Include="Scraper\Parser.cs" />
-    <Compile Include="Scraper\ScraperMain.cs" />
     <Compile Include="Subject.cs" />
-    <Compile Include="UniversityEntitiesList.cs" />
     <EmbeddedResource Include="MainResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MainResources.Designer.cs</LastGenOutput>
@@ -115,7 +110,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="lecturers.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,14 +120,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="subjects.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VUlogo.png" />
-    <Content Include="Scraper\log.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

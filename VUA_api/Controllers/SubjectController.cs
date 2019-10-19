@@ -41,6 +41,11 @@ namespace VUA_api.Controllers
             }
             dataMaster.EvaluateSubject(subjectRef, score, text, username);
         }
+        [HttpGet]
+        public IEnumerable<Subject> GetAll()
+        {
+            return dataMaster.subjects;
+        }
         [HttpGet("faculty/{faculty}")]
         public IEnumerable<Subject> GetFaculty(Faculty faculty)
         {
