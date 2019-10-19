@@ -104,7 +104,6 @@ namespace Vilnius_University_Advisor
             List<Lecturer> lecturers = null;
             int facultyInt = (int)faculty;
             HttpResponseMessage response = await client.GetAsync("lecturer/faculty/" + facultyInt.ToString()).ConfigureAwait(false);
-            Console.WriteLine(facultyInt);
             if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
             return lecturers;
         }

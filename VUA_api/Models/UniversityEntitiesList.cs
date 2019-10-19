@@ -57,9 +57,11 @@ namespace VUA_api
 
         public void EvaluateEntity(T entity, float subjectScore, Review review)
         {
-            float sum = entity.score * entity.numberOfReviews;
-            entity.numberOfReviews++;
-            entity.score = (sum + subjectScore) / entity.numberOfReviews;
+            Func<T, float, float> asdf = delegate (T entityNew, float newScore)
+             {
+                 return ((entityNew.score * entityNew.numberOfReviews) + newScore)/(++entity.numberOfReviews);
+             };
+            entity.score = asdf(entity, subjectScore);
             entity.reviews.Add(review);
             DataMaster.GetInstance().WriteData();
         }
