@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace Vilnius_University_Advisor
 {
     class DataFetcher
-    {
+    { 
         private static readonly DataFetcher instance  = new DataFetcher();
         HttpClient client = new HttpClient();
 
@@ -24,34 +24,42 @@ namespace Vilnius_University_Advisor
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
+
         public static DataFetcher GetInstance()
         {
             return instance;
         }
+
         public void AddLecturer(string name, Faculty faculty)
         {
             AddLecturer(new Lecturer(name, faculty));
         }
+
         public async void AddLecturer(Lecturer lecturerNew)
         {
             await client.PostAsJsonAsync("lecturer/add", lecturerNew);
         }
+
         public async void AddLecturerWithoutWriting(Lecturer lecturer)
         {
             await client.PostAsJsonAsync("lecturer/add", lecturer);
         }
+
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
         {
             AddSubject(new Subject(name, faculty, isOptional, isBUS));
         }
+
         public async void AddSubject(Subject subjectNew)
         {
             await client.PostAsJsonAsync("subject/add", subjectNew);
         }
+
         public async void AddSubjectWithoutWriting(Subject subject)
         {
             await client.PostAsJsonAsync("subject/add", subject);
         }
+
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             JObject jObject = new JObject();
@@ -61,6 +69,7 @@ namespace Vilnius_University_Advisor
             jObject.Add("username", username);
             client.PostAsJsonAsync("lecturer/evaluate", jObject);
         }
+
         public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
             JObject jObject = new JObject();
@@ -70,6 +79,7 @@ namespace Vilnius_University_Advisor
             jObject.Add("username", username);
             client.PostAsJsonAsync("subject/evaluate", jObject);
         }
+
         public IEnumerable<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
         {
             return GetBUSSubjectsAsync(faculty).Result;
@@ -83,6 +93,7 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
             return subjects;
         }
+
         public IEnumerable<Subject> GetSubjectsByTypeAndFaculty(bool isOptional, Faculty faculty)
         {
             return GetSubjectsByTypeAndFacultyAsync(isOptional, faculty).Result;
@@ -94,6 +105,7 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
             return subjects;
         }
+
         public IEnumerable<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
             Task<IEnumerable<Lecturer>> lecturers = GetLecturersByFacultyAsync(faculty);
@@ -107,6 +119,7 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
             return lecturers;
         }
+
         public IEnumerable<Subject> GetSubjectsByFaculty(Faculty faculty)
         {
             return GetSubjectsByFacultyAsync(faculty).Result;
@@ -119,6 +132,7 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
             return subjects;
         }
+
         public IEnumerable<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
         {
             return GetSubjectSearchResultsAsync(enteredWord, faculty).Result;
@@ -131,6 +145,7 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
             return subjects;
         }
+
         public IEnumerable<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
             return GetLecturerSearchResultsAsync(enteredWord, faculty).Result;
@@ -143,5 +158,45 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
             return lecturers;
         }
+
+        public IEnumerable<Subject> GetTop10Subjects()
+        {
+            return GetTop10SubjectsAsync().Result;
+        }
+        public async Task<IEnumerable<Subject>> GetTop10SubjectsAsync()
+        {
+            string request = "subject/top";
+            List<Subject> subjects = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
+            return subjects;
+        }
+
+        public IEnumerable<Subject> GetTop5BUSSubjects()
+        {
+            return GetTop5BUSSubjectsAsync().Result;
+        }
+        public async Task<IEnumerable<Subject>> GetTop5BUSSubjectsAsync()
+        {
+            string request = "subject/topBUS";
+            List<Subject> subjects = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
+            return subjects;
+        }
+
+        public IEnumerable<Lecturer> GetTop10Lecturers()
+        {
+            return GetTop10LecturersAsync().Result;
+        }
+        public async Task<IEnumerable<Lecturer>> GetTop10LecturersAsync()
+        {
+            string request = "lecturer/top";
+            List<Lecturer> lecturers = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
+            return lecturers;
+        }
+
     }
 }

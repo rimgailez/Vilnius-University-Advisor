@@ -895,5 +895,38 @@ namespace Vilnius_University_Advisor
                 MessageBox.Show(MainResources.SelectFaculty, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void TOP_Click(object sender, EventArgs e)
+        {
+            TOP10S.Text = "";
+            TOP10L.Text = "";
+            TOP5BUS.Text = "";
+            int number = 1;
+            foreach(Subject subject in DataFetcher.GetInstance().GetTop10Subjects())
+            {
+                TOP10S.Text = TOP10S.Text + number + ". " + subject.ToString() + "\r\n";
+                number++;
+            }
+            number = 1;
+            foreach (Subject subject in DataFetcher.GetInstance().GetTop5BUSSubjects())
+            {
+                TOP5BUS.Text = TOP5BUS.Text + number + ". " + subject.ToString() + "\r\n";
+                number++;
+            }
+            number = 1;
+            foreach (Lecturer lecturer in DataFetcher.GetInstance().GetTop10Lecturers())
+            {
+                TOP10L.Text = TOP10L.Text + number + ". " + lecturer.ToString() + "\r\n";
+                number++;
+            }
+            MainMenu.Hide();
+            TOPLecturersAndSubjects.Show();
+        }
+
+        private void Return2_Click(object sender, EventArgs e)
+        {
+            TOPLecturersAndSubjects.Hide();
+            MainMenu.Show();
+        }
     }
 }

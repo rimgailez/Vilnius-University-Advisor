@@ -13,6 +13,7 @@ namespace VUA_api.Controllers
     public class LecturerController : ControllerBase
     {
         DataMaster dataMaster = DataMaster.GetInstance();
+
         [HttpPost("add")]
         public void Add([FromBody]JObject data)
         {
@@ -20,6 +21,7 @@ namespace VUA_api.Controllers
             Faculty faculty = data["faculty"].ToObject<Faculty>();
             dataMaster.AddLecturer(name, faculty);
         }
+
         [HttpPost("evaluate")]
         public void Evaluate([FromBody]JObject data)
         {
@@ -38,20 +40,29 @@ namespace VUA_api.Controllers
             }
             dataMaster.EvaluateLecturer(lecturerRef, score, text, username);
         }
+
         [HttpGet]
         public IEnumerable<Lecturer> GetAll()
         {
             return dataMaster.lecturers;
         }
+
         [HttpGet("faculty/{faculty}")]
         public IEnumerable<Lecturer> GetFaculty(Faculty faculty)
         {
             return dataMaster.GetLecturersByFaculty(faculty);
         }
+
         [HttpGet("search/{faculty}/{term}")]
         public IEnumerable<Lecturer> GetSearch(string term, Faculty faculty)
         {
             return dataMaster.GetLecturerSearchResults(term, faculty);
+        }
+
+        [HttpGet("top")]
+        public IEnumerable<Lecturer> GetTop10()
+        {
+            return dataMaster.GetTop10Lecturers();
         }
 
     }

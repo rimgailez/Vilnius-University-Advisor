@@ -130,5 +130,21 @@ namespace VUA_api
         {
             return lecturers.GetEntitySearchResults(enteredWord, faculty);
         }
+
+        public List<Subject> GetTop10Subjects()
+        {
+            return subjects.GetTopEntities().GetRange(0, 10);
+        }
+
+        public List<Lecturer> GetTop10Lecturers()
+        {
+            return lecturers.GetTopEntities().GetRange(0, 10);
+        }
+
+        public List<Subject> GetTop5BUSSubjects()
+        {
+            return subjects.Where(subject => subject.isBUS).OrderByDescending(subject => subject.score).ToList().GetRange(0, 5);
+        }
+
     }
 }

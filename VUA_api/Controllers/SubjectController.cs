@@ -14,6 +14,7 @@ namespace VUA_api.Controllers
     public class SubjectController : ControllerBase
     {
         DataMaster dataMaster = DataMaster.GetInstance();
+
         [HttpPost("add")]
         public void Add([FromBody]JObject data)
         {
@@ -23,6 +24,7 @@ namespace VUA_api.Controllers
             bool isBUS = data["isBUS"].ToObject<bool>();
             dataMaster.AddSubject(name, faculty, isOptional, isBUS);
         }
+
         [HttpPost("evaluate")]
         public void Evaluate([FromBody]JObject data)
         {
@@ -41,35 +43,53 @@ namespace VUA_api.Controllers
             }
             dataMaster.EvaluateSubject(subjectRef, score, text, username);
         }
+
         [HttpGet]
         public IEnumerable<Subject> GetAll()
         {
             return dataMaster.subjects;
         }
+
         [HttpGet("faculty/{faculty}")]
         public IEnumerable<Subject> GetFaculty(Faculty faculty)
         {
             return dataMaster.GetSubjectsByFaculty(faculty);
         }
+
         [HttpGet("BUS")]
         public IEnumerable<Subject> GetBUS()
         {
             return dataMaster.GetBUSSubjects();
         }
+
         [HttpGet("BUS/{faculty}")]
         public IEnumerable<Subject> GetBUS(Faculty faculty)
         {
             return dataMaster.GetBUSSubjects(faculty);
         }
+
         [HttpGet("TypeFaculty/{isOptional}/{faculty}")]
         public IEnumerable<Subject> GetByTypeFaculty(bool isOptional, Faculty faculty)
         {
             return dataMaster.GetSubjectsByTypeAndFaculty(isOptional, faculty);
         }
+
         [HttpGet("search/{faculty}/{term}")]
         public IEnumerable<Subject> GetSearch(Faculty faculty, string term)
         {
             return dataMaster.GetSubjectSearchResults(term, faculty);
+        }
+
+        [HttpGet("top")]
+        public IEnumerable<Subject> GetTop10()
+        {
+            return dataMaster.GetTop10Subjects();
+        }
+
+        [HttpGet("topBUS")]
+        public IEnumerable<Subject> GetTop5BUS()
+        {
+            return dataMaster.GetTop5BUSSubjects();
         }
     }
 }
