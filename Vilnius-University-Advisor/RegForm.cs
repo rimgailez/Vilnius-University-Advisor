@@ -910,7 +910,7 @@ namespace Vilnius_University_Advisor
             number = 1;
             foreach (Subject subject in DataFetcher.GetInstance().GetTop5BUSSubjects())
             {
-                TOP5BUS.Text = TOP5BUS.Text + number + ". " + subject.ToString() + "\r\n";
+                TOP5BUS.Text = TOP5BUS.Text + number + ". " + MainResources.SubjectName + subject.GetInformation() + "\r\n";
                 number++;
             }
             number = 1;
