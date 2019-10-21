@@ -205,7 +205,7 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Įvertinęs: .
+        ///   Looks up a localized string similar to  įvertinęs: .
         /// </summary>
         internal static string ReviewScore {
             get {

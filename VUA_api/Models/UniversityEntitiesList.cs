@@ -76,5 +76,10 @@ namespace VUA_api
             entitiesList.Sort();
         }
 
+        public List<T> GetTopEntities()
+        {
+            return entitiesList.OrderByDescending(ent => ent.score).ToList();
+        }
+
     }
 }

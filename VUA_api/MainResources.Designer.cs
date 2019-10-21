@@ -214,11 +214,20 @@ namespace VUA_api {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Įvertinęs: .
+        ///   Looks up a localized string similar to  įvertinęs: .
         /// </summary>
         internal static string ReviewScore {
             get {
                 return ResourceManager.GetString("ReviewScore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to įvertinimas: .
+        /// </summary>
+        internal static string ReviewScore1 {
+            get {
+                return ResourceManager.GetString("ReviewScore1", resourceCulture);
             }
         }
         
