@@ -23,16 +23,17 @@ namespace VUA_api
             string subjectInput = File.ReadAllText(projectPath + directorySeparator + MainResources.SubjectsJson);
             return JsonConvert.DeserializeObject<List<Subject>>(subjectInput);
         }
+
         public void WriteLecturers(List<Lecturer> lecturers)
         {
             string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + MainResources.LecturersJson, output);
         }
+
         public void WriteSubjects(List<Subject> subjects)
         {
             string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + MainResources.SubjectsJson, output);
         }
     }
-
 }

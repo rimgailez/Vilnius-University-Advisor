@@ -1034,12 +1034,11 @@ namespace Vilnius_University_Advisor
                 PasswordRegistration.Text = "";
                 RepeatPasswordReg.Text = "";
                 return false;
-            }
+            } 
             else
             {
                 return true; // dar reikia implementuoti 
-            }
-           
+            } 
         }
 
         private void RegistrationButton_Click(object sender, EventArgs e)
