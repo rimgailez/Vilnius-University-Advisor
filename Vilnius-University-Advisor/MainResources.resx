@@ -120,8 +120,17 @@
   <data name="BlankFields" xml:space="preserve">
     <value>Neužpildyti laukai</value>
   </data>
+  <data name="BlankLogInFields" xml:space="preserve">
+    <value>Neįvesti prisijungimo duomenys.</value>
+  </data>
   <data name="BUS" xml:space="preserve">
     <value>Dalykas yra BUS</value>
+  </data>
+  <data name="CancelRegCaption" xml:space="preserve">
+    <value>Atšaukti registraciją</value>
+  </data>
+  <data name="CancelRegistration" xml:space="preserve">
+    <value>Ar tikrai norite atšaukti registraciją? Įvesti duomenys nebus išsaugoti.</value>
   </data>
   <data name="DataNodeComment" xml:space="preserve">
     <value>Paliko komentarą:</value>
@@ -161,6 +170,18 @@
   </data>
   <data name="Optional" xml:space="preserve">
     <value>Dalykas yra pasirenkamasis</value>
+  </data>
+  <data name="PasswordsDoNotMatch" xml:space="preserve">
+    <value>Įvesti slaptažodžiai nesutampa. Prašome įvesti juos dar kartą.</value>
+  </data>
+  <data name="RegistrationCaption" xml:space="preserve">
+    <value>Registracija</value>
+  </data>
+  <data name="RegistrationSuccessful" xml:space="preserve">
+    <value>Registracija sėkminga.</value>
+  </data>
+  <data name="RepeatPassword" xml:space="preserve">
+    <value>Nesutampa slaptažodžiai</value>
   </data>
   <data name="ReviewDate" xml:space="preserve">
     <value>Data: </value>

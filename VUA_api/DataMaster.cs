@@ -14,6 +14,8 @@ namespace VUA_api
 
         public UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
         public UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
+        public UniversityEntitiesList<User> users = new UniversityEntitiesList<User>();
+
 
         public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 

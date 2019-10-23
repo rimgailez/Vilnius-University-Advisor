@@ -70,11 +70,38 @@ namespace VUA_api {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Neįvesti prisijungimo duomenys.
+        /// </summary>
+        internal static string BlankLogInFields {
+            get {
+                return ResourceManager.GetString("BlankLogInFields", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dalykas yra BUS.
         /// </summary>
         internal static string BUS {
             get {
                 return ResourceManager.GetString("BUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Atšaukti registraciją.
+        /// </summary>
+        internal static string CancelRegCaption {
+            get {
+                return ResourceManager.GetString("CancelRegCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ar tikrai norite atšaukti registraciją? Įvesti duomenys nebus išsaugoti..
+        /// </summary>
+        internal static string CancelRegistration {
+            get {
+                return ResourceManager.GetString("CancelRegistration", resourceCulture);
             }
         }
         
@@ -201,6 +228,24 @@ namespace VUA_api {
         internal static string Optional {
             get {
                 return ResourceManager.GetString("Optional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Įvesti slaptažodžiai nesutampa. Prašome įvesti juos dar kartą..
+        /// </summary>
+        internal static string PasswordsDoNotMatch {
+            get {
+                return ResourceManager.GetString("PasswordsDoNotMatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nesutampa slaptažodžiai.
+        /// </summary>
+        internal static string RepeatPassword {
+            get {
+                return ResourceManager.GetString("RepeatPassword", resourceCulture);
             }
         }
         
@@ -354,6 +399,33 @@ namespace VUA_api {
         internal static string SubjectsJson {
             get {
                 return ResourceManager.GetString("SubjectsJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingas prisijungimo vardas arba slaptažodis.
+        /// </summary>
+        internal static string UnsuccessfulLogIn {
+            get {
+                return ResourceManager.GetString("UnsuccessfulLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Įvestas prisijungimo vardas užimtas.
+        /// </summary>
+        internal static string UserNameAlreadyExists {
+            get {
+                return ResourceManager.GetString("UserNameAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to users.json.
+        /// </summary>
+        internal static string UsersJson {
+            get {
+                return ResourceManager.GetString("UsersJson", resourceCulture);
             }
         }
     }
