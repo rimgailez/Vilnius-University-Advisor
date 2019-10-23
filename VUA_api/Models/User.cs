@@ -9,21 +9,20 @@ namespace VUA_api
     {
         public string userName;
         private string password;
+        public string studyProgram;
 
-        public User(string name, Faculty faculty, string userName, string password) : base(name, faculty)
+        public User(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram) : base(name, faculty)
         {
             this.userName = userName;
             this.Password = password;
+            this.EMail = eMail;
+            this.PhoneNumber = phoneNumber;
+            this.studyProgram = studyProgram;
         }
 
         public string Password { get => password; set => password = value; }
-        /*
-        public override bool Equals(object obj) {
-            User item = obj as User;
-            if (item == null) return false;
-            if (userName.Equals(item.userName)) return true;
-            else return false;
-        }*/
+        public string EMail { get; set; }
+        public string PhoneNumber { get; set; }
 
         public bool Equals(User other)
         {

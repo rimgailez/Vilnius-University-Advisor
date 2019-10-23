@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,7 +27,7 @@ namespace Vilnius_University_Advisor
         {
             MainMenu.Hide();
             LecturerPanel.Show();
-    }
+        }
 
         private void SaveNextLecReg_Click(object sender, EventArgs e)
         {
@@ -34,7 +35,7 @@ namespace Vilnius_University_Advisor
             DataFetcher.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
-    }
+        }
 
         private void SaveBackLecReg_Click(object sender, EventArgs e)
         {
@@ -989,6 +990,9 @@ namespace Vilnius_University_Advisor
             UserNameRegistration.Text = "";
             PasswordRegistration.Text = "";
             RepeatPasswordReg.Text = "";
+            StudyProgramReg.Text = "";
+            EMailReg.Text = "";
+            PhoneNoReg.Text = "";
         }
 
         private void LogOutButton_Click(object sender, EventArgs e)
@@ -1013,9 +1017,15 @@ namespace Vilnius_University_Advisor
         private Boolean RegisterWithValidations()
         {
             if(UserFullName.Text.Equals("") || SelectFacultyUser.Text.Equals("") || UserNameRegistration.Text.Equals("") || 
-                PasswordRegistration.Text.Equals("") || RepeatPasswordReg.Text.Equals(""))
+                PasswordRegistration.Text.Equals("") || RepeatPasswordReg.Text.Equals("") || StudyProgramReg.Text.Equals("") ||
+                EMailReg.Text.Equals("") || PhoneNoReg.Text.Equals(""))
             {
                 warningMsg(MainResources.FillInAllFields, MainResources.BlankFields);
+                return false;
+            }
+            else if (!Regex.IsMatch(PhoneNoReg.Text, @"^[+3706]\d{7}?"))
+            {
+                warningMsg(MainResources.WrongPhoneNo, MainResources.WrongData);
                 return false;
             }
             else if (!PasswordRegistration.Text.Equals(RepeatPasswordReg.Text))
@@ -1042,5 +1052,6 @@ namespace Vilnius_University_Advisor
                 MainMenu.Show();
             }
         }
+
     }
 }

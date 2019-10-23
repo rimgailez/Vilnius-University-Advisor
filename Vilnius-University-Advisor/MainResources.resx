@@ -228,4 +228,13 @@
   <data name="SubjectName" xml:space="preserve">
     <value>Dalyko pavadinimas: </value>
   </data>
+  <data name="UsersJson" xml:space="preserve">
+    <value>users.json</value>
+  </data>
+  <data name="WrongData" xml:space="preserve">
+    <value>Neteisingi duomenys</value>
+  </data>
+  <data name="WrongPhoneNo" xml:space="preserve">
+    <value>Neteisingas telefono numeris. Telefono numerio formatas: +3706*******</value>
+  </data>
 </root>

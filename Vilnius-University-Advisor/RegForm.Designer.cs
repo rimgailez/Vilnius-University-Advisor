@@ -216,6 +216,12 @@
             this.BackToInitWindowButtonR = new System.Windows.Forms.Button();
             this.RegistrationButton = new System.Windows.Forms.Button();
             this.RegistrationGroupBox = new System.Windows.Forms.GroupBox();
+            this.ProneNoLabelReg = new System.Windows.Forms.Label();
+            this.PhoneNoReg = new System.Windows.Forms.TextBox();
+            this.EMailReg = new System.Windows.Forms.TextBox();
+            this.EMailLabelReg = new System.Windows.Forms.Label();
+            this.StudyProgramLabelReg = new System.Windows.Forms.Label();
+            this.StudyProgramReg = new System.Windows.Forms.TextBox();
             this.RepeatPasswordReg = new System.Windows.Forms.TextBox();
             this.PasswordRegistration = new System.Windows.Forms.TextBox();
             this.RepeatPasswordLabelReg = new System.Windows.Forms.Label();
@@ -2452,9 +2458,9 @@
             // 
             // BackToInitWindowButtonR
             // 
-            this.BackToInitWindowButtonR.Location = new System.Drawing.Point(945, 361);
+            this.BackToInitWindowButtonR.Location = new System.Drawing.Point(987, 376);
             this.BackToInitWindowButtonR.Name = "BackToInitWindowButtonR";
-            this.BackToInitWindowButtonR.Size = new System.Drawing.Size(201, 37);
+            this.BackToInitWindowButtonR.Size = new System.Drawing.Size(177, 37);
             this.BackToInitWindowButtonR.TabIndex = 3;
             this.BackToInitWindowButtonR.Text = "Grįžti į pradžią";
             this.BackToInitWindowButtonR.UseVisualStyleBackColor = true;
@@ -2463,9 +2469,9 @@
             // RegistrationButton
             // 
             this.RegistrationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationButton.Location = new System.Drawing.Point(640, 358);
+            this.RegistrationButton.Location = new System.Drawing.Point(610, 346);
             this.RegistrationButton.Name = "RegistrationButton";
-            this.RegistrationButton.Size = new System.Drawing.Size(193, 42);
+            this.RegistrationButton.Size = new System.Drawing.Size(237, 42);
             this.RegistrationButton.TabIndex = 2;
             this.RegistrationButton.Text = "Registruotis";
             this.RegistrationButton.UseVisualStyleBackColor = true;
@@ -2473,6 +2479,12 @@
             // 
             // RegistrationGroupBox
             // 
+            this.RegistrationGroupBox.Controls.Add(this.ProneNoLabelReg);
+            this.RegistrationGroupBox.Controls.Add(this.PhoneNoReg);
+            this.RegistrationGroupBox.Controls.Add(this.EMailReg);
+            this.RegistrationGroupBox.Controls.Add(this.EMailLabelReg);
+            this.RegistrationGroupBox.Controls.Add(this.StudyProgramLabelReg);
+            this.RegistrationGroupBox.Controls.Add(this.StudyProgramReg);
             this.RegistrationGroupBox.Controls.Add(this.RepeatPasswordReg);
             this.RegistrationGroupBox.Controls.Add(this.PasswordRegistration);
             this.RegistrationGroupBox.Controls.Add(this.RepeatPasswordLabelReg);
@@ -2484,36 +2496,90 @@
             this.RegistrationGroupBox.Controls.Add(this.UserNameSurnameLabel);
             this.RegistrationGroupBox.Controls.Add(this.UserFullName);
             this.RegistrationGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationGroupBox.Location = new System.Drawing.Point(447, 18);
+            this.RegistrationGroupBox.Location = new System.Drawing.Point(306, 11);
             this.RegistrationGroupBox.Name = "RegistrationGroupBox";
-            this.RegistrationGroupBox.Size = new System.Drawing.Size(602, 323);
+            this.RegistrationGroupBox.Size = new System.Drawing.Size(858, 323);
             this.RegistrationGroupBox.TabIndex = 1;
             this.RegistrationGroupBox.TabStop = false;
             this.RegistrationGroupBox.Text = "Registracija";
             // 
+            // ProneNoLabelReg
+            // 
+            this.ProneNoLabelReg.AutoSize = true;
+            this.ProneNoLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProneNoLabelReg.Location = new System.Drawing.Point(476, 246);
+            this.ProneNoLabelReg.Name = "ProneNoLabelReg";
+            this.ProneNoLabelReg.Size = new System.Drawing.Size(93, 20);
+            this.ProneNoLabelReg.TabIndex = 14;
+            this.ProneNoLabelReg.Text = "Telefono nr.";
+            // 
+            // PhoneNoReg
+            // 
+            this.PhoneNoReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNoReg.Location = new System.Drawing.Point(575, 243);
+            this.PhoneNoReg.Name = "PhoneNoReg";
+            this.PhoneNoReg.Size = new System.Drawing.Size(265, 26);
+            this.PhoneNoReg.TabIndex = 13;
+            // 
+            // EMailReg
+            // 
+            this.EMailReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EMailReg.Location = new System.Drawing.Point(576, 174);
+            this.EMailReg.Name = "EMailReg";
+            this.EMailReg.Size = new System.Drawing.Size(265, 26);
+            this.EMailReg.TabIndex = 12;
+            // 
+            // EMailLabelReg
+            // 
+            this.EMailLabelReg.AutoSize = true;
+            this.EMailLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EMailLabelReg.Location = new System.Drawing.Point(490, 176);
+            this.EMailLabelReg.Name = "EMailLabelReg";
+            this.EMailLabelReg.Size = new System.Drawing.Size(79, 20);
+            this.EMailLabelReg.TabIndex = 11;
+            this.EMailLabelReg.Text = "El. paštas";
+            // 
+            // StudyProgramLabelReg
+            // 
+            this.StudyProgramLabelReg.AutoSize = true;
+            this.StudyProgramLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudyProgramLabelReg.Location = new System.Drawing.Point(439, 110);
+            this.StudyProgramLabelReg.Name = "StudyProgramLabelReg";
+            this.StudyProgramLabelReg.Size = new System.Drawing.Size(130, 20);
+            this.StudyProgramLabelReg.TabIndex = 10;
+            this.StudyProgramLabelReg.Text = "Studijų programa";
+            // 
+            // StudyProgramReg
+            // 
+            this.StudyProgramReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudyProgramReg.Location = new System.Drawing.Point(575, 107);
+            this.StudyProgramReg.Name = "StudyProgramReg";
+            this.StudyProgramReg.Size = new System.Drawing.Size(265, 26);
+            this.StudyProgramReg.TabIndex = 9;
+            // 
             // RepeatPasswordReg
             // 
             this.RepeatPasswordReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RepeatPasswordReg.Location = new System.Drawing.Point(193, 265);
+            this.RepeatPasswordReg.Location = new System.Drawing.Point(161, 246);
             this.RepeatPasswordReg.Name = "RepeatPasswordReg";
             this.RepeatPasswordReg.PasswordChar = '*';
-            this.RepeatPasswordReg.Size = new System.Drawing.Size(366, 26);
+            this.RepeatPasswordReg.Size = new System.Drawing.Size(265, 26);
             this.RepeatPasswordReg.TabIndex = 8;
             // 
             // PasswordRegistration
             // 
             this.PasswordRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordRegistration.Location = new System.Drawing.Point(193, 208);
+            this.PasswordRegistration.Location = new System.Drawing.Point(161, 177);
             this.PasswordRegistration.Name = "PasswordRegistration";
             this.PasswordRegistration.PasswordChar = '*';
-            this.PasswordRegistration.Size = new System.Drawing.Size(366, 26);
+            this.PasswordRegistration.Size = new System.Drawing.Size(265, 26);
             this.PasswordRegistration.TabIndex = 7;
             // 
             // RepeatPasswordLabelReg
             // 
             this.RepeatPasswordLabelReg.AutoSize = true;
             this.RepeatPasswordLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RepeatPasswordLabelReg.Location = new System.Drawing.Point(31, 268);
+            this.RepeatPasswordLabelReg.Location = new System.Drawing.Point(7, 249);
             this.RepeatPasswordLabelReg.Name = "RepeatPasswordLabelReg";
             this.RepeatPasswordLabelReg.Size = new System.Drawing.Size(148, 20);
             this.RepeatPasswordLabelReg.TabIndex = 6;
@@ -2523,7 +2589,7 @@
             // 
             this.PasswordLabelRegistration.AutoSize = true;
             this.PasswordLabelRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabelRegistration.Location = new System.Drawing.Point(87, 211);
+            this.PasswordLabelRegistration.Location = new System.Drawing.Point(63, 179);
             this.PasswordLabelRegistration.Name = "PasswordLabelRegistration";
             this.PasswordLabelRegistration.Size = new System.Drawing.Size(92, 20);
             this.PasswordLabelRegistration.TabIndex = 5;
@@ -2532,16 +2598,16 @@
             // UserNameRegistration
             // 
             this.UserNameRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameRegistration.Location = new System.Drawing.Point(193, 154);
+            this.UserNameRegistration.Location = new System.Drawing.Point(161, 110);
             this.UserNameRegistration.Name = "UserNameRegistration";
-            this.UserNameRegistration.Size = new System.Drawing.Size(366, 26);
+            this.UserNameRegistration.Size = new System.Drawing.Size(265, 26);
             this.UserNameRegistration.TabIndex = 4;
             // 
             // UserNameLabelReg
             // 
             this.UserNameLabelReg.AutoSize = true;
             this.UserNameLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameLabelReg.Location = new System.Drawing.Point(35, 157);
+            this.UserNameLabelReg.Location = new System.Drawing.Point(11, 113);
             this.UserNameLabelReg.Name = "UserNameLabelReg";
             this.UserNameLabelReg.Size = new System.Drawing.Size(144, 20);
             this.UserNameLabelReg.TabIndex = 3;
@@ -2566,17 +2632,17 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.SelectFacultyUser.Location = new System.Drawing.Point(193, 97);
+            this.SelectFacultyUser.Location = new System.Drawing.Point(575, 40);
             this.SelectFacultyUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SelectFacultyUser.Name = "SelectFacultyUser";
-            this.SelectFacultyUser.Size = new System.Drawing.Size(366, 28);
+            this.SelectFacultyUser.Size = new System.Drawing.Size(265, 28);
             this.SelectFacultyUser.TabIndex = 2;
             // 
             // FacultyLabelRegistration
             // 
             this.FacultyLabelRegistration.AutoSize = true;
             this.FacultyLabelRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacultyLabelRegistration.Location = new System.Drawing.Point(95, 101);
+            this.FacultyLabelRegistration.Location = new System.Drawing.Point(485, 45);
             this.FacultyLabelRegistration.Name = "FacultyLabelRegistration";
             this.FacultyLabelRegistration.Size = new System.Drawing.Size(84, 20);
             this.FacultyLabelRegistration.TabIndex = 1;
@@ -2585,7 +2651,7 @@
             // UserNameSurnameLabel
             // 
             this.UserNameSurnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameSurnameLabel.Location = new System.Drawing.Point(45, 41);
+            this.UserNameSurnameLabel.Location = new System.Drawing.Point(17, 42);
             this.UserNameSurnameLabel.Name = "UserNameSurnameLabel";
             this.UserNameSurnameLabel.Size = new System.Drawing.Size(142, 25);
             this.UserNameSurnameLabel.TabIndex = 0;
@@ -2594,9 +2660,9 @@
             // UserFullName
             // 
             this.UserFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserFullName.Location = new System.Drawing.Point(193, 40);
+            this.UserFullName.Location = new System.Drawing.Point(161, 41);
             this.UserFullName.Name = "UserFullName";
-            this.UserFullName.Size = new System.Drawing.Size(366, 26);
+            this.UserFullName.Size = new System.Drawing.Size(265, 26);
             this.UserFullName.TabIndex = 0;
             // 
             // VULogoRegistration
@@ -2896,6 +2962,12 @@
         private System.Windows.Forms.Label RepeatPasswordLabelReg;
         private System.Windows.Forms.Label PasswordLabelRegistration;
         private System.Windows.Forms.Button LogOutButton;
+        private System.Windows.Forms.TextBox StudyProgramReg;
+        private System.Windows.Forms.Label EMailLabelReg;
+        private System.Windows.Forms.Label StudyProgramLabelReg;
+        private System.Windows.Forms.Label ProneNoLabelReg;
+        private System.Windows.Forms.TextBox PhoneNoReg;
+        private System.Windows.Forms.TextBox EMailReg;
     }
 }
 

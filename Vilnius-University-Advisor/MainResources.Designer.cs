@@ -392,5 +392,32 @@ namespace Vilnius_University_Advisor {
                 return ResourceManager.GetString("SubjectName", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to users.json.
+        /// </summary>
+        internal static string UsersJson {
+            get {
+                return ResourceManager.GetString("UsersJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingi duomenys.
+        /// </summary>
+        internal static string WrongData {
+            get {
+                return ResourceManager.GetString("WrongData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingas telefono numeris. Telefono numerio formatas: +3706*******.
+        /// </summary>
+        internal static string WrongPhoneNo {
+            get {
+                return ResourceManager.GetString("WrongPhoneNo", resourceCulture);
+            }
+        }
     }
 }
