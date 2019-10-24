@@ -15,6 +15,7 @@ namespace VUA_api
         public UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
         public UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
         public List<User> users = new List<User>();
+        public User currentUser { get; set; }
 
         public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 
@@ -166,6 +167,27 @@ namespace VUA_api
         {
             return subjects.Where(subject => subject.isBUS).OrderByDescending(subject => subject.score).ToList().GetRange(0, 5);
         }
+
+        public Boolean CheckIfUserNameExists(string username)
+        {
+            return users.Exists(us => us.userName.Equals(username));
+        }
+
+        public Boolean CheckIfCorrectPassword(string userName, string password)
+        {
+            return users.Find(us => us.userName.Equals(userName)).password.Equals(password);
+        }
+
+        public User GetCurrentUser()
+        {
+            return currentUser;
+        }
+
+        public void SetCurrentUser(User user)
+        {
+            currentUser = user;
+        }
+
 
     }
 }

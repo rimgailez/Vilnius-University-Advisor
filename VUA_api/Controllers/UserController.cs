@@ -32,5 +32,29 @@ namespace VUA_api.Controllers
            return dataMaster.users;
        }
 
+       [HttpGet("checkUserName/{userName}")]
+       public Boolean CheckUserName(string userName)
+       {
+           return dataMaster.CheckIfUserNameExists(userName);
+       }
+
+       [HttpGet("checkPassword/{userName}/{password}")]
+       public Boolean CheckPassword(string userName, string password)
+       {
+            return dataMaster.CheckIfCorrectPassword(userName, password);
+       }
+/*
+       [HttpGet("getUser")]
+       public User GetUser()
+       {
+            return dataMaster.GetCurrentUser();
+       }
+
+       [HttpPost("setUser")]
+       public void SetUser([FromBody]JObject data)
+       {
+            User userNew = data["currentUser"].ToObject<User>();
+            dataMaster.SetCurrentUser(userNew);
+       }*/
     }
 }

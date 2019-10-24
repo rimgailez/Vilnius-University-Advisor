@@ -9,6 +9,15 @@
     "phoneNumber": "+37061010022"
   },
   {
+    "name": "Arvydas Janonis",
+    "userFaculty": 4,
+    "userName": "arvydas.j",
+    "password": "sabonis",
+    "studyProgram": "Elektronikos inžinerija",
+    "eMail": "arvydas@gmail.com",
+    "phoneNumber": "+37069923234"
+  },
+  {
     "name": "Benas Ąžuolauskas",
     "userFaculty": 5,
     "userName": "azuols",

@@ -17,8 +17,6 @@ namespace Vilnius_University_Advisor
         private static readonly DataFetcher instance  = new DataFetcher();
         HttpClient client = new HttpClient();
 
-        public User currentUser { get; set; }
-
         private DataFetcher() 
         {
             client.BaseAddress = new Uri("https://localhost:44368/api/");
@@ -229,7 +227,50 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
             return users;
         }
-        
 
+        public Boolean CheckIfUserNameExists(string userName)
+        {
+            return CheckIfUserNameExistsAsync(userName).Result;
+        }
+
+        public async Task<Boolean> CheckIfUserNameExistsAsync(string userName)
+        {
+            Boolean result = false;
+            HttpResponseMessage response = await client.GetAsync("user/checkUserName/" + userName).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) result = await response.Content.ReadAsAsync<Boolean>();
+            return result;
+        }
+
+        public Boolean CheckIfCorrectPassword(string userName, string password)
+        {
+            return CheckIfCorrectPasswordAsync(userName, password).Result;
+        }
+
+        public async Task<Boolean> CheckIfCorrectPasswordAsync(string userName, string password)
+        {
+            Boolean result = false;
+            HttpResponseMessage response = await client.GetAsync("user/checkPassword/" + userName + "/" + password).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) result = await response.Content.ReadAsAsync<Boolean>();
+            return result;
+        }
+        /*
+                public User GetCurrentUser()
+                {
+                    return GetCurrentUserAsync().Result;
+                }
+
+                public async Task<User> GetCurrentUserAsync()
+                {
+                    User curUser = null;
+                    HttpResponseMessage response = await client.GetAsync("user/getUser/").ConfigureAwait(false);
+                    if (response.IsSuccessStatusCode) curUser = await response.Content.ReadAsAsync<User>();
+                    return curUser;
+                }
+
+                public async void SetCurrentUser(User user)
+                {
+                    await client.PostAsJsonAsync("user/setUser", user);
+                }
+                */
     }
 }
