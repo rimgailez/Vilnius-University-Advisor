@@ -60,6 +60,23 @@ namespace Vilnius_University_Advisor
             await client.PostAsJsonAsync("subject/add", subject);
         }
 
+        /*
+        public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram )
+        {
+            AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
+        }
+
+        public async void AddUser(User userNew)
+        {
+            await client.PostAsJsonAsync("user/add", userNew);
+        }
+
+        public async void AddUserWithoutWriting(User user)
+        {
+            await client.PostAsJsonAsync("user/add", user);
+        }
+        */
+
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             JObject jObject = new JObject();
@@ -197,6 +214,22 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
             return lecturers;
         }
+
+        /*
+        public IEnumerable<User> GetAllUsers()
+        {
+            return GetAllUsersAsync().Result;
+        }
+
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        {
+            string request = "user/all";
+            List<User> users = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
+            return users;
+        }
+        */
 
     }
 }

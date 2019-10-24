@@ -35,5 +35,18 @@ namespace VUA_api
             string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + MainResources.SubjectsJson, output);
         }
+
+        /*  public List<User> ReadUsers()
+        {
+              string userInput = File.ReadAllText(projectPath + directorySeparator + MainResources.UsersJson);
+              return JsonConvert.DeserializeObject<List<User>>(userInput);
+        }*/
+
+        /* public void WriteUsers(List<User> users)
+        {
+            string output = JsonConvert.SerializeObject(users, Formatting.Indented);
+            File.WriteAllText(projectPath + directorySeparator + MainResources.UsersJson, output);
+        }
+         */
     }
 }
