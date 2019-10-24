@@ -40,9 +40,9 @@ namespace VUA_api
         {
               string userInput = File.ReadAllText(projectPath + directorySeparator + MainResources.UsersJson);
               return JsonConvert.DeserializeObject<List<User>>(userInput);
-        }*/
+        }
 
-        /* public void WriteUsers(List<User> users)
+         public void WriteUsers(List<User> users)
         {
             string output = JsonConvert.SerializeObject(users, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + MainResources.UsersJson, output);

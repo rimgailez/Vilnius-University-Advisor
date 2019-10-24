@@ -27,13 +27,13 @@ namespace VUA_api
         {
             return instance;
         }
-
+        
         public void ReadData()
         {
             lecturers.SetListOfUniversityEntities(jsonReaderWriter.ReadLecturers());
             subjects.SetListOfUniversityEntities(jsonReaderWriter.ReadSubjects());
             //users = jsonReaderWriter.ReadUsers();
-        }
+        } 
 
         public void WriteData()
         {
@@ -41,8 +41,8 @@ namespace VUA_api
             jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
             subjects.Sort();
             jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
-            // users.Sort();
-            // jsonReaderWriter.WriteUsers(users);
+           // users.Sort();
+           // jsonReaderWriter.WriteUsers(users);
         }
 
         public void AddLecturer(string name, Faculty faculty)

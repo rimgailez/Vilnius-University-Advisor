@@ -11,7 +11,7 @@ namespace Vilnius_University_Advisor
         public string name { get; set; }
         public Faculty userFaculty { get; set; }
         public string userName { get; set; }
-        private string password { get; set; }
+        public string password { get; set; }
         public string studyProgram { get; set; }
         public string eMail { get; set; }
         public string phoneNumber { get; set; }
