@@ -13,12 +13,12 @@ namespace VUA_api.Controllers
     {
         DataMaster dataMaster = DataMaster.GetInstance();
 
-        /*
+       
        [HttpPost("add")]
        public void Add([FromBody]JObject data)
        {
            string name = data["name"].ToObject<string>();
-           Faculty faculty = data["faculty"].ToObject<Faculty>();
+           Faculty faculty = data["userFaculty"].ToObject<Faculty>();
            string userName = data["userName"].ToObject<string>();
            string password = data["password"].ToObject<string>();
            string eMail = data["eMail"].ToObject<string>();
@@ -31,7 +31,6 @@ namespace VUA_api.Controllers
        {
            return dataMaster.users;
        }
-       */
 
     }
 }

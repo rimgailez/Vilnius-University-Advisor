@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace VUA_api
 {
-    public class User : IEquatable<User>
+    public class User : IEquatable<User>, IComparable<User>
     {
         public string name { get; set; }
         public Faculty userFaculty { get; set; }
@@ -28,6 +28,14 @@ namespace VUA_api
         public bool Equals(User other)
         {
             return userName == other.userName ;
+        }
+
+        public int CompareTo(User other)
+        {
+            int result = this.name.CompareTo(other.name);
+            if (result == 0)
+                return this.userName.CompareTo(other.userName);
+            else return result;
         }
     }
 }

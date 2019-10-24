@@ -187,6 +187,15 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Prisijungimas.
+        /// </summary>
+        internal static string LogInCaption {
+            get {
+                return ResourceManager.GetString("LogInCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dalykas yra privalomasis.
         /// </summary>
         internal static string Mandatory {
@@ -394,6 +403,51 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Prisijungta sėkmingai..
+        /// </summary>
+        internal static string SuccessfulLogIn {
+            get {
+                return ResourceManager.GetString("SuccessfulLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Įvestas prisijungimo vardas jau egzistuoja..
+        /// </summary>
+        internal static string UserAlreadyExists {
+            get {
+                return ResourceManager.GetString("UserAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vardas užimtas.
+        /// </summary>
+        internal static string UserNameExistsCaption {
+            get {
+                return ResourceManager.GetString("UserNameExistsCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingas prisijungimo vardas..
+        /// </summary>
+        internal static string UserNotFound {
+            get {
+                return ResourceManager.GetString("UserNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingas vardas.
+        /// </summary>
+        internal static string UserNotFoundCaption {
+            get {
+                return ResourceManager.GetString("UserNotFoundCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to users.json.
         /// </summary>
         internal static string UsersJson {
@@ -408,6 +462,24 @@ namespace Vilnius_University_Advisor {
         internal static string WrongData {
             get {
                 return ResourceManager.GetString("WrongData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingas slaptažodis. Bandykite dar kartą..
+        /// </summary>
+        internal static string WrongPassword {
+            get {
+                return ResourceManager.GetString("WrongPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingas slaptažodis.
+        /// </summary>
+        internal static string WrongPasswordCaption {
+            get {
+                return ResourceManager.GetString("WrongPasswordCaption", resourceCulture);
             }
         }
         

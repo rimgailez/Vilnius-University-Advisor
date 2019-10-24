@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Andrius Andraitis",
+    "userFaculty": 0,
+    "userName": "andrius2000",
+    "password": "aaa",
+    "studyProgram": "aaa",
+    "eMail": "andrius@gmail.com",
+    "phoneNumber": "+37061010022"
+  },
+  {
+    "name": "Benas Ąžuolauskas",
+    "userFaculty": 5,
+    "userName": "azuols",
+    "password": "osia",
+    "studyProgram": "Medžių mokslas",
+    "eMail": "benas@gmail.com",
+    "phoneNumber": "+37061033344"
+  },
+  {
+    "name": "Berta Bernotaitė",
+    "userFaculty": 2,
+    "userName": "berta.b",
+    "password": "slop",
+    "studyProgram": "Ispanų filologija",
+    "eMail": "berta@gmail.com",
+    "phoneNumber": "+37064455588"
+  },
+  {
+    "name": "Liepa Liepaite",
+    "userFaculty": 3,
+    "userName": "liepaite",
+    "password": "zalioji",
+    "studyProgram": "Asmenybės atradimo mokslai",
+    "eMail": "liepa@gmail.com",
+    "phoneNumber": "+37063344455"
+  },
+  {
+    "name": "Tomas",
+    "userFaculty": 13,
+    "userName": "tomas123",
+    "password": "123456",
+    "studyProgram": "Ekonomika",
+    "eMail": "tomas@gmail.com",
+    "phoneNumber": "+37061010011"
+  },
+  {
+    "name": "Viktorija Šimėnaitė",
+    "userFaculty": 9,
+    "userName": "gretchen",
+    "password": "hehe",
+    "studyProgram": "Programų sistemos",
+    "eMail": "viktorija@gmail.com",
+    "phoneNumber": "+37061122233"
+  }
+]

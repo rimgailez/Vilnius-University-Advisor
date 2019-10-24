@@ -382,6 +382,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateLecturer.Show();
+            LectUsernameTxtBox.Text = DataFetcher.GetInstance().currentUser.userName;
         }
 
         public void SetColumnsWidthForLecturers()
@@ -558,6 +559,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateSubjects.Show();
+            SubjUsernameTxtBox.Text = DataFetcher.GetInstance().currentUser.userName;
         }
 
         private void SelectFacultySubj_SelectedIndexChanged(object sender, EventArgs e)
@@ -971,7 +973,7 @@ namespace Vilnius_University_Advisor
             if (LogInWithValidations())
             {
                 ClearLogInFields();
-
+                simpleMsg(MainResources.SuccessfulLogIn, MainResources.LogInCaption);
                 LogIn.Hide();
                 MainMenu.Show();
             }
@@ -1008,15 +1010,30 @@ namespace Vilnius_University_Advisor
                 warningMsg(MainResources.BlankLogInFields, MainResources.BlankFields);
                 return false;
             }
+            else if(!DataFetcher.GetInstance().GetAllUsers().ToList().Exists(us => us.userName.Equals(UserNameLogIn.Text)))
+            {
+                warningMsg(MainResources.UserNotFound, MainResources.UserNotFoundCaption);
+                UserNameLogIn.Text = "";
+                PasswordLogIn.Text = ""; 
+                return false;
+            }
+
+            else if (!DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(UserNameLogIn.Text)).password.Equals(PasswordLogIn.Text))
+            {
+                warningMsg(MainResources.WrongPassword, MainResources.WrongPasswordCaption);
+                PasswordLogIn.Text = "";
+                return false;
+            }
             else
             {
-                return true; // dar reikia implementuoti
+                DataFetcher.GetInstance().currentUser = DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(UserNameLogIn.Text));
+                return true; 
             }
         }
 
         private Boolean RegisterWithValidations()
         {
-            if(UserFullName.Text.Equals("") || SelectFacultyUser.Text.Equals("") || UserNameRegistration.Text.Equals("") || 
+            if (UserFullName.Text.Equals("") || SelectFacultyUser.Text.Equals("") || UserNameRegistration.Text.Equals("") ||
                 PasswordRegistration.Text.Equals("") || RepeatPasswordReg.Text.Equals("") || StudyProgramReg.Text.Equals("") ||
                 EMailReg.Text.Equals("") || PhoneNoReg.Text.Equals(""))
             {
@@ -1034,10 +1051,20 @@ namespace Vilnius_University_Advisor
                 PasswordRegistration.Text = "";
                 RepeatPasswordReg.Text = "";
                 return false;
-            } 
+            }
+            else if (DataFetcher.GetInstance().GetAllUsers().ToList().Exists(us => us.userName.Equals(UserNameRegistration.Text)))
+            {
+                warningMsg(MainResources.UserAlreadyExists, MainResources.UserNameExistsCaption);
+                return false;
+            }
             else
             {
-                return true; // dar reikia implementuoti 
+                Faculty faculty = (Faculty)SelectFacultyUser.SelectedIndex;
+                User user = new User(UserFullName.Text, faculty, UserNameRegistration.Text, PasswordRegistration.Text, EMailReg.Text, PhoneNoReg.Text, StudyProgramReg.Text);
+                DataFetcher.GetInstance().AddUser(user);
+                //DataFetcher.GetInstance().AddUser(UserFullName.Text, faculty, UserNameRegistration.Text, PasswordRegistration.Text, EMailReg.Text, PhoneNoReg.Text, StudyProgramReg.Text);
+                DataFetcher.GetInstance().currentUser = user;
+                return true; 
             } 
         }
 
@@ -1051,6 +1078,5 @@ namespace Vilnius_University_Advisor
                 MainMenu.Show();
             }
         }
-
     }
 }

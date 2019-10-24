@@ -17,6 +17,8 @@ namespace Vilnius_University_Advisor
         private static readonly DataFetcher instance  = new DataFetcher();
         HttpClient client = new HttpClient();
 
+        public User currentUser { get; set; }
+
         private DataFetcher() 
         {
             client.BaseAddress = new Uri("https://localhost:44368/api/");
@@ -59,8 +61,7 @@ namespace Vilnius_University_Advisor
         {
             await client.PostAsJsonAsync("subject/add", subject);
         }
-
-        /*
+        
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram )
         {
             AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
@@ -75,7 +76,6 @@ namespace Vilnius_University_Advisor
         {
             await client.PostAsJsonAsync("user/add", user);
         }
-        */
 
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
@@ -215,7 +215,7 @@ namespace Vilnius_University_Advisor
             return lecturers;
         }
 
-        /*
+        
         public IEnumerable<User> GetAllUsers()
         {
             return GetAllUsersAsync().Result;
@@ -229,7 +229,7 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
             return users;
         }
-        */
+        
 
     }
 }

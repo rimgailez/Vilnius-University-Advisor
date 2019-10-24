@@ -16,7 +16,6 @@ namespace VUA_api
         public UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
         public List<User> users = new List<User>();
 
-
         public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 
         private DataMaster() 
@@ -28,11 +27,11 @@ namespace VUA_api
             return instance;
         }
         
-        public void ReadData()
+        public void ReadData() 
         {
             lecturers.SetListOfUniversityEntities(jsonReaderWriter.ReadLecturers());
             subjects.SetListOfUniversityEntities(jsonReaderWriter.ReadSubjects());
-            //users = jsonReaderWriter.ReadUsers();
+            users = jsonReaderWriter.ReadUsers();
         } 
 
         public void WriteData()
@@ -41,8 +40,8 @@ namespace VUA_api
             jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
             subjects.Sort();
             jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
-           // users.Sort();
-           // jsonReaderWriter.WriteUsers(users);
+            users.Sort();
+            jsonReaderWriter.WriteUsers(users);
         }
 
         public void AddLecturer(string name, Faculty faculty)
@@ -79,7 +78,7 @@ namespace VUA_api
             subjects.AddEntityWithoutWriting(subject);
         }
 
-        /*
+        
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
@@ -95,7 +94,6 @@ namespace VUA_api
         {
             if (!users.Contains(user)) users.Add(user);
         }
-        */
 
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {

@@ -3212,7 +3212,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "Deivydas Linkevičius",
+        "username": "liepaite",
         "score": 4,
         "text": "Subrantamai dėsto, tik šiek tiek nuobodokai.",
         "date": "2019-10-16"
@@ -5046,7 +5046,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "Jonas Jonaitis",
+        "username": "liepaite",
         "score": 1,
         "text": "Griežta, reikli.",
         "date": "2019-10-20"
@@ -10373,7 +10373,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "Romas Kaciukevičius",
+        "username": "liepaite",
         "score": 1,
         "text": "Labai neįdomiai aiškina.",
         "date": "2019-10-16"
@@ -12704,7 +12704,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "Romas Guokis",
+        "username": "liepaite",
         "score": 5,
         "text": "Nuostabus dėstytojas, labai įdomiai pasakoja.",
         "date": "2019-10-20"
@@ -14209,13 +14209,13 @@
     "numberOfReviews": 2,
     "reviews": [
       {
-        "username": "Deivydas Svolkinas",
+        "username": "liepaite",
         "score": 5,
         "text": "Labai patiko, nors ir nesupratau, kas vyksta.",
         "date": "2019-10-16"
       },
       {
-        "username": "Simas Fetingis",
+        "username": "liepaite",
         "score": 4,
         "text": "Įdomus dėstytojas, bet dažnai nukrypsta nuo temos.",
         "date": "2019-10-16"

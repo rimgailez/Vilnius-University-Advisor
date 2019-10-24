@@ -1366,6 +1366,7 @@
             this.LectUsernameTxtBox.Location = new System.Drawing.Point(410, 190);
             this.LectUsernameTxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LectUsernameTxtBox.Name = "LectUsernameTxtBox";
+            this.LectUsernameTxtBox.ReadOnly = true;
             this.LectUsernameTxtBox.Size = new System.Drawing.Size(552, 26);
             this.LectUsernameTxtBox.TabIndex = 16;
             // 
@@ -1627,6 +1628,7 @@
             this.SubjUsernameTxtBox.Location = new System.Drawing.Point(490, 175);
             this.SubjUsernameTxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SubjUsernameTxtBox.Name = "SubjUsernameTxtBox";
+            this.SubjUsernameTxtBox.ReadOnly = true;
             this.SubjUsernameTxtBox.Size = new System.Drawing.Size(451, 26);
             this.SubjUsernameTxtBox.TabIndex = 21;
             // 
@@ -2679,15 +2681,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 438);
-            this.Controls.Add(this.Registration);
-            this.Controls.Add(this.LogIn);
             this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.InitialWindow);
+            this.Controls.Add(this.EvaluateSubjects);
             this.Controls.Add(this.EvaluateLecturer);
+            this.Controls.Add(this.LogIn);
+            this.Controls.Add(this.Registration);
+            this.Controls.Add(this.InitialWindow);
             this.Controls.Add(this.SingleLecturer);
             this.Controls.Add(this.TOPLecturersAndSubjects);
             this.Controls.Add(this.SingleSubject);
-            this.Controls.Add(this.EvaluateSubjects);
             this.Controls.Add(this.ScraperPanel);
             this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.AllLecturers);
