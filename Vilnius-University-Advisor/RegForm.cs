@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,6 +13,11 @@ namespace Vilnius_University_Advisor
 {
     public partial class RegForm : Form
     {
+        static ValidationMsgPrinter validPrintObj = ValidationMsgPrinter.GetInstance();
+        public delegate void Del(string message, string caption);
+        public Del simpleMsg = validPrintObj.PrintOnlyMessage;
+        public Del warningMsg = validPrintObj.PrintWarningMessage;
+
         public RegForm()
         {
             InitializeComponent();
@@ -376,6 +382,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateLecturer.Show();
+            LectUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
         }
 
         public void SetColumnsWidthForLecturers()
@@ -552,6 +559,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateSubjects.Show();
+            SubjUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
         }
 
         private void SelectFacultySubj_SelectedIndexChanged(object sender, EventArgs e)
@@ -593,7 +601,7 @@ namespace Vilnius_University_Advisor
         {
             if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals("") || LectUsernameTxtBox.Text.Equals(""))
             {
-                MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
+                warningMsg(MainResources.FillInAllFields, MainResources.BlankFields);
                 return false;
             }
             else
@@ -617,7 +625,7 @@ namespace Vilnius_University_Advisor
         {
             if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals("") || SubjUsernameTxtBox.Text.Equals(""))
             {
-                MessageBox.Show(MainResources.FillInAllFields, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
+                warningMsg(MainResources.FillInAllFields, MainResources.BlankFields);
                 return false;
             }
             else
@@ -877,7 +885,7 @@ namespace Vilnius_University_Advisor
             }
             else
             {
-                MessageBox.Show(MainResources.SelectFaculty, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
+                warningMsg(MainResources.SelectFaculty, MainResources.BlankFields);
             }
         }
 
@@ -892,7 +900,7 @@ namespace Vilnius_University_Advisor
             }
             else
             {
-                MessageBox.Show(MainResources.SelectFaculty, MainResources.BlankFields, 0, MessageBoxIcon.Exclamation);
+                warningMsg(MainResources.SelectFaculty, MainResources.BlankFields);
             }
         }
 
@@ -927,6 +935,146 @@ namespace Vilnius_University_Advisor
         {
             TOPLecturersAndSubjects.Hide();
             MainMenu.Show();
+        }
+
+        private void LogInButtonInitWindow_Click(object sender, EventArgs e)
+        {
+            InitialWindow.Hide();
+            LogIn.Show();
+        }
+
+        private void RegistrationButtonInitWindow_Click(object sender, EventArgs e)
+        {
+            InitialWindow.Hide();
+            Registration.Show();
+        }
+
+        private void BackToInitWindowButtonR_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show(MainResources.CancelRegistration, MainResources.CancelRegCaption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                ClearRegistrationFields();
+                Registration.Hide();
+                InitialWindow.Show();
+            }
+        }
+
+        private void BackToInitialWindowButtonLI_Click(object sender, EventArgs e)
+        {
+            ClearLogInFields();
+            LogIn.Hide();
+            InitialWindow.Show();
+        }
+
+        private void LogInButton_Click(object sender, EventArgs e)
+        {
+            if (LogInWithValidations())
+            {
+                ClearLogInFields();
+                simpleMsg(MainResources.SuccessfulLogIn, MainResources.LogInCaption);
+                LogIn.Hide();
+                MainMenu.Show();
+            }
+        }
+
+        private void ClearLogInFields()
+        {
+            UserNameLogIn.Text = "";
+            PasswordLogIn.Text = "";
+        }
+
+        private void ClearRegistrationFields()
+        {
+            UserFullName.Text = "";
+            SelectFacultyUser.Text = "";
+            UserNameRegistration.Text = "";
+            PasswordRegistration.Text = "";
+            RepeatPasswordReg.Text = "";
+            StudyProgramReg.Text = "";
+            EMailReg.Text = "";
+            PhoneNoReg.Text = "";
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            MainMenu.Hide();
+            InitialWindow.Show();
+        }
+
+        private Boolean LogInWithValidations()
+        {
+            if (UserNameLogIn.Text.Equals("") || PasswordLogIn.Text.Equals(""))
+            {
+                warningMsg(MainResources.BlankLogInFields, MainResources.BlankFields);
+                return false;
+            }
+            else if (!DataFetcher.GetInstance().CheckIfUserNameExists(UserNameLogIn.Text))
+            {
+                warningMsg(MainResources.UserNotFound, MainResources.UserNotFoundCaption);
+                UserNameLogIn.Text = "";
+                PasswordLogIn.Text = ""; 
+                return false;
+            }
+            else if(!DataFetcher.GetInstance().CheckIfCorrectPassword(UserNameLogIn.Text, PasswordLogIn.Text))
+            {
+                warningMsg(MainResources.WrongPassword, MainResources.WrongPasswordCaption);
+                PasswordLogIn.Text = "";
+                return false;
+            }
+            else
+            {
+                DataFetcher.GetInstance().SetCurrentUser(DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(UserNameLogIn.Text)));
+                return true; 
+            }
+        }
+
+        private Boolean RegisterWithValidations()
+        {
+            if (UserFullName.Text.Equals("") || SelectFacultyUser.Text.Equals("") || UserNameRegistration.Text.Equals("") ||
+                PasswordRegistration.Text.Equals("") || RepeatPasswordReg.Text.Equals("") || StudyProgramReg.Text.Equals("") ||
+                EMailReg.Text.Equals("") || PhoneNoReg.Text.Equals(""))
+            {
+                warningMsg(MainResources.FillInAllFields, MainResources.BlankFields);
+                return false;
+            }
+            else if (!Regex.IsMatch(PhoneNoReg.Text, @"^[+3706]\d{7}?"))
+            {
+                warningMsg(MainResources.WrongPhoneNo, MainResources.WrongData);
+                return false;
+            }
+            else if (!PasswordRegistration.Text.Equals(RepeatPasswordReg.Text))
+            {
+                warningMsg(MainResources.PasswordsDoNotMatch, MainResources.RepeatPassword);
+                PasswordRegistration.Text = "";
+                RepeatPasswordReg.Text = "";
+                return false;
+            }
+            else if(DataFetcher.GetInstance().CheckIfUserNameExists(UserNameRegistration.Text))
+            {
+                warningMsg(MainResources.UserAlreadyExists, MainResources.UserNameExistsCaption);
+                return false;
+            }
+            else
+            {
+                Faculty faculty = (Faculty)SelectFacultyUser.SelectedIndex;
+                User user = new User(UserFullName.Text, faculty, UserNameRegistration.Text, PasswordRegistration.Text, EMailReg.Text, PhoneNoReg.Text, StudyProgramReg.Text);
+                DataFetcher.GetInstance().AddUser(user);
+                DataFetcher.GetInstance().SetCurrentUser(user);
+                return true; 
+            } 
+        }
+
+        private void RegistrationButton_Click(object sender, EventArgs e)
+        {
+            if (RegisterWithValidations())
+            {
+                ClearRegistrationFields();
+                simpleMsg(MainResources.RegistrationSuccessful, MainResources.RegistrationCaption);
+                Registration.Hide();
+                MainMenu.Show();
+            }
         }
     }
 }

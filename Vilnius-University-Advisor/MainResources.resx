@@ -120,8 +120,17 @@
   <data name="BlankFields" xml:space="preserve">
     <value>Neužpildyti laukai</value>
   </data>
+  <data name="BlankLogInFields" xml:space="preserve">
+    <value>Neįvesti prisijungimo duomenys.</value>
+  </data>
   <data name="BUS" xml:space="preserve">
     <value>Dalykas yra BUS</value>
+  </data>
+  <data name="CancelRegCaption" xml:space="preserve">
+    <value>Atšaukti registraciją</value>
+  </data>
+  <data name="CancelRegistration" xml:space="preserve">
+    <value>Ar tikrai norite atšaukti registraciją? Įvesti duomenys nebus išsaugoti.</value>
   </data>
   <data name="DataNodeComment" xml:space="preserve">
     <value>Paliko komentarą:</value>
@@ -150,6 +159,9 @@
   <data name="LecturerName" xml:space="preserve">
     <value>Dėstytojo vardas: </value>
   </data>
+  <data name="LogInCaption" xml:space="preserve">
+    <value>Prisijungimas</value>
+  </data>
   <data name="Mandatory" xml:space="preserve">
     <value>Dalykas yra privalomasis</value>
   </data>
@@ -161,6 +173,18 @@
   </data>
   <data name="Optional" xml:space="preserve">
     <value>Dalykas yra pasirenkamasis</value>
+  </data>
+  <data name="PasswordsDoNotMatch" xml:space="preserve">
+    <value>Įvesti slaptažodžiai nesutampa. Prašome įvesti juos dar kartą.</value>
+  </data>
+  <data name="RegistrationCaption" xml:space="preserve">
+    <value>Registracija</value>
+  </data>
+  <data name="RegistrationSuccessful" xml:space="preserve">
+    <value>Registracija sėkminga.</value>
+  </data>
+  <data name="RepeatPassword" xml:space="preserve">
+    <value>Nesutampa slaptažodžiai</value>
   </data>
   <data name="ReviewDate" xml:space="preserve">
     <value>Data: </value>
@@ -206,5 +230,35 @@
   </data>
   <data name="SubjectName" xml:space="preserve">
     <value>Dalyko pavadinimas: </value>
+  </data>
+  <data name="SuccessfulLogIn" xml:space="preserve">
+    <value>Prisijungta sėkmingai.</value>
+  </data>
+  <data name="UserAlreadyExists" xml:space="preserve">
+    <value>Įvestas prisijungimo vardas jau egzistuoja.</value>
+  </data>
+  <data name="UserNameExistsCaption" xml:space="preserve">
+    <value>Vardas užimtas</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>Neteisingas prisijungimo vardas.</value>
+  </data>
+  <data name="UserNotFoundCaption" xml:space="preserve">
+    <value>Neteisingas vardas</value>
+  </data>
+  <data name="UsersJson" xml:space="preserve">
+    <value>users.json</value>
+  </data>
+  <data name="WrongData" xml:space="preserve">
+    <value>Neteisingi duomenys</value>
+  </data>
+  <data name="WrongPassword" xml:space="preserve">
+    <value>Neteisingas slaptažodis. Bandykite dar kartą.</value>
+  </data>
+  <data name="WrongPasswordCaption" xml:space="preserve">
+    <value>Neteisingas slaptažodis</value>
+  </data>
+  <data name="WrongPhoneNo" xml:space="preserve">
+    <value>Neteisingas telefono numeris. Telefono numerio formatas: +3706*******</value>
   </data>
 </root>

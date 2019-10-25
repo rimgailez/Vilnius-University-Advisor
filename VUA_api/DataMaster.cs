@@ -14,6 +14,8 @@ namespace VUA_api
 
         public UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
         public UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
+        public List<User> users = new List<User>();
+        public User currentUser { get; set; }
 
         public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
 
@@ -25,12 +27,13 @@ namespace VUA_api
         {
             return instance;
         }
-
-        public void ReadData()
+        
+        public void ReadData() 
         {
             lecturers.SetListOfUniversityEntities(jsonReaderWriter.ReadLecturers());
             subjects.SetListOfUniversityEntities(jsonReaderWriter.ReadSubjects());
-        }
+            users = jsonReaderWriter.ReadUsers();
+        } 
 
         public void WriteData()
         {
@@ -38,6 +41,8 @@ namespace VUA_api
             jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
             subjects.Sort();
             jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
+            users.Sort();
+            jsonReaderWriter.WriteUsers(users);
         }
 
         public void AddLecturer(string name, Faculty faculty)
@@ -72,6 +77,23 @@ namespace VUA_api
         public void AddSubjectWithoutWriting(Subject subject)
         {
             subjects.AddEntityWithoutWriting(subject);
+        }
+
+        
+        public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
+        {
+            AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
+        }
+
+        public void AddUser(User userNew)
+        {
+            AddUserWithoutWriting(userNew);
+            users.Sort();
+            WriteData();
+        }
+        public void AddUserWithoutWriting(User user)
+        {
+            if (!users.Contains(user)) users.Add(user);
         }
 
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
@@ -145,6 +167,27 @@ namespace VUA_api
         {
             return subjects.Where(subject => subject.isBUS).OrderByDescending(subject => subject.score).ToList().GetRange(0, 5);
         }
+
+        public Boolean CheckIfUserNameExists(string username)
+        {
+            return users.Exists(us => us.userName.Equals(username));
+        }
+
+        public Boolean CheckIfCorrectPassword(string userName, string password)
+        {
+            return users.Find(us => us.userName.Equals(userName)).password.Equals(password);
+        }
+
+        public User GetCurrentUser()
+        {
+            return currentUser;
+        }
+
+        public void SetCurrentUser(User user)
+        {
+            currentUser = user;
+        }
+
 
     }
 }
