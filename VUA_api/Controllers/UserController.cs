@@ -43,7 +43,7 @@ namespace VUA_api.Controllers
        {
             return dataMaster.CheckIfCorrectPassword(userName, password);
        }
-/*
+
        [HttpGet("getUser")]
        public User GetUser()
        {
@@ -51,10 +51,9 @@ namespace VUA_api.Controllers
        }
 
        [HttpPost("setUser")]
-       public void SetUser([FromBody]JObject data)
+       public void SetUser([FromBody]User user)
        {
-            User userNew = data["currentUser"].ToObject<User>();
-            dataMaster.SetCurrentUser(userNew);
-       }*/
+            dataMaster.SetCurrentUser(user);
+       }
     }
 }

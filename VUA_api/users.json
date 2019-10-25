@@ -36,6 +36,15 @@
     "phoneNumber": "+37064455588"
   },
   {
+    "name": "Jonas Petraitis",
+    "userFaculty": 6,
+    "userName": "jonas.p",
+    "password": "jonukas",
+    "studyProgram": "Istorijos mokslas",
+    "eMail": "jonas@gmail.com",
+    "phoneNumber": "+37061055566"
+  },
+  {
     "name": "Liepa Liepaite",
     "userFaculty": 3,
     "userName": "liepaite",

@@ -382,8 +382,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateLecturer.Show();
-            // LectUsernameTxtBox.Text = DataFetcher.GetInstance().currentUser.userName;
-          //  LectUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
+            LectUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
         }
 
         public void SetColumnsWidthForLecturers()
@@ -560,8 +559,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateSubjects.Show();
-            // SubjUsernameTxtBox.Text = DataFetcher.GetInstance().currentUser.userName;
-            //SubjUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
+            SubjUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
         }
 
         private void SelectFacultySubj_SelectedIndexChanged(object sender, EventArgs e)
@@ -1027,9 +1025,7 @@ namespace Vilnius_University_Advisor
             }
             else
             {
-               // DataFetcher.GetInstance().SetCurrentUser(DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(UserNameLogIn.Text)));
-               
-                // DataFetcher.GetInstance().currentUser = DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(UserNameLogIn.Text));
+                DataFetcher.GetInstance().SetCurrentUser(DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(UserNameLogIn.Text)));
                 return true; 
             }
         }
@@ -1065,10 +1061,7 @@ namespace Vilnius_University_Advisor
                 Faculty faculty = (Faculty)SelectFacultyUser.SelectedIndex;
                 User user = new User(UserFullName.Text, faculty, UserNameRegistration.Text, PasswordRegistration.Text, EMailReg.Text, PhoneNoReg.Text, StudyProgramReg.Text);
                 DataFetcher.GetInstance().AddUser(user);
-                //DataFetcher.GetInstance().AddUser(UserFullName.Text, faculty, UserNameRegistration.Text, PasswordRegistration.Text, EMailReg.Text, PhoneNoReg.Text, StudyProgramReg.Text);
-                //DataFetcher.GetInstance().currentUser = user;
-
-               // DataFetcher.GetInstance().SetCurrentUser(user);
+                DataFetcher.GetInstance().SetCurrentUser(user);
                 return true; 
             } 
         }

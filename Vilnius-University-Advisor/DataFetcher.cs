@@ -253,24 +253,24 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) result = await response.Content.ReadAsAsync<Boolean>();
             return result;
         }
-        /*
-                public User GetCurrentUser()
-                {
-                    return GetCurrentUserAsync().Result;
-                }
+        
+        public User GetCurrentUser()
+        {
+            return GetCurrentUserAsync().Result;
+         }
 
-                public async Task<User> GetCurrentUserAsync()
-                {
-                    User curUser = null;
-                    HttpResponseMessage response = await client.GetAsync("user/getUser/").ConfigureAwait(false);
-                    if (response.IsSuccessStatusCode) curUser = await response.Content.ReadAsAsync<User>();
-                    return curUser;
-                }
+        public async Task<User> GetCurrentUserAsync()
+        {
+        User curUser = null;
+        HttpResponseMessage response = await client.GetAsync("user/getUser/").ConfigureAwait(false);
+        if (response.IsSuccessStatusCode) curUser = await response.Content.ReadAsAsync<User>();
+            return curUser;
+        }
 
-                public async void SetCurrentUser(User user)
-                {
-                    await client.PostAsJsonAsync("user/setUser", user);
-                }
-                */
+        public async void SetCurrentUser(User user)
+        {
+            await client.PostAsJsonAsync("user/setUser", user);
+        }
+                
     }
 }
