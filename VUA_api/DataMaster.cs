@@ -37,10 +37,23 @@ namespace VUA_api
 
         public void WriteData()
         {
+            WriteLecturers();
+            WriteSubjects();
+        }
+        public void WriteLecturers()
+        {
             lecturers.Sort();
             jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
+        }
+
+        public void WriteSubjects()
+        {
             subjects.Sort();
             jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
+        }
+
+        public void WriteUsers()
+        {
             users.Sort();
             jsonReaderWriter.WriteUsers(users);
         }
@@ -53,8 +66,7 @@ namespace VUA_api
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
-            lecturers.Sort();
-            WriteData();
+            WriteLecturers();
         }
 
         public void AddLecturerWithoutWriting(Lecturer lecturer)
@@ -70,8 +82,7 @@ namespace VUA_api
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
-            subjects.Sort();
-            WriteData();
+            WriteSubjects();
         }
 
         public void AddSubjectWithoutWriting(Subject subject)
@@ -88,8 +99,7 @@ namespace VUA_api
         public void AddUser(User userNew)
         {
             AddUserWithoutWriting(userNew);
-            users.Sort();
-            WriteData();
+            WriteUsers();
         }
         public void AddUserWithoutWriting(User user)
         {
@@ -188,6 +198,32 @@ namespace VUA_api
             currentUser = user;
         }
 
+        public void AddToUserHistory(string activity)
+        {
+            foreach (User user in users)
+            {
+                if (user.Equals(currentUser))
+                {
+                    user.userHistory.Add(new Activity(activity));
+                    currentUser = user;
+                    break;
+                }
+            }
+            WriteUsers();
+        }
+
+        public List<Activity> GetUserActivityHistory()
+        {
+            foreach (User user in users)
+            {
+                if (user.Equals(currentUser))
+                {
+                    currentUser = user;
+                    break;
+                }
+            }
+            return currentUser.userHistory;
+        }
 
     }
 }

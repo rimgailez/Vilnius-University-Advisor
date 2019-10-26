@@ -55,5 +55,17 @@ namespace VUA_api.Controllers
        {
             dataMaster.SetCurrentUser(user);
        }
+
+       [HttpPost("addHistory")]
+       public void AddHistory([FromBody]string activityComment)
+       {
+            dataMaster.AddToUserHistory(activityComment);
+       }
+
+       [HttpGet("getHistory")]
+       public List<Activity> GetActivityHistory()
+       {
+           return dataMaster.GetUserActivityHistory();
+       }
     }
 }

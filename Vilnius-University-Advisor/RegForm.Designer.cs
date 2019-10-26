@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.MainMenu = new System.Windows.Forms.Panel();
+            this.ActivityHistory = new System.Windows.Forms.Button();
             this.LogOutButton = new System.Windows.Forms.Button();
             this.TOP = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -208,6 +209,7 @@
             this.PasswordLogIn = new System.Windows.Forms.TextBox();
             this.LogInButton = new System.Windows.Forms.Button();
             this.InitialWindow = new System.Windows.Forms.Panel();
+            this.LogInAsGuest = new System.Windows.Forms.Button();
             this.ProgramNameLabelInitWindow = new System.Windows.Forms.Label();
             this.LogInButtonInitWindow = new System.Windows.Forms.Button();
             this.RegistrationButtonInitWindow = new System.Windows.Forms.Button();
@@ -233,6 +235,15 @@
             this.UserNameSurnameLabel = new System.Windows.Forms.Label();
             this.UserFullName = new System.Windows.Forms.TextBox();
             this.VULogoRegistration = new System.Windows.Forms.PictureBox();
+            this.ActivityWindow = new System.Windows.Forms.Panel();
+            this.Return3 = new System.Windows.Forms.Button();
+            this.History = new System.Windows.Forms.TextBox();
+            this.UserHistory = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.temaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rausvaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.melsvaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.numatytojiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LecturerPanel.SuspendLayout();
@@ -276,10 +287,13 @@
             this.Registration.SuspendLayout();
             this.RegistrationGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VULogoRegistration)).BeginInit();
+            this.ActivityWindow.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenu
             // 
+            this.MainMenu.Controls.Add(this.ActivityHistory);
             this.MainMenu.Controls.Add(this.LogOutButton);
             this.MainMenu.Controls.Add(this.TOP);
             this.MainMenu.Controls.Add(this.pictureBox1);
@@ -296,13 +310,24 @@
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(1188, 438);
+            this.MainMenu.Size = new System.Drawing.Size(1188, 472);
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Visible = false;
             // 
+            // ActivityHistory
+            // 
+            this.ActivityHistory.Location = new System.Drawing.Point(322, 47);
+            this.ActivityHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ActivityHistory.Name = "ActivityHistory";
+            this.ActivityHistory.Size = new System.Drawing.Size(250, 80);
+            this.ActivityHistory.TabIndex = 13;
+            this.ActivityHistory.Text = "Rodyti veiklos istoriją";
+            this.ActivityHistory.UseVisualStyleBackColor = true;
+            this.ActivityHistory.Click += new System.EventHandler(this.ActivityHistory_Click);
+            // 
             // LogOutButton
             // 
-            this.LogOutButton.Location = new System.Drawing.Point(1055, 13);
+            this.LogOutButton.Location = new System.Drawing.Point(1048, 377);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(116, 39);
             this.LogOutButton.TabIndex = 12;
@@ -312,7 +337,7 @@
             // 
             // TOP
             // 
-            this.TOP.Location = new System.Drawing.Point(322, 24);
+            this.TOP.Location = new System.Drawing.Point(865, 252);
             this.TOP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TOP.Name = "TOP";
             this.TOP.Size = new System.Drawing.Size(250, 80);
@@ -324,7 +349,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Vilnius_University_Advisor.Properties.Resources.VUlogo;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 54);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(273, 280);
@@ -333,7 +358,7 @@
             // 
             // OneLecturer
             // 
-            this.OneLecturer.Location = new System.Drawing.Point(322, 333);
+            this.OneLecturer.Location = new System.Drawing.Point(595, 252);
             this.OneLecturer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OneLecturer.Name = "OneLecturer";
             this.OneLecturer.Size = new System.Drawing.Size(250, 80);
@@ -344,7 +369,7 @@
             // 
             // OneSubject
             // 
-            this.OneSubject.Location = new System.Drawing.Point(322, 230);
+            this.OneSubject.Location = new System.Drawing.Point(322, 252);
             this.OneSubject.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OneSubject.Name = "OneSubject";
             this.OneSubject.Size = new System.Drawing.Size(250, 80);
@@ -355,7 +380,7 @@
             // 
             // RunScraper
             // 
-            this.RunScraper.Location = new System.Drawing.Point(50, 333);
+            this.RunScraper.Location = new System.Drawing.Point(50, 353);
             this.RunScraper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RunScraper.Name = "RunScraper";
             this.RunScraper.Size = new System.Drawing.Size(250, 80);
@@ -366,7 +391,7 @@
             // 
             // ReviewLecturer
             // 
-            this.ReviewLecturer.Location = new System.Drawing.Point(865, 230);
+            this.ReviewLecturer.Location = new System.Drawing.Point(865, 45);
             this.ReviewLecturer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReviewLecturer.Name = "ReviewLecturer";
             this.ReviewLecturer.Size = new System.Drawing.Size(250, 80);
@@ -377,7 +402,7 @@
             // 
             // ReviewSubject
             // 
-            this.ReviewSubject.Location = new System.Drawing.Point(595, 230);
+            this.ReviewSubject.Location = new System.Drawing.Point(595, 46);
             this.ReviewSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReviewSubject.Name = "ReviewSubject";
             this.ReviewSubject.Size = new System.Drawing.Size(250, 80);
@@ -388,7 +413,7 @@
             // 
             // ListSubj
             // 
-            this.ListSubj.Location = new System.Drawing.Point(322, 127);
+            this.ListSubj.Location = new System.Drawing.Point(322, 149);
             this.ListSubj.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ListSubj.Name = "ListSubj";
             this.ListSubj.Size = new System.Drawing.Size(250, 80);
@@ -399,7 +424,7 @@
             // 
             // ListSubj1
             // 
-            this.ListSubj1.Location = new System.Drawing.Point(595, 127);
+            this.ListSubj1.Location = new System.Drawing.Point(595, 149);
             this.ListSubj1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ListSubj1.Name = "ListSubj1";
             this.ListSubj1.Size = new System.Drawing.Size(250, 80);
@@ -410,7 +435,7 @@
             // 
             // ListLect
             // 
-            this.ListLect.Location = new System.Drawing.Point(865, 127);
+            this.ListLect.Location = new System.Drawing.Point(865, 149);
             this.ListLect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ListLect.Name = "ListLect";
             this.ListLect.Size = new System.Drawing.Size(250, 80);
@@ -421,7 +446,7 @@
             // 
             // SubjReg
             // 
-            this.SubjReg.Location = new System.Drawing.Point(595, 333);
+            this.SubjReg.Location = new System.Drawing.Point(322, 354);
             this.SubjReg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SubjReg.Name = "SubjReg";
             this.SubjReg.Size = new System.Drawing.Size(250, 80);
@@ -432,7 +457,7 @@
             // 
             // LecReg
             // 
-            this.LecReg.Location = new System.Drawing.Point(865, 333);
+            this.LecReg.Location = new System.Drawing.Point(595, 356);
             this.LecReg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LecReg.Name = "LecReg";
             this.LecReg.Size = new System.Drawing.Size(250, 80);
@@ -453,7 +478,7 @@
             this.LecturerPanel.Location = new System.Drawing.Point(0, 0);
             this.LecturerPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LecturerPanel.Name = "LecturerPanel";
-            this.LecturerPanel.Size = new System.Drawing.Size(1188, 435);
+            this.LecturerPanel.Size = new System.Drawing.Size(1188, 472);
             this.LecturerPanel.TabIndex = 3;
             this.LecturerPanel.Visible = false;
             // 
@@ -470,7 +495,7 @@
             // 
             // NameTextBoxLect
             // 
-            this.NameTextBoxLect.Location = new System.Drawing.Point(71, 50);
+            this.NameTextBoxLect.Location = new System.Drawing.Point(71, 68);
             this.NameTextBoxLect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NameTextBoxLect.Name = "NameTextBoxLect";
             this.NameTextBoxLect.Size = new System.Drawing.Size(636, 26);
@@ -479,7 +504,7 @@
             // NameLabelLect
             // 
             this.NameLabelLect.AutoSize = true;
-            this.NameLabelLect.Location = new System.Drawing.Point(68, 25);
+            this.NameLabelLect.Location = new System.Drawing.Point(68, 44);
             this.NameLabelLect.Name = "NameLabelLect";
             this.NameLabelLect.Size = new System.Drawing.Size(126, 20);
             this.NameLabelLect.TabIndex = 4;
@@ -555,7 +580,7 @@
             this.SubjectPanel.Location = new System.Drawing.Point(0, 0);
             this.SubjectPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SubjectPanel.Name = "SubjectPanel";
-            this.SubjectPanel.Size = new System.Drawing.Size(1188, 435);
+            this.SubjectPanel.Size = new System.Drawing.Size(1188, 472);
             this.SubjectPanel.TabIndex = 10;
             this.SubjectPanel.Visible = false;
             // 
@@ -699,14 +724,14 @@
             this.AllLecturers.Location = new System.Drawing.Point(0, 0);
             this.AllLecturers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AllLecturers.Name = "AllLecturers";
-            this.AllLecturers.Size = new System.Drawing.Size(1188, 435);
+            this.AllLecturers.Size = new System.Drawing.Size(1188, 472);
             this.AllLecturers.TabIndex = 3;
             this.AllLecturers.Visible = false;
             // 
             // ListLectLabel
             // 
             this.ListLectLabel.AutoSize = true;
-            this.ListLectLabel.Location = new System.Drawing.Point(3, 11);
+            this.ListLectLabel.Location = new System.Drawing.Point(3, 37);
             this.ListLectLabel.Name = "ListLectLabel";
             this.ListLectLabel.Size = new System.Drawing.Size(83, 20);
             this.ListLectLabel.TabIndex = 3;
@@ -718,18 +743,18 @@
             this.ListLectTable.AllowUserToDeleteRows = false;
             this.ListLectTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ListLectTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ListLectTable.Location = new System.Drawing.Point(3, 35);
+            this.ListLectTable.Location = new System.Drawing.Point(3, 64);
             this.ListLectTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ListLectTable.Name = "ListLectTable";
             this.ListLectTable.ReadOnly = true;
             this.ListLectTable.RowHeadersWidth = 51;
             this.ListLectTable.RowTemplate.Height = 24;
-            this.ListLectTable.Size = new System.Drawing.Size(1185, 342);
+            this.ListLectTable.Size = new System.Drawing.Size(1185, 353);
             this.ListLectTable.TabIndex = 1;
             // 
             // ListLectBack
             // 
-            this.ListLectBack.Location = new System.Drawing.Point(539, 385);
+            this.ListLectBack.Location = new System.Drawing.Point(539, 425);
             this.ListLectBack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ListLectBack.Name = "ListLectBack";
             this.ListLectBack.Size = new System.Drawing.Size(135, 38);
@@ -741,7 +766,7 @@
             // ListSubjLabel
             // 
             this.ListSubjLabel.AutoSize = true;
-            this.ListSubjLabel.Location = new System.Drawing.Point(3, 11);
+            this.ListSubjLabel.Location = new System.Drawing.Point(3, 46);
             this.ListSubjLabel.Name = "ListSubjLabel";
             this.ListSubjLabel.Size = new System.Drawing.Size(64, 20);
             this.ListSubjLabel.TabIndex = 4;
@@ -752,13 +777,13 @@
             this.ListSubjTable.AllowUserToAddRows = false;
             this.ListSubjTable.AllowUserToDeleteRows = false;
             this.ListSubjTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ListSubjTable.Location = new System.Drawing.Point(0, 35);
+            this.ListSubjTable.Location = new System.Drawing.Point(0, 70);
             this.ListSubjTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ListSubjTable.Name = "ListSubjTable";
             this.ListSubjTable.ReadOnly = true;
             this.ListSubjTable.RowHeadersWidth = 51;
             this.ListSubjTable.RowTemplate.Height = 24;
-            this.ListSubjTable.Size = new System.Drawing.Size(1185, 344);
+            this.ListSubjTable.Size = new System.Drawing.Size(1185, 339);
             this.ListSubjTable.TabIndex = 2;
             // 
             // AllSubjects
@@ -769,13 +794,13 @@
             this.AllSubjects.Location = new System.Drawing.Point(0, 0);
             this.AllSubjects.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AllSubjects.Name = "AllSubjects";
-            this.AllSubjects.Size = new System.Drawing.Size(1188, 435);
+            this.AllSubjects.Size = new System.Drawing.Size(1188, 472);
             this.AllSubjects.TabIndex = 4;
             this.AllSubjects.Visible = false;
             // 
             // ListSubjBack
             // 
-            this.ListSubjBack.Location = new System.Drawing.Point(485, 386);
+            this.ListSubjBack.Location = new System.Drawing.Point(486, 417);
             this.ListSubjBack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ListSubjBack.Name = "ListSubjBack";
             this.ListSubjBack.Size = new System.Drawing.Size(235, 45);
@@ -804,14 +829,14 @@
             this.OptionalSubjects.Location = new System.Drawing.Point(0, 0);
             this.OptionalSubjects.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OptionalSubjects.Name = "OptionalSubjects";
-            this.OptionalSubjects.Size = new System.Drawing.Size(1185, 435);
+            this.OptionalSubjects.Size = new System.Drawing.Size(1185, 472);
             this.OptionalSubjects.TabIndex = 5;
             this.OptionalSubjects.TabStop = true;
             this.OptionalSubjects.Visible = false;
             // 
             // VM
             // 
-            this.VM.Location = new System.Drawing.Point(945, 298);
+            this.VM.Location = new System.Drawing.Point(945, 328);
             this.VM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VM.Name = "VM";
             this.VM.Size = new System.Drawing.Size(210, 100);
@@ -822,7 +847,7 @@
             // 
             // TF
             // 
-            this.TF.Location = new System.Drawing.Point(945, 165);
+            this.TF.Location = new System.Drawing.Point(945, 194);
             this.TF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TF.Name = "TF";
             this.TF.Size = new System.Drawing.Size(210, 100);
@@ -833,7 +858,7 @@
             // 
             // TSPMI
             // 
-            this.TSPMI.Location = new System.Drawing.Point(945, 34);
+            this.TSPMI.Location = new System.Drawing.Point(945, 62);
             this.TSPMI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TSPMI.Name = "TSPMI";
             this.TSPMI.Size = new System.Drawing.Size(210, 100);
@@ -844,7 +869,7 @@
             // 
             // MF
             // 
-            this.MF.Location = new System.Drawing.Point(716, 298);
+            this.MF.Location = new System.Drawing.Point(716, 328);
             this.MF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MF.Name = "MF";
             this.MF.Size = new System.Drawing.Size(210, 100);
@@ -855,7 +880,7 @@
             // 
             // MIF
             // 
-            this.MIF.Location = new System.Drawing.Point(716, 165);
+            this.MIF.Location = new System.Drawing.Point(716, 194);
             this.MIF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MIF.Name = "MIF";
             this.MIF.Size = new System.Drawing.Size(210, 100);
@@ -866,7 +891,7 @@
             // 
             // KF
             // 
-            this.KF.Location = new System.Drawing.Point(716, 34);
+            this.KF.Location = new System.Drawing.Point(716, 62);
             this.KF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.KF.Name = "KF";
             this.KF.Size = new System.Drawing.Size(210, 100);
@@ -877,7 +902,7 @@
             // 
             // KNF
             // 
-            this.KNF.Location = new System.Drawing.Point(485, 298);
+            this.KNF.Location = new System.Drawing.Point(485, 328);
             this.KNF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.KNF.Name = "KNF";
             this.KNF.Size = new System.Drawing.Size(210, 100);
@@ -888,7 +913,7 @@
             // 
             // IF
             // 
-            this.IF.Location = new System.Drawing.Point(485, 165);
+            this.IF.Location = new System.Drawing.Point(485, 194);
             this.IF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IF.Name = "IF";
             this.IF.Size = new System.Drawing.Size(210, 100);
@@ -899,7 +924,7 @@
             // 
             // GMC
             // 
-            this.GMC.Location = new System.Drawing.Point(485, 34);
+            this.GMC.Location = new System.Drawing.Point(485, 62);
             this.GMC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GMC.Name = "GMC";
             this.GMC.Size = new System.Drawing.Size(210, 100);
@@ -910,7 +935,7 @@
             // 
             // FF
             // 
-            this.FF.Location = new System.Drawing.Point(255, 298);
+            this.FF.Location = new System.Drawing.Point(255, 328);
             this.FF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FF.Name = "FF";
             this.FF.Size = new System.Drawing.Size(210, 100);
@@ -921,7 +946,7 @@
             // 
             // FSF
             // 
-            this.FSF.Location = new System.Drawing.Point(255, 165);
+            this.FSF.Location = new System.Drawing.Point(255, 194);
             this.FSF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FSF.Name = "FSF";
             this.FSF.Size = new System.Drawing.Size(210, 100);
@@ -932,7 +957,7 @@
             // 
             // FLF
             // 
-            this.FLF.Location = new System.Drawing.Point(255, 34);
+            this.FLF.Location = new System.Drawing.Point(255, 62);
             this.FLF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FLF.Name = "FLF";
             this.FLF.Size = new System.Drawing.Size(210, 100);
@@ -943,7 +968,7 @@
             // 
             // EVAF
             // 
-            this.EVAF.Location = new System.Drawing.Point(25, 298);
+            this.EVAF.Location = new System.Drawing.Point(25, 328);
             this.EVAF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EVAF.Name = "EVAF";
             this.EVAF.Size = new System.Drawing.Size(210, 100);
@@ -954,7 +979,7 @@
             // 
             // CHGF
             // 
-            this.CHGF.Location = new System.Drawing.Point(25, 165);
+            this.CHGF.Location = new System.Drawing.Point(25, 194);
             this.CHGF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CHGF.Name = "CHGF";
             this.CHGF.Size = new System.Drawing.Size(210, 100);
@@ -965,7 +990,7 @@
             // 
             // BUS
             // 
-            this.BUS.Location = new System.Drawing.Point(25, 34);
+            this.BUS.Location = new System.Drawing.Point(25, 62);
             this.BUS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BUS.Name = "BUS";
             this.BUS.Size = new System.Drawing.Size(210, 100);
@@ -993,13 +1018,13 @@
             this.LecturersByFaculty.Location = new System.Drawing.Point(0, 0);
             this.LecturersByFaculty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LecturersByFaculty.Name = "LecturersByFaculty";
-            this.LecturersByFaculty.Size = new System.Drawing.Size(1185, 435);
+            this.LecturersByFaculty.Size = new System.Drawing.Size(1185, 470);
             this.LecturersByFaculty.TabIndex = 5;
             this.LecturersByFaculty.Visible = false;
             // 
             // VM2
             // 
-            this.VM2.Location = new System.Drawing.Point(945, 165);
+            this.VM2.Location = new System.Drawing.Point(948, 194);
             this.VM2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VM2.Name = "VM2";
             this.VM2.Size = new System.Drawing.Size(210, 100);
@@ -1010,7 +1035,7 @@
             // 
             // TF2
             // 
-            this.TF2.Location = new System.Drawing.Point(945, 36);
+            this.TF2.Location = new System.Drawing.Point(945, 61);
             this.TF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TF2.Name = "TF2";
             this.TF2.Size = new System.Drawing.Size(210, 100);
@@ -1021,7 +1046,7 @@
             // 
             // TSPMI2
             // 
-            this.TSPMI2.Location = new System.Drawing.Point(716, 298);
+            this.TSPMI2.Location = new System.Drawing.Point(716, 326);
             this.TSPMI2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TSPMI2.Name = "TSPMI2";
             this.TSPMI2.Size = new System.Drawing.Size(210, 100);
@@ -1032,7 +1057,7 @@
             // 
             // MF2
             // 
-            this.MF2.Location = new System.Drawing.Point(716, 165);
+            this.MF2.Location = new System.Drawing.Point(716, 194);
             this.MF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MF2.Name = "MF2";
             this.MF2.Size = new System.Drawing.Size(210, 100);
@@ -1043,7 +1068,7 @@
             // 
             // MIF2
             // 
-            this.MIF2.Location = new System.Drawing.Point(716, 36);
+            this.MIF2.Location = new System.Drawing.Point(716, 61);
             this.MIF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MIF2.Name = "MIF2";
             this.MIF2.Size = new System.Drawing.Size(210, 100);
@@ -1054,7 +1079,7 @@
             // 
             // KF2
             // 
-            this.KF2.Location = new System.Drawing.Point(485, 298);
+            this.KF2.Location = new System.Drawing.Point(485, 326);
             this.KF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.KF2.Name = "KF2";
             this.KF2.Size = new System.Drawing.Size(210, 100);
@@ -1065,7 +1090,7 @@
             // 
             // KNF2
             // 
-            this.KNF2.Location = new System.Drawing.Point(485, 165);
+            this.KNF2.Location = new System.Drawing.Point(485, 194);
             this.KNF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.KNF2.Name = "KNF2";
             this.KNF2.Size = new System.Drawing.Size(210, 100);
@@ -1076,7 +1101,7 @@
             // 
             // IF2
             // 
-            this.IF2.Location = new System.Drawing.Point(485, 34);
+            this.IF2.Location = new System.Drawing.Point(485, 61);
             this.IF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IF2.Name = "IF2";
             this.IF2.Size = new System.Drawing.Size(210, 100);
@@ -1087,7 +1112,7 @@
             // 
             // GMC2
             // 
-            this.GMC2.Location = new System.Drawing.Point(255, 298);
+            this.GMC2.Location = new System.Drawing.Point(259, 326);
             this.GMC2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GMC2.Name = "GMC2";
             this.GMC2.Size = new System.Drawing.Size(210, 100);
@@ -1098,7 +1123,7 @@
             // 
             // FF2
             // 
-            this.FF2.Location = new System.Drawing.Point(255, 165);
+            this.FF2.Location = new System.Drawing.Point(255, 194);
             this.FF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FF2.Name = "FF2";
             this.FF2.Size = new System.Drawing.Size(210, 100);
@@ -1109,7 +1134,7 @@
             // 
             // FSF2
             // 
-            this.FSF2.Location = new System.Drawing.Point(255, 34);
+            this.FSF2.Location = new System.Drawing.Point(255, 60);
             this.FSF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FSF2.Name = "FSF2";
             this.FSF2.Size = new System.Drawing.Size(210, 100);
@@ -1120,7 +1145,7 @@
             // 
             // FLF2
             // 
-            this.FLF2.Location = new System.Drawing.Point(25, 298);
+            this.FLF2.Location = new System.Drawing.Point(27, 326);
             this.FLF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FLF2.Name = "FLF2";
             this.FLF2.Size = new System.Drawing.Size(210, 100);
@@ -1131,7 +1156,7 @@
             // 
             // EVAF2
             // 
-            this.EVAF2.Location = new System.Drawing.Point(25, 165);
+            this.EVAF2.Location = new System.Drawing.Point(27, 194);
             this.EVAF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EVAF2.Name = "EVAF2";
             this.EVAF2.Size = new System.Drawing.Size(210, 100);
@@ -1142,7 +1167,7 @@
             // 
             // CHGF2
             // 
-            this.CHGF2.Location = new System.Drawing.Point(25, 34);
+            this.CHGF2.Location = new System.Drawing.Point(26, 59);
             this.CHGF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CHGF2.Name = "CHGF2";
             this.CHGF2.Size = new System.Drawing.Size(210, 100);
@@ -1167,16 +1192,16 @@
             this.MandatorySubjects.Controls.Add(this.FLF1);
             this.MandatorySubjects.Controls.Add(this.EVAF1);
             this.MandatorySubjects.Controls.Add(this.CHGF1);
-            this.MandatorySubjects.Location = new System.Drawing.Point(2, 2);
+            this.MandatorySubjects.Location = new System.Drawing.Point(0, 0);
             this.MandatorySubjects.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MandatorySubjects.Name = "MandatorySubjects";
-            this.MandatorySubjects.Size = new System.Drawing.Size(1185, 435);
+            this.MandatorySubjects.Size = new System.Drawing.Size(1185, 472);
             this.MandatorySubjects.TabIndex = 20;
             this.MandatorySubjects.Visible = false;
             // 
             // VM1
             // 
-            this.VM1.Location = new System.Drawing.Point(945, 165);
+            this.VM1.Location = new System.Drawing.Point(945, 194);
             this.VM1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VM1.Name = "VM1";
             this.VM1.Size = new System.Drawing.Size(210, 100);
@@ -1187,7 +1212,7 @@
             // 
             // TF1
             // 
-            this.TF1.Location = new System.Drawing.Point(945, 36);
+            this.TF1.Location = new System.Drawing.Point(945, 62);
             this.TF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TF1.Name = "TF1";
             this.TF1.Size = new System.Drawing.Size(210, 100);
@@ -1198,7 +1223,7 @@
             // 
             // TSPMI1
             // 
-            this.TSPMI1.Location = new System.Drawing.Point(716, 298);
+            this.TSPMI1.Location = new System.Drawing.Point(716, 328);
             this.TSPMI1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TSPMI1.Name = "TSPMI1";
             this.TSPMI1.Size = new System.Drawing.Size(210, 100);
@@ -1209,7 +1234,7 @@
             // 
             // MF1
             // 
-            this.MF1.Location = new System.Drawing.Point(716, 165);
+            this.MF1.Location = new System.Drawing.Point(716, 194);
             this.MF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MF1.Name = "MF1";
             this.MF1.Size = new System.Drawing.Size(210, 100);
@@ -1220,7 +1245,7 @@
             // 
             // MIF1
             // 
-            this.MIF1.Location = new System.Drawing.Point(716, 36);
+            this.MIF1.Location = new System.Drawing.Point(716, 62);
             this.MIF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MIF1.Name = "MIF1";
             this.MIF1.Size = new System.Drawing.Size(210, 100);
@@ -1231,7 +1256,7 @@
             // 
             // KF1
             // 
-            this.KF1.Location = new System.Drawing.Point(485, 298);
+            this.KF1.Location = new System.Drawing.Point(485, 328);
             this.KF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.KF1.Name = "KF1";
             this.KF1.Size = new System.Drawing.Size(210, 100);
@@ -1242,7 +1267,7 @@
             // 
             // KNF1
             // 
-            this.KNF1.Location = new System.Drawing.Point(485, 165);
+            this.KNF1.Location = new System.Drawing.Point(485, 194);
             this.KNF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.KNF1.Name = "KNF1";
             this.KNF1.Size = new System.Drawing.Size(210, 100);
@@ -1253,7 +1278,7 @@
             // 
             // IF1
             // 
-            this.IF1.Location = new System.Drawing.Point(485, 36);
+            this.IF1.Location = new System.Drawing.Point(485, 62);
             this.IF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IF1.Name = "IF1";
             this.IF1.Size = new System.Drawing.Size(210, 100);
@@ -1264,7 +1289,7 @@
             // 
             // GMC1
             // 
-            this.GMC1.Location = new System.Drawing.Point(255, 298);
+            this.GMC1.Location = new System.Drawing.Point(255, 328);
             this.GMC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GMC1.Name = "GMC1";
             this.GMC1.Size = new System.Drawing.Size(210, 100);
@@ -1275,7 +1300,7 @@
             // 
             // FF1
             // 
-            this.FF1.Location = new System.Drawing.Point(255, 165);
+            this.FF1.Location = new System.Drawing.Point(255, 194);
             this.FF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FF1.Name = "FF1";
             this.FF1.Size = new System.Drawing.Size(210, 100);
@@ -1286,7 +1311,7 @@
             // 
             // FSF1
             // 
-            this.FSF1.Location = new System.Drawing.Point(255, 34);
+            this.FSF1.Location = new System.Drawing.Point(255, 62);
             this.FSF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FSF1.Name = "FSF1";
             this.FSF1.Size = new System.Drawing.Size(210, 100);
@@ -1297,7 +1322,7 @@
             // 
             // FLF1
             // 
-            this.FLF1.Location = new System.Drawing.Point(25, 298);
+            this.FLF1.Location = new System.Drawing.Point(25, 328);
             this.FLF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FLF1.Name = "FLF1";
             this.FLF1.Size = new System.Drawing.Size(210, 100);
@@ -1308,7 +1333,7 @@
             // 
             // EVAF1
             // 
-            this.EVAF1.Location = new System.Drawing.Point(25, 165);
+            this.EVAF1.Location = new System.Drawing.Point(25, 194);
             this.EVAF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EVAF1.Name = "EVAF1";
             this.EVAF1.Size = new System.Drawing.Size(210, 100);
@@ -1319,7 +1344,7 @@
             // 
             // CHGF1
             // 
-            this.CHGF1.Location = new System.Drawing.Point(25, 35);
+            this.CHGF1.Location = new System.Drawing.Point(25, 62);
             this.CHGF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CHGF1.Name = "CHGF1";
             this.CHGF1.Size = new System.Drawing.Size(210, 100);
@@ -1348,7 +1373,7 @@
             this.EvaluateLecturer.Location = new System.Drawing.Point(0, 0);
             this.EvaluateLecturer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EvaluateLecturer.Name = "EvaluateLecturer";
-            this.EvaluateLecturer.Size = new System.Drawing.Size(1188, 438);
+            this.EvaluateLecturer.Size = new System.Drawing.Size(1188, 472);
             this.EvaluateLecturer.TabIndex = 22;
             this.EvaluateLecturer.Visible = false;
             // 
@@ -1558,7 +1583,7 @@
             // FacultyLabLect
             // 
             this.FacultyLabLect.AutoSize = true;
-            this.FacultyLabLect.Location = new System.Drawing.Point(22, 31);
+            this.FacultyLabLect.Location = new System.Drawing.Point(23, 46);
             this.FacultyLabLect.Name = "FacultyLabLect";
             this.FacultyLabLect.Size = new System.Drawing.Size(88, 20);
             this.FacultyLabLect.TabIndex = 1;
@@ -1582,7 +1607,7 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.SelectFacultyLect.Location = new System.Drawing.Point(25, 58);
+            this.SelectFacultyLect.Location = new System.Drawing.Point(26, 76);
             this.SelectFacultyLect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SelectFacultyLect.Name = "SelectFacultyLect";
             this.SelectFacultyLect.Size = new System.Drawing.Size(366, 28);
@@ -1610,14 +1635,14 @@
             this.EvaluateSubjects.Location = new System.Drawing.Point(0, 0);
             this.EvaluateSubjects.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EvaluateSubjects.Name = "EvaluateSubjects";
-            this.EvaluateSubjects.Size = new System.Drawing.Size(1188, 435);
+            this.EvaluateSubjects.Size = new System.Drawing.Size(1188, 472);
             this.EvaluateSubjects.TabIndex = 7;
             this.EvaluateSubjects.Visible = false;
             // 
             // SubjUsernameLabel
             // 
             this.SubjUsernameLabel.AutoSize = true;
-            this.SubjUsernameLabel.Location = new System.Drawing.Point(487, 145);
+            this.SubjUsernameLabel.Location = new System.Drawing.Point(487, 206);
             this.SubjUsernameLabel.Name = "SubjUsernameLabel";
             this.SubjUsernameLabel.Size = new System.Drawing.Size(234, 20);
             this.SubjUsernameLabel.TabIndex = 22;
@@ -1625,7 +1650,7 @@
             // 
             // SubjUsernameTxtBox
             // 
-            this.SubjUsernameTxtBox.Location = new System.Drawing.Point(490, 175);
+            this.SubjUsernameTxtBox.Location = new System.Drawing.Point(487, 235);
             this.SubjUsernameTxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SubjUsernameTxtBox.Name = "SubjUsernameTxtBox";
             this.SubjUsernameTxtBox.ReadOnly = true;
@@ -1636,7 +1661,7 @@
             // 
             this.SubjEvalCommentLab.AutoSize = true;
             this.SubjEvalCommentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubjEvalCommentLab.Location = new System.Drawing.Point(508, 118);
+            this.SubjEvalCommentLab.Location = new System.Drawing.Point(501, 186);
             this.SubjEvalCommentLab.Name = "SubjEvalCommentLab";
             this.SubjEvalCommentLab.Size = new System.Drawing.Size(21, 20);
             this.SubjEvalCommentLab.TabIndex = 20;
@@ -1659,7 +1684,7 @@
             // SubjEvalLab
             // 
             this.SubjEvalLab.AutoSize = true;
-            this.SubjEvalLab.Location = new System.Drawing.Point(508, 12);
+            this.SubjEvalLab.Location = new System.Drawing.Point(487, 74);
             this.SubjEvalLab.Name = "SubjEvalLab";
             this.SubjEvalLab.Size = new System.Drawing.Size(139, 20);
             this.SubjEvalLab.TabIndex = 18;
@@ -1667,7 +1692,7 @@
             // 
             // ReviewSubjEvalTxtBox
             // 
-            this.ReviewSubjEvalTxtBox.Location = new System.Drawing.Point(490, 248);
+            this.ReviewSubjEvalTxtBox.Location = new System.Drawing.Point(487, 285);
             this.ReviewSubjEvalTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReviewSubjEvalTxtBox.Multiline = true;
             this.ReviewSubjEvalTxtBox.Name = "ReviewSubjEvalTxtBox";
@@ -1677,7 +1702,7 @@
             // ReviewLabel
             // 
             this.ReviewLabel.AutoSize = true;
-            this.ReviewLabel.Location = new System.Drawing.Point(487, 215);
+            this.ReviewLabel.Location = new System.Drawing.Point(487, 260);
             this.ReviewLabel.Name = "ReviewLabel";
             this.ReviewLabel.Size = new System.Drawing.Size(275, 20);
             this.ReviewLabel.TabIndex = 16;
@@ -1696,7 +1721,7 @@
             this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreFive, 4, 0);
             this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreOne, 0, 0);
             this.SubjEvalTableWithEmojis.Controls.Add(this.EmojiScoreThree, 2, 0);
-            this.SubjEvalTableWithEmojis.Location = new System.Drawing.Point(502, 36);
+            this.SubjEvalTableWithEmojis.Location = new System.Drawing.Point(493, 100);
             this.SubjEvalTableWithEmojis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjEvalTableWithEmojis.Name = "SubjEvalTableWithEmojis";
             this.SubjEvalTableWithEmojis.RowCount = 1;
@@ -1770,7 +1795,7 @@
             this.SubjectTypeGroupBox.Controls.Add(this.IsOptionalSubject);
             this.SubjectTypeGroupBox.Controls.Add(this.IsBUSSubject);
             this.SubjectTypeGroupBox.Controls.Add(this.IsMandatorySubject);
-            this.SubjectTypeGroupBox.Location = new System.Drawing.Point(25, 11);
+            this.SubjectTypeGroupBox.Location = new System.Drawing.Point(25, 48);
             this.SubjectTypeGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectTypeGroupBox.Name = "SubjectTypeGroupBox";
             this.SubjectTypeGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1855,7 +1880,7 @@
             // 
             this.FilteredSubjectsList.FormattingEnabled = true;
             this.FilteredSubjectsList.ItemHeight = 20;
-            this.FilteredSubjectsList.Location = new System.Drawing.Point(25, 178);
+            this.FilteredSubjectsList.Location = new System.Drawing.Point(25, 216);
             this.FilteredSubjectsList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FilteredSubjectsList.Name = "FilteredSubjectsList";
             this.FilteredSubjectsList.Size = new System.Drawing.Size(454, 244);
@@ -1864,7 +1889,7 @@
             // SubjectLabel
             // 
             this.SubjectLabel.AutoSize = true;
-            this.SubjectLabel.Location = new System.Drawing.Point(30, 151);
+            this.SubjectLabel.Location = new System.Drawing.Point(23, 186);
             this.SubjectLabel.Name = "SubjectLabel";
             this.SubjectLabel.Size = new System.Drawing.Size(150, 20);
             this.SubjectLabel.TabIndex = 2;
@@ -1888,7 +1913,7 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.SelectFacultySubj.Location = new System.Drawing.Point(25, 108);
+            this.SelectFacultySubj.Location = new System.Drawing.Point(25, 149);
             this.SelectFacultySubj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SelectFacultySubj.Name = "SelectFacultySubj";
             this.SelectFacultySubj.Size = new System.Drawing.Size(454, 28);
@@ -1898,7 +1923,7 @@
             // FacultyLabel
             // 
             this.FacultyLabel.AutoSize = true;
-            this.FacultyLabel.Location = new System.Drawing.Point(30, 85);
+            this.FacultyLabel.Location = new System.Drawing.Point(27, 118);
             this.FacultyLabel.Name = "FacultyLabel";
             this.FacultyLabel.Size = new System.Drawing.Size(88, 20);
             this.FacultyLabel.TabIndex = 0;
@@ -1911,7 +1936,7 @@
             this.ScraperPanel.Location = new System.Drawing.Point(0, 0);
             this.ScraperPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ScraperPanel.Name = "ScraperPanel";
-            this.ScraperPanel.Size = new System.Drawing.Size(1187, 435);
+            this.ScraperPanel.Size = new System.Drawing.Size(1187, 472);
             this.ScraperPanel.TabIndex = 8;
             this.ScraperPanel.Visible = false;
             // 
@@ -1950,7 +1975,7 @@
             this.SingleLecturer.Location = new System.Drawing.Point(0, 0);
             this.SingleLecturer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SingleLecturer.Name = "SingleLecturer";
-            this.SingleLecturer.Size = new System.Drawing.Size(1188, 438);
+            this.SingleLecturer.Size = new System.Drawing.Size(1188, 472);
             this.SingleLecturer.TabIndex = 8;
             this.SingleLecturer.Visible = false;
             // 
@@ -1958,7 +1983,7 @@
             // 
             this.LectGroupBox.Controls.Add(this.LectSearchButton);
             this.LectGroupBox.Controls.Add(this.LectSearchField);
-            this.LectGroupBox.Location = new System.Drawing.Point(25, 82);
+            this.LectGroupBox.Location = new System.Drawing.Point(25, 100);
             this.LectGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LectGroupBox.Name = "LectGroupBox";
             this.LectGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2021,7 +2046,7 @@
             // L
             // 
             this.L.AutoSize = true;
-            this.L.Location = new System.Drawing.Point(32, 154);
+            this.L.Location = new System.Drawing.Point(31, 166);
             this.L.Name = "L";
             this.L.Size = new System.Drawing.Size(83, 20);
             this.L.TabIndex = 3;
@@ -2031,7 +2056,7 @@
             // 
             this.AllLect.FormattingEnabled = true;
             this.AllLect.ItemHeight = 20;
-            this.AllLect.Location = new System.Drawing.Point(25, 178);
+            this.AllLect.Location = new System.Drawing.Point(29, 195);
             this.AllLect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AllLect.Name = "AllLect";
             this.AllLect.Size = new System.Drawing.Size(504, 244);
@@ -2055,7 +2080,7 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.AllFaculties.Location = new System.Drawing.Point(26, 44);
+            this.AllFaculties.Location = new System.Drawing.Point(29, 64);
             this.AllFaculties.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AllFaculties.Name = "AllFaculties";
             this.AllFaculties.Size = new System.Drawing.Size(504, 28);
@@ -2065,7 +2090,7 @@
             // F
             // 
             this.F.AutoSize = true;
-            this.F.Location = new System.Drawing.Point(32, 21);
+            this.F.Location = new System.Drawing.Point(32, 42);
             this.F.Name = "F";
             this.F.Size = new System.Drawing.Size(88, 20);
             this.F.TabIndex = 0;
@@ -2084,7 +2109,7 @@
             this.SingleSubject.Location = new System.Drawing.Point(0, 0);
             this.SingleSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SingleSubject.Name = "SingleSubject";
-            this.SingleSubject.Size = new System.Drawing.Size(1188, 438);
+            this.SingleSubject.Size = new System.Drawing.Size(1188, 472);
             this.SingleSubject.TabIndex = 7;
             this.SingleSubject.Visible = false;
             // 
@@ -2092,7 +2117,7 @@
             // 
             this.SubjGroupBox.Controls.Add(this.SubjSearchButton);
             this.SubjGroupBox.Controls.Add(this.SubjSearchField);
-            this.SubjGroupBox.Location = new System.Drawing.Point(25, 82);
+            this.SubjGroupBox.Location = new System.Drawing.Point(25, 105);
             this.SubjGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjGroupBox.Name = "SubjGroupBox";
             this.SubjGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2156,7 +2181,7 @@
             // 
             this.AllSubj.FormattingEnabled = true;
             this.AllSubj.ItemHeight = 20;
-            this.AllSubj.Location = new System.Drawing.Point(25, 178);
+            this.AllSubj.Location = new System.Drawing.Point(25, 204);
             this.AllSubj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AllSubj.Name = "AllSubj";
             this.AllSubj.Size = new System.Drawing.Size(504, 244);
@@ -2165,7 +2190,7 @@
             // S
             // 
             this.S.AutoSize = true;
-            this.S.Location = new System.Drawing.Point(32, 154);
+            this.S.Location = new System.Drawing.Point(27, 176);
             this.S.Name = "S";
             this.S.Size = new System.Drawing.Size(64, 20);
             this.S.TabIndex = 4;
@@ -2189,7 +2214,7 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.AllFaculties1.Location = new System.Drawing.Point(26, 44);
+            this.AllFaculties1.Location = new System.Drawing.Point(26, 66);
             this.AllFaculties1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AllFaculties1.Name = "AllFaculties1";
             this.AllFaculties1.Size = new System.Drawing.Size(504, 28);
@@ -2199,7 +2224,7 @@
             // F1
             // 
             this.F1.AutoSize = true;
-            this.F1.Location = new System.Drawing.Point(32, 21);
+            this.F1.Location = new System.Drawing.Point(32, 42);
             this.F1.Name = "F1";
             this.F1.Size = new System.Drawing.Size(88, 20);
             this.F1.TabIndex = 1;
@@ -2222,7 +2247,7 @@
             this.TOPLecturersAndSubjects.Controls.Add(this.TOP10Subjects);
             this.TOPLecturersAndSubjects.Location = new System.Drawing.Point(0, 0);
             this.TOPLecturersAndSubjects.Name = "TOPLecturersAndSubjects";
-            this.TOPLecturersAndSubjects.Size = new System.Drawing.Size(1188, 438);
+            this.TOPLecturersAndSubjects.Size = new System.Drawing.Size(1188, 472);
             this.TOPLecturersAndSubjects.TabIndex = 12;
             this.TOPLecturersAndSubjects.Visible = false;
             // 
@@ -2230,7 +2255,7 @@
             // 
             this.TOP5BUSSubjects.AutoSize = true;
             this.TOP5BUSSubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOP5BUSSubjects.Location = new System.Drawing.Point(796, 18);
+            this.TOP5BUSSubjects.Location = new System.Drawing.Point(795, 43);
             this.TOP5BUSSubjects.Name = "TOP5BUSSubjects";
             this.TOP5BUSSubjects.Size = new System.Drawing.Size(236, 29);
             this.TOP5BUSSubjects.TabIndex = 11;
@@ -2240,7 +2265,7 @@
             // 
             this.TOP10Lecturers.AutoSize = true;
             this.TOP10Lecturers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOP10Lecturers.Location = new System.Drawing.Point(405, 18);
+            this.TOP10Lecturers.Location = new System.Drawing.Point(413, 44);
             this.TOP10Lecturers.Name = "TOP10Lecturers";
             this.TOP10Lecturers.Size = new System.Drawing.Size(221, 29);
             this.TOP10Lecturers.TabIndex = 10;
@@ -2249,7 +2274,7 @@
             // TOP5BUS
             // 
             this.TOP5BUS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOP5BUS.Location = new System.Drawing.Point(801, 50);
+            this.TOP5BUS.Location = new System.Drawing.Point(800, 78);
             this.TOP5BUS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TOP5BUS.Multiline = true;
             this.TOP5BUS.Name = "TOP5BUS";
@@ -2260,7 +2285,7 @@
             // TOP10L
             // 
             this.TOP10L.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOP10L.Location = new System.Drawing.Point(410, 50);
+            this.TOP10L.Location = new System.Drawing.Point(410, 80);
             this.TOP10L.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TOP10L.Multiline = true;
             this.TOP10L.Name = "TOP10L";
@@ -2270,7 +2295,7 @@
             // 
             // Return2
             // 
-            this.Return2.Location = new System.Drawing.Point(410, 389);
+            this.Return2.Location = new System.Drawing.Point(412, 419);
             this.Return2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Return2.Name = "Return2";
             this.Return2.Size = new System.Drawing.Size(375, 41);
@@ -2282,7 +2307,7 @@
             // TOP10S
             // 
             this.TOP10S.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOP10S.Location = new System.Drawing.Point(17, 50);
+            this.TOP10S.Location = new System.Drawing.Point(18, 80);
             this.TOP10S.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TOP10S.Multiline = true;
             this.TOP10S.Name = "TOP10S";
@@ -2294,7 +2319,7 @@
             // 
             this.TOP10Subjects.AutoSize = true;
             this.TOP10Subjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOP10Subjects.Location = new System.Drawing.Point(12, 15);
+            this.TOP10Subjects.Location = new System.Drawing.Point(20, 48);
             this.TOP10Subjects.Name = "TOP10Subjects";
             this.TOP10Subjects.Size = new System.Drawing.Size(191, 29);
             this.TOP10Subjects.TabIndex = 0;
@@ -2308,7 +2333,7 @@
             this.LogIn.Controls.Add(this.LogInButton);
             this.LogIn.Location = new System.Drawing.Point(0, 0);
             this.LogIn.Name = "LogIn";
-            this.LogIn.Size = new System.Drawing.Size(1188, 438);
+            this.LogIn.Size = new System.Drawing.Size(1188, 469);
             this.LogIn.TabIndex = 8;
             this.LogIn.Visible = false;
             // 
@@ -2326,7 +2351,7 @@
             // 
             this.VULogoLogIn.Image = global::Vilnius_University_Advisor.Properties.Resources.VUlogo;
             this.VULogoLogIn.InitialImage = null;
-            this.VULogoLogIn.Location = new System.Drawing.Point(27, 31);
+            this.VULogoLogIn.Location = new System.Drawing.Point(27, 50);
             this.VULogoLogIn.Name = "VULogoLogIn";
             this.VULogoLogIn.Size = new System.Drawing.Size(273, 280);
             this.VULogoLogIn.TabIndex = 6;
@@ -2396,20 +2421,32 @@
             // 
             // InitialWindow
             // 
+            this.InitialWindow.Controls.Add(this.LogInAsGuest);
             this.InitialWindow.Controls.Add(this.ProgramNameLabelInitWindow);
             this.InitialWindow.Controls.Add(this.LogInButtonInitWindow);
             this.InitialWindow.Controls.Add(this.RegistrationButtonInitWindow);
             this.InitialWindow.Controls.Add(this.VULogoInitialWindow);
             this.InitialWindow.Location = new System.Drawing.Point(0, 0);
             this.InitialWindow.Name = "InitialWindow";
-            this.InitialWindow.Size = new System.Drawing.Size(1188, 437);
+            this.InitialWindow.Size = new System.Drawing.Size(1188, 472);
             this.InitialWindow.TabIndex = 8;
+            // 
+            // LogInAsGuest
+            // 
+            this.LogInAsGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogInAsGuest.Location = new System.Drawing.Point(703, 280);
+            this.LogInAsGuest.Name = "LogInAsGuest";
+            this.LogInAsGuest.Size = new System.Drawing.Size(273, 71);
+            this.LogInAsGuest.TabIndex = 4;
+            this.LogInAsGuest.Text = "Prisijungti kaip svečias";
+            this.LogInAsGuest.UseVisualStyleBackColor = true;
+            this.LogInAsGuest.Click += new System.EventHandler(this.LogInAsGuest_Click);
             // 
             // ProgramNameLabelInitWindow
             // 
             this.ProgramNameLabelInitWindow.AutoSize = true;
             this.ProgramNameLabelInitWindow.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProgramNameLabelInitWindow.Location = new System.Drawing.Point(31, 7);
+            this.ProgramNameLabelInitWindow.Location = new System.Drawing.Point(35, 37);
             this.ProgramNameLabelInitWindow.Name = "ProgramNameLabelInitWindow";
             this.ProgramNameLabelInitWindow.Size = new System.Drawing.Size(1112, 40);
             this.ProgramNameLabelInitWindow.TabIndex = 3;
@@ -2418,7 +2455,7 @@
             // LogInButtonInitWindow
             // 
             this.LogInButtonInitWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInButtonInitWindow.Location = new System.Drawing.Point(716, 252);
+            this.LogInButtonInitWindow.Location = new System.Drawing.Point(572, 183);
             this.LogInButtonInitWindow.Name = "LogInButtonInitWindow";
             this.LogInButtonInitWindow.Size = new System.Drawing.Size(273, 71);
             this.LogInButtonInitWindow.TabIndex = 2;
@@ -2429,7 +2466,7 @@
             // RegistrationButtonInitWindow
             // 
             this.RegistrationButtonInitWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationButtonInitWindow.Location = new System.Drawing.Point(716, 137);
+            this.RegistrationButtonInitWindow.Location = new System.Drawing.Point(439, 89);
             this.RegistrationButtonInitWindow.Name = "RegistrationButtonInitWindow";
             this.RegistrationButtonInitWindow.Size = new System.Drawing.Size(273, 71);
             this.RegistrationButtonInitWindow.TabIndex = 1;
@@ -2440,7 +2477,7 @@
             // VULogoInitialWindow
             // 
             this.VULogoInitialWindow.Image = global::Vilnius_University_Advisor.Properties.Resources.VUlogo;
-            this.VULogoInitialWindow.Location = new System.Drawing.Point(134, 69);
+            this.VULogoInitialWindow.Location = new System.Drawing.Point(105, 91);
             this.VULogoInitialWindow.Name = "VULogoInitialWindow";
             this.VULogoInitialWindow.Size = new System.Drawing.Size(273, 280);
             this.VULogoInitialWindow.TabIndex = 0;
@@ -2454,7 +2491,7 @@
             this.Registration.Controls.Add(this.VULogoRegistration);
             this.Registration.Location = new System.Drawing.Point(0, 0);
             this.Registration.Name = "Registration";
-            this.Registration.Size = new System.Drawing.Size(1188, 438);
+            this.Registration.Size = new System.Drawing.Size(1188, 472);
             this.Registration.TabIndex = 8;
             this.Registration.Visible = false;
             // 
@@ -2471,7 +2508,7 @@
             // RegistrationButton
             // 
             this.RegistrationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationButton.Location = new System.Drawing.Point(610, 346);
+            this.RegistrationButton.Location = new System.Drawing.Point(610, 377);
             this.RegistrationButton.Name = "RegistrationButton";
             this.RegistrationButton.Size = new System.Drawing.Size(237, 42);
             this.RegistrationButton.TabIndex = 2;
@@ -2498,7 +2535,7 @@
             this.RegistrationGroupBox.Controls.Add(this.UserNameSurnameLabel);
             this.RegistrationGroupBox.Controls.Add(this.UserFullName);
             this.RegistrationGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationGroupBox.Location = new System.Drawing.Point(306, 11);
+            this.RegistrationGroupBox.Location = new System.Drawing.Point(306, 40);
             this.RegistrationGroupBox.Name = "RegistrationGroupBox";
             this.RegistrationGroupBox.Size = new System.Drawing.Size(858, 323);
             this.RegistrationGroupBox.TabIndex = 1;
@@ -2670,34 +2707,123 @@
             // VULogoRegistration
             // 
             this.VULogoRegistration.Image = global::Vilnius_University_Advisor.Properties.Resources.VUlogo;
-            this.VULogoRegistration.Location = new System.Drawing.Point(27, 31);
+            this.VULogoRegistration.Location = new System.Drawing.Point(17, 43);
             this.VULogoRegistration.Name = "VULogoRegistration";
             this.VULogoRegistration.Size = new System.Drawing.Size(273, 280);
             this.VULogoRegistration.TabIndex = 0;
             this.VULogoRegistration.TabStop = false;
             // 
+            // ActivityWindow
+            // 
+            this.ActivityWindow.Controls.Add(this.Return3);
+            this.ActivityWindow.Controls.Add(this.History);
+            this.ActivityWindow.Controls.Add(this.UserHistory);
+            this.ActivityWindow.Location = new System.Drawing.Point(0, 0);
+            this.ActivityWindow.Name = "ActivityWindow";
+            this.ActivityWindow.Size = new System.Drawing.Size(1188, 472);
+            this.ActivityWindow.TabIndex = 14;
+            this.ActivityWindow.Visible = false;
+            // 
+            // Return3
+            // 
+            this.Return3.Location = new System.Drawing.Point(413, 423);
+            this.Return3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Return3.Name = "Return3";
+            this.Return3.Size = new System.Drawing.Size(375, 41);
+            this.Return3.TabIndex = 10;
+            this.Return3.Text = "Grįžti į meniu";
+            this.Return3.UseVisualStyleBackColor = true;
+            this.Return3.Click += new System.EventHandler(this.Return3_Click);
+            // 
+            // History
+            // 
+            this.History.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.History.Location = new System.Drawing.Point(17, 85);
+            this.History.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.History.Multiline = true;
+            this.History.Name = "History";
+            this.History.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.History.Size = new System.Drawing.Size(623, 327);
+            this.History.TabIndex = 9;
+            // 
+            // UserHistory
+            // 
+            this.UserHistory.AutoSize = true;
+            this.UserHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserHistory.Location = new System.Drawing.Point(13, 45);
+            this.UserHistory.Name = "UserHistory";
+            this.UserHistory.Size = new System.Drawing.Size(224, 32);
+            this.UserHistory.TabIndex = 0;
+            this.UserHistory.Text = "Veiklos istorija:";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.temaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1188, 33);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // temaToolStripMenuItem
+            // 
+            this.temaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rausvaToolStripMenuItem,
+            this.melsvaToolStripMenuItem,
+            this.numatytojiToolStripMenuItem});
+            this.temaToolStripMenuItem.Name = "temaToolStripMenuItem";
+            this.temaToolStripMenuItem.Size = new System.Drawing.Size(124, 29);
+            this.temaToolStripMenuItem.Text = "Fono spalva";
+            // 
+            // rausvaToolStripMenuItem
+            // 
+            this.rausvaToolStripMenuItem.Name = "rausvaToolStripMenuItem";
+            this.rausvaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.rausvaToolStripMenuItem.Text = "Rausva";
+            this.rausvaToolStripMenuItem.Click += new System.EventHandler(this.rausvaToolStripMenuItem_Click);
+            // 
+            // melsvaToolStripMenuItem
+            // 
+            this.melsvaToolStripMenuItem.Name = "melsvaToolStripMenuItem";
+            this.melsvaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.melsvaToolStripMenuItem.Text = "Melsva";
+            this.melsvaToolStripMenuItem.Click += new System.EventHandler(this.melsvaToolStripMenuItem_Click);
+            // 
+            // numatytojiToolStripMenuItem
+            // 
+            this.numatytojiToolStripMenuItem.Name = "numatytojiToolStripMenuItem";
+            this.numatytojiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.numatytojiToolStripMenuItem.Text = "Numatytoji";
+            this.numatytojiToolStripMenuItem.Click += new System.EventHandler(this.numatytojiToolStripMenuItem_Click);
+            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 438);
-            this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.EvaluateSubjects);
-            this.Controls.Add(this.EvaluateLecturer);
-            this.Controls.Add(this.LogIn);
+            this.ClientSize = new System.Drawing.Size(1188, 471);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Registration);
-            this.Controls.Add(this.InitialWindow);
-            this.Controls.Add(this.SingleLecturer);
-            this.Controls.Add(this.TOPLecturersAndSubjects);
-            this.Controls.Add(this.SingleSubject);
-            this.Controls.Add(this.ScraperPanel);
-            this.Controls.Add(this.SubjectPanel);
-            this.Controls.Add(this.AllLecturers);
-            this.Controls.Add(this.LecturersByFaculty);
-            this.Controls.Add(this.LecturerPanel);
-            this.Controls.Add(this.AllSubjects);
-            this.Controls.Add(this.MandatorySubjects);
             this.Controls.Add(this.OptionalSubjects);
+            this.Controls.Add(this.MandatorySubjects);
+            this.Controls.Add(this.AllSubjects);
+            this.Controls.Add(this.LecturerPanel);
+            this.Controls.Add(this.LecturersByFaculty);
+            this.Controls.Add(this.AllLecturers);
+            this.Controls.Add(this.SingleSubject);
+            this.Controls.Add(this.SingleLecturer);
+            this.Controls.Add(this.EvaluateLecturer);
+            this.Controls.Add(this.InitialWindow);
+            this.Controls.Add(this.EvaluateSubjects);
+            this.Controls.Add(this.LogIn);
+            this.Controls.Add(this.SubjectPanel);
+            this.Controls.Add(this.ActivityWindow);
+            this.Controls.Add(this.MainMenu);
+            this.Controls.Add(this.TOPLecturersAndSubjects);
+            this.Controls.Add(this.ScraperPanel);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegForm";
             this.Text = "VU_Advisor";
@@ -2761,7 +2887,12 @@
             this.RegistrationGroupBox.ResumeLayout(false);
             this.RegistrationGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VULogoRegistration)).EndInit();
+            this.ActivityWindow.ResumeLayout(false);
+            this.ActivityWindow.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2970,6 +3101,17 @@
         private System.Windows.Forms.Label ProneNoLabelReg;
         private System.Windows.Forms.TextBox PhoneNoReg;
         private System.Windows.Forms.TextBox EMailReg;
+        private System.Windows.Forms.Button ActivityHistory;
+        private System.Windows.Forms.Button LogInAsGuest;
+        private System.Windows.Forms.Panel ActivityWindow;
+        private System.Windows.Forms.Button Return3;
+        private System.Windows.Forms.TextBox History;
+        private System.Windows.Forms.Label UserHistory;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem temaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rausvaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem melsvaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem numatytojiToolStripMenuItem;
     }
 }
 

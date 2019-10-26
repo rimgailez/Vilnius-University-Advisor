@@ -33,6 +33,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
             DataFetcher.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
+            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dėstytojas: " + NameTextBoxLect.Text + ";");
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
         }
@@ -41,6 +42,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
             DataFetcher.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
+            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dėstytojas: " + NameTextBoxLect.Text + ";");
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
             LecturerPanel.Hide();
@@ -60,6 +62,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
             DataFetcher.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
+            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dalykas: " + NameTextBoxSubj.Text + ";");
             IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
@@ -75,6 +78,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
             DataFetcher.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
+            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dalykas: " + NameTextBoxSubj.Text + ";");
             IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
@@ -608,6 +612,7 @@ namespace Vilnius_University_Advisor
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
                 DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameTxtBox.Text);
+                DataFetcher.GetInstance().AddToHistory("Įvertintas dėstytojas: " + selectedLecturer.name + ";");
                 return true;
             }
         }
@@ -632,6 +637,7 @@ namespace Vilnius_University_Advisor
             {
                 Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
                 DataFetcher.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameTxtBox.Text);
+                DataFetcher.GetInstance().AddToHistory("Įvertintas dalykas: " + selectedSubject.name + ";");
                 return true;
             }
         }
@@ -975,6 +981,12 @@ namespace Vilnius_University_Advisor
                 ClearLogInFields();
                 simpleMsg(MainResources.SuccessfulLogIn, MainResources.LogInCaption);
                 LogIn.Hide();
+                RunScraper.Visible = true;
+                LecReg.Visible = true;
+                SubjReg.Visible = true;
+                ReviewSubject.Visible = true;
+                ReviewLecturer.Visible = true;
+                ActivityHistory.Visible = true;
                 MainMenu.Show();
             }
         }
@@ -1075,6 +1087,50 @@ namespace Vilnius_University_Advisor
                 Registration.Hide();
                 MainMenu.Show();
             }
+        }
+
+        private void LogInAsGuest_Click(object sender, EventArgs e)
+        {
+            InitialWindow.Hide();
+            RunScraper.Visible = false;
+            LecReg.Visible = false;
+            SubjReg.Visible = false;
+            ReviewSubject.Visible = false;
+            ReviewLecturer.Visible = false;
+            ActivityHistory.Visible = false;
+            MainMenu.Show();
+        }
+
+        private void ActivityHistory_Click(object sender, EventArgs e)
+        {
+            History.Text = "";
+            foreach(Activity activity in DataFetcher.GetInstance().GetHistory())
+            {
+                History.Text = History.Text + activity.date + " " + activity.activityComment + "\r\n";
+            }
+            MainMenu.Hide();
+            ActivityWindow.Show();
+        }
+
+        private void Return3_Click(object sender, EventArgs e)
+        {
+            ActivityWindow.Hide();
+            MainMenu.Show();
+        }
+
+        private void rausvaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Properties.Settings.Default.color1;
+        }
+
+        private void melsvaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Properties.Settings.Default.color2;
+        }
+
+        private void numatytojiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Properties.Settings.Default.color2;
         }
     }
 }
