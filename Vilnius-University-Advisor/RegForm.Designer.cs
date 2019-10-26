@@ -239,11 +239,11 @@
             this.Return3 = new System.Windows.Forms.Button();
             this.History = new System.Windows.Forms.TextBox();
             this.UserHistory = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.temaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rausvaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.melsvaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.numatytojiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu = new System.Windows.Forms.MenuStrip();
+            this.FonoSpalva = new System.Windows.Forms.ToolStripMenuItem();
+            this.Rausva = new System.Windows.Forms.ToolStripMenuItem();
+            this.Melsva = new System.Windows.Forms.ToolStripMenuItem();
+            this.Numatytoji = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LecturerPanel.SuspendLayout();
@@ -288,7 +288,7 @@
             this.RegistrationGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VULogoRegistration)).BeginInit();
             this.ActivityWindow.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenu
@@ -2756,55 +2756,55 @@
             this.UserHistory.TabIndex = 0;
             this.UserHistory.Text = "Veiklos istorija:";
             // 
-            // menuStrip1
+            // Menu
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.temaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1188, 33);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
+            this.Menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.Menu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FonoSpalva});
+            this.Menu.Location = new System.Drawing.Point(0, 0);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(1188, 36);
+            this.Menu.TabIndex = 12;
+            this.Menu.Text = "menuStrip1";
             // 
-            // temaToolStripMenuItem
+            // FonoSpalva
             // 
-            this.temaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rausvaToolStripMenuItem,
-            this.melsvaToolStripMenuItem,
-            this.numatytojiToolStripMenuItem});
-            this.temaToolStripMenuItem.Name = "temaToolStripMenuItem";
-            this.temaToolStripMenuItem.Size = new System.Drawing.Size(124, 29);
-            this.temaToolStripMenuItem.Text = "Fono spalva";
+            this.FonoSpalva.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Rausva,
+            this.Melsva,
+            this.Numatytoji});
+            this.FonoSpalva.Name = "FonoSpalva";
+            this.FonoSpalva.Size = new System.Drawing.Size(124, 32);
+            this.FonoSpalva.Text = "Fono spalva";
             // 
-            // rausvaToolStripMenuItem
+            // Rausva
             // 
-            this.rausvaToolStripMenuItem.Name = "rausvaToolStripMenuItem";
-            this.rausvaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.rausvaToolStripMenuItem.Text = "Rausva";
-            this.rausvaToolStripMenuItem.Click += new System.EventHandler(this.rausvaToolStripMenuItem_Click);
+            this.Rausva.Name = "Rausva";
+            this.Rausva.Size = new System.Drawing.Size(270, 34);
+            this.Rausva.Text = "Rausva";
+            this.Rausva.Click += new System.EventHandler(this.Rausva_Click);
             // 
-            // melsvaToolStripMenuItem
+            // Melsva
             // 
-            this.melsvaToolStripMenuItem.Name = "melsvaToolStripMenuItem";
-            this.melsvaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.melsvaToolStripMenuItem.Text = "Melsva";
-            this.melsvaToolStripMenuItem.Click += new System.EventHandler(this.melsvaToolStripMenuItem_Click);
+            this.Melsva.Name = "Melsva";
+            this.Melsva.Size = new System.Drawing.Size(270, 34);
+            this.Melsva.Text = "Melsva";
+            this.Melsva.Click += new System.EventHandler(this.Melsva_Click);
             // 
-            // numatytojiToolStripMenuItem
+            // Numatytoji
             // 
-            this.numatytojiToolStripMenuItem.Name = "numatytojiToolStripMenuItem";
-            this.numatytojiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.numatytojiToolStripMenuItem.Text = "Numatytoji";
-            this.numatytojiToolStripMenuItem.Click += new System.EventHandler(this.numatytojiToolStripMenuItem_Click);
+            this.Numatytoji.Name = "Numatytoji";
+            this.Numatytoji.Size = new System.Drawing.Size(270, 34);
+            this.Numatytoji.Text = "Numatytoji";
+            this.Numatytoji.Click += new System.EventHandler(this.Numatytoji_Click);
             // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 471);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.Menu);
             this.Controls.Add(this.Registration);
             this.Controls.Add(this.OptionalSubjects);
             this.Controls.Add(this.MandatorySubjects);
@@ -2823,7 +2823,7 @@
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.TOPLecturersAndSubjects);
             this.Controls.Add(this.ScraperPanel);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.Menu;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegForm";
             this.Text = "VU_Advisor";
@@ -2889,8 +2889,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.VULogoRegistration)).EndInit();
             this.ActivityWindow.ResumeLayout(false);
             this.ActivityWindow.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Menu.ResumeLayout(false);
+            this.Menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3107,11 +3107,11 @@
         private System.Windows.Forms.Button Return3;
         private System.Windows.Forms.TextBox History;
         private System.Windows.Forms.Label UserHistory;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem temaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rausvaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem melsvaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem numatytojiToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip Menu;
+        private System.Windows.Forms.ToolStripMenuItem FonoSpalva;
+        private System.Windows.Forms.ToolStripMenuItem Rausva;
+        private System.Windows.Forms.ToolStripMenuItem Melsva;
+        private System.Windows.Forms.ToolStripMenuItem Numatytoji;
     }
 }
 

@@ -33,7 +33,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
             DataFetcher.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
-            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dėstytojas: " + NameTextBoxLect.Text + ";");
+            DataFetcher.GetInstance().AddToHistory(MainResources.RegisteredLecturer + NameTextBoxLect.Text + ";");
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
         }
@@ -42,7 +42,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectLect.SelectedIndex;
             DataFetcher.GetInstance().AddLecturer(NameTextBoxLect.Text, faculty);
-            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dėstytojas: " + NameTextBoxLect.Text + ";");
+            DataFetcher.GetInstance().AddToHistory(MainResources.RegisteredLecturer + NameTextBoxLect.Text + ";");
             NameTextBoxLect.Text = "";
             FacultySelectLect.ClearSelected();
             LecturerPanel.Hide();
@@ -62,7 +62,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
             DataFetcher.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
-            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dalykas: " + NameTextBoxSubj.Text + ";");
+            DataFetcher.GetInstance().AddToHistory(MainResources.RegisteredSubject + NameTextBoxSubj.Text + ";");
             IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
@@ -78,7 +78,7 @@ namespace Vilnius_University_Advisor
         {
             Faculty faculty = (Faculty)FacultySelectSubj.SelectedIndex;
             DataFetcher.GetInstance().AddSubject(NameTextBoxSubj.Text, faculty, IsOptional.Checked, IsBUS.Checked);
-            DataFetcher.GetInstance().AddToHistory("Pridėtas naujas dalykas: " + NameTextBoxSubj.Text + ";");
+            DataFetcher.GetInstance().AddToHistory(MainResources.RegisteredSubject + NameTextBoxSubj.Text + ";");
             IsOptional.Checked = true;
             NameTextBoxSubj.Text = "";
             FacultySelectSubj.ClearSelected();
@@ -612,7 +612,7 @@ namespace Vilnius_University_Advisor
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
                 DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameTxtBox.Text);
-                DataFetcher.GetInstance().AddToHistory("Įvertintas dėstytojas: " + selectedLecturer.name + ";");
+                DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedLecturer + selectedLecturer.name + ";");
                 return true;
             }
         }
@@ -637,7 +637,7 @@ namespace Vilnius_University_Advisor
             {
                 Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
                 DataFetcher.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameTxtBox.Text);
-                DataFetcher.GetInstance().AddToHistory("Įvertintas dalykas: " + selectedSubject.name + ";");
+                DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedSubject + selectedSubject.name + ";");
                 return true;
             }
         }
@@ -1118,19 +1118,19 @@ namespace Vilnius_University_Advisor
             MainMenu.Show();
         }
 
-        private void rausvaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Rausva_Click(object sender, EventArgs e)
         {
             this.BackColor = Properties.Settings.Default.color1;
         }
 
-        private void melsvaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Melsva_Click(object sender, EventArgs e)
         {
             this.BackColor = Properties.Settings.Default.color2;
         }
 
-        private void numatytojiToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Numatytoji_Click(object sender, EventArgs e)
         {
-            this.BackColor = Properties.Settings.Default.color2;
+            this.BackColor = Properties.Settings.Default.color3;
         }
     }
 }
