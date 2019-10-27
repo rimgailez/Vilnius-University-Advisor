@@ -6,7 +6,21 @@
     "password": "aaa",
     "studyProgram": "aaa",
     "eMail": "andrius@gmail.com",
-    "phoneNumber": "+37061010022"
+    "phoneNumber": "+37061010022",
+    "userHistory": [
+      {
+        "activityComment": "Įvertintas dėstytojas: Adomas Birštunas;",
+        "date": "2019-10-25"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Darnus Vystymasis;",
+        "date": "2019-10-25"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Aivaras Novikas;",
+        "date": "2019-10-26"
+      }
+    ]
   },
   {
     "name": "Arvydas Janonis",
@@ -15,7 +29,8 @@
     "password": "sabonis",
     "studyProgram": "Elektronikos inžinerija",
     "eMail": "arvydas@gmail.com",
-    "phoneNumber": "+37069923234"
+    "phoneNumber": "+37069923234",
+    "userHistory": []
   },
   {
     "name": "Benas Ąžuolauskas",
@@ -24,7 +39,8 @@
     "password": "osia",
     "studyProgram": "Medžių mokslas",
     "eMail": "benas@gmail.com",
-    "phoneNumber": "+37061033344"
+    "phoneNumber": "+37061033344",
+    "userHistory": []
   },
   {
     "name": "Berta Bernotaitė",
@@ -33,7 +49,13 @@
     "password": "slop",
     "studyProgram": "Ispanų filologija",
     "eMail": "berta@gmail.com",
-    "phoneNumber": "+37064455588"
+    "phoneNumber": "+37064455588",
+    "userHistory": [
+      {
+        "activityComment": "Įvertintas dalykas: Leidinio dizainas;",
+        "date": "2019-10-20"
+      }
+    ]
   },
   {
     "name": "Jonas Petraitis",
@@ -42,7 +64,8 @@
     "password": "jonukas",
     "studyProgram": "Istorijos mokslas",
     "eMail": "jonas@gmail.com",
-    "phoneNumber": "+37061055566"
+    "phoneNumber": "+37061055566",
+    "userHistory": []
   },
   {
     "name": "Liepa Liepaite",
@@ -51,7 +74,64 @@
     "password": "zalioji",
     "studyProgram": "Asmenybės atradimo mokslai",
     "eMail": "liepa@gmail.com",
-    "phoneNumber": "+37063344455"
+    "phoneNumber": "+37063344455",
+    "userHistory": [
+      {
+        "activityComment": "Įvertintas dėstytojas: Daiva Budrienė;",
+        "date": "2019-10-16"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Linas Kojala;",
+        "date": "2019-10-16"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Romualdas Kašuba;",
+        "date": "2019-10-16"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Hidroterapija;",
+        "date": "2019-10-16"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Elita Pakalnickienė;",
+        "date": "2019-10-20"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Antikinė literatūra;",
+        "date": "2019-10-20"
+      }
+    ]
+  },
+  {
+    "name": "Rimgailė Znutaitė",
+    "userFaculty": 9,
+    "userName": "rimgaile",
+    "password": "rizn",
+    "studyProgram": "Programų sistemos",
+    "eMail": "rimgaile@gmail.com",
+    "phoneNumber": "+37061100220",
+    "userHistory": [
+      {
+        "activityComment": "Įvertintas dėstytojas: R. Badaras;",
+        "date": "2019-10-20"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: IT ir komunikacijos įgūdžiai;",
+        "date": "2019-10-20"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Loginio mąstymo ir kūrybingumo strategijos ne matematikams;",
+        "date": "2019-10-20"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Psichoaktyviosios medžiagos: poveikis, priklausomybė ir prevencija;",
+        "date": "2019-10-20"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Diskrečioji matematika;",
+        "date": "2019-10-25"
+      }
+    ]
   },
   {
     "name": "Tomas",
@@ -60,7 +140,21 @@
     "password": "123456",
     "studyProgram": "Ekonomika",
     "eMail": "tomas@gmail.com",
-    "phoneNumber": "+37061010011"
+    "phoneNumber": "+37061010011",
+    "userHistory": [
+      {
+        "activityComment": "Įvertintas dalykas: Kompiuterių architektūra;",
+        "date": "2019-10-16"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Logika;",
+        "date": "2019-10-16"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Algoritmų teorija;",
+        "date": "2019-10-20"
+      }
+    ]
   },
   {
     "name": "Viktorija Šimėnaitė",
@@ -69,6 +163,24 @@
     "password": "hehe",
     "studyProgram": "Programų sistemos",
     "eMail": "viktorija@gmail.com",
-    "phoneNumber": "+37061122233"
+    "phoneNumber": "+37061122233",
+    "userHistory": [
+      {
+        "activityComment": "Įvertintas dėstytojas: Romualdas Kašuba;",
+        "date": "2019-10-16"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Algoritmų teorija;",
+        "date": "2019-10-25"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Aidas Alaburda;",
+        "date": "2019-10-25"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Rimantas Vaicekauskas;",
+        "date": "2019-10-25"
+      }
+    ]
   }
 ]

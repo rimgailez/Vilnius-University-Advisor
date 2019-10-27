@@ -160,6 +160,24 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Įvertintas dėstytojas: .
+        /// </summary>
+        internal static string EvaluatedLecturer {
+            get {
+                return ResourceManager.GetString("EvaluatedLecturer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Įvertintas dalykas: .
+        /// </summary>
+        internal static string EvaluatedSubject {
+            get {
+                return ResourceManager.GetString("EvaluatedSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Prašome užpildyti visus formoje esančius laukus..
         /// </summary>
         internal static string FillInAllFields {
@@ -237,6 +255,24 @@ namespace Vilnius_University_Advisor {
         internal static string PasswordsDoNotMatch {
             get {
                 return ResourceManager.GetString("PasswordsDoNotMatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pridėtas naujas dėstytojas: .
+        /// </summary>
+        internal static string RegisteredLecturer {
+            get {
+                return ResourceManager.GetString("RegisteredLecturer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pridėtas naujas dalykas: .
+        /// </summary>
+        internal static string RegisteredSubject {
+            get {
+                return ResourceManager.GetString("RegisteredSubject", resourceCulture);
             }
         }
         

@@ -150,6 +150,12 @@
   <data name="DidntChooseSubject" xml:space="preserve">
     <value>Nepasirinkote dalyko</value>
   </data>
+  <data name="EvaluatedLecturer" xml:space="preserve">
+    <value>Įvertintas dėstytojas: </value>
+  </data>
+  <data name="EvaluatedSubject" xml:space="preserve">
+    <value>Įvertintas dalykas: </value>
+  </data>
   <data name="FillInAllFields" xml:space="preserve">
     <value>Prašome užpildyti visus formoje esančius laukus.</value>
   </data>
@@ -176,6 +182,12 @@
   </data>
   <data name="PasswordsDoNotMatch" xml:space="preserve">
     <value>Įvesti slaptažodžiai nesutampa. Prašome įvesti juos dar kartą.</value>
+  </data>
+  <data name="RegisteredLecturer" xml:space="preserve">
+    <value>Pridėtas naujas dėstytojas: </value>
+  </data>
+  <data name="RegisteredSubject" xml:space="preserve">
+    <value>Pridėtas naujas dalykas: </value>
   </data>
   <data name="RegistrationCaption" xml:space="preserve">
     <value>Registracija</value>

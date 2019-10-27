@@ -14,6 +14,8 @@ namespace VUA_api
         public string studyProgram { get; set; }
         public string eMail { get; set; }
         public string phoneNumber { get; set; }
+
+        public List<Activity> userHistory { get; set; }
         public User(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             this.name = name;
@@ -23,6 +25,7 @@ namespace VUA_api
             this.eMail = eMail;
             this.phoneNumber = phoneNumber;
             this.studyProgram = studyProgram;
+            this.userHistory = new List<Activity>();
         }
 
         public bool Equals(User other)

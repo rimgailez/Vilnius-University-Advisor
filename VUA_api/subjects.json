@@ -527,13 +527,19 @@
     "name": "Algoritmų teorija",
     "faculty": 9,
     "score": 3.0,
-    "numberOfReviews": 1,
+    "numberOfReviews": 2,
     "reviews": [
       {
-        "username": "liepaite",
+        "username": "tomas123",
         "score": 3,
         "text": "Sunkus, tačiau gana naudingas dalykas.",
         "date": "2019-10-20"
+      },
+      {
+        "username": "gretchen",
+        "score": 3,
+        "text": "Sudėtingas",
+        "date": "2019-10-25"
       }
     ]
   },
@@ -5940,9 +5946,16 @@
     "isBUS": true,
     "name": "Darnus vystymasis",
     "faculty": 7,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 5.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 5,
+        "text": "Cool!!!",
+        "date": "2019-10-25"
+      }
+    ]
   },
   {
     "isOptional": true,
@@ -6651,9 +6664,16 @@
     "isBUS": false,
     "name": "Diskrečioji matematika",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 4.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "rimgaile",
+        "score": 4,
+        "text": "Visai įdomu ir lengva.",
+        "date": "2019-10-25"
+      }
+    ]
   },
   {
     "isOptional": true,
@@ -15059,7 +15079,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "liepaite",
+        "username": "rimgaile",
         "score": 2,
         "text": "Labai nuobodus ir nenaudingas dalykas.",
         "date": "2019-10-20"
@@ -18189,7 +18209,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "liepaite",
+        "username": "tomas123",
         "score": 3,
         "text": "Į paskaitas vaikščioti neapsimoka, bet išlaikyti yra įmanoma.",
         "date": "2019-10-16"
@@ -19065,16 +19085,9 @@
     "isBUS": false,
     "name": "Kriminologija",
     "faculty": 12,
-    "score": 1.0,
-    "numberOfReviews": 1,
-    "reviews": [
-      {
-        "username": "liepaite",
-        "score": 1,
-        "text": "Tragiškai nuobodus kursas.",
-        "date": "2019-10-16"
-      }
-    ]
+    "score": 0.0,
+    "numberOfReviews": 0,
+    "reviews": []
   },
   {
     "isOptional": true,
@@ -20795,7 +20808,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "liepaite",
+        "username": "berta.b",
         "score": 5,
         "text": "Labai įdomus dalykas.",
         "date": "2019-10-20"
@@ -22476,7 +22489,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "liepaite",
+        "username": "tomas123",
         "score": 4,
         "text": "Sąlyginai įdomus ir nesunkus dalykas.",
         "date": "2019-10-16"
@@ -22537,7 +22550,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "gretchen",
+        "username": "rimgaile",
         "score": 3,
         "text": "Labai lėtas užsiėmimų tempas. Kolis ir egzaminas buvo gana lengvi.",
         "date": "2019-10-20"
@@ -31526,7 +31539,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "gretchen",
+        "username": "rimgaile",
         "score": 5,
         "text": "Labai įdomus dalykas, nesigailėsite jį pasirinkę.",
         "date": "2019-10-20"

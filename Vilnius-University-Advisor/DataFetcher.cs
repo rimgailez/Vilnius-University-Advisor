@@ -9,6 +9,8 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+using System.Collections.Specialized;
 
 namespace Vilnius_University_Advisor
 {
@@ -19,7 +21,9 @@ namespace Vilnius_University_Advisor
 
         private DataFetcher() 
         {
-            client.BaseAddress = new Uri("https://localhost:44368/api/");
+            string reference;
+            reference = ConfigurationManager.AppSettings.Get("Key0");
+            client.BaseAddress = new Uri(reference);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
@@ -271,6 +275,25 @@ namespace Vilnius_University_Advisor
         {
             await client.PostAsJsonAsync("user/setUser", user);
         }
-                
+
+        public async void AddToHistory(string activity)
+        {
+            await client.PostAsJsonAsync("user/addHistory", activity);
+        }
+
+        public List<Activity> GetHistory()
+        {
+            return GetHistoryAsync().Result;
+        }
+
+        public async Task<List<Activity>> GetHistoryAsync()
+        {
+            string request = "user/getHistory";
+            List<Activity> activity = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) activity = await response.Content.ReadAsAsync<List<Activity>>();
+            return activity;
+        }
+
     }
 }

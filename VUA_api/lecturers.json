@@ -233,9 +233,16 @@
   {
     "name": "Adomas Birštunas",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 5.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 5,
+        "text": "Puikus dėstytojas",
+        "date": "2019-10-25"
+      }
+    ]
   },
   {
     "name": "Adomas Žirlys",
@@ -429,9 +436,16 @@
   {
     "name": "Aidas Alaburda",
     "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 4.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "gretchen",
+        "score": 4,
+        "text": "Super",
+        "date": "2019-10-25"
+      }
+    ]
   },
   {
     "name": "Aidas Balčiūnas",
@@ -548,9 +562,16 @@
   {
     "name": "Aivaras Novikas",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 3.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 3,
+        "text": "Netvarkingas dėstytojas",
+        "date": "2019-10-26"
+      }
+    ]
   },
   {
     "name": "Aivaras Žukauskas",
@@ -12704,7 +12725,7 @@
     "numberOfReviews": 1,
     "reviews": [
       {
-        "username": "liepaite",
+        "username": "rimgaile",
         "score": 5,
         "text": "Nuostabus dėstytojas, labai įdomiai pasakoja.",
         "date": "2019-10-20"
@@ -13729,9 +13750,16 @@
   {
     "name": "Rimantas Vaicekauskas",
     "faculty": 9,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 4.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "gretchen",
+        "score": 4,
+        "text": "Gana įdomus žmogus.",
+        "date": "2019-10-25"
+      }
+    ]
   },
   {
     "name": "Rimantas Vaitkus",
@@ -14215,7 +14243,7 @@
         "date": "2019-10-16"
       },
       {
-        "username": "liepaite",
+        "username": "gretchen",
         "score": 4,
         "text": "Įdomus dėstytojas, bet dažnai nukrypsta nuo temos.",
         "date": "2019-10-16"
