@@ -44,6 +44,7 @@ namespace VUA_api.Controllers
         [HttpGet]
         public IEnumerable<Lecturer> GetAll()
         {
+            new Scraper.ScraperMain(dataMaster.jsonReaderWriter.projectPath).StartScrap();
             return dataMaster.lecturers;
         }
 
