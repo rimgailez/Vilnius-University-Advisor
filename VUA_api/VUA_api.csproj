@@ -2,20 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Platforms>AnyCPU;x64;x86</Platforms>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CefSharp.OffScreen" Version="75.1.142" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
@@ -58,42 +43,6 @@
       <LastGenOutput>MainResources.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="C:\Users\jokio\.nuget\packages\cefsharp.common\75.1.142\build\..\CefSharp\x64\CefSharp.BrowserSubprocess.Core.pdb" Link="shit\CefSharp.BrowserSubprocess.Core.pdb" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="C:\Users\jokio\.nuget\packages\cef.redist.x64\75.1.14\build\..\CEF\cef.pak" Link="shit\cef.pak" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="C:\Users\jokio\.nuget\packages\cef.redist.x64\75.1.14\build\..\CEF\cef_extensions.pak" Link="shit\cef_extensions.pak" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="C:\Users\jokio\.nuget\packages\cef.redist.x64\75.1.14\build\..\CEF\cef_200_percent.pak" Link="shit\cef_200_percent.pak" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="C:\Users\jokio\.nuget\packages\cefsharp.common\75.1.142\build\..\CefSharp\x64\CefSharp.BrowserSubprocess.Core.dll" Link="shit\CefSharp.BrowserSubprocess.Core.dll" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="C:\Users\jokio\.nuget\packages\cef.redist.x64\75.1.14\build\..\CEF\cef_100_percent.pak" Link="shit\cef_100_percent.pak" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Update="CefSharp">
-      <Private>true</Private>
-    </Reference>
-    <Reference Update="CefSharp.Core">
-      <Private>true</Private>
-    </Reference>
-    <Reference Update="CefSharp.OffScreen">
-      <Private>true</Private>
-    </Reference>
   </ItemGroup>
 
 </Project>
