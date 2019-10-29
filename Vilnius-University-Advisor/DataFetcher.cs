@@ -298,7 +298,7 @@ namespace Vilnius_University_Advisor
         public async void RunScraper(RegForm regForm)
         {
             HubConnection connection = new HubConnectionBuilder()
-                .WithUrl("https://localhost:44368/scraperMessages")
+                .WithUrl(ConfigurationManager.AppSettings.Get("Key0") + "scraperMessages")
                 .Build();
             connection.On<string>("progress", (message) =>
             {

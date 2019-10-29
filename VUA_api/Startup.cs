@@ -49,7 +49,7 @@ namespace VUA_api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<Scraper.MessageSender>("/scraperMessages");
+                endpoints.MapHub<Scraper.MessageSender>("api/scraperMessages");
             });
         }
     }
