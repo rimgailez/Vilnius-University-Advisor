@@ -15,12 +15,12 @@ namespace VUA_api.Scraper
         public List<Lecturer> lecturers = new List<Lecturer>();
         List<string> optionalSubjects = new List<string>();
         Faculty faculty;
-        StreamWriter streamWriter;
+        //StreamWriter streamWriter;
         string vuUrl = "https://tvarkarasciai.vu.lt";
 
-        public Parser(StreamWriter streamWriter, Faculty faculty)
+        public Parser(Faculty faculty)
         {
-            this.streamWriter = streamWriter;
+            //this.streamWriter = streamWriter;
             this.faculty = faculty;
         }
         public void parseTimetable(string text, string url)

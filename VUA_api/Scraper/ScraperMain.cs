@@ -24,12 +24,12 @@ namespace VUA_api.Scraper
             "/vm/"
         };
         StreamWriter streamWriter;
+        private static object locker = new Object();
 
         public ScraperMain(string path)
         {
             streamWriter = new StreamWriter(path + Path.DirectorySeparatorChar + "Scraper" + Path.DirectorySeparatorChar + "log.txt");
         }
-        [STAThread]
         public void StartScrap()
         {
             CefSettings settings = new CefSettings();
@@ -42,50 +42,50 @@ namespace VUA_api.Scraper
                     throw new Exception("Unable to Initialize Cef");
                 }
             }
-            Fetcher fetcher = new Fetcher();
-
+            List<Thread> threads = new List<Thread>();
+            Parser parser = new Parser(Faculty.None);
             foreach (string url in mainUrls)
             {
-                //string url = "/mif/";
-                Parser parser = new Parser(streamWriter, Faculty.None);
-
+                Fetcher fetcher = new Fetcher();
                 var htmlTask = fetcher.GetFacultyHtml(vuUrl + url);
                 string mainHtml = htmlTask.Result;
 
                 List<String> subUrls = parser.parseFaculty(mainHtml, url);
                 streamWriter.WriteLine("Parsed " + subUrls.Count + " URLs from " + url);
                 streamWriter.Flush();
-                //regForm.updateScraperTextbox("Parsed " + subUrls.Count + " URLs from " + url);
-                foreach (string subUrl in subUrls)
-                {
-                    //regForm.updateScraperTextbox("Parsing " + subUrl);
-                    Parser parserSub = new Parser(streamWriter, getFaculty(url));
-                    var subTextTask = fetcher.GetTimetableText(subUrl);
-                    string subText = subTextTask.Result;
-                    parserSub.parseTimetable(subText, subUrl);
 
-                    List<Lecturer> lecturers = parserSub.lecturers;
-                    List<Subject> subjects = parserSub.subjects;
-
-                    streamWriter.WriteLine("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
-                    streamWriter.Flush();
-                    //regForm.updateScraperTextbox("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
-
-                    AddLecturers(lecturers);
-                    AddSubjects(subjects);
-                }
-                DataMaster.GetInstance().WriteData();
+                Thread thread = new Thread(()=>ScrapTimetables(url, subUrls, fetcher));
+                threads.Add(thread);
+                thread.Start();
             }
+            foreach (Thread thread in threads) thread.Join();
             //regForm.updateScraperTextbox("Scraper is done.");
+            DataMaster.GetInstance().WriteData();
             streamWriter.Dispose();
         }
-
-        public void ScrapTimetables(Task<string> html)
+        private void ScrapTimetables(string url, List<string> subUrls, Fetcher fetcher)
         {
-            html.Wait();
-            streamWriter.Write(html.Result);
-            streamWriter.Flush();
-            streamWriter.Dispose();
+            foreach (string subUrl in subUrls)
+            {
+                //regForm.updateScraperTextbox("Parsing " + subUrl);
+                Parser parserSub = new Parser(getFaculty(url));
+                var subTextTask = fetcher.GetTimetableText(subUrl);
+                string subText = subTextTask.Result;
+                parserSub.parseTimetable(subText, subUrl);
+
+                List<Lecturer> lecturers = parserSub.lecturers;
+                List<Subject> subjects = parserSub.subjects;
+                lock (locker)
+                {
+                    streamWriter.WriteLine("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
+                    streamWriter.Flush();
+                }
+                //regForm.updateScraperTextbox("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
+
+                AddLecturers(lecturers);
+                AddSubjects(subjects);
+            }
+
         }
 
         private void AddSubjects(List<Subject> subjects)
