@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Collections.Specialized;
+using Microsoft.AspNetCore.SignalR.Client;
 
 namespace Vilnius_University_Advisor
 {
@@ -294,6 +295,17 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) activity = await response.Content.ReadAsAsync<List<Activity>>();
             return activity;
         }
-
+        public async void RunScraper(RegForm regForm)
+        {
+            HubConnection connection = new HubConnectionBuilder()
+                .WithUrl(ConfigurationManager.AppSettings.Get("Key0") + "scraperMessages")
+                .Build();
+            connection.On<string>("progress", (message) =>
+            {
+                regForm.updateScraperTextbox(message);
+            });
+            await connection.StartAsync();
+            await connection.InvokeAsync("StartScraper");
+        }
     }
 }

@@ -65,5 +65,11 @@ namespace VUA_api.Controllers
             return dataMaster.GetTop10Lecturers();
         }
 
+        [HttpGet("scraper")]
+        public string RunScraper()
+        {
+            new Scraper.ScraperMain(dataMaster.jsonReaderWriter.projectPath).StartScrap();
+            return "Scraper is done";
+        }
     }
 }

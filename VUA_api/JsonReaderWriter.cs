@@ -10,7 +10,7 @@ namespace VUA_api
 {
     public class JsonReaderWriter
     {
-        public string projectPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName).FullName;
+        public string projectPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName).FullName).FullName;
         char directorySeparator = Path.DirectorySeparatorChar;
         
         public List<Lecturer> ReadLecturers()

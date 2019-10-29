@@ -660,7 +660,7 @@ namespace Vilnius_University_Advisor
         {
             MainMenu.Hide();
             ScraperPanel.Show();
-            //(new Scraper.ScraperMain(DataFetcher.GetInstance().jsonReaderWriter.projectPath, this)).StartScrap();
+            DataFetcher.GetInstance().RunScraper(this);
             ScraperBack.Show();
         }
         public void updateScraperTextbox(string text)

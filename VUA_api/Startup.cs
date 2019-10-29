@@ -29,6 +29,9 @@ namespace VUA_api
                     .AddNewtonsoftJson();
             services.AddControllers()
                     .AddNewtonsoftJson();
+            services.AddSignalR(hubOptions => {
+                hubOptions.ClientTimeoutInterval = new TimeSpan(0, 30, 0);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +51,7 @@ namespace VUA_api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<Scraper.MessageSender>("api/scraperMessages");
             });
         }
     }
