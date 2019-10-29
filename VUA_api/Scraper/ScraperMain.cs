@@ -25,6 +25,7 @@ namespace VUA_api.Scraper
         };
         StreamWriter streamWriter;
         private static object locker = new Object();
+        public event EventHandler<string> ObjectsScraped;
 
         public ScraperMain(string path)
         {
@@ -59,7 +60,7 @@ namespace VUA_api.Scraper
                 thread.Start();
             }
             foreach (Thread thread in threads) thread.Join();
-            //regForm.updateScraperTextbox("Scraper is done.");
+            ObjectsScraped?.Invoke(this, "Scraper is done.");
             DataMaster.GetInstance().WriteData();
             streamWriter.Dispose();
         }
@@ -67,7 +68,7 @@ namespace VUA_api.Scraper
         {
             foreach (string subUrl in subUrls)
             {
-                //regForm.updateScraperTextbox("Parsing " + subUrl);
+                ObjectsScraped?.Invoke(this, "Parsing " + subUrl);
                 Parser parserSub = new Parser(getFaculty(url));
                 var subTextTask = fetcher.GetTimetableText(subUrl);
                 string subText = subTextTask.Result;
@@ -80,7 +81,7 @@ namespace VUA_api.Scraper
                     streamWriter.WriteLine("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
                     streamWriter.Flush();
                 }
-                //regForm.updateScraperTextbox("Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
+                ObjectsScraped?.Invoke(this, "Parsed " + lecturers.Count + " lecturers and " + subjects.Count + " subjects from " + subUrl);
 
                 AddLecturers(lecturers);
                 AddSubjects(subjects);
