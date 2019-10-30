@@ -28,7 +28,7 @@
   },
   {
     "name": "Arvydas Janonis",
-    "userFaculty": 0,
+    "userFaculty": 4,
     "userName": "arvydas.j",
     "password": "sabonis",
     "studyProgram": "Elektronikos inžinerija",
@@ -38,7 +38,7 @@
   },
   {
     "name": "Benas Ąžuolauskas",
-    "userFaculty": 0,
+    "userFaculty": 5,
     "userName": "azuols",
     "password": "osia",
     "studyProgram": "Medžių mokslas",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Berta Bernotaitė",
-    "userFaculty": 0,
+    "userFaculty": 2,
     "userName": "berta.b",
     "password": "slop",
     "studyProgram": "Ispanų filologija",
@@ -60,6 +60,16 @@
         "date": "2019-10-20"
       }
     ]
+  },
+  {
+    "name": "Dainius Dainavauskas",
+    "userFaculty": 13,
+    "userName": "dainius.d",
+    "password": "dainius",
+    "studyProgram": "Tarptautinis verslas",
+    "eMail": "dainius@gmail.com",
+    "phoneNumber": "+37065384677",
+    "userHistory": []
   },
   {
     "name": "Gintaras Gitas",
@@ -78,7 +88,7 @@
   },
   {
     "name": "Jonas Petraitis",
-    "userFaculty": 0,
+    "userFaculty": 6,
     "userName": "jonas.p",
     "password": "jonukas",
     "studyProgram": "Istorijos mokslas",
@@ -87,8 +97,18 @@
     "userHistory": []
   },
   {
+    "name": "Jonas Vainys",
+    "userFaculty": 4,
+    "userName": "jonas.v",
+    "password": "jonas",
+    "studyProgram": "Fizika",
+    "eMail": "jonas@gmail.com",
+    "phoneNumber": "+37062457733",
+    "userHistory": []
+  },
+  {
     "name": "Liepa Liepaite",
-    "userFaculty": 0,
+    "userFaculty": 3,
     "userName": "liepaite",
     "password": "zalioji",
     "studyProgram": "Asmenybės atradimo mokslai",
@@ -123,7 +143,7 @@
   },
   {
     "name": "Rimgailė Znutaitė",
-    "userFaculty": 0,
+    "userFaculty": 9,
     "userName": "rimgaile",
     "password": "rizn",
     "studyProgram": "Programų sistemos",
@@ -164,7 +184,7 @@
   },
   {
     "name": "Tomas",
-    "userFaculty": 0,
+    "userFaculty": 13,
     "userName": "tomas123",
     "password": "123456",
     "studyProgram": "Ekonomika",
@@ -187,7 +207,7 @@
   },
   {
     "name": "Viktorija Šimėnaitė",
-    "userFaculty": 0,
+    "userFaculty": 9,
     "userName": "gretchen",
     "password": "hehe",
     "studyProgram": "Programų sistemos",
