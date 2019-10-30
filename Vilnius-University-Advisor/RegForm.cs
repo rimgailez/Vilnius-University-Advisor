@@ -386,7 +386,8 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateLecturer.Show();
-            LectUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
+
+            ManageUserNameComBox(LectUsernameComBox);
         }
 
         public void SetColumnsWidthForLecturers()
@@ -563,7 +564,33 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateSubjects.Show();
-            SubjUsernameTxtBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
+
+            ManageUserNameComBox(SubjUsernameComBox);
+        }
+
+        private void ManageUserNameComBox(ComboBox comBox)
+        {
+            if (!comBox.Items.Contains(DataFetcher.GetInstance().GetCurrentUser().userName))
+            {
+                comBox.Items.Add(DataFetcher.GetInstance().GetCurrentUser().userName);
+            }
+
+            comBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
+
+            if (Properties.Settings.Default.anonymous)
+            {
+                if (!comBox.Items.Contains(MainResources.AnonymousUser))
+                {
+                    comBox.Items.Add(MainResources.AnonymousUser);
+                }
+            }
+            else
+            {
+                if (comBox.Items.Contains(MainResources.AnonymousUser))
+                {
+                    comBox.Items.Remove(MainResources.AnonymousUser);
+                }
+            }
         }
 
         private void SelectFacultySubj_SelectedIndexChanged(object sender, EventArgs e)
@@ -603,7 +630,7 @@ namespace Vilnius_University_Advisor
 
         private Boolean EvaluateLecturerWithValidations()
         {
-            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals("") || LectUsernameTxtBox.Text.Equals(""))
+            if (FilteredLecturersList.SelectedItem == null || NumericEvaluationLect.Value == 0 || ReviewLectEvalTxtBox.Text.Equals("") || LectUsernameComBox.Text.Equals(""))
             {
                 warningMsg(MainResources.FillInAllFields, MainResources.BlankFields);
                 return false;
@@ -611,7 +638,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Lecturer selectedLecturer = (Lecturer)FilteredLecturersList.SelectedItem;
-                DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameTxtBox.Text);
+                DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)NumericEvaluationLect.Value, ReviewLectEvalTxtBox.Text, LectUsernameComBox.Text);
                 DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedLecturer + selectedLecturer.name + ";");
                 return true;
             }
@@ -621,14 +648,14 @@ namespace Vilnius_University_Advisor
             SelectFacultyLect.Text = "";
             FilteredLecturersList.DataSource = null;
             ReviewLectEvalTxtBox.Text = "";
-            LectUsernameTxtBox.Text = "";
+            LectUsernameComBox.Text = "";
             EvaluationCommentLabel.Text = "...";
             NumericEvaluationLect.Value = 0;
         }
 
         private Boolean EvaluateSubjectWithValidations()
         {
-            if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals("") || SubjUsernameTxtBox.Text.Equals(""))
+            if (FilteredSubjectsList.SelectedItem == null || NumericEvaluationSubj.Value == 0 || ReviewSubjEvalTxtBox.Text.Equals("") || SubjUsernameComBox.Text.Equals(""))
             {
                 warningMsg(MainResources.FillInAllFields, MainResources.BlankFields);
                 return false;
@@ -636,7 +663,7 @@ namespace Vilnius_University_Advisor
             else
             {
                 Subject selectedSubject = (Subject)FilteredSubjectsList.SelectedItem;
-                DataFetcher.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameTxtBox.Text);
+                DataFetcher.GetInstance().EvaluateSubject(selectedSubject, (float)NumericEvaluationSubj.Value, ReviewSubjEvalTxtBox.Text, SubjUsernameComBox.Text);
                 DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedSubject + selectedSubject.name + ";");
                 return true;
             }
@@ -651,7 +678,7 @@ namespace Vilnius_University_Advisor
             SelectFacultySubj.Text = "";
             FilteredSubjectsList.DataSource = null;
             ReviewSubjEvalTxtBox.Text = "";
-            SubjUsernameTxtBox.Text = "";
+            SubjUsernameComBox.Text = "";
             SubjEvalCommentLab.Text = "...";
             NumericEvaluationSubj.Value = 0;
         }
@@ -987,6 +1014,8 @@ namespace Vilnius_University_Advisor
                 ReviewSubject.Visible = true;
                 ReviewLecturer.Visible = true;
                 ActivityHistory.Visible = true;
+                SaveAsWordDocButton.Visible = true;
+                SaveAsExcelButton.Visible = true;
                 MainMenu.Show();
             }
         }
@@ -1098,6 +1127,8 @@ namespace Vilnius_University_Advisor
             ReviewSubject.Visible = false;
             ReviewLecturer.Visible = false;
             ActivityHistory.Visible = false;
+            SaveAsWordDocButton.Visible = false;
+            SaveAsExcelButton.Visible = false;
             MainMenu.Show();
         }
 
@@ -1131,6 +1162,31 @@ namespace Vilnius_University_Advisor
         private void Numatytoji_Click(object sender, EventArgs e)
         {
             this.BackColor = Properties.Settings.Default.color3;
+        }
+
+        private void LeistiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.anonymous = true;
+        }
+
+        private void NeleistiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.anonymous = false;
+        }
+
+        private void SaveAsWordDocButton_Click(object sender, EventArgs e)
+        {
+            DocCreatorManager docManager = new DocCreatorManager(new WindowsDocCreator());
+            docManager.CreateDocument<Activity>(MainResources.PathWord, DataFetcher.GetInstance().GetHistory());
+            simpleMsg(MainResources.PathComment + MainResources.PathWord, MainResources.PathCaption);
+        }
+
+        private void SaveAsExcelButton_Click(object sender, EventArgs e)
+        {
+            DocCreatorManager docManager = new DocCreatorManager(new ExcelDocCreator());
+            docManager.CreateDocument<Activity>(MainResources.PathExcel, DataFetcher.GetInstance().GetHistory());
+            simpleMsg(MainResources.PathComment + MainResources.PathExcel, MainResources.PathCaption);
+
         }
     }
 }

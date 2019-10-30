@@ -9,7 +9,22 @@ namespace Vilnius_University_Advisor
     class User
     {
         public string name { get; set; }
-        public Faculty userFaculty { get; set; }
+        private Faculty faculty;
+        public Faculty userFaculty
+        {
+            get => faculty;
+            set
+            {
+                if (value == Faculty.None)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                else
+                {
+                    faculty = value;
+                }
+            }
+        }
         public string userName { get; set; }
         public string password { get; set; }
         public string studyProgram { get; set; }

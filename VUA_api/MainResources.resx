@@ -240,4 +240,7 @@
   <data name="UsersJson" xml:space="preserve">
     <value>users.json</value>
   </data>
+  <data name="WrongFaculty" xml:space="preserve">
+    <value>Tokio fakulteto nėra.</value>
+  </data>
 </root>

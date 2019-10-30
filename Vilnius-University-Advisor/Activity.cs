@@ -15,5 +15,10 @@ namespace Vilnius_University_Advisor
             this.activityComment = activityComment;
             this.date = DateTime.Today.Year + "-" + DateTime.Today.Month + "-" + DateTime.Today.Day;
         }
+        
+        public override string ToString()
+        {
+            return this.date + " " + this.activityComment;
+        }
     }
 }

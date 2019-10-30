@@ -58,5 +58,17 @@ namespace Vilnius_University_Advisor.Properties {
                 this["color3"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool anonymous {
+            get {
+                return ((bool)(this["anonymous"]));
+            }
+            set {
+                this["anonymous"] = value;
+            }
+        }
     }
 }

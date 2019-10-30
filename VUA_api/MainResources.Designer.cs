@@ -428,5 +428,14 @@ namespace VUA_api {
                 return ResourceManager.GetString("UsersJson", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tokio fakulteto nėra..
+        /// </summary>
+        internal static string WrongFaculty {
+            get {
+                return ResourceManager.GetString("WrongFaculty", resourceCulture);
+            }
+        }
     }
 }
