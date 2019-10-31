@@ -193,10 +193,10 @@
     <value>Failas išsaugotas:</value>
   </data>
   <data name="PathExcel" xml:space="preserve">
-    <value>d:\history.xls</value>
+    <value>C:\history.xls</value>
   </data>
   <data name="PathWord" xml:space="preserve">
-    <value>d:\history.docx</value>
+    <value>C:\history.docx</value>
   </data>
   <data name="RegisteredLecturer" xml:space="preserve">
     <value>Pridėtas naujas dėstytojas: </value>

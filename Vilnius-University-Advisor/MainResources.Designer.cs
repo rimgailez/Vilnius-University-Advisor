@@ -286,7 +286,7 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to d:\history.xls.
+        ///   Looks up a localized string similar to C:\history.xls.
         /// </summary>
         internal static string PathExcel {
             get {
@@ -295,7 +295,7 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to d:\history.docx.
+        ///   Looks up a localized string similar to C:\history.docx.
         /// </summary>
         internal static string PathWord {
             get {

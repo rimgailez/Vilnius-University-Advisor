@@ -343,10 +343,10 @@
             // 
             // ActivityHistory
             // 
-            this.ActivityHistory.Location = new System.Drawing.Point(322, 21);
+            this.ActivityHistory.Location = new System.Drawing.Point(322, 80);
             this.ActivityHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ActivityHistory.Name = "ActivityHistory";
-            this.ActivityHistory.Size = new System.Drawing.Size(250, 80);
+            this.ActivityHistory.Size = new System.Drawing.Size(250, 57);
             this.ActivityHistory.TabIndex = 13;
             this.ActivityHistory.Text = "Rodyti veiklos istoriją";
             this.ActivityHistory.UseVisualStyleBackColor = true;
@@ -354,7 +354,7 @@
             // 
             // LogOutButton
             // 
-            this.LogOutButton.Location = new System.Drawing.Point(1039, 405);
+            this.LogOutButton.Location = new System.Drawing.Point(1030, 391);
             this.LogOutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(116, 39);
@@ -365,10 +365,10 @@
             // 
             // TOP
             // 
-            this.TOP.Location = new System.Drawing.Point(865, 212);
+            this.TOP.Location = new System.Drawing.Point(865, 237);
             this.TOP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TOP.Name = "TOP";
-            this.TOP.Size = new System.Drawing.Size(250, 80);
+            this.TOP.Size = new System.Drawing.Size(250, 57);
             this.TOP.TabIndex = 11;
             this.TOP.Text = "Rodyti geriausius dalykus/dėstytojus";
             this.TOP.UseVisualStyleBackColor = true;
@@ -386,10 +386,10 @@
             // 
             // OneLecturer
             // 
-            this.OneLecturer.Location = new System.Drawing.Point(595, 212);
+            this.OneLecturer.Location = new System.Drawing.Point(595, 237);
             this.OneLecturer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OneLecturer.Name = "OneLecturer";
-            this.OneLecturer.Size = new System.Drawing.Size(250, 80);
+            this.OneLecturer.Size = new System.Drawing.Size(250, 57);
             this.OneLecturer.TabIndex = 9;
             this.OneLecturer.Text = "Peržiūrėti konkretaus dėstytojo įvertinimą";
             this.OneLecturer.UseVisualStyleBackColor = true;
@@ -397,10 +397,10 @@
             // 
             // OneSubject
             // 
-            this.OneSubject.Location = new System.Drawing.Point(321, 214);
+            this.OneSubject.Location = new System.Drawing.Point(322, 238);
             this.OneSubject.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OneSubject.Name = "OneSubject";
-            this.OneSubject.Size = new System.Drawing.Size(250, 80);
+            this.OneSubject.Size = new System.Drawing.Size(250, 57);
             this.OneSubject.TabIndex = 8;
             this.OneSubject.Text = "Peržiūrėti konkretaus dalyko įvertinimą";
             this.OneSubject.UseVisualStyleBackColor = true;
@@ -408,10 +408,10 @@
             // 
             // RunScraper
             // 
-            this.RunScraper.Location = new System.Drawing.Point(50, 352);
+            this.RunScraper.Location = new System.Drawing.Point(50, 396);
             this.RunScraper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RunScraper.Name = "RunScraper";
-            this.RunScraper.Size = new System.Drawing.Size(250, 80);
+            this.RunScraper.Size = new System.Drawing.Size(250, 57);
             this.RunScraper.TabIndex = 7;
             this.RunScraper.Text = "Parsiųsti duomenis ";
             this.RunScraper.UseVisualStyleBackColor = true;
@@ -419,10 +419,10 @@
             // 
             // ReviewLecturer
             // 
-            this.ReviewLecturer.Location = new System.Drawing.Point(865, 21);
+            this.ReviewLecturer.Location = new System.Drawing.Point(865, 81);
             this.ReviewLecturer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReviewLecturer.Name = "ReviewLecturer";
-            this.ReviewLecturer.Size = new System.Drawing.Size(250, 80);
+            this.ReviewLecturer.Size = new System.Drawing.Size(250, 57);
             this.ReviewLecturer.TabIndex = 6;
             this.ReviewLecturer.Text = "Įvertinti dėstytoją";
             this.ReviewLecturer.UseVisualStyleBackColor = true;
@@ -430,10 +430,10 @@
             // 
             // ReviewSubject
             // 
-            this.ReviewSubject.Location = new System.Drawing.Point(595, 20);
+            this.ReviewSubject.Location = new System.Drawing.Point(595, 81);
             this.ReviewSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReviewSubject.Name = "ReviewSubject";
-            this.ReviewSubject.Size = new System.Drawing.Size(250, 80);
+            this.ReviewSubject.Size = new System.Drawing.Size(250, 57);
             this.ReviewSubject.TabIndex = 5;
             this.ReviewSubject.Text = "Įvertinti dalyką";
             this.ReviewSubject.UseVisualStyleBackColor = true;
@@ -441,10 +441,10 @@
             // 
             // ListSubj
             // 
-            this.ListSubj.Location = new System.Drawing.Point(322, 118);
+            this.ListSubj.Location = new System.Drawing.Point(321, 158);
             this.ListSubj.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ListSubj.Name = "ListSubj";
-            this.ListSubj.Size = new System.Drawing.Size(250, 80);
+            this.ListSubj.Size = new System.Drawing.Size(250, 57);
             this.ListSubj.TabIndex = 0;
             this.ListSubj.Text = "Rodyti pasirenkamuosius dalykus";
             this.ListSubj.UseVisualStyleBackColor = true;
@@ -452,10 +452,10 @@
             // 
             // ListSubj1
             // 
-            this.ListSubj1.Location = new System.Drawing.Point(595, 114);
+            this.ListSubj1.Location = new System.Drawing.Point(595, 158);
             this.ListSubj1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ListSubj1.Name = "ListSubj1";
-            this.ListSubj1.Size = new System.Drawing.Size(250, 80);
+            this.ListSubj1.Size = new System.Drawing.Size(250, 57);
             this.ListSubj1.TabIndex = 4;
             this.ListSubj1.Text = "Rodyti privalomuosius dalykus";
             this.ListSubj1.UseVisualStyleBackColor = true;
@@ -463,10 +463,10 @@
             // 
             // ListLect
             // 
-            this.ListLect.Location = new System.Drawing.Point(865, 115);
+            this.ListLect.Location = new System.Drawing.Point(865, 158);
             this.ListLect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ListLect.Name = "ListLect";
-            this.ListLect.Size = new System.Drawing.Size(250, 80);
+            this.ListLect.Size = new System.Drawing.Size(250, 57);
             this.ListLect.TabIndex = 3;
             this.ListLect.Text = "Rodyti dėstytojus";
             this.ListLect.UseVisualStyleBackColor = true;
@@ -474,10 +474,10 @@
             // 
             // SubjReg
             // 
-            this.SubjReg.Location = new System.Drawing.Point(322, 308);
+            this.SubjReg.Location = new System.Drawing.Point(321, 318);
             this.SubjReg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SubjReg.Name = "SubjReg";
-            this.SubjReg.Size = new System.Drawing.Size(250, 80);
+            this.SubjReg.Size = new System.Drawing.Size(250, 57);
             this.SubjReg.TabIndex = 2;
             this.SubjReg.Text = "Registruoti dalyką";
             this.SubjReg.UseVisualStyleBackColor = true;
@@ -485,10 +485,10 @@
             // 
             // LecReg
             // 
-            this.LecReg.Location = new System.Drawing.Point(595, 308);
+            this.LecReg.Location = new System.Drawing.Point(595, 318);
             this.LecReg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LecReg.Name = "LecReg";
-            this.LecReg.Size = new System.Drawing.Size(250, 80);
+            this.LecReg.Size = new System.Drawing.Size(250, 57);
             this.LecReg.TabIndex = 1;
             this.LecReg.Text = "Registruoti dėstytoją";
             this.LecReg.UseVisualStyleBackColor = true;
@@ -2888,7 +2888,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 471);
+            this.ClientSize = new System.Drawing.Size(1188, 472);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.EvaluateSubjects);
             this.Controls.Add(this.Registration);
