@@ -192,12 +192,6 @@
   <data name="PathComment" xml:space="preserve">
     <value>Failas išsaugotas:</value>
   </data>
-  <data name="PathExcel" xml:space="preserve">
-    <value>C:\history.xls</value>
-  </data>
-  <data name="PathWord" xml:space="preserve">
-    <value>C:\history.docx</value>
-  </data>
   <data name="RegisteredLecturer" xml:space="preserve">
     <value>Pridėtas naujas dėstytojas: </value>
   </data>

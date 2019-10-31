@@ -286,24 +286,6 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\history.xls.
-        /// </summary>
-        internal static string PathExcel {
-            get {
-                return ResourceManager.GetString("PathExcel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to C:\history.docx.
-        /// </summary>
-        internal static string PathWord {
-            get {
-                return ResourceManager.GetString("PathWord", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Pridėtas naujas dėstytojas: .
         /// </summary>
         internal static string RegisteredLecturer {

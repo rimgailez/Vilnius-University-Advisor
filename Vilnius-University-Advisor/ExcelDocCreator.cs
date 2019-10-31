@@ -28,7 +28,6 @@ namespace Vilnius_University_Advisor
                 xlWorkSheet.Cells[i, 1] = i + ".";
                 xlWorkSheet.Cells[i, 2] = elem.ToString();
             }
-            //object filename = Path.GetFullPath(Path.Combine(Application.StartupPath, "..\\..")) + "\\test.doc";
 
             xlWorkBook.SaveAs(path, Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
             xlWorkBook.Close(true, misValue, misValue);

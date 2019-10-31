@@ -9,7 +9,6 @@ namespace VUA_api
     {
         public string name { get; set; }
         private Faculty faculty;
-        // public Faculty userFaculty { get; set; }
         public Faculty userFaculty 
         {
              get => faculty;
