@@ -1409,7 +1409,7 @@
             // 
             this.LectUsernameComBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LectUsernameComBox.FormattingEnabled = true;
-            this.LectUsernameComBox.Location = new System.Drawing.Point(410, 184);
+            this.LectUsernameComBox.Location = new System.Drawing.Point(411, 194);
             this.LectUsernameComBox.Name = "LectUsernameComBox";
             this.LectUsernameComBox.Size = new System.Drawing.Size(552, 28);
             this.LectUsernameComBox.TabIndex = 18;
@@ -1417,7 +1417,7 @@
             // LectUsernameLabel
             // 
             this.LectUsernameLabel.AutoSize = true;
-            this.LectUsernameLabel.Location = new System.Drawing.Point(408, 154);
+            this.LectUsernameLabel.Location = new System.Drawing.Point(409, 167);
             this.LectUsernameLabel.Name = "LectUsernameLabel";
             this.LectUsernameLabel.Size = new System.Drawing.Size(148, 20);
             this.LectUsernameLabel.TabIndex = 17;
@@ -1427,7 +1427,7 @@
             // 
             this.EvaluationCommentLabel.AutoSize = true;
             this.EvaluationCommentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EvaluationCommentLabel.Location = new System.Drawing.Point(408, 118);
+            this.EvaluationCommentLabel.Location = new System.Drawing.Point(414, 145);
             this.EvaluationCommentLabel.Name = "EvaluationCommentLabel";
             this.EvaluationCommentLabel.Size = new System.Drawing.Size(21, 20);
             this.EvaluationCommentLabel.TabIndex = 15;
@@ -1468,7 +1468,7 @@
             this.EvalTableWithEmojis.Controls.Add(this.EmojiScore5, 4, 0);
             this.EvalTableWithEmojis.Controls.Add(this.EmojiScore1, 0, 0);
             this.EvalTableWithEmojis.Controls.Add(this.EmojiScore3, 2, 0);
-            this.EvalTableWithEmojis.Location = new System.Drawing.Point(410, 38);
+            this.EvalTableWithEmojis.Location = new System.Drawing.Point(413, 64);
             this.EvalTableWithEmojis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EvalTableWithEmojis.Name = "EvalTableWithEmojis";
             this.EvalTableWithEmojis.RowCount = 1;
@@ -1554,7 +1554,7 @@
             // LectEvaluationLab
             // 
             this.LectEvaluationLab.AutoSize = true;
-            this.LectEvaluationLab.Location = new System.Drawing.Point(408, 15);
+            this.LectEvaluationLab.Location = new System.Drawing.Point(412, 38);
             this.LectEvaluationLab.Name = "LectEvaluationLab";
             this.LectEvaluationLab.Size = new System.Drawing.Size(158, 20);
             this.LectEvaluationLab.TabIndex = 6;
@@ -2826,7 +2826,7 @@
             this.AnoniminisNaudotojasToolStripMenuItem});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(1188, 33);
+            this.Menu.Size = new System.Drawing.Size(1188, 36);
             this.Menu.TabIndex = 12;
             this.Menu.Text = "menuStrip1";
             // 
@@ -2837,7 +2837,7 @@
             this.Melsva,
             this.Numatytoji});
             this.FonoSpalva.Name = "FonoSpalva";
-            this.FonoSpalva.Size = new System.Drawing.Size(124, 29);
+            this.FonoSpalva.Size = new System.Drawing.Size(124, 30);
             this.FonoSpalva.Text = "Fono spalva";
             // 
             // Rausva
@@ -2869,6 +2869,7 @@
             this.AnoniminisNaudotojasToolStripMenuItem.Name = "AnoniminisNaudotojasToolStripMenuItem";
             this.AnoniminisNaudotojasToolStripMenuItem.Size = new System.Drawing.Size(211, 29);
             this.AnoniminisNaudotojasToolStripMenuItem.Text = "Anoniminis naudotojas";
+            this.AnoniminisNaudotojasToolStripMenuItem.Visible = false;
             // 
             // LeistiToolStripMenuItem
             // 
@@ -2889,14 +2890,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 472);
-            this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.EvaluateSubjects);
-            this.Controls.Add(this.Registration);
+            this.Controls.Add(this.Menu);
             this.Controls.Add(this.EvaluateLecturer);
+            this.Controls.Add(this.EvaluateSubjects);
+            this.Controls.Add(this.MainMenu);
+            this.Controls.Add(this.Registration);
             this.Controls.Add(this.SingleSubject);
             this.Controls.Add(this.SingleLecturer);
             this.Controls.Add(this.LecturerPanel);
-            this.Controls.Add(this.Menu);
             this.Controls.Add(this.ScraperPanel);
             this.Controls.Add(this.OptionalSubjects);
             this.Controls.Add(this.MandatorySubjects);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.IO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace Vilnius_University_Advisor
         public delegate void Del(string message, string caption);
         public Del simpleMsg = validPrintObj.PrintOnlyMessage;
         public Del warningMsg = validPrintObj.PrintWarningMessage;
+        string path = Directory.GetParent(Directory.GetParent(Directory.GetParent(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)).FullName).FullName).FullName;
 
         public RegForm()
         {
@@ -386,8 +388,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateLecturer.Show();
-
-            ManageUserNameComBox(LectUsernameComBox);
+            AnoniminisNaudotojasToolStripMenuItem.Visible = true;
         }
 
         public void SetColumnsWidthForLecturers()
@@ -530,7 +531,7 @@ namespace Vilnius_University_Advisor
         private void BackLecEvaluation_Click(object sender, EventArgs e)
         {
             ClearAllFieldsInLectForms();
-
+            AnoniminisNaudotojasToolStripMenuItem.Visible = false;
             EvaluateLecturer.Hide();
             MainMenu.Show();
         }
@@ -564,33 +565,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateSubjects.Show();
-
-            ManageUserNameComBox(SubjUsernameComBox);
-        }
-
-        private void ManageUserNameComBox(ComboBox comBox)
-        {
-            if (!comBox.Items.Contains(DataFetcher.GetInstance().GetCurrentUser().userName))
-            {
-                comBox.Items.Add(DataFetcher.GetInstance().GetCurrentUser().userName);
-            }
-
-            comBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
-
-            if (Properties.Settings.Default.anonymous)
-            {
-                if (!comBox.Items.Contains(MainResources.AnonymousUser))
-                {
-                    comBox.Items.Add(MainResources.AnonymousUser);
-                }
-            }
-            else
-            {
-                if (comBox.Items.Contains(MainResources.AnonymousUser))
-                {
-                    comBox.Items.Remove(MainResources.AnonymousUser);
-                }
-            }
+            AnoniminisNaudotojasToolStripMenuItem.Visible = true;
         }
 
         private void SelectFacultySubj_SelectedIndexChanged(object sender, EventArgs e)
@@ -613,7 +588,7 @@ namespace Vilnius_University_Advisor
             if (EvaluateLecturerWithValidations())
             {
                 ClearAllFieldsInLectForms();
-
+                AnoniminisNaudotojasToolStripMenuItem.Visible = false;
                 EvaluateLecturer.Hide();
                 MainMenu.Show();
             }
@@ -781,6 +756,7 @@ namespace Vilnius_University_Advisor
         private void BackSubEvaluation_Click(object sender, EventArgs e)
         {
             ClearAllFieldsInSubjForm();
+            AnoniminisNaudotojasToolStripMenuItem.Visible = false;
             EvaluateSubjects.Hide();
             MainMenu.Show();
         }
@@ -863,6 +839,7 @@ namespace Vilnius_University_Advisor
             if (EvaluateSubjectWithValidations())
             {
                 ClearAllFieldsInSubjForm();
+                AnoniminisNaudotojasToolStripMenuItem.Visible = false;
                 EvaluateSubjects.Hide();
                 MainMenu.Show();
             }
@@ -1167,26 +1144,55 @@ namespace Vilnius_University_Advisor
         private void LeistiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.anonymous = true;
+            ManageUserNameComBox(SubjUsernameComBox);
+            ManageUserNameComBox(LectUsernameComBox);
         }
 
         private void NeleistiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.anonymous = false;
+            ManageUserNameComBox(SubjUsernameComBox);
+            ManageUserNameComBox(LectUsernameComBox);
         }
 
         private void SaveAsWordDocButton_Click(object sender, EventArgs e)
         {
             DocCreatorManager docManager = new DocCreatorManager(new WindowsDocCreator());
-            docManager.CreateDocument<Activity>(MainResources.PathWord, DataFetcher.GetInstance().GetHistory());
-            simpleMsg(MainResources.PathComment + MainResources.PathWord, MainResources.PathCaption);
+            docManager.CreateDocument<Activity>(path, DataFetcher.GetInstance().GetHistory());
+            simpleMsg(MainResources.PathComment + " " + path, MainResources.PathCaption);
         }
 
         private void SaveAsExcelButton_Click(object sender, EventArgs e)
         {
             DocCreatorManager docManager = new DocCreatorManager(new ExcelDocCreator());
-            docManager.CreateDocument<Activity>(MainResources.PathExcel, DataFetcher.GetInstance().GetHistory());
-            simpleMsg(MainResources.PathComment + MainResources.PathExcel, MainResources.PathCaption);
-
+            docManager.CreateDocument<Activity>(path, DataFetcher.GetInstance().GetHistory());
+            simpleMsg(MainResources.PathComment + " " + path, MainResources.PathCaption);
         }
+
+        private void ManageUserNameComBox(ComboBox comBox)
+        {
+            if (!comBox.Items.Contains(DataFetcher.GetInstance().GetCurrentUser().userName))
+            {
+                comBox.Items.Add(DataFetcher.GetInstance().GetCurrentUser().userName);
+            }
+
+            comBox.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
+
+            if (Properties.Settings.Default.anonymous)
+            {
+                if (!comBox.Items.Contains(MainResources.AnonymousUser))
+                {
+                    comBox.Items.Add(MainResources.AnonymousUser);
+                }
+            }
+            else
+            {
+                if (comBox.Items.Contains(MainResources.AnonymousUser))
+                {
+                    comBox.Items.Remove(MainResources.AnonymousUser);
+                }
+            }
+        }
+
     }
 }
