@@ -19,6 +19,14 @@
       {
         "activityComment": "Įvertintas dėstytojas: Aivaras Novikas;",
         "date": "2019-10-26"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Agnė Jasinavičiūtė;",
+        "date": "2019-10-30"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Andrius Valickas;",
+        "date": "2019-10-31"
       }
     ]
   },
@@ -58,6 +66,31 @@
     ]
   },
   {
+    "name": "Dainius Dainavauskas",
+    "userFaculty": 13,
+    "userName": "dainius.d",
+    "password": "dainius",
+    "studyProgram": "Tarptautinis verslas",
+    "eMail": "dainius@gmail.com",
+    "phoneNumber": "+37065384677",
+    "userHistory": []
+  },
+  {
+    "name": "Gintaras Gitas",
+    "userFaculty": 0,
+    "userName": "gitas.g",
+    "password": "gitas",
+    "studyProgram": "Teisė",
+    "eMail": "gitas@gmail.com",
+    "phoneNumber": "+37068970055",
+    "userHistory": [
+      {
+        "activityComment": "Įvertintas dėstytojas: Albinas Marčinskas;",
+        "date": "2019-10-30"
+      }
+    ]
+  },
+  {
     "name": "Jonas Petraitis",
     "userFaculty": 6,
     "userName": "jonas.p",
@@ -65,6 +98,16 @@
     "studyProgram": "Istorijos mokslas",
     "eMail": "jonas@gmail.com",
     "phoneNumber": "+37061055566",
+    "userHistory": []
+  },
+  {
+    "name": "Jonas Vainys",
+    "userFaculty": 4,
+    "userName": "jonas.v",
+    "password": "jonas",
+    "studyProgram": "Fizika",
+    "eMail": "jonas@gmail.com",
+    "phoneNumber": "+37062457733",
     "userHistory": []
   },
   {
@@ -132,6 +175,16 @@
         "date": "2019-10-25"
       }
     ]
+  },
+  {
+    "name": "Simona Simonaitytė",
+    "userFaculty": 10,
+    "userName": "simona.s",
+    "password": "sim",
+    "studyProgram": "Medicina",
+    "eMail": "simona@gmail.com",
+    "phoneNumber": "+37061035622",
+    "userHistory": []
   },
   {
     "name": "Tomas",

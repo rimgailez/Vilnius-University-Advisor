@@ -282,9 +282,16 @@
   {
     "name": "Agnė Jasinavičiūtė",
     "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 2.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "Anonimas",
+        "score": 2,
+        "text": "Nesu patenkintas šios dėstytojos dėstymo stiliumi.",
+        "date": "2019-10-30"
+      }
+    ]
   },
   {
     "name": "Agnė Juškevičienė",
@@ -1507,9 +1514,16 @@
   {
     "name": "Andrius Valickas",
     "faculty": 13,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 4.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 4,
+        "text": "Neblogas dėstytojas.",
+        "date": "2019-10-31"
+      }
+    ]
   },
   {
     "name": "Andrius Vytautas Misiukas Misiūnas",

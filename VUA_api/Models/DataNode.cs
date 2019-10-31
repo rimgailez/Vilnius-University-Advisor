@@ -9,7 +9,23 @@ namespace VUA_api
     public class DataNode : IEquatable<DataNode>, IComparable<DataNode>
     {
         public string name { get; set; }
-        public Faculty faculty { get; set; }
+        private Faculty facultyField;
+        public Faculty faculty
+        {
+            get => facultyField;
+            set
+            {
+                if (value == Faculty.None)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                else
+                {
+                    facultyField = value;
+                }
+            }
+        }
+
         private float scoreField;
         public float score
         {

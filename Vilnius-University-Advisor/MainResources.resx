@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AnonymousUser" xml:space="preserve">
+    <value>Anonimas</value>
+  </data>
   <data name="BlankFields" xml:space="preserve">
     <value>Neužpildyti laukai</value>
   </data>
@@ -182,6 +185,12 @@
   </data>
   <data name="PasswordsDoNotMatch" xml:space="preserve">
     <value>Įvesti slaptažodžiai nesutampa. Prašome įvesti juos dar kartą.</value>
+  </data>
+  <data name="PathCaption" xml:space="preserve">
+    <value>Failo vieta</value>
+  </data>
+  <data name="PathComment" xml:space="preserve">
+    <value>Failas išsaugotas:</value>
   </data>
   <data name="RegisteredLecturer" xml:space="preserve">
     <value>Pridėtas naujas dėstytojas: </value>
@@ -261,8 +270,14 @@
   <data name="UsersJson" xml:space="preserve">
     <value>users.json</value>
   </data>
+  <data name="VUpageLink" xml:space="preserve">
+    <value>https://www.vu.lt/</value>
+  </data>
   <data name="WrongData" xml:space="preserve">
     <value>Neteisingi duomenys</value>
+  </data>
+  <data name="WrongFaculty" xml:space="preserve">
+    <value>Nurodyto fakulteto nėra.</value>
   </data>
   <data name="WrongPassword" xml:space="preserve">
     <value>Neteisingas slaptažodis. Bandykite dar kartą.</value>

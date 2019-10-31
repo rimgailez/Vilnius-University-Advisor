@@ -61,6 +61,15 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Anonimas.
+        /// </summary>
+        internal static string AnonymousUser {
+            get {
+                return ResourceManager.GetString("AnonymousUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Neužpildyti laukai.
         /// </summary>
         internal static string BlankFields {
@@ -255,6 +264,24 @@ namespace Vilnius_University_Advisor {
         internal static string PasswordsDoNotMatch {
             get {
                 return ResourceManager.GetString("PasswordsDoNotMatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failo vieta.
+        /// </summary>
+        internal static string PathCaption {
+            get {
+                return ResourceManager.GetString("PathCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failas išsaugotas:.
+        /// </summary>
+        internal static string PathComment {
+            get {
+                return ResourceManager.GetString("PathComment", resourceCulture);
             }
         }
         
@@ -493,11 +520,29 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://www.vu.lt/.
+        /// </summary>
+        internal static string VUpageLink {
+            get {
+                return ResourceManager.GetString("VUpageLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Neteisingi duomenys.
         /// </summary>
         internal static string WrongData {
             get {
                 return ResourceManager.GetString("WrongData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nurodyto fakulteto nėra..
+        /// </summary>
+        internal static string WrongFaculty {
+            get {
+                return ResourceManager.GetString("WrongFaculty", resourceCulture);
             }
         }
         
