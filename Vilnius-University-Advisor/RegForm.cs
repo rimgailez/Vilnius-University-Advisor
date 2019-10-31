@@ -388,6 +388,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateLecturer.Show();
+            ManageUserNameComBox(LectUsernameComBox);
             AnoniminisNaudotojasToolStripMenuItem.Visible = true;
         }
 
@@ -565,6 +566,7 @@ namespace Vilnius_University_Advisor
             //display correct panel
             MainMenu.Hide();
             EvaluateSubjects.Show();
+            ManageUserNameComBox(SubjUsernameComBox);
             AnoniminisNaudotojasToolStripMenuItem.Visible = true;
         }
 
