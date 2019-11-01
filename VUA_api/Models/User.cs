@@ -35,7 +35,7 @@ namespace VUA_api
         public User(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             this.name = name;
-            this.userFaculty = faculty;
+            this.faculty = faculty;
             this.userName = userName;
             this.password = password;
             this.eMail = eMail;

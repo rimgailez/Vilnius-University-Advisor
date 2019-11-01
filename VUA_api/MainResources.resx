@@ -225,6 +225,9 @@
   <data name="String9" xml:space="preserve">
     <value>4 - naudingas bei įdomus dalykas.</value>
   </data>
+  <data name="StudyProgrammeJson" xml:space="preserve">
+    <value>studyProgrammes.json</value>
+  </data>
   <data name="SubjectName" xml:space="preserve">
     <value>Dalyko pavadinimas: </value>
   </data>

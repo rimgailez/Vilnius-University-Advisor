@@ -42,7 +42,7 @@ namespace VUA_api
         public DataNode(string name, Faculty faculty)
         {
             this.name = name;
-            this.faculty = faculty;
+            this.facultyField = faculty;
             this.scoreField = 0;
             this.numberOfReviews = 0;
             this.reviews = new List<Review>();

@@ -207,6 +207,7 @@
     <Compile Include="Faculty.cs" />
     <Compile Include="IDocCreator.cs" />
     <Compile Include="Lecturer.cs" />
+    <Compile Include="StudyProgramme.cs" />
     <Compile Include="WindowsDocCreator.cs" />
     <Compile Include="MainResources.Designer.cs">
       <AutoGen>True</AutoGen>

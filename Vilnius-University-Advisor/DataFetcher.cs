@@ -307,5 +307,18 @@ namespace Vilnius_University_Advisor
             await connection.StartAsync();
             await connection.InvokeAsync("StartScraper");
         }
+
+        public IEnumerable<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
+        {
+            return GetStudyProgrammesByFacultyAsync(faculty).Result;
+        }
+        public async Task<IEnumerable<StudyProgramme>> GetStudyProgrammesByFacultyAsync(Faculty faculty)
+        {
+            List<StudyProgramme> studyProgrammes = null;
+            int facultyInt = (int)faculty;
+            HttpResponseMessage response = await client.GetAsync("studyProgramme/faculty/" + facultyInt.ToString()).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) studyProgrammes = await response.Content.ReadAsAsync<List<StudyProgramme>>();
+            return studyProgrammes;
+        }
     }
 }

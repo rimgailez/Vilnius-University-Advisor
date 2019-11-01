@@ -1012,7 +1012,7 @@ namespace Vilnius_University_Advisor
             UserNameRegistration.Text = "";
             PasswordRegistration.Text = "";
             RepeatPasswordReg.Text = "";
-            StudyProgramReg.Text = "";
+            StudyProgramReg.Items.Clear();
             EMailReg.Text = "";
             PhoneNoReg.Text = "";
         }
@@ -1196,5 +1196,14 @@ namespace Vilnius_University_Advisor
             }
         }
 
+        private void SelectFacultyUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Faculty faculty = (Faculty)SelectFacultyUser.SelectedIndex;
+            StudyProgramReg.Items.Clear();
+            foreach(StudyProgramme studies in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(faculty))
+            {
+                StudyProgramReg.Items.Add(studies.name);
+            }
+        }
     }
 }
