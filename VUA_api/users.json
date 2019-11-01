@@ -4,7 +4,7 @@
     "userFaculty": 0,
     "userName": "andrius2000",
     "password": "aaa",
-    "studyProgram": "aaa",
+    "studyProgram": "Geologija",
     "eMail": "andrius@gmail.com",
     "phoneNumber": "+37061010022",
     "userHistory": [
@@ -35,7 +35,7 @@
     "userFaculty": 4,
     "userName": "arvydas.j",
     "password": "sabonis",
-    "studyProgram": "Elektronikos inžinerija",
+    "studyProgram": "Elektronika ir telekomunikacijų technologijos",
     "eMail": "arvydas@gmail.com",
     "phoneNumber": "+37069923234",
     "userHistory": []
@@ -45,7 +45,7 @@
     "userFaculty": 5,
     "userName": "azuols",
     "password": "osia",
-    "studyProgram": "Medžių mokslas",
+    "studyProgram": "Aplinkotyra ir aplinkotvarka",
     "eMail": "benas@gmail.com",
     "phoneNumber": "+37061033344",
     "userHistory": []
@@ -77,7 +77,7 @@
   },
   {
     "name": "Gintaras Gitas",
-    "userFaculty": 0,
+    "userFaculty": 12,
     "userName": "gitas.g",
     "password": "gitas",
     "studyProgram": "Teisė",
@@ -95,7 +95,7 @@
     "userFaculty": 6,
     "userName": "jonas.p",
     "password": "jonukas",
-    "studyProgram": "Istorijos mokslas",
+    "studyProgram": "Istorija",
     "eMail": "jonas@gmail.com",
     "phoneNumber": "+37061055566",
     "userHistory": []
@@ -115,7 +115,7 @@
     "userFaculty": 3,
     "userName": "liepaite",
     "password": "zalioji",
-    "studyProgram": "Asmenybės atradimo mokslai",
+    "studyProgram": "Organizacinė psichologija",
     "eMail": "liepa@gmail.com",
     "phoneNumber": "+37063344455",
     "userHistory": [
@@ -144,6 +144,16 @@
         "date": "2019-10-20"
       }
     ]
+  },
+  {
+    "name": "Paulius Gulauskas",
+    "userFaculty": 9,
+    "userName": "paulius",
+    "password": "paul1998",
+    "studyProgram": "Informatika",
+    "eMail": "pauliusg@gmail.com",
+    "phoneNumber": "+37061928374",
+    "userHistory": []
   },
   {
     "name": "Rimgailė Znutaitė",

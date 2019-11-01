@@ -47,5 +47,17 @@ namespace VUA_api
             string output = JsonConvert.SerializeObject(users, Formatting.Indented);
             File.WriteAllText(projectPath + directorySeparator + MainResources.UsersJson, output);
         }
+
+        public List<StudyProgramme> ReadStudyProgrammes()
+        {
+            string studyProgrammeInput = File.ReadAllText(projectPath + directorySeparator + MainResources.StudyProgrammeJson);
+            return JsonConvert.DeserializeObject<List<StudyProgramme>>(studyProgrammeInput);
+        }
+
+        public void WriteStudyProgrammes(List<StudyProgramme> studyProgrammes)
+        {
+            string output = JsonConvert.SerializeObject(studyProgrammes, Formatting.Indented);
+            File.WriteAllText(projectPath + directorySeparator + MainResources.StudyProgrammeJson, output);
+        }
     }
 }

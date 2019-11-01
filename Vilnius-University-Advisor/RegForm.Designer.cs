@@ -225,7 +225,6 @@
             this.EMailReg = new System.Windows.Forms.TextBox();
             this.EMailLabelReg = new System.Windows.Forms.Label();
             this.StudyProgramLabelReg = new System.Windows.Forms.Label();
-            this.StudyProgramReg = new System.Windows.Forms.TextBox();
             this.RepeatPasswordReg = new System.Windows.Forms.TextBox();
             this.PasswordRegistration = new System.Windows.Forms.TextBox();
             this.RepeatPasswordLabelReg = new System.Windows.Forms.Label();
@@ -249,6 +248,7 @@
             this.AnoniminisNaudotojasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LeistiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NeleistiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StudyProgramReg = new System.Windows.Forms.ComboBox();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LecturerPanel.SuspendLayout();
@@ -2567,12 +2567,12 @@
             // 
             // RegistrationGroupBox
             // 
+            this.RegistrationGroupBox.Controls.Add(this.StudyProgramReg);
             this.RegistrationGroupBox.Controls.Add(this.ProneNoLabelReg);
             this.RegistrationGroupBox.Controls.Add(this.PhoneNoReg);
             this.RegistrationGroupBox.Controls.Add(this.EMailReg);
             this.RegistrationGroupBox.Controls.Add(this.EMailLabelReg);
             this.RegistrationGroupBox.Controls.Add(this.StudyProgramLabelReg);
-            this.RegistrationGroupBox.Controls.Add(this.StudyProgramReg);
             this.RegistrationGroupBox.Controls.Add(this.RepeatPasswordReg);
             this.RegistrationGroupBox.Controls.Add(this.PasswordRegistration);
             this.RegistrationGroupBox.Controls.Add(this.RepeatPasswordLabelReg);
@@ -2584,11 +2584,11 @@
             this.RegistrationGroupBox.Controls.Add(this.UserNameSurnameLabel);
             this.RegistrationGroupBox.Controls.Add(this.UserFullName);
             this.RegistrationGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationGroupBox.Location = new System.Drawing.Point(306, 40);
+            this.RegistrationGroupBox.Location = new System.Drawing.Point(296, 40);
             this.RegistrationGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RegistrationGroupBox.Name = "RegistrationGroupBox";
             this.RegistrationGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RegistrationGroupBox.Size = new System.Drawing.Size(858, 322);
+            this.RegistrationGroupBox.Size = new System.Drawing.Size(880, 322);
             this.RegistrationGroupBox.TabIndex = 1;
             this.RegistrationGroupBox.TabStop = false;
             this.RegistrationGroupBox.Text = "Registracija";
@@ -2597,7 +2597,7 @@
             // 
             this.ProneNoLabelReg.AutoSize = true;
             this.ProneNoLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProneNoLabelReg.Location = new System.Drawing.Point(476, 246);
+            this.ProneNoLabelReg.Location = new System.Drawing.Point(470, 246);
             this.ProneNoLabelReg.Name = "ProneNoLabelReg";
             this.ProneNoLabelReg.Size = new System.Drawing.Size(93, 20);
             this.ProneNoLabelReg.TabIndex = 14;
@@ -2606,26 +2606,26 @@
             // PhoneNoReg
             // 
             this.PhoneNoReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNoReg.Location = new System.Drawing.Point(575, 242);
+            this.PhoneNoReg.Location = new System.Drawing.Point(569, 243);
             this.PhoneNoReg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PhoneNoReg.Name = "PhoneNoReg";
-            this.PhoneNoReg.Size = new System.Drawing.Size(265, 26);
+            this.PhoneNoReg.Size = new System.Drawing.Size(305, 26);
             this.PhoneNoReg.TabIndex = 13;
             // 
             // EMailReg
             // 
             this.EMailReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EMailReg.Location = new System.Drawing.Point(576, 174);
+            this.EMailReg.Location = new System.Drawing.Point(569, 175);
             this.EMailReg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EMailReg.Name = "EMailReg";
-            this.EMailReg.Size = new System.Drawing.Size(265, 26);
+            this.EMailReg.Size = new System.Drawing.Size(305, 26);
             this.EMailReg.TabIndex = 12;
             // 
             // EMailLabelReg
             // 
             this.EMailLabelReg.AutoSize = true;
             this.EMailLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EMailLabelReg.Location = new System.Drawing.Point(490, 176);
+            this.EMailLabelReg.Location = new System.Drawing.Point(484, 176);
             this.EMailLabelReg.Name = "EMailLabelReg";
             this.EMailLabelReg.Size = new System.Drawing.Size(79, 20);
             this.EMailLabelReg.TabIndex = 11;
@@ -2635,20 +2635,11 @@
             // 
             this.StudyProgramLabelReg.AutoSize = true;
             this.StudyProgramLabelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudyProgramLabelReg.Location = new System.Drawing.Point(439, 110);
+            this.StudyProgramLabelReg.Location = new System.Drawing.Point(433, 110);
             this.StudyProgramLabelReg.Name = "StudyProgramLabelReg";
             this.StudyProgramLabelReg.Size = new System.Drawing.Size(130, 20);
             this.StudyProgramLabelReg.TabIndex = 10;
             this.StudyProgramLabelReg.Text = "Studijų programa";
-            // 
-            // StudyProgramReg
-            // 
-            this.StudyProgramReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudyProgramReg.Location = new System.Drawing.Point(575, 108);
-            this.StudyProgramReg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.StudyProgramReg.Name = "StudyProgramReg";
-            this.StudyProgramReg.Size = new System.Drawing.Size(265, 26);
-            this.StudyProgramReg.TabIndex = 9;
             // 
             // RepeatPasswordReg
             // 
@@ -2729,17 +2720,18 @@
             "Tarptautinių santykių ir politikos mokslų",
             "Teisės",
             "Verslo"});
-            this.SelectFacultyUser.Location = new System.Drawing.Point(575, 40);
+            this.SelectFacultyUser.Location = new System.Drawing.Point(567, 40);
             this.SelectFacultyUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SelectFacultyUser.Name = "SelectFacultyUser";
-            this.SelectFacultyUser.Size = new System.Drawing.Size(265, 28);
+            this.SelectFacultyUser.Size = new System.Drawing.Size(307, 28);
             this.SelectFacultyUser.TabIndex = 2;
+            this.SelectFacultyUser.SelectedIndexChanged += new System.EventHandler(this.SelectFacultyUser_SelectedIndexChanged);
             // 
             // FacultyLabelRegistration
             // 
             this.FacultyLabelRegistration.AutoSize = true;
             this.FacultyLabelRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacultyLabelRegistration.Location = new System.Drawing.Point(485, 45);
+            this.FacultyLabelRegistration.Location = new System.Drawing.Point(479, 45);
             this.FacultyLabelRegistration.Name = "FacultyLabelRegistration";
             this.FacultyLabelRegistration.Size = new System.Drawing.Size(84, 20);
             this.FacultyLabelRegistration.TabIndex = 1;
@@ -2837,7 +2829,7 @@
             this.Melsva,
             this.Numatytoji});
             this.FonoSpalva.Name = "FonoSpalva";
-            this.FonoSpalva.Size = new System.Drawing.Size(124, 30);
+            this.FonoSpalva.Size = new System.Drawing.Size(124, 29);
             this.FonoSpalva.Text = "Fono spalva";
             // 
             // Rausva
@@ -2885,16 +2877,27 @@
             this.NeleistiToolStripMenuItem.Text = "Neleisti";
             this.NeleistiToolStripMenuItem.Click += new System.EventHandler(this.NeleistiToolStripMenuItem_Click);
             // 
+            // StudyProgramReg
+            // 
+            this.StudyProgramReg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StudyProgramReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudyProgramReg.FormattingEnabled = true;
+            this.StudyProgramReg.Location = new System.Drawing.Point(569, 108);
+            this.StudyProgramReg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StudyProgramReg.Name = "StudyProgramReg";
+            this.StudyProgramReg.Size = new System.Drawing.Size(305, 28);
+            this.StudyProgramReg.TabIndex = 15;
+            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 472);
             this.Controls.Add(this.Menu);
+            this.Controls.Add(this.Registration);
             this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.EvaluateSubjects);
             this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.Registration);
             this.Controls.Add(this.SingleSubject);
             this.Controls.Add(this.SingleLecturer);
             this.Controls.Add(this.LecturerPanel);
@@ -3179,7 +3182,6 @@
         private System.Windows.Forms.Label RepeatPasswordLabelReg;
         private System.Windows.Forms.Label PasswordLabelRegistration;
         private System.Windows.Forms.Button LogOutButton;
-        private System.Windows.Forms.TextBox StudyProgramReg;
         private System.Windows.Forms.Label EMailLabelReg;
         private System.Windows.Forms.Label StudyProgramLabelReg;
         private System.Windows.Forms.Label ProneNoLabelReg;
@@ -3203,6 +3205,7 @@
         private System.Windows.Forms.ComboBox SubjUsernameComBox;
         private System.Windows.Forms.Button SaveAsWordDocButton;
         private System.Windows.Forms.Button SaveAsExcelButton;
+        private System.Windows.Forms.ComboBox StudyProgramReg;
     }
 }
 

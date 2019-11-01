@@ -385,6 +385,15 @@ namespace VUA_api {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to studyProgrammes.json.
+        /// </summary>
+        internal static string StudyProgrammeJson {
+            get {
+                return ResourceManager.GetString("StudyProgrammeJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dalyko pavadinimas: .
         /// </summary>
         internal static string SubjectName {

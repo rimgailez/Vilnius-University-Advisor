@@ -15,6 +15,7 @@ namespace VUA_api
         public UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
         public UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
         public List<User> users = new List<User>();
+        public List<StudyProgramme> studyProgrammes = new List<StudyProgramme>();
         public User currentUser { get; set; }
 
         public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
@@ -33,6 +34,7 @@ namespace VUA_api
             lecturers.SetListOfUniversityEntities(jsonReaderWriter.ReadLecturers());
             subjects.SetListOfUniversityEntities(jsonReaderWriter.ReadSubjects());
             users = jsonReaderWriter.ReadUsers();
+            studyProgrammes = jsonReaderWriter.ReadStudyProgrammes();
         } 
 
         public void WriteData()
@@ -56,6 +58,12 @@ namespace VUA_api
         {
             users.Sort();
             jsonReaderWriter.WriteUsers(users);
+        }
+
+        public void WriteStudyProgrammes()
+        {
+            studyProgrammes.Sort();
+            jsonReaderWriter.WriteStudyProgrammes(studyProgrammes);
         }
 
         public void AddLecturer(string name, Faculty faculty)
@@ -106,6 +114,21 @@ namespace VUA_api
             if (!users.Contains(user)) users.Add(user);
         }
 
+        public void AddStudyProgramme(string name, Faculty faculty)
+        {
+            AddStudyProgramme(new StudyProgramme(name, faculty));
+        }
+
+        public void AddStudyProgramme(StudyProgramme studyProgrammeNew)
+        {
+            AddStudyProgrammeWithoutWriting(studyProgrammeNew);
+            WriteStudyProgrammes();
+        }
+
+        public void AddStudyProgrammeWithoutWriting(StudyProgramme studyProgramme)
+        {
+            if (!studyProgrammes.Contains(studyProgramme)) studyProgrammes.Add(studyProgramme);
+        }
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             lecturers.EvaluateEntity(lecturer, lecturerScore, new Review(username, (int)lecturerScore, text));
@@ -223,6 +246,11 @@ namespace VUA_api
                 }
             }
             return currentUser.userHistory;
+        }
+
+        public List<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
+        {
+            return studyProgrammes.Where(studyProgramme => studyProgramme.faculty == faculty).ToList();
         }
 
     }
