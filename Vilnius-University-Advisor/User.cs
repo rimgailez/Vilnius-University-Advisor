@@ -30,6 +30,9 @@ namespace Vilnius_University_Advisor
         public string studyProgram { get; set; }
         public string eMail { get; set; }
         public string phoneNumber { get; set; }
+        public int evaluatedLecturers { get; set; }
+        public int evaluatedSubjects { get; set; }
+
         public User(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             this.name = name;

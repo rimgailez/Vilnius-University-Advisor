@@ -169,6 +169,15 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Įveskite vardą ir pavardę..
+        /// </summary>
+        internal static string EnterNameAndUsername {
+            get {
+                return ResourceManager.GetString("EnterNameAndUsername", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Įvertintas dėstytojas: .
         /// </summary>
         internal static string EvaluatedLecturer {
@@ -178,11 +187,29 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Įvertinti dėstytojai:.
+        /// </summary>
+        internal static string EvaluatedLecturers {
+            get {
+                return ResourceManager.GetString("EvaluatedLecturers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Įvertintas dalykas: .
         /// </summary>
         internal static string EvaluatedSubject {
             get {
                 return ResourceManager.GetString("EvaluatedSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Įvertinti dalykai:.
+        /// </summary>
+        internal static string EvaluatedSubjects {
+            get {
+                return ResourceManager.GetString("EvaluatedSubjects", resourceCulture);
             }
         }
         
@@ -484,6 +511,15 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Naudotojas:.
+        /// </summary>
+        internal static string UserName {
+            get {
+                return ResourceManager.GetString("UserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vardas užimtas.
         /// </summary>
         internal static string UserNameExistsCaption {
@@ -534,6 +570,15 @@ namespace Vilnius_University_Advisor {
         internal static string WrongData {
             get {
                 return ResourceManager.GetString("WrongData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingas e-paštas.
+        /// </summary>
+        internal static string WrongEmail {
+            get {
+                return ResourceManager.GetString("WrongEmail", resourceCulture);
             }
         }
         

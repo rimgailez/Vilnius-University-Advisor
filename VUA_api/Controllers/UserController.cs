@@ -67,5 +67,24 @@ namespace VUA_api.Controllers
        {
            return dataMaster.GetUserActivityHistory();
        }
+
+        [HttpGet("getTopSubjEvaluators")]
+        public List<User> GetTopActiveLecturersEvaluators()
+        {
+            return dataMaster.GetTop10ActiveSubjectsEvaluators();
+        }
+
+        [HttpGet("getTopLectEvaluators")]
+        public List<User> GetTopActiveSubjectsEvaluators()
+        {
+            return dataMaster.GetTop10ActiveLecturersEvaluators();
+        }
+
+        [HttpGet("getTopUsers")]
+        public List<User> GetTopUsers()
+        {
+            return dataMaster.GetTop10ActiveUsers();
+        }
+
     }
 }

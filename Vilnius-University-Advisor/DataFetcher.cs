@@ -320,5 +320,47 @@ namespace Vilnius_University_Advisor
             if (response.IsSuccessStatusCode) studyProgrammes = await response.Content.ReadAsAsync<List<StudyProgramme>>();
             return studyProgrammes;
         }
+
+        public List<User> GetTop10ActiveLecturersEvaluators()
+        {
+            return GetTop10ActiveLecturersEvaluatorsAsync().Result;
+        }
+
+        public async Task<List<User>> GetTop10ActiveLecturersEvaluatorsAsync()
+        {
+            string request = "user/getTopLectEvaluators";
+            List<User> users = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
+            return users;
+        }
+
+        public List<User> GetTop10ActiveSubjectsEvaluators()
+        {
+            return GetTop10ActiveSubjectsEvaluatorsAsync().Result;
+        }
+
+        public async Task<List<User>> GetTop10ActiveSubjectsEvaluatorsAsync()
+        {
+            string request = "user/getTopSubjEvaluators";
+            List<User> users = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
+            return users;
+        }
+
+        public List<User> GetTop10ActiveUsers()
+        {
+            return GetTop10ActiveUsersAsync().Result;
+        }
+
+        public async Task<List<User>> GetTop10ActiveUsersAsync()
+        {
+            string request = "user/getTopUsers";
+            List<User> users = null;
+            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
+            return users;
+        }
     }
 }

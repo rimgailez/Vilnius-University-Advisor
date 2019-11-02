@@ -153,11 +153,20 @@
   <data name="DidntChooseSubject" xml:space="preserve">
     <value>Nepasirinkote dalyko</value>
   </data>
+  <data name="EnterNameAndUsername" xml:space="preserve">
+    <value>Įveskite vardą ir pavardę.</value>
+  </data>
   <data name="EvaluatedLecturer" xml:space="preserve">
     <value>Įvertintas dėstytojas: </value>
   </data>
+  <data name="EvaluatedLecturers" xml:space="preserve">
+    <value>Įvertinti dėstytojai:</value>
+  </data>
   <data name="EvaluatedSubject" xml:space="preserve">
     <value>Įvertintas dalykas: </value>
+  </data>
+  <data name="EvaluatedSubjects" xml:space="preserve">
+    <value>Įvertinti dalykai:</value>
   </data>
   <data name="FillInAllFields" xml:space="preserve">
     <value>Prašome užpildyti visus formoje esančius laukus.</value>
@@ -258,6 +267,9 @@
   <data name="UserAlreadyExists" xml:space="preserve">
     <value>Įvestas prisijungimo vardas jau egzistuoja.</value>
   </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Naudotojas:</value>
+  </data>
   <data name="UserNameExistsCaption" xml:space="preserve">
     <value>Vardas užimtas</value>
   </data>
@@ -275,6 +287,9 @@
   </data>
   <data name="WrongData" xml:space="preserve">
     <value>Neteisingi duomenys</value>
+  </data>
+  <data name="WrongEmail" xml:space="preserve">
+    <value>Neteisingas e-paštas</value>
   </data>
   <data name="WrongFaculty" xml:space="preserve">
     <value>Nurodyto fakulteto nėra.</value>

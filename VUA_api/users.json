@@ -7,6 +7,8 @@
     "studyProgram": "Geologija",
     "eMail": "andrius@gmail.com",
     "phoneNumber": "+37061010022",
+    "evaluatedLecturers": 4,
+    "evaluatedSubjects": 2,
     "userHistory": [
       {
         "activityComment": "Įvertintas dėstytojas: Adomas Birštunas;",
@@ -27,6 +29,14 @@
       {
         "activityComment": "Įvertintas dėstytojas: Andrius Valickas;",
         "date": "2019-10-31"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Agnė Kalnaitytė;",
+        "date": "2019-11-2"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Aerometodai;",
+        "date": "2019-11-2"
       }
     ]
   },
@@ -38,6 +48,8 @@
     "studyProgram": "Elektronika ir telekomunikacijų technologijos",
     "eMail": "arvydas@gmail.com",
     "phoneNumber": "+37069923234",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": []
   },
   {
@@ -48,6 +60,8 @@
     "studyProgram": "Aplinkotyra ir aplinkotvarka",
     "eMail": "benas@gmail.com",
     "phoneNumber": "+37061033344",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": []
   },
   {
@@ -58,6 +72,8 @@
     "studyProgram": "Ispanų filologija",
     "eMail": "berta@gmail.com",
     "phoneNumber": "+37064455588",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 1,
     "userHistory": [
       {
         "activityComment": "Įvertintas dalykas: Leidinio dizainas;",
@@ -73,6 +89,8 @@
     "studyProgram": "Tarptautinis verslas",
     "eMail": "dainius@gmail.com",
     "phoneNumber": "+37065384677",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": []
   },
   {
@@ -83,6 +101,8 @@
     "studyProgram": "Teisė",
     "eMail": "gitas@gmail.com",
     "phoneNumber": "+37068970055",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": [
       {
         "activityComment": "Įvertintas dėstytojas: Albinas Marčinskas;",
@@ -98,6 +118,8 @@
     "studyProgram": "Istorija",
     "eMail": "jonas@gmail.com",
     "phoneNumber": "+37061055566",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": []
   },
   {
@@ -108,6 +130,32 @@
     "studyProgram": "Fizika",
     "eMail": "jonas@gmail.com",
     "phoneNumber": "+37062457733",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
+    "userHistory": []
+  },
+  {
+    "name": "Julius Vilius Juškus",
+    "userFaculty": 2,
+    "userName": "julius.v",
+    "password": "julius",
+    "studyProgram": "Skandinavistika (danų/norvegų/švedų k.)",
+    "eMail": "julius.juskus@gmail.com",
+    "phoneNumber": "+37066475644",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
+    "userHistory": []
+  },
+  {
+    "name": "Laurynas Vitkus",
+    "userFaculty": 2,
+    "userName": "laurynas.v",
+    "password": "lauris",
+    "studyProgram": "Anglų filologija",
+    "eMail": "laurynas.vitkus@gmail.com",
+    "phoneNumber": "+37062436644",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": []
   },
   {
@@ -118,6 +166,8 @@
     "studyProgram": "Organizacinė psichologija",
     "eMail": "liepa@gmail.com",
     "phoneNumber": "+37063344455",
+    "evaluatedLecturers": 4,
+    "evaluatedSubjects": 2,
     "userHistory": [
       {
         "activityComment": "Įvertintas dėstytojas: Daiva Budrienė;",
@@ -153,6 +203,8 @@
     "studyProgram": "Informatika",
     "eMail": "pauliusg@gmail.com",
     "phoneNumber": "+37061928374",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": []
   },
   {
@@ -163,6 +215,8 @@
     "studyProgram": "Programų sistemos",
     "eMail": "rimgaile@gmail.com",
     "phoneNumber": "+37061100220",
+    "evaluatedLecturers": 1,
+    "evaluatedSubjects": 4,
     "userHistory": [
       {
         "activityComment": "Įvertintas dėstytojas: R. Badaras;",
@@ -194,6 +248,8 @@
     "studyProgram": "Medicina",
     "eMail": "simona@gmail.com",
     "phoneNumber": "+37061035622",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
     "userHistory": []
   },
   {
@@ -204,6 +260,8 @@
     "studyProgram": "Ekonomika",
     "eMail": "tomas@gmail.com",
     "phoneNumber": "+37061010011",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 3,
     "userHistory": [
       {
         "activityComment": "Įvertintas dalykas: Kompiuterių architektūra;",
@@ -220,6 +278,18 @@
     ]
   },
   {
+    "name": "Ugnius Ugniauskas",
+    "userFaculty": 1,
+    "userName": "ugnius.u",
+    "password": "ugnius",
+    "studyProgram": "Kokybės vadyba",
+    "eMail": "ugnius@gmail.com",
+    "phoneNumber": "+3706453855",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
+    "userHistory": []
+  },
+  {
     "name": "Viktorija Šimėnaitė",
     "userFaculty": 9,
     "userName": "gretchen",
@@ -227,6 +297,8 @@
     "studyProgram": "Programų sistemos",
     "eMail": "viktorija@gmail.com",
     "phoneNumber": "+37061122233",
+    "evaluatedLecturers": 6,
+    "evaluatedSubjects": 2,
     "userHistory": [
       {
         "activityComment": "Įvertintas dėstytojas: Romualdas Kašuba;",
@@ -243,7 +315,35 @@
       {
         "activityComment": "Įvertintas dėstytojas: Rimantas Vaicekauskas;",
         "date": "2019-10-25"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Algimantas Česnulevičius;",
+        "date": "2019-11-2"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Agota Aučynaitė;",
+        "date": "2019-11-2"
+      },
+      {
+        "activityComment": "Įvertintas dalykas: Airių literatūra;",
+        "date": "2019-11-2"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: A. Abaravičius;",
+        "date": "2019-11-2"
       }
     ]
+  },
+  {
+    "name": "Vita Ona Gitautaitė",
+    "userFaculty": 5,
+    "userName": "vita.g",
+    "password": "ona",
+    "studyProgram": "Biologija",
+    "eMail": "vita@mif.vu.lt",
+    "phoneNumber": "+37061056633",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
+    "userHistory": []
   }
 ]

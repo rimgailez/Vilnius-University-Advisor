@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.MainMenu = new System.Windows.Forms.Panel();
+            this.MostActiveUsersButton = new System.Windows.Forms.Button();
             this.SaveAsExcelButton = new System.Windows.Forms.Button();
             this.SaveAsWordDocButton = new System.Windows.Forms.Button();
             this.ActivityHistory = new System.Windows.Forms.Button();
@@ -220,6 +221,7 @@
             this.BackToInitWindowButtonR = new System.Windows.Forms.Button();
             this.RegistrationButton = new System.Windows.Forms.Button();
             this.RegistrationGroupBox = new System.Windows.Forms.GroupBox();
+            this.StudyProgramReg = new System.Windows.Forms.ComboBox();
             this.ProneNoLabelReg = new System.Windows.Forms.Label();
             this.PhoneNoReg = new System.Windows.Forms.TextBox();
             this.EMailReg = new System.Windows.Forms.TextBox();
@@ -248,7 +250,14 @@
             this.AnoniminisNaudotojasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LeistiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NeleistiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StudyProgramReg = new System.Windows.Forms.ComboBox();
+            this.MostactiveUsers = new System.Windows.Forms.Panel();
+            this.MostActiveUsersLabel = new System.Windows.Forms.Label();
+            this.EvalMostLectsLabel = new System.Windows.Forms.Label();
+            this.EvalMostLectsTxtBox = new System.Windows.Forms.TextBox();
+            this.EvalMostSubjTxtBox = new System.Windows.Forms.TextBox();
+            this.EvalMostSubjLabel = new System.Windows.Forms.Label();
+            this.BackToMenuButton = new System.Windows.Forms.Button();
+            this.MostActiveUsersTxtBox = new System.Windows.Forms.TextBox();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LecturerPanel.SuspendLayout();
@@ -294,10 +303,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.VULogoRegistration)).BeginInit();
             this.ActivityWindow.SuspendLayout();
             this.Menu.SuspendLayout();
+            this.MostactiveUsers.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenu
             // 
+            this.MainMenu.Controls.Add(this.MostActiveUsersButton);
             this.MainMenu.Controls.Add(this.SaveAsExcelButton);
             this.MainMenu.Controls.Add(this.SaveAsWordDocButton);
             this.MainMenu.Controls.Add(this.ActivityHistory);
@@ -320,6 +331,16 @@
             this.MainMenu.Size = new System.Drawing.Size(1188, 472);
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Visible = false;
+            // 
+            // MostActiveUsersButton
+            // 
+            this.MostActiveUsersButton.Location = new System.Drawing.Point(865, 318);
+            this.MostActiveUsersButton.Name = "MostActiveUsersButton";
+            this.MostActiveUsersButton.Size = new System.Drawing.Size(250, 57);
+            this.MostActiveUsersButton.TabIndex = 16;
+            this.MostActiveUsersButton.Text = "Rodyti aktyviausius naudotojus";
+            this.MostActiveUsersButton.UseVisualStyleBackColor = true;
+            this.MostActiveUsersButton.Click += new System.EventHandler(this.MostActiveUsersButton_Click);
             // 
             // SaveAsExcelButton
             // 
@@ -2593,6 +2614,17 @@
             this.RegistrationGroupBox.TabStop = false;
             this.RegistrationGroupBox.Text = "Registracija";
             // 
+            // StudyProgramReg
+            // 
+            this.StudyProgramReg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StudyProgramReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudyProgramReg.FormattingEnabled = true;
+            this.StudyProgramReg.Location = new System.Drawing.Point(569, 108);
+            this.StudyProgramReg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StudyProgramReg.Name = "StudyProgramReg";
+            this.StudyProgramReg.Size = new System.Drawing.Size(305, 28);
+            this.StudyProgramReg.TabIndex = 15;
+            // 
             // ProneNoLabelReg
             // 
             this.ProneNoLabelReg.AutoSize = true;
@@ -2877,16 +2909,94 @@
             this.NeleistiToolStripMenuItem.Text = "Neleisti";
             this.NeleistiToolStripMenuItem.Click += new System.EventHandler(this.NeleistiToolStripMenuItem_Click);
             // 
-            // StudyProgramReg
+            // MostactiveUsers
             // 
-            this.StudyProgramReg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.StudyProgramReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudyProgramReg.FormattingEnabled = true;
-            this.StudyProgramReg.Location = new System.Drawing.Point(569, 108);
-            this.StudyProgramReg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.StudyProgramReg.Name = "StudyProgramReg";
-            this.StudyProgramReg.Size = new System.Drawing.Size(305, 28);
-            this.StudyProgramReg.TabIndex = 15;
+            this.MostactiveUsers.Controls.Add(this.MostActiveUsersLabel);
+            this.MostactiveUsers.Controls.Add(this.EvalMostLectsLabel);
+            this.MostactiveUsers.Controls.Add(this.EvalMostLectsTxtBox);
+            this.MostactiveUsers.Controls.Add(this.EvalMostSubjTxtBox);
+            this.MostactiveUsers.Controls.Add(this.EvalMostSubjLabel);
+            this.MostactiveUsers.Controls.Add(this.BackToMenuButton);
+            this.MostactiveUsers.Controls.Add(this.MostActiveUsersTxtBox);
+            this.MostactiveUsers.Location = new System.Drawing.Point(0, 0);
+            this.MostactiveUsers.Name = "MostactiveUsers";
+            this.MostactiveUsers.Size = new System.Drawing.Size(1188, 472);
+            this.MostactiveUsers.TabIndex = 17;
+            this.MostactiveUsers.Visible = false;
+            // 
+            // MostActiveUsersLabel
+            // 
+            this.MostActiveUsersLabel.AutoSize = true;
+            this.MostActiveUsersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostActiveUsersLabel.Location = new System.Drawing.Point(32, 42);
+            this.MostActiveUsersLabel.Name = "MostActiveUsersLabel";
+            this.MostActiveUsersLabel.Size = new System.Drawing.Size(206, 22);
+            this.MostActiveUsersLabel.TabIndex = 14;
+            this.MostActiveUsersLabel.Text = "Aktyviausi naudotojai:";
+            // 
+            // EvalMostLectsLabel
+            // 
+            this.EvalMostLectsLabel.AutoSize = true;
+            this.EvalMostLectsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EvalMostLectsLabel.Location = new System.Drawing.Point(390, 42);
+            this.EvalMostLectsLabel.Name = "EvalMostLectsLabel";
+            this.EvalMostLectsLabel.Size = new System.Drawing.Size(379, 22);
+            this.EvalMostLectsLabel.TabIndex = 13;
+            this.EvalMostLectsLabel.Text = "Daugiausiai dėstytojų įvertinę naudotojai:";
+            // 
+            // EvalMostLectsTxtBox
+            // 
+            this.EvalMostLectsTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EvalMostLectsTxtBox.Location = new System.Drawing.Point(419, 66);
+            this.EvalMostLectsTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EvalMostLectsTxtBox.Multiline = true;
+            this.EvalMostLectsTxtBox.Name = "EvalMostLectsTxtBox";
+            this.EvalMostLectsTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.EvalMostLectsTxtBox.Size = new System.Drawing.Size(350, 330);
+            this.EvalMostLectsTxtBox.TabIndex = 12;
+            // 
+            // EvalMostSubjTxtBox
+            // 
+            this.EvalMostSubjTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EvalMostSubjTxtBox.Location = new System.Drawing.Point(808, 66);
+            this.EvalMostSubjTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EvalMostSubjTxtBox.Multiline = true;
+            this.EvalMostSubjTxtBox.Name = "EvalMostSubjTxtBox";
+            this.EvalMostSubjTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.EvalMostSubjTxtBox.Size = new System.Drawing.Size(350, 330);
+            this.EvalMostSubjTxtBox.TabIndex = 11;
+            // 
+            // EvalMostSubjLabel
+            // 
+            this.EvalMostSubjLabel.AutoSize = true;
+            this.EvalMostSubjLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EvalMostSubjLabel.Location = new System.Drawing.Point(802, 42);
+            this.EvalMostSubjLabel.Name = "EvalMostSubjLabel";
+            this.EvalMostSubjLabel.Size = new System.Drawing.Size(356, 22);
+            this.EvalMostSubjLabel.TabIndex = 10;
+            this.EvalMostSubjLabel.Text = "Daugiausiai dalykų įvertinę naudotojai:";
+            // 
+            // BackToMenuButton
+            // 
+            this.BackToMenuButton.Location = new System.Drawing.Point(447, 419);
+            this.BackToMenuButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BackToMenuButton.Name = "BackToMenuButton";
+            this.BackToMenuButton.Size = new System.Drawing.Size(375, 41);
+            this.BackToMenuButton.TabIndex = 9;
+            this.BackToMenuButton.Text = "Grįžti į meniu";
+            this.BackToMenuButton.UseVisualStyleBackColor = true;
+            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
+            // 
+            // MostActiveUsersTxtBox
+            // 
+            this.MostActiveUsersTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostActiveUsersTxtBox.Location = new System.Drawing.Point(31, 66);
+            this.MostActiveUsersTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MostActiveUsersTxtBox.Multiline = true;
+            this.MostActiveUsersTxtBox.Name = "MostActiveUsersTxtBox";
+            this.MostActiveUsersTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.MostActiveUsersTxtBox.Size = new System.Drawing.Size(350, 330);
+            this.MostActiveUsersTxtBox.TabIndex = 8;
             // 
             // RegForm
             // 
@@ -2895,12 +3005,15 @@
             this.ClientSize = new System.Drawing.Size(1188, 472);
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.Registration);
+            this.Controls.Add(this.MostactiveUsers);
+            this.Controls.Add(this.SubjectPanel);
+            this.Controls.Add(this.LecturerPanel);
+            this.Controls.Add(this.SingleSubject);
+            this.Controls.Add(this.MainMenu);
+            this.Controls.Add(this.TOPLecturersAndSubjects);
             this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.EvaluateSubjects);
-            this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.SingleSubject);
             this.Controls.Add(this.SingleLecturer);
-            this.Controls.Add(this.LecturerPanel);
             this.Controls.Add(this.ScraperPanel);
             this.Controls.Add(this.OptionalSubjects);
             this.Controls.Add(this.MandatorySubjects);
@@ -2909,9 +3022,7 @@
             this.Controls.Add(this.AllLecturers);
             this.Controls.Add(this.InitialWindow);
             this.Controls.Add(this.LogIn);
-            this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.ActivityWindow);
-            this.Controls.Add(this.TOPLecturersAndSubjects);
             this.MainMenuStrip = this.Menu;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegForm";
@@ -2980,6 +3091,8 @@
             this.ActivityWindow.PerformLayout();
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
+            this.MostactiveUsers.ResumeLayout(false);
+            this.MostactiveUsers.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3206,6 +3319,15 @@
         private System.Windows.Forms.Button SaveAsWordDocButton;
         private System.Windows.Forms.Button SaveAsExcelButton;
         private System.Windows.Forms.ComboBox StudyProgramReg;
+        private System.Windows.Forms.Button MostActiveUsersButton;
+        private System.Windows.Forms.Panel MostactiveUsers;
+        private System.Windows.Forms.Button BackToMenuButton;
+        private System.Windows.Forms.TextBox MostActiveUsersTxtBox;
+        private System.Windows.Forms.Label EvalMostSubjLabel;
+        private System.Windows.Forms.TextBox EvalMostSubjTxtBox;
+        private System.Windows.Forms.TextBox EvalMostLectsTxtBox;
+        private System.Windows.Forms.Label MostActiveUsersLabel;
+        private System.Windows.Forms.Label EvalMostLectsLabel;
     }
 }
 

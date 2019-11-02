@@ -2,9 +2,16 @@
   {
     "name": "A. Abaravičius",
     "faculty": 10,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 5.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "gretchen",
+        "score": 5,
+        "text": "Verta eiti į paskaitas vien dėl šio dėstytojo.",
+        "date": "2019-11-2"
+      }
+    ]
   },
   {
     "name": "A. Ambrozaitis",
@@ -310,9 +317,16 @@
   {
     "name": "Agnė Kalnaitytė",
     "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 4.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 4,
+        "text": "Gana gera dėstytoja.",
+        "date": "2019-11-2"
+      }
+    ]
   },
   {
     "name": "Agnė Kalnaitytė",
@@ -408,9 +422,16 @@
   {
     "name": "Agota Aučynaitė",
     "faculty": 5,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 4.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "gretchen",
+        "score": 4,
+        "text": "Išties nebloga dėstytoja.",
+        "date": "2019-11-2"
+      }
+    ]
   },
   {
     "name": "Aida Grabauskaitė",
@@ -947,9 +968,16 @@
   {
     "name": "Algimantas Česnulevičius",
     "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 5.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "gretchen",
+        "score": 5,
+        "text": "Puikus dėstytojas!",
+        "date": "2019-11-2"
+      }
+    ]
   },
   {
     "name": "Algimantas Jankauskas",

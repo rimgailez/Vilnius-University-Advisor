@@ -98,7 +98,6 @@ namespace VUA_api
             subjects.AddEntityWithoutWriting(subject);
         }
 
-        
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
@@ -132,11 +131,15 @@ namespace VUA_api
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             lecturers.EvaluateEntity(lecturer, lecturerScore, new Review(username, (int)lecturerScore, text));
+            currentUser.evaluatedLecturers++;
+            WriteUsers();
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
             subjects.EvaluateEntity(subject, subjectScore, new Review(username, (int)subjectScore, text));
+            currentUser.evaluatedSubjects++;
+            WriteUsers();
         }
 
         public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -251,6 +254,38 @@ namespace VUA_api
         public List<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
         {
             return studyProgrammes.Where(studyProgramme => studyProgramme.faculty == faculty).ToList();
+        }
+
+        public void CountEvaluatedSubjAndLect()
+        {
+            foreach (User user in users)
+            {
+                user.evaluatedLecturers = 0;
+                user.evaluatedSubjects = 0;
+                foreach (Lecturer lect in lecturers)
+                {
+                    user.evaluatedLecturers += lect.reviews.Where(rev => rev.username.Equals(user.userName)).Count();
+                }
+                foreach (Subject subj in subjects)
+                {
+                    user.evaluatedSubjects += subj.reviews.Where(rev => rev.username.Equals(user.userName)).Count();
+                }
+            }
+        }
+
+        public List<User> GetTop10ActiveLecturersEvaluators()
+        {
+            return users.OrderByDescending(user => user.evaluatedLecturers).ToList().GetRange(0, 10);
+        }
+
+        public List<User> GetTop10ActiveSubjectsEvaluators()
+        {
+            return users.OrderByDescending(user => user.evaluatedSubjects).ToList().GetRange(0, 10);
+        }
+
+        public List<User> GetTop10ActiveUsers()
+        {
+            return users.OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 10);
         }
 
     }
