@@ -321,12 +321,12 @@ namespace Vilnius_University_Advisor
             return studyProgrammes;
         }
 
-        public List<User> GetTop10ActiveLecturersEvaluators()
+        public List<User> GetTop5ActiveLecturersEvaluators()
         {
-            return GetTop10ActiveLecturersEvaluatorsAsync().Result;
+            return GetTop5ActiveLecturersEvaluatorsAsync().Result;
         }
 
-        public async Task<List<User>> GetTop10ActiveLecturersEvaluatorsAsync()
+        public async Task<List<User>> GetTop5ActiveLecturersEvaluatorsAsync()
         {
             string request = "user/getTopLectEvaluators";
             List<User> users = null;
@@ -335,12 +335,12 @@ namespace Vilnius_University_Advisor
             return users;
         }
 
-        public List<User> GetTop10ActiveSubjectsEvaluators()
+        public List<User> GetTop5ActiveSubjectsEvaluators()
         {
-            return GetTop10ActiveSubjectsEvaluatorsAsync().Result;
+            return GetTop5ActiveSubjectsEvaluatorsAsync().Result;
         }
 
-        public async Task<List<User>> GetTop10ActiveSubjectsEvaluatorsAsync()
+        public async Task<List<User>> GetTop5ActiveSubjectsEvaluatorsAsync()
         {
             string request = "user/getTopSubjEvaluators";
             List<User> users = null;
@@ -349,12 +349,12 @@ namespace Vilnius_University_Advisor
             return users;
         }
 
-        public List<User> GetTop10ActiveUsers()
+        public List<User> GetTop3ActiveUsers()
         {
-            return GetTop10ActiveUsersAsync().Result;
+            return GetTop3ActiveUsersAsync().Result;
         }
 
-        public async Task<List<User>> GetTop10ActiveUsersAsync()
+        public async Task<List<User>> GetTop3ActiveUsersAsync()
         {
             string request = "user/getTopUsers";
             List<User> users = null;

@@ -273,19 +273,19 @@ namespace VUA_api
             }
         }
 
-        public List<User> GetTop10ActiveLecturersEvaluators()
+        public List<User> GetTop5ActiveLecturersEvaluators()
         {
-            return users.OrderByDescending(user => user.evaluatedLecturers).ToList().GetRange(0, 10);
+            return users.OrderByDescending(user => user.evaluatedLecturers).ToList().GetRange(0, 5);
         }
 
-        public List<User> GetTop10ActiveSubjectsEvaluators()
+        public List<User> GetTop5ActiveSubjectsEvaluators()
         {
-            return users.OrderByDescending(user => user.evaluatedSubjects).ToList().GetRange(0, 10);
+            return users.OrderByDescending(user => user.evaluatedSubjects).ToList().GetRange(0, 5);
         }
 
-        public List<User> GetTop10ActiveUsers()
+        public List<User> GetTop3ActiveUsers()
         {
-            return users.OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 10);
+            return users.OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
         }
 
     }

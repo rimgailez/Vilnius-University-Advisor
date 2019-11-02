@@ -1225,9 +1225,9 @@ namespace Vilnius_University_Advisor
             EvalMostLectsTxtBox.Text = "";
             EvalMostSubjTxtBox.Text = "";
 
-            DisplayActiveUsers(EvalMostLectsTxtBox, DataFetcher.GetInstance().GetTop10ActiveLecturersEvaluators());
-            DisplayActiveUsers(EvalMostSubjTxtBox, DataFetcher.GetInstance().GetTop10ActiveSubjectsEvaluators());
-            DisplayActiveUsers(MostActiveUsersTxtBox, DataFetcher.GetInstance().GetTop10ActiveUsers());
+            DisplayActiveUsers(EvalMostLectsTxtBox, DataFetcher.GetInstance().GetTop5ActiveLecturersEvaluators());
+            DisplayActiveUsers(EvalMostSubjTxtBox, DataFetcher.GetInstance().GetTop5ActiveSubjectsEvaluators());
+            DisplayActiveUsers(MostActiveUsersTxtBox, DataFetcher.GetInstance().GetTop3ActiveUsers());
 
             MainMenu.Hide();
             MostactiveUsers.Show();
