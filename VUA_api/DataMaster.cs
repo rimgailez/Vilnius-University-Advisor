@@ -256,23 +256,6 @@ namespace VUA_api
             return studyProgrammes.Where(studyProgramme => studyProgramme.faculty == faculty).ToList();
         }
 
-        public void CountEvaluatedSubjAndLect()
-        {
-            foreach (User user in users)
-            {
-                user.evaluatedLecturers = 0;
-                user.evaluatedSubjects = 0;
-                foreach (Lecturer lect in lecturers)
-                {
-                    user.evaluatedLecturers += lect.reviews.Where(rev => rev.username.Equals(user.userName)).Count();
-                }
-                foreach (Subject subj in subjects)
-                {
-                    user.evaluatedSubjects += subj.reviews.Where(rev => rev.username.Equals(user.userName)).Count();
-                }
-            }
-        }
-
         public List<User> GetTop5ActiveLecturersEvaluators()
         {
             return users.OrderByDescending(user => user.evaluatedLecturers).ToList().GetRange(0, 5);

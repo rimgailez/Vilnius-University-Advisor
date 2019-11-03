@@ -99,4 +99,8 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="C:\Users\Viktorija\.nuget\packages\cef.redist.x64\75.1.14\build\..\CEF\devtools_resources.pak" Link="devtools_resources.pak" />
+  </ItemGroup>
+
 </Project>
