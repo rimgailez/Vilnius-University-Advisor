@@ -250,14 +250,14 @@
             this.AnoniminisNaudotojasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LeistiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NeleistiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MostactiveUsers = new System.Windows.Forms.Panel();
-            this.MostActiveUsersLabel = new System.Windows.Forms.Label();
-            this.EvalMostLectsLabel = new System.Windows.Forms.Label();
-            this.EvalMostLectsTxtBox = new System.Windows.Forms.TextBox();
-            this.EvalMostSubjTxtBox = new System.Windows.Forms.TextBox();
-            this.EvalMostSubjLabel = new System.Windows.Forms.Label();
+            this.MostActiveUsers = new System.Windows.Forms.Panel();
+            this.ThirdPlaceLabelData = new System.Windows.Forms.Label();
+            this.SecPlaceLabelData = new System.Windows.Forms.Label();
+            this.FirstPlaceLabelData = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ThirdPlacePic = new System.Windows.Forms.PictureBox();
+            this.FirstPlacePic = new System.Windows.Forms.PictureBox();
             this.BackToMenuButton = new System.Windows.Forms.Button();
-            this.MostActiveUsersTxtBox = new System.Windows.Forms.TextBox();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LecturerPanel.SuspendLayout();
@@ -303,7 +303,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.VULogoRegistration)).BeginInit();
             this.ActivityWindow.SuspendLayout();
             this.Menu.SuspendLayout();
-            this.MostactiveUsers.SuspendLayout();
+            this.MostActiveUsers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThirdPlacePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirstPlacePic)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenu
@@ -2861,7 +2864,7 @@
             this.Melsva,
             this.Numatytoji});
             this.FonoSpalva.Name = "FonoSpalva";
-            this.FonoSpalva.Size = new System.Drawing.Size(124, 29);
+            this.FonoSpalva.Size = new System.Drawing.Size(124, 30);
             this.FonoSpalva.Text = "Fono spalva";
             // 
             // Rausva
@@ -2891,7 +2894,7 @@
             this.LeistiToolStripMenuItem,
             this.NeleistiToolStripMenuItem});
             this.AnoniminisNaudotojasToolStripMenuItem.Name = "AnoniminisNaudotojasToolStripMenuItem";
-            this.AnoniminisNaudotojasToolStripMenuItem.Size = new System.Drawing.Size(211, 29);
+            this.AnoniminisNaudotojasToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.AnoniminisNaudotojasToolStripMenuItem.Text = "Anoniminis naudotojas";
             this.AnoniminisNaudotojasToolStripMenuItem.Visible = false;
             // 
@@ -2909,72 +2912,80 @@
             this.NeleistiToolStripMenuItem.Text = "Neleisti";
             this.NeleistiToolStripMenuItem.Click += new System.EventHandler(this.NeleistiToolStripMenuItem_Click);
             // 
-            // MostactiveUsers
+            // MostActiveUsers
             // 
-            this.MostactiveUsers.Controls.Add(this.MostActiveUsersLabel);
-            this.MostactiveUsers.Controls.Add(this.EvalMostLectsLabel);
-            this.MostactiveUsers.Controls.Add(this.EvalMostLectsTxtBox);
-            this.MostactiveUsers.Controls.Add(this.EvalMostSubjTxtBox);
-            this.MostactiveUsers.Controls.Add(this.EvalMostSubjLabel);
-            this.MostactiveUsers.Controls.Add(this.BackToMenuButton);
-            this.MostactiveUsers.Controls.Add(this.MostActiveUsersTxtBox);
-            this.MostactiveUsers.Location = new System.Drawing.Point(0, 0);
-            this.MostactiveUsers.Name = "MostactiveUsers";
-            this.MostactiveUsers.Size = new System.Drawing.Size(1188, 472);
-            this.MostactiveUsers.TabIndex = 17;
-            this.MostactiveUsers.Visible = false;
+            this.MostActiveUsers.Controls.Add(this.ThirdPlaceLabelData);
+            this.MostActiveUsers.Controls.Add(this.SecPlaceLabelData);
+            this.MostActiveUsers.Controls.Add(this.FirstPlaceLabelData);
+            this.MostActiveUsers.Controls.Add(this.pictureBox2);
+            this.MostActiveUsers.Controls.Add(this.ThirdPlacePic);
+            this.MostActiveUsers.Controls.Add(this.FirstPlacePic);
+            this.MostActiveUsers.Controls.Add(this.BackToMenuButton);
+            this.MostActiveUsers.Location = new System.Drawing.Point(0, 0);
+            this.MostActiveUsers.Name = "MostActiveUsers";
+            this.MostActiveUsers.Size = new System.Drawing.Size(1188, 472);
+            this.MostActiveUsers.TabIndex = 17;
+            this.MostActiveUsers.Visible = false;
             // 
-            // MostActiveUsersLabel
+            // ThirdPlaceLabelData
             // 
-            this.MostActiveUsersLabel.AutoSize = true;
-            this.MostActiveUsersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MostActiveUsersLabel.Location = new System.Drawing.Point(32, 42);
-            this.MostActiveUsersLabel.Name = "MostActiveUsersLabel";
-            this.MostActiveUsersLabel.Size = new System.Drawing.Size(206, 22);
-            this.MostActiveUsersLabel.TabIndex = 14;
-            this.MostActiveUsersLabel.Text = "Aktyviausi naudotojai:";
+            this.ThirdPlaceLabelData.AutoSize = true;
+            this.ThirdPlaceLabelData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdPlaceLabelData.Location = new System.Drawing.Point(892, 124);
+            this.ThirdPlaceLabelData.Name = "ThirdPlaceLabelData";
+            this.ThirdPlaceLabelData.Size = new System.Drawing.Size(58, 22);
+            this.ThirdPlaceLabelData.TabIndex = 18;
+            this.ThirdPlaceLabelData.Text = "label1";
             // 
-            // EvalMostLectsLabel
+            // SecPlaceLabelData
             // 
-            this.EvalMostLectsLabel.AutoSize = true;
-            this.EvalMostLectsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EvalMostLectsLabel.Location = new System.Drawing.Point(390, 42);
-            this.EvalMostLectsLabel.Name = "EvalMostLectsLabel";
-            this.EvalMostLectsLabel.Size = new System.Drawing.Size(379, 22);
-            this.EvalMostLectsLabel.TabIndex = 13;
-            this.EvalMostLectsLabel.Text = "Daugiausiai dėstytojų įvertinę naudotojai:";
+            this.SecPlaceLabelData.AutoSize = true;
+            this.SecPlaceLabelData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecPlaceLabelData.Location = new System.Drawing.Point(116, 92);
+            this.SecPlaceLabelData.Name = "SecPlaceLabelData";
+            this.SecPlaceLabelData.Size = new System.Drawing.Size(58, 22);
+            this.SecPlaceLabelData.TabIndex = 16;
+            this.SecPlaceLabelData.Text = "label1";
             // 
-            // EvalMostLectsTxtBox
+            // FirstPlaceLabelData
             // 
-            this.EvalMostLectsTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EvalMostLectsTxtBox.Location = new System.Drawing.Point(419, 66);
-            this.EvalMostLectsTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EvalMostLectsTxtBox.Multiline = true;
-            this.EvalMostLectsTxtBox.Name = "EvalMostLectsTxtBox";
-            this.EvalMostLectsTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.EvalMostLectsTxtBox.Size = new System.Drawing.Size(350, 330);
-            this.EvalMostLectsTxtBox.TabIndex = 12;
+            this.FirstPlaceLabelData.AutoSize = true;
+            this.FirstPlaceLabelData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstPlaceLabelData.Location = new System.Drawing.Point(510, 53);
+            this.FirstPlaceLabelData.Name = "FirstPlaceLabelData";
+            this.FirstPlaceLabelData.Size = new System.Drawing.Size(58, 22);
+            this.FirstPlaceLabelData.TabIndex = 14;
+            this.FirstPlaceLabelData.Text = "label1";
             // 
-            // EvalMostSubjTxtBox
+            // pictureBox2
             // 
-            this.EvalMostSubjTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EvalMostSubjTxtBox.Location = new System.Drawing.Point(808, 66);
-            this.EvalMostSubjTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EvalMostSubjTxtBox.Multiline = true;
-            this.EvalMostSubjTxtBox.Name = "EvalMostSubjTxtBox";
-            this.EvalMostSubjTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.EvalMostSubjTxtBox.Size = new System.Drawing.Size(350, 330);
-            this.EvalMostSubjTxtBox.TabIndex = 11;
+            this.pictureBox2.Image = global::Vilnius_University_Advisor.Properties.Resources.second_place;
+            this.pictureBox2.Location = new System.Drawing.Point(97, 171);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(241, 229);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
             // 
-            // EvalMostSubjLabel
+            // ThirdPlacePic
             // 
-            this.EvalMostSubjLabel.AutoSize = true;
-            this.EvalMostSubjLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EvalMostSubjLabel.Location = new System.Drawing.Point(802, 42);
-            this.EvalMostSubjLabel.Name = "EvalMostSubjLabel";
-            this.EvalMostSubjLabel.Size = new System.Drawing.Size(356, 22);
-            this.EvalMostSubjLabel.TabIndex = 10;
-            this.EvalMostSubjLabel.Text = "Daugiausiai dalykų įvertinę naudotojai:";
+            this.ThirdPlacePic.Image = global::Vilnius_University_Advisor.Properties.Resources.third_place;
+            this.ThirdPlacePic.Location = new System.Drawing.Point(874, 196);
+            this.ThirdPlacePic.Name = "ThirdPlacePic";
+            this.ThirdPlacePic.Size = new System.Drawing.Size(229, 210);
+            this.ThirdPlacePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ThirdPlacePic.TabIndex = 11;
+            this.ThirdPlacePic.TabStop = false;
+            // 
+            // FirstPlacePic
+            // 
+            this.FirstPlacePic.Image = global::Vilnius_University_Advisor.Properties.Resources.first_place;
+            this.FirstPlacePic.Location = new System.Drawing.Point(428, 133);
+            this.FirstPlacePic.Name = "FirstPlacePic";
+            this.FirstPlacePic.Size = new System.Drawing.Size(360, 266);
+            this.FirstPlacePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.FirstPlacePic.TabIndex = 10;
+            this.FirstPlacePic.TabStop = false;
             // 
             // BackToMenuButton
             // 
@@ -2987,31 +2998,20 @@
             this.BackToMenuButton.UseVisualStyleBackColor = true;
             this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
             // 
-            // MostActiveUsersTxtBox
-            // 
-            this.MostActiveUsersTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MostActiveUsersTxtBox.Location = new System.Drawing.Point(31, 66);
-            this.MostActiveUsersTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MostActiveUsersTxtBox.Multiline = true;
-            this.MostActiveUsersTxtBox.Name = "MostActiveUsersTxtBox";
-            this.MostActiveUsersTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.MostActiveUsersTxtBox.Size = new System.Drawing.Size(350, 330);
-            this.MostActiveUsersTxtBox.TabIndex = 8;
-            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 472);
             this.Controls.Add(this.Menu);
+            this.Controls.Add(this.MostActiveUsers);
+            this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.Registration);
-            this.Controls.Add(this.MostactiveUsers);
             this.Controls.Add(this.SubjectPanel);
             this.Controls.Add(this.LecturerPanel);
             this.Controls.Add(this.SingleSubject);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.TOPLecturersAndSubjects);
-            this.Controls.Add(this.EvaluateLecturer);
             this.Controls.Add(this.EvaluateSubjects);
             this.Controls.Add(this.SingleLecturer);
             this.Controls.Add(this.ScraperPanel);
@@ -3091,8 +3091,11 @@
             this.ActivityWindow.PerformLayout();
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
-            this.MostactiveUsers.ResumeLayout(false);
-            this.MostactiveUsers.PerformLayout();
+            this.MostActiveUsers.ResumeLayout(false);
+            this.MostActiveUsers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThirdPlacePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirstPlacePic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3320,14 +3323,14 @@
         private System.Windows.Forms.Button SaveAsExcelButton;
         private System.Windows.Forms.ComboBox StudyProgramReg;
         private System.Windows.Forms.Button MostActiveUsersButton;
-        private System.Windows.Forms.Panel MostactiveUsers;
+        private System.Windows.Forms.Panel MostActiveUsers;
         private System.Windows.Forms.Button BackToMenuButton;
-        private System.Windows.Forms.TextBox MostActiveUsersTxtBox;
-        private System.Windows.Forms.Label EvalMostSubjLabel;
-        private System.Windows.Forms.TextBox EvalMostSubjTxtBox;
-        private System.Windows.Forms.TextBox EvalMostLectsTxtBox;
-        private System.Windows.Forms.Label MostActiveUsersLabel;
-        private System.Windows.Forms.Label EvalMostLectsLabel;
+        private System.Windows.Forms.PictureBox FirstPlacePic;
+        private System.Windows.Forms.PictureBox ThirdPlacePic;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label FirstPlaceLabelData;
+        private System.Windows.Forms.Label ThirdPlaceLabelData;
+        private System.Windows.Forms.Label SecPlaceLabelData;
     }
 }
 

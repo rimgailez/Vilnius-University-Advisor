@@ -1221,35 +1221,27 @@ namespace Vilnius_University_Advisor
 
         private void MostActiveUsersButton_Click(object sender, EventArgs e)
         {
-            MostActiveUsersTxtBox.Text = "";
-            EvalMostLectsTxtBox.Text = "";
-            EvalMostSubjTxtBox.Text = "";
+            List<User> users = DataFetcher.GetInstance().GetTop3ActiveUsers();
 
-            DisplayActiveUsers(EvalMostLectsTxtBox, DataFetcher.GetInstance().GetTop5ActiveLecturersEvaluators());
-            DisplayActiveUsers(EvalMostSubjTxtBox, DataFetcher.GetInstance().GetTop5ActiveSubjectsEvaluators());
-            DisplayActiveUsers(MostActiveUsersTxtBox, DataFetcher.GetInstance().GetTop3ActiveUsers());
+            DisplayActiveUsers(FirstPlaceLabelData, users[0]);
+            DisplayActiveUsers(SecPlaceLabelData, users[1]);
+            DisplayActiveUsers(ThirdPlaceLabelData, users[2]);
 
             MainMenu.Hide();
-            MostactiveUsers.Show();
+            MostActiveUsers.Show();
         }
 
-        private void DisplayActiveUsers(TextBox txtBox, List<User> usersList)
+        private void DisplayActiveUsers(Label label, User user)
         {
-            int number = 1;
-            foreach (User user in usersList)
-            {
-                txtBox.Text = txtBox.Text + number + ". " + MainResources.UserName + " " + user.userName + " \r\n" +
-                    MainResources.EvaluatedLecturers + " " + user.evaluatedLecturers + " " +
-                    MainResources.EvaluatedSubjects + " " + user.evaluatedSubjects + "\r\n\r\n";
-                number++;
-            }
+            label.Text = MainResources.UserName + " " + user.userName + "\r\n" +
+                 MainResources.EvaluatedLecturers + " " + user.evaluatedLecturers + "\r\n" +
+                 MainResources.EvaluatedSubjects + " " + user.evaluatedSubjects;
         }
 
         private void BackToMenuButton_Click(object sender, EventArgs e)
         {
-            MostactiveUsers.Hide();
+            MostActiveUsers.Hide();
             MainMenu.Show();
         }
-
     }
 }
