@@ -121,9 +121,16 @@
     "isBUS": false,
     "name": "Aerometodai",
     "faculty": 0,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 1.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 1,
+        "text": "Nusivyliau.",
+        "date": "2019-11-2"
+      }
+    ]
   },
   {
     "isOptional": true,
@@ -175,9 +182,16 @@
     "isBUS": false,
     "name": "Airių literatūra",
     "faculty": 2,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 3.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "gretchen",
+        "score": 3,
+        "text": "Nuobodokas dalykas.",
+        "date": "2019-11-2"
+      }
+    ]
   },
   {
     "isOptional": true,

@@ -98,7 +98,6 @@ namespace VUA_api
             subjects.AddEntityWithoutWriting(subject);
         }
 
-        
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
@@ -132,11 +131,15 @@ namespace VUA_api
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             lecturers.EvaluateEntity(lecturer, lecturerScore, new Review(username, (int)lecturerScore, text));
+            currentUser.evaluatedLecturers++;
+            WriteUsers();
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
             subjects.EvaluateEntity(subject, subjectScore, new Review(username, (int)subjectScore, text));
+            currentUser.evaluatedSubjects++;
+            WriteUsers();
         }
 
         public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -251,6 +254,21 @@ namespace VUA_api
         public List<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
         {
             return studyProgrammes.Where(studyProgramme => studyProgramme.faculty == faculty).ToList();
+        }
+
+        public List<User> GetTop5ActiveLecturersEvaluators()
+        {
+            return users.OrderByDescending(user => user.evaluatedLecturers).ToList().GetRange(0, 5);
+        }
+
+        public List<User> GetTop5ActiveSubjectsEvaluators()
+        {
+            return users.OrderByDescending(user => user.evaluatedSubjects).ToList().GetRange(0, 5);
+        }
+
+        public List<User> GetTop3ActiveUsers()
+        {
+            return users.OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
         }
 
     }

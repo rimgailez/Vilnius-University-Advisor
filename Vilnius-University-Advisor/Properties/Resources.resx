@@ -121,4 +121,13 @@
   <data name="VUlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VUlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="first_place" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\first_place1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="third_place" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\third_place1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="second_place" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\second_place1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

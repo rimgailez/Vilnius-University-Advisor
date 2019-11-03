@@ -622,7 +622,7 @@ namespace Vilnius_University_Advisor
         }
         private void ClearAllFieldsInLectForms()
         {
-            SelectFacultyLect.Text = "";
+            SelectFacultyLect.SelectedIndex = -1;
             FilteredLecturersList.DataSource = null;
             ReviewLectEvalTxtBox.Text = "";
             LectUsernameComBox.Text = "";
@@ -652,7 +652,7 @@ namespace Vilnius_University_Advisor
             IsOptionalSubject.Checked = false;
             IsBUSSubject.Checked = false;
 
-            SelectFacultySubj.Text = "";
+            SelectFacultySubj.SelectedIndex = -1;
             FilteredSubjectsList.DataSource = null;
             ReviewSubjEvalTxtBox.Text = "";
             SubjUsernameComBox.Text = "";
@@ -712,7 +712,7 @@ namespace Vilnius_University_Advisor
         {
             SingleLecturer.Hide();
             Info.Text = "";
-            AllFaculties.Text = "";
+            AllFaculties.SelectedIndex = -1;
             AllLect.DataSource = null;
             LectSearchField.Text = "";
             MainMenu.Show();
@@ -728,7 +728,7 @@ namespace Vilnius_University_Advisor
         {
             SingleSubject.Hide();
             Info1.Text = "";
-            AllFaculties1.Text = "";
+            AllFaculties1.SelectedIndex = -1;
             AllSubj.DataSource = null;
             SubjSearchField.Text = "";
             MainMenu.Show();
@@ -995,6 +995,7 @@ namespace Vilnius_University_Advisor
                 ActivityHistory.Visible = true;
                 SaveAsWordDocButton.Visible = true;
                 SaveAsExcelButton.Visible = true;
+                MostActiveUsersButton.Visible = true;
                 MainMenu.Show();
             }
         }
@@ -1008,7 +1009,7 @@ namespace Vilnius_University_Advisor
         private void ClearRegistrationFields()
         {
             UserFullName.Text = "";
-            SelectFacultyUser.Text = "";
+            SelectFacultyUser.SelectedIndex = -1;
             UserNameRegistration.Text = "";
             PasswordRegistration.Text = "";
             RepeatPasswordReg.Text = "";
@@ -1064,6 +1065,17 @@ namespace Vilnius_University_Advisor
                 warningMsg(MainResources.WrongPhoneNo, MainResources.WrongData);
                 return false;
             }
+            else if (!Regex.IsMatch(UserFullName.Text, @"^\p{L}+(?:\s\p{L}+)+$", RegexOptions.IgnoreCase))
+            {
+                warningMsg(MainResources.EnterNameAndUsername, MainResources.WrongData);
+                return false;
+            }
+            else if (!Regex.IsMatch(EMailReg.Text, @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$", RegexOptions.IgnoreCase))
+            {
+                warningMsg(MainResources.WrongEmail, MainResources.WrongData);
+                return false;
+            }
             else if (!PasswordRegistration.Text.Equals(RepeatPasswordReg.Text))
             {
                 warningMsg(MainResources.PasswordsDoNotMatch, MainResources.RepeatPassword);
@@ -1108,6 +1120,7 @@ namespace Vilnius_University_Advisor
             ActivityHistory.Visible = false;
             SaveAsWordDocButton.Visible = false;
             SaveAsExcelButton.Visible = false;
+            MostActiveUsersButton.Visible = false;
             MainMenu.Show();
         }
 
@@ -1204,6 +1217,31 @@ namespace Vilnius_University_Advisor
             {
                 StudyProgramReg.Items.Add(studies.name);
             }
+        }
+
+        private void MostActiveUsersButton_Click(object sender, EventArgs e)
+        {
+            List<User> users = DataFetcher.GetInstance().GetTop3ActiveUsers();
+
+            DisplayActiveUsers(FirstPlaceLabelData, users[0]);
+            DisplayActiveUsers(SecPlaceLabelData, users[1]);
+            DisplayActiveUsers(ThirdPlaceLabelData, users[2]);
+
+            MainMenu.Hide();
+            MostActiveUsers.Show();
+        }
+
+        private void DisplayActiveUsers(Label label, User user)
+        {
+            label.Text = MainResources.UserName + " " + user.userName + "\r\n" +
+                 MainResources.EvaluatedLecturers + " " + user.evaluatedLecturers + "\r\n" +
+                 MainResources.EvaluatedSubjects + " " + user.evaluatedSubjects;
+        }
+
+        private void BackToMenuButton_Click(object sender, EventArgs e)
+        {
+            MostActiveUsers.Hide();
+            MainMenu.Show();
         }
     }
 }

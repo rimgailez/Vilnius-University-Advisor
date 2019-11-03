@@ -261,7 +261,10 @@
     <None Include="Resources\VUlogo.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\third_place1.PNG" />
+    <None Include="Resources\first_place1.PNG" />
     <Content Include="Resources\image1.jpg" />
+    <None Include="Resources\second_place1.PNG" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
