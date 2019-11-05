@@ -41,14 +41,14 @@ namespace Vilnius_University_Advisor
             AddLecturer(new Lecturer(name, faculty));
         }
 
-        public async void AddLecturer(Lecturer lecturerNew)
+        public void AddLecturer(Lecturer lecturerNew)
         {
-            await client.PostAsJsonAsync("lecturer/add", lecturerNew);
+            PostObject("lecturer/add", lecturerNew);
         }
 
-        public async void AddLecturerWithoutWriting(Lecturer lecturer)
+        public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            await client.PostAsJsonAsync("lecturer/add", lecturer);
+            PostObject("lecturer/add", lecturer);
         }
 
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
@@ -56,14 +56,14 @@ namespace Vilnius_University_Advisor
             AddSubject(new Subject(name, faculty, isOptional, isBUS));
         }
 
-        public async void AddSubject(Subject subjectNew)
+        public void AddSubject(Subject subjectNew)
         {
-            await client.PostAsJsonAsync("subject/add", subjectNew);
+            PostObject("subject/add", subjectNew);
         }
 
-        public async void AddSubjectWithoutWriting(Subject subject)
+        public void AddSubjectWithoutWriting(Subject subject)
         {
-            await client.PostAsJsonAsync("subject/add", subject);
+            PostObject("subject/add", subject);
         }
         
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram )
@@ -71,14 +71,14 @@ namespace Vilnius_University_Advisor
             AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
         }
 
-        public async void AddUser(User userNew)
+        public void AddUser(User userNew)
         {
-            await client.PostAsJsonAsync("user/add", userNew);
+            PostObject("user/add", userNew);
         }
 
-        public async void AddUserWithoutWriting(User user)
+        public void AddUserWithoutWriting(User user)
         {
-            await client.PostAsJsonAsync("user/add", user);
+            PostObject("user/add", user);
         }
 
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
@@ -88,7 +88,7 @@ namespace Vilnius_University_Advisor
             jObject.Add("score", lecturerScore);
             jObject.Add("text", text);
             jObject.Add("username", username);
-            client.PostAsJsonAsync("lecturer/evaluate", jObject);
+            PostObject("lecturer/evaluate", jObject);
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
@@ -98,7 +98,7 @@ namespace Vilnius_University_Advisor
             jObject.Add("score", subjectScore);
             jObject.Add("text", text);
             jObject.Add("username", username);
-            client.PostAsJsonAsync("subject/evaluate", jObject);
+            PostObject("subject/evaluate", jObject);
         }
 
         public IEnumerable<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -107,200 +107,96 @@ namespace Vilnius_University_Advisor
             if (!faculty.Equals(Faculty.None)) request = request + ((int)faculty).ToString();
             return GetEnumerableFromAPI<Subject>(request).Result;
         }
-        public async Task<IEnumerable<Subject>> GetBUSSubjectsAsync(Faculty faculty)
-        {
-            string request = "subject/BUS/";
-            if (!faculty.Equals(Faculty.None)) request = request + ((int)faculty).ToString();
-            List<Subject> subjects = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
-            return subjects;
-        }
-
         public IEnumerable<Subject> GetSubjectsByTypeAndFaculty(bool isOptional, Faculty faculty)
         {
-            return GetSubjectsByTypeAndFacultyAsync(isOptional, faculty).Result;
-        }
-        public async Task<IEnumerable<Subject>> GetSubjectsByTypeAndFacultyAsync(bool isOptional, Faculty faculty)
-        {
-            List<Subject> subjects = new List<Subject>();
-            try
-            {
-                HttpResponseMessage response = await client.GetAsync("subject/TypeFaculty/" + isOptional.ToString() + "/" + ((int)faculty).ToString()).ConfigureAwait(false);
-                if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
-            } catch (HttpRequestException e) { errorMessage?.Invoke(this, "Nera interneto"); }
-            return subjects;
+            string request = "subject/TypeFaculty/" + isOptional.ToString() + "/" + ((int)faculty).ToString();
+            return GetEnumerableFromAPI<Subject>(request).Result;
         }
 
         public IEnumerable<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
-            Task<IEnumerable<Lecturer>> lecturers = GetLecturersByFacultyAsync(faculty);
-            return lecturers.Result;
-        }
-        public async Task<IEnumerable<Lecturer>> GetLecturersByFacultyAsync(Faculty faculty)
-        {
-            List<Lecturer> lecturers = null;
-            int facultyInt = (int)faculty;
-            HttpResponseMessage response = await client.GetAsync("lecturer/faculty/" + facultyInt.ToString()).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
-            return lecturers;
+            string request = "lecturer/faculty/" + ((int)faculty).ToString();
+            return GetEnumerableFromAPI<Lecturer>(request).Result;
+
         }
 
         public IEnumerable<Subject> GetSubjectsByFaculty(Faculty faculty)
         {
-            return GetSubjectsByFacultyAsync(faculty).Result;
-        }
-        public async Task<IEnumerable<Subject>> GetSubjectsByFacultyAsync(Faculty faculty)
-        {
-            List<Subject> subjects = null;
-            int facultyInt = (int)faculty;
-            HttpResponseMessage response = await client.GetAsync("subject/faculty/" + facultyInt.ToString()).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
-            return subjects;
+            string request = "subject/faculty/" + ((int)faculty).ToString();
+            return GetEnumerableFromAPI<Subject>(request).Result;
         }
 
         public IEnumerable<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
         {
-            return GetSubjectSearchResultsAsync(enteredWord, faculty).Result;
-        }
-        public async Task<IEnumerable<Subject>> GetSubjectSearchResultsAsync(String enteredWord, Faculty faculty)
-        {
-            List<Subject> subjects = null;
-            int facultyInt = (int)faculty;
-            HttpResponseMessage response = await client.GetAsync("subject/search/" + facultyInt.ToString() + "/" + enteredWord).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
-            return subjects;
+            string request = "subject/search/" + ((int)faculty).ToString() + "/" + enteredWord;
+            return GetEnumerableFromAPI<Subject>(request).Result;
         }
 
         public IEnumerable<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
-            return GetLecturerSearchResultsAsync(enteredWord, faculty).Result;
-        }
-        public async Task<IEnumerable<Lecturer>> GetLecturerSearchResultsAsync(String enteredWord, Faculty faculty)
-        {
-            List<Lecturer> lecturers = null;
-            int facultyInt = (int)faculty;
-            HttpResponseMessage response = await client.GetAsync("lecturer/search/" + facultyInt.ToString() + "/" + enteredWord).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
-            return lecturers;
+            string request = "lecturer/search/" + ((int)faculty).ToString() + "/" + enteredWord;
+            return GetEnumerableFromAPI<Lecturer>(request).Result;
         }
 
         public IEnumerable<Subject> GetTop10Subjects()
         {
-            return GetTop10SubjectsAsync().Result;
-        }
-        public async Task<IEnumerable<Subject>> GetTop10SubjectsAsync()
-        {
             string request = "subject/top";
-            List<Subject> subjects = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
-            return subjects;
+            return GetEnumerableFromAPI<Subject>(request).Result;
         }
 
         public IEnumerable<Subject> GetTop5BUSSubjects()
         {
-            return GetTop5BUSSubjectsAsync().Result;
-        }
-        public async Task<IEnumerable<Subject>> GetTop5BUSSubjectsAsync()
-        {
             string request = "subject/topBUS";
-            List<Subject> subjects = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
-            return subjects;
+            return GetEnumerableFromAPI<Subject>(request).Result;
         }
 
         public IEnumerable<Lecturer> GetTop10Lecturers()
         {
-            return GetTop10LecturersAsync().Result;
-        }
-        public async Task<IEnumerable<Lecturer>> GetTop10LecturersAsync()
-        {
             string request = "lecturer/top";
-            List<Lecturer> lecturers = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) lecturers = await response.Content.ReadAsAsync<List<Lecturer>>();
-            return lecturers;
+            return GetEnumerableFromAPI<Lecturer>(request).Result;
         }
 
         
         public IEnumerable<User> GetAllUsers()
         {
-            return GetAllUsersAsync().Result;
-        }
-
-        public async Task<IEnumerable<User>> GetAllUsersAsync()
-        {
             string request = "user/all";
-            List<User> users = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
-            return users;
+            return GetEnumerableFromAPI<User>(request).Result;
         }
 
         public Boolean CheckIfUserNameExists(string userName)
         {
-            return CheckIfUserNameExistsAsync(userName).Result;
-        }
-
-        public async Task<Boolean> CheckIfUserNameExistsAsync(string userName)
-        {
-            Boolean result = false;
-            HttpResponseMessage response = await client.GetAsync("user/checkUserName/" + userName).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) result = await response.Content.ReadAsAsync<Boolean>();
-            return result;
+            string request = "user/checkUserName/" + userName;
+            return GetObjectFromAPI<Boolean>(request).Result;
         }
 
         public Boolean CheckIfCorrectPassword(string userName, string password)
         {
-            return CheckIfCorrectPasswordAsync(userName, password).Result;
-        }
-
-        public async Task<Boolean> CheckIfCorrectPasswordAsync(string userName, string password)
-        {
-            Boolean result = false;
-            HttpResponseMessage response = await client.GetAsync("user/checkPassword/" + userName + "/" + password).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) result = await response.Content.ReadAsAsync<Boolean>();
-            return result;
+            string request = "user/checkPassword/" + userName + "/" + password;
+            return GetObjectFromAPI<Boolean>(request).Result;
         }
         
         public User GetCurrentUser()
         {
-            return GetCurrentUserAsync().Result;
-         }
-
-        public async Task<User> GetCurrentUserAsync()
-        {
-        User curUser = null;
-        HttpResponseMessage response = await client.GetAsync("user/getUser/").ConfigureAwait(false);
-        if (response.IsSuccessStatusCode) curUser = await response.Content.ReadAsAsync<User>();
-            return curUser;
+            string request = "user/getUser/";
+            return GetObjectFromAPI<User>(request).Result;
         }
 
-        public async void SetCurrentUser(User user)
+        public void SetCurrentUser(User user)
         {
-            await client.PostAsJsonAsync("user/setUser", user);
+            PostObject("user/setUser", user);
         }
 
-        public async void AddToHistory(string activity)
+        public void AddToHistory(string activity)
         {
-            await client.PostAsJsonAsync("user/addHistory", activity);
+            PostObject("user/addHistory", activity);
         }
 
         public List<Activity> GetHistory()
         {
-            return GetHistoryAsync().Result;
+            string request = "user/getHistory";
+            return (List<Activity>)GetEnumerableFromAPI<Activity>(request).Result;
         }
 
-        public async Task<List<Activity>> GetHistoryAsync()
-        {
-            string request = "user/getHistory";
-            List<Activity> activity = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) activity = await response.Content.ReadAsAsync<List<Activity>>();
-            return activity;
-        }
         public async void RunScraper(RegForm regForm)
         {
             HubConnection connection = new HubConnectionBuilder()
@@ -310,64 +206,38 @@ namespace Vilnius_University_Advisor
             {
                 regForm.updateScraperTextbox(message);
             });
-            await connection.StartAsync();
-            await connection.InvokeAsync("StartScraper");
+            try
+            {
+                await connection.StartAsync();
+                await connection.InvokeAsync("StartScraper");
+            }
+            catch (HttpRequestException e) { errorMessage?.Invoke(this, "Nera interneto"); }
         }
 
         public IEnumerable<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
         {
-            return GetStudyProgrammesByFacultyAsync(faculty).Result;
-        }
-        public async Task<IEnumerable<StudyProgramme>> GetStudyProgrammesByFacultyAsync(Faculty faculty)
-        {
-            List<StudyProgramme> studyProgrammes = null;
-            int facultyInt = (int)faculty;
-            HttpResponseMessage response = await client.GetAsync("studyProgramme/faculty/" + facultyInt.ToString()).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) studyProgrammes = await response.Content.ReadAsAsync<List<StudyProgramme>>();
-            return studyProgrammes;
+            string request = "studyProgramme/faculty/" + ((int)faculty).ToString();
+            return GetEnumerableFromAPI<StudyProgramme>(request).Result;
         }
 
-        public List<User> GetTop5ActiveLecturersEvaluators()
-        {
-            return GetTop5ActiveLecturersEvaluatorsAsync().Result;
-        }
-
-        public async Task<List<User>> GetTop5ActiveLecturersEvaluatorsAsync()
+        public IEnumerable<User> GetTop5ActiveLecturersEvaluators()
         {
             string request = "user/getTopLectEvaluators";
-            List<User> users = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
-            return users;
+            return GetEnumerableFromAPI<User>(request).Result;
         }
 
-        public List<User> GetTop5ActiveSubjectsEvaluators()
-        {
-            return GetTop5ActiveSubjectsEvaluatorsAsync().Result;
-        }
-
-        public async Task<List<User>> GetTop5ActiveSubjectsEvaluatorsAsync()
+        public IEnumerable<User> GetTop5ActiveSubjectsEvaluators()
         {
             string request = "user/getTopSubjEvaluators";
-            List<User> users = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
-            return users;
+            return GetEnumerableFromAPI<User>(request).Result;
         }
 
         public List<User> GetTop3ActiveUsers()
         {
-            return GetTop3ActiveUsersAsync().Result;
+            string request = "user/getTopUsers";
+            return (List<User>)GetEnumerableFromAPI<User>(request).Result;
         }
 
-        public async Task<List<User>> GetTop3ActiveUsersAsync()
-        {
-            string request = "user/getTopUsers";
-            List<User> users = null;
-            HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
-            return users;
-        }
         public async Task<IEnumerable<T>> GetEnumerableFromAPI<T>(string request)
         {
             List<T> objects = new List<T>();
@@ -375,9 +245,27 @@ namespace Vilnius_University_Advisor
             {
                 HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode) objects = await response.Content.ReadAsAsync<List<T>>();
-            }
-            catch (HttpRequestException e) { errorMessage?.Invoke(this, "Nera interneto"); }
+            } catch(HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoCoonection); }
             return objects;
+        }
+        public async Task<T> GetObjectFromAPI<T>(string request)
+        {
+            T result = default;
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+                if (response.IsSuccessStatusCode) result = await response.Content.ReadAsAsync<T>();
+            } catch(HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoCoonection); }
+            return result;
+
+        }
+        public async void PostObject(string request, Object objectToPost)
+        {
+            try
+            {
+                await client.PostAsJsonAsync(request, objectToPost);
+            }
+            catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoCoonection); }
         }
     }
 }

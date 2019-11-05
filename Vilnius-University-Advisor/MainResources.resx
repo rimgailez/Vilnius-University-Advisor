@@ -156,6 +156,9 @@
   <data name="EnterNameAndUsername" xml:space="preserve">
     <value>Įveskite vardą ir pavardę.</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Klaida</value>
+  </data>
   <data name="EvaluatedLecturer" xml:space="preserve">
     <value>Įvertintas dėstytojas: </value>
   </data>
@@ -185,6 +188,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>name</value>
+  </data>
+  <data name="NoCoonection" xml:space="preserve">
+    <value>Serveris yra nepasiekiamas</value>
   </data>
   <data name="NumberOfReviews" xml:space="preserve">
     <value>Įvertinimų skaičius: </value>

@@ -1247,7 +1247,7 @@ namespace Vilnius_University_Advisor
 
         private void OnErrorMessage(object sender, string message)
         {
-            warningMsg(message, "Klaida");
+            warningMsg(message, MainResources.Error);
         }
     }
 }
