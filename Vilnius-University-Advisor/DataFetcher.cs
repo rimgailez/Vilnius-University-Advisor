@@ -19,6 +19,7 @@ namespace Vilnius_University_Advisor
     { 
         private static readonly DataFetcher instance  = new DataFetcher();
         HttpClient client = new HttpClient();
+        public event EventHandler<string> errorMessage;
 
         private DataFetcher() 
         {
@@ -102,7 +103,9 @@ namespace Vilnius_University_Advisor
 
         public IEnumerable<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
         {
-            return GetBUSSubjectsAsync(faculty).Result;
+            string request = "subject/BUS/";
+            if (!faculty.Equals(Faculty.None)) request = request + ((int)faculty).ToString();
+            return GetEnumerableFromAPI<Subject>(request).Result;
         }
         public async Task<IEnumerable<Subject>> GetBUSSubjectsAsync(Faculty faculty)
         {
@@ -120,9 +123,12 @@ namespace Vilnius_University_Advisor
         }
         public async Task<IEnumerable<Subject>> GetSubjectsByTypeAndFacultyAsync(bool isOptional, Faculty faculty)
         {
-            List<Subject> subjects = null;
-            HttpResponseMessage response = await client.GetAsync("subject/TypeFaculty/" + isOptional.ToString() + "/" + ((int)faculty).ToString()).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
+            List<Subject> subjects = new List<Subject>();
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync("subject/TypeFaculty/" + isOptional.ToString() + "/" + ((int)faculty).ToString()).ConfigureAwait(false);
+                if (response.IsSuccessStatusCode) subjects = await response.Content.ReadAsAsync<List<Subject>>();
+            } catch (HttpRequestException e) { errorMessage?.Invoke(this, "Nera interneto"); }
             return subjects;
         }
 
@@ -361,6 +367,17 @@ namespace Vilnius_University_Advisor
             HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
             if (response.IsSuccessStatusCode) users = await response.Content.ReadAsAsync<List<User>>();
             return users;
+        }
+        public async Task<IEnumerable<T>> GetEnumerableFromAPI<T>(string request)
+        {
+            List<T> objects = new List<T>();
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
+                if (response.IsSuccessStatusCode) objects = await response.Content.ReadAsAsync<List<T>>();
+            }
+            catch (HttpRequestException e) { errorMessage?.Invoke(this, "Nera interneto"); }
+            return objects;
         }
     }
 }

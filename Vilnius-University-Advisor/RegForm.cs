@@ -23,6 +23,7 @@ namespace Vilnius_University_Advisor
         public RegForm()
         {
             InitializeComponent();
+            DataFetcher.GetInstance().errorMessage += OnErrorMessage;
         }
 
         private void LecReg_Click(object sender, EventArgs e)
@@ -1242,6 +1243,11 @@ namespace Vilnius_University_Advisor
         {
             MostActiveUsers.Hide();
             MainMenu.Show();
+        }
+
+        private void OnErrorMessage(object sender, string message)
+        {
+            warningMsg(message, "Klaida");
         }
     }
 }
