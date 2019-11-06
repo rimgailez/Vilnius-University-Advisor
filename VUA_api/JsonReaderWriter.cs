@@ -15,49 +15,91 @@ namespace VUA_api
         
         public List<Lecturer> ReadLecturers()
         {
-            string lecturerInput = File.ReadAllText(projectPath + directorySeparator + MainResources.LecturersJson);
+            string lecturerInput = "[]";
+            try
+            {
+                lecturerInput = File.ReadAllText(projectPath + directorySeparator + MainResources.LecturersJson);
+            }
+            catch (IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
+            catch (UnauthorizedAccessException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
             return JsonConvert.DeserializeObject<List<Lecturer>>(lecturerInput);
         }
         public List<Subject> ReadSubjects()
         {
-            string subjectInput = File.ReadAllText(projectPath + directorySeparator + MainResources.SubjectsJson);
+            string subjectInput = "[]";
+            try
+            {
+                subjectInput = File.ReadAllText(projectPath + directorySeparator + MainResources.SubjectsJson);
+            } catch(IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
             return JsonConvert.DeserializeObject<List<Subject>>(subjectInput);
         }
 
         public void WriteLecturers(List<Lecturer> lecturers)
         {
             string output = JsonConvert.SerializeObject(lecturers, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + MainResources.LecturersJson, output);
+            try
+            {
+                File.WriteAllText(projectPath + directorySeparator + MainResources.LecturersJson, output);
+            }
+            catch (IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
+            catch (UnauthorizedAccessException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
         }
 
         public void WriteSubjects(List<Subject> subjects)
         {
             string output = JsonConvert.SerializeObject(subjects, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + MainResources.SubjectsJson, output);
+            try
+            {
+                File.WriteAllText(projectPath + directorySeparator + MainResources.SubjectsJson, output);
+            }
+            catch (IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
+            catch (UnauthorizedAccessException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
         }
 
         public List<User> ReadUsers()
         {
-              string userInput = File.ReadAllText(projectPath + directorySeparator + MainResources.UsersJson);
+            string userInput = "[]";
+            try
+            {
+                userInput = File.ReadAllText(projectPath + directorySeparator + MainResources.UsersJson);
+            }
+            catch (IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
+            catch (UnauthorizedAccessException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
               return JsonConvert.DeserializeObject<List<User>>(userInput);
         }
 
         public void WriteUsers(List<User> users)
         {
             string output = JsonConvert.SerializeObject(users, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + MainResources.UsersJson, output);
+            try
+            {
+                File.WriteAllText(projectPath + directorySeparator + MainResources.UsersJson, output);
+            }
+            catch (IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
+            catch (UnauthorizedAccessException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
         }
 
         public List<StudyProgramme> ReadStudyProgrammes()
         {
-            string studyProgrammeInput = File.ReadAllText(projectPath + directorySeparator + MainResources.StudyProgrammeJson);
+            string studyProgrammeInput = "[]";
+            try
+            {
+                studyProgrammeInput = File.ReadAllText(projectPath + directorySeparator + MainResources.StudyProgrammeJson);
+            }
+            catch (IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
+            catch (UnauthorizedAccessException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
             return JsonConvert.DeserializeObject<List<StudyProgramme>>(studyProgrammeInput);
         }
 
         public void WriteStudyProgrammes(List<StudyProgramme> studyProgrammes)
         {
             string output = JsonConvert.SerializeObject(studyProgrammes, Formatting.Indented);
-            File.WriteAllText(projectPath + directorySeparator + MainResources.StudyProgrammeJson, output);
+            try
+            {
+                File.WriteAllText(projectPath + directorySeparator + MainResources.StudyProgrammeJson, output);
+            }
+            catch (IOException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
+            catch (UnauthorizedAccessException e) { System.Diagnostics.Debug.WriteLine(e.ToString()); }
         }
     }
 }

@@ -279,9 +279,9 @@ namespace Vilnius_University_Advisor {
         /// <summary>
         ///   Looks up a localized string similar to Serveris yra nepasiekiamas.
         /// </summary>
-        internal static string NoCoonection {
+        internal static string NoConnection {
             get {
-                return ResourceManager.GetString("NoCoonection", resourceCulture);
+                return ResourceManager.GetString("NoConnection", resourceCulture);
             }
         }
         
@@ -579,6 +579,15 @@ namespace Vilnius_University_Advisor {
         internal static string VUpageLink {
             get {
                 return ResourceManager.GetString("VUpageLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingi duomenys.
+        /// </summary>
+        internal static string WrongArguments {
+            get {
+                return ResourceManager.GetString("WrongArguments", resourceCulture);
             }
         }
         

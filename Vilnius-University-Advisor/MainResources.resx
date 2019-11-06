@@ -189,7 +189,7 @@
   <data name="Name" xml:space="preserve">
     <value>name</value>
   </data>
-  <data name="NoCoonection" xml:space="preserve">
+  <data name="NoConnection" xml:space="preserve">
     <value>Serveris yra nepasiekiamas</value>
   </data>
   <data name="NumberOfReviews" xml:space="preserve">
@@ -290,6 +290,9 @@
   </data>
   <data name="VUpageLink" xml:space="preserve">
     <value>https://www.vu.lt/</value>
+  </data>
+  <data name="WrongArguments" xml:space="preserve">
+    <value>Neteisingi duomenys</value>
   </data>
   <data name="WrongData" xml:space="preserve">
     <value>Neteisingi duomenys</value>

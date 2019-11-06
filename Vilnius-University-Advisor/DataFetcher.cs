@@ -38,7 +38,12 @@ namespace Vilnius_University_Advisor
 
         public void AddLecturer(string name, Faculty faculty)
         {
-            AddLecturer(new Lecturer(name, faculty));
+            Lecturer lecturer = null;
+            try
+            {
+                lecturer = new Lecturer(name, faculty);
+            } catch(ArgumentOutOfRangeException e) { errorMessage?.Invoke(this, MainResources.WrongData); }
+            AddLecturer(lecturer);
         }
 
         public void AddLecturer(Lecturer lecturerNew)
@@ -53,7 +58,13 @@ namespace Vilnius_University_Advisor
 
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
         {
-            AddSubject(new Subject(name, faculty, isOptional, isBUS));
+            Subject subject = null;
+            try
+            {
+                subject = new Subject(name, faculty, isOptional, isBUS);
+            }
+            catch (ArgumentOutOfRangeException e) { errorMessage?.Invoke(this, MainResources.WrongData); }
+            AddSubject(subject);
         }
 
         public void AddSubject(Subject subjectNew)
@@ -211,7 +222,7 @@ namespace Vilnius_University_Advisor
                 await connection.StartAsync();
                 await connection.InvokeAsync("StartScraper");
             }
-            catch (HttpRequestException e) { errorMessage?.Invoke(this, "Nera interneto"); }
+            catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
         }
 
         public IEnumerable<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
@@ -245,7 +256,7 @@ namespace Vilnius_University_Advisor
             {
                 HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode) objects = await response.Content.ReadAsAsync<List<T>>();
-            } catch(HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoCoonection); }
+            } catch(HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
             return objects;
         }
         public async Task<T> GetObjectFromAPI<T>(string request)
@@ -255,7 +266,7 @@ namespace Vilnius_University_Advisor
             {
                 HttpResponseMessage response = await client.GetAsync(request).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode) result = await response.Content.ReadAsAsync<T>();
-            } catch(HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoCoonection); }
+            } catch(HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
             return result;
 
         }
@@ -265,7 +276,7 @@ namespace Vilnius_University_Advisor
             {
                 await client.PostAsJsonAsync(request, objectToPost);
             }
-            catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoCoonection); }
+            catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
         }
     }
 }
