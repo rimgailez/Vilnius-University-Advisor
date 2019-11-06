@@ -178,6 +178,15 @@ namespace Vilnius_University_Advisor {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Klaida.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Įvertintas dėstytojas: .
         /// </summary>
         internal static string EvaluatedLecturer {
@@ -264,6 +273,15 @@ namespace Vilnius_University_Advisor {
         internal static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Serveris yra nepasiekiamas.
+        /// </summary>
+        internal static string NoConnection {
+            get {
+                return ResourceManager.GetString("NoConnection", resourceCulture);
             }
         }
         
@@ -561,6 +579,15 @@ namespace Vilnius_University_Advisor {
         internal static string VUpageLink {
             get {
                 return ResourceManager.GetString("VUpageLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neteisingi duomenys.
+        /// </summary>
+        internal static string WrongArguments {
+            get {
+                return ResourceManager.GetString("WrongArguments", resourceCulture);
             }
         }
         
