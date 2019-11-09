@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.SubjectsList">
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1"
+                      Grid.Column="1">
+                <Picker x:Name="SelectFaculty"
+                Title="Pasirinkti fakultetą"/>
+                <SearchBar x:Name="Search"
+                       Placeholder="Ieškoti dalykų"                   
+                       SearchButtonPressed="OnSearchButtonPressed" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <CheckBox Grid.Row="1"
+                          Grid.Column="1"
+                          x:Name="IsOptional"
+                          CheckedChanged="OnCheckedChanged"/>
+                    <Label Grid.Row="1"
+                       Grid.Column="2"
+                       Text="Pasirenkamasis" />
+                    <CheckBox Grid.Row="2"
+                          Grid.Column="1"
+                          x:Name="IsBUS"
+                          CheckedChanged="OnCheckedChanged"/>
+                    <Label Grid.Row="2"
+                       Grid.Column="2"
+                       Text="BUS" />
+                </Grid>
+            </StackLayout>
+
+            <ListView Grid.Row="2"
+                      Grid.Column="1"
+                      x:Name="SubjectListView"
+                      ItemsSource="{Binding Subjects}"
+                      CachingStrategy="RecycleElement"              
+                      HasUnevenRows="true"
+                      VerticalOptions="FillAndExpand"
+                      RefreshCommand="{Binding LoadSubjectsCommand}"
+                      IsPullToRefreshEnabled="true"
+                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                      ItemSelected="OnSubjectSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding name}" 
+                           d:Text="{Binding .}"
+                           Style="{DynamicResource ListItemTextStyle}" />
+                                <Label Text="{Binding faculty}" 
+                           d:Text="Detail"
+                           Style="{DynamicResource ListItemDetailTextStyle}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </Grid>
+    </StackLayout>
+</ContentPage>
