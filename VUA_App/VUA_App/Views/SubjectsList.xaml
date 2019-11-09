@@ -6,59 +6,75 @@
              mc:Ignorable="d"
              x:Class="VUA_App.Views.SubjectsList">
     <StackLayout>
-        <Picker x:Name="SelectFaculty"
-                Title="Pasirinkti fakultetą"/>
-        <SearchBar x:Name="Search"
-                   Placeholder="Ieškoti dalykų"                   
-                   SearchButtonPressed="OnSearchButtonPressed" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <CheckBox Grid.Row="1"
+
+            <StackLayout Grid.Row="1"
+                      Grid.Column="1">
+                <Picker x:Name="SelectFaculty"
+                Title="Pasirinkti fakultetą"/>
+                <SearchBar x:Name="Search"
+                       Placeholder="Ieškoti dalykų"                   
+                       SearchButtonPressed="OnSearchButtonPressed" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <CheckBox Grid.Row="1"
+                          Grid.Column="1"
+                          x:Name="IsOptional"
+                          CheckedChanged="OnCheckedChanged"/>
+                    <Label Grid.Row="1"
+                       Grid.Column="2"
+                       Text="Pasirenkamasis" />
+                    <CheckBox Grid.Row="2"
+                          Grid.Column="1"
+                          x:Name="IsBUS"
+                          CheckedChanged="OnCheckedChanged"/>
+                    <Label Grid.Row="2"
+                       Grid.Column="2"
+                       Text="BUS" />
+                </Grid>
+            </StackLayout>
+
+            <ListView Grid.Row="2"
                       Grid.Column="1"
-                      x:Name="IsOptional"
-                      CheckedChanged="OnCheckedChanged" />
-            <Label Grid.Row="1"
-                   Grid.Column="2"
-                   Text="Pasirenkamasis" />
-            <CheckBox Grid.Row="2"
-                      Grid.Column="1"
-                      x:Name="IsBUS"
-                      CheckedChanged="OnCheckedChanged" />
-            <Label Grid.Row="2"
-                   Grid.Column="2"
-                   Text="BUS" />
-        </Grid>
-        <ListView x:Name="SubjectListView"
-                ItemsSource="{Binding Subjects}"
-                CachingStrategy="RecycleElement"              
-                HasUnevenRows="true"
-                VerticalOptions="FillAndExpand"
-                RefreshCommand="{Binding LoadSubjectsCommand}"
-                IsPullToRefreshEnabled="true"
-                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-                ItemSelected="OnSubjectSelected">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout>
-                            <Label Text="{Binding name}" 
+                      x:Name="SubjectListView"
+                      ItemsSource="{Binding Subjects}"
+                      CachingStrategy="RecycleElement"              
+                      HasUnevenRows="true"
+                      VerticalOptions="FillAndExpand"
+                      RefreshCommand="{Binding LoadSubjectsCommand}"
+                      IsPullToRefreshEnabled="true"
+                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                      ItemSelected="OnSubjectSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding name}" 
                            d:Text="{Binding .}"
                            Style="{DynamicResource ListItemTextStyle}" />
-                            <Label Text="{Binding faculty}" 
+                                <Label Text="{Binding faculty}" 
                            d:Text="Detail"
                            Style="{DynamicResource ListItemDetailTextStyle}"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
 
-        </ListView>
+            </ListView>
+        </Grid>
     </StackLayout>
 </ContentPage>
