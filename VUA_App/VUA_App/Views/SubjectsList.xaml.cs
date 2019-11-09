@@ -47,6 +47,11 @@ namespace VUA_App.Views
         }
         private void OnCheckedChanged(object sender, EventArgs e)
         {
+            if(IsBUS.IsChecked && !IsOptional.IsChecked)
+            {
+                IsOptional.IsChecked = true;
+                return;
+            }
             var fetchParams = new
             {
                 faculty = (Faculty)SelectFaculty.SelectedIndex,
