@@ -271,5 +271,24 @@ namespace VUA_api
             return users.OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
         }
 
+        public List<Subject> GetSubjectsByType(bool isOptional, bool isBUS)
+        {
+            List<Subject> someSubjects = (from subject in subjects
+                                          where subject.isOptional == isOptional &&
+                                                subject.isBUS == isBUS
+                                          select subject).ToList();
+            return someSubjects;
+        }
+        public List<Subject> GetSubjectSearchResultsByType(string searchTerm, Faculty faculty, bool isOptional, bool isBUS)
+        {
+            List<Subject> searchResults = subjects.GetEntitySearchResults(searchTerm, faculty);
+            List<Subject> someSubjects = (from subject in searchResults
+                                          where subject.isOptional == isOptional &&
+                                                subject.isBUS == isBUS
+                                          select subject).ToList();
+            return someSubjects;
+        }
+
+
     }
 }

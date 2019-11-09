@@ -37,9 +37,13 @@ namespace VUA_App.ViewModels
                 isOptional = fetchParams.isOptional;
                 isBUS = fetchParams.isBUS;
             }
-            if (searchTerm != null) subjects = DataFetcher.GetInstance().GetSubjectSearchResults(searchTerm, faculty);
-            else if (faculty != Faculty.None) subjects = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(isOptional, faculty);
-            else subjects = DataFetcher.GetInstance().GetSubjects();
+            if (searchTerm != null) subjects = DataFetcher.GetInstance().GetSubjectSearchResultsByType(faculty, searchTerm, isOptional, isBUS); //GetSubjectSearchResultsByType
+            else if (faculty != Faculty.None)
+            {
+                if (isBUS) subjects = DataFetcher.GetInstance().GetBUSSubjects(faculty);
+                else subjects = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(isOptional, faculty);
+            }
+            else subjects = DataFetcher.GetInstance().GetSubjectsByType(isOptional, isBUS); //GetSubjectsByType
             Subjects.Clear();
             foreach (Subject subject in subjects) Subjects.Add(subject);
             IsBusy = false;

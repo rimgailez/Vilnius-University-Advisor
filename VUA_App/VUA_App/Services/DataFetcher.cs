@@ -257,6 +257,19 @@ namespace VUA_App.Services
             string request = "subject";
             return GetEnumerableFromAPI<Subject>(request).Result;
         }
+        
+        public IEnumerable<Subject> GetSubjectsByType(bool isOptional, bool isBUS)
+        {
+            string request = "subject/Type/" + isOptional + "/" + isBUS;
+            //string request = "Type/false/false";
+            //System.Diagnostics.Debug.WriteLine("ashdgfakjfgakjsdgksdfgfksdgjkgdsfjkg");
+            return GetEnumerableFromAPI<Subject>(request).Result;
+        }
+        public IEnumerable<Subject> GetSubjectSearchResultsByType(Faculty faculty, string searchTerm, bool isOptional, bool isBUS)
+        {
+            string request = "subject/SearchType/" + (int)faculty + "/" + searchTerm + "/" + isOptional + "/" + isBUS;
+            return GetEnumerableFromAPI<Subject>(request).Result;
+        }
 
         public async Task<IEnumerable<T>> GetEnumerableFromAPI<T>(string request)
         {

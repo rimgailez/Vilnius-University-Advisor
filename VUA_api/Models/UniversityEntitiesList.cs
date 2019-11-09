@@ -44,9 +44,19 @@ namespace VUA_api
 
         public List<T> GetEntitySearchResults(String enteredWord, Faculty faculty)
         {
-            List<T> searchResult = (from ent in entitiesList
-                                          where ent.name.ToLower().Contains(enteredWord.ToLower()) && ent.faculty == faculty
-                                          select ent).ToList();
+            List<T> searchResult;
+            if (faculty == Faculty.None)
+            {
+                searchResult = (from ent in entitiesList
+                                where ent.name.ToLower().Contains(enteredWord.ToLower())
+                                select ent).ToList();
+            }
+            else
+            {
+                searchResult = (from ent in entitiesList
+                                where ent.name.ToLower().Contains(enteredWord.ToLower()) && ent.faculty == faculty
+                                select ent).ToList();
+            }
             return searchResult;
         }
 
