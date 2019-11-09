@@ -12,7 +12,6 @@ namespace VUA_App
         public App()
         {
             InitializeComponent();
-            DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
         }
 
