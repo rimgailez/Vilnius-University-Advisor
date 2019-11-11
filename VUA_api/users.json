@@ -278,6 +278,18 @@
     ]
   },
   {
+    "name": "Tomas Paulauskas",
+    "userFaculty": 11,
+    "userName": "tomasp",
+    "password": "tptp",
+    "studyProgram": "Politikos mokslai",
+    "eMail": "tomasp@gmail.com",
+    "phoneNumber": "+37063953052",
+    "evaluatedLecturers": 0,
+    "evaluatedSubjects": 0,
+    "userHistory": []
+  },
+  {
     "name": "Ugnius Ugniauskas",
     "userFaculty": 1,
     "userName": "ugnius.u",

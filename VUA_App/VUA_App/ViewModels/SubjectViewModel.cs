@@ -17,10 +17,10 @@ namespace VUA_App.ViewModels
         {
             Title = "Browse";
             Subjects = new ObservableCollection<Subject>();
-            LoadSubjectsCommand = new Command(async (fetchParams) => await ExecuteLoadSubjectsCommand(fetchParams));
+            LoadSubjectsCommand = new Command((fetchParams) => ExecuteLoadSubjectsCommand(fetchParams));
         }
 
-        async Task ExecuteLoadSubjectsCommand(dynamic fetchParams)
+        void ExecuteLoadSubjectsCommand(dynamic fetchParams)
         {
             if (IsBusy)
                 return;

@@ -7,6 +7,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 using VUA_App.Models;
+using System.Text;
 
 namespace VUA_App.Services
 {
@@ -43,14 +44,14 @@ namespace VUA_App.Services
             AddLecturer(lecturer);
         }
 
-        public void AddLecturer(Lecturer lecturerNew)
+        public async void AddLecturer(Lecturer lecturerNew)
         {
-            PostObject("lecturer/add", lecturerNew);
+            await PostObjectAsync("lecturer/add", lecturerNew);
         }
 
-        public void AddLecturerWithoutWriting(Lecturer lecturer)
+        public async void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            PostObject("lecturer/add", lecturer);
+            await PostObjectAsync("lecturer/add", lecturer);
         }
 
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
@@ -64,14 +65,14 @@ namespace VUA_App.Services
             AddSubject(subject);
         }
 
-        public void AddSubject(Subject subjectNew)
+        public async void AddSubject(Subject subjectNew)
         {
-            PostObject("subject/add", subjectNew);
+            await PostObjectAsync("subject/add", subjectNew);
         }
 
-        public void AddSubjectWithoutWriting(Subject subject)
+        public async void AddSubjectWithoutWriting(Subject subject)
         {
-            PostObject("subject/add", subject);
+            await PostObjectAsync("subject/add", subject);
         }
 
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
@@ -79,34 +80,34 @@ namespace VUA_App.Services
             AddUser(new User(name, faculty, userName, password, eMail, phoneNumber, studyProgram));
         }
 
-        public void AddUser(User userNew)
+        public async void AddUser(User userNew)
         {
-            PostObject("user/add", userNew);
+            await PostObjectAsync("user/add", userNew);
         }
 
-        public void AddUserWithoutWriting(User user)
+        public async void AddUserWithoutWriting(User user)
         {
-            PostObject("user/add", user);
+            await PostObjectAsync("user/add", user);
         }
 
-        public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
+        public async void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             JObject jObject = new JObject();
             jObject.Add("lecturer", JToken.FromObject(lecturer));
             jObject.Add("score", lecturerScore);
             jObject.Add("text", text);
             jObject.Add("username", username);
-            PostObject("lecturer/evaluate", jObject);
+            await PostObjectAsync("lecturer/evaluate", jObject);
         }
 
-        public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
+        public async void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
             JObject jObject = new JObject();
             jObject.Add("subject", JToken.FromObject(subject));
             jObject.Add("score", subjectScore);
             jObject.Add("text", text);
             jObject.Add("username", username);
-            PostObject("subject/evaluate", jObject);
+            await PostObjectAsync("subject/evaluate", jObject);
         }
 
         public IEnumerable<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -189,14 +190,14 @@ namespace VUA_App.Services
             return GetObjectFromAPI<User>(request).Result;
         }
 
-        public void SetCurrentUser(User user)
+        public async void SetCurrentUser(User user)
         {
-            PostObject("user/setUser", user);
+            await PostObjectAsync("user/setUser", user);
         }
 
-        public void AddToHistory(string activity)
+        public async void AddToHistory(string activity)
         {
-            PostObject("user/addHistory", activity);
+            await PostObjectAsync("user/addHistory", activity);
         }
 
         public List<Activity> GetHistory()
@@ -303,11 +304,14 @@ namespace VUA_App.Services
             return result;
 
         }
-        public async void PostObject(string request, Object objectToPost)
+
+        public async Task PostObjectAsync(string request, Object objectToPost)
         {
             try
             {
-                //await client.PostAsJsonAsync(request, objectToPost);
+                var json = JsonConvert.SerializeObject(objectToPost);
+                var contents = new StringContent(json, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await client.PostAsync(request, contents);
             }
             catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
         }

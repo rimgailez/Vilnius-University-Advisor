@@ -40,6 +40,24 @@ namespace VUA_App.Views
                     case (int)MenuItemType.LogIn:
                         MenuPages.Add(id, new NavigationPage(new LogIn()));
                         break;
+                    case (int)MenuItemType.CreateAccount:
+                        MenuPages.Add(id, new NavigationPage(new CreateAccount()));
+                        break;
+                    case (int)MenuItemType.RegisterSubject:
+                        MenuPages.Add(id, new NavigationPage(new RegisterSubject()));
+                        break;
+                    case (int)MenuItemType.RegisterLecturer:
+                        MenuPages.Add(id, new NavigationPage(new RegisterLecturer()));
+                        break;
+                    case (int)MenuItemType.TOP10Subjects:
+                        MenuPages.Add(id, new NavigationPage(new TOP10Subjects()));
+                        break;
+                    case (int)MenuItemType.TOP10Lecturers:
+                        MenuPages.Add(id, new NavigationPage(new TOP10Lecturers()));
+                        break;
+                    case (int)MenuItemType.TOP5BUSSubjects:
+                        MenuPages.Add(id, new NavigationPage(new TOP5BUSSubjects()));
+                        break;
                     case (int)MenuItemType.LogOut:
                         MenuItems.LogOut();
                         MenuPages.Add(id, new NavigationPage(new LogIn()));

@@ -22,7 +22,7 @@ namespace VUA_App.Views
         public async void OnClick(object sender, EventArgs e)
         {
             if (Username.Text.Equals("") || Password.Text.Equals("")) 
-                await DisplayAlert(MainResources.BlankLogInFields, MainResources.BlankFields, "OK");
+                await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
             else if (!DataFetcher.GetInstance().CheckIfUserNameExists(Username.Text))
             {
                 await DisplayAlert(MainResources.UserNotFound, MainResources.UserNotFoundCaption, "OK");

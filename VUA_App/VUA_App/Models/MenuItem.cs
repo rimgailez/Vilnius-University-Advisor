@@ -11,7 +11,13 @@ namespace VUA_App.Models
         LecturersList,
         SubjectsList,
         LogIn,
-        LogOut
+        LogOut,
+        CreateAccount,
+        RegisterSubject,
+        RegisterLecturer,
+        TOP10Subjects,
+        TOP10Lecturers,
+        TOP5BUSSubjects
     }
     public class MenuItem
     {

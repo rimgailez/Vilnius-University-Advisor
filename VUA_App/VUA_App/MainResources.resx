@@ -123,9 +123,6 @@
   <data name="BlankFields" xml:space="preserve">
     <value>Neužpildyti laukai</value>
   </data>
-  <data name="BlankLogInFields" xml:space="preserve">
-    <value>Neįvesti prisijungimo duomenys.</value>
-  </data>
   <data name="BUS" xml:space="preserve">
     <value>Dalykas yra BUS</value>
   </data>

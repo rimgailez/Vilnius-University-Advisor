@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.TOP10Subjects">
+    <StackLayout>
+        <Label Text="TOP10 dalykai"
+               FontSize="Title"
+               FontAttributes="Italic">
+        </Label>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="1"
+                      Grid.Column="1"
+                      x:Name="TOP10SubjectListView"
+                      ItemsSource="{Binding Subjects}"
+                      CachingStrategy="RecycleElement"              
+                      HasUnevenRows="true"
+                      VerticalOptions="FillAndExpand"
+                      RefreshCommand="{Binding LoadSubjectsCommand}"
+                      IsPullToRefreshEnabled="true"
+                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                      ItemSelected="OnSubjectSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding name}" 
+                           d:Text="{Binding .}"
+                           Style="{DynamicResource ListItemTextStyle}" />
+                                <Label Text="{Binding faculty}" 
+                           d:Text="Detail"
+                           Style="{DynamicResource ListItemDetailTextStyle}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </StackLayout>
+</ContentPage>
