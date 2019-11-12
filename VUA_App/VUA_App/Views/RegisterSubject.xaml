@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.RegisterSubject">
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1"
+                      Grid.Column="1">
+                <Label Text="Dalyko pavadinimas:"/>
+                <Entry x:Name="SubjectName"
+                       Text=""/>
+                <Picker x:Name="SubjectFaculty"
+                        Title="Fakultetas:"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <CheckBox Grid.Row="1"
+                              Grid.Column="1"
+                              x:Name="IsOptional"/>
+                    <Label Grid.Row="1"
+                           Grid.Column="2"
+                           Text="Pasirenkamasis"/>
+                    <CheckBox Grid.Row="2"
+                              Grid.Column="1"
+                              x:Name="IsBUS"
+                              CheckedChanged="OnCheckedChanged"/>
+                    <Label Grid.Row="2"
+                           Grid.Column="2"
+                           Text="BUS"/>
+                    <Button Grid.Row="3"
+                            Grid.Column="1"
+                            Text="Registruoti dalyką"
+                            Clicked="OnRegisterSubject"/>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

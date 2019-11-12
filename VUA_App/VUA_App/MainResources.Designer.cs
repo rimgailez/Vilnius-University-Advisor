@@ -79,15 +79,6 @@ namespace VUA_App {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Neįvesti prisijungimo duomenys..
-        /// </summary>
-        internal static string BlankLogInFields {
-            get {
-                return ResourceManager.GetString("BlankLogInFields", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Dalykas yra BUS.
         /// </summary>
         internal static string BUS {
