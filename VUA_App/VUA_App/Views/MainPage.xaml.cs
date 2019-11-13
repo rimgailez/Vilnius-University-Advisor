@@ -23,6 +23,13 @@ namespace VUA_App.Views
             MasterBehavior = MasterBehavior.Popover;
 
             MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+
+            DataFetcher.GetInstance().errorMessage += async (object sender, string error) =>
+            {
+                await Device.InvokeOnMainThreadAsync(async () => {
+                    await DisplayAlert(MainResources.Error, error, "OK");
+                });
+            };
         }
 
         public async Task NavigateFromMenu(int id)
