@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 using VUA_App.Models;
 using System.Text;
+using Xamarin.Forms;
 
 namespace VUA_App.Services
 {
