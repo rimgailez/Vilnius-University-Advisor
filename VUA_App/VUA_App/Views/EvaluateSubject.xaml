@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.EvaluateSubject">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="0" Grid.Column="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Privalomasis" Grid.Row="0" Grid.Column="0" XAlign ="End" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
+                    <CheckBox x:Name ="IsMandatory" IsChecked="False" Grid.Row="0" Grid.Column="1" CheckedChanged="IsMandatory_CheckedChanged"/>
+                    <Label Text="Pasirenkamasis" Grid.Row="0" Grid.Column="2" XAlign ="End" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
+                    <CheckBox x:Name ="IsOptional" IsChecked="False" Grid.Row="0" Grid.Column="3" CheckedChanged="IsOptional_CheckedChanged"/>
+                    <Label Text="BUS" Grid.Row="0" Grid.Column="4" XAlign ="End" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
+                    <CheckBox x:Name ="IsBUS" IsChecked="False" Grid.Row="0" Grid.Column="5" CheckedChanged="IsBUS_CheckedChanged"/>
+                </Grid>
+                <Picker x:Name="SelectSubjectFaculty"
+                Title="Fakultetas:"/>
+                <Picker x:Name="SelectSubject"
+                Title="Mokomasis dalykas:"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="0">
+                <Label Text="Dalyko įvertinimas:"/>
+                <Grid x:Name="EmojiGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="1.PNG" Grid.Row="0" Grid.Column="0" x:Name ="ImgButton1" Clicked="OnImgButton1Clicked"/>
+                    <ImageButton Source="2.PNG" Grid.Row="0" Grid.Column="1" x:Name ="ImgButton2" Clicked="OnImgButton2Clicked"/>
+                    <ImageButton Source="3.PNG" Grid.Row="0" Grid.Column="2" x:Name ="ImgButton3" Clicked="OnImgButton3Clicked"/>
+                    <ImageButton Source="4.PNG" Grid.Row="0" Grid.Column="3" x:Name ="ImgButton4" Clicked="OnImgButton4Clicked"/>
+                    <ImageButton Source="5.PNG" Grid.Row="0" Grid.Column="4" x:Name ="ImgButton5" Clicked="OnImgButton5Clicked"/>
+                </Grid>
+                <Label Text="" x:Name="EvaluationLabel"/>
+                <Entry x:Name="NumericEvaluation" IsVisible="False"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="0">
+                <Picker x:Name="UserName" Title="Prisijungimo vardas:"/>
+                <Label Text="Pasidalinkite įžvalgomis apie šį dalyką:"/>
+                <Editor x:Name="SubjectComments" Text="" />
+                <Button Text="Pateikti įvertinimą" Clicked="OnSubjEvaluation"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

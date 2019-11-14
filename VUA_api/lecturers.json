@@ -310,9 +310,16 @@
   {
     "name": "Agnė Juškevičiūtė-Vilienė",
     "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 3.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 3,
+        "text": "Not great not terrible.",
+        "date": "2019-11-14"
+      }
+    ]
   },
   {
     "name": "Agnė Kalnaitytė",

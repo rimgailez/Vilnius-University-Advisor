@@ -67,6 +67,9 @@ namespace VUA_App.Views
                     case (int)MenuItemType.EvaluateLecturer:
                         MenuPages.Add(id, new NavigationPage(new EvaluateLecturer()));
                         break;
+                    case (int)MenuItemType.EvaluateSubject:
+                        MenuPages.Add(id, new NavigationPage(new EvaluateSubject()));
+                        break;
                     case (int)MenuItemType.LogOut:
                         MenuItems.LogOut();
                         MenuPages.Add(id, new NavigationPage(new LogIn()));

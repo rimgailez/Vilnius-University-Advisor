@@ -58,6 +58,7 @@ namespace VUA_App.Views
             LecturerComments.Text = "";
             NumericEvaluation.Text = "";
             UserName.SelectedItem = null;
+            EvaluationLabel.Text = "";
         }
 
         public decimal ConvertStringToDecimal(string strValue)
