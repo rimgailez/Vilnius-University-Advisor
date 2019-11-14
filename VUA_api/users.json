@@ -7,7 +7,7 @@
     "studyProgram": "Geologija",
     "eMail": "andrius@gmail.com",
     "phoneNumber": "+37061010022",
-    "evaluatedLecturers": 4,
+    "evaluatedLecturers": 6,
     "evaluatedSubjects": 2,
     "userHistory": [
       {
@@ -37,6 +37,14 @@
       {
         "activityComment": "Įvertintas dalykas: Aerometodai;",
         "date": "2019-11-2"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Andrius Valickas;",
+        "date": "2019-11-14"
+      },
+      {
+        "activityComment": "Įvertintas dėstytojas: Kęstutis Dragūnevičius;",
+        "date": "2019-11-14"
       }
     ]
   },

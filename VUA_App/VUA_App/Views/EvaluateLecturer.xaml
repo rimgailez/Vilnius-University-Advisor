@@ -34,19 +34,20 @@
                         <ColumnDefinition Width="auto" />
                         <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions>
-                    <ImageButton Source="1.PNG" Grid.Row="0" Grid.Column="0" />
-                    <ImageButton Source="2.PNG" Grid.Row="0" Grid.Column="1" />
-                    <ImageButton Source="3.PNG" Grid.Row="0" Grid.Column="2" />
-                    <ImageButton Source="4.PNG" Grid.Row="0" Grid.Column="3" />
-                    <ImageButton Source="5.PNG" Grid.Row="0" Grid.Column="4" />
+                    <ImageButton Source="1.PNG" Grid.Row="0" Grid.Column="0" x:Name ="ImgButton1" Clicked="OnImgButton1Clicked"/>
+                    <ImageButton Source="2.PNG" Grid.Row="0" Grid.Column="1" x:Name ="ImgButton2" Clicked="OnImgButton2Clicked"/>
+                    <ImageButton Source="3.PNG" Grid.Row="0" Grid.Column="2" x:Name ="ImgButton3" Clicked="OnImgButton3Clicked"/>
+                    <ImageButton Source="4.PNG" Grid.Row="0" Grid.Column="3" x:Name ="ImgButton4" Clicked="OnImgButton4Clicked"/>
+                    <ImageButton Source="5.PNG" Grid.Row="0" Grid.Column="4" x:Name ="ImgButton5" Clicked="OnImgButton5Clicked"/>
                 </Grid>
+                <Label Text="" x:Name="EvaluationLabel"/>
+                <Entry x:Name="NumericEvaluation" IsVisible="False"/>
             </StackLayout>
             <StackLayout Grid.Row="2" Grid.Column="0">
-                <Label Text="Prisijungimo vardas:"/>
-                <Entry x:Name="UserName" Text="" IsEnabled="false"/>
+                <Picker x:Name="UserName" Title="Prisijungimo vardas:"/>
                 <Label Text="Pasidalinkite įžvalgomis apie šį dėstytoją:"/>
                 <Editor x:Name="LecturerComments" Text="" />
-                <Button Text="Pateikti įvertinimą" Clicked="OnEvaluation"/>
+                <Button Text="Pateikti įvertinimą" Clicked="OnLectEvaluation"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

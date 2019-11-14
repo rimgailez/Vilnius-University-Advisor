@@ -17,9 +17,13 @@ namespace VUA_App.Views
         public EvaluateLecturer()
         {
             InitializeComponent();
+
             SelectLecturerFaculty.ItemsSource = GetFacultyList();
             SelectLecturerFaculty.SelectedIndexChanged += FacultyChosen;
-            UserName.Text = DataFetcher.GetInstance().GetCurrentUser().userName;
+
+            UserName.Items.Clear();
+            UserName.Items.Add(DataFetcher.GetInstance().GetCurrentUser().userName);
+            UserName.Items.Add(MainResources.AnonymousUser);
         }
         private void FacultyChosen(object sender, EventArgs e)
         {
@@ -30,22 +34,71 @@ namespace VUA_App.Views
             }
         }
 
-        public async void OnEvaluation(object sender, EventArgs e)
+        public async void OnLectEvaluation(object sender, EventArgs e)
         {
-            if ( SelectLecturerFaculty.SelectedItem == null || SelectLecturer.SelectedItem == null || LecturerComments.Text == "")
+            if ( SelectLecturerFaculty.SelectedItem == null || SelectLecturer.SelectedItem == null || NumericEvaluation.Text == "" ||
+                LecturerComments.Text == "" || UserName.SelectedItem == null )
             {
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
             }
             else
             {
-                Lecturer selectedLecturer = (Lecturer)SelectLecturer.SelectedItem;
-                DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)0.2, LecturerComments.Text, UserName.Text);
+                Lecturer selectedLecturer = DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)SelectLecturerFaculty.SelectedIndex).ToList().Find(lect => lect.name.Equals(SelectLecturer.SelectedItem.ToString()));
+                DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)ConvertStringToDecimal(NumericEvaluation.Text), LecturerComments.Text, UserName.SelectedItem.ToString());
                 DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedLecturer + selectedLecturer.name + ";");
                 await DisplayAlert(MainResources.SuccessfulLectEvaluation, MainResources.EvaluationCaption, "OK");
-                SelectLecturerFaculty.SelectedItem = null;
-                SelectLecturer.SelectedItem = null;
-                LecturerComments.Text = "";
+                ClearFields();
             }
+        }
+
+        private void ClearFields()
+        {
+            SelectLecturerFaculty.SelectedItem = null;
+            SelectLecturer.SelectedItem = null;
+            LecturerComments.Text = "";
+            NumericEvaluation.Text = "";
+            UserName.SelectedItem = null;
+        }
+
+        public decimal ConvertStringToDecimal(string strValue)
+        {
+            if (string.IsNullOrEmpty(strValue))
+                strValue = "0";
+            decimal resultdecimal;
+            if (decimal.TryParse(strValue, out resultdecimal))
+            {
+                return resultdecimal;
+            }
+            return 0;
+        }
+        public void OnImgButton1Clicked(object sender, EventArgs e)
+        {
+            EvaluationLabel.Text = MainResources.String1;
+            NumericEvaluation.Text = "1";
+        }
+
+        public void OnImgButton2Clicked(object sender, EventArgs e)
+        {
+            EvaluationLabel.Text = MainResources.String2;
+            NumericEvaluation.Text = "2";
+        }
+
+        public void OnImgButton3Clicked(object sender, EventArgs e)
+        {
+            EvaluationLabel.Text = MainResources.String3;
+            NumericEvaluation.Text = "3";
+        }
+
+        public void OnImgButton4Clicked(object sender, EventArgs e)
+        {
+            EvaluationLabel.Text = MainResources.String4;
+            NumericEvaluation.Text = "4";
+        }
+
+        public void OnImgButton5Clicked(object sender, EventArgs e)
+        {
+            EvaluationLabel.Text = MainResources.String5;
+            NumericEvaluation.Text = "5";
         }
 
         private List<string> GetFacultyList()
