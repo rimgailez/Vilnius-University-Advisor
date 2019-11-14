@@ -26,6 +26,6 @@ namespace VUA_App.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-     }
+        }
     }
 }

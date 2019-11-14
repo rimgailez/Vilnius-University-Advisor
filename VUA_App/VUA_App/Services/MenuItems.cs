@@ -33,7 +33,6 @@ namespace VUA_App.Services
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.ViewMostActiveUsers, Title = "Aktyviausi naudotojai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.RegisterSubject, Title = "Registruoti dalyką" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.RegisterLecturer, Title = "Registruoti dėstytoją" });
-            menuItems.Add(new Models.MenuItem { Id = MenuItemType.EvaluateLecturer, Title = "Vertinti dėstytoją" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.LogOut, Title = "Atsijungti" });
         }
         public static void LogOut()
