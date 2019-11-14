@@ -214,6 +214,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vertinimas.
+        /// </summary>
+        internal static string EvaluationCaption {
+            get {
+                return ResourceManager.GetString("EvaluationCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Prašome užpildyti visus formoje esančius laukus..
         /// </summary>
         internal static string FillInAllFields {
@@ -502,11 +511,29 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dėstytojas sėkmingai įvertintas..
+        /// </summary>
+        internal static string SuccessfulLectEvaluation {
+            get {
+                return ResourceManager.GetString("SuccessfulLectEvaluation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Prisijungta sėkmingai..
         /// </summary>
         internal static string SuccessfulLogIn {
             get {
                 return ResourceManager.GetString("SuccessfulLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mokomasis dalykas sėkmingai įvertintas..
+        /// </summary>
+        internal static string SuccessfulSubjEvaluation {
+            get {
+                return ResourceManager.GetString("SuccessfulSubjEvaluation", resourceCulture);
             }
         }
         

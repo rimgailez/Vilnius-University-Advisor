@@ -92,5 +92,21 @@
       <Name>VUA_App</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\first_place.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\second_place.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\third_place.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\1.PNG" />
+    <AndroidResource Include="Resources\drawable\2.PNG" />
+    <AndroidResource Include="Resources\drawable\3.PNG" />
+    <AndroidResource Include="Resources\drawable\4.PNG" />
+    <AndroidResource Include="Resources\drawable\5.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

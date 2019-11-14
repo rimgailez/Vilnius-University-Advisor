@@ -168,6 +168,9 @@
   <data name="EvaluatedSubjects" xml:space="preserve">
     <value>Įvertinti dalykai:</value>
   </data>
+  <data name="EvaluationCaption" xml:space="preserve">
+    <value>Vertinimas</value>
+  </data>
   <data name="FillInAllFields" xml:space="preserve">
     <value>Prašome užpildyti visus formoje esančius laukus.</value>
   </data>
@@ -264,8 +267,14 @@
   <data name="SubjectName" xml:space="preserve">
     <value>Dalyko pavadinimas: </value>
   </data>
+  <data name="SuccessfulLectEvaluation" xml:space="preserve">
+    <value>Dėstytojas sėkmingai įvertintas.</value>
+  </data>
   <data name="SuccessfulLogIn" xml:space="preserve">
     <value>Prisijungta sėkmingai.</value>
+  </data>
+  <data name="SuccessfulSubjEvaluation" xml:space="preserve">
+    <value>Mokomasis dalykas sėkmingai įvertintas.</value>
   </data>
   <data name="UserAlreadyExists" xml:space="preserve">
     <value>Įvestas prisijungimo vardas jau egzistuoja.</value>

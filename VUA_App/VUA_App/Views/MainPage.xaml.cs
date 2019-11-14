@@ -58,6 +58,15 @@ namespace VUA_App.Views
                     case (int)MenuItemType.TOP5BUSSubjects:
                         MenuPages.Add(id, new NavigationPage(new TOP5BUSSubjects()));
                         break;
+                    case (int)MenuItemType.ViewActivityHistory:
+                        MenuPages.Add(id, new NavigationPage(new ActivityHistory()));
+                        break;
+                    case (int)MenuItemType.ViewMostActiveUsers:
+                        MenuPages.Add(id, new NavigationPage(new MostActiveUsers()));
+                        break;
+                    case (int)MenuItemType.EvaluateLecturer:
+                        MenuPages.Add(id, new NavigationPage(new EvaluateLecturer()));
+                        break;
                     case (int)MenuItemType.LogOut:
                         MenuItems.LogOut();
                         MenuPages.Add(id, new NavigationPage(new LogIn()));

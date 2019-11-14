@@ -17,7 +17,11 @@ namespace VUA_App.Models
         RegisterLecturer,
         TOP10Subjects,
         TOP10Lecturers,
-        TOP5BUSSubjects
+        TOP5BUSSubjects,
+        EvaluateLecturer,
+        EvaluateSubject,
+        ViewActivityHistory,
+        ViewMostActiveUsers
     }
     public class MenuItem
     {
