@@ -151,7 +151,7 @@ namespace VUA_App.Views
         private void ClearFields()
         {
             SelectSubjectFaculty.SelectedItem = null;
-            // SelectSubject.SelectedItem = null;
+            SelectSubject.SelectedItem = null;
             SelectSubject.Items.Clear();
             SubjectComments.Text = "";
             NumericEvaluation.Text = "";

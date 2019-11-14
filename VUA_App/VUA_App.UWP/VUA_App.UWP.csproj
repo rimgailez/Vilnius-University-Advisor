@@ -104,11 +104,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1.PNG" />
-    <Content Include="2.PNG" />
-    <Content Include="3.PNG" />
-    <Content Include="4.PNG" />
-    <Content Include="5.PNG" />
+    <Content Include="emoji_five.PNG" />
+    <Content Include="emoji_four.PNG" />
+    <Content Include="emoji_one.PNG" />
+    <Content Include="emoji_three.PNG" />
+    <Content Include="emoji_two.PNG" />
     <Content Include="first_place.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />

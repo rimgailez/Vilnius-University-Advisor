@@ -34,11 +34,11 @@
                         <ColumnDefinition Width="auto" />
                         <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions>
-                    <ImageButton Source="1.PNG" Grid.Row="0" Grid.Column="0" x:Name ="ImgButton1" Clicked="OnImgButton1Clicked"/>
-                    <ImageButton Source="2.PNG" Grid.Row="0" Grid.Column="1" x:Name ="ImgButton2" Clicked="OnImgButton2Clicked"/>
-                    <ImageButton Source="3.PNG" Grid.Row="0" Grid.Column="2" x:Name ="ImgButton3" Clicked="OnImgButton3Clicked"/>
-                    <ImageButton Source="4.PNG" Grid.Row="0" Grid.Column="3" x:Name ="ImgButton4" Clicked="OnImgButton4Clicked"/>
-                    <ImageButton Source="5.PNG" Grid.Row="0" Grid.Column="4" x:Name ="ImgButton5" Clicked="OnImgButton5Clicked"/>
+                    <ImageButton Source="emoji_one.PNG" Grid.Row="0" Grid.Column="0" x:Name ="ImgButton1" Clicked="OnImgButton1Clicked"/>
+                    <ImageButton Source="emoji_two.PNG" Grid.Row="0" Grid.Column="1" x:Name ="ImgButton2" Clicked="OnImgButton2Clicked"/>
+                    <ImageButton Source="emoji_three.PNG" Grid.Row="0" Grid.Column="2" x:Name ="ImgButton3" Clicked="OnImgButton3Clicked"/>
+                    <ImageButton Source="emoji_four.PNG" Grid.Row="0" Grid.Column="3" x:Name ="ImgButton4" Clicked="OnImgButton4Clicked"/>
+                    <ImageButton Source="emoji_five.PNG" Grid.Row="0" Grid.Column="4" x:Name ="ImgButton5" Clicked="OnImgButton5Clicked"/>
                 </Grid>
                 <Label Text="" x:Name="EvaluationLabel"/>
                 <Entry x:Name="NumericEvaluation" IsVisible="False"/>
