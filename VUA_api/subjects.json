@@ -10537,9 +10537,16 @@
     "isBUS": true,
     "name": "Fizikinis pasaulio įvaizdis",
     "faculty": 4,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 5.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 5,
+        "text": "Be galo sudomino!",
+        "date": "2019-11-14"
+      }
+    ]
   },
   {
     "isOptional": true,

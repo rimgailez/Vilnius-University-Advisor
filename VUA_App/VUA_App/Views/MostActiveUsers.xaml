@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.MostActiveUsers">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Aktyviausi naudotojai"
+               FontSize="Title"
+               FontAttributes="Italic">
+            </Label>
+            <Grid x:Name="ActiveUsersGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.Column="1">
+                    <Image Source="first_place.PNG" />
+                    <Label Text="" x:Name ="FirstPlaceLabel" XAlign="Center" HorizontalOptions="FillAndExpand" FontAttributes="Italic"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="0">
+                    <Image Source="second_place.PNG" />
+                    <Label Text="" x:Name ="SecondPlaceLabel" XAlign="Center" HorizontalOptions="FillAndExpand" FontAttributes="Italic"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="2">
+                    <Image Source="third_place.PNG"/>
+                    <Label Text="" x:Name ="ThirdPlaceLabel" XAlign="Center" HorizontalOptions="FillAndExpand" FontAttributes="Italic"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
