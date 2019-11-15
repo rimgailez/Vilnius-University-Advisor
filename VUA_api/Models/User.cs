@@ -7,6 +7,7 @@ namespace VUA_api
 {
     public class User : IEquatable<User>, IComparable<User>
     {
+        public int ID { get; set; }
         public string name { get; set; }
         private Faculty faculty;
         public Faculty userFaculty 
@@ -33,10 +34,10 @@ namespace VUA_api
         public int evaluatedLecturers { get; set; }
         public int evaluatedSubjects { get; set; }
         public List<Activity> userHistory { get; set; }
-        public User(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
+        public User(string name, Faculty userFaculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             this.name = name;
-            this.faculty = faculty;
+            this.faculty = userFaculty;
             this.userName = userName;
             this.password = password;
             this.eMail = eMail;

@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using VUA_api.Context;
 
 namespace VUA_api
 {
@@ -32,6 +34,10 @@ namespace VUA_api
             services.AddSignalR(hubOptions => {
                 hubOptions.ClientTimeoutInterval = new TimeSpan(0, 30, 0);
             });
+
+            services.AddDbContext<ApiContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("ApiContext")));
+            services.AddScoped<DataMaster, DataMaster>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

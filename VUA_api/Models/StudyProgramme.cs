@@ -8,9 +8,10 @@ namespace VUA_api
 {
     public class StudyProgramme : IEquatable<StudyProgramme>, IComparable<StudyProgramme>
     {
-        public string name;
+        public int ID { get; set; }
+        public string name { get; set; }
 
-        public Faculty faculty;
+        public Faculty faculty { get; set; }
 
         public StudyProgramme(string name, Faculty faculty)
         {

@@ -7,6 +7,7 @@ namespace VUA_api
 {
     public class Activity
     {
+        public int ID { get; set; }
         public string activityComment { get; set; }
         public string date { get; set; }
 

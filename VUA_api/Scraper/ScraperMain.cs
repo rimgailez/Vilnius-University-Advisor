@@ -61,7 +61,7 @@ namespace VUA_api.Scraper
             }
             foreach (Thread thread in threads) thread.Join();
             ObjectsScraped?.Invoke(this, "Scraper is done.");
-            DataMaster.GetInstance().WriteData();
+            //DataMaster.GetInstance().WriteData();
             streamWriter.Dispose();
         }
         private void ScrapTimetables(string url, List<string> subUrls, Fetcher fetcher)
@@ -93,7 +93,7 @@ namespace VUA_api.Scraper
         {
             foreach (Subject subject in subjects)
             {
-                DataMaster.GetInstance().AddSubjectWithoutWriting(subject);
+                //DataMaster.GetInstance().AddSubjectWithoutWriting(subject);
             }
         }
 
@@ -101,7 +101,7 @@ namespace VUA_api.Scraper
         {
             foreach (Lecturer lecturer in lecturers)
             {
-                DataMaster.GetInstance().AddLecturerWithoutWriting(lecturer);
+                //DataMaster.GetInstance().AddLecturerWithoutWriting(lecturer);
             }
         }
 

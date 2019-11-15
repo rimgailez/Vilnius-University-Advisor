@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace VUA_api
 {
-    public struct Review
+    public class Review
     {
+        public int ID { get; set; }
         public string username { get; set; }
         private int scoreField;
         public int score

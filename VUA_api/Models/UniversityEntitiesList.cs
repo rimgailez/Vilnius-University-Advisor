@@ -1,45 +1,47 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VUA_api.Models;
 
 namespace VUA_api
 {
     public class UniversityEntitiesList<T> : IEnumerable<T>
         where T : DataNode
     {
-        private List<T> entitiesList;
+        private DbSet<T> entitiesList;
 
-        public UniversityEntitiesList()
+        public UniversityEntitiesList(DbSet<T> entitiesList)
         {
-            entitiesList = new List<T>();
+            this.entitiesList = entitiesList;
         }
-        public T this[int i]
-        {
-            get { return entitiesList[i]; }
-            set { entitiesList[i] = value; }
-        }
+        //public T this[int i]
+        //{
+        //    get { return entitiesList[i]; }
+        //    set { entitiesList[i] = value; }
+        //}
 
         public List<T> GetListOfUniversityEntities()
         {
-            return entitiesList;
+            return entitiesList.ToList();
         }
 
-        public void SetListOfUniversityEntities(List<T> newEntitiesList)
-        {
-            entitiesList = newEntitiesList;
-        }
+        //public void SetListOfUniversityEntities(List<T> newEntitiesList)
+        //{
+        //    entitiesList = newEntitiesList;
+        //}
 
         public IEnumerator<T> GetEnumerator()
         {
-            return entitiesList.GetEnumerator();
+            return entitiesList.ToList().GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return entitiesList.GetEnumerator();
+            return entitiesList.ToList().GetEnumerator();
         }
 
         public List<T> GetEntitySearchResults(String enteredWord, Faculty faculty)
@@ -72,18 +74,22 @@ namespace VUA_api
                  return ((entityNew.score * entityNew.numberOfReviews) + newScore)/(++entity.numberOfReviews);
              };
             entity.score = calculateScore(entity, subjectScore);
-            entity.reviews.Add(review);
-            DataMaster.GetInstance().WriteData();
+
+            if (entity.GetType() == typeof(Lecturer))
+            {
+                Lecturer entityNew = entity as Lecturer;
+                entityNew.reviews.Add(review as LecturerReview);
+            }
+            if (entity.GetType() == typeof(Subject))
+            {
+                Subject entityNew = entity as Subject;
+                entityNew.reviews.Add(review as SubjectReview);
+            }
         }
 
         public void AddEntityWithoutWriting(T entity)
         {
             if (!entitiesList.Contains(entity)) entitiesList.Add(entity);
-        }
-
-        public void Sort()
-        {
-            entitiesList.Sort();
         }
 
         public List<T> GetTopEntities()
