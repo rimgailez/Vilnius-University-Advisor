@@ -310,9 +310,16 @@
   {
     "name": "Agnė Juškevičiūtė-Vilienė",
     "faculty": 12,
-    "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "score": 3.0,
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 3,
+        "text": "Not great not terrible.",
+        "date": "2019-11-14"
+      }
+    ]
   },
   {
     "name": "Agnė Kalnaitytė",
@@ -1542,14 +1549,20 @@
   {
     "name": "Andrius Valickas",
     "faculty": 13,
-    "score": 4.0,
-    "numberOfReviews": 1,
+    "score": 4.5,
+    "numberOfReviews": 2,
     "reviews": [
       {
         "username": "andrius2000",
         "score": 4,
         "text": "Neblogas dėstytojas.",
         "date": "2019-10-31"
+      },
+      {
+        "username": "andrius2000",
+        "score": 5,
+        "text": "Geras dėstytojas!",
+        "date": "2019-11-14"
       }
     ]
   },
@@ -9285,8 +9298,15 @@
     "name": "Kęstutis Dragūnevičius",
     "faculty": 3,
     "score": 0.0,
-    "numberOfReviews": 0,
-    "reviews": []
+    "numberOfReviews": 1,
+    "reviews": [
+      {
+        "username": "andrius2000",
+        "score": 0,
+        "text": "Šaunus dėstytojas.",
+        "date": "2019-11-14"
+      }
+    ]
   },
   {
     "name": "Kęstutis Driaunys",

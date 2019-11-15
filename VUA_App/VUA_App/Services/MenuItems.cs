@@ -27,6 +27,10 @@ namespace VUA_App.Services
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP10Subjects, Title = "TOP10 dalykai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP10Lecturers, Title = "TOP10 dėstytojai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title = "TOP5 BUS dalykai" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.EvaluateLecturer, Title = "Įvertinti dėstytoją" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.EvaluateSubject, Title = "Įvertinti dalyką" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.ViewActivityHistory, Title = "Veiklos istorija" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.ViewMostActiveUsers, Title = "Aktyviausi naudotojai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.RegisterSubject, Title = "Registruoti dalyką" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.RegisterLecturer, Title = "Registruoti dėstytoją" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.LogOut, Title = "Atsijungti" });

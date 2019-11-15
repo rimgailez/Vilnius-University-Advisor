@@ -165,7 +165,6 @@ namespace VUA_App.Services
             return GetEnumerableFromAPI<Lecturer>(request).Result;
         }
 
-
         public IEnumerable<User> GetAllUsers()
         {
             string request = "user/all";
