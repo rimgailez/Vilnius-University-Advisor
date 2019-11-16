@@ -18,7 +18,7 @@ namespace VUA_api
         public DbSet<StudyProgramme> studyProgrammes;
         public readonly ApiContext db;
 
-        public User currentUser { get; set; }
+        public static User currentUser { get; set; }
         public DataMaster(ApiContext dbtemp) 
         {
             db = dbtemp;
