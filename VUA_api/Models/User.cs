@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,7 +8,6 @@ namespace VUA_api
 {
     public class User : IEquatable<User>, IComparable<User>
     {
-        public int ID { get; set; }
         public string name { get; set; }
         private Faculty faculty;
         public Faculty userFaculty 
@@ -24,8 +24,8 @@ namespace VUA_api
                      faculty = value;
                    }
               }
-         }
-
+        }
+        [Key]
         public string userName { get; set; }
         public string password { get; set; }
         public string studyProgram { get; set; }
