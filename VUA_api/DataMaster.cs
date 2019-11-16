@@ -1,69 +1,35 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VUA_api.Context;
 
 namespace VUA_api
 {
-    class DataMaster
+    public class DataMaster
     {
-        private static readonly DataMaster instance  = new DataMaster();
+        public UniversityEntitiesList<Lecturer> lecturers;
+        public UniversityEntitiesList<Subject> subjects;
+        public DbSet<User> users;
+        public DbSet<StudyProgramme> studyProgrammes;
+        public readonly ApiContext db;
 
-        public UniversityEntitiesList<Lecturer> lecturers = new UniversityEntitiesList<Lecturer>();
-        public UniversityEntitiesList<Subject> subjects = new UniversityEntitiesList<Subject>();
-        public List<User> users = new List<User>();
-        public List<StudyProgramme> studyProgrammes = new List<StudyProgramme>();
-        public User currentUser { get; set; }
-
-        public readonly JsonReaderWriter jsonReaderWriter = new JsonReaderWriter();
-
-        private DataMaster() 
+        public static User currentUser { get; set; }
+        public DataMaster(ApiContext dbtemp) 
         {
-            ReadData();
+            db = dbtemp;
+            lecturers = new UniversityEntitiesList<Lecturer>(db.lecturers);
+            subjects = new UniversityEntitiesList<Subject>(db.subjects);
+            users = db.users;
+            studyProgrammes = db.studyProgrammes;
         }
-        public static DataMaster GetInstance()
-        {
-            return instance;
-        }
-        
-        public void ReadData() 
-        {
-            lecturers.SetListOfUniversityEntities(jsonReaderWriter.ReadLecturers());
-            subjects.SetListOfUniversityEntities(jsonReaderWriter.ReadSubjects());
-            users = jsonReaderWriter.ReadUsers();
-            studyProgrammes = jsonReaderWriter.ReadStudyProgrammes();
-        } 
-
         public void WriteData()
         {
-            WriteLecturers();
-            WriteSubjects();
-        }
-        public void WriteLecturers()
-        {
-            lecturers.Sort();
-            jsonReaderWriter.WriteLecturers(lecturers.GetListOfUniversityEntities());
-        }
-
-        public void WriteSubjects()
-        {
-            subjects.Sort();
-            jsonReaderWriter.WriteSubjects(subjects.GetListOfUniversityEntities());
-        }
-
-        public void WriteUsers()
-        {
-            users.Sort();
-            jsonReaderWriter.WriteUsers(users);
-        }
-
-        public void WriteStudyProgrammes()
-        {
-            studyProgrammes.Sort();
-            jsonReaderWriter.WriteStudyProgrammes(studyProgrammes);
+            db.SaveChanges();
         }
 
         public void AddLecturer(string name, Faculty faculty)
@@ -74,7 +40,7 @@ namespace VUA_api
         public void AddLecturer(Lecturer lecturerNew)
         {
             AddLecturerWithoutWriting(lecturerNew);
-            WriteLecturers();
+            WriteData();
         }
 
         public void AddLecturerWithoutWriting(Lecturer lecturer)
@@ -90,7 +56,7 @@ namespace VUA_api
         public void AddSubject(Subject subjectNew)
         {
             AddSubjectWithoutWriting(subjectNew);
-            WriteSubjects();
+            WriteData();
         }
 
         public void AddSubjectWithoutWriting(Subject subject)
@@ -106,7 +72,7 @@ namespace VUA_api
         public void AddUser(User userNew)
         {
             AddUserWithoutWriting(userNew);
-            WriteUsers();
+            WriteData();
         }
         public void AddUserWithoutWriting(User user)
         {
@@ -121,7 +87,7 @@ namespace VUA_api
         public void AddStudyProgramme(StudyProgramme studyProgrammeNew)
         {
             AddStudyProgrammeWithoutWriting(studyProgrammeNew);
-            WriteStudyProgrammes();
+            WriteData();
         }
 
         public void AddStudyProgrammeWithoutWriting(StudyProgramme studyProgramme)
@@ -132,14 +98,14 @@ namespace VUA_api
         {
             lecturers.EvaluateEntity(lecturer, lecturerScore, new Review(username, (int)lecturerScore, text));
             currentUser.evaluatedLecturers++;
-            WriteUsers();
+            WriteData();
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
             subjects.EvaluateEntity(subject, subjectScore, new Review(username, (int)subjectScore, text));
             currentUser.evaluatedSubjects++;
-            WriteUsers();
+            WriteData();
         }
 
         public List<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
@@ -206,12 +172,14 @@ namespace VUA_api
 
         public Boolean CheckIfUserNameExists(string username)
         {
-            return users.Exists(us => us.userName.Equals(username));
+            //return users.Exists(us => us.userName.Equals(username));
+            return true;
         }
 
         public Boolean CheckIfCorrectPassword(string userName, string password)
         {
-            return users.Find(us => us.userName.Equals(userName)).password.Equals(password);
+            //return users.Find(us => us.userName.Equals(userName)).password.Equals(password);
+            return true;
         }
 
         public User GetCurrentUser()
@@ -235,7 +203,7 @@ namespace VUA_api
                     break;
                 }
             }
-            WriteUsers();
+            WriteData();
         }
 
         public List<Activity> GetUserActivityHistory()

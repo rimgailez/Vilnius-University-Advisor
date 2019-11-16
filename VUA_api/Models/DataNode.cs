@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace VUA_api
 {
     public class DataNode : IEquatable<DataNode>, IComparable<DataNode>
     {
+        public int ID { get; set; }
         public string name { get; set; }
         private Faculty facultyField;
         public Faculty faculty
@@ -37,15 +39,12 @@ namespace VUA_api
             }
         }
         public int numberOfReviews { get; set; }
-
-        public List<Review> reviews { get; set; }
         public DataNode(string name, Faculty faculty)
         {
             this.name = name;
             this.facultyField = faculty;
             this.scoreField = 0;
             this.numberOfReviews = 0;
-            this.reviews = new List<Review>();
         }
 
         public override bool Equals(object obj)

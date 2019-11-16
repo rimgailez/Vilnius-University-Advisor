@@ -10,9 +10,9 @@ namespace VUA_api.Scraper
     {
         public void StartScraper() 
         {
-            ScraperMain scraperMain = new ScraperMain(DataMaster.GetInstance().jsonReaderWriter.projectPath);
-            scraperMain.ObjectsScraped += OnObjectsScraped;
-            scraperMain.StartScrap();
+            //ScraperMain scraperMain = new ScraperMain(DataMaster.GetInstance().jsonReaderWriter.projectPath);
+            //scraperMain.ObjectsScraped += OnObjectsScraped;
+            //scraperMain.StartScrap();
         }
 
         private void OnObjectsScraped(object sender, string message)

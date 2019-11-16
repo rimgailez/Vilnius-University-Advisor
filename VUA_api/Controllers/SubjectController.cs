@@ -13,7 +13,12 @@ namespace VUA_api.Controllers
     [ApiController]
     public class SubjectController : ControllerBase
     {
-        DataMaster dataMaster = DataMaster.GetInstance();
+        private readonly DataMaster dataMaster;
+
+        public SubjectController(DataMaster serv)
+        {
+            dataMaster = serv;
+        }
 
         [HttpPost("add")]
         public void Add([FromBody]JObject data)

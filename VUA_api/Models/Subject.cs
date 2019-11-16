@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VUA_api.Models;
 
 namespace VUA_api
 {
     public class Subject : DataNode, IEquatable<Subject>, IComparable<Subject>
     {
-        public bool isOptional; //Ar pasirenkamasis dalykas
+        public List<SubjectReview> reviews { get; set; }
+        public bool isOptional { get; set; } //Ar pasirenkamasis dalykas
 
-        public bool isBUS;
+        public bool isBUS { get; set; }
 
         public Subject(string name, Faculty faculty, bool isOptional, bool isBUS) : base(name, faculty) {
             this.isOptional = isOptional;

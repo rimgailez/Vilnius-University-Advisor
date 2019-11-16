@@ -12,7 +12,12 @@ namespace VUA_api.Controllers
     [ApiController]
     public class LecturerController : ControllerBase
     {
-        DataMaster dataMaster = DataMaster.GetInstance();
+        private readonly DataMaster dataMaster;
+
+        public LecturerController(DataMaster serv)
+        {
+            dataMaster = serv;
+        }
 
         [HttpPost("add")]
         public void Add([FromBody]JObject data)
@@ -68,7 +73,7 @@ namespace VUA_api.Controllers
         [HttpGet("scraper")]
         public string RunScraper()
         {
-            new Scraper.ScraperMain(dataMaster.jsonReaderWriter.projectPath).StartScrap();
+            //new Scraper.ScraperMain(dataMaster.jsonReaderWriter.projectPath).StartScrap();
             return "Scraper is done";
         }
     }

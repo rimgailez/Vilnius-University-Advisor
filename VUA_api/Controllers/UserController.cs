@@ -11,10 +11,15 @@ namespace VUA_api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        DataMaster dataMaster = DataMaster.GetInstance();
+        private readonly DataMaster dataMaster;
 
-       
-       [HttpPost("add")]
+        public UserController(DataMaster serv)
+        {
+            dataMaster = serv;
+        }
+
+
+        [HttpPost("add")]
        public void Add([FromBody]JObject data)
        {
            string name = data["name"].ToObject<string>();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,8 +24,8 @@ namespace VUA_api
                      faculty = value;
                    }
               }
-         }
-
+        }
+        [Key]
         public string userName { get; set; }
         public string password { get; set; }
         public string studyProgram { get; set; }
@@ -33,10 +34,10 @@ namespace VUA_api
         public int evaluatedLecturers { get; set; }
         public int evaluatedSubjects { get; set; }
         public List<Activity> userHistory { get; set; }
-        public User(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
+        public User(string name, Faculty userFaculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
         {
             this.name = name;
-            this.faculty = faculty;
+            this.faculty = userFaculty;
             this.userName = userName;
             this.password = password;
             this.eMail = eMail;

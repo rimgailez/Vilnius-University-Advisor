@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 using VUA_App.Models;
 using System.Text;
+using Xamarin.Forms;
 
 namespace VUA_App.Services
 {
@@ -22,6 +23,7 @@ namespace VUA_App.Services
             string reference;
             //reference = ConfigurationManager.AppSettings.Get("Key0");
             reference = "http://localhost:52060/api/"; 
+            if(Device.RuntimePlatform == Device.Android) reference = "http://10.0.2.2:52060/api/";
             client.BaseAddress = new Uri(reference);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
@@ -261,8 +263,6 @@ namespace VUA_App.Services
         public IEnumerable<Subject> GetSubjectsByType(bool isOptional, bool isBUS)
         {
             string request = "subject/Type/" + isOptional + "/" + isBUS;
-            //string request = "Type/false/false";
-            //System.Diagnostics.Debug.WriteLine("ashdgfakjfgakjsdgksdfgfksdgjkgdsfjkg");
             return GetEnumerableFromAPI<Subject>(request).Result;
         }
         public IEnumerable<Subject> GetSubjectSearchResultsByType(Faculty faculty, string searchTerm, bool isOptional, bool isBUS)
@@ -283,7 +283,7 @@ namespace VUA_App.Services
                     objects = JsonConvert.DeserializeObject<List<T>>(contents);
                 };
             }
-            catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
+            catch (Exception e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
             return objects;
         }
 
@@ -299,7 +299,7 @@ namespace VUA_App.Services
                     result = JsonConvert.DeserializeObject<T>(contents);
                 };
             }
-            catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
+            catch (Exception e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
             return result;
 
         }
@@ -312,7 +312,7 @@ namespace VUA_App.Services
                 var contents = new StringContent(json, Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(request, contents);
             }
-            catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
+            catch (Exception e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
         }
     }
 }
