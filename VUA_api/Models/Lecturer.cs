@@ -10,7 +10,10 @@ namespace VUA_api
     public class Lecturer : DataNode, IEquatable<Lecturer>
     {
         public List<LecturerReview> reviews { get; set; }
-        public Lecturer(string name, Faculty faculty) : base(name, faculty) { }
+        public Lecturer(string name, Faculty faculty) : base(name, faculty) 
+        {
+            this.reviews = new List<LecturerReview>();
+        }
 
         public bool Equals(Lecturer other)
         {

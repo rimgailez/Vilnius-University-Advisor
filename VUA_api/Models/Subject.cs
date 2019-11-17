@@ -17,6 +17,7 @@ namespace VUA_api
         public Subject(string name, Faculty faculty, bool isOptional, bool isBUS) : base(name, faculty) {
             this.isOptional = isOptional;
             this.isBUS = isBUS;
+            this.reviews = new List<SubjectReview>();
         }
 
         public int CompareTo(Subject other)

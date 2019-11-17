@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
 
 namespace VUA_api.Controllers
@@ -34,7 +35,7 @@ namespace VUA_api.Controllers
        [HttpGet("all")]
        public IEnumerable<User> GetAll()
        {
-           return dataMaster.users;
+           return dataMaster.users.Include(user => user.userHistory);
        }
 
        [HttpGet("checkUserName/{userName}")]
@@ -73,23 +74,11 @@ namespace VUA_api.Controllers
            return dataMaster.GetUserActivityHistory();
        }
 
-        [HttpGet("getTopSubjEvaluators")]
-        public List<User> GetTopActiveLecturersEvaluators()
-        {
-            return dataMaster.GetTop5ActiveSubjectsEvaluators();
-        }
-
-        [HttpGet("getTopLectEvaluators")]
-        public List<User> GetTopActiveSubjectsEvaluators()
-        {
-            return dataMaster.GetTop5ActiveLecturersEvaluators();
-        }
-
-        [HttpGet("getTopUsers")]
-        public List<User> GetTopUsers()
-        {
-            return dataMaster.GetTop3ActiveUsers();
-        }
+       [HttpGet("getTopUsers")]
+       public List<User> GetTopUsers()
+       {
+           return dataMaster.GetTop3ActiveUsers();
+       }
 
     }
 }

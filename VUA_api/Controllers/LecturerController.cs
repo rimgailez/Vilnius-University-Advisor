@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
 
 namespace VUA_api.Controllers
@@ -49,7 +50,7 @@ namespace VUA_api.Controllers
         [HttpGet]
         public IEnumerable<Lecturer> GetAll()
         {
-            return dataMaster.lecturers;
+            return dataMaster.lecturers.Include(lecturer => lecturer.reviews).ToList();
         }
 
         [HttpGet("faculty/{faculty}")]
