@@ -212,17 +212,17 @@ namespace VUA_api
 
         public List<Subject> GetTop10Subjects()
         {
-            return subjects.Include(subject => subject.reviews).OrderByDescending(subj => subj.score).ToList().GetRange(0, 10);
+            return subjects.Include(subject => subject.reviews).OrderByDescending(subj => subj.score).Take(10).ToList();
         }
 
         public List<Lecturer> GetTop10Lecturers()
         {
-            return lecturers.Include(lecturer => lecturer.reviews).OrderByDescending(lect => lect.score).ToList().GetRange(0, 10);
+            return lecturers.Include(lecturer => lecturer.reviews).OrderByDescending(lect => lect.score).Take(10).ToList();
         }
 
         public List<Subject> GetTop5BUSSubjects()
         {
-            return subjects.Include(lecturer => lecturer.reviews).Where(subject => subject.isBUS).OrderByDescending(subject => subject.score).ToList().GetRange(0, 5);
+            return subjects.Include(lecturer => lecturer.reviews).Where(subject => subject.isBUS).OrderByDescending(subject => subject.score).Take(5).ToList();
         }
 
         public Boolean CheckIfUserNameExists(string username)
@@ -311,7 +311,6 @@ namespace VUA_api
                                           select subject).ToList();
             return someSubjects;
         }
-
 
     }
 }

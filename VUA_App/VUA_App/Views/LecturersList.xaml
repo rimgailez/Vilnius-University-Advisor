@@ -11,6 +11,9 @@
         <SearchBar x:Name="Search"
                    Placeholder="Ieškoti dėstytojų"                   
                    SearchButtonPressed="OnSearchButtonPressed" />
+        <Label x:Name="NumberOfLecturers"
+               Text=""
+               FontAttributes="Italic"/>
         <ListView x:Name="LecturerListView"
                 ItemsSource="{Binding Lecturers}"
                 CachingStrategy="RecycleElement"              

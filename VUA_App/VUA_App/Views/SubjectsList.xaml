@@ -14,7 +14,6 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-
             <StackLayout Grid.Row="1"
                       Grid.Column="1">
                 <Picker x:Name="SelectFaculty"
@@ -46,6 +45,9 @@
                        Grid.Column="2"
                        Text="BUS" />
                 </Grid>
+                <Label x:Name="NumberOfSubjects"
+                       Text=""
+                       FontAttributes="Italic"/>
             </StackLayout>
 
             <ListView Grid.Row="2"

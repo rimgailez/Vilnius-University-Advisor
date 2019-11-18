@@ -250,6 +250,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  dėstytojai:.
+        /// </summary>
+        internal static string Lecturers {
+            get {
+                return ResourceManager.GetString("Lecturers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Prisijungimas.
         /// </summary>
         internal static string LogInCaption {
@@ -412,6 +421,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rodomi .
+        /// </summary>
+        internal static string Showing {
+            get {
+                return ResourceManager.GetString("Showing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1 - esu visiškai nepatenkintas dėstytojo darbu..
         /// </summary>
         internal static string String1 {
@@ -507,6 +525,15 @@ namespace VUA_App {
         internal static string SubjectName {
             get {
                 return ResourceManager.GetString("SubjectName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  dalykai:.
+        /// </summary>
+        internal static string Subjects {
+            get {
+                return ResourceManager.GetString("Subjects", resourceCulture);
             }
         }
         

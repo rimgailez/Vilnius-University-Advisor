@@ -31,29 +31,29 @@ namespace VUA_App.Views
         {
             var fetchParams = new { faculty = (Faculty)SelectFaculty.SelectedIndex, searchTerm = Search.Text};
             viewModel.LoadLecturersCommand.Execute(fetchParams);
+            NumberOfLecturers.Text = MainResources.Showing + viewModel.Lecturers.Aggregate(0, (current, lecturer) => current + 1).ToString() + MainResources.Lecturers;
         }
         void OnSearchButtonPressed(object sender, EventArgs e)
         {
             var fetchParams = new { faculty = (Faculty)SelectFaculty.SelectedIndex, searchTerm = Search.Text};
             viewModel.LoadLecturersCommand.Execute(fetchParams);
+            NumberOfLecturers.Text = MainResources.Showing + viewModel.Lecturers.Aggregate(0, (current, lecturer) => current + 1).ToString() + MainResources.Lecturers;
         }
         async void OnLecturerSelected(object sender, SelectedItemChangedEventArgs args)
         {
             var lecturer = args.SelectedItem as Lecturer;
             if (lecturer == null)
                 return;
-
             await DisplayAlert(lecturer.name, lecturer.ToString(), "OK");
-
             LecturerListView.SelectedItem = null;
 
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
             if (viewModel.Lecturers.Count == 0)
                 viewModel.LoadLecturersCommand.Execute(null);
+            NumberOfLecturers.Text = MainResources.Showing + viewModel.Lecturers.Aggregate(0, (current, lecturer) => current + 1).ToString() + MainResources.Lecturers;
         }
         private List<string> GetFacultyList()
         {

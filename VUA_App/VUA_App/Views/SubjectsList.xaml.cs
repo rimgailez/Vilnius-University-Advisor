@@ -33,6 +33,7 @@ namespace VUA_App.Views
                 isBUS = IsBUS.IsChecked
             };
             viewModel.LoadSubjectsCommand.Execute(fetchParams);
+            NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
         }
         private void OnSearchButtonPressed(object sender, EventArgs e)
         {
@@ -44,6 +45,7 @@ namespace VUA_App.Views
                 isBUS = IsBUS.IsChecked
             };
             viewModel.LoadSubjectsCommand.Execute(fetchParams);
+            NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
         }
         private void OnCheckedChanged(object sender, EventArgs e)
         {
@@ -60,24 +62,23 @@ namespace VUA_App.Views
                 isBUS = IsBUS.IsChecked
             };
             viewModel.LoadSubjectsCommand.Execute(fetchParams);
+            NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
         }
         async void OnSubjectSelected(object sender, SelectedItemChangedEventArgs args)
         {
             var subject = args.SelectedItem as Subject;
             if (subject == null)
                 return;
-
             await DisplayAlert(subject.name, subject.ToString(), "OK");
-
             SubjectListView.SelectedItem = null;
 
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
             if (viewModel.Subjects.Count == 0)
                 viewModel.LoadSubjectsCommand.Execute(null);
+            NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
         }
         private List<string> GetFacultyList()
         {

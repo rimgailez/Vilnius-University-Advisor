@@ -97,11 +97,13 @@ namespace VUA_api.Controllers
         {
             return dataMaster.GetTop5BUSSubjects();
         }
+
         [HttpGet("Type/{isOptional}/{isBUS}")]
         public IEnumerable<Subject> GetByType(bool isOptional, bool isBUS)
         {
             return dataMaster.GetSubjectsByType(isOptional, isBUS);
         }
+
         [HttpGet("SearchType/{faculty}/{term}/{isOptional}/{isBUS}")]
         public IEnumerable<Subject> GetSubjectSearchResultsByType(string term, Faculty faculty, bool isOptional, bool isBUS)
         {

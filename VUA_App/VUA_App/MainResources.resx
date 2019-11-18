@@ -180,6 +180,9 @@
   <data name="LecturerName" xml:space="preserve">
     <value>Dėstytojo vardas: </value>
   </data>
+  <data name="Lecturers" xml:space="preserve">
+    <value> dėstytojai:</value>
+  </data>
   <data name="LogInCaption" xml:space="preserve">
     <value>Prisijungimas</value>
   </data>
@@ -234,6 +237,9 @@
   <data name="SelectFaculty" xml:space="preserve">
     <value>Pasirinkite fakultetą</value>
   </data>
+  <data name="Showing" xml:space="preserve">
+    <value>Rodomi </value>
+  </data>
   <data name="String1" xml:space="preserve">
     <value>1 - esu visiškai nepatenkintas dėstytojo darbu.</value>
   </data>
@@ -266,6 +272,9 @@
   </data>
   <data name="SubjectName" xml:space="preserve">
     <value>Dalyko pavadinimas: </value>
+  </data>
+  <data name="Subjects" xml:space="preserve">
+    <value> dalykai:</value>
   </data>
   <data name="SuccessfulLectEvaluation" xml:space="preserve">
     <value>Dėstytojas sėkmingai įvertintas.</value>
