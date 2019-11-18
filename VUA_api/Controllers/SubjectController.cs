@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
 
 namespace VUA_api.Controllers
@@ -52,7 +53,7 @@ namespace VUA_api.Controllers
         [HttpGet]
         public IEnumerable<Subject> GetAll()
         {
-            return dataMaster.subjects;
+            return dataMaster.subjects.Include(subject => subject.reviews).ToList();
         }
 
         [HttpGet("faculty/{faculty}")]
@@ -96,11 +97,13 @@ namespace VUA_api.Controllers
         {
             return dataMaster.GetTop5BUSSubjects();
         }
+
         [HttpGet("Type/{isOptional}/{isBUS}")]
         public IEnumerable<Subject> GetByType(bool isOptional, bool isBUS)
         {
             return dataMaster.GetSubjectsByType(isOptional, isBUS);
         }
+
         [HttpGet("SearchType/{faculty}/{term}/{isOptional}/{isBUS}")]
         public IEnumerable<Subject> GetSubjectSearchResultsByType(string term, Faculty faculty, bool isOptional, bool isBUS)
         {

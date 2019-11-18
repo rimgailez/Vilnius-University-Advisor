@@ -39,6 +39,7 @@ namespace VUA_api
             }
         }
         public int numberOfReviews { get; set; }
+
         public DataNode(string name, Faculty faculty)
         {
             this.name = name;

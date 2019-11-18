@@ -142,8 +142,8 @@ namespace VUA_App.Views
             {
                 Subject selectedSubject = DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SelectSubjectFaculty.SelectedIndex).ToList().Find(subj => subj.name.Equals(SelectSubject.SelectedItem.ToString()));
                 DataFetcher.GetInstance().EvaluateSubject(selectedSubject, (float)ConvertStringToDecimal(NumericEvaluation.Text), SubjectComments.Text, UserName.SelectedItem.ToString());
-                DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedLecturer + selectedSubject.name + ";");
-                await DisplayAlert(MainResources.SuccessfulLectEvaluation, MainResources.EvaluationCaption, "OK");
+                DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedSubject + selectedSubject.name + ";");
+                await DisplayAlert(MainResources.SuccessfulSubjEvaluation, MainResources.EvaluationCaption, "OK");
                 ClearFields();
             }
         }

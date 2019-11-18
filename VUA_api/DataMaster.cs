@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VUA_api.Context;
+using VUA_api.Models;
 
 namespace VUA_api
 {
     public class DataMaster
     {
-        public UniversityEntitiesList<Lecturer> lecturers;
-        public UniversityEntitiesList<Subject> subjects;
+        public DbSet<Lecturer> lecturers;
+        public DbSet<Subject> subjects;
         public DbSet<User> users;
         public DbSet<StudyProgramme> studyProgrammes;
         public readonly ApiContext db;
@@ -22,8 +23,8 @@ namespace VUA_api
         public DataMaster(ApiContext dbtemp) 
         {
             db = dbtemp;
-            lecturers = new UniversityEntitiesList<Lecturer>(db.lecturers);
-            subjects = new UniversityEntitiesList<Subject>(db.subjects);
+            lecturers = db.lecturers;
+            subjects = db.subjects;
             users = db.users;
             studyProgrammes = db.studyProgrammes;
         }
@@ -45,7 +46,7 @@ namespace VUA_api
 
         public void AddLecturerWithoutWriting(Lecturer lecturer)
         {
-            lecturers.AddEntityWithoutWriting(lecturer);
+            if (!lecturers.Contains(lecturer)) lecturers.Add(lecturer);
         }
 
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
@@ -61,7 +62,7 @@ namespace VUA_api
 
         public void AddSubjectWithoutWriting(Subject subject)
         {
-            subjects.AddEntityWithoutWriting(subject);
+            if (!subjects.Contains(subject)) subjects.Add(subject);
         }
 
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
@@ -74,6 +75,7 @@ namespace VUA_api
             AddUserWithoutWriting(userNew);
             WriteData();
         }
+
         public void AddUserWithoutWriting(User user)
         {
             if (!users.Contains(user)) users.Add(user);
@@ -94,16 +96,43 @@ namespace VUA_api
         {
             if (!studyProgrammes.Contains(studyProgramme)) studyProgrammes.Add(studyProgramme);
         }
+
         public void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
-            lecturers.EvaluateEntity(lecturer, lecturerScore, new Review(username, (int)lecturerScore, text));
+            Func<Lecturer, float, float> calculateScore = delegate (Lecturer lecturerNew, float newScore)
+            {
+                return ((lecturerNew.score * lecturerNew.numberOfReviews) + newScore) / (++lecturer.numberOfReviews);
+            };
+            lecturer.score = calculateScore(lecturer, lecturerScore);
+            lecturer.reviews.Add(new LecturerReview(username, (int)lecturerScore, text));
+            foreach (User user in users)
+            {
+                if (user.Equals(currentUser))
+                {
+                    user.evaluatedLecturers++;
+                    break;
+                }
+            }
             currentUser.evaluatedLecturers++;
             WriteData();
         }
 
         public void EvaluateSubject(Subject subject, float subjectScore, string text, string username)
         {
-            subjects.EvaluateEntity(subject, subjectScore, new Review(username, (int)subjectScore, text));
+            Func<Subject, float, float> calculateScore = delegate (Subject subjectNew, float newScore)
+            {
+                return ((subjectNew.score * subjectNew.numberOfReviews) + newScore) / (++subject.numberOfReviews);
+            };
+            subject.score = calculateScore(subject, subjectScore);
+            subject.reviews.Add(new SubjectReview(username, (int)subjectScore, text));
+            foreach (User user in users)
+            {
+                if (user.Equals(currentUser))
+                {
+                    user.evaluatedSubjects++;
+                    break;
+                }
+            }
             currentUser.evaluatedSubjects++;
             WriteData();
         }
@@ -113,13 +142,13 @@ namespace VUA_api
             List<Subject> BUSSubjects = new List<Subject>();
             if (faculty == Faculty.None)
             {
-                BUSSubjects = (from subject in subjects
-                              where subject.isBUS == true
-                              select subject).ToList();
+                BUSSubjects = (from subject in subjects.Include(subj => subj.reviews).ToList()
+                               where subject.isBUS == true
+                               select subject).ToList();
             }
             else
             {
-                BUSSubjects = (from subject in subjects
+                BUSSubjects = (from subject in subjects.Include(subj => subj.reviews).ToList()
                                where subject.isBUS == true && subject.faculty == faculty
                                select subject).ToList();
             }
@@ -128,7 +157,7 @@ namespace VUA_api
 
         public List<Subject> GetSubjectsByTypeAndFaculty(bool isOptional, Faculty faculty)
         {
-            List<Subject> someSubjects = (from subject in subjects
+            List<Subject> someSubjects = (from subject in subjects.Include(subj => subj.reviews).ToList()
                                           where subject.isOptional == isOptional &&
                                                 subject.faculty == faculty
                                           select subject).ToList();
@@ -137,49 +166,73 @@ namespace VUA_api
 
         public List<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
-            return lecturers.GetEntitiesByFaculty(faculty);
+            return lecturers.Where(lect => lect.faculty == faculty).Include(lecturer => lecturer.reviews).ToList();
         }
 
         public List<Subject> GetSubjectsByFaculty(Faculty faculty)
         {
-            return subjects.GetEntitiesByFaculty(faculty);
+            return subjects.Where(subj => subj.faculty == faculty).Include(subject => subject.reviews).ToList();
         }
 
         public List<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
         {
-            return subjects.GetEntitySearchResults(enteredWord, faculty);
+            List<Subject> searchResult;
+            if (faculty == Faculty.None)
+            {
+                searchResult = (from subj in subjects.Include(subject => subject.reviews).ToList()
+                                where subj.name.ToLower().Contains(enteredWord.ToLower())
+                                select subj).ToList();
+            }
+            else
+            {
+                searchResult = (from subj in subjects.Include(subject => subject.reviews).ToList()
+                                where subj.name.ToLower().Contains(enteredWord.ToLower()) && subj.faculty == faculty
+                                select subj).ToList();
+            }
+            return searchResult;
         }
 
         public List<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
-            return lecturers.GetEntitySearchResults(enteredWord, faculty);
+            List<Lecturer> searchResult;
+            if (faculty == Faculty.None)
+            {
+                searchResult = (from lect in lecturers.Include(lecturer => lecturer.reviews).ToList()
+                                where lect.name.ToLower().Contains(enteredWord.ToLower())
+                                select lect).ToList();
+            }
+            else
+            {
+                searchResult = (from lect in lecturers.Include(lecturer => lecturer.reviews).ToList()
+                                where lect.name.ToLower().Contains(enteredWord.ToLower()) && lect.faculty == faculty
+                                select lect).ToList();
+            }
+            return searchResult;
         }
 
         public List<Subject> GetTop10Subjects()
         {
-            return subjects.GetTopEntities().GetRange(0, 10);
+            return subjects.Include(subject => subject.reviews).OrderByDescending(subj => subj.score).Take(10).ToList();
         }
 
         public List<Lecturer> GetTop10Lecturers()
         {
-            return lecturers.GetTopEntities().GetRange(0, 10);
+            return lecturers.Include(lecturer => lecturer.reviews).OrderByDescending(lect => lect.score).Take(10).ToList();
         }
 
         public List<Subject> GetTop5BUSSubjects()
         {
-            return subjects.Where(subject => subject.isBUS).OrderByDescending(subject => subject.score).ToList().GetRange(0, 5);
+            return subjects.Include(lecturer => lecturer.reviews).Where(subject => subject.isBUS).OrderByDescending(subject => subject.score).Take(5).ToList();
         }
 
         public Boolean CheckIfUserNameExists(string username)
         {
-            //return users.Exists(us => us.userName.Equals(username));
-            return true;
+            return users.Any(us => us.userName.Equals(username));
         }
 
         public Boolean CheckIfCorrectPassword(string userName, string password)
         {
-            //return users.Find(us => us.userName.Equals(userName)).password.Equals(password);
-            return true;
+            return users.ToList().Find(us => us.userName.Equals(userName)).password.Equals(password);
         }
 
         public User GetCurrentUser()
@@ -208,7 +261,7 @@ namespace VUA_api
 
         public List<Activity> GetUserActivityHistory()
         {
-            foreach (User user in users)
+            foreach (User user in users.Include(user => user.userHistory))
             {
                 if (user.Equals(currentUser))
                 {
@@ -216,7 +269,7 @@ namespace VUA_api
                     break;
                 }
             }
-            return currentUser.userHistory;
+            return currentUser.userHistory.OrderBy(activity => activity.date).ToList();
         }
 
         public List<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
@@ -224,24 +277,14 @@ namespace VUA_api
             return studyProgrammes.Where(studyProgramme => studyProgramme.faculty == faculty).ToList();
         }
 
-        public List<User> GetTop5ActiveLecturersEvaluators()
-        {
-            return users.OrderByDescending(user => user.evaluatedLecturers).ToList().GetRange(0, 5);
-        }
-
-        public List<User> GetTop5ActiveSubjectsEvaluators()
-        {
-            return users.OrderByDescending(user => user.evaluatedSubjects).ToList().GetRange(0, 5);
-        }
-
         public List<User> GetTop3ActiveUsers()
         {
-            return users.OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
+            return users.Include(user => user.userHistory).OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
         }
 
         public List<Subject> GetSubjectsByType(bool isOptional, bool isBUS)
         {
-            List<Subject> someSubjects = (from subject in subjects
+            List<Subject> someSubjects = (from subject in subjects.Include(subj => subj.reviews).ToList()
                                           where subject.isOptional == isOptional &&
                                                 subject.isBUS == isBUS
                                           select subject).ToList();
@@ -249,14 +292,25 @@ namespace VUA_api
         }
         public List<Subject> GetSubjectSearchResultsByType(string searchTerm, Faculty faculty, bool isOptional, bool isBUS)
         {
-            List<Subject> searchResults = subjects.GetEntitySearchResults(searchTerm, faculty);
-            List<Subject> someSubjects = (from subject in searchResults
+            List<Subject> searchResult;
+            if (faculty == Faculty.None)
+            {
+                searchResult = (from subj in subjects.Include(subject => subject.reviews).ToList()
+                                where subj.name.ToLower().Contains(searchTerm.ToLower())
+                                select subj).ToList();
+            }
+            else
+            {
+                searchResult = (from subj in subjects.Include(subject => subject.reviews).ToList()
+                                where subj.name.ToLower().Contains(searchTerm.ToLower()) && subj.faculty == faculty
+                                select subj).ToList();
+            }
+            List<Subject> someSubjects = (from subject in searchResult
                                           where subject.isOptional == isOptional &&
                                                 subject.isBUS == isBUS
                                           select subject).ToList();
             return someSubjects;
         }
-
 
     }
 }
