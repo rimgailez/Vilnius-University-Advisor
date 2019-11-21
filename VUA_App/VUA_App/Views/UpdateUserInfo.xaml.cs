@@ -69,8 +69,9 @@ namespace VUA_App.Views
             }
             else
             {
-                DataFetcher.GetInstance().UpdateInfo(DataFetcher.GetInstance().GetCurrentUser(), Name.Text, (Faculty)ChooseFaculty.SelectedIndex,
-                    DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex).ToList().ElementAt(ChooseStudyProgramme.SelectedIndex).name,
+                Faculty faculty = (Faculty)ChooseFaculty.SelectedIndex;
+                DataFetcher.GetInstance().UpdateInfo(DataFetcher.GetInstance().GetCurrentUser(), Name.Text, faculty,
+                    DataFetcher.GetInstance().GetStudyProgrammesByFaculty(faculty).ToList().ElementAt(ChooseStudyProgramme.SelectedIndex).name,
                     EMail.Text, PhoneNumber.Text);
                 await DisplayAlert(MainResources.DataChangedSuccessfully, MainResources.UpdateCaption, "OK");
             }

@@ -290,11 +290,7 @@ namespace VUA_api
             {
                 SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT userName, evaluatedLecturers, evaluatedSubjects FROM [User]", connection);
                 SqlCommand command = new SqlCommand("SELECT userName, evaluatedLecturers, evaluatedSubjects FROM [User] " +
-                  "WHERE userName = @userName" +
-                  "ORDER BY evaluatedLecturers + evaluatedSubjects DESC" +
-                  "FETCH FIRST 3 ROWS ONLY", connection);
-
-                command.Parameters.Add("@userName", SqlDbType.NVarChar, 20);
+                  "ORDER BY evaluatedLecturers + evaluatedSubjects DESC", connection);
 
                 SqlParameter parameter = dataAdapter.SelectCommand.Parameters.Add("@userName", SqlDbType.NVarChar);
                 parameter.SourceColumn = "userName";
@@ -309,14 +305,10 @@ namespace VUA_api
                 topUsers = (from DataRow dr in userTable.Rows
                                select new User()
                                {
-                                   name = dr["name"].ToString(),
-                                   userFaculty = (Faculty)dr["userFaculty"],
                                    userName = dr["username"].ToString(),
-                                   password = dr["password"].ToString(),
-                                   eMail = dr["eMail"].ToString(),
-                                   phoneNumber = dr["phonrNumber"].ToString(),
-                                   studyProgram = dr["studyProgram"].ToString()
-                               }).ToList();
+                                   evaluatedLecturers = (int)dr["evaluatedLecturers"],
+                                   evaluatedSubjects = (int)dr["evaluatedSubjects"]
+                               }).Take(3).ToList();
                 return topUsers;
             }
                 //return users.Include(user => user.userHistory).OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
@@ -357,7 +349,6 @@ namespace VUA_api
             using (SqlConnection connection =
                        new SqlConnection(connectionString))
             {
-                //connection.Open();
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(
                   "SELECT userName, name, userFaculty, studyProgram, eMail, phoneNumber FROM [User]",
                   connection);

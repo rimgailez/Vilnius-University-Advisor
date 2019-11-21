@@ -320,7 +320,7 @@ namespace VUA_App.Services
             JObject jObject = new JObject();
             jObject.Add("user", JToken.FromObject(user));
             jObject.Add("name", name);
-            jObject.Add("userfaculty", (int)userFaculty);
+            jObject.Add("userFaculty", (int)userFaculty);
             jObject.Add("studyProgram", studyProgram);
             jObject.Add("eMail", eMail);
             jObject.Add("phoneNumber", phoneNumber);
