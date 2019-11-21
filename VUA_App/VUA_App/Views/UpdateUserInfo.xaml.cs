@@ -16,9 +16,6 @@ namespace VUA_App.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UpdateUserInfo : ContentPage
     {
-        private static string connectionString = "";
-
-
         MainPage RootPage { get => Application.Current.MainPage as MainPage; }
 
         public UpdateUserInfo()
@@ -72,7 +69,9 @@ namespace VUA_App.Views
             }
             else
             {
-                UpdateInfo(connectionString);
+                DataFetcher.GetInstance().UpdateInfo(DataFetcher.GetInstance().GetCurrentUser(), Name.Text, (Faculty)ChooseFaculty.SelectedIndex,
+                    DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex).ToList().ElementAt(ChooseStudyProgramme.SelectedIndex).name,
+                    EMail.Text, PhoneNumber.Text);
                 await DisplayAlert(MainResources.DataChangedSuccessfully, MainResources.UpdateCaption, "OK");
             }
         }
@@ -96,17 +95,24 @@ namespace VUA_App.Views
             }
             else
             {
-                UpdatePassword(connectionString);
+                DataFetcher.GetInstance().UpdatePassword(DataFetcher.GetInstance().GetCurrentUser(), NewPassword.Text);
                 await DisplayAlert(MainResources.PasswordChangedSuccessfully, MainResources.UpdateCaption, "OK");
+                CurrentPassword.Text = "";
+                NewPassword.Text = "";
+                RepeatedPassword.Text = "";
             }
         }
 
         public async void OnAccountDelete(object sender, EventArgs e)
         {
-            DeleteUser(connectionString);
-            await DisplayAlert(MainResources.SuccessfulDeletion, MainResources.SuccessfulDeletionCaption, "OK");
-            MenuItems.LogOut();
-            await RootPage.NavigateFromMenu((int)MenuItemType.LogIn);
+            var answer = await DisplayAlert(MainResources.DeleteUser, MainResources.DeleteUserCaption, "OK", "Cancel");
+            if (answer)
+            {
+                DataFetcher.GetInstance().DeleteUser(DataFetcher.GetInstance().GetCurrentUser());
+                await DisplayAlert(MainResources.SuccessfulDeletion, MainResources.SuccessfulDeletionCaption, "OK");
+                MenuItems.LogOut();
+                await RootPage.NavigateFromMenu((int)MenuItemType.LogIn);
+            }
         }
 
         private List<string> GetFacultyList()
@@ -130,99 +136,7 @@ namespace VUA_App.Views
             };
         }
 
-        private static void UpdateInfo(string connectionString)
-        {
-            using (SqlConnection connection =
-                       new SqlConnection(connectionString))
-            {
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(
-                  "SELECT userName, name, userFaculty, studyProgram, eMail, phoneNumber FROM dbo.User",
-                  connection);
-
-                dataAdapter.UpdateCommand = new SqlCommand(
-                   "UPDATE dbo.User SET name = @name, userFaculty = @userFaculty, studyProgram = @studyProgram, eMail = @eMail, phoneNumber = @phoneNumber " +
-                   "WHERE userName = @userName", connection);
-
-                dataAdapter.UpdateCommand.Parameters.Add("@name", SqlDbType.NVarChar, 20, "name");
-                dataAdapter.UpdateCommand.Parameters.Add("@userFaculty", SqlDbType.Int, 8, "userFaculty");
-                dataAdapter.UpdateCommand.Parameters.Add("@studyProgram", SqlDbType.NVarChar, 30, "studyProgram");
-                dataAdapter.UpdateCommand.Parameters.Add("@eMail", SqlDbType.NVarChar, 25, "eMail");
-                dataAdapter.UpdateCommand.Parameters.Add("@phoneNumber", SqlDbType.NVarChar, 12, "phoneNumber");
-
-
-                SqlParameter parameter = dataAdapter.UpdateCommand.Parameters.Add("@userName", SqlDbType.NVarChar);
-                parameter.SourceColumn = "userName";
-                parameter.SourceVersion = DataRowVersion.Original;
-
-                DataTable userTable = new DataTable();
-                dataAdapter.Fill(userTable);
-
-                DataRow userRow = userTable.Rows[DataFetcher.GetInstance().GetAllUsers().ToList().IndexOf(DataFetcher.GetInstance().GetCurrentUser())];
-                userRow["name"] = "new name";
-
-                dataAdapter.Update(userTable);
-
-                connection.Close();
-            }
-        }
-
-        private static void UpdatePassword(string connectionString)
-        {
-            using (SqlConnection connection =
-                       new SqlConnection(connectionString))
-            {
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(
-                  "SELECT userName, password FROM dbo.User", connection);
-
-                dataAdapter.UpdateCommand = new SqlCommand(
-                   "UPDATE dbo.User SET password = @password " +
-                   "WHERE userName = @userName", connection);
-
-                dataAdapter.UpdateCommand.Parameters.Add("@password", SqlDbType.NVarChar, 20, "password");
-
-                SqlParameter parameter = dataAdapter.UpdateCommand.Parameters.Add("@userName", SqlDbType.NVarChar);
-                parameter.SourceColumn = "userName";
-                parameter.SourceVersion = DataRowVersion.Original;
-
-                DataTable userTable = new DataTable();
-                dataAdapter.Fill(userTable);
-
-                DataRow userRow = userTable.Rows[DataFetcher.GetInstance().GetAllUsers().ToList().IndexOf(DataFetcher.GetInstance().GetCurrentUser())];
-                userRow["password"] = "new password";
-
-                dataAdapter.Update(userTable);
-
-                connection.Close();
-            }
-        }
-
-        private static void DeleteUser(string connectionString)
-        {
-            using (SqlConnection connection =
-                       new SqlConnection(connectionString))
-            {
-                SqlDataAdapter dataAdapter = new SqlDataAdapter();
-
-                SqlCommand command = new SqlCommand(
-                 "DELETE FROM dbo.User WHERE userName = @userName", connection);
-
-                SqlParameter parameter = command.Parameters.Add(
-                    "@userName", SqlDbType.NVarChar, 20, "userName");
-                parameter.SourceVersion = DataRowVersion.Original;
-
-                dataAdapter.DeleteCommand = command;
-
-                DataTable userTable = new DataTable();
-                dataAdapter.Fill(userTable);
-
-                DataRow userRow = userTable.Rows[DataFetcher.GetInstance().GetAllUsers().ToList().IndexOf(DataFetcher.GetInstance().GetCurrentUser())];
-
-                userRow.Delete();
-                dataAdapter.Update(userTable);
-
-                connection.Close();
-            }
-        }
+       
 
     }
 }

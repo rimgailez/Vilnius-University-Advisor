@@ -147,6 +147,12 @@
   <data name="DataNodeNotFound" xml:space="preserve">
     <value>Objektas nerastas</value>
   </data>
+  <data name="DeleteUser" xml:space="preserve">
+    <value>Ar tikrai norite pašalinti šią anketą?</value>
+  </data>
+  <data name="DeleteUserCaption" xml:space="preserve">
+    <value>Anketos  šalinimas</value>
+  </data>
   <data name="DidntChooseLecturer" xml:space="preserve">
     <value>Nepasirinkote dėstytojo</value>
   </data>

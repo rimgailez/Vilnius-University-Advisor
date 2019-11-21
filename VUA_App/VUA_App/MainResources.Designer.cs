@@ -151,6 +151,24 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ar tikrai norite pašalinti šią anketą?.
+        /// </summary>
+        internal static string DeleteUser {
+            get {
+                return ResourceManager.GetString("DeleteUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anketos  šalinimas.
+        /// </summary>
+        internal static string DeleteUserCaption {
+            get {
+                return ResourceManager.GetString("DeleteUserCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nepasirinkote dėstytojo.
         /// </summary>
         internal static string DidntChooseLecturer {
