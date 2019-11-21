@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using VUA_api.Context;
 using VUA_api.Models;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace VUA_api
 {
@@ -311,6 +313,5 @@ namespace VUA_api
                                           select subject).ToList();
             return someSubjects;
         }
-
     }
 }
