@@ -314,5 +314,32 @@ namespace VUA_App.Services
             }
             catch (Exception e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
         }
+
+        public async void UpdateInfo(User user, string name, Faculty userFaculty, string studyProgram, string eMail, string phoneNumber)
+        {
+            JObject jObject = new JObject();
+            jObject.Add("user", JToken.FromObject(user));
+            jObject.Add("name", name);
+            jObject.Add("userFaculty", (int)userFaculty);
+            jObject.Add("studyProgram", studyProgram);
+            jObject.Add("eMail", eMail);
+            jObject.Add("phoneNumber", phoneNumber);
+            await PostObjectAsync("user/updateData", jObject);
+        }
+
+        public async void UpdatePassword(User user, string password)
+        {
+            JObject jObject = new JObject();
+            jObject.Add("user", JToken.FromObject(user));
+            jObject.Add("password", password);
+            await PostObjectAsync("user/updatePassword", jObject);
+        }
+
+        public async void DeleteUser(User user)
+        {
+            await PostObjectAsync("user/deleteUser", user);
+        }
+
+
     }
 }

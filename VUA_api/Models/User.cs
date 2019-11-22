@@ -46,6 +46,10 @@ namespace VUA_api
             this.userHistory = new List<Activity>();
         }
 
+        public User()
+        {
+        }
+
         public bool Equals(User other)
         {
             return userName == other.userName ;

@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using VUA_api.Context;
 using VUA_api.Models;
+using System.Data.SqlClient;
+using System.Data;
+using Microsoft.Extensions.Configuration;
 
 namespace VUA_api
 {
@@ -19,9 +22,12 @@ namespace VUA_api
         public DbSet<StudyProgramme> studyProgrammes;
         public readonly ApiContext db;
 
+        public static string connectionString;
+
         public static User currentUser { get; set; }
-        public DataMaster(ApiContext dbtemp) 
+        public DataMaster(ApiContext dbtemp, IConfiguration config) 
         {
+            connectionString = config.GetValue<string>("ConnectionStrings:ApiContext");
             db = dbtemp;
             lecturers = db.lecturers;
             subjects = db.subjects;
@@ -279,7 +285,33 @@ namespace VUA_api
 
         public List<User> GetTop3ActiveUsers()
         {
-            return users.Include(user => user.userHistory).OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
+            using (SqlConnection connection =
+                       new SqlConnection(connectionString))
+            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT userName, evaluatedLecturers, evaluatedSubjects FROM [User]", connection);
+                SqlCommand command = new SqlCommand("SELECT userName, evaluatedLecturers, evaluatedSubjects FROM [User] " +
+                  "ORDER BY evaluatedLecturers + evaluatedSubjects DESC", connection);
+
+                SqlParameter parameter = dataAdapter.SelectCommand.Parameters.Add("@userName", SqlDbType.NVarChar);
+                parameter.SourceColumn = "userName";
+                parameter.SourceVersion = DataRowVersion.Original;
+
+                dataAdapter.SelectCommand = command;
+
+                DataTable userTable = new DataTable();
+                dataAdapter.Fill(userTable);
+                List<User> topUsers = new List<User>();
+
+                topUsers = (from DataRow dr in userTable.Rows
+                               select new User()
+                               {
+                                   userName = dr["username"].ToString(),
+                                   evaluatedLecturers = (int)dr["evaluatedLecturers"],
+                                   evaluatedSubjects = (int)dr["evaluatedSubjects"]
+                               }).Take(3).ToList();
+                return topUsers;
+            }
+                //return users.Include(user => user.userHistory).OrderByDescending(user => user.evaluatedLecturers + user.evaluatedSubjects).ToList().GetRange(0, 3);
         }
 
         public List<Subject> GetSubjectsByType(bool isOptional, bool isBUS)
@@ -312,5 +344,100 @@ namespace VUA_api
             return someSubjects;
         }
 
+        public void UpdateInfo(User currentUser, string name, Faculty userFaculty, string studyProgram, string eMail, string phoneNumber)
+        {
+            using (SqlConnection connection =
+                       new SqlConnection(connectionString))
+            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(
+                  "SELECT userName, name, userFaculty, studyProgram, eMail, phoneNumber FROM [User]",
+                  connection);
+
+                dataAdapter.UpdateCommand = new SqlCommand(
+                   "UPDATE [User] SET name = @name, userFaculty = @userFaculty, studyProgram = @studyProgram, eMail = @eMail, phoneNumber = @phoneNumber " +
+                   "WHERE userName = @userName", connection);
+
+                dataAdapter.UpdateCommand.Parameters.Add("@name", SqlDbType.NVarChar, 20, "name");
+                dataAdapter.UpdateCommand.Parameters.Add("@userFaculty", SqlDbType.Int, 8, "userFaculty");
+                dataAdapter.UpdateCommand.Parameters.Add("@studyProgram", SqlDbType.NVarChar, 30, "studyProgram");
+                dataAdapter.UpdateCommand.Parameters.Add("@eMail", SqlDbType.NVarChar, 25, "eMail");
+                dataAdapter.UpdateCommand.Parameters.Add("@phoneNumber", SqlDbType.NVarChar, 12, "phoneNumber");
+
+                SqlParameter parameter = dataAdapter.UpdateCommand.Parameters.Add("@userName", SqlDbType.NVarChar);
+                parameter.SourceColumn = "userName";
+                parameter.SourceVersion = DataRowVersion.Original;
+
+                DataTable userTable = new DataTable();
+                dataAdapter.Fill(userTable);
+                DataRow userRow = userTable.Rows[users.ToList().IndexOf(currentUser)];
+                userRow["name"] = name;
+                userRow["userFaculty"] = (int)userFaculty;
+                userRow["studyProgram"] = studyProgram;
+                userRow["eMail"] = eMail;
+                userRow["phoneNumber"] = phoneNumber;
+
+                dataAdapter.Update(userTable);
+
+                connection.Close();
+            }
+        }
+
+        public void UpdatePassword(User currentUser, string newPassword)
+        {
+            using (SqlConnection connection =
+                       new SqlConnection(connectionString))
+            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(
+                  "SELECT userName, password FROM [User]", connection);
+
+                dataAdapter.UpdateCommand = new SqlCommand(
+                   "UPDATE [User] SET password = @password " +
+                   "WHERE userName = @userName", connection);
+
+                dataAdapter.UpdateCommand.Parameters.Add("@password", SqlDbType.NVarChar, 20, "password");
+
+                SqlParameter parameter = dataAdapter.UpdateCommand.Parameters.Add("@userName", SqlDbType.NVarChar);
+                parameter.SourceColumn = "userName";
+                parameter.SourceVersion = DataRowVersion.Original;
+
+                DataTable userTable = new DataTable();
+                dataAdapter.Fill(userTable);
+
+                DataRow userRow = userTable.Rows[users.ToList().IndexOf(currentUser)];
+                userRow["password"] = newPassword;
+
+                dataAdapter.Update(userTable);
+
+                connection.Close();
+            }
+        }
+
+        public void DeleteUser(User currentUser)
+        {
+            using (SqlConnection connection =
+                       new SqlConnection(connectionString))
+            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM [User]", connection);
+
+                SqlCommand command = new SqlCommand(
+                 "DELETE FROM [User] WHERE userName = @userName", connection);
+
+                SqlParameter parameter = command.Parameters.Add(
+                    "@userName", SqlDbType.NVarChar, 20, "userName");
+                parameter.SourceVersion = DataRowVersion.Original;
+
+                dataAdapter.DeleteCommand = command;
+
+                DataTable userTable = new DataTable();
+                dataAdapter.Fill(userTable);
+
+                DataRow userRow = userTable.Rows[users.ToList().IndexOf(currentUser)];
+
+                userRow.Delete();
+                dataAdapter.Update(userTable);
+
+                connection.Close();
+            }
+        }
     }
 }

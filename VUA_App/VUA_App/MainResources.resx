@@ -132,6 +132,9 @@
   <data name="CancelRegistration" xml:space="preserve">
     <value>Ar tikrai norite atšaukti registraciją? Įvesti duomenys nebus išsaugoti.</value>
   </data>
+  <data name="DataChangedSuccessfully" xml:space="preserve">
+    <value>Duomenys sėkmingai atnaujinti.</value>
+  </data>
   <data name="DataNodeComment" xml:space="preserve">
     <value>Paliko komentarą:</value>
   </data>
@@ -143,6 +146,12 @@
   </data>
   <data name="DataNodeNotFound" xml:space="preserve">
     <value>Objektas nerastas</value>
+  </data>
+  <data name="DeleteUser" xml:space="preserve">
+    <value>Ar tikrai norite pašalinti šią anketą?</value>
+  </data>
+  <data name="DeleteUserCaption" xml:space="preserve">
+    <value>Anketos  šalinimas</value>
   </data>
   <data name="DidntChooseLecturer" xml:space="preserve">
     <value>Nepasirinkote dėstytojo</value>
@@ -200,6 +209,9 @@
   </data>
   <data name="Optional" xml:space="preserve">
     <value>Dalykas yra pasirenkamasis</value>
+  </data>
+  <data name="PasswordChangedSuccessfully" xml:space="preserve">
+    <value>Slaptažodis pakeistas sėkmingai.</value>
   </data>
   <data name="PasswordsDoNotMatch" xml:space="preserve">
     <value>Įvesti slaptažodžiai nesutampa. Prašome įvesti juos dar kartą.</value>
@@ -276,6 +288,12 @@
   <data name="Subjects" xml:space="preserve">
     <value> dalykai:</value>
   </data>
+  <data name="SuccessfulDeletion" xml:space="preserve">
+    <value>Anketa pašalinta sėkmingai.</value>
+  </data>
+  <data name="SuccessfulDeletionCaption" xml:space="preserve">
+    <value>Šalinimas sėkmingas</value>
+  </data>
   <data name="SuccessfulLectEvaluation" xml:space="preserve">
     <value>Dėstytojas sėkmingai įvertintas.</value>
   </data>
@@ -284,6 +302,9 @@
   </data>
   <data name="SuccessfulSubjEvaluation" xml:space="preserve">
     <value>Mokomasis dalykas sėkmingai įvertintas.</value>
+  </data>
+  <data name="UpdateCaption" xml:space="preserve">
+    <value>Duomenys pakeisti</value>
   </data>
   <data name="UserAlreadyExists" xml:space="preserve">
     <value>Įvestas prisijungimo vardas jau egzistuoja.</value>

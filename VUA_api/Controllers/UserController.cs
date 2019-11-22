@@ -80,5 +80,52 @@ namespace VUA_api.Controllers
            return dataMaster.GetTop3ActiveUsers();
        }
 
+        [HttpPost("updateData")]
+        public void UpdateUserInfo([FromBody]JObject data)
+        {
+            User changedUser = data["user"].ToObject<User>();
+            string name = data["name"].ToObject<string>();
+            Faculty faculty = data["userFaculty"].ToObject<Faculty>();
+            string eMail = data["eMail"].ToObject<string>();
+            string phoneNumber = data["phoneNumber"].ToObject<string>();
+            string studyProgram = data["studyProgram"].ToObject<string>();
+            User userRef = null;
+            foreach (User user in dataMaster.users)
+            {
+                if (user.Equals(changedUser))
+                {
+                    userRef = user;
+                    break;
+                }
+            }
+            dataMaster.UpdateInfo(userRef, name, faculty, studyProgram, eMail, phoneNumber);
+        }
+
+        [HttpPost("updatePassword")]
+        public void UpdateUserPassword([FromBody]JObject data)
+        {
+            User changedUser = data["user"].ToObject<User>();
+            string password = data["password"].ToObject<string>();
+            
+            User userRef = null;
+            foreach (User user in dataMaster.users)
+            {
+                if (user.Equals(changedUser))
+                {
+                    userRef = user;
+                    break;
+                }
+            }
+            dataMaster.UpdatePassword(userRef, password);
+        }
+
+        [HttpPost("deleteUser")]
+        public void DeleteCurrentUser([FromBody]User user)
+        {
+            dataMaster.DeleteUser(user);
+        }
+
+
+
     }
 }

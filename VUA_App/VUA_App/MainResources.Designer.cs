@@ -106,6 +106,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Duomenys sėkmingai atnaujinti..
+        /// </summary>
+        internal static string DataChangedSuccessfully {
+            get {
+                return ResourceManager.GetString("DataChangedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Paliko komentarą:.
         /// </summary>
         internal static string DataNodeComment {
@@ -138,6 +147,24 @@ namespace VUA_App {
         internal static string DataNodeNotFound {
             get {
                 return ResourceManager.GetString("DataNodeNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ar tikrai norite pašalinti šią anketą?.
+        /// </summary>
+        internal static string DeleteUser {
+            get {
+                return ResourceManager.GetString("DeleteUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anketos  šalinimas.
+        /// </summary>
+        internal static string DeleteUserCaption {
+            get {
+                return ResourceManager.GetString("DeleteUserCaption", resourceCulture);
             }
         }
         
@@ -309,6 +336,15 @@ namespace VUA_App {
         internal static string Optional {
             get {
                 return ResourceManager.GetString("Optional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Slaptažodis pakeistas sėkmingai..
+        /// </summary>
+        internal static string PasswordChangedSuccessfully {
+            get {
+                return ResourceManager.GetString("PasswordChangedSuccessfully", resourceCulture);
             }
         }
         
@@ -538,6 +574,24 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Anketa pašalinta sėkmingai..
+        /// </summary>
+        internal static string SuccessfulDeletion {
+            get {
+                return ResourceManager.GetString("SuccessfulDeletion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Šalinimas sėkmingas.
+        /// </summary>
+        internal static string SuccessfulDeletionCaption {
+            get {
+                return ResourceManager.GetString("SuccessfulDeletionCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dėstytojas sėkmingai įvertintas..
         /// </summary>
         internal static string SuccessfulLectEvaluation {
@@ -561,6 +615,15 @@ namespace VUA_App {
         internal static string SuccessfulSubjEvaluation {
             get {
                 return ResourceManager.GetString("SuccessfulSubjEvaluation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duomenys pakeisti.
+        /// </summary>
+        internal static string UpdateCaption {
+            get {
+                return ResourceManager.GetString("UpdateCaption", resourceCulture);
             }
         }
         

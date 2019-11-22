@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.UpdateUserInfo">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Atnaujinti duomenis:" FontAttributes="Italic" Grid.Row="0"/>
+            <Label Text="Prisijungimo vardas:" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="UserName" IsEnabled="False" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="Vardas Pavardė:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="Name" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="Telefono numeris:" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="PhoneNumber" Grid.Row="3" Grid.Column="1"/>
+            <Label Text="El.paštas:" Grid.Row="4" Grid.Column="0"/>
+            <Entry x:Name="EMail" Grid.Row="4" Grid.Column="1"/>
+            <Picker x:Name="ChooseFaculty" Title="Fakultetas:" Grid.Row="5"/>
+            <Picker x:Name="ChooseStudyProgramme" Title="Studijų programa:" Grid.Row="6"/>
+            <Button Text="Išsaugoti" Clicked="OnSaveInfo" FontAttributes="Bold" Grid.Row="7"/>
+            <Label Text="Atnaujinti slaptažodį:" FontAttributes="Italic" Grid.Row="8"/>
+            <Label Text="Įveskite dabartinį slaptažodį:" Grid.Row="9" Grid.Column="0"/>
+            <Entry x:Name="CurrentPassword" Text="" IsPassword="True" Grid.Row="9" Grid.Column="1"/>
+            <Label Text="Naujas slaptažodis:" Grid.Row="10" Grid.Column="0"/>
+            <Entry x:Name="NewPassword" Text="" IsPassword="True" Grid.Row="10" Grid.Column="1"/>
+            <Label Text="Pakartokite slaptažodį:" Grid.Row="11" Grid.Column="0"/>
+            <Entry x:Name="RepeatedPassword" Text="" IsPassword="True" Grid.Row="11" Grid.Column="1"/>
+            <Button Text="Išsaugoti slaptažodį" Clicked="OnChangePassword" FontAttributes="Bold" Grid.Row="12"/>
+            <Button Text="Ištrinti anketą" Clicked="OnAccountDelete" FontAttributes="Bold" Grid.Row="13"/>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>
