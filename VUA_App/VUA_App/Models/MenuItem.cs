@@ -22,7 +22,9 @@ namespace VUA_App.Models
         EvaluateSubject,
         ViewActivityHistory,
         ViewMostActiveUsers,
-        UpdateUserInfo
+        UpdateUserInfo,
+        CompareLecturers,
+        CompareSubjects
     }
     public class MenuItem
     {

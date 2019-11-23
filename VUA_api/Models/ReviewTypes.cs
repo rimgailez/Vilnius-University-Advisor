@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace VUA_api.Models
+namespace VUA_api
 {
     public class LecturerReview : Review
     {

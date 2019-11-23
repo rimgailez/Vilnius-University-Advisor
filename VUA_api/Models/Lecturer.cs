@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VUA_api.Models;
+using VUA_api;
 
 namespace VUA_api
 {

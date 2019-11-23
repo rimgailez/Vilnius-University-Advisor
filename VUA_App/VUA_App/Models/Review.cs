@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VUA_App.Models
 {
-    public struct Review
+    public class Review
     {
         public string username;
         private int scoreField;

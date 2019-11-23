@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="VUA_App.Views.ActivityHistory">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Label Text="Veiklos istorija"
                FontSize="Title"
@@ -44,5 +45,6 @@
                 </ListView>
             </Grid>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.CompareSubjects">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Pasirinkite dalykus"
+                   FontSize="Title"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Pirmas dalykas:"
+                       FontAttributes="Italic"
+                       Grid.Row="1"
+                       Grid.Column="1"/>
+                    <Picker x:Name="SubjectFaculty1"
+                        Title="Fakultetas:"
+                        Grid.Row="2"
+                        Grid.Column="1"/>
+                    <Picker x:Name="SubjectName1"
+                        Title="Pavadinimas:"
+                        Grid.Row="3"
+                        Grid.Column="1"/>
+                    <Label Text="Antras dalykas:"
+                       FontAttributes="Italic"
+                       Grid.Row="1"
+                       Grid.Column="2"/>
+                    <Picker x:Name="SubjectFaculty2"
+                        Title="Fakultetas:"
+                        Grid.Row="2"
+                        Grid.Column="2"/>
+                    <Picker x:Name="SubjectName2"
+                        Title="Pavadinimas:"
+                        Grid.Row="3"
+                        Grid.Column="2"/>
+                </Grid>
+                
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <CheckBox Grid.Row="1"
+                              Grid.Column="1"
+                              x:Name="IsOptional1"
+                              CheckedChanged="OnCheckedChanged1"/>
+                    <Label Grid.Row="1"
+                               Grid.Column="2"
+                               Text="Pasirenkamasis"/>
+                    <CheckBox Grid.Row="2"
+                                  Grid.Column="1"
+                                  x:Name="IsMandatory1"
+                                  CheckedChanged="OnCheckedChanged1"/>
+                    <Label Grid.Row="2"
+                               Grid.Column="2"
+                               Text="Privalomasis"/>
+                    
+                    <CheckBox Grid.Row="1"
+                              Grid.Column="3"
+                              x:Name="IsOptional2"
+                              CheckedChanged="OnCheckedChanged2"
+                              HorizontalOptions="End"/>
+                    <Label Grid.Row="1"
+                               Grid.Column="4"
+                               Text="Pasirenkamasis" />
+                    <CheckBox Grid.Row="2"
+                              Grid.Column="3"
+                              x:Name="IsMandatory2"
+                              CheckedChanged="OnCheckedChanged2"
+                              HorizontalOptions="End"/>
+                    <Label Grid.Row="2"
+                           Grid.Column="4"
+                           Text="Privalomasis"/>
+                </Grid>
+                <Button Text="Palyginti"
+                    Clicked="OnCompare"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="Evaluation1"
+                           Text=""
+                           Grid.Row="1"
+                           Grid.Column="1"/>
+                    <Label x:Name="Number1"
+                           Text=""
+                           Grid.Row="2"
+                           Grid.Column="1"/>
+                    <Label x:Name="Comments1"
+                           Text=""
+                           Grid.Row="3"
+                           Grid.Column="1"/>
+                    <Label x:Name="Evaluation2"
+                           Text=""
+                           Grid.Row="1"
+                           Grid.Column="2"/>
+                    <Label x:Name="Number2"
+                           Text=""
+                           Grid.Row="2"
+                           Grid.Column="2"/>
+                    <Label x:Name="Comments2"
+                           Text=""
+                           Grid.Row="3"
+                           Grid.Column="2"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

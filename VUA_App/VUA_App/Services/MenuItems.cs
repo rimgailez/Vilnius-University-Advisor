@@ -16,7 +16,9 @@ namespace VUA_App.Services
             new Models.MenuItem { Id = MenuItemType.SubjectsList, Title="Dalykai"},
             new Models.MenuItem { Id = MenuItemType.TOP10Subjects, Title="TOP10 dalykai"},
             new Models.MenuItem { Id = MenuItemType.TOP10Lecturers, Title="TOP10 dėstytojai"},
-            new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title="TOP5 BUS dalykai"}
+            new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title="TOP5 BUS dalykai"},
+            new Models.MenuItem { Id = MenuItemType.CompareLecturers, Title="Dėstytojų palyginimas"},
+            new Models.MenuItem { Id = MenuItemType.CompareSubjects, Title="Dalykų palyginimas"}
         };
 
         public static void LogIn()
@@ -27,6 +29,8 @@ namespace VUA_App.Services
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP10Subjects, Title = "TOP10 dalykai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP10Lecturers, Title = "TOP10 dėstytojai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title = "TOP5 BUS dalykai" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.CompareLecturers, Title = "Dėstytojų palyginimas" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.CompareSubjects, Title = "Dalykų palyginimas" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.EvaluateLecturer, Title = "Įvertinti dėstytoją" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.EvaluateSubject, Title = "Įvertinti dalyką" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.ViewActivityHistory, Title = "Veiklos istorija" });
@@ -46,6 +50,8 @@ namespace VUA_App.Services
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP10Subjects, Title = "TOP10 dalykai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP10Lecturers, Title = "TOP10 dėstytojai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title = "TOP5 BUS dalykai" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.CompareLecturers, Title = "Dėstytojų palyginimas" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.CompareSubjects, Title = "Dalykų palyginimas" });
         }
     }
 }

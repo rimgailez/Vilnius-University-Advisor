@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="VUA_App.Views.EvaluateSubject">
     <ContentPage.Content>
+        <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -28,12 +29,38 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-                    <Label Text="Privalomasis" Grid.Row="0" Grid.Column="0" XAlign ="End" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
-                    <CheckBox x:Name ="IsMandatory" IsChecked="False" Grid.Row="0" Grid.Column="1" CheckedChanged="IsMandatory_CheckedChanged"/>
-                    <Label Text="Pasirenkamasis" Grid.Row="0" Grid.Column="2" XAlign ="End" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
-                    <CheckBox x:Name ="IsOptional" IsChecked="False" Grid.Row="0" Grid.Column="3" CheckedChanged="IsOptional_CheckedChanged"/>
-                    <Label Text="BUS" Grid.Row="0" Grid.Column="4" XAlign ="End" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
-                    <CheckBox x:Name ="IsBUS" IsChecked="False" Grid.Row="0" Grid.Column="5" CheckedChanged="IsBUS_CheckedChanged"/>
+                    <Label Text="Privalomasis" 
+                           Grid.Row="0" 
+                           Grid.Column="0" 
+                           XAlign ="End" 
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="EndAndExpand"/>
+                    <CheckBox x:Name ="IsMandatory" 
+                              IsChecked="False" 
+                              Grid.Row="0" 
+                              Grid.Column="1" 
+                              CheckedChanged="IsMandatory_CheckedChanged"/>
+                    <Label Text="Pasirenkamasis" 
+                           Grid.Row="0" Grid.Column="2" 
+                           XAlign ="End" 
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="EndAndExpand"/>
+                    <CheckBox x:Name ="IsOptional" 
+                              IsChecked="False" 
+                              Grid.Row="0" 
+                              Grid.Column="3" 
+                              CheckedChanged="IsOptional_CheckedChanged"/>
+                    <Label Text="BUS" 
+                           Grid.Row="0" 
+                           Grid.Column="4" 
+                           XAlign ="End" 
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="EndAndExpand"/>
+                    <CheckBox x:Name ="IsBUS" 
+                              IsChecked="False" 
+                              Grid.Row="0" 
+                              Grid.Column="5" 
+                              CheckedChanged="IsBUS_CheckedChanged"/>
                 </Grid>
                 <Picker x:Name="SelectSubjectFaculty"
                 Title="Fakultetas:"/>
@@ -69,5 +96,6 @@
                 <Button Text="Pateikti įvertinimą" Clicked="OnSubjEvaluation"/>
             </StackLayout>
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="VUA_App.Views.EvaluateLecturer">
     <ContentPage.Content>
+        <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -50,5 +51,6 @@
                 <Button Text="Pateikti įvertinimą" Clicked="OnLectEvaluation"/>
             </StackLayout>
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
