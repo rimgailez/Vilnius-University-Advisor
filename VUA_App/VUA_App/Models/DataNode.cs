@@ -8,6 +8,7 @@ namespace VUA_App.Models
 {
     public class DataNode
     {
+        public int ID { get; set; }
         public string name { get; set; }
         private Faculty facultyField;
         public Faculty faculty

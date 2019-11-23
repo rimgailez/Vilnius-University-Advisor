@@ -109,5 +109,11 @@ namespace VUA_api.Controllers
         {
             return dataMaster.GetSubjectSearchResultsByType(term, faculty, isOptional, isBUS);
         }
+
+        [HttpGet("checkIfWasEvaluated/{id}")]
+        public Boolean CkeckIfWasEvaluated(int id)
+        {
+            return dataMaster.CheckIfSubjectWasEvaluated(id);
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VUA_api.Context;
-using VUA_api.Models;
+using VUA_api;
 using System.Data.SqlClient;
 using System.Data;
 using Microsoft.Extensions.Configuration;
@@ -158,6 +158,7 @@ namespace VUA_api
                                where subject.isBUS == true && subject.faculty == faculty
                                select subject).ToList();
             }
+            BUSSubjects.Sort();
             return BUSSubjects;
         }
 
@@ -167,17 +168,22 @@ namespace VUA_api
                                           where subject.isOptional == isOptional &&
                                                 subject.faculty == faculty
                                           select subject).ToList();
+            someSubjects.Sort();
             return someSubjects;
         }
 
         public List<Lecturer> GetLecturersByFaculty(Faculty faculty)
         {
-            return lecturers.Where(lect => lect.faculty == faculty).Include(lecturer => lecturer.reviews).ToList();
+            List<Lecturer> lects = lecturers.Where(lect => lect.faculty == faculty).Include(lecturer => lecturer.reviews).ToList();
+            lects.Sort();
+            return lects;
         }
 
         public List<Subject> GetSubjectsByFaculty(Faculty faculty)
         {
-            return subjects.Where(subj => subj.faculty == faculty).Include(subject => subject.reviews).ToList();
+            List<Subject> subjs = subjects.Where(subj => subj.faculty == faculty).Include(subject => subject.reviews).ToList();
+            subjs.Sort();
+            return subjs;
         }
 
         public List<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
@@ -195,6 +201,7 @@ namespace VUA_api
                                 where subj.name.ToLower().Contains(enteredWord.ToLower()) && subj.faculty == faculty
                                 select subj).ToList();
             }
+            searchResult.Sort();
             return searchResult;
         }
 
@@ -213,6 +220,7 @@ namespace VUA_api
                                 where lect.name.ToLower().Contains(enteredWord.ToLower()) && lect.faculty == faculty
                                 select lect).ToList();
             }
+            searchResult.Sort();
             return searchResult;
         }
 
@@ -253,7 +261,7 @@ namespace VUA_api
 
         public void AddToUserHistory(string activity)
         {
-            foreach (User user in users)
+            foreach (User user in users.Include(user => user.userHistory))
             {
                 if (user.Equals(currentUser))
                 {
@@ -280,7 +288,7 @@ namespace VUA_api
 
         public List<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
         {
-            return studyProgrammes.Where(studyProgramme => studyProgramme.faculty == faculty).ToList();
+            return studyProgrammes.Where(studyProgramme => studyProgramme.faculty == faculty).OrderBy(studyProgr => studyProgr.name).ToList();
         }
 
         public List<User> GetTop3ActiveUsers()
@@ -320,8 +328,10 @@ namespace VUA_api
                                           where subject.isOptional == isOptional &&
                                                 subject.isBUS == isBUS
                                           select subject).ToList();
+            someSubjects.Sort();
             return someSubjects;
         }
+
         public List<Subject> GetSubjectSearchResultsByType(string searchTerm, Faculty faculty, bool isOptional, bool isBUS)
         {
             List<Subject> searchResult;
@@ -341,6 +351,7 @@ namespace VUA_api
                                           where subject.isOptional == isOptional &&
                                                 subject.isBUS == isBUS
                                           select subject).ToList();
+            someSubjects.Sort();
             return someSubjects;
         }
 
@@ -438,6 +449,44 @@ namespace VUA_api
 
                 connection.Close();
             }
+        }
+
+        public Boolean CheckIfLecturerWasEvaluated(int id)
+        {
+            foreach(Lecturer lect in lecturers.Include(lect => lect.reviews))
+            {
+                if (lect.ID.Equals(id))
+                {
+                    foreach(LecturerReview lectReview in lect.reviews)
+                    {
+                        if ((lectReview.username).Equals(currentUser.userName))
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            }
+            return false;
+        }
+
+        public Boolean CheckIfSubjectWasEvaluated(int id)
+        {
+            foreach (Subject subj in subjects.Include(subj => subj.reviews))
+            {
+                if (subj.ID.Equals(id))
+                {
+                    foreach (SubjectReview subjReview in subj.reviews)
+                    {
+                        if ((subjReview.username).Equals(currentUser.userName))
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            }
+            return false;
         }
     }
 }

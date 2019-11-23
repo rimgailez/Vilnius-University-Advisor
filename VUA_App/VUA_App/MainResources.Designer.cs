@@ -61,6 +61,24 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dėstytojas jau buvo įvertintas.
+        /// </summary>
+        internal static string AlreadyEvaluatedLecturer {
+            get {
+                return ResourceManager.GetString("AlreadyEvaluatedLecturer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dalykas jau buvo įvertintas.
+        /// </summary>
+        internal static string AlreadyEvaluatedSubject {
+            get {
+                return ResourceManager.GetString("AlreadyEvaluatedSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Anonimas.
         /// </summary>
         internal static string AnonymousUser {
@@ -102,6 +120,33 @@ namespace VUA_App {
         internal static string CancelRegistration {
             get {
                 return ResourceManager.GetString("CancelRegistration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Negalima įvertinti dėstytojo.
+        /// </summary>
+        internal static string CantEvaluateLecturer {
+            get {
+                return ResourceManager.GetString("CantEvaluateLecturer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Negalima įvertinti dalyko.
+        /// </summary>
+        internal static string CantEvaluateSubject {
+            get {
+                return ResourceManager.GetString("CantEvaluateSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pasirinkite ar dalykas yra privalomasis, ar pasirenkamasis.
+        /// </summary>
+        internal static string ChooseOptionalOrMandatory {
+            get {
+                return ResourceManager.GetString("ChooseOptionalOrMandatory", resourceCulture);
             }
         }
         

@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="VUA_App.Views.TOP5BUSSubjects">
+    <ScrollView>
     <StackLayout>
         <Label Text="TOP5 BUS dalykai"
                FontSize="Title"
@@ -46,4 +47,5 @@
             </ListView>
         </Grid>
     </StackLayout>
+    </ScrollView>
 </ContentPage>

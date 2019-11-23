@@ -133,14 +133,19 @@ namespace VUA_App.Views
 
         public async void OnSubjEvaluation(object sender, EventArgs e)
         {
+            Subject selectedSubject = DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SelectSubjectFaculty.SelectedIndex).ToList().Find(subj => subj.name.Equals(SelectSubject.SelectedItem.ToString()));
             if (SelectSubjectFaculty.SelectedItem == null || SelectSubject.SelectedItem == null || NumericEvaluation.Text == "" ||
                 SubjectComments.Text == "" || UserName.SelectedItem == null)
             {
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
             }
+            else if (DataFetcher.GetInstance().CheckIfSubjectWasEvaluated(selectedSubject.ID))
+            {
+                await DisplayAlert(MainResources.CantEvaluateSubject, MainResources.AlreadyEvaluatedSubject, "OK");
+                ClearFields();
+            }
             else
             {
-                Subject selectedSubject = DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SelectSubjectFaculty.SelectedIndex).ToList().Find(subj => subj.name.Equals(SelectSubject.SelectedItem.ToString()));
                 DataFetcher.GetInstance().EvaluateSubject(selectedSubject, (float)ConvertStringToDecimal(NumericEvaluation.Text), SubjectComments.Text, UserName.SelectedItem.ToString());
                 DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedSubject + selectedSubject.name + ";");
                 await DisplayAlert(MainResources.SuccessfulSubjEvaluation, MainResources.EvaluationCaption, "OK");

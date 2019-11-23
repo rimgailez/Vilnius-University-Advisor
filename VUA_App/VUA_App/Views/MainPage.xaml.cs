@@ -65,6 +65,12 @@ namespace VUA_App.Views
                     case (int)MenuItemType.TOP5BUSSubjects:
                         MenuPages.Add(id, new NavigationPage(new TOP5BUSSubjects()));
                         break;
+                    case (int)MenuItemType.CompareLecturers:
+                        MenuPages.Add(id, new NavigationPage(new CompareLecturers()));
+                        break;
+                    case (int)MenuItemType.CompareSubjects:
+                        MenuPages.Add(id, new NavigationPage(new CompareSubjects()));
+                        break;
                     case (int)MenuItemType.ViewActivityHistory:
                         MenuPages.Add(id, new NavigationPage(new ActivityHistory()));
                         break;

@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="VUA_App.Views.TOP10Lecturers">
+    <ScrollView>
     <StackLayout>
         <Label Text="TOP10 dėstytojai"
                FontSize="Title"
@@ -46,4 +47,5 @@
             </ListView>
         </Grid>
     </StackLayout>
+    </ScrollView>
 </ContentPage>

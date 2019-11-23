@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="VUA_App.Views.CreateAccount">
+    <ScrollView>
     <StackLayout>
         <Label Text="Vardas Pavardė:"/>
         <Entry x:Name="Name"
@@ -33,4 +34,5 @@
         <Button Text="Registruotis"
                 Clicked="OnRegister"/>
     </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -50,7 +50,9 @@ namespace VUA_api.Controllers
         [HttpGet]
         public IEnumerable<Lecturer> GetAll()
         {
-            return dataMaster.lecturers.Include(lecturer => lecturer.reviews).ToList();
+            List<Lecturer> lects = dataMaster.lecturers.Include(lecturer => lecturer.reviews).ToList();
+            lects.Sort();
+            return lects;
         }
 
         [HttpGet("faculty/{faculty}")]
@@ -76,6 +78,12 @@ namespace VUA_api.Controllers
         {
             //new Scraper.ScraperMain(dataMaster.jsonReaderWriter.projectPath).StartScrap();
             return "Scraper is done";
+        }
+
+        [HttpGet("checkIfWasEvaluated/{id}")]
+        public Boolean CkeckIfWasEvaluated(int id)
+        {
+            return dataMaster.CheckIfLecturerWasEvaluated(id);
         }
     }
 }

@@ -36,14 +36,19 @@ namespace VUA_App.Views
 
         public async void OnLectEvaluation(object sender, EventArgs e)
         {
+            Lecturer selectedLecturer = DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)SelectLecturerFaculty.SelectedIndex).ToList().Find(lect => lect.name.Equals(SelectLecturer.SelectedItem.ToString()));
             if ( SelectLecturerFaculty.SelectedItem == null || SelectLecturer.SelectedItem == null || NumericEvaluation.Text == "" ||
                 LecturerComments.Text == "" || UserName.SelectedItem == null )
             {
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
             }
+            else if(DataFetcher.GetInstance().CheckIfLecturerWasEvaluated(selectedLecturer.ID))
+            {
+                await DisplayAlert(MainResources.CantEvaluateLecturer, MainResources.AlreadyEvaluatedLecturer, "OK");
+                ClearFields();
+            }
             else
             {
-                Lecturer selectedLecturer = DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)SelectLecturerFaculty.SelectedIndex).ToList().Find(lect => lect.name.Equals(SelectLecturer.SelectedItem.ToString()));
                 DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)ConvertStringToDecimal(NumericEvaluation.Text), LecturerComments.Text, UserName.SelectedItem.ToString());
                 DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedLecturer + selectedLecturer.name + ";");
                 await DisplayAlert(MainResources.SuccessfulLectEvaluation, MainResources.EvaluationCaption, "OK");

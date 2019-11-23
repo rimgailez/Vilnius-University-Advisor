@@ -265,6 +265,7 @@ namespace VUA_App.Services
             string request = "subject/Type/" + isOptional + "/" + isBUS;
             return GetEnumerableFromAPI<Subject>(request).Result;
         }
+
         public IEnumerable<Subject> GetSubjectSearchResultsByType(Faculty faculty, string searchTerm, bool isOptional, bool isBUS)
         {
             string request = "subject/SearchType/" + (int)faculty + "/" + searchTerm + "/" + isOptional + "/" + isBUS;
@@ -340,6 +341,16 @@ namespace VUA_App.Services
             await PostObjectAsync("user/deleteUser", user);
         }
 
+        public Boolean CheckIfLecturerWasEvaluated(int id)
+        {
+            string request = "lecturer/checkIfWasEvaluated/" + id.ToString();
+            return GetObjectFromAPI<Boolean>(request).Result;
+        }
 
+        public Boolean CheckIfSubjectWasEvaluated(int id)
+        {
+            string request = "subject/checkIfWasEvaluated/" + id.ToString();
+            return GetObjectFromAPI<Boolean>(request).Result;
+        }
     }
 }
