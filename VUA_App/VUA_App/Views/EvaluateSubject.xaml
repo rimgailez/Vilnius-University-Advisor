@@ -7,16 +7,7 @@
              x:Class="VUA_App.Views.EvaluateSubject">
     <ContentPage.Content>
         <ScrollView>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <StackLayout Grid.Row="0" Grid.Column="0">
+            <StackLayout>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -66,8 +57,6 @@
                 Title="Fakultetas:"/>
                 <Picker x:Name="SelectSubject"
                 Title="Mokomasis dalykas:"/>
-            </StackLayout>
-            <StackLayout Grid.Row="1" Grid.Column="0">
                 <Label Text="Dalyko įvertinimas:"/>
                 <Grid x:Name="EmojiGrid">
                     <Grid.RowDefinitions>
@@ -88,14 +77,11 @@
                 </Grid>
                 <Label Text="" x:Name="EvaluationLabel"/>
                 <Entry x:Name="NumericEvaluation" IsVisible="False"/>
-            </StackLayout>
-            <StackLayout Grid.Row="2" Grid.Column="0">
                 <Picker x:Name="UserName" Title="Prisijungimo vardas:"/>
                 <Label Text="Pasidalinkite įžvalgomis apie šį dalyką:"/>
                 <Editor x:Name="SubjectComments" Text="" />
                 <Button Text="Pateikti įvertinimą" Clicked="OnSubjEvaluation"/>
             </StackLayout>
-        </Grid>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -38,6 +38,7 @@ namespace VUA_App.Services
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.RegisterSubject, Title = "Registruoti dalyką" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.RegisterLecturer, Title = "Registruoti dėstytoją" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.UpdateUserInfo, Title = "Naudotojo anketos nustatymai" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.DoCareerTest, Title = "Karjeros testas" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.LogOut, Title = "Atsijungti" });
         }
         public static void LogOut()

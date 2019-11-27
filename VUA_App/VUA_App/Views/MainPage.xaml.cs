@@ -86,6 +86,9 @@ namespace VUA_App.Views
                     case (int)MenuItemType.UpdateUserInfo:
                         MenuPages.Add(id, new NavigationPage(new UpdateUserInfo()));
                         break;
+                    case (int)MenuItemType.DoCareerTest:
+                        MenuPages.Add(id, new NavigationPage(new RecommendedStudies()));
+                        break;
                     case (int)MenuItemType.LogOut:
                         MenuItems.LogOut();
                         MenuPages.Add(id, new NavigationPage(new LogIn()));
