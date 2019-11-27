@@ -18,7 +18,8 @@ namespace VUA_App.Services
             new Models.MenuItem { Id = MenuItemType.TOP10Lecturers, Title="TOP10 dėstytojai"},
             new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title="TOP5 BUS dalykai"},
             new Models.MenuItem { Id = MenuItemType.CompareLecturers, Title="Dėstytojų palyginimas"},
-            new Models.MenuItem { Id = MenuItemType.CompareSubjects, Title="Dalykų palyginimas"}
+            new Models.MenuItem { Id = MenuItemType.CompareSubjects, Title="Dalykų palyginimas"},
+            new Models.MenuItem { Id = MenuItemType.DoCareerTest, Title="Karjeros testas"}
         };
 
         public static void LogIn()
@@ -53,6 +54,7 @@ namespace VUA_App.Services
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title = "TOP5 BUS dalykai" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.CompareLecturers, Title = "Dėstytojų palyginimas" });
             menuItems.Add(new Models.MenuItem { Id = MenuItemType.CompareSubjects, Title = "Dalykų palyginimas" });
+            menuItems.Add(new Models.MenuItem { Id = MenuItemType.DoCareerTest, Title = "Karjeros testas" });
         }
     }
 }

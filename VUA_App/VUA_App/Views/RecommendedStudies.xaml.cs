@@ -55,6 +55,7 @@ namespace VUA_App.Views
             }
         }
 
+        #region left image button clicked
         public void OnFirstImageButtonClicked(object sender, EventArgs e)
         {
             switch (clickCount)
@@ -328,7 +329,9 @@ namespace VUA_App.Views
                     break;
             }
         }
+        #endregion
 
+        #region right image button clicked
         public void OnSecondImageButtonClicked(object sender, EventArgs e)
         {
             switch (clickCount)
@@ -390,7 +393,7 @@ namespace VUA_App.Views
                     break;
             }
         }
-
+        #endregion
         public async void DisplayRecommendedProgrammes()
         {
             recommendedProgrammes = "";
@@ -411,6 +414,7 @@ namespace VUA_App.Views
             SetInitialValues();
         }
 
+        #region switchng images and labels
         public void SwitchingValues(object sender, EventArgs e)
         {
             switch (clickCount)
@@ -577,6 +581,8 @@ namespace VUA_App.Views
                     break;
             }
         }
+        #endregion
+
         private void SetLikeDislikePageNo()
         {
             FirstImage.Source = "like.PNG";
