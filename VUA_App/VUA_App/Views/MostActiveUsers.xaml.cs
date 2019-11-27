@@ -17,7 +17,7 @@ namespace VUA_App.Views
         public MostActiveUsers()
         {
             InitializeComponent();
-            List<User> users = DataFetcher.GetInstance().GetTop3ActiveUsers();
+            List<User> users = DataFetcher.GetInstance().GetTop3ActiveUsers().Result;
             FirstPlaceLabel.Text = users.ElementAt(0).userName;
             SecondPlaceLabel.Text = users.ElementAt(1).userName;
             ThirdPlaceLabel.Text = users.ElementAt(2).userName;

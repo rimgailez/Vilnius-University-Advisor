@@ -22,19 +22,19 @@ namespace VUA_App.Views
             LecturerFaculty2.SelectedIndexChanged += FacultySelected2;
         }
 
-        private void FacultySelected1(object sender, EventArgs e)
+        private async void FacultySelected1(object sender, EventArgs e)
         {
             LecturerName1.Items.Clear();
-            foreach (Lecturer lect in DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty1.SelectedIndex))
+            foreach (Lecturer lect in await DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty1.SelectedIndex))
             {
                 LecturerName1.Items.Add(lect.name);
             }
         }
 
-        private void FacultySelected2(object sender, EventArgs e)
+        private async void FacultySelected2(object sender, EventArgs e)
         {
             LecturerName2.Items.Clear();
-            foreach (Lecturer lect in DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty2.SelectedIndex))
+            foreach (Lecturer lect in await DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty2.SelectedIndex))
             {
                 LecturerName2.Items.Add(lect.name);
             }
@@ -54,8 +54,8 @@ namespace VUA_App.Views
                 Evaluation2.Text = "";
                 Number2.Text = "";
                 Comments2.Text = "";
-                Lecturer selectedLecturer1 = DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty1.SelectedIndex).ToList().Find(lect => lect.name.Equals(LecturerName1.SelectedItem.ToString()));
-                Lecturer selectedLecturer2 = DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty2.SelectedIndex).ToList().Find(lect => lect.name.Equals(LecturerName2.SelectedItem.ToString()));
+                Lecturer selectedLecturer1 = (await DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty1.SelectedIndex)).ToList().Find(lect => lect.name.Equals(LecturerName1.SelectedItem.ToString()));
+                Lecturer selectedLecturer2 = (await DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)LecturerFaculty2.SelectedIndex)).ToList().Find(lect => lect.name.Equals(LecturerName2.SelectedItem.ToString()));
                 Evaluation1.Text = MainResources.DataNodeEvaluation + selectedLecturer1.score.ToString();
                 Number1.Text = MainResources.NumberOfReviews + selectedLecturer1.numberOfReviews.ToString();
                 int nr = 1;

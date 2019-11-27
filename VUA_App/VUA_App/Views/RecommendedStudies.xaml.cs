@@ -27,14 +27,14 @@ namespace VUA_App.Views
             SetInitialValues();
         }
 
-        private void SetInitialValues()
+        private async void SetInitialValues()
         {
             clickCount = 1;
             recommendedProgrammes = "";
             studyProgrammesScore.Clear();
             foreach (Faculty faculty in Enum.GetValues(typeof(Faculty)))
             {
-                foreach (StudyProgramme stud in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(faculty))
+                foreach (StudyProgramme stud in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(faculty))
                 {
                     studyProgrammesScore.Add(stud.name, 0);
                 }
@@ -56,7 +56,7 @@ namespace VUA_App.Views
         }
 
         #region left image button clicked
-        public void OnFirstImageButtonClicked(object sender, EventArgs e)
+        public async void OnFirstImageButtonClicked(object sender, EventArgs e)
         {
             switch (clickCount)
             {
@@ -64,7 +64,7 @@ namespace VUA_App.Views
                     studyProgrammesScore["Meteorologija ir hidrologija"]++;
                     studyProgrammesScore["Biochemija"]++;
                     studyProgrammesScore["Geologija"]++;
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences)) 
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences)) 
                     {
                         studyProgrammesScore[programme.name]++;
                     }
@@ -73,152 +73,152 @@ namespace VUA_App.Views
                     studyProgrammesScore["Apskaita ir auditas"]++;
                     studyProgrammesScore["Informacijos sistemos ir kibernetinė sauga"]++;
                     studyProgrammesScore["Verslo informacijos vadyba"]++;
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 3:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Communication))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Communication))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 4:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     studyProgrammesScore["Geografija"]++;
                     break;
                 case 5:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 6:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 7:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 8:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 9:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 10:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 11:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 12:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 13:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 14:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.International_Relations_and_Political_Science))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.International_Relations_and_Political_Science))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 15:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 16:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Communication))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Communication))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.International_Relations_and_Political_Science))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.International_Relations_and_Political_Science))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 17:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 18:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
@@ -248,80 +248,80 @@ namespace VUA_App.Views
                     studyProgrammesScore["Slauga"]++;
                     break;
                 case 21:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 22:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Chemistry_and_Geosciences))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Chemistry_and_Geosciences))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 23:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 24:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 25:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Chemistry_and_Geosciences))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Chemistry_and_Geosciences))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Life_Sciences))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Medicine))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 26:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 27:
                     studyProgrammesScore["Programų sistemos"]++;
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Economics_and_Business_Administration))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
@@ -332,16 +332,16 @@ namespace VUA_App.Views
         #endregion
 
         #region right image button clicked
-        public void OnSecondImageButtonClicked(object sender, EventArgs e)
+        public async void OnSecondImageButtonClicked(object sender, EventArgs e)
         {
             switch (clickCount)
             {
                 case 1:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Business))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.International_Relations_and_Political_Science))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.International_Relations_and_Political_Science))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
@@ -349,41 +349,41 @@ namespace VUA_App.Views
                 case 2:
                     studyProgrammesScore["Vadyba"]++;
                     studyProgrammesScore["Ekonomika"]++;
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Communication))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Communication))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 3:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Mathematics_and_Informatics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Physics))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 4:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.History))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philology))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
                     break;
                 case 5:
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Philosophy))
                     {
                         studyProgrammesScore[programme.name]++;
                     }
-                    foreach (StudyProgramme programme in DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
+                    foreach (StudyProgramme programme in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(Faculty.Law))
                     {
                         studyProgrammesScore[programme.name]++;
                     }

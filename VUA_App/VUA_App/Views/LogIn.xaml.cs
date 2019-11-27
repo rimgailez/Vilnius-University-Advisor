@@ -23,20 +23,20 @@ namespace VUA_App.Views
         {
             if (Username.Text.Equals("") || Password.Text.Equals("")) 
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
-            else if (!DataFetcher.GetInstance().CheckIfUserNameExists(Username.Text))
+            else if (!await DataFetcher.GetInstance().CheckIfUserNameExists(Username.Text))
             {
                 await DisplayAlert(MainResources.UserNotFound, MainResources.UserNotFoundCaption, "OK");
                 Username.Text = "";
                 Password.Text = "";
             }
-            else if (!DataFetcher.GetInstance().CheckIfCorrectPassword(Username.Text, Password.Text))
+            else if (!await DataFetcher.GetInstance().CheckIfCorrectPassword(Username.Text, Password.Text))
             {
                 await DisplayAlert(MainResources.WrongPassword, MainResources.WrongPasswordCaption, "OK");
                 Password.Text = "";
             }
             else
             {
-                DataFetcher.GetInstance().SetCurrentUser(DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(Username.Text)));
+                DataFetcher.GetInstance().SetCurrentUser((await DataFetcher.GetInstance().GetAllUsers()).ToList().Find(us => us.userName.Equals(Username.Text)));
                 await DisplayAlert(MainResources.SuccessfulLogIn, MainResources.LogInCaption, "OK");
                 MenuItems.LogIn();
                 await RootPage.NavigateFromMenu((int)MenuItemType.LecturersList);

@@ -21,31 +21,31 @@ namespace VUA_App.Views
             SelectSubjectFaculty.SelectedIndexChanged += FacultyChosen;
 
             UserName.Items.Clear();
-            UserName.Items.Add(DataFetcher.GetInstance().GetCurrentUser().userName);
+            UserName.Items.Add(DataFetcher.GetInstance().GetCurrentUser().Result.userName);
             UserName.Items.Add(MainResources.AnonymousUser);
         }
 
-        private void FacultyChosen(object sender, EventArgs e)
+        private async void FacultyChosen(object sender, EventArgs e)
         {
             SelectSubject.Items.Clear();
 
             if (IsBUS.IsChecked)
             {
-                foreach (Subject subj in DataFetcher.GetInstance().GetBUSSubjects())
+                foreach (Subject subj in await DataFetcher.GetInstance().GetBUSSubjects())
                 {
                     SelectSubject.Items.Add(subj.name);
                 }
             }
             else
             {
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, (Faculty)SelectSubjectFaculty.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, (Faculty)SelectSubjectFaculty.SelectedIndex))
                 {
                     SelectSubject.Items.Add(subj.name);
                 }
             }
         }
 
-        private void IsMandatory_CheckedChanged(object sender, EventArgs e)
+        private async void IsMandatory_CheckedChanged(object sender, EventArgs e)
         {
             if (IsMandatory.IsChecked)
             {
@@ -57,7 +57,7 @@ namespace VUA_App.Views
                 {
                     SelectSubject.Items.Clear();
                     Faculty faculty = (Faculty)SelectSubjectFaculty.SelectedIndex;
-                    foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, faculty))
+                    foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, faculty))
                     {
                         SelectSubject.Items.Add(subj.name);
                     }
@@ -69,7 +69,7 @@ namespace VUA_App.Views
             }
         }
 
-        private void IsOptional_CheckedChanged(object sender, EventArgs e)
+        private async void IsOptional_CheckedChanged(object sender, EventArgs e)
         {
             if (IsOptional.IsChecked)
             {
@@ -80,7 +80,7 @@ namespace VUA_App.Views
                 {
                     SelectSubject.Items.Clear();
                     Faculty faculty = (Faculty)SelectSubjectFaculty.SelectedIndex;
-                    foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, faculty))
+                    foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, faculty))
                     {
                         SelectSubject.Items.Add(subj.name);
                     }
@@ -92,7 +92,7 @@ namespace VUA_App.Views
             }
         }
 
-        private void IsBUS_CheckedChanged(object sender, EventArgs e)
+        private async void IsBUS_CheckedChanged(object sender, EventArgs e)
         {
             Faculty faculty = (Faculty)SelectSubjectFaculty.SelectedIndex;
 
@@ -101,7 +101,7 @@ namespace VUA_App.Views
                 if (SelectSubjectFaculty.SelectedItem == null)
                 {
                     SelectSubject.Items.Clear();
-                    foreach (Subject subj in DataFetcher.GetInstance().GetBUSSubjects())
+                    foreach (Subject subj in await DataFetcher.GetInstance().GetBUSSubjects())
                     {
                         SelectSubject.Items.Add(subj.name);
                     }
@@ -110,7 +110,7 @@ namespace VUA_App.Views
                 {
                     SelectSubject.Items.Clear();
                     SelectSubject.ItemsSource = null;
-                    foreach (Subject subj in DataFetcher.GetInstance().GetBUSSubjects(faculty))
+                    foreach (Subject subj in await DataFetcher.GetInstance().GetBUSSubjects(faculty))
                     {
                         SelectSubject.Items.Add(subj.name);
                     }
@@ -123,7 +123,7 @@ namespace VUA_App.Views
                 {
                     SelectSubject.Items.Clear();
                     SelectSubject.ItemsSource = null;
-                    foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, faculty))
+                    foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(IsOptional.IsChecked, faculty))
                     {
                         SelectSubject.Items.Add(subj.name);
                     }
@@ -133,13 +133,13 @@ namespace VUA_App.Views
 
         public async void OnSubjEvaluation(object sender, EventArgs e)
         {
-            Subject selectedSubject = DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SelectSubjectFaculty.SelectedIndex).ToList().Find(subj => subj.name.Equals(SelectSubject.SelectedItem.ToString()));
+            Subject selectedSubject =(await DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SelectSubjectFaculty.SelectedIndex)).ToList().Find(subj => subj.name.Equals(SelectSubject.SelectedItem.ToString()));
             if (SelectSubjectFaculty.SelectedItem == null || SelectSubject.SelectedItem == null || NumericEvaluation.Text == "" ||
                 SubjectComments.Text == "" || UserName.SelectedItem == null)
             {
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
             }
-            else if (DataFetcher.GetInstance().CheckIfSubjectWasEvaluated(selectedSubject.ID))
+            else if (await DataFetcher.GetInstance().CheckIfSubjectWasEvaluated(selectedSubject.ID))
             {
                 await DisplayAlert(MainResources.CantEvaluateSubject, MainResources.AlreadyEvaluatedSubject, "OK");
                 ClearFields();

@@ -19,13 +19,13 @@ namespace VUA_App.ViewModels
             LoadActivityCommand = new Command(() => ExecuteLoadActivityCommand());
         }
 
-        void ExecuteLoadActivityCommand()
+        async void ExecuteLoadActivityCommand()
         {
             if (IsBusy)
                 return;
             IsBusy = true;
             IEnumerable<Activity> activity;
-            activity = DataFetcher.GetInstance().GetHistory();
+            activity = await DataFetcher.GetInstance().GetHistory();
             Activity.Clear();
             foreach (Activity act in activity) Activity.Add(act);
             IsBusy = false;

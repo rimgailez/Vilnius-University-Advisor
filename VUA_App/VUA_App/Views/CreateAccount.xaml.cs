@@ -23,10 +23,10 @@ namespace VUA_App.Views
             ChooseFaculty.SelectedIndexChanged += FacultyChosen;
         }
 
-        private void FacultyChosen(object sender, EventArgs e)
+        private async void FacultyChosen(object sender, EventArgs e)
         {
             ChooseStudyProgramme.Items.Clear();
-            foreach(StudyProgramme studies in DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex))
+            foreach(StudyProgramme studies in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex))
             {
                 ChooseStudyProgramme.Items.Add(studies.name);
             }
@@ -59,7 +59,7 @@ namespace VUA_App.Views
                 Password.Text = "";
                 RepeatedPassword.Text = "";
             }
-            else if (DataFetcher.GetInstance().CheckIfUserNameExists(UserName.Text))
+            else if (await DataFetcher.GetInstance().CheckIfUserNameExists(UserName.Text))
             {
                 await DisplayAlert(MainResources.UserAlreadyExists, MainResources.UserNameExistsCaption, "OK");
             }

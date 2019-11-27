@@ -22,7 +22,7 @@ namespace VUA_App.Views
         {
             InitializeComponent();
 
-            User currentuser = DataFetcher.GetInstance().GetCurrentUser();
+            User currentuser = DataFetcher.GetInstance().GetCurrentUser().Result;
             UserName.Text = currentuser.userName;
             Name.Text = currentuser.name;
             PhoneNumber.Text = currentuser.phoneNumber;
@@ -32,16 +32,16 @@ namespace VUA_App.Views
             ChooseFaculty.SelectedIndex = (int)currentuser.userFaculty;
             FacultyChosen(this, new EventArgs());
 
-            StudyProgramme studProgram = DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex).ToList().Find(prog => prog.name.Equals(currentuser.studyProgram));
-            ChooseStudyProgramme.SelectedIndex = DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex).ToList().IndexOf(studProgram);
+            StudyProgramme studProgram = DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex).Result.ToList().Find(prog => prog.name.Equals(currentuser.studyProgram));
+            ChooseStudyProgramme.SelectedIndex = DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex).Result.ToList().IndexOf(studProgram);
             
             ChooseFaculty.SelectedIndexChanged += FacultyChosen;
         }
 
-        private void FacultyChosen(object sender, EventArgs e)
+        private async void FacultyChosen(object sender, EventArgs e)
         {
             ChooseStudyProgramme.Items.Clear();
-            foreach (StudyProgramme studies in DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex))
+            foreach (StudyProgramme studies in await DataFetcher.GetInstance().GetStudyProgrammesByFaculty((Faculty)ChooseFaculty.SelectedIndex))
             {
                 ChooseStudyProgramme.Items.Add(studies.name);
             }
@@ -70,8 +70,8 @@ namespace VUA_App.Views
             else
             {
                 Faculty faculty = (Faculty)ChooseFaculty.SelectedIndex;
-                DataFetcher.GetInstance().UpdateInfo(DataFetcher.GetInstance().GetCurrentUser(), Name.Text, faculty,
-                    DataFetcher.GetInstance().GetStudyProgrammesByFaculty(faculty).ToList().ElementAt(ChooseStudyProgramme.SelectedIndex).name,
+                DataFetcher.GetInstance().UpdateInfo(await DataFetcher.GetInstance().GetCurrentUser(), Name.Text, faculty,
+                    (await DataFetcher.GetInstance().GetStudyProgrammesByFaculty(faculty)).ToList().ElementAt(ChooseStudyProgramme.SelectedIndex).name,
                     EMail.Text, PhoneNumber.Text);
                 await DisplayAlert(MainResources.DataChangedSuccessfully, MainResources.UpdateCaption, "OK");
             }
@@ -83,7 +83,7 @@ namespace VUA_App.Views
             {
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
             }
-            else if(!DataFetcher.GetInstance().CheckIfCorrectPassword(UserName.Text, CurrentPassword.Text))
+            else if(!await DataFetcher.GetInstance().CheckIfCorrectPassword(UserName.Text, CurrentPassword.Text))
             {
                 await DisplayAlert(MainResources.WrongPassword, MainResources.WrongPasswordCaption, "OK");
                 CurrentPassword.Text = "";
@@ -96,7 +96,7 @@ namespace VUA_App.Views
             }
             else
             {
-                DataFetcher.GetInstance().UpdatePassword(DataFetcher.GetInstance().GetCurrentUser(), NewPassword.Text);
+                DataFetcher.GetInstance().UpdatePassword(await DataFetcher.GetInstance().GetCurrentUser(), NewPassword.Text);
                 await DisplayAlert(MainResources.PasswordChangedSuccessfully, MainResources.UpdateCaption, "OK");
                 CurrentPassword.Text = "";
                 NewPassword.Text = "";
@@ -109,7 +109,7 @@ namespace VUA_App.Views
             var answer = await DisplayAlert(MainResources.DeleteUser, MainResources.DeleteUserCaption, "OK", "Cancel");
             if (answer)
             {
-                DataFetcher.GetInstance().DeleteUser(DataFetcher.GetInstance().GetCurrentUser());
+                DataFetcher.GetInstance().DeleteUser(await DataFetcher.GetInstance().GetCurrentUser());
                 await DisplayAlert(MainResources.SuccessfulDeletion, MainResources.SuccessfulDeletionCaption, "OK");
                 MenuItems.LogOut();
                 await RootPage.NavigateFromMenu((int)MenuItemType.LogIn);

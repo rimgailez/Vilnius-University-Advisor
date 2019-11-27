@@ -22,7 +22,7 @@ namespace VUA_App.Views
             SubjectFaculty2.SelectedIndexChanged += FacultySelected2;
         }
 
-        private void FacultySelected1(object sender, EventArgs e)
+        private async void FacultySelected1(object sender, EventArgs e)
         {
             if (IsOptional1.IsChecked == true && IsMandatory1.IsChecked == true)
             {
@@ -32,7 +32,7 @@ namespace VUA_App.Views
             else if (IsOptional1.IsChecked == false && IsMandatory1.IsChecked == true)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty1.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty1.SelectedIndex))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
@@ -40,7 +40,7 @@ namespace VUA_App.Views
             else if (IsOptional1.IsChecked == true && IsMandatory1.IsChecked == false)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty1.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty1.SelectedIndex))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
@@ -48,14 +48,14 @@ namespace VUA_App.Views
             else
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty1.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty1.SelectedIndex))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
             }
         }
 
-        private void FacultySelected2(object sender, EventArgs e)
+        private async void FacultySelected2(object sender, EventArgs e)
         {
             if (IsOptional2.IsChecked == true && IsMandatory2.IsChecked == true)
             {
@@ -65,7 +65,7 @@ namespace VUA_App.Views
             else if (IsOptional2.IsChecked == false && IsMandatory2.IsChecked == true)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty2.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty2.SelectedIndex))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -73,7 +73,7 @@ namespace VUA_App.Views
             else if (IsOptional2.IsChecked == true && IsMandatory2.IsChecked == false)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty2.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty2.SelectedIndex))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -81,14 +81,14 @@ namespace VUA_App.Views
             else
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty2.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty2.SelectedIndex))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
             }
         }
 
-        private void OnCheckedChanged1(object sender, CheckedChangedEventArgs e)
+        private async void OnCheckedChanged1(object sender, CheckedChangedEventArgs e)
         {
             if (IsOptional1.IsChecked == true && IsMandatory1.IsChecked == true)
             {
@@ -98,7 +98,7 @@ namespace VUA_App.Views
             else if(IsMandatory1.IsChecked == true && SubjectFaculty1.SelectedItem != null)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty1.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty1.SelectedIndex))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
@@ -106,7 +106,7 @@ namespace VUA_App.Views
             else if(IsMandatory1.IsChecked == true && SubjectFaculty1.SelectedItem == null)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByType(false, false))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByType(false, false))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
@@ -114,7 +114,7 @@ namespace VUA_App.Views
             else if(IsMandatory1.IsChecked == false && IsOptional1.IsChecked == false && SubjectFaculty1.SelectedItem != null)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty1.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty1.SelectedIndex))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
@@ -122,7 +122,7 @@ namespace VUA_App.Views
             else if (IsMandatory1.IsChecked == false && IsOptional1.IsChecked == true && SubjectFaculty1.SelectedItem != null)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty1.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty1.SelectedIndex))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
@@ -130,7 +130,7 @@ namespace VUA_App.Views
             else if (IsMandatory1.IsChecked == false && IsOptional1.IsChecked == false && SubjectFaculty1.SelectedItem == null)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjects())
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjects())
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
@@ -138,14 +138,14 @@ namespace VUA_App.Views
             else if (IsMandatory1.IsChecked == false && IsOptional1.IsChecked == true && SubjectFaculty1.SelectedItem == null)
             {
                 SubjectName1.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByType(true,false))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByType(true,false))
                 {
                     SubjectName1.Items.Add(subj.name);
                 }
             }
         }
 
-        private void OnCheckedChanged2(object sender, CheckedChangedEventArgs e)
+        private async void OnCheckedChanged2(object sender, CheckedChangedEventArgs e)
         {
             if (IsOptional2.IsChecked == true && IsMandatory2.IsChecked == true)
             {
@@ -155,7 +155,7 @@ namespace VUA_App.Views
             else if (IsMandatory2.IsChecked == true && SubjectFaculty2.SelectedItem != null)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty2.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty2.SelectedIndex))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -163,7 +163,7 @@ namespace VUA_App.Views
             else if (IsMandatory2.IsChecked == true && SubjectFaculty2.SelectedItem == null)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByType(false, false))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByType(false, false))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -171,7 +171,7 @@ namespace VUA_App.Views
             else if (IsMandatory2.IsChecked == false && IsOptional2.IsChecked == false && SubjectFaculty2.SelectedItem != null)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty2.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByFaculty((Faculty)SubjectFaculty2.SelectedIndex))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -179,7 +179,7 @@ namespace VUA_App.Views
             else if (IsMandatory2.IsChecked == false && IsOptional2.IsChecked == true && SubjectFaculty2.SelectedItem != null)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty2.SelectedIndex))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty2.SelectedIndex))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -187,7 +187,7 @@ namespace VUA_App.Views
             else if (IsMandatory2.IsChecked == false && IsOptional2.IsChecked == false && SubjectFaculty2.SelectedItem == null)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjects())
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjects())
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -195,7 +195,7 @@ namespace VUA_App.Views
             else if (IsMandatory2.IsChecked == false && IsOptional2.IsChecked == true && SubjectFaculty2.SelectedItem == null)
             {
                 SubjectName2.Items.Clear();
-                foreach (Subject subj in DataFetcher.GetInstance().GetSubjectsByType(true, false))
+                foreach (Subject subj in await DataFetcher.GetInstance().GetSubjectsByType(true, false))
                 {
                     SubjectName2.Items.Add(subj.name);
                 }
@@ -218,23 +218,23 @@ namespace VUA_App.Views
 
             if (IsMandatory1.IsChecked == true)
             {
-                Subject selectedSubject1 = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty1.SelectedIndex).ToList().Find(subj => subj.name.Equals(SubjectName1.SelectedItem.ToString()));
+                Subject selectedSubject1 = (await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty1.SelectedIndex)).ToList().Find(subj => subj.name.Equals(SubjectName1.SelectedItem.ToString()));
                 WriteInformation1(selectedSubject1);
             }
             else if (IsOptional1.IsChecked == true)
             {
-                Subject selectedSubject1 = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty1.SelectedIndex).ToList().Find(subj => subj.name.Equals(SubjectName1.SelectedItem.ToString()));
+                Subject selectedSubject1 = (await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty1.SelectedIndex)).ToList().Find(subj => subj.name.Equals(SubjectName1.SelectedItem.ToString()));
                 WriteInformation1(selectedSubject1);
             }
 
             if (IsMandatory2.IsChecked == true)
             {
-                Subject selectedSubject2 = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty2.SelectedIndex).ToList().Find(subj => subj.name.Equals(SubjectName2.SelectedItem.ToString()));
+                Subject selectedSubject2 = (await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(false, (Faculty)SubjectFaculty2.SelectedIndex)).ToList().Find(subj => subj.name.Equals(SubjectName2.SelectedItem.ToString()));
                 WriteInformation2(selectedSubject2);
             }
             else if (IsOptional2.IsChecked == true)
             {
-                Subject selectedSubject2 = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty2.SelectedIndex).ToList().Find(subj => subj.name.Equals(SubjectName2.SelectedItem.ToString()));
+                Subject selectedSubject2 = (await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(true, (Faculty)SubjectFaculty2.SelectedIndex)).ToList().Find(subj => subj.name.Equals(SubjectName2.SelectedItem.ToString()));
                 WriteInformation2(selectedSubject2);
             }
         }

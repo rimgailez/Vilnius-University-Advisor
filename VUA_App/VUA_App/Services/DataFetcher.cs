@@ -51,11 +51,6 @@ namespace VUA_App.Services
             await PostObjectAsync("lecturer/add", lecturerNew);
         }
 
-        public async void AddLecturerWithoutWriting(Lecturer lecturer)
-        {
-            await PostObjectAsync("lecturer/add", lecturer);
-        }
-
         public void AddSubject(string name, Faculty faculty, bool isOptional, bool isBUS)
         {
             Subject subject = null;
@@ -112,83 +107,83 @@ namespace VUA_App.Services
             await PostObjectAsync("subject/evaluate", jObject);
         }
 
-        public IEnumerable<Subject> GetBUSSubjects(Faculty faculty = Faculty.None)
+        public async Task<IEnumerable<Subject>> GetBUSSubjects(Faculty faculty = Faculty.None)
         {
             string request = "subject/BUS/";
             if (!faculty.Equals(Faculty.None)) request = request + ((int)faculty).ToString();
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
-        public IEnumerable<Subject> GetSubjectsByTypeAndFaculty(bool isOptional, Faculty faculty)
+        public async Task<IEnumerable<Subject>> GetSubjectsByTypeAndFaculty(bool isOptional, Faculty faculty)
         {
             string request = "subject/TypeFaculty/" + isOptional.ToString() + "/" + ((int)faculty).ToString();
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
 
-        public IEnumerable<Lecturer> GetLecturersByFaculty(Faculty faculty)
+        public async Task<IEnumerable<Lecturer>> GetLecturersByFaculty(Faculty faculty)
         {
             string request = "lecturer/faculty/" + ((int)faculty).ToString();
-            return GetEnumerableFromAPI<Lecturer>(request).Result;
+            return await GetEnumerableFromAPI<Lecturer>(request);
 
         }
 
-        public IEnumerable<Subject> GetSubjectsByFaculty(Faculty faculty)
+        public async Task<IEnumerable<Subject>> GetSubjectsByFaculty(Faculty faculty)
         {
             string request = "subject/faculty/" + ((int)faculty).ToString();
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
 
-        public IEnumerable<Subject> GetSubjectSearchResults(String enteredWord, Faculty faculty)
+        public async Task<IEnumerable<Subject>> GetSubjectSearchResults(String enteredWord, Faculty faculty)
         {
             string request = "subject/search/" + ((int)faculty).ToString() + "/" + enteredWord;
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
 
-        public IEnumerable<Lecturer> GetLecturerSearchResults(String enteredWord, Faculty faculty)
+        public async Task<IEnumerable<Lecturer>> GetLecturerSearchResults(String enteredWord, Faculty faculty)
         {
             string request = "lecturer/search/" + ((int)faculty).ToString() + "/" + enteredWord;
-            return GetEnumerableFromAPI<Lecturer>(request).Result;
+            return await GetEnumerableFromAPI<Lecturer>(request);
         }
 
-        public IEnumerable<Subject> GetTop10Subjects()
+        public async Task<IEnumerable<Subject>> GetTop10Subjects()
         {
             string request = "subject/top";
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
 
-        public IEnumerable<Subject> GetTop5BUSSubjects()
+        public async Task<IEnumerable<Subject>> GetTop5BUSSubjects()
         {
             string request = "subject/topBUS";
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
 
-        public IEnumerable<Lecturer> GetTop10Lecturers()
+        public async Task<IEnumerable<Lecturer>> GetTop10Lecturers()
         {
             string request = "lecturer/top";
-            return GetEnumerableFromAPI<Lecturer>(request).Result;
+            return await GetEnumerableFromAPI<Lecturer>(request);
         }
 
-        public IEnumerable<User> GetAllUsers()
+        public async Task<IEnumerable<User>> GetAllUsers()
         {
             string request = "user/all";
-            return GetEnumerableFromAPI<User>(request).Result;
+            return await GetEnumerableFromAPI<User>(request);
         }
 
-        public Boolean CheckIfUserNameExists(string userName)
+        public async Task<Boolean> CheckIfUserNameExists(string userName)
         {
             string request = "user/checkUserName/" + userName;
-            return GetObjectFromAPI<Boolean>(request).Result;
+            return await GetObjectFromAPI<Boolean>(request);
         }
 
-        public Boolean CheckIfCorrectPassword(string userName, string password)
+        public async Task<Boolean> CheckIfCorrectPassword(string userName, string password)
         {
             string request = "user/checkPassword/" + userName + "/" + password;
-            return GetObjectFromAPI<Boolean>(request).Result;
+            return await GetObjectFromAPI<Boolean>(request);
         }
 
-        public User GetCurrentUser()
+        public async Task<User> GetCurrentUser()
         {
             string request = "user/getUser/";
-            return GetObjectFromAPI<User>(request).Result;
+            return await GetObjectFromAPI<User>(request);
         }
 
         public async void SetCurrentUser(User user)
@@ -201,10 +196,10 @@ namespace VUA_App.Services
             await PostObjectAsync("user/addHistory", activity);
         }
 
-        public List<Activity> GetHistory()
+        public async Task<List<Activity>> GetHistory()
         {
             string request = "user/getHistory";
-            return (List<Activity>)GetEnumerableFromAPI<Activity>(request).Result;
+            return (List<Activity>)await GetEnumerableFromAPI<Activity>(request);
         }
 
         //public async void RunScraper(RegForm regForm)
@@ -224,52 +219,52 @@ namespace VUA_App.Services
         //    catch (HttpRequestException e) { errorMessage?.Invoke(this, MainResources.NoConnection); }
         //}
 
-        public IEnumerable<StudyProgramme> GetStudyProgrammesByFaculty(Faculty faculty)
+        public async Task<IEnumerable<StudyProgramme>> GetStudyProgrammesByFaculty(Faculty faculty)
         {
             string request = "studyProgramme/faculty/" + ((int)faculty).ToString();
-            return GetEnumerableFromAPI<StudyProgramme>(request).Result;
+            return await GetEnumerableFromAPI<StudyProgramme>(request);
         }
 
-        public IEnumerable<User> GetTop5ActiveLecturersEvaluators()
+        public async Task<IEnumerable<User>> GetTop5ActiveLecturersEvaluators()
         {
             string request = "user/getTopLectEvaluators";
-            return GetEnumerableFromAPI<User>(request).Result;
+            return await GetEnumerableFromAPI<User>(request);
         }
 
-        public IEnumerable<User> GetTop5ActiveSubjectsEvaluators()
+        public async Task<IEnumerable<User>> GetTop5ActiveSubjectsEvaluators()
         {
             string request = "user/getTopSubjEvaluators";
-            return GetEnumerableFromAPI<User>(request).Result;
+            return await GetEnumerableFromAPI<User>(request);
         }
 
-        public List<User> GetTop3ActiveUsers()
+        public async Task<List<User>> GetTop3ActiveUsers()
         {
             string request = "user/getTopUsers";
-            return (List<User>)GetEnumerableFromAPI<User>(request).Result;
+            return (List<User>)await GetEnumerableFromAPI<User>(request);
         }
 
-        public IEnumerable<Lecturer> GetLecturers()
+        public async Task<IEnumerable<Lecturer>> GetLecturers()
         {
             string request = "lecturer";
-            return GetEnumerableFromAPI<Lecturer>(request).Result;
+            return await GetEnumerableFromAPI<Lecturer>(request);
         }
 
-        public IEnumerable<Subject> GetSubjects()
+        public async Task<IEnumerable<Subject>> GetSubjects()
         {
             string request = "subject";
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
         
-        public IEnumerable<Subject> GetSubjectsByType(bool isOptional, bool isBUS)
+        public async Task<IEnumerable<Subject>> GetSubjectsByType(bool isOptional, bool isBUS)
         {
             string request = "subject/Type/" + isOptional + "/" + isBUS;
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
 
-        public IEnumerable<Subject> GetSubjectSearchResultsByType(Faculty faculty, string searchTerm, bool isOptional, bool isBUS)
+        public async Task<IEnumerable<Subject>> GetSubjectSearchResultsByType(Faculty faculty, string searchTerm, bool isOptional, bool isBUS)
         {
             string request = "subject/SearchType/" + (int)faculty + "/" + searchTerm + "/" + isOptional + "/" + isBUS;
-            return GetEnumerableFromAPI<Subject>(request).Result;
+            return await GetEnumerableFromAPI<Subject>(request);
         }
 
         public async Task<IEnumerable<T>> GetEnumerableFromAPI<T>(string request)
@@ -341,16 +336,16 @@ namespace VUA_App.Services
             await PostObjectAsync("user/deleteUser", user);
         }
 
-        public Boolean CheckIfLecturerWasEvaluated(int id)
+        public async Task<Boolean> CheckIfLecturerWasEvaluated(int id)
         {
             string request = "lecturer/checkIfWasEvaluated/" + id.ToString();
-            return GetObjectFromAPI<Boolean>(request).Result;
+            return await GetObjectFromAPI<Boolean>(request);
         }
 
-        public Boolean CheckIfSubjectWasEvaluated(int id)
+        public async Task<Boolean> CheckIfSubjectWasEvaluated(int id)
         {
             string request = "subject/checkIfWasEvaluated/" + id.ToString();
-            return GetObjectFromAPI<Boolean>(request).Result;
+            return await GetObjectFromAPI<Boolean>(request);
         }
     }
 }

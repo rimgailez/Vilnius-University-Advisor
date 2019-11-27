@@ -22,13 +22,13 @@ namespace VUA_App.Views
             SelectLecturerFaculty.SelectedIndexChanged += FacultyChosen;
 
             UserName.Items.Clear();
-            UserName.Items.Add(DataFetcher.GetInstance().GetCurrentUser().userName);
+            UserName.Items.Add(DataFetcher.GetInstance().GetCurrentUser().Result.userName);
             UserName.Items.Add(MainResources.AnonymousUser);
         }
-        private void FacultyChosen(object sender, EventArgs e)
+        private async void FacultyChosen(object sender, EventArgs e)
         {
             SelectLecturer.Items.Clear();
-            foreach (Lecturer lect in DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)SelectLecturerFaculty.SelectedIndex))
+            foreach (Lecturer lect in await DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)SelectLecturerFaculty.SelectedIndex))
             {
                 SelectLecturer.Items.Add(lect.name);
             }
@@ -36,13 +36,13 @@ namespace VUA_App.Views
 
         public async void OnLectEvaluation(object sender, EventArgs e)
         {
-            Lecturer selectedLecturer = DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)SelectLecturerFaculty.SelectedIndex).ToList().Find(lect => lect.name.Equals(SelectLecturer.SelectedItem.ToString()));
+            Lecturer selectedLecturer = (await DataFetcher.GetInstance().GetLecturersByFaculty((Faculty)SelectLecturerFaculty.SelectedIndex)).ToList().Find(lect => lect.name.Equals(SelectLecturer.SelectedItem.ToString()));
             if ( SelectLecturerFaculty.SelectedItem == null || SelectLecturer.SelectedItem == null || NumericEvaluation.Text == "" ||
                 LecturerComments.Text == "" || UserName.SelectedItem == null )
             {
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
             }
-            else if(DataFetcher.GetInstance().CheckIfLecturerWasEvaluated(selectedLecturer.ID))
+            else if(await DataFetcher.GetInstance().CheckIfLecturerWasEvaluated(selectedLecturer.ID))
             {
                 await DisplayAlert(MainResources.CantEvaluateLecturer, MainResources.AlreadyEvaluatedLecturer, "OK");
                 ClearFields();

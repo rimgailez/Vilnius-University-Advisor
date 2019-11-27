@@ -20,7 +20,7 @@ namespace VUA_App.ViewModels
             LoadSubjectsCommand = new Command((fetchParams) => ExecuteLoadSubjectsCommand(fetchParams));
         }
 
-        void ExecuteLoadSubjectsCommand(dynamic fetchParams)
+        async void ExecuteLoadSubjectsCommand(dynamic fetchParams)
         {
             if (IsBusy)
                 return;
@@ -37,13 +37,13 @@ namespace VUA_App.ViewModels
                 isOptional = fetchParams.isOptional;
                 isBUS = fetchParams.isBUS;
             }
-            if (searchTerm != null) subjects = DataFetcher.GetInstance().GetSubjectSearchResultsByType(faculty, searchTerm, isOptional, isBUS); //GetSubjectSearchResultsByType
+            if (searchTerm != null) subjects = await DataFetcher.GetInstance().GetSubjectSearchResultsByType(faculty, searchTerm, isOptional, isBUS); //GetSubjectSearchResultsByType
             else if (faculty != Faculty.None)
             {
-                if (isBUS) subjects = DataFetcher.GetInstance().GetBUSSubjects(faculty);
-                else subjects = DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(isOptional, faculty);
+                if (isBUS) subjects = await DataFetcher.GetInstance().GetBUSSubjects(faculty);
+                else subjects = await DataFetcher.GetInstance().GetSubjectsByTypeAndFaculty(isOptional, faculty);
             }
-            else subjects = DataFetcher.GetInstance().GetSubjectsByType(isOptional, isBUS); //GetSubjectsByType
+            else subjects = await DataFetcher.GetInstance().GetSubjectsByType(isOptional, isBUS); //GetSubjectsByType
             Subjects.Clear();
             foreach (Subject subject in subjects) Subjects.Add(subject);
             IsBusy = false;

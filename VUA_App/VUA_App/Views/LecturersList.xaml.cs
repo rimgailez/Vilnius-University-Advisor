@@ -25,19 +25,23 @@ namespace VUA_App.Views
             LecturerListView.BindingContext = viewModel = new LecturerViewModel();
             SelectFaculty.ItemsSource = GetFacultyList();
             SelectFaculty.SelectedIndexChanged += FacultySelected;
+            viewModel.PropertyChanged += ViewModel_PropertyChanged;
+        }
+
+        private void ViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            NumberOfLecturers.Text = MainResources.Showing + viewModel.Lecturers.Aggregate(0, (current, lecturer) => current + 1).ToString() + MainResources.Lecturers;
         }
 
         private void FacultySelected(object sender, EventArgs e)
         {
             var fetchParams = new { faculty = (Faculty)SelectFaculty.SelectedIndex, searchTerm = Search.Text};
             viewModel.LoadLecturersCommand.Execute(fetchParams);
-            NumberOfLecturers.Text = MainResources.Showing + viewModel.Lecturers.Aggregate(0, (current, lecturer) => current + 1).ToString() + MainResources.Lecturers;
         }
         void OnSearchButtonPressed(object sender, EventArgs e)
         {
             var fetchParams = new { faculty = (Faculty)SelectFaculty.SelectedIndex, searchTerm = Search.Text};
             viewModel.LoadLecturersCommand.Execute(fetchParams);
-            NumberOfLecturers.Text = MainResources.Showing + viewModel.Lecturers.Aggregate(0, (current, lecturer) => current + 1).ToString() + MainResources.Lecturers;
         }
         async void OnLecturerSelected(object sender, SelectedItemChangedEventArgs args)
         {
