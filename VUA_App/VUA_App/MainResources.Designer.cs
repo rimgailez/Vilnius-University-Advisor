@@ -88,6 +88,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Biologija.
+        /// </summary>
+        internal static string Biology {
+            get {
+                return ResourceManager.GetString("Biology", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Neužpildyti laukai.
         /// </summary>
         internal static string BlankFields {
@@ -97,11 +106,47 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vadovaujančios pareigos.
+        /// </summary>
+        internal static string Boss {
+            get {
+                return ResourceManager.GetString("Boss", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Protmūšiuose žinau beveik visus atsakymus.
+        /// </summary>
+        internal static string BrainBattle {
+            get {
+                return ResourceManager.GetString("BrainBattle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dalykas yra BUS.
         /// </summary>
         internal static string BUS {
             get {
                 return ResourceManager.GetString("BUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paslaugų / produktų pardavimas.
+        /// </summary>
+        internal static string Business {
+            get {
+                return ResourceManager.GetString("Business", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parduočiau bet ką, net šaldytuvą Šiaurės Ašigalyje.
+        /// </summary>
+        internal static string BusinessMan {
+            get {
+                return ResourceManager.GetString("BusinessMan", resourceCulture);
             }
         }
         
@@ -120,6 +165,24 @@ namespace VUA_App {
         internal static string CancelRegistration {
             get {
                 return ResourceManager.GetString("CancelRegistration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ar tikrai nenorite baigti testo?.
+        /// </summary>
+        internal static string CancelTest {
+            get {
+                return ResourceManager.GetString("CancelTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pradėti testą iš naujo.
+        /// </summary>
+        internal static string CancelTestCaption {
+            get {
+                return ResourceManager.GetString("CancelTestCaption", resourceCulture);
             }
         }
         
@@ -232,6 +295,33 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kaip atrodytų Tavo svajonių darbas.
+        /// </summary>
+        internal static string DreamJob {
+            get {
+                return ResourceManager.GetString("DreamJob", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ekonomika.
+        /// </summary>
+        internal static string Economy {
+            get {
+                return ResourceManager.GetString("Economy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tavo el. paštas.
+        /// </summary>
+        internal static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Įveskite vardą ir pavardę..
         /// </summary>
         internal static string EnterNameAndUsername {
@@ -304,11 +394,83 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Galiu sutaisyti sugedusius elektros prietaisus.
+        /// </summary>
+        internal static string FixBrokenThings {
+            get {
+                return ResourceManager.GetString("FixBrokenThings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Laisvas darbo grafikas.
+        /// </summary>
+        internal static string FlexibleWorkingHours {
+            get {
+                return ResourceManager.GetString("FlexibleWorkingHours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Užsienio kalbos.
+        /// </summary>
+        internal static string ForeignLanguages {
+            get {
+                return ResourceManager.GetString("ForeignLanguages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to  iš 5.
         /// </summary>
         internal static string From5 {
             get {
                 return ResourceManager.GetString("From5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pagalba pagyvenusiems žmonėms.
+        /// </summary>
+        internal static string HelpOldPeople {
+            get {
+                return ResourceManager.GetString("HelpOldPeople", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Istorija.
+        /// </summary>
+        internal static string History {
+            get {
+                return ResourceManager.GetString("History", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kaip atrodo....
+        /// </summary>
+        internal static string HowDoesItLook {
+            get {
+                return ResourceManager.GetString("HowDoesItLook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tavo laboratorija.
+        /// </summary>
+        internal static string Laboratory {
+            get {
+                return ResourceManager.GetString("Laboratory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Darbas laboratorijoje.
+        /// </summary>
+        internal static string LaboratoryJob {
+            get {
+                return ResourceManager.GetString("LaboratoryJob", resourceCulture);
             }
         }
         
@@ -331,6 +493,24 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tavo laisvalaikis.
+        /// </summary>
+        internal static string Leisure {
+            get {
+                return ResourceManager.GetString("Leisure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paskaitos/pamokos, į kurias mielai eitum.
+        /// </summary>
+        internal static string LikedSubjects {
+            get {
+                return ResourceManager.GetString("LikedSubjects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Prisijungimas.
         /// </summary>
         internal static string LogInCaption {
@@ -345,6 +525,24 @@ namespace VUA_App {
         internal static string Mandatory {
             get {
                 return ResourceManager.GetString("Mandatory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marketingas.
+        /// </summary>
+        internal static string Marketing {
+            get {
+                return ResourceManager.GetString("Marketing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Matematika.
+        /// </summary>
+        internal static string Math {
+            get {
+                return ResourceManager.GetString("Math", resourceCulture);
             }
         }
         
@@ -367,6 +565,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rekomenduojamų studijų programų nėra..
+        /// </summary>
+        internal static string NoRecommendedProgrammes {
+            get {
+                return ResourceManager.GetString("NoRecommendedProgrammes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Įvertinimų skaičius: .
         /// </summary>
         internal static string NumberOfReviews {
@@ -376,11 +583,29 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Darbas ofise.
+        /// </summary>
+        internal static string Office {
+            get {
+                return ResourceManager.GetString("Office", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dalykas yra pasirenkamasis.
         /// </summary>
         internal static string Optional {
             get {
                 return ResourceManager.GetString("Optional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tavo vakarėliai.
+        /// </summary>
+        internal static string Parties {
+            get {
+                return ResourceManager.GetString("Parties", resourceCulture);
             }
         }
         
@@ -417,6 +642,42 @@ namespace VUA_App {
         internal static string PathComment {
             get {
                 return ResourceManager.GetString("PathComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fizika.
+        /// </summary>
+        internal static string Physics {
+            get {
+                return ResourceManager.GetString("Physics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tavo augalai.
+        /// </summary>
+        internal static string Plants {
+            get {
+                return ResourceManager.GetString("Plants", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Groju muzikos instrumentu.
+        /// </summary>
+        internal static string PlayingInstrument {
+            get {
+                return ResourceManager.GetString("PlayingInstrument", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rekomenduojamos studijų programos.
+        /// </summary>
+        internal static string RecommendedProgrammes {
+            get {
+                return ResourceManager.GetString("RecommendedProgrammes", resourceCulture);
             }
         }
         
@@ -466,6 +727,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tyrinėjimai.
+        /// </summary>
+        internal static string Research {
+            get {
+                return ResourceManager.GetString("Research", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data: .
         /// </summary>
         internal static string ReviewDate {
@@ -507,6 +777,15 @@ namespace VUA_App {
         internal static string Showing {
             get {
                 return ResourceManager.GetString("Showing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Užkalbinti nepažįstamą žmogų man yra vieni juokai.
+        /// </summary>
+        internal static string Sociable {
+            get {
+                return ResourceManager.GetString("Sociable", resourceCulture);
             }
         }
         
@@ -664,6 +943,33 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tavo talentas.
+        /// </summary>
+        internal static string Talent {
+            get {
+                return ResourceManager.GetString("Talent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Darbas su technika.
+        /// </summary>
+        internal static string Technologies {
+            get {
+                return ResourceManager.GetString("Technologies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greitai perprantu naująsias technologijas.
+        /// </summary>
+        internal static string TechnologiesExpert {
+            get {
+                return ResourceManager.GetString("TechnologiesExpert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Duomenys pakeisti.
         /// </summary>
         internal static string UpdateCaption {
@@ -795,6 +1101,15 @@ namespace VUA_App {
         internal static string WrongPhoneNo {
             get {
                 return ResourceManager.GetString("WrongPhoneNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jaunų žmonių problemų sprendimas.
+        /// </summary>
+        internal static string YouthProblems {
+            get {
+                return ResourceManager.GetString("YouthProblems", resourceCulture);
             }
         }
     }

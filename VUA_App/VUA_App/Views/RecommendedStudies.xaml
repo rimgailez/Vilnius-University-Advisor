@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VUA_App.Views.RecommendedStudies">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label FontSize="Title"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   x:Name="MainLabel"/>
+            <Label FontSize="Subtitle"
+                   HorizontalTextAlignment="Center"
+                   x:Name="AdditionalLabel"/>
+            <Grid HorizontalOptions="Center" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ImageButton x:Name="FirstImage" Clicked="OnFirstImageButtonClicked" Grid.Column="0" Grid.Row="0" Aspect="AspectFit" />
+                <ImageButton x:Name="SecondImage" Clicked="OnSecondImageButtonClicked" Grid.Column="1" Grid.Row="0" Aspect="AspectFit" />
+            </Grid>
+                <Label x:Name="PageLabel" FontSize="Small"
+                   HorizontalTextAlignment="Start" />
+            <Button Text="Pradėti iš naujo" Clicked="OnCancelTest"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

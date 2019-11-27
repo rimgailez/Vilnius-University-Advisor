@@ -24,7 +24,8 @@ namespace VUA_App.Models
         ViewMostActiveUsers,
         UpdateUserInfo,
         CompareLecturers,
-        CompareSubjects
+        CompareSubjects,
+        DoCareerTest
     }
     public class MenuItem
     {

@@ -104,12 +104,24 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="active_leisure.PNG" />
+    <Content Include="Assets\InitVU.png" />
+    <Content Include="books.PNG" />
+    <Content Include="clean_email.PNG" />
+    <Content Include="dead_plant.PNG" />
+    <Content Include="dislike.PNG" />
     <Content Include="emoji_five.PNG" />
     <Content Include="emoji_four.PNG" />
     <Content Include="emoji_one.PNG" />
     <Content Include="emoji_three.PNG" />
     <Content Include="emoji_two.PNG" />
     <Content Include="first_place.PNG" />
+    <Content Include="full_email.PNG" />
+    <Content Include="gaming.PNG" />
+    <Content Include="healthy_plant.PNG" />
+    <Content Include="laboratory.PNG" />
+    <Content Include="like.PNG" />
+    <Content Include="messy_lab.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
@@ -139,6 +151,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="second_place.PNG" />
+    <Content Include="talking.PNG" />
     <Content Include="third_place.PNG" />
     <Content Include="xamarin_logo.png" />
     <Content Include="add.png" />

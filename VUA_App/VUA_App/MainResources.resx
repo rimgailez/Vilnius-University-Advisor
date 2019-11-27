@@ -126,17 +126,38 @@
   <data name="AnonymousUser" xml:space="preserve">
     <value>Anonimas</value>
   </data>
+  <data name="Biology" xml:space="preserve">
+    <value>Biologija</value>
+  </data>
   <data name="BlankFields" xml:space="preserve">
     <value>Neužpildyti laukai</value>
   </data>
+  <data name="Boss" xml:space="preserve">
+    <value>Vadovaujančios pareigos</value>
+  </data>
+  <data name="BrainBattle" xml:space="preserve">
+    <value>Protmūšiuose žinau beveik visus atsakymus</value>
+  </data>
   <data name="BUS" xml:space="preserve">
     <value>Dalykas yra BUS</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Paslaugų / produktų pardavimas</value>
+  </data>
+  <data name="BusinessMan" xml:space="preserve">
+    <value>Parduočiau bet ką, net šaldytuvą Šiaurės Ašigalyje</value>
   </data>
   <data name="CancelRegCaption" xml:space="preserve">
     <value>Atšaukti registraciją</value>
   </data>
   <data name="CancelRegistration" xml:space="preserve">
     <value>Ar tikrai norite atšaukti registraciją? Įvesti duomenys nebus išsaugoti.</value>
+  </data>
+  <data name="CancelTest" xml:space="preserve">
+    <value>Ar tikrai nenorite baigti testo?</value>
+  </data>
+  <data name="CancelTestCaption" xml:space="preserve">
+    <value>Pradėti testą iš naujo</value>
   </data>
   <data name="CantEvaluateLecturer" xml:space="preserve">
     <value>Negalima įvertinti dėstytojo</value>
@@ -174,6 +195,15 @@
   <data name="DidntChooseSubject" xml:space="preserve">
     <value>Nepasirinkote dalyko</value>
   </data>
+  <data name="DreamJob" xml:space="preserve">
+    <value>Kaip atrodytų Tavo svajonių darbas</value>
+  </data>
+  <data name="Economy" xml:space="preserve">
+    <value>Ekonomika</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Tavo el. paštas</value>
+  </data>
   <data name="EnterNameAndUsername" xml:space="preserve">
     <value>Įveskite vardą ir pavardę.</value>
   </data>
@@ -198,8 +228,32 @@
   <data name="FillInAllFields" xml:space="preserve">
     <value>Prašome užpildyti visus formoje esančius laukus.</value>
   </data>
+  <data name="FixBrokenThings" xml:space="preserve">
+    <value>Galiu sutaisyti sugedusius elektros prietaisus</value>
+  </data>
+  <data name="FlexibleWorkingHours" xml:space="preserve">
+    <value>Laisvas darbo grafikas</value>
+  </data>
+  <data name="ForeignLanguages" xml:space="preserve">
+    <value>Užsienio kalbos</value>
+  </data>
   <data name="From5" xml:space="preserve">
     <value> iš 5</value>
+  </data>
+  <data name="HelpOldPeople" xml:space="preserve">
+    <value>Pagalba pagyvenusiems žmonėms</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Istorija</value>
+  </data>
+  <data name="HowDoesItLook" xml:space="preserve">
+    <value>Kaip atrodo...</value>
+  </data>
+  <data name="Laboratory" xml:space="preserve">
+    <value>Tavo laboratorija</value>
+  </data>
+  <data name="LaboratoryJob" xml:space="preserve">
+    <value>Darbas laboratorijoje</value>
   </data>
   <data name="LecturerName" xml:space="preserve">
     <value>Dėstytojo vardas: </value>
@@ -207,11 +261,23 @@
   <data name="Lecturers" xml:space="preserve">
     <value> dėstytojai:</value>
   </data>
+  <data name="Leisure" xml:space="preserve">
+    <value>Tavo laisvalaikis</value>
+  </data>
+  <data name="LikedSubjects" xml:space="preserve">
+    <value>Paskaitos/pamokos, į kurias mielai eitum</value>
+  </data>
   <data name="LogInCaption" xml:space="preserve">
     <value>Prisijungimas</value>
   </data>
   <data name="Mandatory" xml:space="preserve">
     <value>Dalykas yra privalomasis</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Marketingas</value>
+  </data>
+  <data name="Math" xml:space="preserve">
+    <value>Matematika</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>name</value>
@@ -219,11 +285,20 @@
   <data name="NoConnection" xml:space="preserve">
     <value>Serveris yra nepasiekiamas</value>
   </data>
+  <data name="NoRecommendedProgrammes" xml:space="preserve">
+    <value>Rekomenduojamų studijų programų nėra.</value>
+  </data>
   <data name="NumberOfReviews" xml:space="preserve">
     <value>Įvertinimų skaičius: </value>
   </data>
+  <data name="Office" xml:space="preserve">
+    <value>Darbas ofise</value>
+  </data>
   <data name="Optional" xml:space="preserve">
     <value>Dalykas yra pasirenkamasis</value>
+  </data>
+  <data name="Parties" xml:space="preserve">
+    <value>Tavo vakarėliai</value>
   </data>
   <data name="PasswordChangedSuccessfully" xml:space="preserve">
     <value>Slaptažodis pakeistas sėkmingai.</value>
@@ -236,6 +311,18 @@
   </data>
   <data name="PathComment" xml:space="preserve">
     <value>Failas išsaugotas:</value>
+  </data>
+  <data name="Physics" xml:space="preserve">
+    <value>Fizika</value>
+  </data>
+  <data name="Plants" xml:space="preserve">
+    <value>Tavo augalai</value>
+  </data>
+  <data name="PlayingInstrument" xml:space="preserve">
+    <value>Groju muzikos instrumentu</value>
+  </data>
+  <data name="RecommendedProgrammes" xml:space="preserve">
+    <value>Rekomenduojamos studijų programos</value>
   </data>
   <data name="RegisteredLecturer" xml:space="preserve">
     <value>Pridėtas naujas dėstytojas: </value>
@@ -252,6 +339,9 @@
   <data name="RepeatPassword" xml:space="preserve">
     <value>Nesutampa slaptažodžiai</value>
   </data>
+  <data name="Research" xml:space="preserve">
+    <value>Tyrinėjimai</value>
+  </data>
   <data name="ReviewDate" xml:space="preserve">
     <value>Data: </value>
   </data>
@@ -266,6 +356,9 @@
   </data>
   <data name="Showing" xml:space="preserve">
     <value>Rodomi </value>
+  </data>
+  <data name="Sociable" xml:space="preserve">
+    <value>Užkalbinti nepažįstamą žmogų man yra vieni juokai</value>
   </data>
   <data name="String1" xml:space="preserve">
     <value>1 - esu visiškai nepatenkintas dėstytojo darbu.</value>
@@ -318,6 +411,15 @@
   <data name="SuccessfulSubjEvaluation" xml:space="preserve">
     <value>Mokomasis dalykas sėkmingai įvertintas.</value>
   </data>
+  <data name="Talent" xml:space="preserve">
+    <value>Tavo talentas</value>
+  </data>
+  <data name="Technologies" xml:space="preserve">
+    <value>Darbas su technika</value>
+  </data>
+  <data name="TechnologiesExpert" xml:space="preserve">
+    <value>Greitai perprantu naująsias technologijas</value>
+  </data>
   <data name="UpdateCaption" xml:space="preserve">
     <value>Duomenys pakeisti</value>
   </data>
@@ -362,5 +464,8 @@
   </data>
   <data name="WrongPhoneNo" xml:space="preserve">
     <value>Neteisingas telefono numeris. Telefono numerio formatas: +3706*******</value>
+  </data>
+  <data name="YouthProblems" xml:space="preserve">
+    <value>Jaunų žmonių problemų sprendimas</value>
   </data>
 </root>
