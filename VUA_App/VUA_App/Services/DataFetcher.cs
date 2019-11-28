@@ -87,7 +87,7 @@ namespace VUA_App.Services
             await PostObjectAsync("user/add", user);
         }
 
-        public async void EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
+        public async Task EvaluateLecturer(Lecturer lecturer, float lecturerScore, string text, string username)
         {
             JObject jObject = new JObject();
             jObject.Add("lecturer", JToken.FromObject(lecturer));
@@ -183,7 +183,8 @@ namespace VUA_App.Services
         public async Task<User> GetCurrentUser()
         {
             string request = "user/getUser/";
-            return await GetObjectFromAPI<User>(request);
+            User user = await GetObjectFromAPI<User>(request).ConfigureAwait(false);
+            return user;
         }
 
         public async void SetCurrentUser(User user)
@@ -191,7 +192,7 @@ namespace VUA_App.Services
             await PostObjectAsync("user/setUser", user);
         }
 
-        public async void AddToHistory(string activity)
+        public async Task AddToHistory(string activity)
         {
             await PostObjectAsync("user/addHistory", activity);
         }

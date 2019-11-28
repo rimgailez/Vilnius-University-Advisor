@@ -21,6 +21,7 @@ namespace VUA_App.Views
             SelectLecturerFaculty.ItemsSource = GetFacultyList();
             SelectLecturerFaculty.SelectedIndexChanged += FacultyChosen;
 
+            
             UserName.Items.Clear();
             UserName.Items.Add(DataFetcher.GetInstance().GetCurrentUser().Result.userName);
             UserName.Items.Add(MainResources.AnonymousUser);
@@ -49,8 +50,8 @@ namespace VUA_App.Views
             }
             else
             {
-                DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)ConvertStringToDecimal(NumericEvaluation.Text), LecturerComments.Text, UserName.SelectedItem.ToString());
-                DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedLecturer + selectedLecturer.name + ";");
+                await DataFetcher.GetInstance().EvaluateLecturer(selectedLecturer, (float)ConvertStringToDecimal(NumericEvaluation.Text), LecturerComments.Text, UserName.SelectedItem.ToString());
+                await DataFetcher.GetInstance().AddToHistory(MainResources.EvaluatedLecturer + selectedLecturer.name + ";");
                 await DisplayAlert(MainResources.SuccessfulLectEvaluation, MainResources.EvaluationCaption, "OK");
                 ClearFields();
             }
