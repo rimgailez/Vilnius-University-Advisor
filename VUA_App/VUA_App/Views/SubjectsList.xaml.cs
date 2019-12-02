@@ -55,11 +55,11 @@ namespace VUA_App.Views
                 var facultyGroups = from subj in viewModel.Subjects
                                     group subj by subj.faculty;
 
-                NumberOfSubjects.Text = MainResources.Showing;
+                NumberOfSubjects.Text = MainResources.Showing + ":\r\n";
                 foreach (var fGroup in facultyGroups)
                 {
                     NumberOfSubjects.Text = NumberOfSubjects.Text + " " + fGroup.Count() + " " + MainResources.Subjects + " " +
-                        MainResources.From + " " + GetFacultyList()[(int)fGroup.Key] + " " + MainResources.Faculty + "; ";
+                        MainResources.From + " " + GetFacultyList()[(int)fGroup.Key] + " " + MainResources.Faculty + "\r\n";
                 }
         }
 
