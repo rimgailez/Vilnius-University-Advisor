@@ -225,6 +225,9 @@
   <data name="EvaluationCaption" xml:space="preserve">
     <value>Vertinimas</value>
   </data>
+  <data name="Faculty" xml:space="preserve">
+    <value>fakulteto</value>
+  </data>
   <data name="FillInAllFields" xml:space="preserve">
     <value>Prašome užpildyti visus formoje esančius laukus.</value>
   </data>
@@ -236,6 +239,9 @@
   </data>
   <data name="ForeignLanguages" xml:space="preserve">
     <value>Užsienio kalbos</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>iš</value>
   </data>
   <data name="From5" xml:space="preserve">
     <value> iš 5</value>
@@ -394,7 +400,7 @@
     <value>Dalyko pavadinimas: </value>
   </data>
   <data name="Subjects" xml:space="preserve">
-    <value> dalykai:</value>
+    <value> dalykai</value>
   </data>
   <data name="SuccessfulDeletion" xml:space="preserve">
     <value>Anketa pašalinta sėkmingai.</value>

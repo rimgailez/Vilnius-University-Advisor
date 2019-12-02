@@ -33,7 +33,8 @@ namespace VUA_App.Views
                 isBUS = IsBUS.IsChecked
             };
             viewModel.LoadSubjectsCommand.Execute(fetchParams);
-            NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
+            //NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
+            DisplayNumberOfSubjects();
         }
         private void OnSearchButtonPressed(object sender, EventArgs e)
         {
@@ -45,8 +46,23 @@ namespace VUA_App.Views
                 isBUS = IsBUS.IsChecked
             };
             viewModel.LoadSubjectsCommand.Execute(fetchParams);
-            NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
+            //NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
+            DisplayNumberOfSubjects();
         }
+
+        private void DisplayNumberOfSubjects()
+        {
+                var facultyGroups = from subj in viewModel.Subjects
+                                    group subj by subj.faculty;
+
+                NumberOfSubjects.Text = MainResources.Showing;
+                foreach (var fGroup in facultyGroups)
+                {
+                    NumberOfSubjects.Text = NumberOfSubjects.Text + " " + fGroup.Count() + " " + MainResources.Subjects + " " +
+                        MainResources.From + " " + GetFacultyList()[(int)fGroup.Key] + " " + MainResources.Faculty + "; ";
+                }
+        }
+
         private void OnCheckedChanged(object sender, EventArgs e)
         {
             if(IsBUS.IsChecked && !IsOptional.IsChecked)
@@ -62,7 +78,8 @@ namespace VUA_App.Views
                 isBUS = IsBUS.IsChecked
             };
             viewModel.LoadSubjectsCommand.Execute(fetchParams);
-            NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
+            //NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
+            DisplayNumberOfSubjects();
         }
         async void OnSubjectSelected(object sender, SelectedItemChangedEventArgs args)
         {
@@ -79,6 +96,7 @@ namespace VUA_App.Views
             if (viewModel.Subjects.Count == 0)
                 viewModel.LoadSubjectsCommand.Execute(null);
             NumberOfSubjects.Text = MainResources.Showing + viewModel.Subjects.Count().ToString() + MainResources.Subjects;
+
         }
         private List<string> GetFacultyList()
         {

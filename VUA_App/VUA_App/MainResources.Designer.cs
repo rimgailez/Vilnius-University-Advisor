@@ -385,6 +385,15 @@ namespace VUA_App {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to fakulteto.
+        /// </summary>
+        internal static string Faculty {
+            get {
+                return ResourceManager.GetString("Faculty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Prašome užpildyti visus formoje esančius laukus..
         /// </summary>
         internal static string FillInAllFields {
@@ -417,6 +426,15 @@ namespace VUA_App {
         internal static string ForeignLanguages {
             get {
                 return ResourceManager.GetString("ForeignLanguages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to iš.
+        /// </summary>
+        internal static string From {
+            get {
+                return ResourceManager.GetString("From", resourceCulture);
             }
         }
         
@@ -889,7 +907,7 @@ namespace VUA_App {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  dalykai:.
+        ///   Looks up a localized string similar to  dalykai.
         /// </summary>
         internal static string Subjects {
             get {
