@@ -23,7 +23,7 @@ namespace VUA_App.Services
             string reference;
             //reference = ConfigurationManager.AppSettings.Get("Key0");
             reference = "http://localhost:52060/api/"; 
-            if(Device.RuntimePlatform == Device.Android) reference = "http://10.0.2.2:52060/api/";
+            //if(Device.RuntimePlatform == Device.Android) reference = "http://10.0.2.2:52060/api/";
             client.BaseAddress = new Uri(reference);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(

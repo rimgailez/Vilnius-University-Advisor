@@ -19,7 +19,8 @@ namespace VUA_App.Services
             new Models.MenuItem { Id = MenuItemType.TOP5BUSSubjects, Title="TOP5 BUS dalykai"},
             new Models.MenuItem { Id = MenuItemType.CompareLecturers, Title="Dėstytojų palyginimas"},
             new Models.MenuItem { Id = MenuItemType.CompareSubjects, Title="Dalykų palyginimas"},
-            new Models.MenuItem { Id = MenuItemType.DoCareerTest, Title="Karjeros testas"}
+            new Models.MenuItem { Id = MenuItemType.DoCareerTest, Title="Karjeros testas"},
+            new Models.MenuItem { Id = MenuItemType.Locations, Title="VU padaliniai"},
         };
 
         public static void LogIn()
