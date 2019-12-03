@@ -69,6 +69,7 @@ namespace VUA_api
         public void AddSubjectWithoutWriting(Subject subject)
         {
             if (!subjects.Contains(subject)) subjects.Add(subject);
+
         }
 
         public void AddUser(string name, Faculty faculty, string userName, string password, string eMail, string phoneNumber, string studyProgram)
@@ -84,7 +85,51 @@ namespace VUA_api
 
         public void AddUserWithoutWriting(User user)
         {
-            if (!users.Contains(user)) users.Add(user);
+            //if (!users.Contains(user)) users.Add(user);
+            if (!users.Contains(user))
+            {
+                SqlConnection cn = new SqlConnection();
+                cn.ConnectionString = connectionString;
+                cn.Open();
+
+                SqlCommand insert = new SqlCommand();
+                insert.Connection = cn;
+                insert.CommandType = CommandType.Text;
+                insert.CommandText = "INSERT INTO [User](name, userName, userFaculty, password, studyProgram, eMail, phoneNumber, evaluatedLecturers, evaluatedSubjects)" +
+                    "VALUES(@name, @userName, @faculty, @password, @studyProgram, @eMail, @phoneNumber, @evaluatedLecturers, @evaluatedSubjects)";
+
+                insert.Parameters.Add(new SqlParameter("@name", SqlDbType.NVarChar, 20, "name"));
+                insert.Parameters.Add(new SqlParameter("@userName", SqlDbType.NVarChar, 20, "userName"));
+                insert.Parameters.Add(new SqlParameter("@faculty", SqlDbType.Int, 8, "userFaculty"));
+                insert.Parameters.Add(new SqlParameter("@password", SqlDbType.NVarChar, 20, "password"));
+                insert.Parameters.Add(new SqlParameter("@studyProgram", SqlDbType.NVarChar, 30, "studyProgram"));
+                insert.Parameters.Add(new SqlParameter("@eMail", SqlDbType.NVarChar, 25, "eMail"));
+                insert.Parameters.Add(new SqlParameter("@phoneNumber", SqlDbType.NVarChar, 12, "phoneNumber"));
+                insert.Parameters.Add(new SqlParameter("@evaluatedLecturers", SqlDbType.Int, 8, "evaluatedLecturers"));
+                insert.Parameters.Add(new SqlParameter("@evaluatedSubjects", SqlDbType.Int, 8, "evaluatedSubjects"));
+
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM [User]", cn);
+                da.InsertCommand = insert;
+
+                DataSet ds = new DataSet();
+                da.Fill(ds, "[User]");
+
+                DataRow newRow = ds.Tables[0].NewRow();
+                newRow["name"] = user.name;
+                newRow["userName"] = user.userName;
+                newRow["userFaculty"] = user.userFaculty;
+                newRow["password"] = user.password;
+                newRow["studyProgram"] = user.studyProgram;
+                newRow["eMail"] = user.eMail;
+                newRow["phoneNumber"] = user.phoneNumber;
+                newRow["evaluatedLecturers"] = 0;
+                newRow["evaluatedSubjects"] = 0;
+                ds.Tables[0].Rows.Add(newRow);
+
+                da.Update(ds.Tables[0]);
+                cn.Close();
+                ds.Dispose();
+            }
         }
 
         public void AddStudyProgramme(string name, Faculty faculty)
