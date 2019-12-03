@@ -20,6 +20,7 @@ namespace VUA_App.Views
             InitializeComponent();
 
             SubjectListView.BindingContext = viewModel = new SubjectViewModel();
+            viewModel.PropertyChanged += (sender, e) => { DisplayNumberOfSubjects(); };
             SelectFaculty.ItemsSource = GetFacultyList();
             SelectFaculty.SelectedIndexChanged += FacultySelected;
         }

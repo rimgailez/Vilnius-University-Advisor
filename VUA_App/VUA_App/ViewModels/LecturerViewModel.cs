@@ -32,9 +32,9 @@ namespace VUA_App.ViewModels
                 if (fetchParams.faculty != null) faculty = fetchParams.faculty;
                 if (fetchParams.searchTerm != null && fetchParams.searchTerm != "") searchTerm = fetchParams.searchTerm;
             }
-            if (searchTerm != null) lecturers = DataFetcher.GetInstance().GetLecturerSearchResults(searchTerm, faculty);
-            else if (faculty != Faculty.None) lecturers = DataFetcher.GetInstance().GetLecturersByFaculty(faculty);
-            else lecturers = DataFetcher.GetInstance().GetLecturers();
+            if (searchTerm != null) lecturers = await DataFetcher.GetInstance().GetLecturerSearchResultsAsync(searchTerm, faculty);
+            else if (faculty != Faculty.None) lecturers = await DataFetcher.GetInstance().GetLecturersByFacultyAsync(faculty);
+            else lecturers = await DataFetcher.GetInstance().GetLecturersAsync();
             Lecturers.Clear();
             foreach(Lecturer lecturer in lecturers) Lecturers.Add(lecturer);
             IsBusy = false;

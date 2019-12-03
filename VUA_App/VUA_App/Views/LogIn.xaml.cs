@@ -21,26 +21,30 @@ namespace VUA_App.Views
         }
         public async void OnClick(object sender, EventArgs e)
         {
+            activityIndicator.IsRunning = true;
+            logInButton.IsEnabled = false;
             if (Username.Text.Equals("") || Password.Text.Equals("")) 
                 await DisplayAlert(MainResources.FillInAllFields, MainResources.BlankFields, "OK");
-            else if (!DataFetcher.GetInstance().CheckIfUserNameExists(Username.Text))
+            else if (!await DataFetcher.GetInstance().CheckIfUserNameExistsAsync(Username.Text))
             {
                 await DisplayAlert(MainResources.UserNotFound, MainResources.UserNotFoundCaption, "OK");
                 Username.Text = "";
                 Password.Text = "";
             }
-            else if (!DataFetcher.GetInstance().CheckIfCorrectPassword(Username.Text, Password.Text))
+            else if (!await DataFetcher.GetInstance().CheckIfCorrectPasswordAsync(Username.Text, Password.Text))
             {
                 await DisplayAlert(MainResources.WrongPassword, MainResources.WrongPasswordCaption, "OK");
                 Password.Text = "";
             }
             else
             {
-                DataFetcher.GetInstance().SetCurrentUser(DataFetcher.GetInstance().GetAllUsers().ToList().Find(us => us.userName.Equals(Username.Text)));
+                DataFetcher.GetInstance().SetCurrentUser((await DataFetcher.GetInstance().GetAllUsersAsync()).ToList().Find(us => us.userName.Equals(Username.Text)));
                 await DisplayAlert(MainResources.SuccessfulLogIn, MainResources.LogInCaption, "OK");
                 MenuItems.LogIn();
                 await RootPage.NavigateFromMenu((int)MenuItemType.LecturersList);
             }
+            activityIndicator.IsRunning = false;
+            logInButton.IsEnabled = true;
         }
     }
 }

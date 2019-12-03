@@ -19,13 +19,13 @@ namespace VUA_App.ViewModels
             LoadSubjectsCommand = new Command(() => ExecuteLoadSubjectsCommand());
         }
 
-        void ExecuteLoadSubjectsCommand()
+        async void ExecuteLoadSubjectsCommand()
         {
             if (IsBusy)
                 return;
             IsBusy = true;
             IEnumerable<Lecturer> lecturers;
-            lecturers = DataFetcher.GetInstance().GetTop10Lecturers();
+            lecturers = await DataFetcher.GetInstance().GetTop10LecturersAsync();
             Lecturers.Clear();
             foreach (Lecturer lecturer in lecturers) Lecturers.Add(lecturer);
             IsBusy = false;

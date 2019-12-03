@@ -24,6 +24,7 @@ namespace VUA_App.Views
             if (e.Item == null)
                 return;
             Location location = null;
+            #region find location clicked
             switch (e.Item)
             {
                 case "Sveikatos ir sporto centras":
@@ -116,6 +117,7 @@ namespace VUA_App.Views
                 default:
                     return;
             }
+            #endregion find location clicked
             await Map.OpenAsync(location, new MapLaunchOptions{ Name = (string) e.Item });
 
             //Deselect Item
