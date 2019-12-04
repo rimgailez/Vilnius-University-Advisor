@@ -5,16 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="VUA_App.Views.LogIn">
-    <StackLayout>
-        <Label Text="Prisijungimo vardas" />
-        <Entry x:Name="Username"
+    <AbsoluteLayout VerticalOptions="Fill">
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Label Text="Prisijungimo vardas" />
+            <Entry x:Name="Username"
                Text=""/>
-        <Label Text="Slaptažodis" />
-        <Entry x:Name="Password"
+            <Label Text="Slaptažodis" />
+            <Entry x:Name="Password"
                Text=""
                IsPassword="True"/>
-        <Button Text="Prisijungti"
+            <Button x:Name="logInButton"
+                Text="Prisijungti"
                 Clicked="OnClick"/>
 
-    </StackLayout>
+        </StackLayout>
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="False" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,-1,-1" />
+    </AbsoluteLayout>
 </ContentPage>

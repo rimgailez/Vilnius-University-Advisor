@@ -93,6 +93,9 @@ namespace VUA_App.Views
                         MenuItems.LogOut();
                         MenuPages.Add(id, new NavigationPage(new LogIn()));
                         break;
+                    case (int)MenuItemType.Locations:
+                        MenuPages.Add(id, new NavigationPage(new Locations()));
+                        break;
                 }
             }
 

@@ -23,6 +23,9 @@ namespace VUA_App.Views
             InitializeComponent();
 
             LecturerListView.BindingContext = viewModel = new LecturerViewModel();
+            viewModel.PropertyChanged += (sender, e) => {
+                NumberOfLecturers.Text = MainResources.Showing + viewModel.Lecturers.Aggregate(0, (current, lecturer) => current + 1).ToString() + MainResources.Lecturers;
+            };
             SelectFaculty.ItemsSource = GetFacultyList();
             SelectFaculty.SelectedIndexChanged += FacultySelected;
         }
